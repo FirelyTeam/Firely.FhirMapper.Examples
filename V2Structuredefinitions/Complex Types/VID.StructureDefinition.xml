@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<StructureDefinition xmlns="http://hl7.org/fhir">
+  <url value="https://healex.systems/fhir/StructureDefinition/VID" />
+  <name value="VID" />
+  <title value="Version Identifier" />
+  <status value="draft" />
+  <fhirVersion value="4.0.1" />
+  <kind value="logical" />
+  <abstract value="false" />
+  <type value="VID" />
+  <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Element" />
+  <derivation value="specialization" />
+  <differential>
+    <element id="VID">
+      <path value="VID" />
+      <min value="0" />
+      <max value="*" />
+      <type>
+        <code value="Element" />
+      </type>
+      <maxLength value="973" />
+      <mapping>
+        <identity value="v2" />
+        <map value="VID" />
+      </mapping>
+    </element>
+    <element id="VID.versionID">
+      <path value="VID.versionID" />
+      <code>
+        <system value="http://terminology.hl7.org/CodeSystem/v2-0104" />
+      </code>
+      <min value="0" />
+      <max value="1" />
+      <type>
+        <code value="ID" />
+        <profile value="https://healex.systems/fhir/StructureDefinition/ID" />
+      </type>
+      <maxLength value="5" />
+      <mapping>
+        <identity value="v2" />
+        <map value="VID.1" />
+      </mapping>
+    </element>
+    <element id="VID.internationalizationCode">
+      <path value="VID.internationalizationCode" />
+      <code>
+        <system value="urn:iso:std:iso:3166" />
+      </code>
+      <min value="0" />
+      <max value="1" />
+      <type>
+        <code value="CE" />
+        <profile value="https://healex.systems/fhir/StructureDefinition/CE" />
+      </type>
+      <maxLength value="483" />
+      <mapping>
+        <identity value="v2" />
+        <map value="VID.2" />
+      </mapping>
+    </element>
+    <element id="VID.internationalVersionID">
+      <path value="VID.internationalVersionID" />
+      <min value="0" />
+      <max value="1" />
+      <type>
+        <code value="CE" />
+        <profile value="https://healex.systems/fhir/StructureDefinition/CE" />
+      </type>
+      <maxLength value="483" />
+      <mapping>
+        <identity value="v2" />
+        <map value="VID.3" />
+      </mapping>
+    </element>
+  </differential>
+</StructureDefinition>

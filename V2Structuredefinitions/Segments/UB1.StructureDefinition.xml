@@ -1,0 +1,433 @@
+<?xml version="1.0" encoding="utf-8"?>
+<StructureDefinition xmlns="http://hl7.org/fhir">
+  <url value="https://healex.systems/fhir/StructureDefinition/UB1" />
+  <name value="UB1" />
+  <title value="UB82 data segment" />
+  <status value="draft" />
+  <fhirVersion value="4.0.1" />
+  <kind value="logical" />
+  <abstract value="false" />
+  <type value="UB1" />
+  <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Element" />
+  <derivation value="specialization" />
+  <differential>
+    <element id="UB1">
+      <path value="UB1" />
+      <min value="0" />
+      <max value="*" />
+      <type>
+        <code value="Element" />
+      </type>
+      <mapping>
+        <identity value="v2" />
+        <map value="UB1" />
+      </mapping>
+    </element>
+    <element id="UB1.setIDUB1">
+      <path value="UB1.setIDUB1" />
+      <min value="0" />
+      <max value="1" />
+      <type>
+        <code value="SI" />
+        <profile value="https://healex.systems/fhir/StructureDefinition/SI" />
+      </type>
+      <maxLength value="4" />
+      <mapping>
+        <identity value="v2" />
+        <map value="UB1.1" />
+      </mapping>
+    </element>
+    <element id="UB1.bloodDeductible">
+      <path value="UB1.bloodDeductible" />
+      <min value="0" />
+      <max value="1" />
+      <type>
+        <code value="NM" />
+        <profile value="https://healex.systems/fhir/StructureDefinition/NM" />
+      </type>
+      <maxLength value="1" />
+      <mapping>
+        <identity value="v2" />
+        <map value="UB1.2" />
+      </mapping>
+      <mapping>
+        <identity value="ub82" />
+        <map value="43" />
+      </mapping>
+    </element>
+    <element id="UB1.bloodFurnishedPintsOf">
+      <path value="UB1.bloodFurnishedPintsOf" />
+      <min value="0" />
+      <max value="1" />
+      <type>
+        <code value="NM" />
+        <profile value="https://healex.systems/fhir/StructureDefinition/NM" />
+      </type>
+      <maxLength value="2" />
+      <mapping>
+        <identity value="v2" />
+        <map value="UB1.3" />
+      </mapping>
+      <mapping>
+        <identity value="ub82" />
+        <map value="40" />
+      </mapping>
+    </element>
+    <element id="UB1.bloodReplacedPints">
+      <path value="UB1.bloodReplacedPints" />
+      <min value="0" />
+      <max value="1" />
+      <type>
+        <code value="NM" />
+        <profile value="https://healex.systems/fhir/StructureDefinition/NM" />
+      </type>
+      <maxLength value="2" />
+      <mapping>
+        <identity value="v2" />
+        <map value="UB1.4" />
+      </mapping>
+      <mapping>
+        <identity value="ub82" />
+        <map value="41" />
+      </mapping>
+    </element>
+    <element id="UB1.bloodNotReplacedPints">
+      <path value="UB1.bloodNotReplacedPints" />
+      <min value="0" />
+      <max value="1" />
+      <type>
+        <code value="NM" />
+        <profile value="https://healex.systems/fhir/StructureDefinition/NM" />
+      </type>
+      <maxLength value="2" />
+      <mapping>
+        <identity value="v2" />
+        <map value="UB1.5" />
+      </mapping>
+      <mapping>
+        <identity value="ub82" />
+        <map value="42" />
+      </mapping>
+    </element>
+    <element id="UB1.coInsuranceDays">
+      <path value="UB1.coInsuranceDays" />
+      <min value="0" />
+      <max value="1" />
+      <type>
+        <code value="NM" />
+        <profile value="https://healex.systems/fhir/StructureDefinition/NM" />
+      </type>
+      <maxLength value="2" />
+      <mapping>
+        <identity value="v2" />
+        <map value="UB1.6" />
+      </mapping>
+      <mapping>
+        <identity value="ub82" />
+        <map value="25" />
+      </mapping>
+    </element>
+    <element id="UB1.conditionCode">
+      <path value="UB1.conditionCode" />
+      <code>
+        <system value="http://terminology.healex.systems/CodeSystem/v2-0043" />
+      </code>
+      <min value="0" />
+      <max value="5" />
+      <type>
+        <code value="IS" />
+        <profile value="https://healex.systems/fhir/StructureDefinition/IS" />
+      </type>
+      <maxLength value="14" />
+      <mapping>
+        <identity value="v2" />
+        <map value="UB1.7" />
+      </mapping>
+      <mapping>
+        <identity value="ub82" />
+        <map value="35-39" />
+      </mapping>
+    </element>
+    <element id="UB1.coveredDays">
+      <path value="UB1.coveredDays" />
+      <min value="0" />
+      <max value="1" />
+      <type>
+        <code value="NM" />
+        <profile value="https://healex.systems/fhir/StructureDefinition/NM" />
+      </type>
+      <maxLength value="3" />
+      <mapping>
+        <identity value="v2" />
+        <map value="UB1.8" />
+      </mapping>
+      <mapping>
+        <identity value="ub82" />
+        <map value="23" />
+      </mapping>
+    </element>
+    <element id="UB1.nonCoveredDays">
+      <path value="UB1.nonCoveredDays" />
+      <min value="0" />
+      <max value="1" />
+      <type>
+        <code value="NM" />
+        <profile value="https://healex.systems/fhir/StructureDefinition/NM" />
+      </type>
+      <maxLength value="3" />
+      <mapping>
+        <identity value="v2" />
+        <map value="UB1.9" />
+      </mapping>
+      <mapping>
+        <identity value="ub82" />
+        <map value="24" />
+      </mapping>
+    </element>
+    <element id="UB1.valueAmountAndCode">
+      <path value="UB1.valueAmountAndCode" />
+      <min value="0" />
+      <max value="8" />
+      <type>
+        <code value="UVC" />
+        <profile value="https://healex.systems/fhir/StructureDefinition/UVC" />
+      </type>
+      <maxLength value="41" />
+      <mapping>
+        <identity value="v2" />
+        <map value="UB1.10" />
+      </mapping>
+      <mapping>
+        <identity value="ub82" />
+        <map value="46-49" />
+      </mapping>
+    </element>
+    <element id="UB1.numberOfGraceDays">
+      <path value="UB1.numberOfGraceDays" />
+      <min value="0" />
+      <max value="1" />
+      <type>
+        <code value="NM" />
+        <profile value="https://healex.systems/fhir/StructureDefinition/NM" />
+      </type>
+      <maxLength value="2" />
+      <mapping>
+        <identity value="v2" />
+        <map value="UB1.11" />
+      </mapping>
+      <mapping>
+        <identity value="ub82" />
+        <map value="90" />
+      </mapping>
+    </element>
+    <element id="UB1.specialProgramIndicator">
+      <path value="UB1.specialProgramIndicator" />
+      <code>
+        <system value="http://terminology.healex.systems/CodeSystem/v2-0348" />
+      </code>
+      <min value="0" />
+      <max value="1" />
+      <type>
+        <code value="CE" />
+        <profile value="https://healex.systems/fhir/StructureDefinition/CE" />
+      </type>
+      <maxLength value="250" />
+      <mapping>
+        <identity value="v2" />
+        <map value="UB1.12" />
+      </mapping>
+      <mapping>
+        <identity value="ub82" />
+        <map value="44" />
+      </mapping>
+    </element>
+    <element id="UB1.psroUrApprovalIndicator">
+      <path value="UB1.psroUrApprovalIndicator" />
+      <code>
+        <system value="http://terminology.healex.systems/CodeSystem/v2-0349" />
+      </code>
+      <min value="0" />
+      <max value="1" />
+      <type>
+        <code value="CE" />
+        <profile value="https://healex.systems/fhir/StructureDefinition/CE" />
+      </type>
+      <maxLength value="250" />
+      <mapping>
+        <identity value="v2" />
+        <map value="UB1.13" />
+      </mapping>
+      <mapping>
+        <identity value="ub82" />
+        <map value="87" />
+      </mapping>
+    </element>
+    <element id="UB1.psroUrApprovedStayFm">
+      <path value="UB1.psroUrApprovedStayFm" />
+      <min value="0" />
+      <max value="1" />
+      <type>
+        <code value="DT" />
+        <profile value="https://healex.systems/fhir/StructureDefinition/DT" />
+      </type>
+      <maxLength value="8" />
+      <mapping>
+        <identity value="v2" />
+        <map value="UB1.14" />
+      </mapping>
+      <mapping>
+        <identity value="ub82" />
+        <map value="88" />
+      </mapping>
+    </element>
+    <element id="UB1.psroUrApprovedStayTo">
+      <path value="UB1.psroUrApprovedStayTo" />
+      <min value="0" />
+      <max value="1" />
+      <type>
+        <code value="DT" />
+        <profile value="https://healex.systems/fhir/StructureDefinition/DT" />
+      </type>
+      <maxLength value="8" />
+      <mapping>
+        <identity value="v2" />
+        <map value="UB1.15" />
+      </mapping>
+      <mapping>
+        <identity value="ub82" />
+        <map value="89" />
+      </mapping>
+    </element>
+    <element id="UB1.occurrence">
+      <path value="UB1.occurrence" />
+      <min value="0" />
+      <max value="5" />
+      <type>
+        <code value="OCD" />
+        <profile value="https://healex.systems/fhir/StructureDefinition/OCD" />
+      </type>
+      <maxLength value="259" />
+      <mapping>
+        <identity value="v2" />
+        <map value="UB1.16" />
+      </mapping>
+      <mapping>
+        <identity value="ub82" />
+        <map value="28-32" />
+      </mapping>
+    </element>
+    <element id="UB1.occurrenceSpan">
+      <path value="UB1.occurrenceSpan" />
+      <code>
+        <system value="http://terminology.hl7.org/CodeSystem/v2-0351" />
+      </code>
+      <min value="0" />
+      <max value="1" />
+      <type>
+        <code value="CE" />
+        <profile value="https://healex.systems/fhir/StructureDefinition/CE" />
+      </type>
+      <maxLength value="250" />
+      <mapping>
+        <identity value="v2" />
+        <map value="UB1.17" />
+      </mapping>
+      <mapping>
+        <identity value="ub82" />
+        <map value="33" />
+      </mapping>
+    </element>
+    <element id="UB1.occurrenceSpanStartDate">
+      <path value="UB1.occurrenceSpanStartDate" />
+      <min value="0" />
+      <max value="1" />
+      <type>
+        <code value="DT" />
+        <profile value="https://healex.systems/fhir/StructureDefinition/DT" />
+      </type>
+      <maxLength value="8" />
+      <mapping>
+        <identity value="v2" />
+        <map value="UB1.18" />
+      </mapping>
+      <mapping>
+        <identity value="ub82" />
+        <map value="33" />
+      </mapping>
+    </element>
+    <element id="UB1.occurrenceEndDate">
+      <path value="UB1.occurrenceEndDate" />
+      <min value="0" />
+      <max value="1" />
+      <type>
+        <code value="DT" />
+        <profile value="https://healex.systems/fhir/StructureDefinition/DT" />
+      </type>
+      <maxLength value="8" />
+      <mapping>
+        <identity value="v2" />
+        <map value="UB1.19" />
+      </mapping>
+      <mapping>
+        <identity value="ub82" />
+        <map value="33" />
+      </mapping>
+    </element>
+    <element id="UB1.ub82Locator2">
+      <path value="UB1.ub82Locator2" />
+      <min value="0" />
+      <max value="1" />
+      <type>
+        <code value="ST" />
+        <profile value="https://healex.systems/fhir/StructureDefinition/ST" />
+      </type>
+      <maxLength value="30" />
+      <mapping>
+        <identity value="v2" />
+        <map value="UB1.20" />
+      </mapping>
+    </element>
+    <element id="UB1.ub82Locator9">
+      <path value="UB1.ub82Locator9" />
+      <min value="0" />
+      <max value="1" />
+      <type>
+        <code value="ST" />
+        <profile value="https://healex.systems/fhir/StructureDefinition/ST" />
+      </type>
+      <maxLength value="7" />
+      <mapping>
+        <identity value="v2" />
+        <map value="UB1.21" />
+      </mapping>
+    </element>
+    <element id="UB1.ub82Locator27">
+      <path value="UB1.ub82Locator27" />
+      <min value="0" />
+      <max value="1" />
+      <type>
+        <code value="ST" />
+        <profile value="https://healex.systems/fhir/StructureDefinition/ST" />
+      </type>
+      <maxLength value="8" />
+      <mapping>
+        <identity value="v2" />
+        <map value="UB1.22" />
+      </mapping>
+    </element>
+    <element id="UB1.ub82Locator45">
+      <path value="UB1.ub82Locator45" />
+      <min value="0" />
+      <max value="1" />
+      <type>
+        <code value="ST" />
+        <profile value="https://healex.systems/fhir/StructureDefinition/ST" />
+      </type>
+      <maxLength value="17" />
+      <mapping>
+        <identity value="v2" />
+        <map value="UB1.23" />
+      </mapping>
+    </element>
+  </differential>
+</StructureDefinition>

@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<StructureDefinition xmlns="http://hl7.org/fhir">
+  <url value="https://healex.systems/fhir/StructureDefinition/OCD" />
+  <name value="OCD" />
+  <title value="occurrence code and date" />
+  <status value="draft" />
+  <fhirVersion value="4.0.1" />
+  <kind value="logical" />
+  <abstract value="false" />
+  <type value="OCD" />
+  <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Element" />
+  <derivation value="specialization" />
+  <differential>
+    <element id="OCD">
+      <path value="OCD" />
+      <definition value="The code and associated date defining a significant event relating to a bill that may affect payer&#xD;&#xA;processing." />
+      <min value="0" />
+      <max value="*" />
+      <type>
+        <code value="Element" />
+      </type>
+      <maxLength value="714" />
+    </element>
+    <element id="OCD.occurrenceCode">
+      <path value="OCD.occurrenceCode" />
+      <code>
+        <system value="http://terminology.hl7.org/ValueSet/v2-0350" />
+      </code>
+      <min value="1" />
+      <max value="1" />
+      <type>
+        <code value="CNE" />
+        <profile value="https://healex.systems/fhir/StructureDefinition/CNE" />
+      </type>
+      <maxLength value="705" />
+      <mapping>
+        <identity value="v2" />
+        <map value="OCD.1" />
+      </mapping>
+    </element>
+    <element id="OCD.occurrenceDate">
+      <path value="OCD.occurrenceDate" />
+      <min value="1" />
+      <max value="1" />
+      <type>
+        <code value="DT" />
+        <profile value="https://healex.systems/fhir/StructureDefinition/DT" />
+      </type>
+      <maxLength value="8" />
+      <mapping>
+        <identity value="v2" />
+        <map value="OCD.2" />
+      </mapping>
+    </element>
+  </differential>
+</StructureDefinition>

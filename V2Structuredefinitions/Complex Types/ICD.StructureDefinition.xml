@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<StructureDefinition xmlns="http://hl7.org/fhir">
+  <url value="https://healex.systems/fhir/StructureDefinition/ICD" />
+  <name value="ICD" />
+  <title value="Insurance certification definition" />
+  <status value="draft" />
+  <fhirVersion value="4.0.1" />
+  <kind value="logical" />
+  <abstract value="false" />
+  <type value="ICD" />
+  <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Element" />
+  <derivation value="specialization" />
+  <differential>
+    <element id="ICD">
+      <path value="ICD" />
+      <definition value="This data type specifies whether insurance certification is required for particular patient types,&#xD;&#xA;and the time window for obtaining the certification." />
+      <min value="0" />
+      <max value="*" />
+      <type>
+        <code value="Element" />
+      </type>
+      <maxLength value="40" />
+      <mapping>
+        <identity value="v2" />
+        <map value="ICD" />
+      </mapping>
+    </element>
+    <element id="ICD.certificationPatientType">
+      <path value="ICD.certificationPatientType" />
+      <code>
+        <system value="http://terminology.hl7.org/CodeSystem/v2-0150" />
+      </code>
+      <min value="0" />
+      <max value="1" />
+      <type>
+        <code value="IS" />
+        <profile value="https://healex.systems/fhir/StructureDefinition/IS" />
+      </type>
+      <maxLength value="11" />
+      <mapping>
+        <identity value="v2" />
+        <map value="ICD.1" />
+      </mapping>
+    </element>
+    <element id="ICD.certificationRequired">
+      <path value="ICD.certificationRequired" />
+      <code>
+        <system value="http://terminology.hl7.org/CodeSystem/v2-0136" />
+      </code>
+      <min value="1" />
+      <max value="1" />
+      <type>
+        <code value="ID" />
+        <profile value="https://healex.systems/fhir/StructureDefinition/ID" />
+      </type>
+      <maxLength value="1" />
+      <mapping>
+        <identity value="v2" />
+        <map value="ICD.2" />
+      </mapping>
+    </element>
+    <element id="ICD.dateTimeCertificationRequired">
+      <path value="ICD.dateTimeCertificationRequired" />
+      <min value="0" />
+      <max value="1" />
+      <type>
+        <code value="TS" />
+        <profile value="https://healex.systems/fhir/StructureDefinition/TS" />
+      </type>
+      <maxLength value="26" />
+      <mapping>
+        <identity value="v2" />
+        <map value="ICD.3" />
+      </mapping>
+    </element>
+  </differential>
+</StructureDefinition>

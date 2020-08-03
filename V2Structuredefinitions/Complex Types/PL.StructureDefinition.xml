@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="utf-8"?>
+<StructureDefinition xmlns="http://hl7.org/fhir">
+  <url value="https://healex.systems/fhir/StructureDefinition/PL" />
+  <name value="PL" />
+  <title value="personal location" />
+  <status value="draft" />
+  <fhirVersion value="4.0.1" />
+  <kind value="logical" />
+  <abstract value="false" />
+  <type value="PL" />
+  <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Element" />
+  <derivation value="specialization" />
+  <differential>
+    <element id="PL">
+      <path value="PL" />
+      <definition value="This data type is used to specify a patient location within a healthcare institution. Which&#xD;&#xA;components are valued depends on the needs of the site. For example for a patient treated at home, only the&#xD;&#xA;person location type is valued. It is most commonly used for specifying patient locations, but may refer to&#xD;&#xA;other types of persons within a healthcare setting." />
+      <min value="0" />
+      <max value="*" />
+      <type>
+        <code value="Element" />
+      </type>
+      <maxLength value="1230" />
+      <mapping>
+        <identity value="v2" />
+        <map value="PL" />
+      </mapping>
+    </element>
+    <element id="PL.pointOfCare">
+      <path value="PL.pointOfCare" />
+      <code>
+        <system value="http://terminology.healex.systems/CodeSystem/v2-0302" />
+      </code>
+      <min value="0" />
+      <max value="1" />
+      <type>
+        <code value="IS" />
+        <profile value="https://healex.systems/fhir/StructureDefinition/IS" />
+      </type>
+      <mapping>
+        <identity value="v2" />
+        <map value="PL.1" />
+      </mapping>
+    </element>
+    <element id="PL.room">
+      <path value="PL.room" />
+      <code>
+        <system value="http://terminology.healex.systems/CodeSystem/v2-0303" />
+      </code>
+      <min value="0" />
+      <max value="1" />
+      <type>
+        <code value="IS" />
+        <profile value="https://healex.systems/fhir/StructureDefinition/IS" />
+      </type>
+      <maxLength value="20" />
+      <mapping>
+        <identity value="v2" />
+        <map value="PL.2" />
+      </mapping>
+    </element>
+    <element id="PL.bed">
+      <path value="PL.bed" />
+      <code>
+        <system value="http://terminology.healex.systems/CodeSystem/v2-0304" />
+      </code>
+      <min value="0" />
+      <max value="1" />
+      <type>
+        <code value="IS" />
+        <profile value="https://healex.systems/fhir/StructureDefinition/IS" />
+      </type>
+      <maxLength value="20" />
+      <mapping>
+        <identity value="v2" />
+        <map value="PL.3" />
+      </mapping>
+    </element>
+    <element id="PL.facility">
+      <path value="PL.facility" />
+      <min value="0" />
+      <max value="1" />
+      <type>
+        <code value="HD" />
+        <profile value="https://healex.systems/fhir/StructureDefinition/HD" />
+      </type>
+      <maxLength value="227" />
+      <mapping>
+        <identity value="v2" />
+        <map value="PL.4" />
+      </mapping>
+    </element>
+    <element id="PL.locationStatus">
+      <path value="PL.locationStatus" />
+      <code>
+        <system value="http://terminology.healex.systems/CodeSystem/v2-0306" />
+      </code>
+      <min value="0" />
+      <max value="1" />
+      <type>
+        <code value="IS" />
+        <profile value="https://healex.systems/fhir/StructureDefinition/IS" />
+      </type>
+      <maxLength value="20" />
+      <mapping>
+        <identity value="v2" />
+        <map value="PL.5" />
+      </mapping>
+    </element>
+    <element id="PL.personLocationType">
+      <path value="PL.personLocationType" />
+      <code>
+        <system value="http://terminology.healex.systems/CodeSystem/v2-0305" />
+      </code>
+      <min value="0" />
+      <max value="1" />
+      <type>
+        <code value="IS" />
+        <profile value="https://healex.systems/fhir/StructureDefinition/IS" />
+      </type>
+      <maxLength value="20" />
+      <mapping>
+        <identity value="v2" />
+        <map value="PL.6" />
+      </mapping>
+    </element>
+    <element id="PL.building">
+      <path value="PL.building" />
+      <code>
+        <system value="http://terminology.healex.systems/CodeSystem/v2-0307" />
+      </code>
+      <min value="0" />
+      <max value="1" />
+      <type>
+        <code value="IS" />
+        <profile value="https://healex.systems/fhir/StructureDefinition/IS" />
+      </type>
+      <maxLength value="20" />
+      <mapping>
+        <identity value="v2" />
+        <map value="PL.7" />
+      </mapping>
+    </element>
+    <element id="PL.floor">
+      <path value="PL.floor" />
+      <code>
+        <system value="http://terminology.hl7.org/CodeSystem/v2-0308" />
+      </code>
+      <min value="0" />
+      <max value="1" />
+      <type>
+        <code value="IS" />
+        <profile value="https://healex.systems/fhir/StructureDefinition/IS" />
+      </type>
+      <maxLength value="20" />
+      <mapping>
+        <identity value="v2" />
+        <map value="PL.8" />
+      </mapping>
+    </element>
+    <element id="PL.locationDescription">
+      <path value="PL.locationDescription" />
+      <min value="0" />
+      <max value="1" />
+      <type>
+        <code value="ST" />
+        <profile value="https://healex.systems/fhir/StructureDefinition/ST" />
+      </type>
+      <maxLength value="199" />
+      <mapping>
+        <identity value="v2" />
+        <map value="PL.9" />
+      </mapping>
+    </element>
+    <element id="PL.comprehensiveLocationIdentifier">
+      <path value="PL.comprehensiveLocationIdentifier" />
+      <min value="0" />
+      <max value="1" />
+      <type>
+        <code value="EI" />
+        <profile value="https://healex.systems/fhir/StructureDefinition/EI" />
+      </type>
+      <maxLength value="427" />
+      <mapping>
+        <identity value="v2" />
+        <map value="PL.10" />
+      </mapping>
+    </element>
+    <element id="PL.assigningAuthorityforLocation">
+      <path value="PL.assigningAuthorityforLocation" />
+      <min value="0" />
+      <max value="1" />
+      <type>
+        <code value="HD" />
+        <profile value="https://healex.systems/fhir/StructureDefinition/HD" />
+      </type>
+      <maxLength value="227" />
+      <mapping>
+        <identity value="v2" />
+        <map value="PL.11" />
+      </mapping>
+    </element>
+  </differential>
+</StructureDefinition>

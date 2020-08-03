@@ -1,0 +1,108 @@
+﻿<StructureDefinition xmlns="http://hl7.org/fhir">
+    <url value="https://healex.systems/fhir/StructureDefinition/RQCI05"/>
+    <name value="RQCI05"/>
+    <status value="draft"/>
+    <fhirVersion value="4.0.0"/>
+    <kind value="logical"/>
+    <abstract value="false"/>
+    <type value="RQCI05"/>
+    <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Element"/>
+    <derivation value="specialization"/>
+    <differential>
+        <element id="RQC_I05">
+            <definition value="Add Billing Account">
+            </definition>
+            <type>
+                <code value="Element" />
+            </type>
+        </element>
+        <element id="RQC_I05.MSH">
+            <path value="RQC_I05.MSH"/>
+            <min value="1"/>
+            <max value="1"/>
+            <type>
+                <code value="MSH"/>
+            </type>
+        </element>
+        <element id="RQC_I05.SFT">
+            <path value="RQC_I05.SFT"/>
+            <min value="0"/>
+            <max value="*"/>
+            <type>
+                <code value="SFT"/>
+            </type>
+        </element>
+        <element id="RQC_I05.QRD">
+            <path value="RQC_I05.QRD"/>
+            <min value="1"/>
+            <max value="1"/>
+            <type>
+                <code value="QRD"/>
+            </type>
+        </element>
+        <element id="RQC_I05.QRF">
+            <path value="RQC_I05.QRF"/>
+            <min value="0"/>
+            <max value="1"/>
+            <type>
+                <code value="QRF"/>
+            </type>
+        </element>
+        <element id="RQC_I05.PROVIDER">
+            <path value="RQC_I05.PROVIDER"/>
+            <min value="1"/>
+            <max value="*"/>
+            <type>
+                <code value="BACKBONEELEMENT"/>
+            </type>
+        </element>
+        <element id="RQC_I05.PROVIDER.PRD">
+            <path value="RQC_I05.PROVIDER.PRD"/>
+            <min value="1"/>
+            <max value="1"/>
+            <type>
+                <code value="PRD"/>
+            </type>
+        </element>
+        <element id="RQC_I05.PROVIDER.CTD">
+            <path value="RQC_I05.PROVIDER.CTD"/>
+            <min value="0"/>
+            <max value="*"/>
+            <type>
+                <code value="CTD"/>
+            </type>
+        </element>
+        <element id="RQC_I05.PID">
+            <path value="RQC_I05.PID"/>
+            <min value="1"/>
+            <max value="1"/>
+            <type>
+                <code value="PID"/>
+            </type>
+        </element>
+        <element id="RQC_I05.NK1">
+            <path value="RQC_I05.NK1"/>
+            <min value="0"/>
+            <max value="*"/>
+            <type>
+                <code value="NK1"/>
+            </type>
+        </element>
+        <element id="RQC_I05.GT1">
+            <path value="RQC_I05.GT1"/>
+            <min value="0"/>
+            <max value="*"/>
+            <type>
+                <code value="GT1"/>
+            </type>
+        </element>
+        <element id="RQC_I05.NTE">
+            <path value="RQC_I05.NTE"/>
+            <min value="0"/>
+            <max value="*"/>
+            <type>
+                <code value="NTE"/>
+            </type>
+        </element>
+    </differential>
+</StructureDefinition>

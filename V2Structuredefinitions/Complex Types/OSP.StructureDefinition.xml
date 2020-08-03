@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<StructureDefinition xmlns="http://hl7.org/fhir">
+  <url value="https://healex.systems/fhir/StructureDefinition/OSP" />
+  <name value="OSP" />
+  <title value="occurrence span code and date" />
+  <status value="draft" />
+  <description value="A code and the related dates that identify an event that relates to the payment of the claim. For&#xD;&#xA;example, Prior Stay Dates which is the from/through dates given by the patient of any hospital stay that&#xD;&#xA;ended within 60 days of this hospital or SNF admission." />
+  <fhirVersion value="4.0.1" />
+  <kind value="logical" />
+  <abstract value="false" />
+  <type value="OSP" />
+  <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Element" />
+  <derivation value="specialization" />
+  <differential>
+    <element id="OSP">
+      <path value="OSP" />
+      <min value="0" />
+      <max value="*" />
+      <type>
+        <code value="Element" />
+      </type>
+      <maxLength value="723" />
+      <mapping>
+        <identity value="v2" />
+        <map value="OSP" />
+      </mapping>
+    </element>
+    <element id="OSP.occurrenceSpanCode">
+      <path value="OSP.occurrenceSpanCode" />
+      <code>
+        <system value="http://terminology.hl7.org/CodeSystem/v2-0351" />
+      </code>
+      <min value="1" />
+      <max value="1" />
+      <type>
+        <code value="CNE" />
+        <profile value="https://healex.systems/fhir/StructureDefinition/CNE" />
+      </type>
+      <maxLength value="705" />
+      <mapping>
+        <identity value="v2" />
+        <map value="OSP.1" />
+      </mapping>
+    </element>
+    <element id="OSP.occurrenceSpanStartDate">
+      <path value="OSP.occurrenceSpanStartDate" />
+      <min value="0" />
+      <max value="1" />
+      <type>
+        <code value="DT" />
+        <profile value="https://healex.systems/fhir/StructureDefinition/DT" />
+      </type>
+      <maxLength value="8" />
+      <mapping>
+        <identity value="v2" />
+        <map value="OSP.2" />
+      </mapping>
+    </element>
+    <element id="OSP.occurrenceSpanStopDate">
+      <path value="OSP.occurrenceSpanStopDate" />
+      <min value="0" />
+      <max value="1" />
+      <type>
+        <code value="DT" />
+        <profile value="https://healex.systems/fhir/StructureDefinition/DT" />
+      </type>
+      <maxLength value="8" />
+      <mapping>
+        <identity value="v2" />
+        <map value="OSP.3" />
+      </mapping>
+    </element>
+  </differential>
+</StructureDefinition>

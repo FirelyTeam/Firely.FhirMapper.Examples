@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<StructureDefinition xmlns="http://hl7.org/fhir">
+  <url value="https://healex.systems/fhir/StructureDefinition/RMC" />
+  <name value="RMC" />
+  <title value="room coverage" />
+  <status value="draft" />
+  <description value="This data type specifies insurance coverage detail for a room" />
+  <fhirVersion value="4.0.1" />
+  <kind value="logical" />
+  <abstract value="false" />
+  <type value="RMC" />
+  <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Element" />
+  <derivation value="specialization" />
+  <differential>
+    <element id="RMC">
+      <path value="RMC" />
+      <definition value="This data type specifies insurance coverage detail for a room" />
+      <min value="0" />
+      <max value="*" />
+      <type>
+        <code value="Element" />
+      </type>
+      <maxLength value="82" />
+      <mapping>
+        <identity value="v2" />
+        <map value="RMC" />
+      </mapping>
+    </element>
+    <element id="RMC.roomType">
+      <path value="RMC.roomType" />
+      <code>
+        <system value="http://terminology.hl7.org/CodeSystem/v2-0145" />
+      </code>
+      <min value="1" />
+      <max value="1" />
+      <type>
+        <code value="IS" />
+        <profile value="https://healex.systems/fhir/StructureDefinition/IS" />
+      </type>
+      <maxLength value="20" />
+      <mapping>
+        <identity value="v2" />
+        <map value="RMC.1" />
+      </mapping>
+    </element>
+    <element id="RMC.amountType">
+      <path value="RMC.amountType" />
+      <code>
+        <system value="http://terminology.hl7.org/CodeSystem/v2-0146" />
+      </code>
+      <min value="0" />
+      <max value="1" />
+      <type>
+        <code value="IS" />
+        <profile value="https://healex.systems/fhir/StructureDefinition/IS" />
+      </type>
+      <maxLength value="20" />
+      <mapping>
+        <identity value="v2" />
+        <map value="RMC.2" />
+      </mapping>
+    </element>
+    <element id="RMC.coverageAmount">
+      <path value="RMC.coverageAmount" />
+      <min value="0" />
+      <max value="1" />
+      <type>
+        <code value="NM" />
+        <profile value="https://healex.systems/fhir/StructureDefinition/NM" />
+      </type>
+      <maxLength value="16" />
+      <mapping>
+        <identity value="v2" />
+        <map value="RMC.3" />
+      </mapping>
+    </element>
+    <element id="RMC.moneyOrPercentage">
+      <path value="RMC.moneyOrPercentage" />
+      <min value="1" />
+      <max value="1" />
+      <type>
+        <code value="MOP" />
+        <profile value="https://healex.systems/fhir/StructureDefinition/MOP" />
+      </type>
+      <maxLength value="23" />
+      <mapping>
+        <identity value="v2" />
+        <map value="RMC.4" />
+      </mapping>
+    </element>
+  </differential>
+</StructureDefinition>

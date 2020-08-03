@@ -1,0 +1,390 @@
+<?xml version="1.0" encoding="utf-8"?>
+<StructureDefinition xmlns="http://hl7.org/fhir">
+  <url value="https://healex.systems/fhir/StructureDefinition/OBX" />
+  <name value="OBX" />
+  <title value="Observation/Result Segment" />
+  <status value="draft" />
+  <fhirVersion value="4.0.1" />
+  <kind value="logical" />
+  <abstract value="false" />
+  <type value="OBX" />
+  <baseDefinition value="https://healex.systems/fhir/StructureDefinition/Element" />
+  <derivation value="specialization" />
+  <differential>
+    <element id="OBX">
+      <path value="OBX" />
+      <definition value="The OBX segment is used to transmit a single observation or observation fragment. It represents the&#xD;&#xA;smallest indivisible unit of a report." />
+      <min value="0" />
+      <max value="*" />
+      <type>
+        <code value="Element" />
+      </type>
+      <mapping>
+        <identity value="v2" />
+        <map value="OBX" />
+      </mapping>
+    </element>
+    <element id="OBX.setIDOBX">
+      <path value="OBX.setIDOBX" />
+      <min value="0" />
+      <max value="1" />
+      <type>
+        <code value="SI" />
+        <profile value="https://healex.systems/fhir/StructureDefinition/SI" />
+      </type>
+      <maxLength value="4" />
+      <mapping>
+        <identity value="v2" />
+        <map value="OBX.1" />
+      </mapping>
+    </element>
+    <element id="OBX.valueType">
+      <path value="OBX.valueType" />
+      <code>
+        <system value="http://terminology.hl7.org/CodeSystem/v2-0125" />
+      </code>
+      <min value="1" />
+      <max value="1" />
+      <type>
+        <code value="ID" />
+        <profile value="https://healex.systems/fhir/StructureDefinition/ID" />
+      </type>
+      <maxLength value="2" />
+      <mapping>
+        <identity value="v2" />
+        <map value="OBX.2" />
+      </mapping>
+    </element>
+    <element id="OBX.observationIdentifier">
+      <path value="OBX.observationIdentifier" />
+      <min value="0" />
+      <max value="1" />
+      <type>
+        <code value="CE" />
+        <profile value="https://healex.systems/fhir/StructureDefinition/CE" />
+      </type>
+      <maxLength value="250" />
+      <mapping>
+        <identity value="v2" />
+        <map value="OBX.3" />
+      </mapping>
+    </element>
+    <element id="OBX.observationSub-ID">
+      <path value="OBX.observationSub-ID" />
+      <min value="0" />
+      <max value="1" />
+      <type>
+        <code value="ST" />
+        <profile value="https://healex.systems/fhir/StructureDefinition/ST" />
+      </type>
+      <maxLength value="20" />
+      <mapping>
+        <identity value="v2" />
+        <map value="OBX.4" />
+      </mapping>
+    </element>
+    <element id="OBX.observationValue[x]">
+      <path value="OBX.observationValue[x]" />
+      <min value="0" />
+      <max value="*" />
+      <type>
+        <code value="AD" />
+        <profile value="https://healex.systems/fhir/StructureDefinition/AD" />
+      </type>
+      <type>
+        <code value="CE" />
+        <profile value="https://healex.systems/fhir/StructureDefinition/CE" />
+      </type>
+      <type>
+        <code value="CF" />
+        <profile value="https://healex.systems/fhir/StructureDefinition/CF" />
+      </type>
+      <type>
+        <code value="CK" />
+        <profile value="https://healex.systems/fhir/StructureDefinition/CK" />
+      </type>
+      <type>
+        <code value="CN" />
+        <profile value="https://healex.systems/fhir/StructureDefinition/CN" />
+      </type>
+      <type>
+        <code value="CP" />
+        <profile value="https://healex.systems/fhir/StructureDefinition/CP" />
+      </type>
+      <type>
+        <code value="CX" />
+        <profile value="https://healex.systems/fhir/StructureDefinition/CX" />
+      </type>
+      <type>
+        <code value="DT" />
+        <profile value="https://healex.systems/fhir/StructureDefinition/DT" />
+      </type>
+      <type>
+        <code value="ED" />
+        <profile value="https://healex.systems/fhir/StructureDefinition/ED" />
+      </type>
+      <type>
+        <code value="FT" />
+        <profile value="https://healex.systems/fhir/StructureDefinition/FT" />
+      </type>
+      <type>
+        <code value="MO" />
+        <profile value="https://healex.systems/fhir/StructureDefinition/MO" />
+      </type>
+      <type>
+        <code value="NM" />
+        <profile value="https://healex.systems/fhir/StructureDefinition/NM" />
+      </type>
+      <type>
+        <code value="PN" />
+        <profile value="https://healex.systems/fhir/StructureDefinition/PN" />
+      </type>
+      <type>
+        <code value="RP" />
+        <profile value="https://healex.systems/fhir/StructureDefinition/RP" />
+      </type>
+      <type>
+        <code value="SN" />
+        <profile value="https://healex.systems/fhir/StructureDefinition/SN" />
+      </type>
+      <type>
+        <code value="ST" />
+        <profile value="https://healex.systems/fhir/StructureDefinition/ST" />
+      </type>
+      <type>
+        <code value="TM" />
+        <profile value="https://healex.systems/fhir/StructureDefinition/TM" />
+      </type>
+      <type>
+        <code value="TN" />
+        <profile value="https://healex.systems/fhir/StructureDefinition/TN" />
+      </type>
+      <type>
+        <code value="TS" />
+        <profile value="https://healex.systems/fhir/StructureDefinition/TS" />
+      </type>
+      <type>
+        <code value="TX" />
+        <profile value="https://healex.systems/fhir/StructureDefinition/TX" />
+      </type>
+      <type>
+        <code value="XAD" />
+        <profile value="https://healex.systems/fhir/StructureDefinition/XAD" />
+      </type>
+      <type>
+        <code value="XCN" />
+        <profile value="https://healex.systems/fhir/StructureDefinition/XCN" />
+      </type>
+      <maxLength value="99999" />
+      <mapping>
+        <identity value="v2" />
+        <map value="OBX.5" />
+      </mapping>
+    </element>
+    <element id="OBX.units">
+      <path value="OBX.units" />
+      <min value="0" />
+      <max value="1" />
+      <type>
+        <code value="CE" />
+        <profile value="https://healex.systems/fhir/StructureDefinition/CE" />
+      </type>
+      <maxLength value="250" />
+      <mapping>
+        <identity value="v2" />
+        <map value="OBX.6" />
+      </mapping>
+    </element>
+    <element id="OBX.referenceRange">
+      <path value="OBX.referenceRange" />
+      <min value="0" />
+      <max value="1" />
+      <type>
+        <code value="ST" />
+        <profile value="https://healex.systems/fhir/StructureDefinition/ST" />
+      </type>
+      <maxLength value="60" />
+      <mapping>
+        <identity value="2" />
+        <map value="OBX.7" />
+      </mapping>
+    </element>
+    <element id="OBX.abnormalFlags">
+      <path value="OBX.abnormalFlags" />
+      <code>
+        <system value="http://terminology.healex.systems/CodeSystem/v2-0078" />
+      </code>
+      <min value="0" />
+      <max value="*" />
+      <type>
+        <code value="IS" />
+        <profile value="https://healex.systems/fhir/StructureDefinition/IS" />
+      </type>
+      <maxLength value="5" />
+      <mapping>
+        <identity value="2" />
+        <map value="OBX.8" />
+      </mapping>
+    </element>
+    <element id="OBX.probability">
+      <path value="OBX.probability" />
+      <min value="0" />
+      <max value="1" />
+      <type>
+        <code value="NM" />
+        <profile value="https://healex.systems/fhir/StructureDefinition/NM" />
+      </type>
+      <maxLength value="5" />
+      <mapping>
+        <identity value="2" />
+        <map value="OBX.9" />
+      </mapping>
+    </element>
+    <element id="OBX.natureofAbnormalTest">
+      <path value="OBX.natureofAbnormalTest" />
+      <code>
+        <system value="http://terminology.hl7.org/CodeSystem/v2-0080" />
+      </code>
+      <min value="0" />
+      <max value="*" />
+      <type>
+        <code value="ID" />
+        <profile value="https://healex.systems/fhir/StructureDefinition/ID" />
+      </type>
+      <maxLength value="2" />
+      <mapping>
+        <identity value="v2" />
+        <map value="OBX.10" />
+      </mapping>
+    </element>
+    <element id="OBX.observationResultStatus">
+      <path value="OBX.observationResultStatus" />
+      <code>
+        <system value="http://terminology.hl7.org/CodeSystem/v2-0085" />
+      </code>
+      <min value="0" />
+      <max value="1" />
+      <type>
+        <code value="ID" />
+        <profile value="https://healex.systems/fhir/StructureDefinition/ID" />
+      </type>
+      <maxLength value="1" />
+      <mapping>
+        <identity value="2" />
+        <map value="OBX.11" />
+      </mapping>
+    </element>
+    <element id="OBX.effectiveDateOfReferenceRange">
+      <path value="OBX.effectiveDateOfReferenceRange" />
+      <min value="0" />
+      <max value="1" />
+      <type>
+        <code value="TS" />
+        <profile value="https://healex.systems/fhir/StructureDefinition/TS" />
+      </type>
+      <maxLength value="26" />
+      <mapping>
+        <identity value="v2" />
+        <map value="OBX.12" />
+      </mapping>
+    </element>
+    <element id="OBX.userDefinedAccessChecks">
+      <path value="OBX.userDefinedAccessChecks" />
+      <min value="0" />
+      <max value="1" />
+      <type>
+        <code value="ST" />
+        <profile value="https://healex.systems/fhir/StructureDefinition/ST" />
+      </type>
+      <maxLength value="20" />
+      <mapping>
+        <identity value="v2" />
+        <map value="OBX.13" />
+      </mapping>
+    </element>
+    <element id="OBX.dateOrTimeOfTheObservation">
+      <path value="OBX.dateOrTimeOfTheObservation" />
+      <min value="0" />
+      <max value="1" />
+      <type>
+        <code value="TS" />
+        <profile value="https://healex.systems/fhir/StructureDefinition/TS" />
+      </type>
+      <maxLength value="26" />
+      <mapping>
+        <identity value="v1" />
+        <map value="OBX.14" />
+      </mapping>
+    </element>
+    <element id="OBX.producersID">
+      <path value="OBX.producersID" />
+      <min value="0" />
+      <max value="1" />
+      <type>
+        <code value="CE" />
+        <profile value="https://healex.systems/fhir/StructureDefinition/CE" />
+      </type>
+      <maxLength value="250" />
+      <mapping>
+        <identity value="v2" />
+        <map value="OBX.15" />
+      </mapping>
+    </element>
+    <element id="OBX.responsibleObserver">
+      <path value="OBX.responsibleObserver" />
+      <min value="0" />
+      <max value="*" />
+      <type>
+        <code value="XCN" />
+        <profile value="https://healex.systems/fhir/StructureDefinition/XCN" />
+      </type>
+      <maxLength value="250" />
+      <mapping>
+        <identity value="2" />
+        <map value="OBX.16" />
+      </mapping>
+    </element>
+    <element id="OBX.observationMethod">
+      <path value="OBX.observationMethod" />
+      <min value="0" />
+      <max value="*" />
+      <type>
+        <code value="CE" />
+        <profile value="https://healex.systems/fhir/StructureDefinition/CE" />
+      </type>
+      <maxLength value="250" />
+      <mapping>
+        <identity value="v2" />
+        <map value="OBX.17" />
+      </mapping>
+    </element>
+    <element id="OBX.equipmentInstanceIdentifier">
+      <path value="OBX.equipmentInstanceIdentifier" />
+      <min value="0" />
+      <max value="*" />
+      <type>
+        <code value="EI" />
+        <profile value="https://healex.systems/fhir/StructureDefinition/EI" />
+      </type>
+      <maxLength value="22" />
+      <mapping>
+        <identity value="v2" />
+        <map value="OBX.18" />
+      </mapping>
+    </element>
+    <element id="OBX.dateOrTImeOfTheAnalysis">
+      <path value="OBX.dateOrTImeOfTheAnalysis" />
+      <min value="0" />
+      <max value="1" />
+      <type>
+        <code value="TS" />
+        <profile value="https://healex.systems/fhir/StructureDefinition/TS" />
+      </type>
+      <maxLength value="26" />
+      <mapping>
+        <identity value="v2" />
+        <map value="OBX.19" />
+      </mapping>
+    </element>
+  </differential>
+</StructureDefinition>

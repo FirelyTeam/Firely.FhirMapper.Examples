@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<StructureDefinition xmlns="http://hl7.org/fhir">
+  <url value="https://healex.systems/fhir/StructureDefinition/CK" />
+  <name value="CK" />
+  <status value="draft" />
+  <fhirVersion value="4.0.1" />
+  <kind value="logical" />
+  <abstract value="false" />
+  <type value="CK" />
+  <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Element" />
+  <derivation value="specialization" />
+  <differential>
+    <element id="CK">
+      <path value="CK" />
+      <definition value="This data type is used for certain fields that commonly contain check digits, e.g., PID-3-patient ID (internal). If a site is not using check digits for a particular CK field, the second and third components are not valued. Example: |128952^6^M11^ADT01|" />
+      <min value="0" />
+      <max value="*" />
+      <type>
+        <code value="Element" />
+      </type>
+      <mapping>
+        <identity value="v2" />
+        <map value="CK" />
+      </mapping>
+    </element>
+    <element id="CK.idNumber">
+      <path value="CK.idNumber" />
+      <min value="0" />
+      <max value="1" />
+      <type>
+        <code value="NM" />
+        <profile value="https://healex.systems/fhir/StructureDefinition/NM" />
+      </type>
+      <mapping>
+        <identity value="v2" />
+        <map value="CK.1" />
+      </mapping>
+    </element>
+    <element id="CK.checkDigit">
+      <path value="CK.checkDigit" />
+      <min value="0" />
+      <max value="1" />
+      <type>
+        <code value="ST" />
+        <profile value="https://healex.systems/fhir/StructureDefinition/ST" />
+      </type>
+      <mapping>
+        <identity value="v2" />
+        <map value="CK.2" />
+      </mapping>
+    </element>
+    <element id="CK.codeIdentifyingTheCheckDigitSchemeEmployed">
+      <path value="CK.codeIdentifyingTheCheckDigitSchemeEmployed" />
+      <code>
+        <system value="http://terminology.hl7.org/CodeSystem/v2-00061" />
+      </code>
+      <min value="0" />
+      <max value="1" />
+      <type>
+        <code value="ID" />
+        <profile value="https://healex.systems/fhir/StructureDefinition/ID" />
+      </type>
+      <mapping>
+        <identity value="v2" />
+        <map value="CK.3" />
+      </mapping>
+    </element>
+    <element id="CK.assigningAuthority">
+      <path value="CK.assigningAuthority" />
+      <min value="0" />
+      <max value="1" />
+      <type>
+        <code value="HD" />
+        <profile value="https://healex.systems/fhir/StructureDefinition/HD" />
+      </type>
+      <mapping>
+        <identity value="2" />
+        <map value="CK.4" />
+      </mapping>
+    </element>
+  </differential>
+</StructureDefinition>

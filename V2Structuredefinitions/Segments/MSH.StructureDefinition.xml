@@ -1,0 +1,348 @@
+<?xml version="1.0" encoding="utf-8"?>
+<StructureDefinition xmlns="http://hl7.org/fhir">
+  <url value="https://healex.systems/fhir/StructureDefinition/MSH" />
+  <name value="MSH" />
+  <title value="message header" />
+  <status value="draft" />
+  <fhirVersion value="4.0.1" />
+  <kind value="logical" />
+  <abstract value="false" />
+  <type value="MSH" />
+  <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Element" />
+  <derivation value="specialization" />
+  <differential>
+    <element id="MSH">
+      <path value="MSH" />
+      <definition value="The MSH segment defines the intent, source, destination, and some specifics of the syntax of a message." />
+      <min value="0" />
+      <max value="*" />
+      <type>
+        <code value="Element" />
+      </type>
+      <mapping>
+        <identity value="v2" />
+        <map value="MSH" />
+      </mapping>
+    </element>
+    <element id="MSH.fieldSeparator">
+      <path value="MSH.fieldSeparator" />
+      <min value="1" />
+      <max value="1" />
+      <type>
+        <code value="ST" />
+        <profile value="https://healex.systems/fhir/StructureDefinition/ST" />
+      </type>
+      <mapping>
+        <identity value="v2" />
+        <map value="MSH.1" />
+      </mapping>
+    </element>
+    <element id="MSH.encodingCharacters">
+      <path value="MSH.encodingCharacters" />
+      <min value="1" />
+      <max value="1" />
+      <type>
+        <code value="ST" />
+        <profile value="https://healex.systems/fhir/StructureDefinition/ST" />
+      </type>
+      <maxLength value="4" />
+      <mapping>
+        <identity value="v2" />
+        <map value="MSH.2" />
+      </mapping>
+    </element>
+    <element id="MSH.sendingApplication">
+      <path value="MSH.sendingApplication" />
+      <code>
+        <system value="http://terminology.healex.systems/CodeSystem/v2-0361" />
+      </code>
+      <min value="0" />
+      <max value="1" />
+      <type>
+        <code value="HD" />
+        <profile value="https://healex.systems/fhir/StructureDefinition/HD" />
+      </type>
+      <maxLength value="227" />
+      <mapping>
+        <identity value="v2" />
+        <map value="MSH.3" />
+      </mapping>
+    </element>
+    <element id="MSH.sendingFacility">
+      <path value="MSH.sendingFacility" />
+      <code>
+        <system value="http://terminology.healex.systems/CodeSystem/v2-0362" />
+      </code>
+      <min value="0" />
+      <max value="1" />
+      <type>
+        <code value="HD" />
+        <profile value="https://healex.systems/fhir/StructureDefinition/HD" />
+      </type>
+      <maxLength value="227" />
+      <mapping>
+        <identity value="v2" />
+        <map value="MSH.4" />
+      </mapping>
+    </element>
+    <element id="MSH.receivingApplication">
+      <path value="MSH.receivingApplication" />
+      <code>
+        <system value="http://terminology.healex.systems/CodeSystem/v2-0361" />
+      </code>
+      <min value="0" />
+      <max value="1" />
+      <type>
+        <code value="HD" />
+        <profile value="https://healex.systems/fhir/StructureDefinition/HD" />
+      </type>
+      <maxLength value="227" />
+      <mapping>
+        <identity value="v2" />
+        <map value="MSH.5" />
+      </mapping>
+    </element>
+    <element id="MSH.receivingFacility">
+      <path value="MSH.receivingFacility" />
+      <code>
+        <system value="http://terminology.healex.systems/CodeSystem/v2-0362" />
+      </code>
+      <min value="0" />
+      <max value="1" />
+      <type>
+        <code value="HD" />
+        <profile value="https://healex.systems/fhir/StructureDefinition/HD" />
+      </type>
+      <maxLength value="227" />
+      <mapping>
+        <identity value="v2" />
+        <map value="MSH.6" />
+      </mapping>
+    </element>
+    <element id="MSH.dateOrTimeOfMessage">
+      <path value="MSH.dateOrTimeOfMessage" />
+      <min value="1" />
+      <max value="1" />
+      <type>
+        <code value="TS" />
+        <profile value="https://healex.systems/fhir/StructureDefinition/TS" />
+      </type>
+      <maxLength value="26" />
+      <mapping>
+        <identity value="v2" />
+        <map value="MSH.7" />
+      </mapping>
+    </element>
+    <element id="MSH.security">
+      <path value="MSH.security" />
+      <min value="0" />
+      <max value="1" />
+      <type>
+        <code value="ST" />
+        <profile value="https://healex.systems/fhir/StructureDefinition/ST" />
+      </type>
+      <maxLength value="40" />
+      <mapping>
+        <identity value="v2" />
+        <map value="MSH.8" />
+      </mapping>
+    </element>
+    <element id="MSH.messageType">
+      <path value="MSH.messageType" />
+      <min value="1" />
+      <max value="1" />
+      <type>
+        <code value="MSG" />
+        <profile value="https://healex.systems/fhir/StructureDefinition/MSG" />
+      </type>
+      <maxLength value="15" />
+      <mapping>
+        <identity value="v2" />
+        <map value="MSH.9" />
+      </mapping>
+    </element>
+    <element id="MSH.messageControlID">
+      <path value="MSH.messageControlID" />
+      <min value="1" />
+      <max value="1" />
+      <type>
+        <code value="ST" />
+        <profile value="https://healex.systems/fhir/StructureDefinition/ST" />
+      </type>
+      <maxLength value="20" />
+      <mapping>
+        <identity value="v2" />
+        <map value="MSH.10" />
+      </mapping>
+    </element>
+    <element id="MSH.processingID">
+      <path value="MSH.processingID" />
+      <min value="1" />
+      <max value="1" />
+      <type>
+        <code value="PT" />
+        <profile value="https://healex.systems/fhir/StructureDefinition/PT" />
+      </type>
+      <maxLength value="3" />
+      <mapping>
+        <identity value="v2" />
+        <map value="MSH.11" />
+      </mapping>
+    </element>
+    <element id="MSH.versionID">
+      <path value="MSH.versionID" />
+      <min value="1" />
+      <max value="1" />
+      <type>
+        <code value="VID" />
+        <profile value="https://healex.systems/fhir/StructureDefinition/VID" />
+      </type>
+      <maxLength value="60" />
+      <mapping>
+        <identity value="2" />
+        <map value="MSH.12" />
+      </mapping>
+    </element>
+    <element id="MSH.sequenceNumber">
+      <path value="MSH.sequenceNumber" />
+      <min value="0" />
+      <max value="1" />
+      <type>
+        <code value="NM" />
+        <profile value="https://healex.systems/fhir/StructureDefinition/NM" />
+      </type>
+      <maxLength value="15" />
+      <mapping>
+        <identity value="v2" />
+        <map value="MSH.13" />
+      </mapping>
+    </element>
+    <element id="MSH.continuationPointer">
+      <path value="MSH.continuationPointer" />
+      <min value="0" />
+      <max value="1" />
+      <type>
+        <code value="ST" />
+        <profile value="https://healex.systems/fhir/StructureDefinition/ST" />
+      </type>
+      <maxLength value="180" />
+      <mapping>
+        <identity value="v2" />
+        <map value="MSH.14" />
+      </mapping>
+    </element>
+    <element id="MSH.acceptAcknowledgmentType">
+      <path value="MSH.acceptAcknowledgmentType" />
+      <code>
+        <system value="http://terminology.hl7.org/CodeSystem/v2-0155" />
+      </code>
+      <min value="0" />
+      <max value="1" />
+      <type>
+        <code value="ID" />
+        <profile value="https://healex.systems/fhir/StructureDefinition/ID" />
+      </type>
+      <maxLength value="2" />
+      <mapping>
+        <identity value="v2" />
+        <map value="MSH.15" />
+      </mapping>
+    </element>
+    <element id="MSH.applicationAcknowledgmentType">
+      <path value="MSH.applicationAcknowledgmentType" />
+      <code>
+        <system value="http://terminology.hl7.org/CodeSystem/v2-0155" />
+      </code>
+      <min value="0" />
+      <max value="1" />
+      <type>
+        <code value="ID" />
+        <profile value="https://healex.systems/fhir/StructureDefinition/ID" />
+      </type>
+      <maxLength value="2" />
+      <mapping>
+        <identity value="v2" />
+        <map value="MSH.16" />
+      </mapping>
+    </element>
+    <element id="MSH.countryCode">
+      <path value="MSH.countryCode" />
+      <code>
+        <system value="urn:iso:std:iso:3166" />
+      </code>
+      <min value="0" />
+      <max value="1" />
+      <type>
+        <code value="ID" />
+        <profile value="https://healex.systems/fhir/StructureDefinition/ID" />
+      </type>
+      <maxLength value="3" />
+      <mapping>
+        <identity value="v2" />
+        <map value="MSH.17" />
+      </mapping>
+    </element>
+    <element id="MSH.characterSet">
+      <path value="MSH.characterSet" />
+      <code>
+        <system value="http://terminology.hl7.org/CodeSystem/v2-0211" />
+      </code>
+      <min value="0" />
+      <max value="*" />
+      <type>
+        <code value="ID" />
+        <profile value="https://healex.systems/fhir/StructureDefinition/ID" />
+      </type>
+      <maxLength value="16" />
+      <mapping>
+        <identity value="v2" />
+        <map value="MSH.18" />
+      </mapping>
+    </element>
+    <element id="MSH.principalLanguageOfMessage">
+      <path value="MSH.principalLanguageOfMessage" />
+      <min value="0" />
+      <max value="1" />
+      <type>
+        <code value="CE" />
+        <profile value="https://healex.systems/fhir/StructureDefinition/CE" />
+      </type>
+      <maxLength value="250" />
+      <mapping>
+        <identity value="2" />
+        <map value="MSH.19" />
+      </mapping>
+    </element>
+    <element id="MSH.AlternateCharacterSetHandlingScheme">
+      <path value="MSH.AlternateCharacterSetHandlingScheme" />
+      <code>
+        <system value="http://terminology.hl7.org/CodeSystem/v2-0356" />
+      </code>
+      <min value="0" />
+      <max value="1" />
+      <type>
+        <code value="ID" />
+        <profile value="https://healex.systems/fhir/StructureDefinition/ID" />
+      </type>
+      <maxLength value="20" />
+      <mapping>
+        <identity value="v2" />
+        <map value="MSH.20" />
+      </mapping>
+    </element>
+    <element id="MSH.MessageProfileIdentifier">
+      <path value="MSH.MessageProfileIdentifier" />
+      <min value="0" />
+      <max value="*" />
+      <type>
+        <code value="EI" />
+        <profile value="https://healex.systems/fhir/StructureDefinition/EI" />
+      </type>
+      <maxLength value="427" />
+      <mapping>
+        <identity value="v2" />
+        <map value="MSH.21" />
+      </mapping>
+    </element>
+  </differential>
+</StructureDefinition>

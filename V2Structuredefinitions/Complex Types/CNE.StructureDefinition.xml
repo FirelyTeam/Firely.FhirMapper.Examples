@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<StructureDefinition xmlns="http://hl7.org/fhir">
+  <url value="https://healex.systems/fhir/StructureDefinition/CNE" />
+  <name value="CNE" />
+  <title value="Coded With No Exceptions" />
+  <status value="draft" />
+  <fhirVersion value="4.0.1" />
+  <kind value="logical" />
+  <abstract value="false" />
+  <type value="CNE" />
+  <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Element" />
+  <derivation value="specialization" />
+  <differential>
+    <element id="CNE">
+      <path value="CNE" />
+      <definition value="Specifies a coded element and its associated detail. The CNE data type is used when a required&#xD;&#xA;or mandatory coded field is needed. The specified HL7 or externally defined table must be used and may&#xD;&#xA;not be extended with local values. Text may not replace the code. A CNE field must have an HL7 defined&#xD;&#xA;or external table associated with it. It must be specified in the standard." />
+      <min value="0" />
+      <max value="*" />
+      <type>
+        <code value="Element" />
+      </type>
+      <maxLength value="705" />
+      <mapping>
+        <identity value="v2" />
+        <map value="CNE" />
+      </mapping>
+    </element>
+    <element id="CNE.identifier">
+      <path value="CNE.identifier" />
+      <min value="1" />
+      <max value="1" />
+      <type>
+        <code value="ST" />
+        <profile value="https://healex.systems/fhir/StructureDefinition/ST" />
+      </type>
+      <maxLength value="20" />
+      <mapping>
+        <identity value="v2" />
+        <map value="CNE.1" />
+      </mapping>
+    </element>
+    <element id="CNE.text">
+      <path value="CNE.text" />
+      <min value="0" />
+      <max value="1" />
+      <type>
+        <code value="ST" />
+        <profile value="https://healex.systems/fhir/StructureDefinition/ST" />
+      </type>
+      <maxLength value="199" />
+      <mapping>
+        <identity value="v2" />
+        <map value="CNE.2" />
+      </mapping>
+    </element>
+    <element id="CNE.nameOfCodingSystem">
+      <path value="CNE.nameOfCodingSystem" />
+      <code>
+        <system value="http://terminology.hl7.org/CodeSystem/v2-0396" />
+      </code>
+      <min value="0" />
+      <max value="1" />
+      <type>
+        <code value="ID" />
+        <profile value="https://healex.systems/fhir/StructureDefinition/ID" />
+      </type>
+      <maxLength value="20" />
+      <mapping>
+        <identity value="v2" />
+        <map value="CNE.3" />
+      </mapping>
+    </element>
+    <element id="CNE.alternateIdentifier">
+      <path value="CNE.alternateIdentifier" />
+      <min value="0" />
+      <max value="1" />
+      <type>
+        <code value="ST" />
+        <profile value="https://healex.systems/fhir/StructureDefinition/ST" />
+      </type>
+      <maxLength value="20" />
+      <mapping>
+        <identity value="v2" />
+        <map value="CNE.4" />
+      </mapping>
+    </element>
+    <element id="CNE.alternateText">
+      <path value="CNE.alternateText" />
+      <min value="0" />
+      <max value="1" />
+      <type>
+        <code value="ST" />
+        <profile value="https://healex.systems/fhir/StructureDefinition/ST" />
+      </type>
+      <maxLength value="199" />
+      <mapping>
+        <identity value="v2" />
+        <map value="CNE.5" />
+      </mapping>
+    </element>
+    <element id="CNE.nameOfAlternateCodingSystem">
+      <path value="CNE.nameOfAlternateCodingSystem" />
+      <code>
+        <system value="http://terminology.hl7.org/CodeSystem/v2-0396" />
+      </code>
+      <min value="0" />
+      <max value="1" />
+      <type>
+        <code value="ID" />
+        <profile value="https://healex.systems/fhir/StructureDefinition/ID" />
+      </type>
+      <maxLength value="20" />
+      <mapping>
+        <identity value="v2" />
+        <map value="CNE.6" />
+      </mapping>
+    </element>
+    <element id="CNE.codingSystemVersionID">
+      <path value="CNE.codingSystemVersionID" />
+      <min value="0" />
+      <max value="1" />
+      <type>
+        <code value="ST" />
+        <profile value="https://healex.systems/fhir/StructureDefinition/ST" />
+      </type>
+      <maxLength value="10" />
+      <mapping>
+        <identity value="v2" />
+        <map value="CNE.7" />
+      </mapping>
+    </element>
+    <element id="CNE.alternateCodingSystemVersionID">
+      <path value="CNE.alternateCodingSystemVersionID" />
+      <min value="0" />
+      <max value="1" />
+      <type>
+        <code value="ST" />
+        <profile value="https://healex.systems/fhir/StructureDefinition/ST" />
+      </type>
+      <maxLength value="10" />
+      <mapping>
+        <identity value="v2" />
+        <map value="CNE.8" />
+      </mapping>
+    </element>
+    <element id="CNE.originalText">
+      <path value="CNE.originalText" />
+      <min value="0" />
+      <max value="1" />
+      <type>
+        <code value="ST" />
+        <profile value="https://healex.systems/fhir/StructureDefinition/ST" />
+      </type>
+      <maxLength value="199" />
+      <mapping>
+        <identity value="v2" />
+        <map value="CNE.9" />
+      </mapping>
+    </element>
+  </differential>
+</StructureDefinition>

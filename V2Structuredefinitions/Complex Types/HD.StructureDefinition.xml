@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<StructureDefinition xmlns="http://hl7.org/fhir">
+  <url value="https://healex.systems/fhir/StructureDefinition/HD" />
+  <name value="HD" />
+  <title value="Hierarchic designator" />
+  <status value="draft" />
+  <fhirVersion value="4.0.1" />
+  <kind value="logical" />
+  <abstract value="false" />
+  <type value="HD" />
+  <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Element" />
+  <derivation value="specialization" />
+  <differential>
+    <element id="HD">
+      <path value="HD" />
+      <definition value="The basic definition of the HD is that it identifies an (administrative or system or application or&#xD;&#xA;other) entity that has responsibility for managing or assigning a defined set of instance identifiers (such as&#xD;&#xA;placer or filler number, patient identifiers, provider identifiers, etc.). This entity could be a particular health&#xD;&#xA;care application such as a registration system that assigns patient identifiers, a governmental entity such as&#xD;&#xA;a licensing authority that assigns professional identifiers or drivers’ license numbers, or a facility where&#xD;&#xA;such identifiers are assigned." />
+      <min value="0" />
+      <max value="*" />
+      <type>
+        <code value="Element" />
+      </type>
+      <maxLength value="227" />
+      <mapping>
+        <identity value="v2" />
+        <map value="HD" />
+      </mapping>
+    </element>
+    <element id="HD.namespaceID">
+      <path value="HD.namespaceID" />
+      <code>
+        <system value="http://terminology.healex.systems/CodeSystem/v2-0300" />
+      </code>
+      <min value="0" />
+      <max value="1" />
+      <type>
+        <code value="IS" />
+        <profile value="https://healex.systems/fhir/StructureDefinition/IS" />
+      </type>
+      <maxLength value="20" />
+      <mapping>
+        <identity value="v2" />
+        <map value="HD.1" />
+      </mapping>
+    </element>
+    <element id="HD.universalID">
+      <path value="HD.universalID" />
+      <min value="0" />
+      <max value="1" />
+      <type>
+        <code value="ST" />
+        <profile value="https://healex.systems/fhir/StructureDefinition/ST" />
+      </type>
+      <maxLength value="199" />
+      <mapping>
+        <identity value="v2" />
+        <map value="HD.2" />
+      </mapping>
+    </element>
+    <element id="HD.universalIDType">
+      <path value="HD.universalIDType" />
+      <code>
+        <system value="http://terminology.hl7.org/CodeSystem/v2-0301" />
+      </code>
+      <min value="0" />
+      <max value="1" />
+      <type>
+        <code value="ID" />
+        <profile value="https://healex.systems/fhir/StructureDefinition/ID" />
+      </type>
+      <maxLength value="6" />
+      <mapping>
+        <identity value="v2" />
+        <map value="HD.3" />
+      </mapping>
+    </element>
+  </differential>
+</StructureDefinition>

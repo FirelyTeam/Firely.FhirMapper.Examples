@@ -1,0 +1,357 @@
+<?xml version="1.0" encoding="utf-8"?>
+<StructureDefinition xmlns="http://hl7.org/fhir">
+  <url value="https://healex.systems/fhir/StructureDefinition/DG1" />
+  <name value="DG1" />
+  <status value="draft" />
+  <fhirVersion value="4.0.1" />
+  <kind value="logical" />
+  <abstract value="false" />
+  <type value="DG1" />
+  <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Element" />
+  <derivation value="specialization" />
+  <differential>
+    <element id="DG1">
+      <path value="DG1" />
+      <definition value="The DG1 segment contains patient diagnosis information of various types, for example, admitting, primary,&#xD;&#xA;etc. The DG1 segment is used to send multiple diagnoses (for example, for medical records encoding). It&#xD;&#xA;is also used when the FT1-19 - Diagnosis Code - FT1 does not provide sufficient information for a billing&#xD;&#xA;system. This diagnosis coding should be distinguished from the clinical problem segment used by&#xD;&#xA;caregivers to manage the patient (see Chapter 12, Patient Care). Coding methodologies are also defined." />
+      <min value="0" />
+      <max value="*" />
+      <type>
+        <code value="Element" />
+      </type>
+      <mapping>
+        <identity value="v2" />
+        <map value="DG1" />
+      </mapping>
+    </element>
+    <element id="DG1.setIDDG1">
+      <path value="DG1.setIDDG1" />
+      <min value="1" />
+      <max value="1" />
+      <type>
+        <code value="SI" />
+        <profile value="https://healex.systems/fhir/StructureDefinition/SI" />
+      </type>
+      <mapping>
+        <identity value="v2" />
+        <map value="DG1.1" />
+      </mapping>
+      <maxLength value="4" />
+    </element>
+    <element id="DG1.diagnosisCodingMethod">
+      <path value="DG1.diagnosisCodingMethod" />
+      <code>
+        <system value="http://terminology.healex.systems/CodeSystem/v2-0053" />
+      </code>
+      <min value="1" />
+      <max value="1" />
+      <type>
+        <code value="ID" />
+        <profile value="https://healex.systems/fhir/StructureDefinition/ID" />
+      </type>
+      <mapping>
+        <identity value="v2" />
+        <map value="DG1.2" />
+      </mapping>
+      <maxLength value="2" />
+    </element>
+    <element id="DG1.diagnosisCode-DG1">
+      <path value="DG1.diagnosisCode-DG1" />
+      <code>
+        <system value="http://terminology.healex.systems/CodeSystem/v2-0051" />
+      </code>
+      <min value="0" />
+      <max value="1" />
+      <type>
+        <code value="CE" />
+        <profile value="https://healex.systems/fhir/StructureDefinition/CE" />
+      </type>
+      <mapping>
+        <identity value="v2" />
+        <map value="DG1.3" />
+      </mapping>
+      <maxLength value="250" />
+    </element>
+    <element id="DG1.diagnosisDescription">
+      <path value="DG1.diagnosisDescription" />
+      <min value="0" />
+      <max value="1" />
+      <type>
+        <code value="ST" />
+        <profile value="https://healex.systems/fhir/StructureDefinition/ST" />
+      </type>
+      <mapping>
+        <identity value="v2" />
+        <map value="DG1.4" />
+      </mapping>
+      <maxLength value="40" />
+    </element>
+    <element id="DG1.diagnosisDateOrTime">
+      <path value="DG1.diagnosisDateOrTime" />
+      <min value="0" />
+      <max value="1" />
+      <type>
+        <code value="TS" />
+        <profile value="https://healex.systems/fhir/StructureDefinition/TS" />
+      </type>
+      <mapping>
+        <identity value="v2" />
+        <map value="DG1.5" />
+      </mapping>
+      <maxLength value="26" />
+    </element>
+    <element id="DG1.diagnosisType">
+      <path value="DG1.diagnosisType" />
+      <code>
+        <system value="	http://terminology.hl7.org/ValueSet/v2-0052" />
+      </code>
+      <min value="1" />
+      <max value="1" />
+      <type>
+        <code value="IS" />
+        <profile value="https://healex.systems/fhir/StructureDefinition/IS" />
+      </type>
+      <mapping>
+        <identity value="v2" />
+        <map value="DG1.6" />
+      </mapping>
+      <maxLength value="2" />
+    </element>
+    <element id="DG1.majorDiagnosticCategory">
+      <path value="DG1.majorDiagnosticCategory" />
+      <code>
+        <system value="http://terminology.healex.systems/CodeSystem/v2-0118" />
+      </code>
+      <min value="0" />
+      <max value="1" />
+      <type>
+        <code value="CE" />
+        <profile value="https://healex.systems/fhir/StructureDefinition/CE" />
+      </type>
+      <mapping>
+        <identity value="v2" />
+        <map value="DG1.7" />
+      </mapping>
+      <maxLength value="250" />
+    </element>
+    <element id="DG1.diagnosticRelatedGroup">
+      <path value="DG1.diagnosticRelatedGroup" />
+      <code>
+        <system value="http://terminology.healex.systems/CodeSystem/v2-0055" />
+      </code>
+      <min value="0" />
+      <max value="1" />
+      <type>
+        <code value="CE" />
+        <profile value="https://healex.systems/fhir/StructureDefinition/CE" />
+      </type>
+      <mapping>
+        <identity value="v2" />
+        <map value="DG1.8" />
+      </mapping>
+      <maxLength value="250" />
+    </element>
+    <element id="DG1.drgApprovalIndicator">
+      <path value="DG1.drgApprovalIndicator" />
+      <code>
+        <system value="http://terminology.hl7.org/CodeSystem/v2-0532" />
+      </code>
+      <min value="0" />
+      <max value="1" />
+      <type>
+        <code value="ID" />
+        <profile value="https://healex.systems/fhir/StructureDefinition/ID" />
+      </type>
+      <mapping>
+        <identity value="v2" />
+        <map value="DG1.9" />
+      </mapping>
+      <maxLength value="1" />
+    </element>
+    <element id="DG1.drgGrouperReviewCode">
+      <path value="DG1.drgGrouperReviewCode" />
+      <code>
+        <system value="http://terminology.healex.systems/CodeSystem/v2-0056" />
+      </code>
+      <min value="0" />
+      <max value="1" />
+      <type>
+        <code value="IS" />
+        <profile value="https://healex.systems/fhir/StructureDefinition/IS" />
+      </type>
+      <mapping>
+        <identity value="v2" />
+        <map value="DG1.10" />
+      </mapping>
+      <maxLength value="2" />
+    </element>
+    <element id="DG1.outlierType">
+      <path value="DG1.outlierType" />
+      <code>
+        <system value="http://terminology.hl7.org/CodeSystem/v2-0083" />
+      </code>
+      <min value="0" />
+      <max value="1" />
+      <type>
+        <code value="CE" />
+        <profile value="https://healex.systems/fhir/StructureDefinition/CE" />
+      </type>
+      <mapping>
+        <identity value="v2" />
+        <map value="DG1.11" />
+      </mapping>
+      <maxLength value="250" />
+    </element>
+    <element id="DG1.outlierDays">
+      <path value="DG1.outlierDays" />
+      <min value="0" />
+      <max value="1" />
+      <type>
+        <code value="NM" />
+        <profile value="https://healex.systems/fhir/StructureDefinition/NM" />
+      </type>
+      <mapping>
+        <identity value="v2" />
+        <map value="DG1.12" />
+      </mapping>
+      <maxLength value="3" />
+    </element>
+    <element id="DG1.outlierCost">
+      <path value="DG1.outlierCost" />
+      <min value="0" />
+      <max value="1" />
+      <type>
+        <code value="CP" />
+        <profile value="https://healex.systems/fhir/StructureDefinition/CP" />
+      </type>
+      <mapping>
+        <identity value="v2" />
+        <map value="DG1.13" />
+      </mapping>
+      <maxLength value="12" />
+    </element>
+    <element id="DG1.grouperVersionAndType">
+      <path value="DG1.grouperVersionAndType" />
+      <min value="0" />
+      <max value="1" />
+      <type>
+        <code value="ST" />
+        <profile value="https://healex.systems/fhir/StructureDefinition/ST" />
+      </type>
+      <mapping>
+        <identity value="v2" />
+        <map value="DG1.14" />
+      </mapping>
+      <maxLength value="4" />
+    </element>
+    <element id="DG1.diagnosisPriority">
+      <path value="DG1.diagnosisPriority" />
+      <code>
+        <system value="http://terminology.hl7.org/CodeSystem/v2-0359" />
+      </code>
+      <min value="0" />
+      <max value="1" />
+      <type>
+        <code value="ID" />
+        <profile value="https://healex.systems/fhir/StructureDefinition/ID" />
+      </type>
+      <mapping>
+        <identity value="v2" />
+        <map value="DG1.15" />
+      </mapping>
+      <maxLength value="2" />
+    </element>
+    <element id="DG1.diagnosisClinician">
+      <path value="DG1.diagnosisClinician" />
+      <min value="0" />
+      <max value="*" />
+      <type>
+        <code value="XCN" />
+        <profile value="https://healex.systems/fhir/StructureDefinition/XCN" />
+      </type>
+      <mapping>
+        <identity value="v2" />
+        <map value="DG1.16" />
+      </mapping>
+      <maxLength value="250" />
+    </element>
+    <element id="DG1.diagnosisClassification">
+      <path value="DG1.diagnosisClassification" />
+      <code>
+        <system value="http://terminology.hl7.org/CodeSystem/v2-0228" />
+      </code>
+      <min value="0" />
+      <max value="1" />
+      <type>
+        <code value="IS" />
+        <profile value="https://healex.systems/fhir/StructureDefinition/IS" />
+      </type>
+      <mapping>
+        <identity value="v2" />
+        <map value="DG1.17" />
+      </mapping>
+      <maxLength value="3" />
+    </element>
+    <element id="DG1.confidentialIndicator">
+      <path value="DG1.confidentialIndicator" />
+      <code>
+        <system value="http://terminology.hl7.org/CodeSystem/v2-0532" />
+      </code>
+      <min value="0" />
+      <max value="1" />
+      <type>
+        <code value="IS" />
+        <profile value="https://healex.systems/fhir/StructureDefinition/IS" />
+      </type>
+      <mapping>
+        <identity value="v2" />
+        <map value="DG1.18" />
+      </mapping>
+      <maxLength value="1" />
+    </element>
+    <element id="DG1.attestationDateOrTime">
+      <path value="DG1.attestationDateOrTime" />
+      <min value="0" />
+      <max value="1" />
+      <type>
+        <code value="TS" />
+        <profile value="https://healex.systems/fhir/StructureDefinition/TS" />
+      </type>
+      <mapping>
+        <identity value="v2" />
+        <map value="DG1.19" />
+      </mapping>
+      <maxLength value="26" />
+    </element>
+    <element id="DG1.diagnosisIdentifier">
+      <path value="DG1.diagnosisIdentifier" />
+      <min value="0" />
+      <max value="1" />
+      <type>
+        <code value="EI" />
+        <profile value="https://healex.systems/fhir/StructureDefinition/EI" />
+      </type>
+      <mapping>
+        <identity value="v2" />
+        <map value="DG1.20" />
+      </mapping>
+      <maxLength value="427" />
+    </element>
+    <element id="DG1.diagnosisActionCode">
+      <path value="DG1.diagnosisActionCode" />
+      <code>
+        <system value="http://terminology.hl7.org/CodeSystem/v2-0206" />
+      </code>
+      <min value="0" />
+      <max value="1" />
+      <type>
+        <code value="ID" />
+        <profile value="https://healex.systems/fhir/StructureDefinition/ID" />
+      </type>
+      <mapping>
+        <identity value="v2" />
+        <map value="DG1.21" />
+      </mapping>
+      <maxLength value="1" />
+    </element>
+  </differential>
+</StructureDefinition>

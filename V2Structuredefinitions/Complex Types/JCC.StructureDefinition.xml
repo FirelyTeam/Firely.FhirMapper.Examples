@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<StructureDefinition xmlns="http://hl7.org/fhir">
+  <url value="https://healex.systems/fhir/StructureDefinition/JCC" />
+  <name value="JCC" />
+  <title value="Job code/class" />
+  <status value="draft" />
+  <fhirVersion value="4.0.1" />
+  <kind value="logical" />
+  <abstract value="false" />
+  <type value="JCC" />
+  <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Element" />
+  <derivation value="specialization" />
+  <differential>
+    <element id="JCC">
+      <path value="JCC" />
+      <min value="0" />
+      <max value="*" />
+      <type>
+        <code value="Element" />
+      </type>
+      <maxLength value="292" />
+      <mapping>
+        <identity value="v2" />
+        <map value="JCC" />
+      </mapping>
+    </element>
+    <element id="JCC.jobCode">
+      <path value="JCC.jobCode" />
+      <code>
+        <system value="http://terminology.healex.systems/CodeSystem/v2-0327" />
+      </code>
+      <min value="0" />
+      <max value="1" />
+      <type>
+        <code value="IS" />
+        <profile value="https://healex.systems/fhir/StructureDefinition/IS" />
+      </type>
+      <maxLength value="20" />
+      <mapping>
+        <identity value="v2" />
+        <map value="JCC.1" />
+      </mapping>
+    </element>
+    <element id="JCC.jobClass">
+      <path value="JCC.jobClass" />
+      <code>
+        <system value="http://terminology.healex.systems/CodeSystem/v2-0328" />
+      </code>
+      <min value="0" />
+      <max value="1" />
+      <type>
+        <code value="IS" />
+        <profile value="https://healex.systems/fhir/StructureDefinition/IS" />
+      </type>
+      <maxLength value="20" />
+      <mapping>
+        <identity value="v2" />
+        <map value="JCC.2" />
+      </mapping>
+    </element>
+    <element id="JCC.jobDescriptionText">
+      <path value="JCC.jobDescriptionText" />
+      <min value="0" />
+      <max value="1" />
+      <type>
+        <code value="TX" />
+        <profile value="https://healex.systems/fhir/StructureDefinition/TX" />
+      </type>
+      <maxLength value="250" />
+      <mapping>
+        <identity value="v2" />
+        <map value="JCC.3" />
+      </mapping>
+    </element>
+  </differential>
+</StructureDefinition>

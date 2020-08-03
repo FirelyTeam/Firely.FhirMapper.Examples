@@ -1,0 +1,639 @@
+<?xml version="1.0" encoding="utf-8"?>
+<StructureDefinition xmlns="http://hl7.org/fhir">
+  <url value="https://healex.systems/fhir/StructureDefinition/NK1" />
+  <name value="NK1" />
+  <status value="draft" />
+  <description value="The NK1 segment contains information about the patient’s other related parties.  Any associated parties may be identified.  Utilizing NK1-1 - set ID, multiple NK1 segments can be sent to patient accounts" />
+  <fhirVersion value="4.0.1" />
+  <kind value="logical" />
+  <abstract value="false" />
+  <type value="NK1" />
+  <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Element" />
+  <derivation value="specialization" />
+  <differential>
+    <element id="NK1">
+      <path value="NK1" />
+      <min value="0" />
+      <max value="*" />
+      <type>
+        <code value="Element" />
+      </type>
+      <mapping>
+        <identity value="v2" />
+        <map value="NK1" />
+      </mapping>
+    </element>
+    <element id="NK1.setIDNK1">
+      <path value="NK1.setIDNK1" />
+      <min value="1" />
+      <max value="1" />
+      <type>
+        <code value="SI" />
+        <profile value="https://healex.systems/fhir/StructureDefinition/SI" />
+      </type>
+      <maxLength value="4" />
+      <mapping>
+        <identity value="v2" />
+        <map value="NK1.1" />
+      </mapping>
+    </element>
+    <element id="NK1.name">
+      <path value="NK1.name" />
+      <min value="0" />
+      <max value="*" />
+      <type>
+        <code value="XPN" />
+        <profile value="https://healex.systems/fhir/StructureDefinition/XPN" />
+      </type>
+      <maxLength value="250" />
+      <mapping>
+        <identity value="v2" />
+        <map value="NK1.2" />
+      </mapping>
+    </element>
+    <element id="NK1.relationship">
+      <path value="NK1.relationship" />
+      <code>
+        <system value="http://terminology.hl7.org/CodeSystem/v2-0063" />
+      </code>
+      <min value="0" />
+      <max value="1" />
+      <type>
+        <code value="CE" />
+        <profile value="https://healex.systems/fhir/StructureDefinition/CE" />
+      </type>
+      <maxLength value="250" />
+      <mapping>
+        <identity value="v2" />
+        <map value="NK1.3" />
+      </mapping>
+    </element>
+    <element id="NK1.address">
+      <path value="NK1.address" />
+      <min value="0" />
+      <max value="*" />
+      <type>
+        <code value="XAD" />
+        <profile value="https://healex.systems/fhir/StructureDefinition/XAD" />
+      </type>
+      <maxLength value="250" />
+      <mapping>
+        <identity value="v2" />
+        <map value="NK1.4" />
+      </mapping>
+    </element>
+    <element id="NK1.phoneNumber">
+      <path value="NK1.phoneNumber" />
+      <min value="0" />
+      <max value="*" />
+      <type>
+        <code value="XTN" />
+        <profile value="https://healex.systems/fhir/StructureDefinition/XTN" />
+      </type>
+      <maxLength value="250" />
+      <mapping>
+        <identity value="v2" />
+        <map value="NK1.5" />
+      </mapping>
+    </element>
+    <element id="NK1.businessPhoneNumber">
+      <path value="NK1.businessPhoneNumber" />
+      <min value="0" />
+      <max value="*" />
+      <type>
+        <code value="XTN" />
+        <profile value="https://healex.systems/fhir/StructureDefinition/XTN" />
+      </type>
+      <maxLength value="250" />
+      <mapping>
+        <identity value="v2" />
+        <map value="NK1.6" />
+      </mapping>
+    </element>
+    <element id="NK1.contractRole">
+      <path value="NK1.contractRole" />
+      <code>
+        <system value="http://terminology.hl7.org/CodeSystem/v2-0131" />
+      </code>
+      <min value="0" />
+      <max value="1" />
+      <type>
+        <code value="CE" />
+        <profile value="https://healex.systems/fhir/StructureDefinition/CE" />
+      </type>
+      <maxLength value="250" />
+      <mapping>
+        <identity value="v2" />
+        <map value="NK1.7" />
+      </mapping>
+    </element>
+    <element id="NK1.startDate">
+      <path value="NK1.startDate" />
+      <min value="0" />
+      <max value="1" />
+      <type>
+        <code value="DT" />
+        <profile value="https://healex.systems/fhir/StructureDefinition/DT" />
+      </type>
+      <maxLength value="8" />
+      <mapping>
+        <identity value="v2" />
+        <map value="NK1.8" />
+      </mapping>
+    </element>
+    <element id="NK1.endDate">
+      <path value="NK1.endDate" />
+      <min value="0" />
+      <max value="1" />
+      <type>
+        <code value="DT" />
+        <profile value="https://healex.systems/fhir/StructureDefinition/DT" />
+      </type>
+      <maxLength value="8" />
+      <mapping>
+        <identity value="v2" />
+        <map value="NK1.9" />
+      </mapping>
+    </element>
+    <element id="NK1.nextOfKinAssociatedPartiesJobTitle">
+      <path value="NK1.nextOfKinAssociatedPartiesJobTitle" />
+      <min value="0" />
+      <max value="1" />
+      <type>
+        <code value="ST" />
+        <profile value="https://healex.systems/fhir/StructureDefinition/ST" />
+      </type>
+      <maxLength value="60" />
+      <mapping>
+        <identity value="v2" />
+        <map value="NK1.10" />
+      </mapping>
+    </element>
+    <element id="NK1.nextOfKinAssociatedPartiesJobCodeClass">
+      <path value="NK1.nextOfKinAssociatedPartiesJobCodeClass" />
+      <code>
+        <system value="http://terminology.healex.systems/CodeSystem/v2-0327" />
+      </code>
+      <code>
+        <system value="http://terminology.healex.systems/CodeSystem/v2-0328" />
+      </code>
+      <min value="0" />
+      <max value="1" />
+      <type>
+        <code value="JCC" />
+        <profile value="https://healex.systems/fhir/StructureDefinition/JCC" />
+      </type>
+      <maxLength value="20" />
+      <mapping>
+        <identity value="v2" />
+        <map value="NK1.11" />
+      </mapping>
+    </element>
+    <element id="NK1.nextOfKinAssociatedPartiesEmployeeNumber">
+      <path value="NK1.nextOfKinAssociatedPartiesEmployeeNumber" />
+      <min value="0" />
+      <max value="1" />
+      <type>
+        <code value="CX" />
+        <profile value="https://healex.systems/fhir/StructureDefinition/CX" />
+      </type>
+      <maxLength value="250" />
+      <mapping>
+        <identity value="v2" />
+        <map value="NK1.12" />
+      </mapping>
+    </element>
+    <element id="NK1.organizationNameNK1">
+      <path value="NK1.organizationNameNK1" />
+      <min value="0" />
+      <max value="*" />
+      <type>
+        <code value="XON" />
+        <profile value="https://healex.systems/fhir/StructureDefinition/XON" />
+      </type>
+      <maxLength value="250" />
+      <mapping>
+        <identity value="v2" />
+        <map value="NK1.13" />
+      </mapping>
+    </element>
+    <element id="NK1.maritalStatus">
+      <path value="NK1.maritalStatus" />
+      <code>
+        <system value="http://terminology.hl7.org/CodeSystem/v2-0002" />
+      </code>
+      <min value="0" />
+      <max value="1" />
+      <type>
+        <code value="CE" />
+        <profile value="https://healex.systems/fhir/StructureDefinition/CE" />
+      </type>
+      <maxLength value="250" />
+      <mapping>
+        <identity value="v2" />
+        <map value="NK1.14" />
+      </mapping>
+    </element>
+    <element id="NK1.administrativeSex">
+      <path value="NK1.administrativeSex" />
+      <code>
+        <system value="http://terminology.hl7.org/CodeSystem/v2-0001" />
+      </code>
+      <min value="0" />
+      <max value="1" />
+      <type>
+        <code value="IS" />
+        <profile value="https://healex.systems/fhir/StructureDefinition/IS" />
+      </type>
+      <maxLength value="1" />
+      <mapping>
+        <identity value="v2" />
+        <map value="NK1.15" />
+      </mapping>
+    </element>
+    <element id="NK1.dateTimeOfBirth">
+      <path value="NK1.dateTimeOfBirth" />
+      <min value="0" />
+      <max value="1" />
+      <type>
+        <code value="TS" />
+        <profile value="https://healex.systems/fhir/StructureDefinition/TS" />
+      </type>
+      <maxLength value="26" />
+      <mapping>
+        <identity value="v2" />
+        <map value="NK1.16" />
+      </mapping>
+    </element>
+    <element id="NK1.livingDependency">
+      <path value="NK1.livingDependency" />
+      <code>
+        <system value="http://terminology.hl7.org/CodeSystem/v2-0223" />
+      </code>
+      <min value="0" />
+      <max value="*" />
+      <type>
+        <code value="IS" />
+        <profile value="https://healex.systems/fhir/StructureDefinition/IS" />
+      </type>
+      <maxLength value="2" />
+      <mapping>
+        <identity value="v2" />
+        <map value="NK1.17" />
+      </mapping>
+    </element>
+    <element id="NK1.ambulatoryStatus">
+      <path value="NK1.ambulatoryStatus" />
+      <code>
+        <system value="http://terminology.hl7.org/CodeSystem/v2-0009" />
+      </code>
+      <min value="0" />
+      <max value="*" />
+      <type>
+        <code value="IS" />
+        <profile value="https://healex.systems/fhir/StructureDefinition/IS" />
+      </type>
+      <maxLength value="2" />
+      <mapping>
+        <identity value="v2" />
+        <map value="NK1.18" />
+      </mapping>
+    </element>
+    <element id="NK1.citizenship">
+      <path value="NK1.citizenship" />
+      <code>
+        <system value="http://terminology.healex.systems/CodeSystem/v2-0171" />
+      </code>
+      <min value="0" />
+      <max value="*" />
+      <type>
+        <code value="CE" />
+        <profile value="https://healex.systems/fhir/StructureDefinition/CE" />
+      </type>
+      <maxLength value="250" />
+      <mapping>
+        <identity value="v2" />
+        <map value="NK1.19" />
+      </mapping>
+    </element>
+    <element id="NK1.primaryLanguage">
+      <path value="NK1.primaryLanguage" />
+      <code>
+        <system value="http://terminology.healex.systems/CodeSystem/v2-0296" />
+      </code>
+      <min value="0" />
+      <max value="1" />
+      <type>
+        <code value="CE" />
+        <profile value="https://healex.systems/fhir/StructureDefinition/CE" />
+      </type>
+      <maxLength value="250" />
+      <mapping>
+        <identity value="v2" />
+        <map value="NK1.20" />
+      </mapping>
+    </element>
+    <element id="NK1.livingArrangement">
+      <path value="NK1.livingArrangement" />
+      <code>
+        <system value="http://terminology.hl7.org/CodeSystem/v2-0220" />
+      </code>
+      <min value="0" />
+      <max value="1" />
+      <type>
+        <code value="IS" />
+        <profile value="https://healex.systems/fhir/StructureDefinition/IS" />
+      </type>
+      <maxLength value="2" />
+      <mapping>
+        <identity value="v2" />
+        <map value="NK1.21" />
+      </mapping>
+    </element>
+    <element id="NK1.publicityCode">
+      <path value="NK1.publicityCode" />
+      <code>
+        <system value="http://terminology.hl7.org/CodeSystem/v2-0215" />
+      </code>
+      <min value="0" />
+      <max value="1" />
+      <type>
+        <code value="CE" />
+        <profile value="https://healex.systems/fhir/StructureDefinition/CE" />
+      </type>
+      <maxLength value="250" />
+      <mapping>
+        <identity value="v2" />
+        <map value="NK1.22" />
+      </mapping>
+    </element>
+    <element id="NK1.protectionIndicator">
+      <path value="NK1.protectionIndicator" />
+      <code>
+        <system value="http://terminology.hl7.org/CodeSystem/v2-0532" />
+      </code>
+      <min value="0" />
+      <max value="1" />
+      <type>
+        <code value="ID" />
+        <profile value="https://healex.systems/fhir/StructureDefinition/ID" />
+      </type>
+      <maxLength value="1" />
+      <mapping>
+        <identity value="v2" />
+        <map value="NK1.23" />
+      </mapping>
+    </element>
+    <element id="NK1.studentIndicator">
+      <path value="NK1.studentIndicator" />
+      <code>
+        <system value="http://terminology.hl7.org/CodeSystem/v2-0231" />
+      </code>
+      <min value="0" />
+      <max value="1" />
+      <type>
+        <code value="IS" />
+        <profile value="https://healex.systems/fhir/StructureDefinition/IS" />
+      </type>
+      <maxLength value="2" />
+      <mapping>
+        <identity value="v2" />
+        <map value="NK1.24" />
+      </mapping>
+    </element>
+    <element id="NK1.religion">
+      <path value="NK1.religion" />
+      <code>
+        <system value="http://terminology.healex.systems/CodeSystem/v2-0006" />
+      </code>
+      <min value="0" />
+      <max value="1" />
+      <type>
+        <code value="CE" />
+        <profile value="https://healex.systems/fhir/StructureDefinition/CE" />
+      </type>
+      <maxLength value="25080" />
+      <mapping>
+        <identity value="v2" />
+        <map value="NK1.25" />
+      </mapping>
+    </element>
+    <element id="NK1.mothersMaidenName">
+      <path value="NK1.mothersMaidenName" />
+      <min value="0" />
+      <max value="*" />
+      <type>
+        <code value="XPN" />
+        <profile value="https://healex.systems/fhir/StructureDefinition/XPN" />
+      </type>
+      <maxLength value="250" />
+      <mapping>
+        <identity value="v2" />
+        <map value="NK1.26" />
+      </mapping>
+    </element>
+    <element id="NK1.nationality">
+      <path value="NK1.nationality" />
+      <code>
+        <system value="http://terminology.healex.systems/CodeSystem/v2-0212" />
+      </code>
+      <min value="0" />
+      <max value="1" />
+      <type>
+        <code value="CE" />
+        <profile value="https://healex.systems/fhir/StructureDefinition/CE" />
+      </type>
+      <maxLength value="250" />
+      <mapping>
+        <identity value="v2" />
+        <map value="NK1.27" />
+      </mapping>
+    </element>
+    <element id="NK1.ethnicGroup">
+      <path value="NK1.ethnicGroup" />
+      <code>
+        <system value="http://terminology.hl7.org/CodeSystem/v2-0189" />
+      </code>
+      <min value="0" />
+      <max value="*" />
+      <type>
+        <code value="CE" />
+        <profile value="https://healex.systems/fhir/StructureDefinition/CE" />
+      </type>
+      <maxLength value="250" />
+      <mapping>
+        <identity value="v2" />
+        <map value="NK1.28" />
+      </mapping>
+    </element>
+    <element id="NK1.contactReason">
+      <path value="NK1.contactReason" />
+      <code>
+        <system value="http://terminology.healex.systems/CodeSystem/v2-0222" />
+      </code>
+      <min value="0" />
+      <max value="*" />
+      <type>
+        <code value="CE" />
+        <profile value="https://healex.systems/fhir/StructureDefinition/CE" />
+      </type>
+      <maxLength value="250" />
+      <mapping>
+        <identity value="v2" />
+        <map value="NK1.29" />
+      </mapping>
+    </element>
+    <element id="NK1.contactPersonsName">
+      <path value="NK1.contactPersonsName" />
+      <min value="0" />
+      <max value="*" />
+      <type>
+        <code value="XPN" />
+        <profile value="https://healex.systems/fhir/StructureDefinition/XPN" />
+      </type>
+      <maxLength value="250" />
+      <mapping>
+        <identity value="v2" />
+        <map value="NK1.30" />
+      </mapping>
+    </element>
+    <element id="NK1.contactPersonsTelephoneNumber">
+      <path value="NK1.contactPersonsTelephoneNumber" />
+      <min value="0" />
+      <max value="*" />
+      <type>
+        <code value="XTN" />
+        <profile value="https://healex.systems/fhir/StructureDefinition/XTN" />
+      </type>
+      <maxLength value="250" />
+      <mapping>
+        <identity value="v2" />
+        <map value="NK1.31" />
+      </mapping>
+    </element>
+    <element id="NK1.contactPersonsAddress">
+      <path value="NK1.contactPersonsAddress" />
+      <min value="0" />
+      <max value="*" />
+      <type>
+        <code value="XAD" />
+        <profile value="https://healex.systems/fhir/StructureDefinition/XAD" />
+      </type>
+      <maxLength value="250" />
+      <mapping>
+        <identity value="v2" />
+        <map value="NK1.32" />
+      </mapping>
+    </element>
+    <element id="NK1.nextOfKinAssociatedPartysIdentifiers">
+      <path value="NK1.nextOfKinAssociatedPartysIdentifiers" />
+      <min value="0" />
+      <max value="*" />
+      <type>
+        <code value="CX" />
+        <profile value="https://healex.systems/fhir/StructureDefinition/CX" />
+      </type>
+      <maxLength value="250" />
+      <mapping>
+        <identity value="v2" />
+        <map value="NK1.33" />
+      </mapping>
+    </element>
+    <element id="NK1.jobStatus">
+      <path value="NK1.jobStatus" />
+      <code>
+        <system value="http://terminology.hl7.org/CodeSystem/v2-0311" />
+      </code>
+      <min value="0" />
+      <max value="1" />
+      <type>
+        <code value="IS" />
+        <profile value="https://healex.systems/fhir/StructureDefinition/IS" />
+      </type>
+      <maxLength value="2" />
+      <mapping>
+        <identity value="v2" />
+        <map value="NK1.34" />
+      </mapping>
+    </element>
+    <element id="NK1.race">
+      <path value="NK1.race" />
+      <code>
+        <system value="http://terminology.hl7.org/CodeSystem/v2-0005" />
+      </code>
+      <min value="0" />
+      <max value="*" />
+      <type>
+        <code value="CE" />
+        <profile value="https://healex.systems/fhir/StructureDefinition/CE" />
+      </type>
+      <maxLength value="250" />
+      <mapping>
+        <identity value="v2" />
+        <map value="NK1.35" />
+      </mapping>
+    </element>
+    <element id="NK1.handicap">
+      <path value="NK1.handicap" />
+      <code>
+        <system value="http://terminology.healex.systems/CodeSystem/v2-0295" />
+      </code>
+      <min value="0" />
+      <max value="1" />
+      <type>
+        <code value="IS" />
+        <profile value="https://healex.systems/fhir/StructureDefinition/IS" />
+      </type>
+      <maxLength value="2" />
+      <mapping>
+        <identity value="v2" />
+        <map value="NK1.36" />
+      </mapping>
+    </element>
+    <element id="NK1.contactPersonSocialSecurityNumber">
+      <path value="NK1.contactPersonSocialSecurityNumber" />
+      <min value="0" />
+      <max value="1" />
+      <type>
+        <code value="ST" />
+        <profile value="https://healex.systems/fhir/StructureDefinition/ST" />
+      </type>
+      <maxLength value="16" />
+      <mapping>
+        <identity value="v2" />
+        <map value="NK1.37" />
+      </mapping>
+    </element>
+    <element id="NK1.nextOfKinBirthPlace">
+      <path value="NK1.nextOfKinBirthPlace" />
+      <min value="0" />
+      <max value="1" />
+      <type>
+        <code value="ST" />
+        <profile value="https://healex.systems/fhir/StructureDefinition/ST" />
+      </type>
+      <maxLength value="250" />
+      <mapping>
+        <identity value="v2" />
+        <map value="NK1.38" />
+      </mapping>
+    </element>
+    <element id="NK1.vipIndicator">
+      <path value="NK1.vipIndicator" />
+      <code>
+        <system value="http://terminology.healex.systems/CodeSystem/v2-0099" />
+      </code>
+      <min value="0" />
+      <max value="1" />
+      <type>
+        <code value="IS" />
+        <profile value="https://healex.systems/fhir/StructureDefinition/IS" />
+      </type>
+      <maxLength value="2" />
+      <mapping>
+        <identity value="v2" />
+        <map value="NK1.39" />
+      </mapping>
+    </element>
+  </differential>
+</StructureDefinition>

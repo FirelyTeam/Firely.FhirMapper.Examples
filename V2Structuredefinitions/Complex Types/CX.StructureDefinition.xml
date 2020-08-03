@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<StructureDefinition xmlns="http://hl7.org/fhir">
+  <url value="https://healex.systems/fhir/StructureDefinition/CX" />
+  <name value="CX" />
+  <title value="Extended composite ID with check digit" />
+  <status value="draft" />
+  <fhirVersion value="4.0.1" />
+  <kind value="logical" />
+  <abstract value="false" />
+  <type value="CX" />
+  <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Element" />
+  <derivation value="specialization" />
+  <differential>
+    <element id="CX">
+      <path value="CX" />
+      <min value="0" />
+      <max value="*" />
+      <type>
+        <code value="Element" />
+      </type>
+      <maxLength value="1913" />
+      <mapping>
+        <identity value="v2" />
+        <map value="CX" />
+      </mapping>
+    </element>
+    <element id="CX.iDNumber">
+      <path value="CX.iDNumber" />
+      <min value="1" />
+      <max value="1" />
+      <type>
+        <code value="ST" />
+        <profile value="https://healex.systems/fhir/StructureDefinition/ST" />
+      </type>
+      <maxLength value="15" />
+      <mapping>
+        <identity value="v2" />
+        <map value="CX.1" />
+      </mapping>
+    </element>
+    <element id="CX.checkDigit">
+      <path value="CX.checkDigit" />
+      <min value="0" />
+      <max value="1" />
+      <type>
+        <code value="ST" />
+        <profile value="https://healex.systems/fhir/StructureDefinition/ST" />
+      </type>
+      <maxLength value="1" />
+      <mapping>
+        <identity value="v2" />
+        <map value="CX.2" />
+      </mapping>
+    </element>
+    <element id="CX.checkDigitScheme">
+      <path value="CX.checkDigitScheme" />
+      <code>
+        <system value="http://terminology.hl7.org/CodeSystem/v2-0061" />
+      </code>
+      <min value="0" />
+      <max value="1" />
+      <type>
+        <code value="ID" />
+        <profile value="https://healex.systems/fhir/StructureDefinition/ID" />
+      </type>
+      <maxLength value="3" />
+      <mapping>
+        <identity value="v2" />
+        <map value="CX.3" />
+      </mapping>
+    </element>
+    <element id="CX.assigningAuthority">
+      <path value="CX.assigningAuthority" />
+      <code>
+        <system value="http://terminology.hl7.org/CodeSystem/v2-0363" />
+      </code>
+      <min value="0" />
+      <max value="1" />
+      <type>
+        <code value="HD" />
+        <profile value="https://healex.systems/fhir/StructureDefinition/HD" />
+      </type>
+      <maxLength value="227" />
+      <mapping>
+        <identity value="v2" />
+        <map value="CX.4" />
+      </mapping>
+    </element>
+    <element id="CX.idnetifierTypeCode">
+      <path value="CX.idnetifierTypeCode" />
+      <code>
+        <system value="http://terminology.hl7.org/CodeSystem/v2-0203" />
+      </code>
+      <min value="0" />
+      <max value="1" />
+      <type>
+        <code value="ST" />
+        <profile value="https://healex.systems/fhir/StructureDefinition/ST" />
+      </type>
+      <maxLength value="5" />
+      <mapping>
+        <identity value="v2" />
+        <map value="CX.5" />
+      </mapping>
+    </element>
+    <element id="CX.assigningFacility">
+      <path value="CX.assigningFacility" />
+      <min value="0" />
+      <max value="1" />
+      <type>
+        <code value="HD" />
+        <profile value="https://healex.systems/fhir/StructureDefinition/HD" />
+      </type>
+      <maxLength value="227" />
+      <mapping>
+        <identity value="v2" />
+        <map value="CX.6" />
+      </mapping>
+    </element>
+    <element id="CX.effectiveDate">
+      <path value="CX.effectiveDate" />
+      <min value="0" />
+      <max value="*" />
+      <type>
+        <code value="DT" />
+        <profile value="https://healex.systems/fhir/StructureDefinition/DT" />
+      </type>
+      <maxLength value="8" />
+      <mapping>
+        <identity value="v2" />
+        <map value="CX.7" />
+      </mapping>
+    </element>
+    <element id="CX.expirationDate">
+      <path value="CX.expirationDate" />
+      <min value="0" />
+      <max value="1" />
+      <type>
+        <code value="DT" />
+        <profile value="https://healex.systems/fhir/StructureDefinition/DT" />
+      </type>
+      <maxLength value="8" />
+      <mapping>
+        <identity value="v2" />
+        <map value="CX.8" />
+      </mapping>
+    </element>
+    <element id="CX.assigningJurisdiction">
+      <path value="CX.assigningJurisdiction" />
+      <min value="0" />
+      <max value="1" />
+      <type>
+        <code value="CWE" />
+        <profile value="https://healex.systems/fhir/StructureDefinition/CWE" />
+      </type>
+      <maxLength value="705" />
+      <mapping>
+        <identity value="v2" />
+        <map value="CX.9" />
+      </mapping>
+    </element>
+    <element id="CX.assigningAgencyOrDepartment">
+      <path value="CX.assigningAgencyOrDepartment" />
+      <min value="0" />
+      <max value="1" />
+      <type>
+        <code value="CWE" />
+        <profile value="https://healex.systems/fhir/StructureDefinition/CWE" />
+      </type>
+      <maxLength value="705" />
+      <mapping>
+        <identity value="v2" />
+        <map value="CX.10" />
+      </mapping>
+    </element>
+  </differential>
+</StructureDefinition>

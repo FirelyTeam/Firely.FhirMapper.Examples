@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<StructureDefinition xmlns="http://hl7.org/fhir">
+  <url value="https://healex.systems/fhir/StructureDefinition/CN" />
+  <name value="CN" />
+  <status value="draft" />
+  <fhirVersion value="4.0.1" />
+  <kind value="logical" />
+  <abstract value="false" />
+  <type value="CN" />
+  <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Element" />
+  <derivation value="specialization" />
+  <differential>
+    <element id="CN">
+      <path value="CN" />
+      <min value="0" />
+      <max value="*" />
+      <type>
+        <code value="Element" />
+      </type>
+      <mapping>
+        <identity value="v2" />
+        <map value="CN" />
+      </mapping>
+    </element>
+    <element id="CN.idNumber">
+      <path value="CN.idNumber" />
+      <min value="0" />
+      <max value="1" />
+      <type>
+        <code value="ST" />
+        <profile value="https://healex.systems/fhir/StructureDefinition/ST" />
+      </type>
+      <mapping>
+        <identity value="v2" />
+        <map value="CN.1" />
+      </mapping>
+    </element>
+    <element id="CN.familyName">
+      <path value="CN.familyName" />
+      <min value="0" />
+      <max value="1" />
+      <type>
+        <code value="ST" />
+        <profile value="https://healex.systems/fhir/StructureDefinition/ST" />
+      </type>
+      <mapping>
+        <identity value="v2" />
+        <map value="CN.2" />
+      </mapping>
+    </element>
+    <element id="CN.givenName">
+      <path value="CN.givenName" />
+      <min value="0" />
+      <max value="1" />
+      <type>
+        <code value="ST" />
+        <profile value="https://healex.systems/fhir/StructureDefinition/ST" />
+      </type>
+      <mapping>
+        <identity value="v2" />
+        <map value="CN.3" />
+      </mapping>
+    </element>
+    <element id="CN.middleInitialOrName">
+      <path value="CN.middleInitialOrName" />
+      <min value="0" />
+      <max value="1" />
+      <type>
+        <code value="ST" />
+        <profile value="https://healex.systems/fhir/StructureDefinition/ST" />
+      </type>
+      <mapping>
+        <identity value="v2" />
+        <map value="CN.4" />
+      </mapping>
+    </element>
+    <element id="CN.suffix">
+      <path value="CN.suffix" />
+      <min value="0" />
+      <max value="1" />
+      <type>
+        <code value="ST" />
+        <profile value="https://healex.systems/fhir/StructureDefinition/ST" />
+      </type>
+      <mapping>
+        <identity value="v2" />
+        <map value="CN.5" />
+      </mapping>
+    </element>
+    <element id="CN.prefix">
+      <path value="CN.prefix" />
+      <min value="0" />
+      <max value="1" />
+      <type>
+        <code value="ST" />
+        <profile value="https://healex.systems/fhir/StructureDefinition/ST" />
+      </type>
+      <mapping>
+        <identity value="v2" />
+        <map value="CN.6" />
+      </mapping>
+    </element>
+    <element id="CN.degree">
+      <path value="CN.degree" />
+      <min value="0" />
+      <max value="1" />
+      <type>
+        <code value="ST" />
+        <profile value="https://healex.systems/fhir/StructureDefinition/ST" />
+      </type>
+      <mapping>
+        <identity value="v2" />
+        <map value="CN.7" />
+      </mapping>
+    </element>
+    <element id="CN.sourceTable">
+      <path value="CN.sourceTable" />
+      <code>
+        <system value="http://terminology.healex.systems/CodeSystem/v2-0297" />
+      </code>
+      <min value="0" />
+      <max value="1" />
+      <type>
+        <code value="ID" />
+        <profile value="https://healex.systems/fhir/StructureDefinition/ID" />
+      </type>
+      <mapping>
+        <identity value="v2" />
+        <map value="CN.8" />
+      </mapping>
+    </element>
+    <element id="CN.assigningAuthority">
+      <path value="CN.assigningAuthority" />
+      <min value="0" />
+      <max value="1" />
+      <type>
+        <code value="ST" />
+        <profile value="https://healex.systems/fhir/StructureDefinition/ST" />
+      </type>
+      <mapping>
+        <identity value="v2" />
+        <map value="CN.9" />
+      </mapping>
+    </element>
+  </differential>
+</StructureDefinition>

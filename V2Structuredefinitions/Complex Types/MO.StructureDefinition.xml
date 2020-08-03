@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<StructureDefinition xmlns="http://hl7.org/fhir">
+  <url value="https://healex.systems/fhir/StructureDefinition/MO" />
+  <name value="MO" />
+  <title value="Money" />
+  <status value="draft" />
+  <fhirVersion value="4.0.1" />
+  <kind value="logical" />
+  <abstract value="false" />
+  <type value="MO" />
+  <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Element" />
+  <derivation value="specialization" />
+  <differential>
+    <element id="MO">
+      <path value="MO" />
+      <definition value="This data type specifies an amount of money and the denomination in which it is expressed." />
+      <min value="0" />
+      <max value="*" />
+      <type>
+        <code value="Element" />
+      </type>
+      <maxLength value="20" />
+      <mapping>
+        <identity value="v2" />
+        <map value="MO" />
+      </mapping>
+    </element>
+    <element id="MO.quantity">
+      <path value="MO.quantity" />
+      <min value="0" />
+      <max value="1" />
+      <type>
+        <code value="NM" />
+        <profile value="https://healex.systems/fhir/StructureDefinition/NM" />
+      </type>
+      <maxLength value="16" />
+      <mapping>
+        <identity value="v2" />
+        <map value="MO.1" />
+      </mapping>
+    </element>
+    <element id="MO.denomination">
+      <path value="MO.denomination" />
+      <min value="0" />
+      <max value="1" />
+      <type>
+        <code value="NM" />
+        <profile value="https://healex.systems/fhir/StructureDefinition/ID" />
+      </type>
+      <maxLength value="3" />
+      <mapping>
+        <identity value="v2" />
+        <map value="MO.2" />
+      </mapping>
+    </element>
+  </differential>
+</StructureDefinition>

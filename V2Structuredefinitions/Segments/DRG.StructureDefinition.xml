@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="utf-8"?>
+<StructureDefinition xmlns="http://hl7.org/fhir">
+  <url value="https://healex.systems/fhir/StructureDefinition/DRG" />
+  <name value="DRG" />
+  <status value="draft" />
+  <fhirVersion value="4.0.1" />
+  <kind value="logical" />
+  <abstract value="false" />
+  <type value="DRG" />
+  <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Element" />
+  <derivation value="specialization" />
+  <differential>
+    <element id="DRG">
+      <path value="DRG" />
+      <definition value="The DRG segment contains diagnoses-related grouping information of various types. The DRG segment is&#xD;&#xA;used to send the DRG information, for example, for billing and medical records encoding" />
+      <min value="0" />
+      <max value="*" />
+      <type>
+        <code value="Element" />
+      </type>
+      <mapping>
+        <identity value="v2" />
+        <map value="DRG" />
+      </mapping>
+    </element>
+    <element id="DRG.diagnosticRelatedGroup">
+      <path value="DRG.diagnosticRelatedGroup" />
+      <code>
+        <system value="http://terminology.healex.systems/CodeSystem/v2-0055" />
+      </code>
+      <min value="0" />
+      <max value="1" />
+      <type>
+        <code value="CE" />
+        <profile value="https://healex.systems/fhir/StructureDefinition/CE" />
+      </type>
+      <mapping>
+        <identity value="v2" />
+        <map value="DRG.1" />
+      </mapping>
+      <maxLength value="250" />
+    </element>
+    <element id="DRG.drgAssignedDateOrTime">
+      <path value="DRG.drgAssignedDateOrTime" />
+      <min value="0" />
+      <max value="1" />
+      <type>
+        <code value="TS" />
+        <profile value="https://healex.systems/fhir/StructureDefinition/TS" />
+      </type>
+      <mapping>
+        <identity value="v2" />
+        <map value="DRG.2" />
+      </mapping>
+      <maxLength value="26" />
+    </element>
+    <element id="DRG.drgApprovalIndicator">
+      <path value="DRG.drgApprovalIndicator" />
+      <code>
+        <system value="http://terminology.hl7.org/CodeSystem/v2-0532" />
+      </code>
+      <min value="0" />
+      <max value="1" />
+      <type>
+        <code value="ID" />
+        <profile value="https://healex.systems/fhir/StructureDefinition/ID" />
+      </type>
+      <mapping>
+        <identity value="v2" />
+        <map value="DRG.3" />
+      </mapping>
+      <maxLength value="1" />
+    </element>
+    <element id="DRG.drgGrouperReviewCode">
+      <path value="DRG.drgGrouperReviewCode" />
+      <code>
+        <system value="http://terminology.healex.systems/CodeSystem/v2-0056" />
+      </code>
+      <min value="0" />
+      <max value="1" />
+      <type>
+        <code value="IS" />
+        <profile value="https://healex.systems/fhir/StructureDefinition/IS" />
+      </type>
+      <mapping>
+        <identity value="v2" />
+        <map value="DRG.4" />
+      </mapping>
+      <maxLength value="2" />
+    </element>
+    <element id="DRG.outlierType">
+      <path value="DRG.outlierType" />
+      <code>
+        <system value="http://terminology.hl7.org/CodeSystem/v2-0083" />
+      </code>
+      <min value="0" />
+      <max value="1" />
+      <type>
+        <code value="CE" />
+        <profile value="https://healex.systems/fhir/StructureDefinition/CE" />
+      </type>
+      <mapping>
+        <identity value="v2" />
+        <map value="DRG.5" />
+      </mapping>
+      <maxLength value="250" />
+    </element>
+    <element id="DRG.outlierDays">
+      <path value="DRG.outlierDays" />
+      <min value="0" />
+      <max value="1" />
+      <type>
+        <code value="NM" />
+        <profile value="https://healex.systems/fhir/StructureDefinition/NM" />
+      </type>
+      <mapping>
+        <identity value="v2" />
+        <map value="DRG.6" />
+      </mapping>
+      <maxLength value="3" />
+    </element>
+    <element id="DRG.outlierCost">
+      <path value="DRG.outlierCost" />
+      <min value="0" />
+      <max value="1" />
+      <type>
+        <code value="CP" />
+        <profile value="https://healex.systems/fhir/StructureDefinition/CP" />
+      </type>
+      <mapping>
+        <identity value="v2" />
+        <map value="DRG.7" />
+      </mapping>
+      <maxLength value="12" />
+    </element>
+    <element id="DRG.drgPayor">
+      <path value="DRG.drgPayor" />
+      <code>
+        <system value="http://terminology.healex.systems/CodeSystem/v2-0229" />
+      </code>
+      <min value="0" />
+      <max value="1" />
+      <type>
+        <code value="IS" />
+        <profile value="https://healex.systems/fhir/StructureDefinition/IS" />
+      </type>
+      <mapping>
+        <identity value="v2" />
+        <map value="DRG.8" />
+      </mapping>
+      <maxLength value="1" />
+    </element>
+    <element id="DRG.outlierReimbursement">
+      <path value="DRG.outlierReimbursement" />
+      <min value="0" />
+      <max value="1" />
+      <type>
+        <code value="CP" />
+        <profile value="https://healex.systems/fhir/StructureDefinition/CP" />
+      </type>
+      <mapping>
+        <identity value="v2" />
+        <map value="DRG.9" />
+      </mapping>
+      <maxLength value="9" />
+    </element>
+    <element id="DRG.confidentialIndicator">
+      <path value="DRG.confidentialIndicator" />
+      <code>
+        <system value="http://terminology.hl7.org/CodeSystem/v2-0532" />
+      </code>
+      <min value="0" />
+      <max value="1" />
+      <type>
+        <code value="ID" />
+        <profile value="https://healex.systems/fhir/StructureDefinition/ID" />
+      </type>
+      <mapping>
+        <identity value="v2" />
+        <map value="DRG.10" />
+      </mapping>
+      <maxLength value="1" />
+    </element>
+    <element id="DRG.drgTransferType">
+      <path value="DRG.drgTransferType" />
+      <code>
+        <system value="http://terminology.hl7.org/CodeSystem/v2-0415" />
+      </code>
+      <min value="0" />
+      <max value="1" />
+      <type>
+        <code value="IS" />
+        <profile value="https://healex.systems/fhir/StructureDefinition/IS" />
+      </type>
+      <mapping>
+        <identity value="v2" />
+        <map value="DRG.11" />
+      </mapping>
+      <maxLength value="21" />
+    </element>
+  </differential>
+</StructureDefinition>

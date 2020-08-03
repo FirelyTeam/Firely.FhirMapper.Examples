@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<StructureDefinition xmlns="http://hl7.org/fhir">
+  <url value="https://healex.systems/fhir/StructureDefinition/CF" />
+  <name value="CF" />
+  <title value="coded element with formatted values" />
+  <status value="draft" />
+  <fhirVersion value="4.0.1" />
+  <kind value="logical" />
+  <abstract value="false" />
+  <type value="CF" />
+  <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Element" />
+  <derivation value="specialization" />
+  <differential>
+    <element id="CF">
+      <path value="CF" />
+      <definition value="This data type transmits codes and the formatted text associated with the code. This data type&#xD;&#xA;can be used to transmit for the first time the formatted text for the canned text portion of a report, for&#xD;&#xA;example, a standard radiological description for a normal chest X-ray. The receiving system can store this&#xD;&#xA;information and in subsequent messages only the identifier need be sent. Another potential use of this data&#xD;&#xA;type is transmitting master file records that contain formatted text." />
+      <min value="0" />
+      <max value="*" />
+      <type>
+        <code value="Element" />
+      </type>
+      <maxLength value="65536" />
+      <mapping>
+        <identity value="v2" />
+        <map value="CF" />
+      </mapping>
+    </element>
+    <element id="CF.identifier">
+      <path value="CF.identifier" />
+      <min value="0" />
+      <max value="1" />
+      <type>
+        <code value="ST" />
+        <profile value="https://healex.systems/fhir/StructureDefinition/ST" />
+      </type>
+      <maxLength value="20" />
+      <mapping>
+        <identity value="v2" />
+        <map value="CF.1" />
+      </mapping>
+    </element>
+    <element id="CF.formattedText">
+      <path value="CF.formattedText" />
+      <min value="0" />
+      <max value="1" />
+      <type>
+        <code value="FT" />
+        <profile value="https://healex.systems/fhir/StructureDefinition/FT" />
+      </type>
+      <maxLength value="65536" />
+      <mapping>
+        <identity value="v2" />
+        <map value="CF.2" />
+      </mapping>
+    </element>
+    <element id="CF.nameOfCodingSystem">
+      <path value="CF.nameOfCodingSystem" />
+      <code>
+        <system value="http://terminology.hl7.org/CodeSystem/v2-0396" />
+      </code>
+      <min value="0" />
+      <max value="1" />
+      <type>
+        <code value="ID" />
+        <profile value="https://healex.systems/fhir/StructureDefinition/ID" />
+      </type>
+      <maxLength value="20" />
+      <mapping>
+        <identity value="v2" />
+        <map value="CF.3" />
+      </mapping>
+    </element>
+    <element id="CF.alternateIdentifier">
+      <path value="CF.alternateIdentifier" />
+      <min value="0" />
+      <max value="1" />
+      <type>
+        <code value="ST" />
+        <profile value="https://healex.systems/fhir/StructureDefinition/ST" />
+      </type>
+      <maxLength value="20" />
+      <mapping>
+        <identity value="v2" />
+        <map value="CF.4" />
+      </mapping>
+    </element>
+    <element id="CF.alternateFormattedText">
+      <path value="CF.alternateFormattedText" />
+      <min value="0" />
+      <max value="1" />
+      <type>
+        <code value="FT" />
+        <profile value="https://healex.systems/fhir/StructureDefinition/FT" />
+      </type>
+      <maxLength value="65536" />
+      <mapping>
+        <identity value="v2" />
+        <map value="CF.5" />
+      </mapping>
+    </element>
+    <element id="CF.nameOfAlternateCodingSystem">
+      <path value="CF.nameOfAlternateCodingSystem" />
+      <code>
+        <system value="http://terminology.hl7.org/CodeSystem/v2-0396" />
+      </code>
+      <min value="0" />
+      <max value="1" />
+      <type>
+        <code value="ID" />
+        <profile value="https://healex.systems/fhir/StructureDefinition/ID" />
+      </type>
+      <maxLength value="20" />
+      <mapping>
+        <identity value="v2" />
+        <map value="CF.6" />
+      </mapping>
+    </element>
+  </differential>
+</StructureDefinition>

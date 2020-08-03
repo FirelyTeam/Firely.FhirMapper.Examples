@@ -1,0 +1,377 @@
+<?xml version="1.0" encoding="utf-8"?>
+<StructureDefinition xmlns="http://hl7.org/fhir">
+  <url value="https://healex.systems/fhir/StructureDefinition/XCN" />
+  <name value="XCN" />
+  <title value="extended composite ID number and name for persons" />
+  <status value="draft" />
+  <fhirVersion value="4.0.1" />
+  <kind value="logical" />
+  <abstract value="false" />
+  <type value="XCN" />
+  <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Element" />
+  <derivation value="specialization" />
+  <differential>
+    <element id="XCN">
+      <path value="XCN" />
+      <min value="0" />
+      <max value="*" />
+      <type>
+        <code value="Element" />
+      </type>
+      <maxLength value="3002" />
+      <mapping>
+        <identity value="v2" />
+        <map value="XCN" />
+      </mapping>
+    </element>
+    <element id="XCN.idNumber">
+      <path value="XCN.idNumber" />
+      <min value="0" />
+      <max value="1" />
+      <type>
+        <code value="ST" />
+        <profile value="https://healex.systems/fhir/StructureDefinition/ST" />
+      </type>
+      <maxLength value="15" />
+      <mapping>
+        <identity value="v2" />
+        <map value="XCN.1" />
+      </mapping>
+    </element>
+    <element id="XCN.familyName">
+      <path value="XCN.familyName" />
+      <min value="0" />
+      <max value="1" />
+      <type>
+        <code value="FN" />
+        <profile value="https://healex.systems/fhir/StructureDefinition/FN" />
+      </type>
+      <maxLength value="194" />
+      <mapping>
+        <identity value="v2" />
+        <map value="XCN.2" />
+      </mapping>
+    </element>
+    <element id="XCN.givenName">
+      <path value="XCN.givenName" />
+      <min value="0" />
+      <max value="1" />
+      <type>
+        <code value="ST" />
+        <profile value="https://healex.systems/fhir/StructureDefinition/ST" />
+      </type>
+      <maxLength value="30" />
+      <mapping>
+        <identity value="v2" />
+        <map value="XCN.3" />
+      </mapping>
+    </element>
+    <element id="XCN.secondAndFurtherGivenNamesorInitialsThereof">
+      <path value="XCN.secondAndFurtherGivenNamesorInitialsThereof" />
+      <min value="0" />
+      <max value="1" />
+      <type>
+        <code value="ST" />
+        <profile value="https://healex.systems/fhir/StructureDefinition/ST" />
+      </type>
+      <maxLength value="30" />
+      <mapping>
+        <identity value="v2" />
+        <map value="XCN.4" />
+      </mapping>
+    </element>
+    <element id="XCN.suffix">
+      <path value="XCN.suffix" />
+      <min value="0" />
+      <max value="1" />
+      <type>
+        <code value="ST" />
+        <profile value="https://healex.systems/fhir/StructureDefinition/ST" />
+      </type>
+      <maxLength value="20" />
+      <mapping>
+        <identity value="vv2" />
+        <map value="XCN.5" />
+      </mapping>
+    </element>
+    <element id="XCN.prefix">
+      <path value="XCN.prefix" />
+      <min value="0" />
+      <max value="1" />
+      <type>
+        <code value="ST" />
+        <profile value="https://healex.systems/fhir/StructureDefinition/ST" />
+      </type>
+      <maxLength value="20" />
+      <mapping>
+        <identity value="v2" />
+        <map value="XCN.6" />
+      </mapping>
+    </element>
+    <element id="XCN.degree">
+      <path value="XCN.degree" />
+      <code>
+        <system value="http://terminology.hl7.org/CodeSystem/v2-0360" />
+      </code>
+      <min value="0" />
+      <max value="1" />
+      <type>
+        <code value="IS" />
+        <profile value="https://healex.systems/fhir/StructureDefinition/IS" />
+      </type>
+      <maxLength value="5" />
+      <mapping>
+        <identity value="v2" />
+        <map value="XCN.7" />
+      </mapping>
+    </element>
+    <element id="XCN.sourceTable">
+      <path value="XCN.sourceTable" />
+      <code>
+        <system value="http://terminology.healex.systems/CodeSystem/v2-0297" />
+      </code>
+      <min value="0" />
+      <max value="1" />
+      <type>
+        <code value="IS" />
+        <profile value="https://healex.systems/fhir/StructureDefinition/IS" />
+      </type>
+      <maxLength value="4" />
+      <mapping>
+        <identity value="v2" />
+        <map value="XCN.8" />
+      </mapping>
+    </element>
+    <element id="XCN.assigningAuthority">
+      <path value="XCN.assigningAuthority" />
+      <code>
+        <system value="http://terminology.hl7.org/CodeSystem/v2-0363" />
+      </code>
+      <min value="0" />
+      <max value="1" />
+      <type>
+        <code value="HD" />
+        <profile value="https://healex.systems/fhir/StructureDefinition/HD" />
+      </type>
+      <maxLength value="227" />
+      <mapping>
+        <identity value="v2" />
+        <map value="XCN.9" />
+      </mapping>
+    </element>
+    <element id="XCN.nameTypeCode">
+      <path value="XCN.nameTypeCode" />
+      <code>
+        <system value="http://terminology.hl7.org/CodeSystem/v2-0200" />
+      </code>
+      <min value="0" />
+      <max value="1" />
+      <type>
+        <code value="ID" />
+        <profile value="https://healex.systems/fhir/StructureDefinition/ID" />
+      </type>
+      <maxLength value="1" />
+      <mapping>
+        <identity value="v2" />
+        <map value="XCN.10" />
+      </mapping>
+    </element>
+    <element id="XCN.identifierCheckDigit">
+      <path value="XCN.identifierCheckDigit" />
+      <min value="0" />
+      <max value="1" />
+      <type>
+        <code value="ST" />
+        <profile value="https://healex.systems/fhir/StructureDefinition/ST" />
+      </type>
+      <maxLength value="1" />
+      <mapping>
+        <identity value="v2" />
+        <map value="XCN.11" />
+      </mapping>
+    </element>
+    <element id="XCN.checkDigitScheme">
+      <path value="XCN.checkDigitScheme" />
+      <code>
+        <system value="http://terminology.hl7.org/CodeSystem/v2-0061" />
+      </code>
+      <min value="0" />
+      <max value="1" />
+      <type>
+        <code value="ID" />
+        <profile value="https://healex.systems/fhir/StructureDefinition/ID" />
+      </type>
+      <maxLength value="3" />
+      <mapping>
+        <identity value="v2" />
+        <map value="XCN.12" />
+      </mapping>
+    </element>
+    <element id="XCN.identifierTypeCode">
+      <path value="XCN.identifierTypeCode" />
+      <code>
+        <system value="http://terminology.hl7.org/CodeSystem/v2-0203" />
+      </code>
+      <min value="0" />
+      <max value="1" />
+      <type>
+        <code value="ID" />
+        <profile value="https://healex.systems/fhir/StructureDefinition/ID" />
+      </type>
+      <maxLength value="5" />
+      <mapping>
+        <identity value="v2" />
+        <map value="XCN.13" />
+      </mapping>
+    </element>
+    <element id="XCN.assigningFacility">
+      <path value="XCN.assigningFacility" />
+      <min value="0" />
+      <max value="1" />
+      <type>
+        <code value="HD" />
+        <profile value="https://healex.systems/fhir/StructureDefinition/HD" />
+      </type>
+      <maxLength value="227" />
+      <mapping>
+        <identity value="v2" />
+        <map value="XCN.14" />
+      </mapping>
+    </element>
+    <element id="XCN.nameRepresentationCode">
+      <path value="XCN.nameRepresentationCode" />
+      <code>
+        <system value="http://terminology.hl7.org/CodeSystem/v2-0465" />
+      </code>
+      <min value="0" />
+      <max value="1" />
+      <type>
+        <code value="ID" />
+        <profile value="https://healex.systems/fhir/StructureDefinition/ID" />
+      </type>
+      <maxLength value="1" />
+      <mapping>
+        <identity value="v2" />
+        <map value="XCN.15" />
+      </mapping>
+    </element>
+    <element id="XCN.nameContext">
+      <path value="XCN.nameContext" />
+      <code>
+        <system value="http://terminology.healex.systems/CodeSystem/v2-0448" />
+      </code>
+      <min value="0" />
+      <max value="1" />
+      <type>
+        <code value="CE" />
+        <profile value="https://healex.systems/fhir/StructureDefinition/CE" />
+      </type>
+      <maxLength value="483" />
+      <mapping>
+        <identity value="v2" />
+        <map value="XCN.16" />
+      </mapping>
+    </element>
+    <element id="XCN.nameValidityRange">
+      <path value="XCN.nameValidityRange" />
+      <min value="0" />
+      <max value="1" />
+      <type>
+        <code value="DR" />
+        <profile value="https://healex.systems/fhir/StructureDefinition/DR" />
+      </type>
+      <maxLength value="53" />
+      <mapping>
+        <identity value="v2" />
+        <map value="XCN.17" />
+      </mapping>
+    </element>
+    <element id="XCN.nameAssembleyOrder">
+      <path value="XCN.nameAssembleyOrder" />
+      <code>
+        <system value="http://terminology.hl7.org/CodeSystem/v2-0444" />
+      </code>
+      <min value="0" />
+      <max value="1" />
+      <type>
+        <code value="ID" />
+        <profile value="https://healex.systems/fhir/StructureDefinition/ID" />
+      </type>
+      <maxLength value="1" />
+      <mapping>
+        <identity value="v2" />
+        <map value="XCN.18" />
+      </mapping>
+    </element>
+    <element id="XCN.effectiveDate">
+      <path value="XCN.effectiveDate" />
+      <min value="0" />
+      <max value="1" />
+      <type>
+        <code value="TS" />
+        <profile value="https://healex.systems/fhir/StructureDefinition/TS" />
+      </type>
+      <maxLength value="26" />
+      <mapping>
+        <identity value="v2" />
+        <map value="XCN.19" />
+      </mapping>
+    </element>
+    <element id="XCN.expirationDate">
+      <path value="XCN.expirationDate" />
+      <min value="0" />
+      <max value="1" />
+      <type>
+        <code value="TS" />
+        <profile value="https://healex.systems/fhir/StructureDefinition/TS" />
+      </type>
+      <maxLength value="26" />
+      <mapping>
+        <identity value="v2" />
+        <map value="XCN.20" />
+      </mapping>
+    </element>
+    <element id="XCN.professionalSuffix">
+      <path value="XCN.professionalSuffix" />
+      <min value="0" />
+      <max value="1" />
+      <type>
+        <code value="ST" />
+        <profile value="https://healex.systems/fhir/StructureDefinition/ST" />
+      </type>
+      <maxLength value="199" />
+      <mapping>
+        <identity value="v2" />
+        <map value="XCN.21" />
+      </mapping>
+    </element>
+    <element id="XCN.assigningJurisdiction">
+      <path value="XCN.assigningJurisdiction" />
+      <min value="0" />
+      <max value="1" />
+      <type>
+        <code value="CWE" />
+        <profile value="https://healex.systems/fhir/StructureDefinition/CWE" />
+      </type>
+      <maxLength value="705" />
+      <mapping>
+        <identity value="v2" />
+        <map value="XCN.22" />
+      </mapping>
+    </element>
+    <element id="XCN.assigningAgencyOrDepartment">
+      <path value="XCN.assigningAgencyOrDepartment" />
+      <min value="0" />
+      <max value="1" />
+      <type>
+        <code value="CWE" />
+        <profile value="https://healex.systems/fhir/StructureDefinition/CWE" />
+      </type>
+      <maxLength value="705" />
+      <mapping>
+        <identity value="v2" />
+        <map value="XCN.23" />
+      </mapping>
+    </element>
+  </differential>
+</StructureDefinition>

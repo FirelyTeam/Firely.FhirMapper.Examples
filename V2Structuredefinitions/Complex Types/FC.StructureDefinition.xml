@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<StructureDefinition xmlns="http://hl7.org/fhir">
+  <url value="https://healex.systems/fhir/StructureDefinition/FC" />
+  <name value="FC" />
+  <title value="Financial class" />
+  <status value="draft" />
+  <fhirVersion value="4.0.1" />
+  <kind value="logical" />
+  <abstract value="false" />
+  <type value="FC" />
+  <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Element" />
+  <derivation value="specialization" />
+  <differential>
+    <element id="FC">
+      <path value="FC" />
+      <min value="0" />
+      <max value="*" />
+      <type>
+        <code value="Element" />
+      </type>
+      <maxLength value="47" />
+      <mapping>
+        <identity value="v2" />
+        <map value="FC" />
+      </mapping>
+    </element>
+    <element id="FC.financialClassCode">
+      <path value="FC.financialClassCode" />
+      <code>
+        <system value="http://terminology.healex.systems/CodeSystem/v2-0064" />
+      </code>
+      <min value="1" />
+      <max value="1" />
+      <type>
+        <code value="IS" />
+        <profile value="https://healex.systems/fhir/StructureDefinition/IS" />
+      </type>
+      <maxLength value="20" />
+      <mapping>
+        <identity value="v2" />
+        <map value="FC.1" />
+      </mapping>
+    </element>
+    <element id="FC.effectiveDate">
+      <path value="FC.effectiveDate" />
+      <min value="0" />
+      <max value="1" />
+      <type>
+        <code value="TS" />
+        <profile value="https://healex.systems/fhir/StructureDefinition/TS" />
+      </type>
+      <maxLength value="26" />
+      <mapping>
+        <identity value="v2" />
+        <map value="FC.2" />
+      </mapping>
+    </element>
+  </differential>
+</StructureDefinition>

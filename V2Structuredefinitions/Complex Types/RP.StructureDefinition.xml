@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<StructureDefinition xmlns="http://hl7.org/fhir">
+  <url value="https://healex.systems/fhir/StructureDefinition/RP" />
+  <name value="RP" />
+  <status value="draft" />
+  <fhirVersion value="4.0.1" />
+  <kind value="logical" />
+  <abstract value="false" />
+  <type value="RP" />
+  <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Element" />
+  <derivation value="specialization" />
+  <differential>
+    <element id="RP">
+      <path value="RP" />
+      <min value="0" />
+      <max value="*" />
+      <type>
+        <code value="Element" />
+      </type>
+    </element>
+    <element id="RP.pointer">
+      <path value="RP.pointer" />
+      <definition value="This data type transmits information about data stored on another system. It contains a reference pointer that uniquely identifies the data on the other system, the identity of the other system, and the type of data." />
+      <min value="0" />
+      <max value="1" />
+      <type>
+        <code value="ST" />
+        <profile value="https://healex.systems/fhir/StructureDefinition/ST" />
+      </type>
+      <mapping>
+        <identity value="v2" />
+        <map value="RP.1" />
+      </mapping>
+    </element>
+    <element id="RP.applicationID">
+      <path value="RP.applicationID" />
+      <min value="0" />
+      <max value="1" />
+      <type>
+        <code value="HD" />
+        <profile value="https://healex.systems/fhir/StructureDefinition/HD" />
+      </type>
+      <mapping>
+        <identity value="v2" />
+        <map value="RP.2" />
+      </mapping>
+    </element>
+    <element id="RP.typeOfData">
+      <path value="RP.typeOfData" />
+      <code>
+        <system value="http://terminology.healex.systems/CodeSystem/v2-0191" />
+      </code>
+      <min value="0" />
+      <max value="1" />
+      <type>
+        <code value="ID" />
+        <profile value="https://healex.systems/fhir/StructureDefinition/ID" />
+      </type>
+      <mapping>
+        <identity value="v2" />
+        <map value="RP.3" />
+      </mapping>
+    </element>
+    <element id="RP.subtype">
+      <path value="RP.subtype" />
+      <code>
+        <system value="http://terminology.healex.systems/CodeSystem/v2-0291" />
+      </code>
+      <min value="0" />
+      <max value="1" />
+      <type>
+        <code value="ID" />
+        <profile value="https://healex.systems/fhir/StructureDefinition/ID" />
+      </type>
+      <mapping>
+        <identity value="v2" />
+        <map value="RP.4" />
+      </mapping>
+    </element>
+  </differential>
+</StructureDefinition>

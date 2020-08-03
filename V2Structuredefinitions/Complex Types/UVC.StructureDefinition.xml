@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<StructureDefinition xmlns="http://hl7.org/fhir">
+  <url value="https://healex.systems/fhir/StructureDefinition/UVC" />
+  <name value="UVC" />
+  <title value="UB value code and amount" />
+  <status value="draft" />
+  <fhirVersion value="4.0.1" />
+  <kind value="logical" />
+  <abstract value="false" />
+  <type value="UVC" />
+  <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Element" />
+  <derivation value="specialization" />
+  <differential>
+    <element id="UVC">
+      <path value="UVC" />
+      <definition value="A code structure to relate amounts or values to identified data elements necessary to process this&#xD;&#xA;claim as qualified by the payer organization" />
+      <min value="0" />
+      <max value="*" />
+      <type>
+        <code value="Element" />
+      </type>
+      <maxLength value="41" />
+      <mapping>
+        <identity value="v2" />
+        <map value="UVC" />
+      </mapping>
+    </element>
+    <element id="UVC.valueCode">
+      <path value="UVC.valueCode" />
+      <code>
+        <system value="http://terminology.hl7.org/CodeSystem/v2-0153" />
+      </code>
+      <min value="1" />
+      <max value="1" />
+      <type>
+        <code value="CNE" />
+        <profile value="https://healex.systems/fhir/StructureDefinition/CNE" />
+      </type>
+      <maxLength value="20" />
+      <mapping>
+        <identity value="v2" />
+        <map value="UVC.1" />
+      </mapping>
+    </element>
+    <element id="UVC.valueAmount">
+      <path value="UVC.valueAmount" />
+      <min value="0" />
+      <max value="1" />
+      <type>
+        <code value="MO" />
+        <profile value="https://healex.systems/fhir/StructureDefinition/MO" />
+      </type>
+      <maxLength value="20" />
+      <mapping>
+        <identity value="v2" />
+        <map value="UVC.2" />
+      </mapping>
+    </element>
+  </differential>
+</StructureDefinition>

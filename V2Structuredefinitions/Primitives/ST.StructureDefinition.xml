@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<StructureDefinition xmlns="http://hl7.org/fhir">
+  <url value="https://healex.systems/fhir/StructureDefinition/ST" />
+  <name value="ST" />
+  <title value="String" />
+  <status value="draft" />
+  <description value="String data is left justified with trailing blanks optional. Any displayable (printable) ACSII characters&#xD;&#xA;(hexadecimal values between 20 and 7E, inclusive, or ASCII decimal values between 32 and 126), except&#xD;&#xA;the defined escape characters and defined delimiter characters." />
+  <fhirVersion value="4.0.1" />
+  <kind value="logical" />
+  <abstract value="false" />
+  <type value="ST" />
+  <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Element" />
+  <derivation value="specialization" />
+  <differential>
+    <element id="ST">
+      <path value="ST" />
+      <min value="0" />
+      <max value="*" />
+      <type>
+        <code value="Element" />
+      </type>
+      <mapping>
+        <identity value="v2" />
+        <map value="ST" />
+      </mapping>
+    </element>
+    <element id="ST.value">
+      <path value="ST.value" />
+      <min value="1" />
+      <max value="1" />
+      <type>
+        <code value="string" />
+        <profile value="http://hl7.org/fhir/StructureDefinition/string" />
+      </type>
+      <maxLength value="199" />
+    </element>
+  </differential>
+</StructureDefinition>

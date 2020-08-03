@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<StructureDefinition xmlns="http://hl7.org/fhir">
+  <url value="https://healex.systems/fhir/StructureDefinition/CE" />
+  <version value="Coded Element" />
+  <name value="CE" />
+  <status value="draft" />
+  <fhirVersion value="4.0.1" />
+  <mapping>
+    <identity value="v2" />
+    <name value="CE" />
+  </mapping>
+  <kind value="logical" />
+  <abstract value="false" />
+  <type value="CE" />
+  <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Element" />
+  <derivation value="specialization" />
+  <differential>
+    <element id="CE">
+      <path value="CE" />
+      <definition value="This data type transmits codes and the text associated with the code." />
+      <min value="0" />
+      <max value="*" />
+      <type>
+        <code value="Element" />
+      </type>
+      <maxLength value="483" />
+      <mapping>
+        <identity value="v2" />
+        <map value="CE" />
+      </mapping>
+    </element>
+    <element id="CE.identifier">
+      <path value="CE.identifier" />
+      <min value="0" />
+      <max value="1" />
+      <type>
+        <code value="ST" />
+        <profile value="https://healex.systems/fhir/StructureDefinition/ST" />
+      </type>
+      <maxLength value="20" />
+      <mapping>
+        <identity value="v2" />
+        <map value="CE.1" />
+      </mapping>
+    </element>
+    <element id="CE.text">
+      <path value="CE.text" />
+      <min value="0" />
+      <max value="1" />
+      <type>
+        <code value="ST" />
+        <profile value="https://healex.systems/fhir/StructureDefinition/ST" />
+      </type>
+      <maxLength value="199" />
+      <mapping>
+        <identity value="v2" />
+        <map value="CE.2" />
+      </mapping>
+    </element>
+    <element id="CE.nameofCodingSystem">
+      <path value="CE.nameofCodingSystem" />
+      <code>
+        <system value="http://terminology.hl7.org/CodeSystem/v2-0396" />
+      </code>
+      <min value="0" />
+      <max value="1" />
+      <type>
+        <code value="ID" />
+        <profile value="https://healex.systems/fhir/StructureDefinition/ID" />
+      </type>
+      <maxLength value="20" />
+      <mapping>
+        <identity value="v2" />
+        <map value="CE.3" />
+      </mapping>
+    </element>
+    <element id="CE.alternateIdentifier">
+      <path value="CE.alternateIdentifier" />
+      <min value="0" />
+      <max value="1" />
+      <type>
+        <code value="ST" />
+        <profile value="https://healex.systems/fhir/StructureDefinition/ST" />
+      </type>
+      <maxLength value="20" />
+      <mapping>
+        <identity value="v2" />
+        <map value="CE.4" />
+      </mapping>
+    </element>
+    <element id="CE.alternateText">
+      <path value="CE.alternateText" />
+      <min value="0" />
+      <max value="1" />
+      <type>
+        <code value="ST" />
+        <profile value="https://healex.systems/fhir/StructureDefinition/ST" />
+      </type>
+      <maxLength value="199" />
+    </element>
+    <element id="CE.nameofAlternateCodingSystem">
+      <path value="CE.nameofAlternateCodingSystem" />
+      <code>
+        <system value="http://terminology.hl7.org/CodeSystem/v2-0396" />
+      </code>
+      <min value="0" />
+      <max value="1" />
+      <type>
+        <code value="ID" />
+        <profile value="https://healex.systems/fhir/StructureDefinition/ID" />
+      </type>
+      <maxLength value="20" />
+      <mapping>
+        <identity value="v2" />
+        <map value="CE-6" />
+      </mapping>
+    </element>
+  </differential>
+</StructureDefinition>

@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<StructureDefinition xmlns="http://hl7.org/fhir">
+  <url value="https://healex.systems/fhir/StructureDefinition/AD" />
+  <name value="AD" />
+  <title value="address" />
+  <status value="draft" />
+  <fhirVersion value="4.0.1" />
+  <kind value="logical" />
+  <abstract value="false" />
+  <type value="AD" />
+  <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Element" />
+  <derivation value="specialization" />
+  <differential>
+    <element id="AD">
+      <path value="AD" />
+      <definition value="This data type specifies the address of a person, place or organization" />
+      <min value="0" />
+      <max value="*" />
+      <type>
+        <code value="Element" />
+      </type>
+      <maxLength value="415" />
+      <mapping>
+        <identity value="v2" />
+        <map value="AD" />
+      </mapping>
+    </element>
+    <element id="AD.streetAddress">
+      <path value="AD.streetAddress" />
+      <min value="0" />
+      <max value="1" />
+      <type>
+        <code value="ST" />
+        <profile value="https://healex.systems/fhir/StructureDefinition/ST" />
+      </type>
+      <maxLength value="120" />
+      <mapping>
+        <identity value="v2" />
+        <map value="AD.1" />
+      </mapping>
+    </element>
+    <element id="AD.otherDesignation">
+      <path value="AD.otherDesignation" />
+      <min value="0" />
+      <max value="1" />
+      <type>
+        <code value="ST" />
+        <profile value="https://healex.systems/fhir/StructureDefinition/ST" />
+      </type>
+      <maxLength value="120" />
+      <mapping>
+        <identity value="v2" />
+        <map value="AD.2" />
+      </mapping>
+    </element>
+    <element id="AD.city">
+      <path value="AD.city" />
+      <min value="0" />
+      <max value="1" />
+      <type>
+        <code value="ST" />
+        <profile value="https://healex.systems/fhir/StructureDefinition/ST" />
+      </type>
+      <maxLength value="50" />
+      <mapping>
+        <identity value="v2" />
+        <map value="AD.3" />
+      </mapping>
+    </element>
+    <element id="AD.stateOrProvince">
+      <path value="AD.stateOrProvince" />
+      <min value="0" />
+      <max value="1" />
+      <type>
+        <code value="ST" />
+        <profile value="https://healex.systems/fhir/StructureDefinition/ST" />
+      </type>
+      <maxLength value="50" />
+      <mapping>
+        <identity value="v2" />
+        <map value="AD.4" />
+      </mapping>
+    </element>
+    <element id="AD.zipOrPostalCode">
+      <path value="AD.zipOrPostalCode" />
+      <min value="0" />
+      <max value="1" />
+      <type>
+        <code value="ST" />
+        <profile value="https://healex.systems/fhir/StructureDefinition/ST" />
+      </type>
+      <maxLength value="12" />
+      <mapping>
+        <identity value="v2" />
+        <map value="AD.5" />
+      </mapping>
+    </element>
+    <element id="AD.country">
+      <path value="AD.country" />
+      <code>
+        <system value="urn:iso:std:iso:3166" />
+      </code>
+      <min value="0" />
+      <max value="1" />
+      <type>
+        <code value="ID" />
+        <profile value="https://healex.systems/fhir/StructureDefinition/ID" />
+      </type>
+      <maxLength value="3" />
+      <mapping>
+        <identity value="v2" />
+        <map value="AD.6" />
+      </mapping>
+    </element>
+    <element id="AD.addressType">
+      <path value="AD.addressType" />
+      <code>
+        <system value="http://terminology.hl7.org/CodeSystem/v2-0190" />
+      </code>
+      <min value="0" />
+      <max value="1" />
+      <type>
+        <code value="ID" />
+        <profile value="https://healex.systems/fhir/StructureDefinition/ID" />
+      </type>
+      <maxLength value="3" />
+      <mapping>
+        <identity value="v2" />
+        <map value="AD.7" />
+      </mapping>
+    </element>
+    <element id="AD.otherGeographicDesignation">
+      <path value="AD.otherGeographicDesignation" />
+      <min value="0" />
+      <max value="1" />
+      <type>
+        <code value="ST" />
+        <profile value="https://healex.systems/fhir/StructureDefinition/ST" />
+      </type>
+      <maxLength value="50" />
+      <mapping>
+        <identity value="v2" />
+        <map value="AD.8" />
+      </mapping>
+    </element>
+  </differential>
+</StructureDefinition>

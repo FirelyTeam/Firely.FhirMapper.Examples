@@ -1,0 +1,628 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<StructureDefinition xmlns="http://hl7.org/fhir">
+    <url value="https://healex.systems/fhir/StructureDefinition/PID" />
+    <name value="PID" />
+    <title value="Patient Identification Segment" />
+    <status value="draft" />
+    <fhirVersion value="4.0.1" />
+    <kind value="logical" />
+    <abstract value="false" />
+    <type value="PID" />
+    <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Element" />
+    <derivation value="specialization" />
+    <differential>
+        <element id="PID">
+            <path value="PID" />
+            <definition value="The PID segment is used by all applications as the primary means of communicating patient identification&#xD;&#xA;information." />
+            <min value="0" />
+            <max value="*" />
+            <type>
+                <code value="Element" />
+            </type>
+            <mapping>
+                <identity value="v2" />
+                <map value="PID" />
+            </mapping>
+        </element>
+        <element id="PID.setIDPID">
+            <path value="PID.setIDPID" />
+            <min value="0" />
+            <max value="1" />
+            <type>
+                <code value="SI" />
+                <profile value="https://healex.systems/fhir/StructureDefinition/SI" />
+            </type>
+            <maxLength value="4" />
+            <mapping>
+                <identity value="v2" />
+                <map value="PID.1" />
+            </mapping>
+        </element>
+        <element id="PID.patientID">
+            <path value="PID.patientID" />
+            <min value="0" />
+            <max value="1" />
+            <type>
+                <code value="CX" />
+                <profile value="https://healex.systems/fhir/StructureDefinition/CX" />
+            </type>
+            <maxLength value="20" />
+            <mapping>
+                <identity value="v2" />
+                <map value="PID.2" />
+            </mapping>
+        </element>
+        <element id="PID.patientIdentifierList">
+            <path value="PID.patientIdentifierList" />
+            <min value="1" />
+            <max value="1" />
+            <type>
+                <code value="CX" />
+                <profile value="https://healex.systems/fhir/StructureDefinition/CX" />
+            </type>
+            <maxLength value="250" />
+            <mapping>
+                <identity value="v2" />
+                <map value="PID.3" />
+            </mapping>
+        </element>
+        <element id="PID.alternatePatientIDPID">
+            <path value="PID.alternatePatientIDPID" />
+            <min value="0" />
+            <max value="*" />
+            <type>
+                <code value="CX" />
+                <profile value="https://healex.systems/fhir/StructureDefinition/CX" />
+            </type>
+            <maxLength value="20" />
+            <mapping>
+                <identity value="v2" />
+                <map value="PID.4" />
+            </mapping>
+        </element>
+        <element id="PID.patientName">
+            <path value="PID.patientName" />
+            <min value="0" />
+            <max value="*" />
+            <type>
+                <code value="XPN" />
+                <profile value="https://healex.systems/fhir/StructureDefinition/XPN" />
+            </type>
+            <maxLength value="250" />
+            <mapping>
+                <identity value="v2" />
+                <map value="PID.5" />
+            </mapping>
+        </element>
+        <element id="PID.mothersMaidenName">
+            <path value="PID.mothersMaidenName" />
+            <min value="0" />
+            <max value="*" />
+            <type>
+                <code value="XPN" />
+                <profile value="https://healex.systems/fhir/StructureDefinition/XPN" />
+            </type>
+            <maxLength value="250" />
+            <mapping>
+                <identity value="v2" />
+                <map value="PID.6" />
+            </mapping>
+        </element>
+        <element id="PID.dateTimeOfBirth">
+            <path value="PID.dateTimeOfBirth" />
+            <min value="0" />
+            <max value="1" />
+            <type>
+                <code value="TS" />
+                <profile value="https://healex.systems/fhir/StructureDefinition/TS" />
+            </type>
+            <maxLength value="26" />
+            <mapping>
+                <identity value="v2" />
+                <map value="PID.7" />
+            </mapping>
+        </element>
+        <element id="PID.administrativeSex">
+            <path value="PID.administrativeSex" />
+            <code>
+                <system value="http://terminology.hl7.org/CodeSystem/v2-0001" />
+            </code>
+            <min value="0" />
+            <max value="1" />
+            <type>
+                <code value="IS" />
+                <profile value="https://healex.systems/fhir/StructureDefinition/IS" />
+            </type>
+            <maxLength value="1" />
+            <mapping>
+                <identity value="v2" />
+                <map value="PID.8" />
+            </mapping>
+        </element>
+        <element id="PID.patientAlias">
+            <path value="PID.patientAlias" />
+            <min value="0" />
+            <max value="*" />
+            <type>
+                <code value="XPN" />
+                <profile value="https://healex.systems/fhir/StructureDefinition/XPN" />
+            </type>
+            <maxLength value="250" />
+            <mapping>
+                <identity value="v2" />
+                <map value="PID.9" />
+            </mapping>
+        </element>
+        <element id="PID.race">
+            <path value="PID.race" />
+            <code>
+                <system value="http://terminology.hl7.org/CodeSystem/v2-0005" />
+            </code>
+            <min value="0" />
+            <max value="*" />
+            <type>
+                <code value="CE" />
+                <profile value="https://healex.systems/fhir/StructureDefinition/CE" />
+            </type>
+            <maxLength value="250" />
+            <mapping>
+                <identity value="v2" />
+                <map value="PID.10" />
+            </mapping>
+        </element>
+        <element id="PID.patientAddress">
+            <path value="PID.patientAddress" />
+            <min value="0" />
+            <max value="*" />
+            <type>
+                <code value="XAD" />
+                <profile value="https://healex.systems/fhir/StructureDefinition/XAD" />
+            </type>
+            <maxLength value="250" />
+            <mapping>
+                <identity value="v2" />
+                <map value="PID.11" />
+            </mapping>
+        </element>
+        <element id="PID.countryCode">
+            <path value="PID.countryCode" />
+            <code>
+                <system value="http://terminology.healex.systems/CodeSystem/v2-0289" />
+            </code>
+            <min value="0" />
+            <max value="1" />
+            <type>
+                <code value="IS" />
+                <profile value="https://healex.systems/fhir/StructureDefinition/IS" />
+            </type>
+            <maxLength value="4" />
+            <mapping>
+                <identity value="v2" />
+                <map value="PID.12" />
+            </mapping>
+        </element>
+        <element id="PID.phoneNumberHome">
+            <path value="PID.phoneNumberHome" />
+            <min value="0" />
+            <max value="*" />
+            <type>
+                <code value="XTN" />
+                <profile value="https://healex.systems/fhir/StructureDefinition/XTN" />
+            </type>
+            <maxLength value="250" />
+            <mapping>
+                <identity value="v2" />
+                <map value="PID.13" />
+            </mapping>
+        </element>
+        <element id="PID.phoneNumberBusiness">
+            <path value="PID.phoneNumberBusiness" />
+            <min value="0" />
+            <max value="*" />
+            <type>
+                <code value="XTN" />
+                <profile value="https://healex.systems/fhir/StructureDefinition/XTN" />
+            </type>
+            <maxLength value="250" />
+            <mapping>
+                <identity value="v2" />
+                <map value="PID.14" />
+            </mapping>
+        </element>
+        <element id="PID.primaryLanguage">
+            <path value="PID.primaryLanguage" />
+            <code>
+                <system value="http://terminology.hl7.org/CodeSystem/v2-0296" />
+            </code>
+            <min value="0" />
+            <max value="1" />
+            <type>
+                <code value="CE" />
+                <profile value="https://healex.systems/fhir/StructureDefinition/CE" />
+            </type>
+            <maxLength value="250" />
+            <mapping>
+                <identity value="v2" />
+                <map value="PID.15" />
+            </mapping>
+        </element>
+        <element id="PID.maritalStatus">
+            <path value="PID.maritalStatus" />
+            <code>
+                <system value="http://terminology.hl7.org/CodeSystem/v2-0002" />
+            </code>
+            <min value="0" />
+            <max value="1" />
+            <type>
+                <code value="CE" />
+                <profile value="https://healex.systems/fhir/StructureDefinition/CE" />
+            </type>
+            <maxLength value="250" />
+            <mapping>
+                <identity value="v2" />
+                <map value="PID.16" />
+            </mapping>
+        </element>
+        <element id="PID.religion">
+            <path value="PID.religion" />
+            <code>
+                <system value="http://terminology.hl7.org/CodeSystem/v2-0006" />
+            </code>
+            <min value="0" />
+            <max value="1" />
+            <type>
+                <code value="CE" />
+                <profile value="https://healex.systems/fhir/StructureDefinition/CE" />
+            </type>
+            <maxLength value="250" />
+            <mapping>
+                <identity value="v2" />
+                <map value="PID.17" />
+            </mapping>
+        </element>
+        <element id="PID.patientAccountNumber">
+            <path value="PID.patientAccountNumber" />
+            <min value="0" />
+            <max value="1" />
+            <type>
+                <code value="CX" />
+                <profile value="https://healex.systems/fhir/StructureDefinition/CX" />
+            </type>
+            <maxLength value="250" />
+            <mapping>
+                <identity value="v2" />
+                <map value="PID.18" />
+            </mapping>
+        </element>
+        <element id="PID.ssnNumberPatient">
+            <path value="PID.ssnNumberPatient" />
+            <min value="0" />
+            <max value="1" />
+            <type>
+                <code value="ST" />
+                <profile value="https://healex.systems/fhir/StructureDefinition/ST" />
+            </type>
+            <maxLength value="16" />
+            <mapping>
+                <identity value="v2" />
+                <map value="PID.19" />
+            </mapping>
+        </element>
+        <element id="PID.driversLicenseNumberPatient">
+            <path value="PID.driversLicenseNumberPatient" />
+            <min value="0" />
+            <max value="1" />
+            <type>
+                <code value="DLN" />
+                <profile value="https://healex.systems/fhir/StructureDefinition/DLN" />
+            </type>
+            <maxLength value="25" />
+            <mapping>
+                <identity value="v2" />
+                <map value="PID.20" />
+            </mapping>
+        </element>
+        <element id="PID.mothersIdentifier">
+            <path value="PID.mothersIdentifier" />
+            <min value="0" />
+            <max value="*" />
+            <type>
+                <code value="CX" />
+                <profile value="https://healex.systems/fhir/StructureDefinition/CX" />
+            </type>
+            <maxLength value="250" />
+            <mapping>
+                <identity value="v2" />
+                <map value="PID.21" />
+            </mapping>
+        </element>
+        <element id="PID.ethnicGroup">
+            <path value="PID.ethnicGroup" />
+            <code>
+                <system value="http://terminology.hl7.org/CodeSystem/v2-0189" />
+            </code>
+            <min value="0" />
+            <max value="*" />
+            <type>
+                <code value="CE" />
+                <profile value="https://healex.systems/fhir/StructureDefinition/CE" />
+            </type>
+            <maxLength value="250" />
+            <mapping>
+                <identity value="v2" />
+                <map value="PID.22" />
+            </mapping>
+        </element>
+        <element id="PID.birthPlace">
+            <path value="PID.birthPlace" />
+            <min value="0" />
+            <max value="1" />
+            <type>
+                <code value="ST" />
+                <profile value="https://healex.systems/fhir/StructureDefinition/ST" />
+            </type>
+            <maxLength value="250" />
+            <mapping>
+                <identity value="v2" />
+                <map value="PID.23" />
+            </mapping>
+        </element>
+        <element id="PID.multipleBirthIndicator">
+            <path value="PID.multipleBirthIndicator" />
+            <code>
+                <system value="http://terminology.hl7.org/CodeSystem/v2-0532" />
+            </code>
+            <min value="0" />
+            <max value="1" />
+            <type>
+                <code value="ID" />
+                <profile value="https://healex.systems/fhir/StructureDefinition/ID" />
+            </type>
+            <maxLength value="1" />
+            <mapping>
+                <identity value="v2" />
+                <map value="PID.24" />
+            </mapping>
+        </element>
+        <element id="PID.birthOrder">
+            <path value="PID.birthOrder" />
+            <min value="0" />
+            <max value="1" />
+            <type>
+                <code value="NM" />
+                <profile value="https://healex.systems/fhir/StructureDefinition/NM" />
+            </type>
+            <maxLength value="2" />
+            <mapping>
+                <identity value="v2" />
+                <map value="PID.25" />
+            </mapping>
+        </element>
+        <element id="PID.citizenship">
+            <path value="PID.citizenship" />
+            <code>
+                <system value="http://terminology.healex.systems/CodeSystem/v2-0171" />
+            </code>
+            <min value="0" />
+            <max value="*" />
+            <type>
+                <code value="CE" />
+                <profile value="https://healex.systems/fhir/StructureDefinition/CE" />
+            </type>
+            <maxLength value="250" />
+            <mapping>
+                <identity value="v2" />
+                <map value="PID.26" />
+            </mapping>
+        </element>
+        <element id="PID.veteransMilitaryStatus">
+            <path value="PID.veteransMilitaryStatus" />
+            <code>
+                <system value="http://terminology.healex.systems/CodeSystem/v2-0172" />
+            </code>
+            <min value="0" />
+            <max value="1" />
+            <type>
+                <code value="CE" />
+                <profile value="https://healex.systems/fhir/StructureDefinition/CE" />
+            </type>
+            <maxLength value="250" />
+            <mapping>
+                <identity value="v2" />
+                <map value="PID.27" />
+            </mapping>
+        </element>
+        <element id="PID.nationality">
+            <path value="PID.nationality" />
+            <code>
+                <system value="http://terminology.healex.systems/CodeSystem/v2-0212" />
+            </code>
+            <min value="0" />
+            <max value="1" />
+            <type>
+                <code value="CE" />
+                <profile value="https://healex.systems/fhir/StructureDefinition/CE" />
+            </type>
+            <maxLength value="250" />
+            <mapping>
+                <identity value="v2" />
+                <map value="PID.28" />
+            </mapping>
+        </element>
+        <element id="PID.patientDeathDateAndTime">
+            <path value="PID.patientDeathDateAndTime" />
+            <min value="0" />
+            <max value="1" />
+            <type>
+                <code value="TS" />
+                <profile value="https://healex.systems/fhir/StructureDefinition/TS" />
+            </type>
+            <maxLength value="26" />
+            <mapping>
+                <identity value="v2" />
+                <map value="PID.29" />
+            </mapping>
+        </element>
+        <element id="PID.patientDeathIndicator">
+            <path value="PID.patientDeathIndicator" />
+            <code>
+                <system value="http://terminology.hl7.org/CodeSystem/v2-0532" />
+            </code>
+            <min value="0" />
+            <max value="1" />
+            <type>
+                <code value="ID" />
+                <profile value="https://healex.systems/fhir/StructureDefinition/ID" />
+            </type>
+            <maxLength value="1" />
+            <mapping>
+                <identity value="v2" />
+                <map value="PID.30" />
+            </mapping>
+        </element>
+        <element id="PID.identityUnknownIndicator">
+            <path value="PID.identityUnknownIndicator" />
+            <code>
+                <system value="http://terminology.hl7.org/CodeSystem/v2-0532" />
+            </code>
+            <min value="0" />
+            <max value="1" />
+            <type>
+                <code value="ID" />
+                <profile value="https://healex.systems/fhir/StructureDefinition/ID" />
+            </type>
+            <maxLength value="1" />
+            <mapping>
+                <identity value="v2" />
+                <map value="PID.31" />
+            </mapping>
+        </element>
+        <element id="PID.identityReliabilityCode">
+            <path value="PID.identityReliabilityCode" />
+            <code>
+                <system value="http://terminology.hl7.org/CodeSystem/v2-0445" />
+            </code>
+            <min value="0" />
+            <max value="*" />
+            <type>
+                <code value="IS" />
+                <profile value="https://healex.systems/fhir/StructureDefinition/IS" />
+            </type>
+            <maxLength value="20" />
+            <mapping>
+                <identity value="v2" />
+                <map value="PID.32" />
+            </mapping>
+        </element>
+        <element id="PID.lastUpdateDateTime">
+            <path value="PID.lastUpdateDateTime" />
+            <min value="0" />
+            <max value="1" />
+            <type>
+                <code value="TS" />
+                <profile value="https://healex.systems/fhir/StructureDefinition/TS" />
+            </type>
+            <maxLength value="26" />
+            <mapping>
+                <identity value="v2" />
+                <map value="PID.33" />
+            </mapping>
+        </element>
+        <element id="PID.lastUpdateFacility">
+            <path value="PID.lastUpdateFacility" />
+            <min value="0" />
+            <max value="1" />
+            <type>
+                <code value="HD" />
+                <profile value="https://healex.systems/fhir/StructureDefinition/HD" />
+            </type>
+            <maxLength value="241" />
+            <mapping>
+                <identity value="v2" />
+                <map value="PID.34" />
+            </mapping>
+        </element>
+        <element id="PID.speciesCode">
+            <path value="PID.speciesCode" />
+            <code>
+                <system value="http://terminology.healex.systems/CodeSystem/v2-0446" />
+            </code>
+            <min value="0" />
+            <max value="1" />
+            <type>
+                <code value="CE" />
+                <profile value="https://healex.systems/fhir/StructureDefinition/CE" />
+            </type>
+            <maxLength value="250" />
+            <mapping>
+                <identity value="v2" />
+                <map value="PID.35" />
+            </mapping>
+        </element>
+        <element id="PID.breedCode">
+            <path value="PID.breedCode" />
+            <code>
+                <system value="http://terminology.healex.systems/CodeSystem/v2-0447" />
+            </code>
+            <min value="0" />
+            <max value="1" />
+            <type>
+                <code value="CE" />
+                <profile value="https://healex.systems/fhir/StructureDefinition/CE" />
+            </type>
+            <maxLength value="250" />
+            <mapping>
+                <identity value="v2" />
+                <map value="PID.36" />
+            </mapping>
+        </element>
+        <element id="PID.strain">
+            <path value="PID.strain" />
+            <min value="0" />
+            <max value="1" />
+            <type>
+                <code value="ST" />
+                <profile value="https://healex.systems/fhir/StructureDefinition/ST" />
+            </type>
+            <maxLength value="80" />
+            <mapping>
+                <identity value="v2" />
+                <map value="PID.37" />
+            </mapping>
+        </element>
+        <element id="PID.productionClassCode">
+            <path value="PID.productionClassCode" />
+            <code>
+                <system value="http://terminology.hl7.org/CodeSystem/v2-0429" />
+            </code>
+            <min value="0" />
+            <max value="2" />
+            <type>
+                <code value="CE" />
+                <profile value="https://healex.systems/fhir/StructureDefinition/CE" />
+            </type>
+            <maxLength value="250" />
+            <mapping>
+                <identity value="v2" />
+                <map value="PID.38" />
+            </mapping>
+        </element>
+        <element id="PID.tribalCitizenship">
+            <path value="PID.tribalCitizenship" />
+            <code>
+                <system value="http://terminology.hl7.org/CodeSystem/v2-0171" />
+            </code>
+            <min value="0" />
+            <max value="*" />
+            <type>
+                <code value="CWE" />
+                <profile value="https://healex.systems/fhir/StructureDefinition/CWE" />
+            </type>
+            <maxLength value="250" />
+            <mapping>
+                <identity value="v2" />
+                <map value="PID.39" />
+            </mapping>
+        </element>
+    </differential>
+</StructureDefinition> 

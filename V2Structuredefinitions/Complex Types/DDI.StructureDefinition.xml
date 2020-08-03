@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<StructureDefinition xmlns="http://hl7.org/fhir">
+  <url value="https://healex.systems/fhir/StructureDefinition/DDI" />
+  <name value="DDI" />
+  <title value="Daily deductible information" />
+  <status value="draft" />
+  <fhirVersion value="4.0.1" />
+  <kind value="logical" />
+  <abstract value="false" />
+  <type value="DDI" />
+  <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Element" />
+  <derivation value="specialization" />
+  <differential>
+    <element id="DDI">
+      <path value="DDI" />
+      <definition value="This data type specifies the detail information for the daily deductible." />
+      <min value="0" />
+      <max value="*" />
+      <type>
+        <code value="Element" />
+      </type>
+      <maxLength value="25" />
+      <mapping>
+        <identity value="v2" />
+        <map value="DDI" />
+      </mapping>
+    </element>
+    <element id="DDI.delayDays">
+      <path value="DDI.delayDays" />
+      <min value="0" />
+      <max value="1" />
+      <type>
+        <code value="NM" />
+        <profile value="https://healex.systems/fhir/StructureDefinition/NM" />
+      </type>
+      <maxLength value="3" />
+      <mapping>
+        <identity value="v2" />
+        <map value="DDI.1" />
+      </mapping>
+    </element>
+    <element id="DDI.monetaryAmount">
+      <path value="DDI.monetaryAmount" />
+      <min value="1" />
+      <max value="1" />
+      <type>
+        <code value="MO" />
+        <profile value="https://healex.systems/fhir/StructureDefinition/MO" />
+      </type>
+      <maxLength value="16" />
+      <mapping>
+        <identity value="v2" />
+        <map value="DDI.2" />
+      </mapping>
+    </element>
+    <element id="DDI.numberOfDays">
+      <path value="DDI.numberOfDays" />
+      <min value="0" />
+      <max value="1" />
+      <type>
+        <code value="NM" />
+        <profile value="https://healex.systems/fhir/StructureDefinition/NM" />
+      </type>
+      <maxLength value="4" />
+      <mapping>
+        <identity value="v2" />
+        <map value="DDI.3" />
+      </mapping>
+    </element>
+  </differential>
+</StructureDefinition>

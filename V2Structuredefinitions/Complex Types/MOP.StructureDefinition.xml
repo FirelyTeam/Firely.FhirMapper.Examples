@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<StructureDefinition xmlns="http://hl7.org/fhir">
+  <url value="https://healex.systems/fhir/StructureDefinition/MOP" />
+  <name value="MOP" />
+  <title value="Money or percentage" />
+  <status value="draft" />
+  <fhirVersion value="4.0.1" />
+  <kind value="logical" />
+  <abstract value="false" />
+  <type value="MOP" />
+  <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Element" />
+  <derivation value="specialization" />
+  <differential>
+    <element id="MOP">
+      <path value="MOP" />
+      <definition value="This data type specifies an amount that may be either currency or a percentage. It is a variation&#xD;&#xA;on the MO data type that is limited to currency" />
+      <min value="0" />
+      <max value="*" />
+      <type>
+        <code value="Element" />
+      </type>
+      <maxLength value="23" />
+      <mapping>
+        <identity value="v2" />
+        <map value="MOP" />
+      </mapping>
+    </element>
+    <element id="MOP.moneyOrPercentageIndicator">
+      <path value="MOP.moneyOrPercentageIndicator" />
+      <code>
+        <system value="http://terminology.hl7.org/CodeSystem/v2-0148" />
+      </code>
+      <min value="1" />
+      <max value="1" />
+      <type>
+        <code value="ID" />
+        <profile value="https://healex.systems/fhir/StructureDefinition/ID" />
+      </type>
+      <maxLength value="2" />
+      <mapping>
+        <identity value="v2" />
+        <map value="MOP.1" />
+      </mapping>
+    </element>
+    <element id="MOP.moneyOrPercentageQuality">
+      <path value="MOP.moneyOrPercentageQuality" />
+      <min value="1" />
+      <max value="1" />
+      <type>
+        <code value="NM" />
+        <profile value="https://healex.systems/fhir/StructureDefinition/NM" />
+      </type>
+      <maxLength value="16" />
+      <mapping>
+        <identity value="v2" />
+        <map value="MOP.2" />
+      </mapping>
+    </element>
+    <element id="MOP.currencyDenomination">
+      <path value="MOP.currencyDenomination" />
+      <code>
+        <system value="urn:iso:std:iso:4217" />
+      </code>
+      <min value="0" />
+      <max value="1" />
+      <type>
+        <code value="ID" />
+        <profile value="https://healex.systems/fhir/StructureDefinition/ID" />
+      </type>
+      <maxLength value="3" />
+      <mapping>
+        <identity value="v2" />
+        <map value="MOP.3" />
+      </mapping>
+    </element>
+  </differential>
+</StructureDefinition>

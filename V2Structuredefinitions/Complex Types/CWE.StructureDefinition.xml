@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<StructureDefinition xmlns="http://hl7.org/fhir">
+  <url value="https://healex.systems/fhir/StructureDefinition/CWE" />
+  <name value="CWE" />
+  <title value="Coded With Exceptions" />
+  <status value="draft" />
+  <fhirVersion value="4.0.1" />
+  <kind value="logical" />
+  <abstract value="false" />
+  <type value="CWE" />
+  <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Element" />
+  <derivation value="specialization" />
+  <differential>
+    <element id="CWE">
+      <path value="CWE" />
+      <definition value="Specifies a coded element and its associated detail. The CWE data type is used when 1) more&#xD;&#xA;than one table may be applicable or 2) the specified HL7 or externally defined table may be extended with&#xD;&#xA;local values or 3) when text is in place, the code may be omitted." />
+      <min value="0" />
+      <max value="*" />
+      <type>
+        <code value="Element" />
+      </type>
+      <maxLength value="705" />
+      <mapping>
+        <identity value="v2" />
+        <map value="CWE" />
+      </mapping>
+    </element>
+    <element id="CWE.identifier">
+      <path value="CWE.identifier" />
+      <min value="0" />
+      <max value="1" />
+      <type>
+        <code value="ST" />
+        <profile value="https://healex.systems/fhir/StructureDefinition/ST" />
+      </type>
+      <maxLength value="20" />
+      <mapping>
+        <identity value="v2" />
+        <map value="CWE.1" />
+      </mapping>
+    </element>
+    <element id="CWE.text">
+      <path value="CWE.text" />
+      <min value="0" />
+      <max value="1" />
+      <type>
+        <code value="ST" />
+        <profile value="https://healex.systems/fhir/StructureDefinition/ST" />
+      </type>
+      <maxLength value="199" />
+      <mapping>
+        <identity value="v2" />
+        <map value="CWE.2" />
+      </mapping>
+    </element>
+    <element id="CWE.nameOfCodingSystem">
+      <path value="CWE.nameOfCodingSystem" />
+      <code>
+        <system value="http://terminology.hl7.org/CodeSystem/v2-0396" />
+      </code>
+      <min value="0" />
+      <max value="1" />
+      <type>
+        <code value="ID" />
+        <profile value="https://healex.systems/fhir/StructureDefinition/ID" />
+      </type>
+      <maxLength value="20" />
+      <mapping>
+        <identity value="v2" />
+        <map value="CWE.3" />
+      </mapping>
+    </element>
+    <element id="CWE.alternateIdentifier">
+      <path value="CWE.alternateIdentifier" />
+      <min value="0" />
+      <max value="1" />
+      <type>
+        <code value="ST" />
+        <profile value="https://healex.systems/fhir/StructureDefinition/ST" />
+      </type>
+      <maxLength value="20" />
+      <mapping>
+        <identity value="v2" />
+        <map value="CWE.4" />
+      </mapping>
+    </element>
+    <element id="CWE.alternateText">
+      <path value="CWE.alternateText" />
+      <min value="0" />
+      <max value="1" />
+      <type>
+        <code value="ST" />
+        <profile value="https://healex.systems/fhir/StructureDefinition/ST" />
+      </type>
+      <maxLength value="199" />
+      <mapping>
+        <identity value="v2" />
+        <map value="CWE.5" />
+      </mapping>
+    </element>
+    <element id="CWE.nameOfAlternateCodingSystem">
+      <path value="CWE.nameOfAlternateCodingSystem" />
+      <code>
+        <system value="http://terminology.hl7.org/CodeSystem/v2-0396" />
+      </code>
+      <min value="0" />
+      <max value="1" />
+      <type>
+        <code value="ID" />
+        <profile value="https://healex.systems/fhir/StructureDefinition/ID" />
+      </type>
+      <maxLength value="20" />
+      <mapping>
+        <identity value="v2" />
+        <map value="CWE.6" />
+      </mapping>
+    </element>
+    <element id="CWE.codingSystemVersionID">
+      <path value="CWE.codingSystemVersionID" />
+      <min value="0" />
+      <max value="1" />
+      <type>
+        <code value="ST" />
+        <profile value="https://healex.systems/fhir/StructureDefinition/ST" />
+      </type>
+      <maxLength value="10" />
+      <mapping>
+        <identity value="v2" />
+        <map value="CWE.7" />
+      </mapping>
+    </element>
+    <element id="CWE.alternateCodingSystemVersionID">
+      <path value="CWE.alternateCodingSystemVersionID" />
+      <min value="0" />
+      <max value="1" />
+      <type>
+        <code value="ST" />
+        <profile value="https://healex.systems/fhir/StructureDefinition/ST" />
+      </type>
+      <maxLength value="10" />
+      <mapping>
+        <identity value="v2" />
+        <map value="CWE.8" />
+      </mapping>
+    </element>
+    <element id="CWE.originalText">
+      <path value="CWE.originalText" />
+      <min value="0" />
+      <max value="1" />
+      <type>
+        <code value="ST" />
+        <profile value="https://healex.systems/fhir/StructureDefinition/ST" />
+      </type>
+      <maxLength value="199" />
+      <mapping>
+        <identity value="v2" />
+        <map value="CWE.9" />
+      </mapping>
+    </element>
+  </differential>
+</StructureDefinition>

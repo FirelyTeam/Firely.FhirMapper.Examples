@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<StructureDefinition xmlns="http://hl7.org/fhir">
+  <url value="https://healex.systems/fhir/StructureDefinition/ED" />
+  <name value="ED" />
+  <title value="Encapsulated data" />
+  <status value="draft" />
+  <fhirVersion value="4.0.1" />
+  <kind value="logical" />
+  <abstract value="false" />
+  <type value="ED" />
+  <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Element" />
+  <derivation value="specialization" />
+  <differential>
+    <element id="ED">
+      <path value="ED" />
+      <definition value="This data type transmits encapsulated data from a source system to a destination system. It&#xD;&#xA;contains the identity of the source system, the type of data, the encoding method of the data, and the data&#xD;&#xA;itself. This data type is similar to the RP (reference pointer) data type of Section 2.A.65, &quot;RP - reference&#xD;&#xA;pointer,&quot; except that instead of pointing to the data on another system, it contains the data which is to be&#xD;&#xA;sent to that system." />
+      <min value="0" />
+      <max value="*" />
+      <type>
+        <code value="Element" />
+      </type>
+      <maxLength value="65536" />
+      <mapping>
+        <identity value="v2" />
+        <map value="ED" />
+      </mapping>
+    </element>
+    <element id="ED.sourceApplication">
+      <path value="ED.sourceApplication" />
+      <min value="0" />
+      <max value="1" />
+      <type>
+        <code value="HD" />
+        <profile value="https://healex.systems/fhir/StructureDefinition/HD" />
+      </type>
+      <maxLength value="227" />
+      <mapping>
+        <identity value="v2" />
+        <map value="ED.1" />
+      </mapping>
+    </element>
+    <element id="ED.typeOfData">
+      <path value="ED.typeOfData" />
+      <code>
+        <system value="http://terminology.hl7.org/CodeSystem/v2-0191" />
+      </code>
+      <min value="1" />
+      <max value="1" />
+      <type>
+        <code value="ID" />
+        <profile value="https://healex.systems/fhir/StructureDefinition/ID" />
+      </type>
+      <maxLength value="9" />
+      <mapping>
+        <identity value="v2" />
+        <map value="ED.2" />
+      </mapping>
+    </element>
+    <element id="ED.dataSubtype">
+      <path value="ED.dataSubtype" />
+      <code>
+        <system value="http://terminology.hl7.org/CodeSystem/v2-0291" />
+      </code>
+      <min value="0" />
+      <max value="1" />
+      <type>
+        <code value="ID" />
+        <profile value="https://healex.systems/fhir/StructureDefinition/ID" />
+      </type>
+      <maxLength value="18" />
+      <mapping>
+        <identity value="v2" />
+        <map value="ED.3" />
+      </mapping>
+    </element>
+    <element id="ED.encoding">
+      <path value="ED.encoding" />
+      <code>
+        <system value="http://terminology.hl7.org/CodeSystem/v2-0299" />
+      </code>
+      <min value="1" />
+      <max value="1" />
+      <type>
+        <code value="ID" />
+        <profile value="https://healex.systems/fhir/StructureDefinition/ID" />
+      </type>
+      <maxLength value="6" />
+      <mapping>
+        <identity value="v2" />
+        <map value="ED.4" />
+      </mapping>
+    </element>
+    <element id="ED.data">
+      <path value="ED.data" />
+      <min value="1" />
+      <max value="1" />
+      <type>
+        <code value="TX" />
+        <profile value="https://healex.systems/fhir/StructureDefinition/TX" />
+      </type>
+      <maxLength value="65536" />
+      <mapping>
+        <identity value="v2" />
+        <map value="ED.5" />
+      </mapping>
+    </element>
+  </differential>
+</StructureDefinition>

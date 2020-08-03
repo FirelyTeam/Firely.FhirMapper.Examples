@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<StructureDefinition xmlns="http://hl7.org/fhir">
+  <url value="https://healex.systems/fhir/StructureDefinition/CP" />
+  <name value="CP" />
+  <title value="Composite Price" />
+  <status value="draft" />
+  <fhirVersion value="4.0.1" />
+  <kind value="logical" />
+  <abstract value="false" />
+  <type value="CP" />
+  <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Element" />
+  <derivation value="specialization" />
+  <differential>
+    <element id="CP">
+      <path value="CP" />
+      <definition value="This data type is often used to define a repeating field within a given segment" />
+      <min value="0" />
+      <max value="*" />
+      <type>
+        <code value="Element" />
+      </type>
+      <maxLength value="543" />
+      <mapping>
+        <identity value="v2" />
+        <map value="CP" />
+      </mapping>
+    </element>
+    <element id="CP.price">
+      <path value="CP.price" />
+      <min value="1" />
+      <max value="1" />
+      <type>
+        <code value="MO" />
+        <profile value="https://healex.systems/fhir/StructureDefinition/MO" />
+      </type>
+      <maxLength value="20" />
+      <mapping>
+        <identity value="v2" />
+        <map value="CP.1" />
+      </mapping>
+    </element>
+    <element id="CP.priceType">
+      <path value="CP.priceType" />
+      <code>
+        <system value="http://terminology.hl7.org/CodeSystem/v2-0205" />
+      </code>
+      <min value="0" />
+      <max value="1" />
+      <type>
+        <code value="ID" />
+        <profile value="https://healex.systems/fhir/StructureDefinition/ID" />
+      </type>
+      <maxLength value="2" />
+      <mapping>
+        <identity value="v2" />
+        <map value="CP.2" />
+      </mapping>
+    </element>
+    <element id="CP.fromValue">
+      <path value="CP.fromValue" />
+      <min value="0" />
+      <max value="1" />
+      <type>
+        <code value="NM" />
+        <profile value="https://healex.systems/fhir/StructureDefinition/NM" />
+      </type>
+      <maxLength value="16" />
+      <mapping>
+        <identity value="v2" />
+        <map value="CP.3" />
+      </mapping>
+    </element>
+    <element id="CP.toValue">
+      <path value="CP.toValue" />
+      <min value="0" />
+      <max value="1" />
+      <type>
+        <code value="NM" />
+        <profile value="https://healex.systems/fhir/StructureDefinition/NM" />
+      </type>
+      <maxLength value="16" />
+      <mapping>
+        <identity value="v2" />
+        <map value="CP.4" />
+      </mapping>
+    </element>
+    <element id="CP.rangeUnits">
+      <path value="CP.rangeUnits" />
+      <min value="0" />
+      <max value="1" />
+      <type>
+        <code value="CE" />
+        <profile value="https://healex.systems/fhir/StructureDefinition/CE" />
+      </type>
+      <maxLength value="483" />
+      <mapping>
+        <identity value="v2" />
+        <map value="CP.5" />
+      </mapping>
+    </element>
+    <element id="CP.rangeType">
+      <path value="CP.rangeType" />
+      <code>
+        <system value="http://terminology.hl7.org/CodeSystem/v2-0298" />
+      </code>
+      <min value="0" />
+      <max value="1" />
+      <type>
+        <code value="ID" />
+        <profile value="https://healex.systems/fhir/StructureDefinition/ID" />
+      </type>
+      <maxLength value="1" />
+      <mapping>
+        <identity value="v2" />
+        <map value="CP.6" />
+      </mapping>
+    </element>
+  </differential>
+</StructureDefinition>

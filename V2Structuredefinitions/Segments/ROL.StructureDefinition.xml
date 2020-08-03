@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="utf-8"?>
+<StructureDefinition xmlns="http://hl7.org/fhir">
+  <url value="https://healex.systems/fhir/StructureDefinition/ROL" />
+  <name value="ROL" />
+  <title value="Role segment" />
+  <status value="draft" />
+  <fhirVersion value="4.0.1" />
+  <kind value="logical" />
+  <abstract value="false" />
+  <type value="ROL" />
+  <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Element" />
+  <derivation value="specialization" />
+  <differential>
+    <element id="ROL">
+      <path value="ROL" />
+      <min value="0" />
+      <max value="*" />
+      <type>
+        <code value="Element" />
+      </type>
+      <mapping>
+        <identity value="v2" />
+        <map value="ROL" />
+      </mapping>
+    </element>
+    <element id="ROL.roleInstanceID">
+      <path value="ROL.roleInstanceID" />
+      <min value="0" />
+      <max value="1" />
+      <type>
+        <code value="EI" />
+        <profile value="https://healex.systems/fhir/StructureDefinition/EI" />
+      </type>
+      <maxLength value="60" />
+      <mapping>
+        <identity value="v2" />
+        <map value="ROL.1" />
+      </mapping>
+    </element>
+    <element id="ROL.actionCode">
+      <path value="ROL.actionCode" />
+      <code>
+        <system value="http://terminology.hl7.org/CodeSystem/v2-0287" />
+      </code>
+      <min value="1" />
+      <max value="1" />
+      <type>
+        <code value="ID" />
+        <profile value="https://healex.systems/fhir/StructureDefinition/ID" />
+      </type>
+      <maxLength value="2" />
+      <mapping>
+        <identity value="v2" />
+        <map value="ROL.2" />
+      </mapping>
+    </element>
+    <element id="ROL.roleROL">
+      <path value="ROL.roleROL" />
+      <code>
+        <system value="http://terminology.hl7.org/CodeSystem/v2-0443" />
+      </code>
+      <min value="1" />
+      <max value="1" />
+      <type>
+        <code value="CE" />
+        <profile value="https://healex.systems/fhir/StructureDefinition/CE" />
+      </type>
+      <maxLength value="250" />
+      <mapping>
+        <identity value="v2" />
+        <map value="ROL.3" />
+      </mapping>
+    </element>
+    <element id="ROL.rolePerson">
+      <path value="ROL.rolePerson" />
+      <min value="1" />
+      <max value="*" />
+      <type>
+        <code value="XCN" />
+        <profile value="https://healex.systems/fhir/StructureDefinition/XCN" />
+      </type>
+      <maxLength value="250" />
+      <mapping>
+        <identity value="v2" />
+        <map value="ROL.4" />
+      </mapping>
+    </element>
+    <element id="ROL.roleBeginDateTime">
+      <path value="ROL.roleBeginDateTime" />
+      <min value="0" />
+      <max value="1" />
+      <type>
+        <code value="TS" />
+        <profile value="https://healex.systems/fhir/StructureDefinition/TS" />
+      </type>
+      <maxLength value="26" />
+      <mapping>
+        <identity value="v2" />
+        <map value="ROL.5" />
+      </mapping>
+    </element>
+    <element id="ROL.roleEndDateTime">
+      <path value="ROL.roleEndDateTime" />
+      <min value="0" />
+      <max value="1" />
+      <type>
+        <code value="TS" />
+        <profile value="https://healex.systems/fhir/StructureDefinition/TS" />
+      </type>
+      <maxLength value="26" />
+      <mapping>
+        <identity value="v2" />
+        <map value="ROL.6" />
+      </mapping>
+    </element>
+    <element id="ROL.roleDuration">
+      <path value="ROL.roleDuration" />
+      <min value="0" />
+      <max value="1" />
+      <type>
+        <code value="CE" />
+        <profile value="https://healex.systems/fhir/StructureDefinition/CE" />
+      </type>
+      <maxLength value="250" />
+      <mapping>
+        <identity value="v2" />
+        <map value="ROL.7" />
+      </mapping>
+    </element>
+    <element id="ROL.roleActionReason">
+      <path value="ROL.roleActionReason" />
+      <min value="0" />
+      <max value="1" />
+      <type>
+        <code value="CE" />
+        <profile value="https://healex.systems/fhir/StructureDefinition/CE" />
+      </type>
+      <maxLength value="250" />
+      <mapping>
+        <identity value="v2" />
+        <map value="ROL.8" />
+      </mapping>
+    </element>
+    <element id="ROL.providerType">
+      <path value="ROL.providerType" />
+      <min value="0" />
+      <max value="*" />
+      <type>
+        <code value="CE" />
+        <profile value="https://healex.systems/fhir/StructureDefinition/CE" />
+      </type>
+      <maxLength value="250" />
+      <mapping>
+        <identity value="v2" />
+        <map value="ROL.9" />
+      </mapping>
+    </element>
+    <element id="ROL.organizationUnitType">
+      <path value="ROL.organizationUnitType" />
+      <code>
+        <system value="http://terminology.hl7.org/CodeSystem/v2-0406" />
+      </code>
+      <min value="0" />
+      <max value="1" />
+      <type>
+        <code value="CE" />
+        <profile value="https://healex.systems/fhir/StructureDefinition/CE" />
+      </type>
+      <maxLength value="250" />
+      <mapping>
+        <identity value="v2" />
+        <map value="ROL.10" />
+      </mapping>
+    </element>
+    <element id="ROL.officeHomeAdressBirthplace">
+      <path value="ROL.officeHomeAdressBirthplace" />
+      <min value="0" />
+      <max value="*" />
+      <type>
+        <code value="XAD" />
+        <profile value="https://healex.systems/fhir/StructureDefinition/XAD" />
+      </type>
+      <maxLength value="250" />
+      <mapping>
+        <identity value="v2" />
+        <map value="ROL.11" />
+      </mapping>
+    </element>
+    <element id="ROL.phone">
+      <path value="ROL.phone" />
+      <min value="0" />
+      <max value="*" />
+      <type>
+        <code value="XTN" />
+        <profile value="https://healex.systems/fhir/StructureDefinition/XTN" />
+      </type>
+      <maxLength value="250" />
+      <mapping>
+        <identity value="v2" />
+        <map value="ROL.12" />
+      </mapping>
+    </element>
+  </differential>
+</StructureDefinition>
