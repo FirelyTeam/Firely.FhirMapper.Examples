@@ -8,6 +8,7 @@
   "abstract": false,
   "type": "http://example.org/fhir/StructureDefinition/FakeInpatientDrugChart",
   "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Element",
+  "description": "Logical model describing a fake and medically inaccurate inpatient drug chart, as Forge saved it",
   "derivation": "specialization",
   "differential": {
     "element": [
