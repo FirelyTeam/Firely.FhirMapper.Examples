@@ -1,7 +1,7 @@
 {
   "resourceType": "StructureDefinition",
   "id": "FakeInpatientDrugChart",
-  "url": "http://hl7.org/fhir/StructureDefinition/FakeInpatientDrugChart",
+  "url": "http://vonk.fire.ly/fhir/StructureDefinition/FakeInpatientDrugChart",
   "name": "FakeInpatientDrugChart",
   "title": "Fake Inpatient Drug Chart (ready for Vonk upload)",
   "status": "draft",
