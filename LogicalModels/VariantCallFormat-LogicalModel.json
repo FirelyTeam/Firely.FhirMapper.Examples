@@ -1,0 +1,945 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "VariantCallFormat",
+  "url": "http://hl7.org/fhir/StructureDefinition/VCF",
+  "name": "VariantCallFormat",
+  "title": "Variant Call Format",
+  "status": "draft",
+  "purpose": "A logical model of the Variant Call Format model, specifying the format text files used in bioinformatics for storing gene sequence variations.",
+  "fhirVersion": "3.0.2",
+  "kind": "logical",
+  "abstract": false,
+  "type": "VCF",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Element",
+  "derivation": "specialization",
+  "differential": {
+    "element": [
+      {
+        "id": "VCF",
+        "path": "VCF",
+        "definition": "VCF (root element)",
+        "min": 0,
+        "max": "1"
+      },
+      {
+        "id": "VCF.Header",
+        "path": "VCF.Header",
+        "definition": "Container for the metainfo of the file",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "BackboneElement"
+          }
+        ],
+        "mustSupport": true
+      },
+      {
+        "id": "VCF.Header.fileformat",
+        "path": "VCF.Header.fileformat",
+        "definition": "The format of the file and the version number. \r\nShould be given in the following format: \"VCFv4.1\"",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "string",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/string"
+            ]
+          }
+        ],
+        "mustSupport": true
+      },
+      {
+        "id": "VCF.Header.contig",
+        "path": "VCF.Header.contig",
+        "definition": "A contiguousset of overlapping DNA segments that represent a consensus region of DNA. \r\nA list of IDs for the DNA sequences that appear in the reference genome.",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "BackboneElement"
+          }
+        ]
+      },
+      {
+        "id": "VCF.Header.contig.ID",
+        "path": "VCF.Header.contig.ID",
+        "definition": "Identification tag for the contig segment",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "id",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/id"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "VCF.Header.contig.Optional",
+        "path": "VCF.Header.contig.Optional",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "BackboneElement"
+          }
+        ]
+      },
+      {
+        "id": "VCF.Header.contig.Optional.Name",
+        "path": "VCF.Header.contig.Optional.Name",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "string",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/string"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "VCF.Header.contig.Optional.Value",
+        "path": "VCF.Header.contig.Optional.Value",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "string",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/string"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "VCF.Header.INFO",
+        "path": "VCF.Header.INFO",
+        "definition": "The info field should be described as follows: ##INFO=<ID=ID, Number=number, Type=type, Description=\"description\">",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "BackboneElement"
+          }
+        ],
+        "mustSupport": true
+      },
+      {
+        "id": "VCF.Header.INFO.ID",
+        "path": "VCF.Header.INFO.ID",
+        "definition": "ID given to the instance",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "id",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/id"
+            ]
+          }
+        ],
+        "mustSupport": true
+      },
+      {
+        "id": "VCF.Header.INFO.Number",
+        "path": "VCF.Header.INFO.Number",
+        "definition": "Number describes the number of values that can be included in the info field",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "integer",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/integer"
+            ]
+          }
+        ],
+        "mustSupport": true
+      },
+      {
+        "id": "VCF.Header.INFO.Type",
+        "path": "VCF.Header.INFO.Type",
+        "definition": "Type describes the datatype of the field",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "string",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/string"
+            ]
+          }
+        ],
+        "mustSupport": true
+      },
+      {
+        "id": "VCF.Header.INFO.Description",
+        "path": "VCF.Header.INFO.Description",
+        "definition": "Description of the ID",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "string",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/string"
+            ]
+          }
+        ],
+        "mustSupport": true
+      },
+      {
+        "id": "VCF.Header.INFO.Optional",
+        "path": "VCF.Header.INFO.Optional",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "BackboneElement"
+          }
+        ]
+      },
+      {
+        "id": "VCF.Header.INFO.Optional.Name",
+        "path": "VCF.Header.INFO.Optional.Name",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "string",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/string"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "VCF.Header.INFO.Optional.Value",
+        "path": "VCF.Header.INFO.Optional.Value",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "string",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/string"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "VCF.Header.FILTER",
+        "path": "VCF.Header.FILTER",
+        "definition": "Filters that have been applied to the data.\r\n##FILTER=<ID=ID, Description=\"description\">",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "BackboneElement"
+          }
+        ],
+        "mustSupport": true
+      },
+      {
+        "id": "VCF.Header.FILTER.ID",
+        "path": "VCF.Header.FILTER.ID",
+        "definition": "ID given to the instance",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "id",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/id"
+            ]
+          }
+        ],
+        "mustSupport": true
+      },
+      {
+        "id": "VCF.Header.FILTER.Description",
+        "path": "VCF.Header.FILTER.Description",
+        "definition": "Description of the ID",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "string",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/string"
+            ]
+          }
+        ],
+        "mustSupport": true
+      },
+      {
+        "id": "VCF.Header.FILTER.Optional",
+        "path": "VCF.Header.FILTER.Optional",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "BackboneElement"
+          }
+        ]
+      },
+      {
+        "id": "VCF.Header.FILTER.Optional.Name",
+        "path": "VCF.Header.FILTER.Optional.Name",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "string",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/string"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "VCF.Header.FILTER.Optional.Value",
+        "path": "VCF.Header.FILTER.Optional.Value",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "string",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/string"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "VCF.Header.FORMAT",
+        "path": "VCF.Header.FORMAT",
+        "definition": "Format of the file",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "BackboneElement"
+          }
+        ],
+        "mustSupport": true
+      },
+      {
+        "id": "VCF.Header.FORMAT.ID",
+        "path": "VCF.Header.FORMAT.ID",
+        "comment": "ID given to the instance",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "id",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/id"
+            ]
+          }
+        ],
+        "mustSupport": true
+      },
+      {
+        "id": "VCF.Header.FORMAT.Number",
+        "path": "VCF.Header.FORMAT.Number",
+        "definition": "Number describes the number of values that can be included in the format field",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "integer",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/integer"
+            ]
+          }
+        ],
+        "mustSupport": true
+      },
+      {
+        "id": "VCF.Header.FORMAT.Type",
+        "path": "VCF.Header.FORMAT.Type",
+        "definition": "Type describes the datatype of the field",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "string",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/string"
+            ]
+          }
+        ],
+        "mustSupport": true
+      },
+      {
+        "id": "VCF.Header.FORMAT.Description",
+        "path": "VCF.Header.FORMAT.Description",
+        "comment": "Description of the ID",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "string",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/string"
+            ]
+          }
+        ],
+        "mustSupport": true
+      },
+      {
+        "id": "VCF.Header.FORMAT.Optional",
+        "path": "VCF.Header.FORMAT.Optional",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "BackboneElement"
+          }
+        ]
+      },
+      {
+        "id": "VCF.Header.FORMAT.Optional.Name",
+        "path": "VCF.Header.FORMAT.Optional.Name",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "string",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/string"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "VCF.Header.FORMAT.Optional.Value",
+        "path": "VCF.Header.FORMAT.Optional.Value",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "string",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/string"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "VCF.Header.ALT",
+        "path": "VCF.Header.ALT",
+        "definition": "Filters that have been applied to the data.\r\n##FILTER=<ID=ID, Description=\"description\">",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "BackboneElement"
+          }
+        ],
+        "mustSupport": true
+      },
+      {
+        "id": "VCF.Header.ALT.ID",
+        "path": "VCF.Header.ALT.ID",
+        "definition": "ID given to the instance",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "id",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinitions/id"
+            ]
+          }
+        ],
+        "mustSupport": true
+      },
+      {
+        "id": "VCF.Header.ALT.Description",
+        "path": "VCF.Header.ALT.Description",
+        "definition": "Description of the ID",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "string",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/string"
+            ]
+          }
+        ],
+        "mustSupport": true
+      },
+      {
+        "id": "VCF.Header.ALT.Optional",
+        "path": "VCF.Header.ALT.Optional",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "BackboneElement"
+          }
+        ]
+      },
+      {
+        "id": "VCF.Header.ALT.Optional.Name",
+        "path": "VCF.Header.ALT.Optional.Name",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "string",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/string"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "VCF.Header.ALT.Optional.Value",
+        "path": "VCF.Header.ALT.Optional.Value",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "string",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/string"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "VCF.Header.OPTIONAL",
+        "path": "VCF.Header.OPTIONAL",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "BackboneElement"
+          }
+        ]
+      },
+      {
+        "id": "VCF.Header.OPTIONAL.Name",
+        "path": "VCF.Header.OPTIONAL.Name",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "string",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/string"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "VCF.Header.OPTIONAL.Value",
+        "path": "VCF.Header.OPTIONAL.Value",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "string",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/string"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "VCF.Header.PEDIGREE",
+        "path": "VCF.Header.PEDIGREE",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "BackboneElement"
+          }
+        ]
+      },
+      {
+        "id": "VCF.Header.PEDIGREE.Optional",
+        "path": "VCF.Header.PEDIGREE.Optional",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "BackboneElement"
+          }
+        ]
+      },
+      {
+        "id": "VCF.Header.PEDIGREE.Optional.Name",
+        "path": "VCF.Header.PEDIGREE.Optional.Name",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "string",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/string"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "VCF.Header.PEDIGREE.Optional.Value",
+        "path": "VCF.Header.PEDIGREE.Optional.Value",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "string",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/string"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "VCF.Header.pedigreeDB",
+        "path": "VCF.Header.pedigreeDB",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "BackboneElement"
+          }
+        ]
+      },
+      {
+        "id": "VCF.Header.pedigreeDB.url",
+        "path": "VCF.Header.pedigreeDB.url",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "string",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/string"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "VCF.Header.SAMPLE",
+        "path": "VCF.Header.SAMPLE",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "BackboneElement"
+          }
+        ]
+      },
+      {
+        "id": "VCF.Header.SAMPLE.ID",
+        "path": "VCF.Header.SAMPLE.ID",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "string",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/string"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "VCF.Header.SAMPLE.Genomes",
+        "path": "VCF.Header.SAMPLE.Genomes",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "string",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/string"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "VCF.Header.SAMPLE.Mixture",
+        "path": "VCF.Header.SAMPLE.Mixture",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "string",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/string"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "VCF.Header.SAMPLE.Description",
+        "path": "VCF.Header.SAMPLE.Description",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "string",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/string"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "VCF.Header.SAMPLE.Optional",
+        "path": "VCF.Header.SAMPLE.Optional",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "BackboneElement"
+          }
+        ]
+      },
+      {
+        "id": "VCF.Header.SAMPLE.Optional.Name",
+        "path": "VCF.Header.SAMPLE.Optional.Name",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "string",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/string"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "VCF.Header.SAMPLE.Optional.Value",
+        "path": "VCF.Header.SAMPLE.Optional.Value",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "string",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/string"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "VCF.Body",
+        "path": "VCF.Body",
+        "definition": "Content of the file",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "BackboneElement"
+          }
+        ],
+        "mustSupport": true
+      },
+      {
+        "id": "VCF.Body.Records",
+        "path": "VCF.Body.Records",
+        "min": 1,
+        "max": "*",
+        "type": [
+          {
+            "code": "BackboneElement"
+          }
+        ],
+        "mustSupport": false
+      },
+      {
+        "id": "VCF.Body.Records.CHROM",
+        "path": "VCF.Body.Records.CHROM",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "CodeableConcept",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/CodeableConcept"
+            ]
+          }
+        ],
+        "mustSupport": true,
+        "binding": {
+          "strength": "required",
+          "valueSetUri": "http://hl7.org/fhir/ValueSet/chromosome-human"
+        }
+      },
+      {
+        "id": "VCF.Body.Records.POS",
+        "path": "VCF.Body.Records.POS",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "string",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/string"
+            ]
+          }
+        ],
+        "mustSupport": true
+      },
+      {
+        "id": "VCF.Body.Records.ID",
+        "path": "VCF.Body.Records.ID",
+        "min": 1,
+        "max": "*",
+        "type": [
+          {
+            "code": "string",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/string"
+            ]
+          }
+        ],
+        "mustSupport": true
+      },
+      {
+        "id": "VCF.Body.Records.REF",
+        "path": "VCF.Body.Records.REF",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "string",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/string"
+            ]
+          }
+        ],
+        "mustSupport": true
+      },
+      {
+        "id": "VCF.Body.Records.ALT",
+        "path": "VCF.Body.Records.ALT",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "string",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/string"
+            ]
+          }
+        ],
+        "mustSupport": true
+      },
+      {
+        "id": "VCF.Body.Records.QUAL",
+        "path": "VCF.Body.Records.QUAL",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "string",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/string"
+            ]
+          }
+        ],
+        "mustSupport": true
+      },
+      {
+        "id": "VCF.Body.Records.FILTER",
+        "path": "VCF.Body.Records.FILTER",
+        "min": 1,
+        "max": "*",
+        "type": [
+          {
+            "code": "string",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/string"
+            ]
+          }
+        ],
+        "mustSupport": true
+      },
+      {
+        "id": "VCF.Body.Records.INFO",
+        "path": "VCF.Body.Records.INFO",
+        "min": 1,
+        "max": "*",
+        "type": [
+          {
+            "code": "string",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/string"
+            ]
+          }
+        ],
+        "mustSupport": true
+      },
+      {
+        "id": "VCF.Body.Records.FORMAT",
+        "path": "VCF.Body.Records.FORMAT",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "string",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/string"
+            ]
+          }
+        ],
+        "mustSupport": true
+      },
+      {
+        "id": "VCF.Body.Records.SAMPLE",
+        "path": "VCF.Body.Records.SAMPLE",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "BackboneElement"
+          }
+        ],
+        "mustSupport": true
+      },
+      {
+        "id": "VCF.Body.Records.SAMPLE.Name",
+        "path": "VCF.Body.Records.SAMPLE.Name",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "string",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/string"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "VCF.Body.Records.SAMPLE.Value",
+        "path": "VCF.Body.Records.SAMPLE.Value",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "string",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/string"
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}
