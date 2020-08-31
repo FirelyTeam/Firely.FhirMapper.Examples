@@ -1,0 +1,48 @@
+{
+  "resourceType": "ConceptMap",
+  "id": "MyFakePatientGender",
+  "name": "MyFakePatientGender",
+  "status": "draft",
+  "group": [
+    {
+      "element": [
+        {
+          "target": [
+            {
+              "code": "female",
+              "display": "Female",
+              "equivalence": "equal"
+            }
+          ],
+          "code": "female",
+          "display": "Female"
+        },
+        {
+          "target": [
+            {
+              "code": "male",
+              "display": "Male",
+              "equivalence": "equal"
+            }
+          ],
+          "code": "male",
+          "display": "Male"
+        },
+        {
+          "target": [
+            {
+              "code": "other",
+              "display": "Other",
+              "equivalence": "equivalent"
+            }
+          ],
+          "code": "nonbinary",
+          "display": "Nonbinary"
+        }
+      ],
+      "source": "http://vonk.fire.ly/fhir/CodeSystem/MyFakePatientGender",
+      "target": "http://hl7.org/fhir/administrative-gender"
+    }
+  ],
+  "url": "http://vonk.fire.ly/fhir/ConceptMap/MyFakePatientGender"
+}

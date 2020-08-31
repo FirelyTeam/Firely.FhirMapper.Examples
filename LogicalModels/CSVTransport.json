@@ -1,0 +1,113 @@
+{
+  "resourceType": "StructureDefinition",
+  "url": "http://vonk.fire.ly/fhir/StructureDefinition/CSV_Transport",
+  "name": "CSV_Transport",
+  "status": "active",
+  "fhirVersion": "4.0.1",
+  "kind": "logical",
+  "abstract": false,
+  "type": "CSV_Transport",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Element",
+  "derivation": "specialization",
+  "differential": {
+    "element": [
+      {
+        "id": "CSV_Transport",
+        "path": "CSV_Transport",
+        "short": "Base for all elements.",
+        "definition": "CSV_Transport (root element).",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "Element"
+          }
+        ]
+      },
+      {
+        "id": "CSV_Transport.hasHeader",
+        "path": "CSV_Transport.hasHeader",
+        "definition": "Indicates if the CSV file contains a header or not.",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "boolean",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/boolean"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "CSV_Transport.record",
+        "path": "CSV_Transport.record",
+        "short": "Base for CSV records.",
+        "definition": "All records (rows) that are part of the CSV file.",
+        "min": 1,
+        "max": "*",
+        "type": [
+          {
+            "code": "BackboneElement"
+          }
+        ]
+      },
+      {
+        "id": "CSV_Transport.record.ID",
+        "path": "CSV_Transport.record.ID",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "string",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/string"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "CSV_Transport.record.Given",
+        "path": "CSV_Transport.record.Given",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "string",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/string"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "CSV_Transport.record.Family",
+        "path": "CSV_Transport.record.Family",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "string",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/string"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "CSV_Transport.record.Gender",
+        "path": "CSV_Transport.record.Gender",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "string",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/string"
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}
