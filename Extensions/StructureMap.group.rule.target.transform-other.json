@@ -10,6 +10,7 @@
   "context": [
     "StructureMap.group.rule.target.transform"
   ],
+  "description": "Represents an unoffical transform function (StructureMap.group.rule.target.transform) in the FHIR Mapping Language",
   "type": "Extension",
   "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Extension",
   "derivation": "constraint",
