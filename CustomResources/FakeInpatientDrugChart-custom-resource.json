@@ -3,6 +3,7 @@
   "id": "FakeInpatientDrugChart",
   "url": "http://hl7.org/fhir/StructureDefinition/FakeInpatientDrugChart",
   "name": "FakeInpatientDrugChart",
+  "title": "Fake Inpatient Drug Chart (ready for Vonk upload)",
   "status": "draft",
   "fhirVersion": "3.0.1",
   "kind": "resource",
