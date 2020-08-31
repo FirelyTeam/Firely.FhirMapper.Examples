@@ -33,8 +33,8 @@ group MapFakeInpatientDrugChart(source src: FakeInpatientDrugChart, target bundl
 
 group TransformPatient(source src : FakeInpatientDrugChart, target patient: Patient)
 {
-  src -> patient.id = uuid();
-  src.mpi as mpi -> patient.identifier =
+  src.id default "'test'" as id -> patient.id = id;
+  src.mpi : string as mpi -> patient.identifier =
     id('http://vonk.fire.ly/fhir/CodeSystem/mpi', mpi) as identifier, identifier.use = 'official';
   src.patientName as patientName -> patient.name as humanName, humanName.text = patientName;
   src.dateOfBirth as dateOfBirth -> patient.birthDate = dateOp(dateOfBirth, 'dateTime');
@@ -46,7 +46,7 @@ group TransformPatient(source src : FakeInpatientDrugChart, target patient: Pati
   src.contact as contact, contact.telephone as telephone -> patient.telecom as telecom,
     telecom.system = 'phone', telecom.value = telephone;
 
-  src.guardian as guardian -> patient.contact = create('BackboneElement') as contact then
+  src.guardian first as guardian -> patient.contact = create('BackboneElement') as contact then
   {
     guardian.name as name -> contact.relationship =
       cc('http://terminology.hl7.org/CodeSystem/v2-0131', 'C', 'Emergency Contact'),
