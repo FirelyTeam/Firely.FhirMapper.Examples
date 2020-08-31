@@ -1,0 +1,75 @@
+/// version = 0.1
+/// title = "FHIR Mapper Tutorial : CSV"
+/// status = draft
+/// contact = "Firely"
+
+/*
+  The following FHIR Mapping Language file demonstrates the currently supported features of the FHIR Mapper
+    (Firely's implementation of the FHIR Mapping Language).
+  To learn more about the FHIR Mapper, see http://docs.simplifier.net/mappingengine/index.html
+
+  This is a pretty extensive example - feel free to refer to it when writing your own maps!
+
+  Maps are monodirectional: in this case we map from a logical model to FHIR resources.
+  
+  Latest version of this map lives on https://simplifier.net/fhirmapper/fhirmappertutorial
+*/
+
+map "http://vonk.fire.ly/fhir/StructureMap/FHIRMapperTutorial-CSV-R4" = "FHIRMapperTutorial-CSV-R4"
+
+uses "http://vonk.fire.ly/fhir/StructureDefinition/CSV_Transport" as source
+uses "http://hl7.org/fhir/StructureDefinition/Patient" as target
+uses "http://hl7.org/fhir/StructureDefinition/Observation" as target
+uses "http://hl7.org/fhir/StructureDefinition/MedicationRequest" as target
+
+group MapFakeInpatientDrugChart(source src: CSV_Transport, target bundle: Bundle)
+{
+  src -> bundle.id = uuid();
+  src -> bundle.type = 'collection';
+  src -> bundle.entry as entry, entry.resource = create('Patient') as patient then
+    TransformPatient(src, patient);
+}
+
+group TransformPatient(source src : CSV_Transport, target patient: Patient)
+{
+  src -> patient.id = uuid();
+  
+  src.record as record then 
+  {
+    record.mpi as mpi -> patient.identifier =
+    					 id('http://vonk.fire.ly/fhir/CodeSystem/mpi', mpi) as identifier, identifier.use = 'official';
+    
+    record.patientName as patientName -> patient.name as humanName, humanName.text = patientName;
+    record.dateOfBirth as dateOfBirth -> patient.birthDate = dateOp(dateOfBirth, 'MM/dd/yyyy','date');
+    
+    record.address as sourceAddress -> patient.address as targetAddress collate,
+    								   targetAddress.line = sourceAddress;
+    								   
+	record.email as email -> patient.telecom as telecom,
+    						 telecom.system = 'email', 
+    						 telecom.value = email;
+    						 
+    record.telephone as telephone -> patient.telecom as telecom,
+    								 telecom.system = 'phone',
+    								 telecom.value = telephone;
+    								 
+    record -> patient.contact = create('BackboneElement') as contact then
+	{
+		record.`guardian-name` as name -> contact.relationship =
+    									  cc('http://terminology.hl7.org/CodeSystem/v2-0131', 'C', 'Emergency Contact'),
+    									  contact.name as humanName, humanName.text = name;
+    		
+    	record.`guardian-email` as email -> contact.telecom as telecom,
+    										telecom.system = 'email', 
+    										telecom.value = email;
+    										
+    	record.`guardian-telephone` as telephone -> contact.telecom as telecom,
+    									   telecom.system = 'phone', 
+    									   telecom.value = telephone;
+	};
+	
+	record.gender as gender -> patient.gender =
+    						   translate(gender, 'http://vonk.fire.ly/fhir/ConceptMap/MyFakePatientGender', 'code');
+    
+  };
+}
