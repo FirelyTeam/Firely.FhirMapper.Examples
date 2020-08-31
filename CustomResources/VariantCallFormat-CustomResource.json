@@ -3,7 +3,7 @@
   "id": "VariantCallFormat",
   "url": "http://hl7.org/fhir/StructureDefinition/VCF",
   "name": "VariantCallFormat",
-  "title": "Variant Call Format",
+  "title": "Variant Call Format (ready for Vonk upload)",
   "status": "draft",
   "purpose": "A logical model of the Variant Call Format model, specifying the format text files used in bioinformatics for storing gene sequence variations.",
   "fhirVersion": "3.0.2",
