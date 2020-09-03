@@ -1,0 +1,30 @@
+/// version = 0.1
+/// title = "FHIR Mapper Tutorial : TestOutcome"
+/// status = draft
+/// contact = "Firely"
+
+/*
+  The following FHIR Mapping Language file demonstrates the currently supported features of the FHIR Mapper
+    (Firely's implementation of the FHIR Mapping Language).
+  To learn more about the FHIR Mapper, see http://docs.simplifier.net/mappingengine/index.html
+
+  This is a pretty extensive example - feel free to refer to it when writing your own maps!
+
+  Maps are monodirectional: in this case we map from a logical model to FHIR resources.
+  
+  Latest version of this map lives on https://simplifier.net/fhirmapper/fhirmappertutorial
+*/
+
+map "http://vonk.fire.ly/fhir/StructureMap/TestOutcome-R4" = "TestOutcome-R4"
+
+uses "http://hl7.org/fhir/StructureDefinition/FakeInpatientDrugChart" as source
+uses "http://hl7.org/fhir/StructureDefinition/OperationOutcome" as target
+
+group TestOutcome(source src : FakeInpatientDrugChart, target outcome: OperationOutcome)
+{
+  src -> outcome.id = uuid();
+  src -> outcome.issue as issue, 
+         issue.severity = 'information',
+         issue.code = '	informational',
+         issue.diagnostics = 'Test OperationOutcome';
+}
