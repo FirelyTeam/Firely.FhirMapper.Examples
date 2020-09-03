@@ -131,7 +131,7 @@ group TransformObservationPregnancy(source src: FakeInpatientDrugChart, source p
 
     src.pregnant as pregnant where "$this.gender = f" -> observation.value;
 
-    patient.id as patientId -> observation.subject = create('Reference') as subject,
+    patient.id as patientId log "%patient" -> observation.subject = create('Reference') as subject,
       subject.reference = evaluate(patientId, '\'Patient/\' + $this');
 }
 
