@@ -117,7 +117,7 @@ group TransformObservationHeight(source src: FakeInpatientDrugChart, source pati
     src -> observation.value as value collate, value.code = 'cm';
     src -> observation.value as value collate, value.system = 'http://unitsofmeasure.org';
 
-    patient.id as patientId -> observation.subject = create('Reference') as subject,
+    patient.id as patientId log "%patient" -> observation.subject = create('Reference') as subject,
       subject.reference = evaluate(patientId, '\'Patient/\' + $this');
 }
 
