@@ -36,6 +36,7 @@ group TransformPatient(source src : FakeInpatientDrugChart, target patient: Pati
   src.id default "'test'" as id -> patient.id = id;
   src.mpi : string as mpi -> patient.identifier =
     id('http://vonk.fire.ly/fhir/CodeSystem/mpi', mpi) as identifier, identifier.use = 'official';
+  src.active -> tgt.active;
   src.patientName as patientName -> patient.name as humanName, humanName.text = patientName;
   src.dateOfBirth as dateOfBirth -> patient.birthDate = dateOp(dateOfBirth, 'dateTime');
 

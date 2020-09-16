@@ -1,6 +1,7 @@
 {
   "resourceType": "FakeInpatientDrugChart",
   "mpi": "13027305-4623-4b3a-9ef7-006cf4bb5592",
+  "active": true,
   "patientName": "Sam Fhirman",
   "dateOfBirth": "1988-01-01",
   "contact": {
