@@ -11,7 +11,7 @@ This repository contains different branches, each containing StructureMaps and S
 * HL7 FHIR Mapping Language Tutorial
 * Firely FHIR Mapping Language Introduction
   - [FakeInpatientDrugChart Mapping (FHIR R4)](https://github.com/FirelyTeam/Firely.FhirMapper.Examples/tree/FakeInpatientDrugChart-R4)
-  - [FakeInpatientDrugChart Mapping (FHIR R4)](https://github.com/FirelyTeam/Firely.FhirMapper.Examples/tree/FakeInpatientDrugChart-STU3)
+  - [FakeInpatientDrugChart Mapping (FHIR STU3)](https://github.com/FirelyTeam/Firely.FhirMapper.Examples/tree/FakeInpatientDrugChart-STU3)
 * CSV
 * (C)-CDA to FHIR
 * HL7 v2 to FHIR
