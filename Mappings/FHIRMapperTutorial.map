@@ -1,5 +1,5 @@
 /// version = 0.1
-/// title = "FHIR Mapper Tutorial : FakeInpatientDrugChart"
+/// title = "FHIR Mapper Tutorial (R4) : FakeInpatientDrugChart"
 /// status = draft
 /// contact = "Firely"
 
@@ -15,7 +15,7 @@
   Latest version of this map lives on https://simplifier.net/fhirmapper/fhirmappertutorial
 */
 
-map "http://vonk.fire.ly/fhir/StructureMap/FHIRMapperTutorial" = FHIRMapperTutorial
+map "http://vonk.fire.ly/fhir/StructureMap/FHIRMapperTutorial-R4" = "FHIRMapperTutorial-R4"
 
 uses "http://hl7.org/fhir/StructureDefinition/FakeInpatientDrugChart" as source
 uses "http://hl7.org/fhir/StructureDefinition/Patient" as target
