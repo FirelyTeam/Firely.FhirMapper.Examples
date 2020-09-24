@@ -1,4 +1,5 @@
 This project holds logical models, maps, and examples used to transform (C)-CDA documents to FHIR.
+
 Content:
 - Examples: CDA documents which can be used for testing of the (C)-CDA to FHIR transformation. It also contains the expected transformation targets in the form of FHIR bundles.
 - StructureDefinition: StructureDefinitions for FHIR R4 representing a (C)-CDA documents and its corresponding data types. 
