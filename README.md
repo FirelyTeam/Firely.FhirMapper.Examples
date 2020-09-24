@@ -14,6 +14,8 @@ This repository contains different branches, each containing StructureMaps and S
   - [FakeInpatientDrugChart Mapping (FHIR STU3)](https://github.com/FirelyTeam/Firely.FhirMapper.Examples/tree/FakeInpatientDrugChart-STU3)
 * CSV
 * (C)-CDA to FHIR
+  - [(C)-CDA Mapping (FHIR R4)](https://github.com/FirelyTeam/Firely.FhirMapper.Examples/tree/CCDA-R4)
+  - [(C)-CDA Mapping (FHIR STU3)](https://github.com/FirelyTeam/Firely.FhirMapper.Examples/tree/CCDA-R3)
 * HL7 v2 to FHIR
 * FHIR to FHIR
 * VCF (Variant Call Format)
