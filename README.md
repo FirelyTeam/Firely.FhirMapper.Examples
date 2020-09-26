@@ -13,7 +13,13 @@ The documentation of the how to execute these mappings with the Firely FHIR Mapp
 
 ## Customization
 
-- All logical models which were derived from "http://hl7.org/fhir/StructureDefiniton/Base" have been changed to derive from "http://hl7.org/fhir/StructureDefiniton/Element". Base is only available in FHIR R5.
+- All logical models which were derived from "http://hl7.org/fhir/StructureDefiniton/Base" have been changed to derive from "http://hl7.org/fhir/StructureDefiniton/Element". "http://hl7.org/fhir/StructureDefiniton/Base" is only available in FHIR R5.
 - The `ANY` datatype contains an extra element "type". The .NET API does not recongnize the xsi:type as a special element, therefore we need to provide type information for it.
 - ClinicalDocument.effectiveTime is represented as a string instead of using the "TS" datatype. The TS.value element can't currently be selected in the .NET FHIRPath implementation.
-- SXCM_TS, SXPR_TS, PIVL_TS, IVL_TS contain a `_` in StructureDefinition.type instead of a `-`. All references to these datatpyes have been adjusted. 
+- SXCM_TS, SXPR_TS, PIVL_TS, IVL_TS contain a `_` in StructureDefinition.type instead of a `-`. All references to these datatpyes have been adjusted.
+- The following datatypes contain an explicit .value element needed to select the primitive element value in the .NET API:
+  * TS
+  * ON
+  * EN
+  * ED
+  * ST
