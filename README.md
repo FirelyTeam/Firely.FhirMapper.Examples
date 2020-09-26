@@ -13,8 +13,8 @@ The documentation of the how to execute these mappings with the Firely FHIR Mapp
 
 ## Customization
 
-All logical models within this project are based on the [HL7 CDA-Core-2.0 project](https://github.com/HL7/cda-core-2.0).
-Last checked commit id: bc0b579b893e3548d10d88b139ad45dd1502992c
+All logical models within this project are based on the [HL7 CDA-Core-2.0 project](https://github.com/HL7/cda-core-2.0).<br>
+Last checked commit id: [bc0b579b893e3548d10d88b139ad45dd1502992c](https://github.com/HL7/cda-core-2.0/tree/bc0b579b893e3548d10d88b139ad45dd1502992c)
 
 - All logical models which were derived from "http://hl7.org/fhir/StructureDefiniton/Base" have been changed to derive from "http://hl7.org/fhir/StructureDefiniton/Element". "http://hl7.org/fhir/StructureDefiniton/Base" is only available in FHIR R5.
 - The `ANY` datatype contains an extra element "type". The .NET API does not recongnize the xsi:type as a special element, therefore we need to provide type information for it.
