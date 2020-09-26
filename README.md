@@ -24,3 +24,4 @@ The documentation of the how to execute these mappings with the Firely FHIR Mapp
   * ED
   * ST
 - Encounter.participant.templateId has been added as an additional element
+- PlayingEntity.birthTime has been added as an sdtc extension
