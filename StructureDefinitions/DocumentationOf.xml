@@ -40,7 +40,7 @@
       </type>
       <binding>
         <strength value="required"/>
-        <valueSet value="http://terminology.hl7.org/ValueSet/v3-NullFlavor"/>
+        <valueSetUriUri value="http://terminology.hl7.org/ValueSet/v3-NullFlavor"/>
       </binding>
     </element>
     <element id="DocumentationOf.typeCode">
@@ -55,7 +55,7 @@
       
       <binding>
         <strength value="required"/>
-        <valueSet value="http://terminology.hl7.org/ValueSet/v3-ParticipationType"/>
+        <valueSetUriUri value="http://terminology.hl7.org/ValueSet/v3-ParticipationType"/>
       </binding>
     </element>
     <element id="DocumentationOf.realmCode">

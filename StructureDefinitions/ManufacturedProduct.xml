@@ -33,7 +33,7 @@
       <fixedCode value="MANU"/>
       <binding>
         <strength value="required"/>
-        <valueSet value="http://terminology.hl7.org/ValueSet/v3-RoleClassManufacturedProduct"/>
+        <valueSetUri value="http://terminology.hl7.org/ValueSet/v3-RoleClassManufacturedProduct"/>
       </binding>
     </element>
     <element id="ManufacturedProduct.templateId">

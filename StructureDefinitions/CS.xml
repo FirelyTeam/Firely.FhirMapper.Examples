@@ -69,11 +69,11 @@
         <code value="string"/>
       </type>
     </element>
-    <element id="CS.valueSet">
+    <element id="CS.valueSetUri">
       <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-namespace">
         <valueUri value="urn:hl7-org:sdtc"/>
       </extension>
-      <path value="CS.valueSet"/>
+      <path value="CS.valueSetUri"/>
       <representation value="xmlAttr"/>
       <min value="0"/>
       <max value="1"/>
@@ -81,13 +81,13 @@
         <code value="string"/>
       </type>
     </element>
-    <element id="CS.valueSetVersion">
+    <element id="CS.valueSetUriVersion">
       <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-namespace">
         <valueUri value="urn:hl7-org:sdtc"/>
       </extension>
-      <path value="CS.valueSetVersion"/>
+      <path value="CS.valueSetUriVersion"/>
       <representation value="xmlAttr"/>
-      <definition value="The valueSetVersion extension adds an attribute for elements with a CD dataType which indicates the version of the particular value set constraining the coded concept."/>
+      <definition value="The valueSetUriVersion extension adds an attribute for elements with a CD dataType which indicates the version of the particular value set constraining the coded concept."/>
       <min value="0"/>
       <max value="1"/>
       <type>

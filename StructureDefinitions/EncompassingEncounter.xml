@@ -43,7 +43,7 @@
       
       <binding>
         <strength value="required"/>
-        <valueSet value="http://terminology.hl7.org/ValueSet/v3-ActClass"/>
+        <valueSetUri value="http://terminology.hl7.org/ValueSet/v3-ActClass"/>
       </binding>
     </element>
     <element id="EncompassingEncounter.moodCode">
@@ -59,7 +59,7 @@
       
       <binding>
         <strength value="required"/>
-        <valueSet value="http://terminology.hl7.org/ValueSet/v3-ActMood"/>
+        <valueSetUri value="http://terminology.hl7.org/ValueSet/v3-ActMood"/>
       </binding>
     </element>
     <element id="EncompassingEncounter.templateId">
@@ -88,7 +88,7 @@
       </type>
       <binding>
         <strength value="extensible"/>
-        <valueSet value="http://terminology.hl7.org/ValueSet/v3-ActEncounterCode"/>
+        <valueSetUri value="http://terminology.hl7.org/ValueSet/v3-ActEncounterCode"/>
       </binding>
     </element>
     <element id="EncompassingEncounter.effectiveTime">
@@ -120,7 +120,7 @@
       </type>
       <binding>
         <strength value="extensible"/>
-        <valueSet value="http://terminology.hl7.org/ValueSet/v3-EncounterDischargeDisposition"/>
+        <valueSetUri value="http://terminology.hl7.org/ValueSet/v3-EncounterDischargeDisposition"/>
       </binding>
     </element>
     <element id="EncompassingEncounter.responsibleParty">
@@ -144,7 +144,7 @@
       
       <binding>
         <strength value="required"/>
-        <valueSet value="http://terminology.hl7.org/ValueSet/v3-ParticipationType"/>
+        <valueSetUri value="http://terminology.hl7.org/ValueSet/v3-ParticipationType"/>
       </binding>
     </element>
     <element id="EncompassingEncounter.responsibleParty.assignedEntity">
@@ -210,7 +210,7 @@
       
       <binding>
         <strength value="required"/>
-        <valueSet value="http://terminology.hl7.org/ValueSet/v3-ParticipationTargetLocation"/>
+        <valueSetUri value="http://terminology.hl7.org/ValueSet/v3-ParticipationTargetLocation"/>
       </binding>
     </element>
     <element id="EncompassingEncounter.location.healthCareFacility">

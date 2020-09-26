@@ -34,7 +34,7 @@
       
       <binding>
         <strength value="required"/>
-        <valueSet value="http://terminology.hl7.org/ValueSet/v3-EntityClassDevice"/>
+        <valueSetUri value="http://terminology.hl7.org/ValueSet/v3-EntityClassDevice"/>
       </binding>
     </element>
     <element id="AuthoringDevice.determinerCode">
@@ -50,7 +50,7 @@
       
       <binding>
         <strength value="required"/>
-        <valueSet value="http://terminology.hl7.org/ValueSet/v3-EntityDeterminer"/>
+        <valueSetUri value="http://terminology.hl7.org/ValueSet/v3-EntityDeterminer"/>
       </binding>
     </element>
     <element id="AuthoringDevice.templateId">
@@ -71,7 +71,7 @@
       </type>
       <binding>
         <strength value="extensible"/>
-        <valueSet value="http://terminology.hl7.org/ValueSet/v3-EntityCode"/>
+        <valueSetUri value="http://terminology.hl7.org/ValueSet/v3-EntityCode"/>
       </binding>
     </element>
     <element id="AuthoringDevice.manufacturerModelName">
@@ -83,7 +83,7 @@
       </type>
       <binding>
         <strength value="extensible"/>
-        <valueSet value="http://terminology.hl7.org/ValueSet/v3-ManufacturerModelName"/>
+        <valueSetUri value="http://terminology.hl7.org/ValueSet/v3-ManufacturerModelName"/>
       </binding>
     </element>
     <element id="AuthoringDevice.softwareName">
@@ -95,7 +95,7 @@
       </type>
       <binding>
         <strength value="extensible"/>
-        <valueSet value="http://terminology.hl7.org/ValueSet/v3-SoftwareName"/>
+        <valueSetUri value="http://terminology.hl7.org/ValueSet/v3-SoftwareName"/>
       </binding>
     </element>
     <element id="AuthoringDevice.asMaintainedEntity">

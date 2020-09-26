@@ -39,7 +39,7 @@
       </type>
       <binding>
         <strength value="required"/>
-        <valueSet value="http://terminology.hl7.org/ValueSet/v3-ActClassObservation"/>
+        <valueSetUri value="http://terminology.hl7.org/ValueSet/v3-ActClassObservation"/>
       </binding>
     </element>
     <element id="Observation.moodCode">
@@ -88,7 +88,7 @@
 
       <binding>
         <strength value="extensible"/>
-        <valueSet value="http://terminology.hl7.org/ValueSet/v3-ObservationType"/>
+        <valueSetUri value="http://terminology.hl7.org/ValueSet/v3-ObservationType"/>
       </binding>
     </element>
     <element id="Observation.derivationExpr">
@@ -117,7 +117,7 @@
       </type>
       <binding>
         <strength value="required"/>
-        <valueSet value="http://terminology.hl7.org/ValueSet/v3-ActStatus"/>
+        <valueSetUri value="http://terminology.hl7.org/ValueSet/v3-ActStatus"/>
       </binding>
     </element>
     <element id="Observation.effectiveTime">
@@ -137,7 +137,7 @@
       </type>
       <binding>
         <strength value="extensible"/>
-        <valueSet value="http://terminology.hl7.org/ValueSet/v3-ActPriority"/>
+        <valueSetUri value="http://terminology.hl7.org/ValueSet/v3-ActPriority"/>
       </binding>
     </element>
     <element id="Observation.repeatNumber">
@@ -157,7 +157,7 @@
       </type>
       <binding>
         <strength value="required"/>
-        <valueSet value="http://terminology.hl7.org/ValueSet/v3-HumanLanguage"/>
+        <valueSetUri value="http://terminology.hl7.org/ValueSet/v3-HumanLanguage"/>
       </binding>
     </element>
     <element id="Observation.value">
@@ -241,7 +241,7 @@
       </type>
       <binding>
         <strength value="required"/>
-        <valueSet value="http://terminology.hl7.org/ValueSet/v3-ObservationInterpretation"/>
+        <valueSetUri value="http://terminology.hl7.org/ValueSet/v3-ObservationInterpretation"/>
       </binding>
     </element>
     <element id="Observation.methodCode">
@@ -253,7 +253,7 @@
       </type>
       <binding>
         <strength value="extensible"/>
-        <valueSet value="http://terminology.hl7.org/ValueSet/v3-ObservationMethod"/>
+        <valueSetUri value="http://terminology.hl7.org/ValueSet/v3-ObservationMethod"/>
       </binding>
     </element>
     <element id="Observation.targetSiteCode">
@@ -286,7 +286,7 @@
 
       <binding>
         <strength value="required"/>
-        <valueSet value="http://terminology.hl7.org/ValueSet/v3-ParticipationTargetSubject"/>
+        <valueSetUri value="http://terminology.hl7.org/ValueSet/v3-ParticipationTargetSubject"/>
       </binding>
     </element>
     <element id="Observation.subject.contextControlCode">
@@ -302,7 +302,7 @@
 
       <binding>
         <strength value="required"/>
-        <valueSet value="http://terminology.hl7.org/ValueSet/v3-ContextControl"/>
+        <valueSetUri value="http://terminology.hl7.org/ValueSet/v3-ContextControl"/>
       </binding>
     </element>
     <element id="Observation.subject.awarenessCode">
@@ -314,7 +314,7 @@
       </type>
       <binding>
         <strength value="extensible"/>
-        <valueSet value="http://terminology.hl7.org/ValueSet/v3-TargetAwareness"/>
+        <valueSetUri value="http://terminology.hl7.org/ValueSet/v3-TargetAwareness"/>
       </binding>
     </element>
     <element id="Observation.subject.relatedSubject">
@@ -346,7 +346,7 @@
 
       <binding>
         <strength value="required"/>
-        <valueSet value="http://terminology.hl7.org/ValueSet/v3-ParticipationTargetDirect"/>
+        <valueSetUri value="http://terminology.hl7.org/ValueSet/v3-ParticipationTargetDirect"/>
       </binding>
     </element>
     <element id="Observation.specimen.specimenRole">
@@ -378,7 +378,7 @@
 
       <binding>
         <strength value="required"/>
-        <valueSet value="http://terminology.hl7.org/ValueSet/v3-ParticipationPhysicalPerformer"/>
+        <valueSetUri value="http://terminology.hl7.org/ValueSet/v3-ParticipationPhysicalPerformer"/>
       </binding>
     </element>
     <element id="Observation.performer.templateId">
@@ -407,7 +407,7 @@
       </type>
       <binding>
         <strength value="extensible"/>
-        <valueSet value="http://terminology.hl7.org/ValueSet/v3-ParticipationMode"/>
+        <valueSetUri value="http://terminology.hl7.org/ValueSet/v3-ParticipationMode"/>
       </binding>
     </element>
     <element id="Observation.performer.assignedEntity">
@@ -447,7 +447,7 @@
 
       <binding>
         <strength value="required"/>
-        <valueSet value="http://terminology.hl7.org/ValueSet/v3-ParticipationInformationGenerator"/>
+        <valueSetUri value="http://terminology.hl7.org/ValueSet/v3-ParticipationInformationGenerator"/>
       </binding>
     </element>
     <element id="Observation.informant.contextControlCode">
@@ -463,7 +463,7 @@
 
       <binding>
         <strength value="required"/>
-        <valueSet value="http://terminology.hl7.org/ValueSet/v3-ContextControl"/>
+        <valueSetUri value="http://terminology.hl7.org/ValueSet/v3-ContextControl"/>
       </binding>
     </element>
     <element id="Observation.informant.assignedEntity">
@@ -501,7 +501,7 @@
 
       <binding>
         <strength value="required"/>
-        <valueSet value="http://terminology.hl7.org/ValueSet/v3-ParticipationType"/>
+        <valueSetUri value="http://terminology.hl7.org/ValueSet/v3-ParticipationType"/>
       </binding>
     </element>
     <element id="Observation.participant.contextControlCode">
@@ -517,7 +517,7 @@
 
       <binding>
         <strength value="required"/>
-        <valueSet value="http://terminology.hl7.org/ValueSet/v3-ContextControl"/>
+        <valueSetUri value="http://terminology.hl7.org/ValueSet/v3-ContextControl"/>
       </binding>
     </element>
     <element id="Observation.participant.time">
@@ -537,7 +537,7 @@
       </type>
       <binding>
         <strength value="extensible"/>
-        <valueSet value="http://terminology.hl7.org/ValueSet/v3-TargetAwareness"/>
+        <valueSetUri value="http://terminology.hl7.org/ValueSet/v3-TargetAwareness"/>
       </binding>
     </element>
     <element id="Observation.participant.participantRole">
@@ -769,7 +769,7 @@
 
       <binding>
         <strength value="required"/>
-        <valueSet value="http://terminology.hl7.org/ValueSet/v3-ActRelationshipConditional"/>
+        <valueSetUri value="http://terminology.hl7.org/ValueSet/v3-ActRelationshipConditional"/>
       </binding>
     </element>
     <element id="Observation.precondition.criterion">
@@ -800,7 +800,7 @@
       <fixedCode value="REFV"/>
       <binding>
         <strength value="required"/>
-        <valueSet value="http://terminology.hl7.org/ValueSet/v3-ActRelationshipPertains"/>
+        <valueSetUri value="http://terminology.hl7.org/ValueSet/v3-ActRelationshipPertains"/>
       </binding>
     </element>
     <element id="Observation.referenceRange.observationRange">

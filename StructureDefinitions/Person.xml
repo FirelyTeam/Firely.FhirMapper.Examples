@@ -42,7 +42,7 @@
       
       <binding>
         <strength value="required"/>
-        <valueSet value="http://terminology.hl7.org/ValueSet/v3-EntityClassLivingSubject"/>
+        <valueSetUri value="http://terminology.hl7.org/ValueSet/v3-EntityClassLivingSubject"/>
       </binding>
     </element>
     <element id="Person.determinerCode">
@@ -58,7 +58,7 @@
       
       <binding>
         <strength value="required"/>
-        <valueSet value="http://terminology.hl7.org/ValueSet/v3-EntityDeterminer"/>
+        <valueSetUri value="http://terminology.hl7.org/ValueSet/v3-EntityDeterminer"/>
       </binding>
     </element>
     <element id="Person.templateId">

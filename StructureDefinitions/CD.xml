@@ -84,17 +84,17 @@
         <code value="string"/>
       </type>
     </element>
-    <element id="CD.valueSet">
+    <element id="CD.valueSetUri">
       <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-namespace">
         <valueUri value="urn:hl7-org:sdtc"/>
       </extension>
-      <path value="CD.valueSet"/>
+      <path value="CD.valueSetUri"/>
       <representation value="xmlAttr"/>
-      <definition value="The valueSet extension adds an attribute for elements with a CD dataType which indicates the particular value set constraining the coded concept."/>
+      <definition value="The valueSetUri extension adds an attribute for elements with a CD dataType which indicates the particular value set constraining the coded concept."/>
       <min value="0"/>
       <max value="1"/>
       <base>
-        <path value="CD.valueSet"/>
+        <path value="CD.valueSetUri"/>
         <min value="0"/>
         <max value="1"/>
       </base>
@@ -102,13 +102,13 @@
         <code value="string"/>
       </type>
     </element>
-    <element id="CD.valueSetVersion">
+    <element id="CD.valueSetUriVersion">
       <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-namespace">
         <valueUri value="urn:hl7-org:sdtc"/>
       </extension>
-      <path value="CD.valueSetVersion"/>
+      <path value="CD.valueSetUriVersion"/>
       <representation value="xmlAttr"/>
-      <definition value="The valueSetVersion extension adds an attribute for elements with a CD dataType which indicates the version of the particular value set constraining the coded concept."/>
+      <definition value="The valueSetUriVersion extension adds an attribute for elements with a CD dataType which indicates the version of the particular value set constraining the coded concept."/>
       <min value="0"/>
       <max value="1"/>
       <type>

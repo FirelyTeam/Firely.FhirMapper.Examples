@@ -72,7 +72,7 @@
       </type>
       <binding>
         <strength value="required"/>
-        <valueSet value="http://terminology.hl7.org/ValueSet/v3-AddressUse"/>
+        <valueSetUri value="http://terminology.hl7.org/ValueSet/v3-AddressUse"/>
       </binding>
     </element>
   </differential>

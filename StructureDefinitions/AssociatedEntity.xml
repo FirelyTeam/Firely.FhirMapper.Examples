@@ -38,7 +38,7 @@
       </type>
       <binding>
         <strength value="required"/>
-        <valueSet value="http://terminology.hl7.org/ValueSet/v3-RoleClassAssociative"/>
+        <valueSetUri value="http://terminology.hl7.org/ValueSet/v3-RoleClassAssociative"/>
       </binding>
     </element>
     <element id="AssociatedEntity.templateId">
@@ -67,7 +67,7 @@
       </type>
       <binding>
         <strength value="extensible"/>
-        <valueSet value="http://terminology.hl7.org/ValueSet/v3-RoleCode"/>
+        <valueSetUri value="http://terminology.hl7.org/ValueSet/v3-RoleCode"/>
       </binding>
     </element>
     <element id="AssociatedEntity.addr">
