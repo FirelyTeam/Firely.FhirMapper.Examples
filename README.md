@@ -23,3 +23,4 @@ The documentation of the how to execute these mappings with the Firely FHIR Mapp
   * EN
   * ED
   * ST
+- Encounter.participant.templateId has been added as an additional element
