@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
-  <id value="PIVL-TS"/>
+  <id value="PIVL_TS"/>
   <text>
     <status value="generated"/>
     <div xmlns="http://www.w3.org/1999/xhtml">
@@ -10,9 +10,9 @@
   <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-namespace">
     <valueUri value="urn:hl7-org:v3"/>
   </extension>
-  <url value="http://hl7.org/fhir/cda/StructureDefinition/PIVL-TS"/>
-  <name value="PIVL-TS"/>
-  <title value="PIVL-TS: PeriodicIntervalOfTime (V3 Data Type)"/>
+  <url value="http://hl7.org/fhir/cda/StructureDefinition/PIVL_TS"/>
+  <name value="PIVL_TS"/>
+  <title value="PIVL_TS: PeriodicIntervalOfTime (V3 Data Type)"/>
   <status value="active"/>
   <experimental value="false"/>
   <publisher value="HL7"/>
@@ -20,7 +20,7 @@
   <kind value="logical"/>
   <abstract value="false"/>
   <type value="PIVL_TS"/>
-  <baseDefinition value="http://hl7.org/fhir/cda/StructureDefinition/SXCM-TS"/>
+  <baseDefinition value="http://hl7.org/fhir/cda/StructureDefinition/SXCM_TS"/>
   <derivation value="specialization"/>
   <differential>
     <element id="PIVL_TS">
