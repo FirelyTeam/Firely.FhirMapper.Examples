@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
-  <id value="IVL-TS"/>
+  <id value="IVL_TS"/>
   <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-namespace">
     <valueUri value="urn:hl7-org:v3"/>
   </extension>
-  <url value="http://hl7.org/fhir/cda/StructureDefinition/IVL-TS"/>
-  <name value="IVL-TS"/>
-  <title value="IVL-TS: Interval (V3 Data Type)"/>
+  <url value="http://hl7.org/fhir/cda/StructureDefinition/IVL_TS"/>
+  <name value="IVL_TS"/>
+  <title value="IVL_TS: Interval (V3 Data Type)"/>
   <status value="active"/>
   <experimental value="false"/>
   <publisher value="HL7"/>
@@ -14,7 +14,7 @@
   <kind value="logical"/>
   <abstract value="false"/>
   <type value="IVL_TS"/>
-  <baseDefinition value="http://hl7.org/fhir/cda/StructureDefinition/SXCM-TS"/>
+  <baseDefinition value="http://hl7.org/fhir/cda/StructureDefinition/SXCM_TS"/>
   <derivation value="specialization"/>
   <differential>
     <element id="IVL_TS">
