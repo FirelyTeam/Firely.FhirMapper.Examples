@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
-  <url value="https://healex.systems/fhir/StructureDefinition/ADTA04ADT_A01" />
-  <name value="ADTA04ADT_A01" />
+  <url value="https://healex.systems/fhir/StructureDefinition/ADT_A01" />
+  <name value="ADT_A01" />
   <title value="ADT/ACK  Register a Patient (Event A04)" />
   <status value="draft" />
   <fhirVersion value="4.0.1" />
@@ -11,8 +11,8 @@
   <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Element" />
   <derivation value="specialization" />
   <differential>
-    <element id="ADTA04ADT_A01">
-      <path value="ADTA04ADT_A01" />
+    <element id="ADT_A01">
+      <path value="ADT_A01" />
       <definition value="An A04 event signals that the patient has arrived or checked in as a one-time, or recurring outpatient, and is&#xD;&#xA;not assigned to a bed." />
       <min value="0" />
       <max value="1" />
@@ -24,8 +24,8 @@
         <map value="ADT^A04^ADT_A01" />
       </mapping>
     </element>
-    <element id="ADTA04ADT_A01.MSH">
-      <path value="ADTA04ADT_A01.MSH" />
+    <element id="ADT_A01.MSH">
+      <path value="ADT_A01.MSH" />
       <min value="1" />
       <max value="1" />
       <type>
@@ -37,8 +37,8 @@
         <map value="MSH" />
       </mapping>
     </element>
-    <element id="ADTA04ADT_A01.SFT">
-      <path value="ADTA04ADT_A01.SFT" />
+    <element id="ADT_A01.SFT">
+      <path value="ADT_A01.SFT" />
       <min value="0" />
       <max value="*" />
       <type>
@@ -50,8 +50,8 @@
         <map value="SFT" />
       </mapping>
     </element>
-    <element id="ADTA04ADT_A01.EVN">
-      <path value="ADTA04ADT_A01.EVN" />
+    <element id="ADT_A01.EVN">
+      <path value="ADT_A01.EVN" />
       <min value="1" />
       <max value="1" />
       <type>
@@ -63,8 +63,8 @@
         <map value="EVN" />
       </mapping>
     </element>
-    <element id="ADTA04ADT_A01.PID">
-      <path value="ADTA04ADT_A01.PID" />
+    <element id="ADT_A01.PID">
+      <path value="ADT_A01.PID" />
       <min value="1" />
       <max value="1" />
       <type>
@@ -76,8 +76,8 @@
         <map value="PID" />
       </mapping>
     </element>
-    <element id="ADTA04ADT_A01.PD1">
-      <path value="ADTA04ADT_A01.PD1" />
+    <element id="ADT_A01.PD1">
+      <path value="ADT_A01.PD1" />
       <min value="0" />
       <max value="1" />
       <type>
@@ -89,8 +89,8 @@
         <map value="PD1" />
       </mapping>
     </element>
-    <element id="ADTA04ADT_A01.ROL">
-      <path value="ADTA04ADT_A01.ROL" />
+    <element id="ADT_A01.ROL">
+      <path value="ADT_A01.ROL" />
       <min value="0" />
       <max value="*" />
       <type>
@@ -102,8 +102,8 @@
         <map value="ROL" />
       </mapping>
     </element>
-    <element id="ADTA04ADT_A01.NK1">
-      <path value="ADTA04ADT_A01.NK1" />
+    <element id="ADT_A01.NK1">
+      <path value="ADT_A01.NK1" />
       <min value="0" />
       <max value="*" />
       <type>
@@ -115,8 +115,8 @@
         <map value="NK1" />
       </mapping>
     </element>
-    <element id="ADTA04ADT_A01.PV1">
-      <path value="ADTA04ADT_A01.PV1" />
+    <element id="ADT_A01.PV1">
+      <path value="ADT_A01.PV1" />
       <min value="1" />
       <max value="1" />
       <type>
@@ -128,8 +128,8 @@
         <map value="PV1" />
       </mapping>
     </element>
-    <element id="ADTA04ADT_A01.PV2">
-      <path value="ADTA04ADT_A01.PV2" />
+    <element id="ADT_A01.PV2">
+      <path value="ADT_A01.PV2" />
       <min value="0" />
       <max value="1" />
       <type>
@@ -141,8 +141,8 @@
         <map value="PV2" />
       </mapping>
     </element>
-    <element id="ADTA04ADT_A01.ROL2">
-      <path value="ADTA04ADT_A01.ROL2" />
+    <element id="ADT_A01.ROL2">
+      <path value="ADT_A01.ROL2" />
       <min value="0" />
       <max value="*" />
       <type>
@@ -154,8 +154,8 @@
         <map value="ROL" />
       </mapping>
     </element>
-    <element id="ADTA04ADT_A01.DB1">
-      <path value="ADTA04ADT_A01.DB1" />
+    <element id="ADT_A01.DB1">
+      <path value="ADT_A01.DB1" />
       <min value="0" />
       <max value="*" />
       <type>
@@ -167,8 +167,8 @@
         <map value="DB1" />
       </mapping>
     </element>
-    <element id="ADTA04ADT_A01.OBX">
-      <path value="ADTA04ADT_A01.OBX" />
+    <element id="ADT_A01.OBX">
+      <path value="ADT_A01.OBX" />
       <min value="0" />
       <max value="*" />
       <type>
@@ -180,8 +180,8 @@
         <map value="OBX" />
       </mapping>
     </element>
-    <element id="ADTA04ADT_A01.AL1">
-      <path value="ADTA04ADT_A01.AL1" />
+    <element id="ADT_A01.AL1">
+      <path value="ADT_A01.AL1" />
       <min value="0" />
       <max value="*" />
       <type>
@@ -193,8 +193,8 @@
         <map value="AL1" />
       </mapping>
     </element>
-    <element id="ADTA04ADT_A01.DG1">
-      <path value="ADTA04ADT_A01.DG1" />
+    <element id="ADT_A01.DG1">
+      <path value="ADT_A01.DG1" />
       <min value="0" />
       <max value="*" />
       <type>
@@ -206,8 +206,8 @@
         <map value="MSH" />
       </mapping>
     </element>
-    <element id="ADTA04ADT_A01.DRG">
-      <path value="ADTA04ADT_A01.DRG" />
+    <element id="ADT_A01.DRG">
+      <path value="ADT_A01.DRG" />
       <min value="0" />
       <max value="1" />
       <type>
@@ -219,16 +219,16 @@
         <map value="DRG" />
       </mapping>
     </element>
-    <element id="ADTA04ADT_A01.PROCEDURE">
-      <path value="ADTA04ADT_A01.PROCEDURE" />
+    <element id="ADT_A01.PROCEDURE">
+      <path value="ADT_A01.PROCEDURE" />
       <min value="0" />
       <max value="*" />
       <type>
         <code value="BackboneElement" />
       </type>
     </element>
-    <element id="ADTA04ADT_A01.PROCEDURE.PR1">
-      <path value="ADTA04ADT_A01.PROCEDURE.PR1" />
+    <element id="ADT_A01.PROCEDURE.PR1">
+      <path value="ADT_A01.PROCEDURE.PR1" />
       <min value="1" />
       <max value="1" />
       <type>
@@ -240,8 +240,8 @@
         <map value="PR1" />
       </mapping>
     </element>
-    <element id="ADTA04ADT_A01.PROCEDURE.ROL">
-      <path value="ADTA04ADT_A01.PROCEDURE.ROL" />
+    <element id="ADT_A01.PROCEDURE.ROL">
+      <path value="ADT_A01.PROCEDURE.ROL" />
       <min value="0" />
       <max value="*" />
       <type>
@@ -253,8 +253,8 @@
         <map value="ROL" />
       </mapping>
     </element>
-    <element id="ADTA04ADT_A01.GT1">
-      <path value="ADTA04ADT_A01.GT1" />
+    <element id="ADT_A01.GT1">
+      <path value="ADT_A01.GT1" />
       <min value="0" />
       <max value="*" />
       <type>
@@ -266,16 +266,16 @@
         <map value="GT1" />
       </mapping>
     </element>
-    <element id="ADTA04ADT_A01.INSURANCE">
-      <path value="ADTA04ADT_A01.INSURANCE" />
+    <element id="ADT_A01.INSURANCE">
+      <path value="ADT_A01.INSURANCE" />
       <min value="0" />
       <max value="*" />
       <type>
         <code value="BackboneElement" />
       </type>
     </element>
-    <element id="ADTA04ADT_A01.INSURANCE.IN1">
-      <path value="ADTA04ADT_A01.INSURANCE.IN1" />
+    <element id="ADT_A01.INSURANCE.IN1">
+      <path value="ADT_A01.INSURANCE.IN1" />
       <min value="1" />
       <max value="1" />
       <type>
@@ -287,8 +287,8 @@
         <map value="IN1" />
       </mapping>
     </element>
-    <element id="ADTA04ADT_A01.INSURANCE.IN2">
-      <path value="ADTA04ADT_A01.INSURANCE.IN2" />
+    <element id="ADT_A01.INSURANCE.IN2">
+      <path value="ADT_A01.INSURANCE.IN2" />
       <min value="0" />
       <max value="1" />
       <type>
@@ -300,8 +300,8 @@
         <map value="IN2" />
       </mapping>
     </element>
-    <element id="ADTA04ADT_A01.INSURANCE.IN3">
-      <path value="ADTA04ADT_A01.INSURANCE.IN3" />
+    <element id="ADT_A01.INSURANCE.IN3">
+      <path value="ADT_A01.INSURANCE.IN3" />
       <min value="0" />
       <max value="*" />
       <type>
@@ -313,8 +313,8 @@
         <map value="IN3" />
       </mapping>
     </element>
-    <element id="ADTA04ADT_A01.INSURANCE.ROL">
-      <path value="ADTA04ADT_A01.INSURANCE.ROL" />
+    <element id="ADT_A01.INSURANCE.ROL">
+      <path value="ADT_A01.INSURANCE.ROL" />
       <min value="0" />
       <max value="*" />
       <type>
@@ -326,8 +326,8 @@
         <map value="ROL" />
       </mapping>
     </element>
-    <element id="ADTA04ADT_A01.ACC">
-      <path value="ADTA04ADT_A01.ACC" />
+    <element id="ADT_A01.ACC">
+      <path value="ADT_A01.ACC" />
       <min value="0" />
       <max value="1" />
       <type>
@@ -339,8 +339,8 @@
         <map value="ACC" />
       </mapping>
     </element>
-    <element id="ADTA04ADT_A01.UB1">
-      <path value="ADTA04ADT_A01.UB1" />
+    <element id="ADT_A01.UB1">
+      <path value="ADT_A01.UB1" />
       <min value="0" />
       <max value="1" />
       <type>
@@ -352,8 +352,8 @@
         <map value="UB1" />
       </mapping>
     </element>
-    <element id="ADTA04ADT_A01.UB2">
-      <path value="ADTA04ADT_A01.UB2" />
+    <element id="ADT_A01.UB2">
+      <path value="ADT_A01.UB2" />
       <min value="0" />
       <max value="1" />
       <type>
@@ -365,8 +365,8 @@
         <map value="UB2" />
       </mapping>
     </element>
-    <element id="ADTA04ADT_A01.PDA">
-      <path value="ADTA04ADT_A01.PDA" />
+    <element id="ADT_A01.PDA">
+      <path value="ADT_A01.PDA" />
       <min value="0" />
       <max value="1" />
       <type>

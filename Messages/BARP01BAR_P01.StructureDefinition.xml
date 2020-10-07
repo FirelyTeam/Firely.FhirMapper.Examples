@@ -1,5 +1,5 @@
 ﻿<StructureDefinition xmlns="http://hl7.org/fhir">
-    <url value="https://healex.systems/fhir/StructureDefinition/BARP01BAR_P01"/>
+    <url value="https://healex.systems/fhir/StructureDefinition/BAR_P01"/>
     <name value="BARP01BAR_P01"/>
     <status value="draft"/>
     <fhirVersion value="4.0.1"/>
