@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
-  <url value="https://healex.systems/fhir/StructureDefinition/CQ" />
+  <url value="http://hl7.org/fhir/StructureDefinition/CQ" />
   <name value="CQ" />
   <title value="Composite Quantity With Units" />
   <status value="draft" />
@@ -30,8 +30,8 @@
       <min value="0" />
       <max value="1" />
       <type>
-        <code value="NM" />
-        <profile value="https://healex.systems/fhir/StructureDefinition/NM" />
+        <code value="string" />
+        <profile value="http://hl7.org/fhir/StructureDefinition/string" />
       </type>
       <maxLength value="16" />
       <mapping>
@@ -45,7 +45,7 @@
       <max value="1" />
       <type>
         <code value="CE" />
-        <profile value="https://healex.systems/fhir/StructureDefinition/CE" />
+        <profile value="http://hl7.org/fhir/StructureDefinition/CE" />
       </type>
       <maxLength value="483" />
       <mapping>

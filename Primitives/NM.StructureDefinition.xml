@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
-  <url value="https://healex.systems/fhir/StructureDefinition/NM" />
+  <url value="http://hl7.org/fhir/StructureDefinition/NM" />
   <name value="NM" />
   <title value="Numeric" />
   <status value="draft" />

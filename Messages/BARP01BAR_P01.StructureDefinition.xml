@@ -1,5 +1,5 @@
 ﻿<StructureDefinition xmlns="http://hl7.org/fhir">
-    <url value="https://healex.systems/fhir/StructureDefinition/BAR_P01"/>
+    <url value="http://hl7.org/fhir/StructureDefinition/BAR_P01"/>
     <name value="BARP01BAR_P01"/>
     <status value="draft"/>
     <fhirVersion value="4.0.1"/>
@@ -22,7 +22,7 @@
             <max value="1"/>
             <type>
                 <code value="MSH" />
-                <profile value="https://healex.systems/fhir/StructureDefinition/MSH" />
+                <profile value="http://hl7.org/fhir/StructureDefinition/MSH" />
             </type>
             <mapping>
                 <identity value="v2" />
@@ -35,7 +35,7 @@
             <max value="*"/>
             <type>
                 <code value="SFT" />
-                <profile value="https://healex.systems/fhir/StructureDefinition/SFT" />
+                <profile value="http://hl7.org/fhir/StructureDefinition/SFT" />
             </type>
             <mapping>
                 <identity value="v2" />
@@ -48,7 +48,7 @@
             <max value="1"/>
             <type>
                 <code value="EVN" />
-                <profile value="https://healex.systems/fhir/StructureDefinition/EVN" />
+                <profile value="http://hl7.org/fhir/StructureDefinition/EVN" />
             </type>
             <mapping>
                 <identity value="v2" />

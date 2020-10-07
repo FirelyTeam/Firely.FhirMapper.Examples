@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
-  <url value="https://healex.systems/fhir/StructureDefinition/TS" />
+  <url value="http://hl7.org/fhir/StructureDefinition/TS" />
   <name value="TS" />
   <title value="time stamp" />
   <status value="draft" />
@@ -29,8 +29,8 @@
       <min value="1" />
       <max value="1" />
       <type>
-        <code value="DTM" />
-        <profile value="https://healex.systems/fhir/StructureDefinition/DTM" />
+        <code value="string" />
+        <profile value="http://hl7.org/fhir/StructureDefinition/string" />
       </type>
       <maxLength value="24" />
       <mapping>
@@ -46,8 +46,8 @@
       <min value="0" />
       <max value="1" />
       <type>
-        <code value="ID" />
-        <profile value="https://healex.systems/fhir/StructureDefinition/ID" />
+        <code value="string" />
+        <profile value="http://hl7.org/fhir/StructureDefinition/string" />
       </type>
       <maxLength value="1" />
       <mapping>

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
-  <url value="https://healex.systems/fhir/StructureDefinition/DLD" />
+  <url value="http://hl7.org/fhir/StructureDefinition/DLD" />
   <name value="DLD" />
   <title value="Discharge to location and date" />
   <status value="draft" />
@@ -33,8 +33,8 @@
       <min value="1" />
       <max value="1" />
       <type>
-        <code value="IS" />
-        <profile value="https://healex.systems/fhir/StructureDefinition/IS" />
+        <code value="string" />
+        <profile value="http://hl7.org/fhir/StructureDefinition/string" />
       </type>
       <maxLength value="20" />
       <mapping>
@@ -48,7 +48,7 @@
       <max value="1" />
       <type>
         <code value="TS" />
-        <profile value="https://healex.systems/fhir/StructureDefinition/TS" />
+        <profile value="http://hl7.org/fhir/StructureDefinition/string" />
       </type>
       <maxLength value="26" />
       <mapping>

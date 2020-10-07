@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
-  <url value="https://healex.systems/fhir/StructureDefinition/PDA" />
+  <url value="http://hl7.org/fhir/StructureDefinition/PDA" />
   <name value="PDA" />
   <title value="Patient death and autopsy segment" />
   <status value="draft" />
@@ -29,7 +29,7 @@
       <max value="*" />
       <type>
         <code value="CE" />
-        <profile value="https://healex.systems/fhir/StructureDefinition/CE" />
+        <profile value="http://hl7.org/fhir/StructureDefinition/CE" />
       </type>
       <maxLength value="250" />
       <mapping>
@@ -43,7 +43,7 @@
       <max value="1" />
       <type>
         <code value="PL" />
-        <profile value="https://healex.systems/fhir/StructureDefinition/PL" />
+        <profile value="http://hl7.org/fhir/StructureDefinition/PL" />
       </type>
       <maxLength value="80" />
       <mapping>
@@ -59,8 +59,8 @@
       <min value="0" />
       <max value="1" />
       <type>
-        <code value="ID" />
-        <profile value="https://healex.systems/fhir/StructureDefinition/ID" />
+        <code value="string" />
+        <profile value="http://hl7.org/fhir/StructureDefinition/string" />
       </type>
       <maxLength value="1" />
       <mapping>
@@ -74,7 +74,7 @@
       <max value="1" />
       <type>
         <code value="TS" />
-        <profile value="https://healex.systems/fhir/StructureDefinition/TS" />
+        <profile value="http://hl7.org/fhir/StructureDefinition/TS" />
       </type>
       <maxLength value="26" />
       <mapping>
@@ -88,7 +88,7 @@
       <max value="1" />
       <type>
         <code value="XCN" />
-        <profile value="https://healex.systems/fhir/StructureDefinition/XCN" />
+        <profile value="http://hl7.org/fhir/StructureDefinition/XCN" />
       </type>
       <maxLength value="250" />
       <mapping>
@@ -104,8 +104,8 @@
       <min value="0" />
       <max value="1" />
       <type>
-        <code value="ID" />
-        <profile value="https://healex.systems/fhir/StructureDefinition/ID" />
+        <code value="string" />
+        <profile value="http://hl7.org/fhir/StructureDefinition/string" />
       </type>
       <maxLength value="1" />
       <mapping>
@@ -119,7 +119,7 @@
       <max value="1" />
       <type>
         <code value="DR" />
-        <profile value="https://healex.systems/fhir/StructureDefinition/DR" />
+        <profile value="http://hl7.org/fhir/StructureDefinition/DR" />
       </type>
       <maxLength value="53" />
       <mapping>
@@ -133,7 +133,7 @@
       <max value="1" />
       <type>
         <code value="XCN" />
-        <profile value="https://healex.systems/fhir/StructureDefinition/XCN" />
+        <profile value="http://hl7.org/fhir/StructureDefinition/XCN" />
       </type>
       <maxLength value="250" />
       <mapping>
@@ -149,8 +149,8 @@
       <min value="0" />
       <max value="1" />
       <type>
-        <code value="ID" />
-        <profile value="https://healex.systems/fhir/StructureDefinition/ID" />
+        <code value="string" />
+        <profile value="http://hl7.org/fhir/StructureDefinition/string" />
       </type>
       <maxLength value="1" />
       <mapping>

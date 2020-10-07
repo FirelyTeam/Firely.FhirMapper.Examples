@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
-  <url value="https://healex.systems/fhir/StructureDefinition/DDI" />
+  <url value="http://hl7.org/fhir/StructureDefinition/DDI" />
   <name value="DDI" />
   <title value="Daily deductible information" />
   <status value="draft" />
@@ -30,8 +30,8 @@
       <min value="0" />
       <max value="1" />
       <type>
-        <code value="NM" />
-        <profile value="https://healex.systems/fhir/StructureDefinition/NM" />
+        <code value="string" />
+        <profile value="http://hl7.org/fhir/StructureDefinition/string" />
       </type>
       <maxLength value="3" />
       <mapping>
@@ -45,7 +45,7 @@
       <max value="1" />
       <type>
         <code value="MO" />
-        <profile value="https://healex.systems/fhir/StructureDefinition/MO" />
+        <profile value="http://hl7.org/fhir/StructureDefinition/MO" />
       </type>
       <maxLength value="16" />
       <mapping>
@@ -58,8 +58,8 @@
       <min value="0" />
       <max value="1" />
       <type>
-        <code value="NM" />
-        <profile value="https://healex.systems/fhir/StructureDefinition/NM" />
+        <code value="string" />
+        <profile value="http://hl7.org/fhir/StructureDefinition/string" />
       </type>
       <maxLength value="4" />
       <mapping>

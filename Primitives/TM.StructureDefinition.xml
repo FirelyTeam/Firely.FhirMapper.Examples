@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
-  <url value="https://healex.systems/fhir/StructureDefinition/TM" />
+  <url value="http://hl7.org/fhir/StructureDefinition/TM" />
   <name value="TM" />
   <status value="draft" />
   <fhirVersion value="4.0.1" />

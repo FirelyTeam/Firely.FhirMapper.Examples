@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
-  <url value="https://healex.systems/fhir/StructureDefinition/OSP" />
+  <url value="http://hl7.org/fhir/StructureDefinition/OSP" />
   <name value="OSP" />
   <title value="occurrence span code and date" />
   <status value="draft" />
@@ -34,7 +34,7 @@
       <max value="1" />
       <type>
         <code value="CNE" />
-        <profile value="https://healex.systems/fhir/StructureDefinition/CNE" />
+        <profile value="http://hl7.org/fhir/StructureDefinition/CNE" />
       </type>
       <maxLength value="705" />
       <mapping>
@@ -47,8 +47,8 @@
       <min value="0" />
       <max value="1" />
       <type>
-        <code value="DT" />
-        <profile value="https://healex.systems/fhir/StructureDefinition/DT" />
+        <code value="string" />
+        <profile value="http://hl7.org/fhir/StructureDefinition/string" />
       </type>
       <maxLength value="8" />
       <mapping>
@@ -61,8 +61,8 @@
       <min value="0" />
       <max value="1" />
       <type>
-        <code value="DT" />
-        <profile value="https://healex.systems/fhir/StructureDefinition/DT" />
+        <code value="string" />
+        <profile value="http://hl7.org/fhir/StructureDefinition/string" />
       </type>
       <maxLength value="8" />
       <mapping>

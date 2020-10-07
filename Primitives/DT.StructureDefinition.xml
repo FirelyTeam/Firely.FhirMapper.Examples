@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
-  <url value="https://healex.systems/fhir/StructureDefinition/DT" />
+  <url value="http://hl7.org/fhir/StructureDefinition/DT" />
   <name value="DT" />
   <title value="Date" />
   <status value="draft" />

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
-  <url value="https://healex.systems/fhir/StructureDefinition/UVC" />
+  <url value="http://hl7.org/fhir/StructureDefinition/UVC" />
   <name value="UVC" />
   <title value="UB value code and amount" />
   <status value="draft" />
@@ -34,7 +34,7 @@
       <max value="1" />
       <type>
         <code value="CNE" />
-        <profile value="https://healex.systems/fhir/StructureDefinition/CNE" />
+        <profile value="http://hl7.org/fhir/StructureDefinition/CNE" />
       </type>
       <maxLength value="20" />
       <mapping>
@@ -48,7 +48,7 @@
       <max value="1" />
       <type>
         <code value="MO" />
-        <profile value="https://healex.systems/fhir/StructureDefinition/MO" />
+        <profile value="http://hl7.org/fhir/StructureDefinition/MO" />
       </type>
       <maxLength value="20" />
       <mapping>

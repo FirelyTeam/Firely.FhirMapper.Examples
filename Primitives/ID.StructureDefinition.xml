@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
-  <url value="https://healex.systems/fhir/StructureDefinition/ID" />
+  <url value="http://hl7.org/fhir/StructureDefinition/ID" />
   <name value="ID" />
   <title value="Coded value for hl7 defined tables" />
   <status value="draft" />

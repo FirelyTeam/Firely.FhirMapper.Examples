@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
-  <url value="https://healex.systems/fhir/StructureDefinition/ST" />
+  <url value="http://hl7.org/fhir/StructureDefinition/ST" />
   <name value="ST" />
   <title value="String" />
   <status value="draft" />

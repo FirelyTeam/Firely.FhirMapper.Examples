@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
-  <url value="https://healex.systems/fhir/StructureDefinition/AUI" />
+  <url value="http://hl7.org/fhir/StructureDefinition/AUI" />
   <name value="AUI" />
   <title value="Authorization Information" />
   <status value="draft" />
@@ -30,8 +30,8 @@
       <min value="0" />
       <max value="1" />
       <type>
-        <code value="ST" />
-        <profile value="https://healex.systems/fhir/StructureDefinition/ST" />
+        <code value="string" />
+        <profile value="http://hl7.org/fhir/StructureDefinition/string" />
       </type>
       <maxLength value="30" />
       <mapping>
@@ -44,8 +44,8 @@
       <min value="0" />
       <max value="1" />
       <type>
-        <code value="DT" />
-        <profile value="https://healex.systems/fhir/StructureDefinition/DT" />
+        <code value="string" />
+        <profile value="http://hl7.org/fhir/StructureDefinition/string" />
       </type>
       <maxLength value="8" />
       <mapping>
@@ -58,8 +58,8 @@
       <min value="0" />
       <max value="1" />
       <type>
-        <code value="ST" />
-        <profile value="https://healex.systems/fhir/StructureDefinition/ST" />
+        <code value="string" />
+        <profile value="http://hl7.org/fhir/StructureDefinition/string" />
       </type>
       <maxLength value="199" />
       <mapping>

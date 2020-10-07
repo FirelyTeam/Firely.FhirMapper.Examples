@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
-  <url value="https://healex.systems/fhir/StructureDefinition/VID" />
+  <url value="http://hl7.org/fhir/StructureDefinition/VID" />
   <name value="VID" />
   <title value="Version Identifier" />
   <status value="draft" />
@@ -32,8 +32,8 @@
       <min value="0" />
       <max value="1" />
       <type>
-        <code value="ID" />
-        <profile value="https://healex.systems/fhir/StructureDefinition/ID" />
+        <code value="string" />
+        <profile value="http://hl7.org/fhir/StructureDefinition/string" />
       </type>
       <maxLength value="5" />
       <mapping>
@@ -50,7 +50,7 @@
       <max value="1" />
       <type>
         <code value="CE" />
-        <profile value="https://healex.systems/fhir/StructureDefinition/CE" />
+        <profile value="http://hl7.org/fhir/StructureDefinition/CE" />
       </type>
       <maxLength value="483" />
       <mapping>
@@ -64,7 +64,7 @@
       <max value="1" />
       <type>
         <code value="CE" />
-        <profile value="https://healex.systems/fhir/StructureDefinition/CE" />
+        <profile value="http://hl7.org/fhir/StructureDefinition/CE" />
       </type>
       <maxLength value="483" />
       <mapping>

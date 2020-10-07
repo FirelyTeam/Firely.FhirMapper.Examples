@@ -1,5 +1,5 @@
 ﻿<StructureDefinition xmlns="http://hl7.org/fhir">
-    <url value="https://healex.systems/fhir/StructureDefinition/RQCI05"/>
+    <url value="http://hl7.org/fhir/StructureDefinition/RQCI05"/>
     <name value="RQCI05"/>
     <status value="draft"/>
     <fhirVersion value="4.0.1"/>

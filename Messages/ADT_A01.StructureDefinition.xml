@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
-  <url value="https://healex.systems/fhir/StructureDefinition/ADT_A01" />
+  <url value="http://hl7.org/fhir/StructureDefinition/ADT_A01" />
   <name value="ADT_A01" />
   <title value="ADT/ACK  Register a Patient (Event A04)" />
   <status value="draft" />
@@ -30,7 +30,7 @@
       <max value="1" />
       <type>
         <code value="MSH" />
-        <profile value="https://healex.systems/fhir/StructureDefinition/MSH" />
+        <profile value="http://hl7.org/fhir/StructureDefinition/MSH" />
       </type>
       <mapping>
         <identity value="v2" />
@@ -43,7 +43,7 @@
       <max value="*" />
       <type>
         <code value="SFT" />
-        <profile value="https://healex.systems/fhir/StructureDefinition/SFT" />
+        <profile value="http://hl7.org/fhir/StructureDefinition/SFT" />
       </type>
       <mapping>
         <identity value="v2" />
@@ -56,7 +56,7 @@
       <max value="1" />
       <type>
         <code value="EVN" />
-        <profile value="https://healex.systems/fhir/StructureDefinition/EVN" />
+        <profile value="http://hl7.org/fhir/StructureDefinition/EVN" />
       </type>
       <mapping>
         <identity value="v2" />
@@ -69,7 +69,7 @@
       <max value="1" />
       <type>
         <code value="PID" />
-        <profile value="https://healex.systems/fhir/StructureDefinition/PID" />
+        <profile value="http://hl7.org/fhir/StructureDefinition/PID" />
       </type>
       <mapping>
         <identity value="v2" />
@@ -82,7 +82,7 @@
       <max value="1" />
       <type>
         <code value="PD1" />
-        <profile value="https://healex.systems/fhir/StructureDefinition/PD1" />
+        <profile value="http://hl7.org/fhir/StructureDefinition/PD1" />
       </type>
       <mapping>
         <identity value="v2" />
@@ -95,7 +95,7 @@
       <max value="*" />
       <type>
         <code value="ROL" />
-        <profile value="https://healex.systems/fhir/StructureDefinition/ROL" />
+        <profile value="http://hl7.org/fhir/StructureDefinition/ROL" />
       </type>
       <mapping>
         <identity value="v2" />
@@ -108,7 +108,7 @@
       <max value="*" />
       <type>
         <code value="NK1" />
-        <profile value="https://healex.systems/fhir/StructureDefinition/NK1" />
+        <profile value="http://hl7.org/fhir/StructureDefinition/NK1" />
       </type>
       <mapping>
         <identity value="v2" />
@@ -121,7 +121,7 @@
       <max value="1" />
       <type>
         <code value="PV1" />
-        <profile value="https://healex.systems/fhir/StructureDefinition/PV1" />
+        <profile value="http://hl7.org/fhir/StructureDefinition/PV1" />
       </type>
       <mapping>
         <identity value="v2" />
@@ -134,7 +134,7 @@
       <max value="1" />
       <type>
         <code value="PV2" />
-        <profile value="https://healex.systems/fhir/StructureDefinition/PV2" />
+        <profile value="http://hl7.org/fhir/StructureDefinition/PV2" />
       </type>
       <mapping>
         <identity value="v2" />
@@ -147,7 +147,7 @@
       <max value="*" />
       <type>
         <code value="ROL" />
-        <profile value="https://healex.systems/fhir/StructureDefinition/ROL" />
+        <profile value="http://hl7.org/fhir/StructureDefinition/ROL" />
       </type>
       <mapping>
         <identity value="v2" />
@@ -160,7 +160,7 @@
       <max value="*" />
       <type>
         <code value="DB1" />
-        <profile value="https://healex.systems/fhir/StructureDefinition/DB1" />
+        <profile value="http://hl7.org/fhir/StructureDefinition/DB1" />
       </type>
       <mapping>
         <identity value="v2" />
@@ -173,7 +173,7 @@
       <max value="*" />
       <type>
         <code value="OBX" />
-        <profile value="https://healex.systems/fhir/StructureDefinition/OBX" />
+        <profile value="http://hl7.org/fhir/StructureDefinition/OBX" />
       </type>
       <mapping>
         <identity value="v2" />
@@ -186,7 +186,7 @@
       <max value="*" />
       <type>
         <code value="AL1" />
-        <profile value="https://healex.systems/fhir/StructureDefinition/AL1" />
+        <profile value="http://hl7.org/fhir/StructureDefinition/AL1" />
       </type>
       <mapping>
         <identity value="v2" />
@@ -199,7 +199,7 @@
       <max value="*" />
       <type>
         <code value="DG1" />
-        <profile value="https://healex.systems/fhir/StructureDefinition/DG1" />
+        <profile value="http://hl7.org/fhir/StructureDefinition/DG1" />
       </type>
       <mapping>
         <identity value="v2" />
@@ -212,7 +212,7 @@
       <max value="1" />
       <type>
         <code value="DRG" />
-        <profile value="https://healex.systems/fhir/StructureDefinition/DRG" />
+        <profile value="http://hl7.org/fhir/StructureDefinition/DRG" />
       </type>
       <mapping>
         <identity value="v2" />
@@ -233,7 +233,7 @@
       <max value="1" />
       <type>
         <code value="PR1" />
-        <profile value="https://healex.systems/fhir/StructureDefinition/PR1" />
+        <profile value="http://hl7.org/fhir/StructureDefinition/PR1" />
       </type>
       <mapping>
         <identity value="v2" />
@@ -246,7 +246,7 @@
       <max value="*" />
       <type>
         <code value="ROL" />
-        <profile value="https://healex.systems/fhir/StructureDefinition/ROL" />
+        <profile value="http://hl7.org/fhir/StructureDefinition/ROL" />
       </type>
       <mapping>
         <identity value="v2" />
@@ -259,7 +259,7 @@
       <max value="*" />
       <type>
         <code value="GT1" />
-        <profile value="https://healex.systems/fhir/StructureDefinition/GT1" />
+        <profile value="http://hl7.org/fhir/StructureDefinition/GT1" />
       </type>
       <mapping>
         <identity value="v2" />
@@ -280,7 +280,7 @@
       <max value="1" />
       <type>
         <code value="IN1" />
-        <profile value="https://healex.systems/fhir/StructureDefinition/IN1" />
+        <profile value="http://hl7.org/fhir/StructureDefinition/IN1" />
       </type>
       <mapping>
         <identity value="v2" />
@@ -293,7 +293,7 @@
       <max value="1" />
       <type>
         <code value="IN2" />
-        <profile value="https://healex.systems/fhir/StructureDefinition/IN2" />
+        <profile value="http://hl7.org/fhir/StructureDefinition/IN2" />
       </type>
       <mapping>
         <identity value="v2" />
@@ -306,7 +306,7 @@
       <max value="*" />
       <type>
         <code value="IN3" />
-        <profile value="https://healex.systems/fhir/StructureDefinition/IN3" />
+        <profile value="http://hl7.org/fhir/StructureDefinition/IN3" />
       </type>
       <mapping>
         <identity value="v2" />
@@ -319,7 +319,7 @@
       <max value="*" />
       <type>
         <code value="ROL" />
-        <profile value="https://healex.systems/fhir/StructureDefinition/ROL" />
+        <profile value="http://hl7.org/fhir/StructureDefinition/ROL" />
       </type>
       <mapping>
         <identity value="v2" />
@@ -332,7 +332,7 @@
       <max value="1" />
       <type>
         <code value="ACC" />
-        <profile value="https://healex.systems/fhir/StructureDefinition/ACC" />
+        <profile value="http://hl7.org/fhir/StructureDefinition/ACC" />
       </type>
       <mapping>
         <identity value="v2" />
@@ -345,7 +345,7 @@
       <max value="1" />
       <type>
         <code value="UB1" />
-        <profile value="https://healex.systems/fhir/StructureDefinition/UB1" />
+        <profile value="http://hl7.org/fhir/StructureDefinition/UB1" />
       </type>
       <mapping>
         <identity value="v2" />
@@ -358,7 +358,7 @@
       <max value="1" />
       <type>
         <code value="UB2" />
-        <profile value="https://healex.systems/fhir/StructureDefinition/UB2" />
+        <profile value="http://hl7.org/fhir/StructureDefinition/UB2" />
       </type>
       <mapping>
         <identity value="v2" />
@@ -371,7 +371,7 @@
       <max value="1" />
       <type>
         <code value="PDA" />
-        <profile value="https://healex.systems/fhir/StructureDefinition/PDA" />
+        <profile value="http://hl7.org/fhir/StructureDefinition/PDA" />
       </type>
       <mapping>
         <identity value="v2" />

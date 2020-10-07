@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
-  <url value="https://healex.systems/fhir/StructureDefinition/DTM" />
+  <url value="http://hl7.org/fhir/StructureDefinition/DTM" />
   <name value="DTM" />
   <title value="Date time/range" />
   <status value="draft" />
