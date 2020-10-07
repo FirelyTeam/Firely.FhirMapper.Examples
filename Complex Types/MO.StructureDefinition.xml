@@ -31,7 +31,7 @@
       <max value="1" />
       <type>
         <code value="string" />
-        <profile value="hhttp://hl7.org/fhir/StructureDefinition/string" />
+        <profile value="http://hl7.org/fhir/StructureDefinition/string" />
       </type>
       <maxLength value="16" />
       <mapping>
