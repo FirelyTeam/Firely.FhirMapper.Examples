@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
+  <id value="PV1" />
   <url value="http://hl7.org/fhir/StructureDefinition/PV1" />
   <name value="PV1" />
   <title value="Patient visit segment" />

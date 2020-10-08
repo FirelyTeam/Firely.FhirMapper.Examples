@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
+  <id value="PD1" />
   <url value="http://hl7.org/fhir/StructureDefinition/PD1" />
   <name value="PD1" />
   <title value="Patientadditionaldemographic segment" />

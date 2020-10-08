@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
+  <id value="XCN" />
   <url value="http://hl7.org/fhir/StructureDefinition/XCN" />
   <name value="XCN" />
   <title value="extended composite ID number and name for persons" />

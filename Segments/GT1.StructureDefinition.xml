@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
+  <id value="GT1" />
   <url value="http://hl7.org/fhir/StructureDefinition/GT1" />
   <name value="GT1" />
   <status value="draft" />

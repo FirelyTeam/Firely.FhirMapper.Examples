@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
+  <id value="JCC" />
   <url value="http://hl7.org/fhir/StructureDefinition/JCC" />
   <name value="JCC" />
   <title value="Job code/class" />

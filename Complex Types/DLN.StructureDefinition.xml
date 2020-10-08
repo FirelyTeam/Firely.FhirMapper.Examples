@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
+  <id value="DLN" />
   <url value="http://hl7.org/fhir/StructureDefinition/DLN" />
   <name value="DLN" />
   <title value="Driver´s license number" />

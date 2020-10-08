@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
+  <id value="UB1" />
   <url value="http://hl7.org/fhir/StructureDefinition/UB1" />
   <name value="UB1" />
   <title value="UB82 data segment" />

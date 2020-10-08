@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
+  <id value="CWE" />
   <url value="http://hl7.org/fhir/StructureDefinition/CWE" />
   <name value="CWE" />
   <title value="Coded With Exceptions" />

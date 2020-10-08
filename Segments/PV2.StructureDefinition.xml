@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
+  <id value="PV2" />
   <url value="http://hl7.org/fhir/StructureDefinition/PV2" />
   <name value="PV2" />
   <status value="draft" />

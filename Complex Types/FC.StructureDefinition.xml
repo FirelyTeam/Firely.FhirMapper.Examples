@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
+  <id value="FC" />
   <url value="http://hl7.org/fhir/StructureDefinition/FC" />
   <name value="FC" />
   <title value="Financial class" />

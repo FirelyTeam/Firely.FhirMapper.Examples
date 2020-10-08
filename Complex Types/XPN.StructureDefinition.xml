@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
+  <id value="XPN" />
   <url value="http://hl7.org/fhir/StructureDefinition/XPN" />
   <name value="XPN" />
   <title value="Extended Person Name" />

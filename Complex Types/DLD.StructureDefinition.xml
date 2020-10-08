@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
+  <id value="DLD" />
   <url value="http://hl7.org/fhir/StructureDefinition/DLD" />
   <name value="DLD" />
   <title value="Discharge to location and date" />

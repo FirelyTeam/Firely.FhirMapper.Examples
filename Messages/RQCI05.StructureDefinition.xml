@@ -1,4 +1,5 @@
 ﻿<StructureDefinition xmlns="http://hl7.org/fhir">
+    <id value="RQCI05" />
     <url value="http://hl7.org/fhir/StructureDefinition/RQCI05"/>
     <name value="RQCI05"/>
     <status value="draft"/>

@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
+  <id value="PDA" />
   <url value="http://hl7.org/fhir/StructureDefinition/PDA" />
   <name value="PDA" />
   <title value="Patient death and autopsy segment" />

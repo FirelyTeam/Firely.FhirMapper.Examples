@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
+  <id value="MO" />
   <url value="http://hl7.org/fhir/StructureDefinition/MO" />
   <name value="MO" />
   <title value="Money" />

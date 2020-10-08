@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
+  <id value="IN3" />
   <url value="http://hl7.org/fhir/StructureDefinition/IN3" />
   <name value="IN3" />
   <status value="draft" />

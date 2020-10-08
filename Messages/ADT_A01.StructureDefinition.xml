@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
+  <id value="ADT_A01" />
   <url value="http://hl7.org/fhir/StructureDefinition/ADT_A01" />
   <name value="ADT_A01" />
   <title value="ADT/ACK  Register a Patient (Event A04)" />
