@@ -19,3 +19,7 @@ This repository contains different branches, each containing StructureMaps and S
 * HL7 v2 to FHIR
 * FHIR to FHIR
 * VCF (Variant Call Format)
+
+Examples on how transform the above-mentioned data formats can be found in the following Postman collection:
+
+[![Run in Postman](https://run.pstmn.io/button.svg)](https://app.getpostman.com/run-collection/3a27666e366c56707949#?env%5BVonk%20Remote%20Firely%5D=W3sia2V5IjoiQkFTRV9VUkwiLCJ2YWx1ZSI6Imh0dHBzOi8vdm9uay5maXJlLmx5IiwiZW5hYmxlZCI6dHJ1ZX1d)
