@@ -1,0 +1,694 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "RAS_O17",
+  "url": "http://hl7.org/fhir/StructureDefinition/RAS_O17",
+  "name": "RAS_O17",
+  "status": "active",
+  "fhirVersion": "4.0.1",
+  "kind": "logical",
+  "abstract": false,
+  "type": "RAS_O17",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Element",
+  "derivation": "specialization",
+  "differential": {
+    "element": [
+      {
+        "id": "RAS_O17",
+        "path": "RAS_O17",
+        "type": [
+          {
+            "code": "Element"
+          }
+        ],
+        "mapping": [
+          {
+            "id": "RAS_O17",
+            "identity": "v2",
+            "map": "RAS_O17"
+          }
+        ]
+      },
+      {
+        "id": "RAS_O17.MSH",
+        "path": "RAS_O17.MSH",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "MSH",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/MSH"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "MSH"
+          }
+        ]
+      },
+      {
+        "id": "RAS_O17.SFT",
+        "path": "RAS_O17.SFT",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "SFT",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/SFT"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "SFT"
+          }
+        ]
+      },
+      {
+        "id": "RAS_O17.NTE",
+        "path": "RAS_O17.NTE",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "NTE",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/NTE"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "NTE"
+          }
+        ]
+      },
+      {
+        "id": "RAS_O17.PATIENT",
+        "path": "RAS_O17.PATIENT",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "BackboneElement"
+          }
+        ]
+      },
+      {
+        "id": "RAS_O17.PATIENT.PID",
+        "path": "RAS_O17.PATIENT.PID",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "PID",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/PID"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "PID"
+          }
+        ]
+      },
+      {
+        "id": "RAS_O17.PATIENT.PD1",
+        "path": "RAS_O17.PATIENT.PD1",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "PD1",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/PD1"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "PD1"
+          }
+        ]
+      },
+      {
+        "id": "RAS_O17.PATIENT.NTE",
+        "path": "RAS_O17.PATIENT.NTE",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "NTE",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/NTE"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "NTE"
+          }
+        ]
+      },
+      {
+        "id": "RAS_O17.PATIENT.AL1",
+        "path": "RAS_O17.PATIENT.AL1",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "AL1",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/AL1"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "AL1"
+          }
+        ]
+      },
+      {
+        "id": "RAS_O17.PATIENT.PATIENT_VISIT",
+        "path": "RAS_O17.PATIENT.PATIENT_VISIT",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "BackboneElement"
+          }
+        ]
+      },
+      {
+        "id": "RAS_O17.PATIENT.PATIENT_VISIT.PV1",
+        "path": "RAS_O17.PATIENT.PATIENT_VISIT.PV1",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "PV1",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/PV1"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "PV1"
+          }
+        ]
+      },
+      {
+        "id": "RAS_O17.PATIENT.PATIENT_VISIT.PV2",
+        "path": "RAS_O17.PATIENT.PATIENT_VISIT.PV2",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "PV2",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/PV2"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "PV2"
+          }
+        ]
+      },
+      {
+        "id": "RAS_O17.ORDER",
+        "path": "RAS_O17.ORDER",
+        "min": 1,
+        "max": "*",
+        "type": [
+          {
+            "code": "BackboneElement"
+          }
+        ]
+      },
+      {
+        "id": "RAS_O17.ORDER.ORC",
+        "path": "RAS_O17.ORDER.ORC",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "ORC",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/ORC"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "ORC"
+          }
+        ]
+      },
+      {
+        "id": "RAS_O17.ORDER.TIMING",
+        "path": "RAS_O17.ORDER.TIMING",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "BackboneElement"
+          }
+        ]
+      },
+      {
+        "id": "RAS_O17.ORDER.TIMING.TQ1",
+        "path": "RAS_O17.ORDER.TIMING.TQ1",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "TQ1",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/TQ1"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "TQ1"
+          }
+        ]
+      },
+      {
+        "id": "RAS_O17.ORDER.TIMING.TQ2",
+        "path": "RAS_O17.ORDER.TIMING.TQ2",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "TQ2",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/TQ2"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "TQ2"
+          }
+        ]
+      },
+      {
+        "id": "RAS_O17.ORDER.ORDER_DETAIL",
+        "path": "RAS_O17.ORDER.ORDER_DETAIL",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "BackboneElement"
+          }
+        ]
+      },
+      {
+        "id": "RAS_O17.ORDER.ORDER_DETAIL.RXO",
+        "path": "RAS_O17.ORDER.ORDER_DETAIL.RXO",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "RXO",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/RXO"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "RXO"
+          }
+        ]
+      },
+      {
+        "id": "RAS_O17.ORDER.ORDER_DETAIL.ORDER_DETAIL_SUPPLEMENT",
+        "path": "RAS_O17.ORDER.ORDER_DETAIL.ORDER_DETAIL_SUPPLEMENT",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "BackboneElement"
+          }
+        ]
+      },
+      {
+        "id": "RAS_O17.ORDER.ORDER_DETAIL.ORDER_DETAIL_SUPPLEMENT.NTE",
+        "path": "RAS_O17.ORDER.ORDER_DETAIL.ORDER_DETAIL_SUPPLEMENT.NTE",
+        "min": 1,
+        "max": "*",
+        "type": [
+          {
+            "code": "NTE",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/NTE"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "NTE"
+          }
+        ]
+      },
+      {
+        "id": "RAS_O17.ORDER.ORDER_DETAIL.ORDER_DETAIL_SUPPLEMENT.RXR",
+        "path": "RAS_O17.ORDER.ORDER_DETAIL.ORDER_DETAIL_SUPPLEMENT.RXR",
+        "min": 1,
+        "max": "*",
+        "type": [
+          {
+            "code": "RXR",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/RXR"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "RXR"
+          }
+        ]
+      },
+      {
+        "id": "RAS_O17.ORDER.ORDER_DETAIL.ORDER_DETAIL_SUPPLEMENT.COMPONENTS",
+        "path": "RAS_O17.ORDER.ORDER_DETAIL.ORDER_DETAIL_SUPPLEMENT.COMPONENTS",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "BackboneElement"
+          }
+        ]
+      },
+      {
+        "id": "RAS_O17.ORDER.ORDER_DETAIL.ORDER_DETAIL_SUPPLEMENT.COMPONENTS.RXC",
+        "path": "RAS_O17.ORDER.ORDER_DETAIL.ORDER_DETAIL_SUPPLEMENT.COMPONENTS.RXC",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "RXC",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/RXC"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "RXC"
+          }
+        ]
+      },
+      {
+        "id": "RAS_O17.ORDER.ORDER_DETAIL.ORDER_DETAIL_SUPPLEMENT.COMPONENTS.NTE",
+        "path": "RAS_O17.ORDER.ORDER_DETAIL.ORDER_DETAIL_SUPPLEMENT.COMPONENTS.NTE",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "NTE",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/NTE"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "NTE"
+          }
+        ]
+      },
+      {
+        "id": "RAS_O17.ORDER.ENCODING",
+        "path": "RAS_O17.ORDER.ENCODING",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "BackboneElement"
+          }
+        ]
+      },
+      {
+        "id": "RAS_O17.ORDER.ENCODING.RXE",
+        "path": "RAS_O17.ORDER.ENCODING.RXE",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "RXE",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/RXE"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "RXE"
+          }
+        ]
+      },
+      {
+        "id": "RAS_O17.ORDER.ENCODING.TIMING_ENCODED",
+        "path": "RAS_O17.ORDER.ENCODING.TIMING_ENCODED",
+        "min": 1,
+        "max": "*",
+        "type": [
+          {
+            "code": "BackboneElement"
+          }
+        ]
+      },
+      {
+        "id": "RAS_O17.ORDER.ENCODING.TIMING_ENCODED.TQ1",
+        "path": "RAS_O17.ORDER.ENCODING.TIMING_ENCODED.TQ1",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "TQ1",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/TQ1"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "TQ1"
+          }
+        ]
+      },
+      {
+        "id": "RAS_O17.ORDER.ENCODING.TIMING_ENCODED.TQ2",
+        "path": "RAS_O17.ORDER.ENCODING.TIMING_ENCODED.TQ2",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "TQ2",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/TQ2"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "TQ2"
+          }
+        ]
+      },
+      {
+        "id": "RAS_O17.ORDER.ENCODING.RXR",
+        "path": "RAS_O17.ORDER.ENCODING.RXR",
+        "min": 1,
+        "max": "*",
+        "type": [
+          {
+            "code": "RXR",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/RXR"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "RXR"
+          }
+        ]
+      },
+      {
+        "id": "RAS_O17.ORDER.ENCODING.RXC",
+        "path": "RAS_O17.ORDER.ENCODING.RXC",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "RXC",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/RXC"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "RXC"
+          }
+        ]
+      },
+      {
+        "id": "RAS_O17.ORDER.ADMINISTRATION",
+        "path": "RAS_O17.ORDER.ADMINISTRATION",
+        "min": 1,
+        "max": "*",
+        "type": [
+          {
+            "code": "BackboneElement"
+          }
+        ]
+      },
+      {
+        "id": "RAS_O17.ORDER.ADMINISTRATION.RXA",
+        "path": "RAS_O17.ORDER.ADMINISTRATION.RXA",
+        "min": 1,
+        "max": "*",
+        "type": [
+          {
+            "code": "RXA",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/RXA"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "RXA"
+          }
+        ]
+      },
+      {
+        "id": "RAS_O17.ORDER.ADMINISTRATION.RXR",
+        "path": "RAS_O17.ORDER.ADMINISTRATION.RXR",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "RXR",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/RXR"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "RXR"
+          }
+        ]
+      },
+      {
+        "id": "RAS_O17.ORDER.ADMINISTRATION.OBSERVATION",
+        "path": "RAS_O17.ORDER.ADMINISTRATION.OBSERVATION",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "BackboneElement"
+          }
+        ]
+      },
+      {
+        "id": "RAS_O17.ORDER.ADMINISTRATION.OBSERVATION.OBX",
+        "path": "RAS_O17.ORDER.ADMINISTRATION.OBSERVATION.OBX",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "OBX",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/OBX"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "OBX"
+          }
+        ]
+      },
+      {
+        "id": "RAS_O17.ORDER.ADMINISTRATION.OBSERVATION.NTE",
+        "path": "RAS_O17.ORDER.ADMINISTRATION.OBSERVATION.NTE",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "NTE",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/NTE"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "NTE"
+          }
+        ]
+      },
+      {
+        "id": "RAS_O17.ORDER.CTI",
+        "path": "RAS_O17.ORDER.CTI",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "CTI",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/CTI"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "CTI"
+          }
+        ]
+      }
+    ]
+  }
+}

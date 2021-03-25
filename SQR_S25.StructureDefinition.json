@@ -1,0 +1,530 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "SQR_S25",
+  "url": "http://hl7.org/fhir/StructureDefinition/SQR_S25",
+  "name": "SQR_S25",
+  "status": "active",
+  "fhirVersion": "4.0.1",
+  "kind": "logical",
+  "abstract": false,
+  "type": "SQR_S25",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Element",
+  "derivation": "specialization",
+  "differential": {
+    "element": [
+      {
+        "id": "SQR_S25",
+        "path": "SQR_S25",
+        "type": [
+          {
+            "code": "Element"
+          }
+        ],
+        "mapping": [
+          {
+            "id": "SQR_S25",
+            "identity": "v2",
+            "map": "SQR_S25"
+          }
+        ]
+      },
+      {
+        "id": "SQR_S25.MSH",
+        "path": "SQR_S25.MSH",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "MSH",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/MSH"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "MSH"
+          }
+        ]
+      },
+      {
+        "id": "SQR_S25.MSA",
+        "path": "SQR_S25.MSA",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "MSA",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/MSA"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "MSA"
+          }
+        ]
+      },
+      {
+        "id": "SQR_S25.ERR",
+        "path": "SQR_S25.ERR",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "ERR",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/ERR"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "ERR"
+          }
+        ]
+      },
+      {
+        "id": "SQR_S25.QAK",
+        "path": "SQR_S25.QAK",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "QAK",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/QAK"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "QAK"
+          }
+        ]
+      },
+      {
+        "id": "SQR_S25.SCHEDULE",
+        "path": "SQR_S25.SCHEDULE",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "BackboneElement"
+          }
+        ]
+      },
+      {
+        "id": "SQR_S25.SCHEDULE.SCH",
+        "path": "SQR_S25.SCHEDULE.SCH",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "SCH",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/SCH"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "SCH"
+          }
+        ]
+      },
+      {
+        "id": "SQR_S25.SCHEDULE.TQ1",
+        "path": "SQR_S25.SCHEDULE.TQ1",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "TQ1",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/TQ1"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "TQ1"
+          }
+        ]
+      },
+      {
+        "id": "SQR_S25.SCHEDULE.NTE",
+        "path": "SQR_S25.SCHEDULE.NTE",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "NTE",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/NTE"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "NTE"
+          }
+        ]
+      },
+      {
+        "id": "SQR_S25.SCHEDULE.PATIENT",
+        "path": "SQR_S25.SCHEDULE.PATIENT",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "BackboneElement"
+          }
+        ]
+      },
+      {
+        "id": "SQR_S25.SCHEDULE.PATIENT.PID",
+        "path": "SQR_S25.SCHEDULE.PATIENT.PID",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "PID",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/PID"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "PID"
+          }
+        ]
+      },
+      {
+        "id": "SQR_S25.SCHEDULE.PATIENT.PV1",
+        "path": "SQR_S25.SCHEDULE.PATIENT.PV1",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "PV1",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/PV1"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "PV1"
+          }
+        ]
+      },
+      {
+        "id": "SQR_S25.SCHEDULE.PATIENT.PV2",
+        "path": "SQR_S25.SCHEDULE.PATIENT.PV2",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "PV2",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/PV2"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "PV2"
+          }
+        ]
+      },
+      {
+        "id": "SQR_S25.SCHEDULE.PATIENT.DG1",
+        "path": "SQR_S25.SCHEDULE.PATIENT.DG1",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "DG1",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/DG1"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "DG1"
+          }
+        ]
+      },
+      {
+        "id": "SQR_S25.SCHEDULE.RESOURCES",
+        "path": "SQR_S25.SCHEDULE.RESOURCES",
+        "min": 1,
+        "max": "*",
+        "type": [
+          {
+            "code": "BackboneElement"
+          }
+        ]
+      },
+      {
+        "id": "SQR_S25.SCHEDULE.RESOURCES.RGS",
+        "path": "SQR_S25.SCHEDULE.RESOURCES.RGS",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "RGS",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/RGS"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "RGS"
+          }
+        ]
+      },
+      {
+        "id": "SQR_S25.SCHEDULE.RESOURCES.SERVICE",
+        "path": "SQR_S25.SCHEDULE.RESOURCES.SERVICE",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "BackboneElement"
+          }
+        ]
+      },
+      {
+        "id": "SQR_S25.SCHEDULE.RESOURCES.SERVICE.AIS",
+        "path": "SQR_S25.SCHEDULE.RESOURCES.SERVICE.AIS",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "AIS",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/AIS"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "AIS"
+          }
+        ]
+      },
+      {
+        "id": "SQR_S25.SCHEDULE.RESOURCES.SERVICE.NTE",
+        "path": "SQR_S25.SCHEDULE.RESOURCES.SERVICE.NTE",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "NTE",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/NTE"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "NTE"
+          }
+        ]
+      },
+      {
+        "id": "SQR_S25.SCHEDULE.RESOURCES.GENERAL_RESOURCE",
+        "path": "SQR_S25.SCHEDULE.RESOURCES.GENERAL_RESOURCE",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "BackboneElement"
+          }
+        ]
+      },
+      {
+        "id": "SQR_S25.SCHEDULE.RESOURCES.GENERAL_RESOURCE.AIG",
+        "path": "SQR_S25.SCHEDULE.RESOURCES.GENERAL_RESOURCE.AIG",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "AIG",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/AIG"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "AIG"
+          }
+        ]
+      },
+      {
+        "id": "SQR_S25.SCHEDULE.RESOURCES.GENERAL_RESOURCE.NTE",
+        "path": "SQR_S25.SCHEDULE.RESOURCES.GENERAL_RESOURCE.NTE",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "NTE",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/NTE"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "NTE"
+          }
+        ]
+      },
+      {
+        "id": "SQR_S25.SCHEDULE.RESOURCES.PERSONNEL_RESOURCE",
+        "path": "SQR_S25.SCHEDULE.RESOURCES.PERSONNEL_RESOURCE",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "BackboneElement"
+          }
+        ]
+      },
+      {
+        "id": "SQR_S25.SCHEDULE.RESOURCES.PERSONNEL_RESOURCE.AIP",
+        "path": "SQR_S25.SCHEDULE.RESOURCES.PERSONNEL_RESOURCE.AIP",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "AIP",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/AIP"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "AIP"
+          }
+        ]
+      },
+      {
+        "id": "SQR_S25.SCHEDULE.RESOURCES.PERSONNEL_RESOURCE.NTE",
+        "path": "SQR_S25.SCHEDULE.RESOURCES.PERSONNEL_RESOURCE.NTE",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "NTE",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/NTE"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "NTE"
+          }
+        ]
+      },
+      {
+        "id": "SQR_S25.SCHEDULE.RESOURCES.LOCATION_RESOURCE",
+        "path": "SQR_S25.SCHEDULE.RESOURCES.LOCATION_RESOURCE",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "BackboneElement"
+          }
+        ]
+      },
+      {
+        "id": "SQR_S25.SCHEDULE.RESOURCES.LOCATION_RESOURCE.AIL",
+        "path": "SQR_S25.SCHEDULE.RESOURCES.LOCATION_RESOURCE.AIL",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "AIL",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/AIL"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "AIL"
+          }
+        ]
+      },
+      {
+        "id": "SQR_S25.SCHEDULE.RESOURCES.LOCATION_RESOURCE.NTE",
+        "path": "SQR_S25.SCHEDULE.RESOURCES.LOCATION_RESOURCE.NTE",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "NTE",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/NTE"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "NTE"
+          }
+        ]
+      },
+      {
+        "id": "SQR_S25.DSC",
+        "path": "SQR_S25.DSC",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "DSC",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/DSC"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "DSC"
+          }
+        ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,203 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "DB1",
+  "url": "http://hl7.org/fhir/StructureDefinition/DB1",
+  "name": "DB1",
+  "status": "active",
+  "fhirVersion": "4.0.1",
+  "kind": "logical",
+  "abstract": false,
+  "type": "DB1",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Element",
+  "derivation": "specialization",
+  "differential": {
+    "element": [
+      {
+        "id": "DB1",
+        "path": "DB1",
+        "type": [
+          {
+            "code": "Element"
+          }
+        ],
+        "mapping": [
+          {
+            "id": "DB1",
+            "identity": "v2",
+            "map": "DB1"
+          }
+        ]
+      },
+      {
+        "id": "DB1.SetID-DB1",
+        "path": "DB1.SetID-DB1",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "string",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/string"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "DB1.1"
+          }
+        ]
+      },
+      {
+        "id": "DB1.DisabledPersonCode",
+        "path": "DB1.DisabledPersonCode",
+        "code": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/v2-0334"
+          }
+        ],
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "string",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/string"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "DB1.2"
+          }
+        ]
+      },
+      {
+        "id": "DB1.DisabledPersonIdentifier",
+        "path": "DB1.DisabledPersonIdentifier",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "CX",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/CX"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "DB1.3"
+          }
+        ]
+      },
+      {
+        "id": "DB1.DisabledIndicator",
+        "path": "DB1.DisabledIndicator",
+        "code": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/v2-0136"
+          }
+        ],
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "string",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/string"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "DB1.4"
+          }
+        ]
+      },
+      {
+        "id": "DB1.DisabilityStartDate",
+        "path": "DB1.DisabilityStartDate",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "string",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/string"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "DB1.5"
+          }
+        ]
+      },
+      {
+        "id": "DB1.DisabilityEndDate",
+        "path": "DB1.DisabilityEndDate",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "string",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/string"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "DB1.6"
+          }
+        ]
+      },
+      {
+        "id": "DB1.DisabilityReturntoWorkDate",
+        "path": "DB1.DisabilityReturntoWorkDate",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "string",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/string"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "DB1.7"
+          }
+        ]
+      },
+      {
+        "id": "DB1.DisabilityUnabletoWorkDate",
+        "path": "DB1.DisabilityUnabletoWorkDate",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "string",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/string"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "DB1.8"
+          }
+        ]
+      }
+    ]
+  }
+}

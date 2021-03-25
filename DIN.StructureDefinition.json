@@ -1,0 +1,78 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "DIN",
+  "url": "http://hl7.org/fhir/StructureDefinition/DIN",
+  "name": "DIN",
+  "status": "active",
+  "fhirVersion": "4.0.1",
+  "kind": "logical",
+  "abstract": false,
+  "type": "DIN",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Element",
+  "derivation": "specialization",
+  "differential": {
+    "element": [
+      {
+        "id": "DIN",
+        "path": "DIN",
+        "type": [
+          {
+            "code": "Element"
+          }
+        ],
+        "mapping": [
+          {
+            "id": "DIN",
+            "identity": "v2",
+            "map": "DIN"
+          }
+        ]
+      },
+      {
+        "id": "DIN.Date",
+        "path": "DIN.Date",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "TS",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/TS"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "DIN.1"
+          }
+        ]
+      },
+      {
+        "id": "DIN.InstitutionName",
+        "path": "DIN.InstitutionName",
+        "code": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/v2-0531"
+          }
+        ],
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "CE",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/CE"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "DIN.2"
+          }
+        ]
+      }
+    ]
+  }
+}

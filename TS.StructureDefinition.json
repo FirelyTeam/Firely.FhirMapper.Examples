@@ -1,0 +1,78 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "TS",
+  "url": "http://hl7.org/fhir/StructureDefinition/TS",
+  "name": "TS",
+  "status": "active",
+  "fhirVersion": "4.0.1",
+  "kind": "logical",
+  "abstract": false,
+  "type": "TS",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Element",
+  "derivation": "specialization",
+  "differential": {
+    "element": [
+      {
+        "id": "TS",
+        "path": "TS",
+        "type": [
+          {
+            "code": "Element"
+          }
+        ],
+        "mapping": [
+          {
+            "id": "TS",
+            "identity": "v2",
+            "map": "TS"
+          }
+        ]
+      },
+      {
+        "id": "TS.Time",
+        "path": "TS.Time",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "string",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/string"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "TS.1"
+          }
+        ]
+      },
+      {
+        "id": "TS.DegreeofPrecision",
+        "path": "TS.DegreeofPrecision",
+        "code": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/v2-0529"
+          }
+        ],
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "string",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/string"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "TS.2"
+          }
+        ]
+      }
+    ]
+  }
+}

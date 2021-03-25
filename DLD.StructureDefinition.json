@@ -1,0 +1,78 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "DLD",
+  "url": "http://hl7.org/fhir/StructureDefinition/DLD",
+  "name": "DLD",
+  "status": "active",
+  "fhirVersion": "4.0.1",
+  "kind": "logical",
+  "abstract": false,
+  "type": "DLD",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Element",
+  "derivation": "specialization",
+  "differential": {
+    "element": [
+      {
+        "id": "DLD",
+        "path": "DLD",
+        "type": [
+          {
+            "code": "Element"
+          }
+        ],
+        "mapping": [
+          {
+            "id": "DLD",
+            "identity": "v2",
+            "map": "DLD"
+          }
+        ]
+      },
+      {
+        "id": "DLD.DischargeLocation",
+        "path": "DLD.DischargeLocation",
+        "code": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/v2-0113"
+          }
+        ],
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "string",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/string"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "DLD.1"
+          }
+        ]
+      },
+      {
+        "id": "DLD.EffectiveDate",
+        "path": "DLD.EffectiveDate",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "TS",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/TS"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "DLD.2"
+          }
+        ]
+      }
+    ]
+  }
+}

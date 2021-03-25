@@ -1,0 +1,148 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "EQU",
+  "url": "http://hl7.org/fhir/StructureDefinition/EQU",
+  "name": "EQU",
+  "status": "active",
+  "fhirVersion": "4.0.1",
+  "kind": "logical",
+  "abstract": false,
+  "type": "EQU",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Element",
+  "derivation": "specialization",
+  "differential": {
+    "element": [
+      {
+        "id": "EQU",
+        "path": "EQU",
+        "type": [
+          {
+            "code": "Element"
+          }
+        ],
+        "mapping": [
+          {
+            "id": "EQU",
+            "identity": "v2",
+            "map": "EQU"
+          }
+        ]
+      },
+      {
+        "id": "EQU.EquipmentInstanceIdentifier",
+        "path": "EQU.EquipmentInstanceIdentifier",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "EI",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/EI"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "EQU.1"
+          }
+        ]
+      },
+      {
+        "id": "EQU.EventDate/Time",
+        "path": "EQU.EventDate/Time",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "TS",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/TS"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "EQU.2"
+          }
+        ]
+      },
+      {
+        "id": "EQU.EquipmentState",
+        "path": "EQU.EquipmentState",
+        "code": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/v2-0365"
+          }
+        ],
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "CE",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/CE"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "EQU.3"
+          }
+        ]
+      },
+      {
+        "id": "EQU.Local/RemoteControlState",
+        "path": "EQU.Local/RemoteControlState",
+        "code": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/v2-0366"
+          }
+        ],
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "CE",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/CE"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "EQU.4"
+          }
+        ]
+      },
+      {
+        "id": "EQU.AlertLevel",
+        "path": "EQU.AlertLevel",
+        "code": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/v2-0367"
+          }
+        ],
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "CE",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/CE"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "EQU.5"
+          }
+        ]
+      }
+    ]
+  }
+}

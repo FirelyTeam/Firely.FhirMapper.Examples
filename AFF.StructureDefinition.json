@@ -1,0 +1,133 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "AFF",
+  "url": "http://hl7.org/fhir/StructureDefinition/AFF",
+  "name": "AFF",
+  "status": "active",
+  "fhirVersion": "4.0.1",
+  "kind": "logical",
+  "abstract": false,
+  "type": "AFF",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Element",
+  "derivation": "specialization",
+  "differential": {
+    "element": [
+      {
+        "id": "AFF",
+        "path": "AFF",
+        "type": [
+          {
+            "code": "Element"
+          }
+        ],
+        "mapping": [
+          {
+            "id": "AFF",
+            "identity": "v2",
+            "map": "AFF"
+          }
+        ]
+      },
+      {
+        "id": "AFF.SetID_AFF",
+        "path": "AFF.SetID_AFF",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "string",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/string"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "AFF.1"
+          }
+        ]
+      },
+      {
+        "id": "AFF.ProfessionalOrganization",
+        "path": "AFF.ProfessionalOrganization",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "XON",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/XON"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "AFF.2"
+          }
+        ]
+      },
+      {
+        "id": "AFF.ProfessionalOrganizationAddress",
+        "path": "AFF.ProfessionalOrganizationAddress",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "XAD",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/XAD"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "AFF.3"
+          }
+        ]
+      },
+      {
+        "id": "AFF.ProfessionalOrganizationAffiliationDateRange",
+        "path": "AFF.ProfessionalOrganizationAffiliationDateRange",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "DR",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/DR"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "AFF.4"
+          }
+        ]
+      },
+      {
+        "id": "AFF.ProfessionalAffiliationAdditionalInformation",
+        "path": "AFF.ProfessionalAffiliationAdditionalInformation",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "string",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/string"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "AFF.5"
+          }
+        ]
+      }
+    ]
+  }
+}

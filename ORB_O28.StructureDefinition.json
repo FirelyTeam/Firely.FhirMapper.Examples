@@ -1,0 +1,277 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "ORB_O28",
+  "url": "http://hl7.org/fhir/StructureDefinition/ORB_O28",
+  "name": "ORB_O28",
+  "status": "active",
+  "fhirVersion": "4.0.1",
+  "kind": "logical",
+  "abstract": false,
+  "type": "ORB_O28",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Element",
+  "derivation": "specialization",
+  "differential": {
+    "element": [
+      {
+        "id": "ORB_O28",
+        "path": "ORB_O28",
+        "type": [
+          {
+            "code": "Element"
+          }
+        ],
+        "mapping": [
+          {
+            "id": "ORB_O28",
+            "identity": "v2",
+            "map": "ORB_O28"
+          }
+        ]
+      },
+      {
+        "id": "ORB_O28.MSH",
+        "path": "ORB_O28.MSH",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "MSH",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/MSH"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "MSH"
+          }
+        ]
+      },
+      {
+        "id": "ORB_O28.MSA",
+        "path": "ORB_O28.MSA",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "MSA",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/MSA"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "MSA"
+          }
+        ]
+      },
+      {
+        "id": "ORB_O28.ERR",
+        "path": "ORB_O28.ERR",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "ERR",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/ERR"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "ERR"
+          }
+        ]
+      },
+      {
+        "id": "ORB_O28.SFT",
+        "path": "ORB_O28.SFT",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "SFT",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/SFT"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "SFT"
+          }
+        ]
+      },
+      {
+        "id": "ORB_O28.NTE",
+        "path": "ORB_O28.NTE",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "NTE",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/NTE"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "NTE"
+          }
+        ]
+      },
+      {
+        "id": "ORB_O28.RESPONSE",
+        "path": "ORB_O28.RESPONSE",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "BackboneElement"
+          }
+        ]
+      },
+      {
+        "id": "ORB_O28.RESPONSE.PATIENT",
+        "path": "ORB_O28.RESPONSE.PATIENT",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "BackboneElement"
+          }
+        ]
+      },
+      {
+        "id": "ORB_O28.RESPONSE.PATIENT.PID",
+        "path": "ORB_O28.RESPONSE.PATIENT.PID",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "PID",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/PID"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "PID"
+          }
+        ]
+      },
+      {
+        "id": "ORB_O28.RESPONSE.PATIENT.ORDER",
+        "path": "ORB_O28.RESPONSE.PATIENT.ORDER",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "BackboneElement"
+          }
+        ]
+      },
+      {
+        "id": "ORB_O28.RESPONSE.PATIENT.ORDER.ORC",
+        "path": "ORB_O28.RESPONSE.PATIENT.ORDER.ORC",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "ORC",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/ORC"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "ORC"
+          }
+        ]
+      },
+      {
+        "id": "ORB_O28.RESPONSE.PATIENT.ORDER.TIMING",
+        "path": "ORB_O28.RESPONSE.PATIENT.ORDER.TIMING",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "BackboneElement"
+          }
+        ]
+      },
+      {
+        "id": "ORB_O28.RESPONSE.PATIENT.ORDER.TIMING.TQ1",
+        "path": "ORB_O28.RESPONSE.PATIENT.ORDER.TIMING.TQ1",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "TQ1",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/TQ1"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "TQ1"
+          }
+        ]
+      },
+      {
+        "id": "ORB_O28.RESPONSE.PATIENT.ORDER.TIMING.TQ2",
+        "path": "ORB_O28.RESPONSE.PATIENT.ORDER.TIMING.TQ2",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "TQ2",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/TQ2"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "TQ2"
+          }
+        ]
+      },
+      {
+        "id": "ORB_O28.RESPONSE.PATIENT.ORDER.BPO",
+        "path": "ORB_O28.RESPONSE.PATIENT.ORDER.BPO",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "BPO",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/BPO"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "BPO"
+          }
+        ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,103 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "ICD",
+  "url": "http://hl7.org/fhir/StructureDefinition/ICD",
+  "name": "ICD",
+  "status": "active",
+  "fhirVersion": "4.0.1",
+  "kind": "logical",
+  "abstract": false,
+  "type": "ICD",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Element",
+  "derivation": "specialization",
+  "differential": {
+    "element": [
+      {
+        "id": "ICD",
+        "path": "ICD",
+        "type": [
+          {
+            "code": "Element"
+          }
+        ],
+        "mapping": [
+          {
+            "id": "ICD",
+            "identity": "v2",
+            "map": "ICD"
+          }
+        ]
+      },
+      {
+        "id": "ICD.CertificationPatientType",
+        "path": "ICD.CertificationPatientType",
+        "code": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/v2-0150"
+          }
+        ],
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "string",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/string"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "ICD.1"
+          }
+        ]
+      },
+      {
+        "id": "ICD.CertificationRequired",
+        "path": "ICD.CertificationRequired",
+        "code": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/v2-0136"
+          }
+        ],
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "string",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/string"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "ICD.2"
+          }
+        ]
+      },
+      {
+        "id": "ICD.Date/TimeCertificationRequired",
+        "path": "ICD.Date/TimeCertificationRequired",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "TS",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/TS"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "ICD.3"
+          }
+        ]
+      }
+    ]
+  }
+}

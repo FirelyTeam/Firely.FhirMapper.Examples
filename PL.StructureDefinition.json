@@ -1,0 +1,288 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "PL",
+  "url": "http://hl7.org/fhir/StructureDefinition/PL",
+  "name": "PL",
+  "status": "active",
+  "fhirVersion": "4.0.1",
+  "kind": "logical",
+  "abstract": false,
+  "type": "PL",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Element",
+  "derivation": "specialization",
+  "differential": {
+    "element": [
+      {
+        "id": "PL",
+        "path": "PL",
+        "type": [
+          {
+            "code": "Element"
+          }
+        ],
+        "mapping": [
+          {
+            "id": "PL",
+            "identity": "v2",
+            "map": "PL"
+          }
+        ]
+      },
+      {
+        "id": "PL.PointofCare",
+        "path": "PL.PointofCare",
+        "code": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/v2-0302"
+          }
+        ],
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "string",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/string"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "PL.1"
+          }
+        ]
+      },
+      {
+        "id": "PL.Room",
+        "path": "PL.Room",
+        "code": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/v2-0303"
+          }
+        ],
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "string",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/string"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "PL.2"
+          }
+        ]
+      },
+      {
+        "id": "PL.Bed",
+        "path": "PL.Bed",
+        "code": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/v2-0304"
+          }
+        ],
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "string",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/string"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "PL.3"
+          }
+        ]
+      },
+      {
+        "id": "PL.Facility",
+        "path": "PL.Facility",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "HD",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/HD"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "PL.4"
+          }
+        ]
+      },
+      {
+        "id": "PL.LocationStatus",
+        "path": "PL.LocationStatus",
+        "code": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/v2-0306"
+          }
+        ],
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "string",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/string"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "PL.5"
+          }
+        ]
+      },
+      {
+        "id": "PL.PersonLocationType",
+        "path": "PL.PersonLocationType",
+        "code": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/v2-0305"
+          }
+        ],
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "string",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/string"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "PL.6"
+          }
+        ]
+      },
+      {
+        "id": "PL.Building",
+        "path": "PL.Building",
+        "code": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/v2-0307"
+          }
+        ],
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "string",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/string"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "PL.7"
+          }
+        ]
+      },
+      {
+        "id": "PL.Floor",
+        "path": "PL.Floor",
+        "code": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/v2-0308"
+          }
+        ],
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "string",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/string"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "PL.8"
+          }
+        ]
+      },
+      {
+        "id": "PL.LocationDescription",
+        "path": "PL.LocationDescription",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "string",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/string"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "PL.9"
+          }
+        ]
+      },
+      {
+        "id": "PL.ComprehensiveLocationIdentifier",
+        "path": "PL.ComprehensiveLocationIdentifier",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "EI",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/EI"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "PL.10"
+          }
+        ]
+      },
+      {
+        "id": "PL.AssigningAuthorityforLocation",
+        "path": "PL.AssigningAuthorityforLocation",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "HD",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/HD"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "PL.11"
+          }
+        ]
+      }
+    ]
+  }
+}

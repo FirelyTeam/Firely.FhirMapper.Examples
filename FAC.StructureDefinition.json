@@ -1,0 +1,278 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "FAC",
+  "url": "http://hl7.org/fhir/StructureDefinition/FAC",
+  "name": "FAC",
+  "status": "active",
+  "fhirVersion": "4.0.1",
+  "kind": "logical",
+  "abstract": false,
+  "type": "FAC",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Element",
+  "derivation": "specialization",
+  "differential": {
+    "element": [
+      {
+        "id": "FAC",
+        "path": "FAC",
+        "type": [
+          {
+            "code": "Element"
+          }
+        ],
+        "mapping": [
+          {
+            "id": "FAC",
+            "identity": "v2",
+            "map": "FAC"
+          }
+        ]
+      },
+      {
+        "id": "FAC.FacilityID-FAC",
+        "path": "FAC.FacilityID-FAC",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "EI",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/EI"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "FAC.1"
+          }
+        ]
+      },
+      {
+        "id": "FAC.FacilityType",
+        "path": "FAC.FacilityType",
+        "code": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/v2-0331"
+          }
+        ],
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "string",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/string"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "FAC.2"
+          }
+        ]
+      },
+      {
+        "id": "FAC.FacilityAddress",
+        "path": "FAC.FacilityAddress",
+        "min": 1,
+        "max": "*",
+        "type": [
+          {
+            "code": "XAD",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/XAD"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "FAC.3"
+          }
+        ]
+      },
+      {
+        "id": "FAC.FacilityTelecommunication",
+        "path": "FAC.FacilityTelecommunication",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "XTN",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/XTN"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "FAC.4"
+          }
+        ]
+      },
+      {
+        "id": "FAC.ContactPerson",
+        "path": "FAC.ContactPerson",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "XCN",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/XCN"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "FAC.5"
+          }
+        ]
+      },
+      {
+        "id": "FAC.ContactTitle",
+        "path": "FAC.ContactTitle",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "string",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/string"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "FAC.6"
+          }
+        ]
+      },
+      {
+        "id": "FAC.ContactAddress",
+        "path": "FAC.ContactAddress",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "XAD",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/XAD"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "FAC.7"
+          }
+        ]
+      },
+      {
+        "id": "FAC.ContactTelecommunication",
+        "path": "FAC.ContactTelecommunication",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "XTN",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/XTN"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "FAC.8"
+          }
+        ]
+      },
+      {
+        "id": "FAC.SignatureAuthority",
+        "path": "FAC.SignatureAuthority",
+        "min": 1,
+        "max": "*",
+        "type": [
+          {
+            "code": "XCN",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/XCN"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "FAC.9"
+          }
+        ]
+      },
+      {
+        "id": "FAC.SignatureAuthorityTitle",
+        "path": "FAC.SignatureAuthorityTitle",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "string",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/string"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "FAC.10"
+          }
+        ]
+      },
+      {
+        "id": "FAC.SignatureAuthorityAddress",
+        "path": "FAC.SignatureAuthorityAddress",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "XAD",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/XAD"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "FAC.11"
+          }
+        ]
+      },
+      {
+        "id": "FAC.SignatureAuthorityTelecommunication",
+        "path": "FAC.SignatureAuthorityTelecommunication",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "XTN",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/XTN"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "FAC.12"
+          }
+        ]
+      }
+    ]
+  }
+}

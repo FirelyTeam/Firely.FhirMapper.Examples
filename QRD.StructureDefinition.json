@@ -1,0 +1,303 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "QRD",
+  "url": "http://hl7.org/fhir/StructureDefinition/QRD",
+  "name": "QRD",
+  "status": "active",
+  "fhirVersion": "4.0.1",
+  "kind": "logical",
+  "abstract": false,
+  "type": "QRD",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Element",
+  "derivation": "specialization",
+  "differential": {
+    "element": [
+      {
+        "id": "QRD",
+        "path": "QRD",
+        "type": [
+          {
+            "code": "Element"
+          }
+        ],
+        "mapping": [
+          {
+            "id": "QRD",
+            "identity": "v2",
+            "map": "QRD"
+          }
+        ]
+      },
+      {
+        "id": "QRD.QueryDate/Time",
+        "path": "QRD.QueryDate/Time",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "TS",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/TS"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "QRD.1"
+          }
+        ]
+      },
+      {
+        "id": "QRD.QueryFormatCode",
+        "path": "QRD.QueryFormatCode",
+        "code": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/v2-0106"
+          }
+        ],
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "string",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/string"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "QRD.2"
+          }
+        ]
+      },
+      {
+        "id": "QRD.QueryPriority",
+        "path": "QRD.QueryPriority",
+        "code": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/v2-0091"
+          }
+        ],
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "string",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/string"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "QRD.3"
+          }
+        ]
+      },
+      {
+        "id": "QRD.QueryID",
+        "path": "QRD.QueryID",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "string",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/string"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "QRD.4"
+          }
+        ]
+      },
+      {
+        "id": "QRD.DeferredResponseType",
+        "path": "QRD.DeferredResponseType",
+        "code": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/v2-0107"
+          }
+        ],
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "string",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/string"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "QRD.5"
+          }
+        ]
+      },
+      {
+        "id": "QRD.DeferredResponseDate/Time",
+        "path": "QRD.DeferredResponseDate/Time",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "TS",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/TS"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "QRD.6"
+          }
+        ]
+      },
+      {
+        "id": "QRD.QuantityLimitedRequest",
+        "path": "QRD.QuantityLimitedRequest",
+        "code": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/v2-0126"
+          }
+        ],
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "CQ",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/CQ"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "QRD.7"
+          }
+        ]
+      },
+      {
+        "id": "QRD.WhoSubjectFilter",
+        "path": "QRD.WhoSubjectFilter",
+        "min": 1,
+        "max": "*",
+        "type": [
+          {
+            "code": "XCN",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/XCN"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "QRD.8"
+          }
+        ]
+      },
+      {
+        "id": "QRD.WhatSubjectFilter",
+        "path": "QRD.WhatSubjectFilter",
+        "code": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/v2-0048"
+          }
+        ],
+        "min": 1,
+        "max": "*",
+        "type": [
+          {
+            "code": "CE",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/CE"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "QRD.9"
+          }
+        ]
+      },
+      {
+        "id": "QRD.WhatDepartmentDataCode",
+        "path": "QRD.WhatDepartmentDataCode",
+        "min": 1,
+        "max": "*",
+        "type": [
+          {
+            "code": "CE",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/CE"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "QRD.10"
+          }
+        ]
+      },
+      {
+        "id": "QRD.WhatDataCodeValueQual",
+        "path": "QRD.WhatDataCodeValueQual",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "VR",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/VR"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "QRD.11"
+          }
+        ]
+      },
+      {
+        "id": "QRD.QueryResultsLevel",
+        "path": "QRD.QueryResultsLevel",
+        "code": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/v2-0108"
+          }
+        ],
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "string",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/string"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "QRD.12"
+          }
+        ]
+      }
+    ]
+  }
+}

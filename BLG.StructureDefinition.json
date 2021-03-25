@@ -1,0 +1,128 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "BLG",
+  "url": "http://hl7.org/fhir/StructureDefinition/BLG",
+  "name": "BLG",
+  "status": "active",
+  "fhirVersion": "4.0.1",
+  "kind": "logical",
+  "abstract": false,
+  "type": "BLG",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Element",
+  "derivation": "specialization",
+  "differential": {
+    "element": [
+      {
+        "id": "BLG",
+        "path": "BLG",
+        "type": [
+          {
+            "code": "Element"
+          }
+        ],
+        "mapping": [
+          {
+            "id": "BLG",
+            "identity": "v2",
+            "map": "BLG"
+          }
+        ]
+      },
+      {
+        "id": "BLG.WhentoCharge",
+        "path": "BLG.WhentoCharge",
+        "code": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/v2-0100"
+          }
+        ],
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "CCD",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/CCD"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "BLG.1"
+          }
+        ]
+      },
+      {
+        "id": "BLG.ChargeType",
+        "path": "BLG.ChargeType",
+        "code": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/v2-0122"
+          }
+        ],
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "string",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/string"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "BLG.2"
+          }
+        ]
+      },
+      {
+        "id": "BLG.AccountID",
+        "path": "BLG.AccountID",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "CX",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/CX"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "BLG.3"
+          }
+        ]
+      },
+      {
+        "id": "BLG.ChargeTypeReason",
+        "path": "BLG.ChargeTypeReason",
+        "code": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/v2-0475"
+          }
+        ],
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "CWE",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/CWE"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "BLG.4"
+          }
+        ]
+      }
+    ]
+  }
+}

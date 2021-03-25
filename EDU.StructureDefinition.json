@@ -1,0 +1,223 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "EDU",
+  "url": "http://hl7.org/fhir/StructureDefinition/EDU",
+  "name": "EDU",
+  "status": "active",
+  "fhirVersion": "4.0.1",
+  "kind": "logical",
+  "abstract": false,
+  "type": "EDU",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Element",
+  "derivation": "specialization",
+  "differential": {
+    "element": [
+      {
+        "id": "EDU",
+        "path": "EDU",
+        "type": [
+          {
+            "code": "Element"
+          }
+        ],
+        "mapping": [
+          {
+            "id": "EDU",
+            "identity": "v2",
+            "map": "EDU"
+          }
+        ]
+      },
+      {
+        "id": "EDU.SetID_EDU",
+        "path": "EDU.SetID_EDU",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "string",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/string"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "EDU.1"
+          }
+        ]
+      },
+      {
+        "id": "EDU.AcademicDegree",
+        "path": "EDU.AcademicDegree",
+        "code": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/v2-0360"
+          }
+        ],
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "string",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/string"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "EDU.2"
+          }
+        ]
+      },
+      {
+        "id": "EDU.AcademicDegreeProgramDateRange",
+        "path": "EDU.AcademicDegreeProgramDateRange",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "DR",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/DR"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "EDU.3"
+          }
+        ]
+      },
+      {
+        "id": "EDU.AcademicDegreeProgramParticipationDateRange",
+        "path": "EDU.AcademicDegreeProgramParticipationDateRange",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "DR",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/DR"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "EDU.4"
+          }
+        ]
+      },
+      {
+        "id": "EDU.AcademicDegreeGrantedDate",
+        "path": "EDU.AcademicDegreeGrantedDate",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "string",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/string"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "EDU.5"
+          }
+        ]
+      },
+      {
+        "id": "EDU.School",
+        "path": "EDU.School",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "XON",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/XON"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "EDU.6"
+          }
+        ]
+      },
+      {
+        "id": "EDU.SchoolTypeCode",
+        "path": "EDU.SchoolTypeCode",
+        "code": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/v2-0402"
+          }
+        ],
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "CE",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/CE"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "EDU.7"
+          }
+        ]
+      },
+      {
+        "id": "EDU.SchoolAddress",
+        "path": "EDU.SchoolAddress",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "XAD",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/XAD"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "EDU.8"
+          }
+        ]
+      },
+      {
+        "id": "EDU.MajorFieldofStudy",
+        "path": "EDU.MajorFieldofStudy",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "CWE",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/CWE"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "EDU.9"
+          }
+        ]
+      }
+    ]
+  }
+}

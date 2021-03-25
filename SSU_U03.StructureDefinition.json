@@ -1,0 +1,215 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "SSU_U03",
+  "url": "http://hl7.org/fhir/StructureDefinition/SSU_U03",
+  "name": "SSU_U03",
+  "status": "active",
+  "fhirVersion": "4.0.1",
+  "kind": "logical",
+  "abstract": false,
+  "type": "SSU_U03",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Element",
+  "derivation": "specialization",
+  "differential": {
+    "element": [
+      {
+        "id": "SSU_U03",
+        "path": "SSU_U03",
+        "type": [
+          {
+            "code": "Element"
+          }
+        ],
+        "mapping": [
+          {
+            "id": "SSU_U03",
+            "identity": "v2",
+            "map": "SSU_U03"
+          }
+        ]
+      },
+      {
+        "id": "SSU_U03.MSH",
+        "path": "SSU_U03.MSH",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "MSH",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/MSH"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "MSH"
+          }
+        ]
+      },
+      {
+        "id": "SSU_U03.SFT",
+        "path": "SSU_U03.SFT",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "SFT",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/SFT"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "SFT"
+          }
+        ]
+      },
+      {
+        "id": "SSU_U03.EQU",
+        "path": "SSU_U03.EQU",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "EQU",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/EQU"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "EQU"
+          }
+        ]
+      },
+      {
+        "id": "SSU_U03.SPECIMEN_CONTAINER",
+        "path": "SSU_U03.SPECIMEN_CONTAINER",
+        "min": 1,
+        "max": "*",
+        "type": [
+          {
+            "code": "BackboneElement"
+          }
+        ]
+      },
+      {
+        "id": "SSU_U03.SPECIMEN_CONTAINER.SAC",
+        "path": "SSU_U03.SPECIMEN_CONTAINER.SAC",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "SAC",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/SAC"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "SAC"
+          }
+        ]
+      },
+      {
+        "id": "SSU_U03.SPECIMEN_CONTAINER.OBX",
+        "path": "SSU_U03.SPECIMEN_CONTAINER.OBX",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "OBX",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/OBX"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "OBX"
+          }
+        ]
+      },
+      {
+        "id": "SSU_U03.SPECIMEN_CONTAINER.SPECIMEN",
+        "path": "SSU_U03.SPECIMEN_CONTAINER.SPECIMEN",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "BackboneElement"
+          }
+        ]
+      },
+      {
+        "id": "SSU_U03.SPECIMEN_CONTAINER.SPECIMEN.SPM",
+        "path": "SSU_U03.SPECIMEN_CONTAINER.SPECIMEN.SPM",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "SPM",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/SPM"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "SPM"
+          }
+        ]
+      },
+      {
+        "id": "SSU_U03.SPECIMEN_CONTAINER.SPECIMEN.OBX",
+        "path": "SSU_U03.SPECIMEN_CONTAINER.SPECIMEN.OBX",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "OBX",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/OBX"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "OBX"
+          }
+        ]
+      },
+      {
+        "id": "SSU_U03.ROL",
+        "path": "SSU_U03.ROL",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "ROL",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/ROL"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "ROL"
+          }
+        ]
+      }
+    ]
+  }
+}

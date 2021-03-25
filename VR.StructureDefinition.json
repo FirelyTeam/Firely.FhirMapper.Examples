@@ -1,0 +1,73 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "VR",
+  "url": "http://hl7.org/fhir/StructureDefinition/VR",
+  "name": "VR",
+  "status": "active",
+  "fhirVersion": "4.0.1",
+  "kind": "logical",
+  "abstract": false,
+  "type": "VR",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Element",
+  "derivation": "specialization",
+  "differential": {
+    "element": [
+      {
+        "id": "VR",
+        "path": "VR",
+        "type": [
+          {
+            "code": "Element"
+          }
+        ],
+        "mapping": [
+          {
+            "id": "VR",
+            "identity": "v2",
+            "map": "VR"
+          }
+        ]
+      },
+      {
+        "id": "VR.FirstDataCodeValue",
+        "path": "VR.FirstDataCodeValue",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "string",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/string"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "VR.1"
+          }
+        ]
+      },
+      {
+        "id": "VR.LastDataCodeValue",
+        "path": "VR.LastDataCodeValue",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "string",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/string"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "VR.2"
+          }
+        ]
+      }
+    ]
+  }
+}

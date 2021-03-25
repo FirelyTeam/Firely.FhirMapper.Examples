@@ -1,0 +1,118 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "DLT",
+  "url": "http://hl7.org/fhir/StructureDefinition/DLT",
+  "name": "DLT",
+  "status": "active",
+  "fhirVersion": "4.0.1",
+  "kind": "logical",
+  "abstract": false,
+  "type": "DLT",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Element",
+  "derivation": "specialization",
+  "differential": {
+    "element": [
+      {
+        "id": "DLT",
+        "path": "DLT",
+        "type": [
+          {
+            "code": "Element"
+          }
+        ],
+        "mapping": [
+          {
+            "id": "DLT",
+            "identity": "v2",
+            "map": "DLT"
+          }
+        ]
+      },
+      {
+        "id": "DLT.NormalRange",
+        "path": "DLT.NormalRange",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "NR",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/NR"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "DLT.1"
+          }
+        ]
+      },
+      {
+        "id": "DLT.NumericThreshold",
+        "path": "DLT.NumericThreshold",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "string",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/string"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "DLT.2"
+          }
+        ]
+      },
+      {
+        "id": "DLT.ChangeComputation",
+        "path": "DLT.ChangeComputation",
+        "code": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/v2-0523"
+          }
+        ],
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "string",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/string"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "DLT.3"
+          }
+        ]
+      },
+      {
+        "id": "DLT.DaysRetained",
+        "path": "DLT.DaysRetained",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "string",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/string"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "DLT.4"
+          }
+        ]
+      }
+    ]
+  }
+}

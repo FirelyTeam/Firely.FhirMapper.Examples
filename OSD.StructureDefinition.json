@@ -1,0 +1,278 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "OSD",
+  "url": "http://hl7.org/fhir/StructureDefinition/OSD",
+  "name": "OSD",
+  "status": "active",
+  "fhirVersion": "4.0.1",
+  "kind": "logical",
+  "abstract": false,
+  "type": "OSD",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Element",
+  "derivation": "specialization",
+  "differential": {
+    "element": [
+      {
+        "id": "OSD",
+        "path": "OSD",
+        "type": [
+          {
+            "code": "Element"
+          }
+        ],
+        "mapping": [
+          {
+            "id": "OSD",
+            "identity": "v2",
+            "map": "OSD"
+          }
+        ]
+      },
+      {
+        "id": "OSD.Sequence/ResultsFlag",
+        "path": "OSD.Sequence/ResultsFlag",
+        "code": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/v2-0524"
+          }
+        ],
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "string",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/string"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "OSD.1"
+          }
+        ]
+      },
+      {
+        "id": "OSD.PlacerOrderNumber:EntityIdentifier",
+        "path": "OSD.PlacerOrderNumber:EntityIdentifier",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "string",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/string"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "OSD.2"
+          }
+        ]
+      },
+      {
+        "id": "OSD.PlacerOrderNumber:NamespaceID",
+        "path": "OSD.PlacerOrderNumber:NamespaceID",
+        "code": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/v2-0363"
+          }
+        ],
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "string",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/string"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "OSD.3"
+          }
+        ]
+      },
+      {
+        "id": "OSD.FillerOrderNumber:EntityIdentifier",
+        "path": "OSD.FillerOrderNumber:EntityIdentifier",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "string",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/string"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "OSD.4"
+          }
+        ]
+      },
+      {
+        "id": "OSD.FillerOrderNumber:NamespaceID",
+        "path": "OSD.FillerOrderNumber:NamespaceID",
+        "code": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/v2-0363"
+          }
+        ],
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "string",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/string"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "OSD.5"
+          }
+        ]
+      },
+      {
+        "id": "OSD.SequenceConditionValue",
+        "path": "OSD.SequenceConditionValue",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "string",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/string"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "OSD.6"
+          }
+        ]
+      },
+      {
+        "id": "OSD.MaximumNumberofRepeats",
+        "path": "OSD.MaximumNumberofRepeats",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "string",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/string"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "OSD.7"
+          }
+        ]
+      },
+      {
+        "id": "OSD.PlacerOrderNumber:UniversalID",
+        "path": "OSD.PlacerOrderNumber:UniversalID",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "string",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/string"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "OSD.8"
+          }
+        ]
+      },
+      {
+        "id": "OSD.PlacerOrderNumber:UniversalIDType",
+        "path": "OSD.PlacerOrderNumber:UniversalIDType",
+        "code": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/v2-0301"
+          }
+        ],
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "string",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/string"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "OSD.9"
+          }
+        ]
+      },
+      {
+        "id": "OSD.FillerOrderNumber:UniversalID",
+        "path": "OSD.FillerOrderNumber:UniversalID",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "string",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/string"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "OSD.10"
+          }
+        ]
+      },
+      {
+        "id": "OSD.FillerOrderNumber:UniversalIDType",
+        "path": "OSD.FillerOrderNumber:UniversalIDType",
+        "code": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/v2-0301"
+          }
+        ],
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "string",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/string"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "OSD.11"
+          }
+        ]
+      }
+    ]
+  }
+}

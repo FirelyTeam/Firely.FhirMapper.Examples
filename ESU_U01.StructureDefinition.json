@@ -1,0 +1,133 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "ESU_U01",
+  "url": "http://hl7.org/fhir/StructureDefinition/ESU_U01",
+  "name": "ESU_U01",
+  "status": "active",
+  "fhirVersion": "4.0.1",
+  "kind": "logical",
+  "abstract": false,
+  "type": "ESU_U01",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Element",
+  "derivation": "specialization",
+  "differential": {
+    "element": [
+      {
+        "id": "ESU_U01",
+        "path": "ESU_U01",
+        "type": [
+          {
+            "code": "Element"
+          }
+        ],
+        "mapping": [
+          {
+            "id": "ESU_U01",
+            "identity": "v2",
+            "map": "ESU_U01"
+          }
+        ]
+      },
+      {
+        "id": "ESU_U01.MSH",
+        "path": "ESU_U01.MSH",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "MSH",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/MSH"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "MSH"
+          }
+        ]
+      },
+      {
+        "id": "ESU_U01.SFT",
+        "path": "ESU_U01.SFT",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "SFT",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/SFT"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "SFT"
+          }
+        ]
+      },
+      {
+        "id": "ESU_U01.EQU",
+        "path": "ESU_U01.EQU",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "EQU",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/EQU"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "EQU"
+          }
+        ]
+      },
+      {
+        "id": "ESU_U01.ISD",
+        "path": "ESU_U01.ISD",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "ISD",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/ISD"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "ISD"
+          }
+        ]
+      },
+      {
+        "id": "ESU_U01.ROL",
+        "path": "ESU_U01.ROL",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "ROL",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/ROL"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "ROL"
+          }
+        ]
+      }
+    ]
+  }
+}

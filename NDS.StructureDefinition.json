@@ -1,0 +1,118 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "NDS",
+  "url": "http://hl7.org/fhir/StructureDefinition/NDS",
+  "name": "NDS",
+  "status": "active",
+  "fhirVersion": "4.0.1",
+  "kind": "logical",
+  "abstract": false,
+  "type": "NDS",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Element",
+  "derivation": "specialization",
+  "differential": {
+    "element": [
+      {
+        "id": "NDS",
+        "path": "NDS",
+        "type": [
+          {
+            "code": "Element"
+          }
+        ],
+        "mapping": [
+          {
+            "id": "NDS",
+            "identity": "v2",
+            "map": "NDS"
+          }
+        ]
+      },
+      {
+        "id": "NDS.NotificationReferenceNumber",
+        "path": "NDS.NotificationReferenceNumber",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "string",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/string"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "NDS.1"
+          }
+        ]
+      },
+      {
+        "id": "NDS.NotificationDate/Time",
+        "path": "NDS.NotificationDate/Time",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "TS",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/TS"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "NDS.2"
+          }
+        ]
+      },
+      {
+        "id": "NDS.NotificationAlertSeverity",
+        "path": "NDS.NotificationAlertSeverity",
+        "code": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/v2-0367"
+          }
+        ],
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "CE",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/CE"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "NDS.3"
+          }
+        ]
+      },
+      {
+        "id": "NDS.NotificationCode",
+        "path": "NDS.NotificationCode",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "CE",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/CE"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "NDS.4"
+          }
+        ]
+      }
+    ]
+  }
+}

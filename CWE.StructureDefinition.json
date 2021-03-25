@@ -1,0 +1,223 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "CWE",
+  "url": "http://hl7.org/fhir/StructureDefinition/CWE",
+  "name": "CWE",
+  "status": "active",
+  "fhirVersion": "4.0.1",
+  "kind": "logical",
+  "abstract": false,
+  "type": "CWE",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Element",
+  "derivation": "specialization",
+  "differential": {
+    "element": [
+      {
+        "id": "CWE",
+        "path": "CWE",
+        "type": [
+          {
+            "code": "Element"
+          }
+        ],
+        "mapping": [
+          {
+            "id": "CWE",
+            "identity": "v2",
+            "map": "CWE"
+          }
+        ]
+      },
+      {
+        "id": "CWE.Identifier",
+        "path": "CWE.Identifier",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "string",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/string"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "CWE.1"
+          }
+        ]
+      },
+      {
+        "id": "CWE.Text",
+        "path": "CWE.Text",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "string",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/string"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "CWE.2"
+          }
+        ]
+      },
+      {
+        "id": "CWE.NameofCodingSystem",
+        "path": "CWE.NameofCodingSystem",
+        "code": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/v2-0396"
+          }
+        ],
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "string",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/string"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "CWE.3"
+          }
+        ]
+      },
+      {
+        "id": "CWE.AlternateIdentifier",
+        "path": "CWE.AlternateIdentifier",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "string",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/string"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "CWE.4"
+          }
+        ]
+      },
+      {
+        "id": "CWE.AlternateText",
+        "path": "CWE.AlternateText",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "string",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/string"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "CWE.5"
+          }
+        ]
+      },
+      {
+        "id": "CWE.NameofAlternateCodingSystem",
+        "path": "CWE.NameofAlternateCodingSystem",
+        "code": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/v2-0396"
+          }
+        ],
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "string",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/string"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "CWE.6"
+          }
+        ]
+      },
+      {
+        "id": "CWE.CodingSystemVersionID",
+        "path": "CWE.CodingSystemVersionID",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "string",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/string"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "CWE.7"
+          }
+        ]
+      },
+      {
+        "id": "CWE.AlternateCodingSystemVersionID",
+        "path": "CWE.AlternateCodingSystemVersionID",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "string",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/string"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "CWE.8"
+          }
+        ]
+      },
+      {
+        "id": "CWE.OriginalText",
+        "path": "CWE.OriginalText",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "string",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/string"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "CWE.9"
+          }
+        ]
+      }
+    ]
+  }
+}

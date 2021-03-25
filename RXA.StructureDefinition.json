@@ -1,0 +1,578 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "RXA",
+  "url": "http://hl7.org/fhir/StructureDefinition/RXA",
+  "name": "RXA",
+  "status": "active",
+  "fhirVersion": "4.0.1",
+  "kind": "logical",
+  "abstract": false,
+  "type": "RXA",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Element",
+  "derivation": "specialization",
+  "differential": {
+    "element": [
+      {
+        "id": "RXA",
+        "path": "RXA",
+        "type": [
+          {
+            "code": "Element"
+          }
+        ],
+        "mapping": [
+          {
+            "id": "RXA",
+            "identity": "v2",
+            "map": "RXA"
+          }
+        ]
+      },
+      {
+        "id": "RXA.GiveSub-IDCounter",
+        "path": "RXA.GiveSub-IDCounter",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "string",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/string"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "RXA.1"
+          }
+        ]
+      },
+      {
+        "id": "RXA.AdministrationSub-IDCounter",
+        "path": "RXA.AdministrationSub-IDCounter",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "string",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/string"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "RXA.2"
+          }
+        ]
+      },
+      {
+        "id": "RXA.Date/TimeStartofAdministration",
+        "path": "RXA.Date/TimeStartofAdministration",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "TS",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/TS"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "RXA.3"
+          }
+        ]
+      },
+      {
+        "id": "RXA.Date/TimeEndofAdministration",
+        "path": "RXA.Date/TimeEndofAdministration",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "TS",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/TS"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "RXA.4"
+          }
+        ]
+      },
+      {
+        "id": "RXA.AdministeredCode",
+        "path": "RXA.AdministeredCode",
+        "code": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/v2-0292"
+          }
+        ],
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "CE",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/CE"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "RXA.5"
+          }
+        ]
+      },
+      {
+        "id": "RXA.AdministeredAmount",
+        "path": "RXA.AdministeredAmount",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "string",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/string"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "RXA.6"
+          }
+        ]
+      },
+      {
+        "id": "RXA.AdministeredUnits",
+        "path": "RXA.AdministeredUnits",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "CE",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/CE"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "RXA.7"
+          }
+        ]
+      },
+      {
+        "id": "RXA.AdministeredDosageForm",
+        "path": "RXA.AdministeredDosageForm",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "CE",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/CE"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "RXA.8"
+          }
+        ]
+      },
+      {
+        "id": "RXA.AdministrationNotes",
+        "path": "RXA.AdministrationNotes",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "CE",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/CE"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "RXA.9"
+          }
+        ]
+      },
+      {
+        "id": "RXA.AdministeringProvider",
+        "path": "RXA.AdministeringProvider",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "XCN",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/XCN"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "RXA.10"
+          }
+        ]
+      },
+      {
+        "id": "RXA.Administered-atLocation",
+        "path": "RXA.Administered-atLocation",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "LA2",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/LA2"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "RXA.11"
+          }
+        ]
+      },
+      {
+        "id": "RXA.AdministeredPer(TimeUnit)",
+        "path": "RXA.AdministeredPer(TimeUnit)",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "string",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/string"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "RXA.12"
+          }
+        ]
+      },
+      {
+        "id": "RXA.AdministeredStrength",
+        "path": "RXA.AdministeredStrength",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "string",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/string"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "RXA.13"
+          }
+        ]
+      },
+      {
+        "id": "RXA.AdministeredStrengthUnits",
+        "path": "RXA.AdministeredStrengthUnits",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "CE",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/CE"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "RXA.14"
+          }
+        ]
+      },
+      {
+        "id": "RXA.SubstanceLotNumber",
+        "path": "RXA.SubstanceLotNumber",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "string",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/string"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "RXA.15"
+          }
+        ]
+      },
+      {
+        "id": "RXA.SubstanceExpirationDate",
+        "path": "RXA.SubstanceExpirationDate",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "TS",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/TS"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "RXA.16"
+          }
+        ]
+      },
+      {
+        "id": "RXA.SubstanceManufacturerName",
+        "path": "RXA.SubstanceManufacturerName",
+        "code": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/v2-0227"
+          }
+        ],
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "CE",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/CE"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "RXA.17"
+          }
+        ]
+      },
+      {
+        "id": "RXA.Substance/TreatmentRefusalReason",
+        "path": "RXA.Substance/TreatmentRefusalReason",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "CE",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/CE"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "RXA.18"
+          }
+        ]
+      },
+      {
+        "id": "RXA.Indication",
+        "path": "RXA.Indication",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "CE",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/CE"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "RXA.19"
+          }
+        ]
+      },
+      {
+        "id": "RXA.CompletionStatus",
+        "path": "RXA.CompletionStatus",
+        "code": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/v2-0322"
+          }
+        ],
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "string",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/string"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "RXA.20"
+          }
+        ]
+      },
+      {
+        "id": "RXA.ActionCode-RXA",
+        "path": "RXA.ActionCode-RXA",
+        "code": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/v2-0323"
+          }
+        ],
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "string",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/string"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "RXA.21"
+          }
+        ]
+      },
+      {
+        "id": "RXA.SystemEntryDate/Time",
+        "path": "RXA.SystemEntryDate/Time",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "TS",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/TS"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "RXA.22"
+          }
+        ]
+      },
+      {
+        "id": "RXA.AdministeredDrugStrengthVolume",
+        "path": "RXA.AdministeredDrugStrengthVolume",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "string",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/string"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "RXA.23"
+          }
+        ]
+      },
+      {
+        "id": "RXA.AdministeredDrugStrengthVolumeUnits",
+        "path": "RXA.AdministeredDrugStrengthVolumeUnits",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "CWE",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/CWE"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "RXA.24"
+          }
+        ]
+      },
+      {
+        "id": "RXA.AdministeredBarcodeIdentifier",
+        "path": "RXA.AdministeredBarcodeIdentifier",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "CWE",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/CWE"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "RXA.25"
+          }
+        ]
+      },
+      {
+        "id": "RXA.PharmacyOrderType",
+        "path": "RXA.PharmacyOrderType",
+        "code": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/v2-0480"
+          }
+        ],
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "string",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/string"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "RXA.26"
+          }
+        ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,208 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "TCD",
+  "url": "http://hl7.org/fhir/StructureDefinition/TCD",
+  "name": "TCD",
+  "status": "active",
+  "fhirVersion": "4.0.1",
+  "kind": "logical",
+  "abstract": false,
+  "type": "TCD",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Element",
+  "derivation": "specialization",
+  "differential": {
+    "element": [
+      {
+        "id": "TCD",
+        "path": "TCD",
+        "type": [
+          {
+            "code": "Element"
+          }
+        ],
+        "mapping": [
+          {
+            "id": "TCD",
+            "identity": "v2",
+            "map": "TCD"
+          }
+        ]
+      },
+      {
+        "id": "TCD.UniversalServiceIdentifier",
+        "path": "TCD.UniversalServiceIdentifier",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "CE",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/CE"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "TCD.1"
+          }
+        ]
+      },
+      {
+        "id": "TCD.Auto-DilutionFactor",
+        "path": "TCD.Auto-DilutionFactor",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "SN",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/SN"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "TCD.2"
+          }
+        ]
+      },
+      {
+        "id": "TCD.RerunDilutionFactor",
+        "path": "TCD.RerunDilutionFactor",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "SN",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/SN"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "TCD.3"
+          }
+        ]
+      },
+      {
+        "id": "TCD.Pre-DilutionFactor",
+        "path": "TCD.Pre-DilutionFactor",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "SN",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/SN"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "TCD.4"
+          }
+        ]
+      },
+      {
+        "id": "TCD.EndogenousContentofPre-DilutionDiluent",
+        "path": "TCD.EndogenousContentofPre-DilutionDiluent",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "SN",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/SN"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "TCD.5"
+          }
+        ]
+      },
+      {
+        "id": "TCD.AutomaticRepeatAllowed",
+        "path": "TCD.AutomaticRepeatAllowed",
+        "code": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/v2-0136"
+          }
+        ],
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "string",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/string"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "TCD.6"
+          }
+        ]
+      },
+      {
+        "id": "TCD.ReflexAllowed",
+        "path": "TCD.ReflexAllowed",
+        "code": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/v2-0136"
+          }
+        ],
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "string",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/string"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "TCD.7"
+          }
+        ]
+      },
+      {
+        "id": "TCD.AnalyteRepeatStatus",
+        "path": "TCD.AnalyteRepeatStatus",
+        "code": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/v2-0389"
+          }
+        ],
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "CE",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/CE"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "TCD.8"
+          }
+        ]
+      }
+    ]
+  }
+}

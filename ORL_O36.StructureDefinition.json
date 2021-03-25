@@ -1,0 +1,370 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "ORL_O36",
+  "url": "http://hl7.org/fhir/StructureDefinition/ORL_O36",
+  "name": "ORL_O36",
+  "status": "active",
+  "fhirVersion": "4.0.1",
+  "kind": "logical",
+  "abstract": false,
+  "type": "ORL_O36",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Element",
+  "derivation": "specialization",
+  "differential": {
+    "element": [
+      {
+        "id": "ORL_O36",
+        "path": "ORL_O36",
+        "type": [
+          {
+            "code": "Element"
+          }
+        ],
+        "mapping": [
+          {
+            "id": "ORL_O36",
+            "identity": "v2",
+            "map": "ORL_O36"
+          }
+        ]
+      },
+      {
+        "id": "ORL_O36.MSH",
+        "path": "ORL_O36.MSH",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "MSH",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/MSH"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "MSH"
+          }
+        ]
+      },
+      {
+        "id": "ORL_O36.MSA",
+        "path": "ORL_O36.MSA",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "MSA",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/MSA"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "MSA"
+          }
+        ]
+      },
+      {
+        "id": "ORL_O36.ERR",
+        "path": "ORL_O36.ERR",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "ERR",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/ERR"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "ERR"
+          }
+        ]
+      },
+      {
+        "id": "ORL_O36.SFT",
+        "path": "ORL_O36.SFT",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "SFT",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/SFT"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "SFT"
+          }
+        ]
+      },
+      {
+        "id": "ORL_O36.NTE",
+        "path": "ORL_O36.NTE",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "NTE",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/NTE"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "NTE"
+          }
+        ]
+      },
+      {
+        "id": "ORL_O36.RESPONSE",
+        "path": "ORL_O36.RESPONSE",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "BackboneElement"
+          }
+        ]
+      },
+      {
+        "id": "ORL_O36.RESPONSE.PATIENT",
+        "path": "ORL_O36.RESPONSE.PATIENT",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "BackboneElement"
+          }
+        ]
+      },
+      {
+        "id": "ORL_O36.RESPONSE.PATIENT.PID",
+        "path": "ORL_O36.RESPONSE.PATIENT.PID",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "PID",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/PID"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "PID"
+          }
+        ]
+      },
+      {
+        "id": "ORL_O36.RESPONSE.PATIENT.SPECIMEN",
+        "path": "ORL_O36.RESPONSE.PATIENT.SPECIMEN",
+        "min": 1,
+        "max": "*",
+        "type": [
+          {
+            "code": "BackboneElement"
+          }
+        ]
+      },
+      {
+        "id": "ORL_O36.RESPONSE.PATIENT.SPECIMEN.SPM",
+        "path": "ORL_O36.RESPONSE.PATIENT.SPECIMEN.SPM",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "SPM",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/SPM"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "SPM"
+          }
+        ]
+      },
+      {
+        "id": "ORL_O36.RESPONSE.PATIENT.SPECIMEN.OBX",
+        "path": "ORL_O36.RESPONSE.PATIENT.SPECIMEN.OBX",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "OBX",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/OBX"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "OBX"
+          }
+        ]
+      },
+      {
+        "id": "ORL_O36.RESPONSE.PATIENT.SPECIMEN.SPECIMEN_CONTAINER",
+        "path": "ORL_O36.RESPONSE.PATIENT.SPECIMEN.SPECIMEN_CONTAINER",
+        "min": 1,
+        "max": "*",
+        "type": [
+          {
+            "code": "BackboneElement"
+          }
+        ]
+      },
+      {
+        "id": "ORL_O36.RESPONSE.PATIENT.SPECIMEN.SPECIMEN_CONTAINER.SAC",
+        "path": "ORL_O36.RESPONSE.PATIENT.SPECIMEN.SPECIMEN_CONTAINER.SAC",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "SAC",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/SAC"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "SAC"
+          }
+        ]
+      },
+      {
+        "id": "ORL_O36.RESPONSE.PATIENT.SPECIMEN.SPECIMEN_CONTAINER.ORDER",
+        "path": "ORL_O36.RESPONSE.PATIENT.SPECIMEN.SPECIMEN_CONTAINER.ORDER",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "BackboneElement"
+          }
+        ]
+      },
+      {
+        "id": "ORL_O36.RESPONSE.PATIENT.SPECIMEN.SPECIMEN_CONTAINER.ORDER.ORC",
+        "path": "ORL_O36.RESPONSE.PATIENT.SPECIMEN.SPECIMEN_CONTAINER.ORDER.ORC",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "ORC",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/ORC"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "ORC"
+          }
+        ]
+      },
+      {
+        "id": "ORL_O36.RESPONSE.PATIENT.SPECIMEN.SPECIMEN_CONTAINER.ORDER.TIMING",
+        "path": "ORL_O36.RESPONSE.PATIENT.SPECIMEN.SPECIMEN_CONTAINER.ORDER.TIMING",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "BackboneElement"
+          }
+        ]
+      },
+      {
+        "id": "ORL_O36.RESPONSE.PATIENT.SPECIMEN.SPECIMEN_CONTAINER.ORDER.TIMING.TQ1",
+        "path": "ORL_O36.RESPONSE.PATIENT.SPECIMEN.SPECIMEN_CONTAINER.ORDER.TIMING.TQ1",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "TQ1",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/TQ1"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "TQ1"
+          }
+        ]
+      },
+      {
+        "id": "ORL_O36.RESPONSE.PATIENT.SPECIMEN.SPECIMEN_CONTAINER.ORDER.TIMING.TQ2",
+        "path": "ORL_O36.RESPONSE.PATIENT.SPECIMEN.SPECIMEN_CONTAINER.ORDER.TIMING.TQ2",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "TQ2",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/TQ2"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "TQ2"
+          }
+        ]
+      },
+      {
+        "id": "ORL_O36.RESPONSE.PATIENT.SPECIMEN.SPECIMEN_CONTAINER.ORDER.OBSERVATION_REQUEST",
+        "path": "ORL_O36.RESPONSE.PATIENT.SPECIMEN.SPECIMEN_CONTAINER.ORDER.OBSERVATION_REQUEST",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "BackboneElement"
+          }
+        ]
+      },
+      {
+        "id": "ORL_O36.RESPONSE.PATIENT.SPECIMEN.SPECIMEN_CONTAINER.ORDER.OBSERVATION_REQUEST.OBR",
+        "path": "ORL_O36.RESPONSE.PATIENT.SPECIMEN.SPECIMEN_CONTAINER.ORDER.OBSERVATION_REQUEST.OBR",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "OBR",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/OBR"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "OBR"
+          }
+        ]
+      }
+    ]
+  }
+}

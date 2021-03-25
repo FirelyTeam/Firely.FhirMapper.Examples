@@ -1,0 +1,193 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "TBR_R08",
+  "url": "http://hl7.org/fhir/StructureDefinition/TBR_R08",
+  "name": "TBR_R08",
+  "status": "active",
+  "fhirVersion": "4.0.1",
+  "kind": "logical",
+  "abstract": false,
+  "type": "TBR_R08",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Element",
+  "derivation": "specialization",
+  "differential": {
+    "element": [
+      {
+        "id": "TBR_R08",
+        "path": "TBR_R08",
+        "type": [
+          {
+            "code": "Element"
+          }
+        ],
+        "mapping": [
+          {
+            "id": "TBR_R08",
+            "identity": "v2",
+            "map": "TBR_R08"
+          }
+        ]
+      },
+      {
+        "id": "TBR_R08.MSH",
+        "path": "TBR_R08.MSH",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "MSH",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/MSH"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "MSH"
+          }
+        ]
+      },
+      {
+        "id": "TBR_R08.SFT",
+        "path": "TBR_R08.SFT",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "SFT",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/SFT"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "SFT"
+          }
+        ]
+      },
+      {
+        "id": "TBR_R08.MSA",
+        "path": "TBR_R08.MSA",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "MSA",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/MSA"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "MSA"
+          }
+        ]
+      },
+      {
+        "id": "TBR_R08.ERR",
+        "path": "TBR_R08.ERR",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "ERR",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/ERR"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "ERR"
+          }
+        ]
+      },
+      {
+        "id": "TBR_R08.QAK",
+        "path": "TBR_R08.QAK",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "QAK",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/QAK"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "QAK"
+          }
+        ]
+      },
+      {
+        "id": "TBR_R08.RDF",
+        "path": "TBR_R08.RDF",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "RDF",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/RDF"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "RDF"
+          }
+        ]
+      },
+      {
+        "id": "TBR_R08.RDT",
+        "path": "TBR_R08.RDT",
+        "min": 1,
+        "max": "*",
+        "type": [
+          {
+            "code": "RDT",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/RDT"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "RDT"
+          }
+        ]
+      },
+      {
+        "id": "TBR_R08.DSC",
+        "path": "TBR_R08.DSC",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "DSC",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/DSC"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "DSC"
+          }
+        ]
+      }
+    ]
+  }
+}

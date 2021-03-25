@@ -1,0 +1,303 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "ERR",
+  "url": "http://hl7.org/fhir/StructureDefinition/ERR",
+  "name": "ERR",
+  "status": "active",
+  "fhirVersion": "4.0.1",
+  "kind": "logical",
+  "abstract": false,
+  "type": "ERR",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Element",
+  "derivation": "specialization",
+  "differential": {
+    "element": [
+      {
+        "id": "ERR",
+        "path": "ERR",
+        "type": [
+          {
+            "code": "Element"
+          }
+        ],
+        "mapping": [
+          {
+            "id": "ERR",
+            "identity": "v2",
+            "map": "ERR"
+          }
+        ]
+      },
+      {
+        "id": "ERR.ErrorCodeandLocation",
+        "path": "ERR.ErrorCodeandLocation",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "ELD",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/ELD"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "ERR.1"
+          }
+        ]
+      },
+      {
+        "id": "ERR.ErrorLocation",
+        "path": "ERR.ErrorLocation",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "ERL",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/ERL"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "ERR.2"
+          }
+        ]
+      },
+      {
+        "id": "ERR.HL7ErrorCode",
+        "path": "ERR.HL7ErrorCode",
+        "code": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/v2-0357"
+          }
+        ],
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "CWE",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/CWE"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "ERR.3"
+          }
+        ]
+      },
+      {
+        "id": "ERR.Severity",
+        "path": "ERR.Severity",
+        "code": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/v2-0516"
+          }
+        ],
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "string",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/string"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "ERR.4"
+          }
+        ]
+      },
+      {
+        "id": "ERR.ApplicationErrorCode",
+        "path": "ERR.ApplicationErrorCode",
+        "code": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/v2-0533"
+          }
+        ],
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "CWE",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/CWE"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "ERR.5"
+          }
+        ]
+      },
+      {
+        "id": "ERR.ApplicationErrorParameter",
+        "path": "ERR.ApplicationErrorParameter",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "string",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/string"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "ERR.6"
+          }
+        ]
+      },
+      {
+        "id": "ERR.DiagnosticInformation",
+        "path": "ERR.DiagnosticInformation",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "string",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/string"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "ERR.7"
+          }
+        ]
+      },
+      {
+        "id": "ERR.UserMessage",
+        "path": "ERR.UserMessage",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "string",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/string"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "ERR.8"
+          }
+        ]
+      },
+      {
+        "id": "ERR.InformPersonIndicator",
+        "path": "ERR.InformPersonIndicator",
+        "code": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/v2-0517"
+          }
+        ],
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "string",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/string"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "ERR.9"
+          }
+        ]
+      },
+      {
+        "id": "ERR.OverrideType",
+        "path": "ERR.OverrideType",
+        "code": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/v2-0518"
+          }
+        ],
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "CWE",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/CWE"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "ERR.10"
+          }
+        ]
+      },
+      {
+        "id": "ERR.OverrideReasonCode",
+        "path": "ERR.OverrideReasonCode",
+        "code": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/v2-0519"
+          }
+        ],
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "CWE",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/CWE"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "ERR.11"
+          }
+        ]
+      },
+      {
+        "id": "ERR.HelpDeskContactPoint",
+        "path": "ERR.HelpDeskContactPoint",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "XTN",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/XTN"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "ERR.12"
+          }
+        ]
+      }
+    ]
+  }
+}

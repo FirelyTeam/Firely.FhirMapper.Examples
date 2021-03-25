@@ -1,0 +1,438 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "PRC",
+  "url": "http://hl7.org/fhir/StructureDefinition/PRC",
+  "name": "PRC",
+  "status": "active",
+  "fhirVersion": "4.0.1",
+  "kind": "logical",
+  "abstract": false,
+  "type": "PRC",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Element",
+  "derivation": "specialization",
+  "differential": {
+    "element": [
+      {
+        "id": "PRC",
+        "path": "PRC",
+        "type": [
+          {
+            "code": "Element"
+          }
+        ],
+        "mapping": [
+          {
+            "id": "PRC",
+            "identity": "v2",
+            "map": "PRC"
+          }
+        ]
+      },
+      {
+        "id": "PRC.PrimaryKeyValue-PRC",
+        "path": "PRC.PrimaryKeyValue-PRC",
+        "code": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/v2-0132"
+          }
+        ],
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "CE",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/CE"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "PRC.1"
+          }
+        ]
+      },
+      {
+        "id": "PRC.FacilityID-PRC",
+        "path": "PRC.FacilityID-PRC",
+        "code": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/v2-0464"
+          }
+        ],
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "CE",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/CE"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "PRC.2"
+          }
+        ]
+      },
+      {
+        "id": "PRC.Department",
+        "path": "PRC.Department",
+        "code": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/v2-0184"
+          }
+        ],
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "CE",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/CE"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "PRC.3"
+          }
+        ]
+      },
+      {
+        "id": "PRC.ValidPatientClasses",
+        "path": "PRC.ValidPatientClasses",
+        "code": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/v2-0004"
+          }
+        ],
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "string",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/string"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "PRC.4"
+          }
+        ]
+      },
+      {
+        "id": "PRC.Price",
+        "path": "PRC.Price",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "CP",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/CP"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "PRC.5"
+          }
+        ]
+      },
+      {
+        "id": "PRC.Formula",
+        "path": "PRC.Formula",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "string",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/string"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "PRC.6"
+          }
+        ]
+      },
+      {
+        "id": "PRC.MinimumQuantity",
+        "path": "PRC.MinimumQuantity",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "string",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/string"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "PRC.7"
+          }
+        ]
+      },
+      {
+        "id": "PRC.MaximumQuantity",
+        "path": "PRC.MaximumQuantity",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "string",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/string"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "PRC.8"
+          }
+        ]
+      },
+      {
+        "id": "PRC.MinimumPrice",
+        "path": "PRC.MinimumPrice",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "MO",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/MO"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "PRC.9"
+          }
+        ]
+      },
+      {
+        "id": "PRC.MaximumPrice",
+        "path": "PRC.MaximumPrice",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "MO",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/MO"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "PRC.10"
+          }
+        ]
+      },
+      {
+        "id": "PRC.EffectiveStartDate",
+        "path": "PRC.EffectiveStartDate",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "TS",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/TS"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "PRC.11"
+          }
+        ]
+      },
+      {
+        "id": "PRC.EffectiveEndDate",
+        "path": "PRC.EffectiveEndDate",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "TS",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/TS"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "PRC.12"
+          }
+        ]
+      },
+      {
+        "id": "PRC.PriceOverrideFlag",
+        "path": "PRC.PriceOverrideFlag",
+        "code": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/v2-0268"
+          }
+        ],
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "string",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/string"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "PRC.13"
+          }
+        ]
+      },
+      {
+        "id": "PRC.BillingCategory",
+        "path": "PRC.BillingCategory",
+        "code": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/v2-0293"
+          }
+        ],
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "CE",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/CE"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "PRC.14"
+          }
+        ]
+      },
+      {
+        "id": "PRC.ChargeableFlag",
+        "path": "PRC.ChargeableFlag",
+        "code": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/v2-0136"
+          }
+        ],
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "string",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/string"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "PRC.15"
+          }
+        ]
+      },
+      {
+        "id": "PRC.Active/InactiveFlag",
+        "path": "PRC.Active/InactiveFlag",
+        "code": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/v2-0183"
+          }
+        ],
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "string",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/string"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "PRC.16"
+          }
+        ]
+      },
+      {
+        "id": "PRC.Cost",
+        "path": "PRC.Cost",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "MO",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/MO"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "PRC.17"
+          }
+        ]
+      },
+      {
+        "id": "PRC.ChargeOnIndicator",
+        "path": "PRC.ChargeOnIndicator",
+        "code": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/v2-0269"
+          }
+        ],
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "string",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/string"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "PRC.18"
+          }
+        ]
+      }
+    ]
+  }
+}

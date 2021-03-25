@@ -1,0 +1,78 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "FC",
+  "url": "http://hl7.org/fhir/StructureDefinition/FC",
+  "name": "FC",
+  "status": "active",
+  "fhirVersion": "4.0.1",
+  "kind": "logical",
+  "abstract": false,
+  "type": "FC",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Element",
+  "derivation": "specialization",
+  "differential": {
+    "element": [
+      {
+        "id": "FC",
+        "path": "FC",
+        "type": [
+          {
+            "code": "Element"
+          }
+        ],
+        "mapping": [
+          {
+            "id": "FC",
+            "identity": "v2",
+            "map": "FC"
+          }
+        ]
+      },
+      {
+        "id": "FC.FinancialClassCode",
+        "path": "FC.FinancialClassCode",
+        "code": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/v2-0064"
+          }
+        ],
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "string",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/string"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "FC.1"
+          }
+        ]
+      },
+      {
+        "id": "FC.EffectiveDate",
+        "path": "FC.EffectiveDate",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "TS",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/TS"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "FC.2"
+          }
+        ]
+      }
+    ]
+  }
+}

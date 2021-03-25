@@ -1,0 +1,195 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "MFN_M09",
+  "url": "http://hl7.org/fhir/StructureDefinition/MFN_M09",
+  "name": "MFN_M09",
+  "status": "active",
+  "fhirVersion": "4.0.1",
+  "kind": "logical",
+  "abstract": false,
+  "type": "MFN_M09",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Element",
+  "derivation": "specialization",
+  "differential": {
+    "element": [
+      {
+        "id": "MFN_M09",
+        "path": "MFN_M09",
+        "type": [
+          {
+            "code": "Element"
+          }
+        ],
+        "mapping": [
+          {
+            "id": "MFN_M09",
+            "identity": "v2",
+            "map": "MFN_M09"
+          }
+        ]
+      },
+      {
+        "id": "MFN_M09.MSH",
+        "path": "MFN_M09.MSH",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "MSH",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/MSH"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "MSH"
+          }
+        ]
+      },
+      {
+        "id": "MFN_M09.SFT",
+        "path": "MFN_M09.SFT",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "SFT",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/SFT"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "SFT"
+          }
+        ]
+      },
+      {
+        "id": "MFN_M09.MFI",
+        "path": "MFN_M09.MFI",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "MFI",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/MFI"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "MFI"
+          }
+        ]
+      },
+      {
+        "id": "MFN_M09.MF_TEST_CATEGORICAL",
+        "path": "MFN_M09.MF_TEST_CATEGORICAL",
+        "min": 1,
+        "max": "*",
+        "type": [
+          {
+            "code": "BackboneElement"
+          }
+        ]
+      },
+      {
+        "id": "MFN_M09.MF_TEST_CATEGORICAL.MFE",
+        "path": "MFN_M09.MF_TEST_CATEGORICAL.MFE",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "MFE",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/MFE"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "MFE"
+          }
+        ]
+      },
+      {
+        "id": "MFN_M09.MF_TEST_CATEGORICAL.OM1",
+        "path": "MFN_M09.MF_TEST_CATEGORICAL.OM1",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "OM1",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/OM1"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "OM1"
+          }
+        ]
+      },
+      {
+        "id": "MFN_M09.MF_TEST_CATEGORICAL.MF_TEST_CAT_DETAIL",
+        "path": "MFN_M09.MF_TEST_CATEGORICAL.MF_TEST_CAT_DETAIL",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "BackboneElement"
+          }
+        ]
+      },
+      {
+        "id": "MFN_M09.MF_TEST_CATEGORICAL.MF_TEST_CAT_DETAIL.OM3",
+        "path": "MFN_M09.MF_TEST_CATEGORICAL.MF_TEST_CAT_DETAIL.OM3",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "OM3",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/OM3"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "OM3"
+          }
+        ]
+      },
+      {
+        "id": "MFN_M09.MF_TEST_CATEGORICAL.MF_TEST_CAT_DETAIL.OM4",
+        "path": "MFN_M09.MF_TEST_CATEGORICAL.MF_TEST_CAT_DETAIL.OM4",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "OM4",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/OM4"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "OM4"
+          }
+        ]
+      }
+    ]
+  }
+}

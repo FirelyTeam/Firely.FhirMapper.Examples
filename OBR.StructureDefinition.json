@@ -1,0 +1,1073 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "OBR",
+  "url": "http://hl7.org/fhir/StructureDefinition/OBR",
+  "name": "OBR",
+  "status": "active",
+  "fhirVersion": "4.0.1",
+  "kind": "logical",
+  "abstract": false,
+  "type": "OBR",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Element",
+  "derivation": "specialization",
+  "differential": {
+    "element": [
+      {
+        "id": "OBR",
+        "path": "OBR",
+        "type": [
+          {
+            "code": "Element"
+          }
+        ],
+        "mapping": [
+          {
+            "id": "OBR",
+            "identity": "v2",
+            "map": "OBR"
+          }
+        ]
+      },
+      {
+        "id": "OBR.SetID-OBR",
+        "path": "OBR.SetID-OBR",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "string",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/string"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "OBR.1"
+          }
+        ]
+      },
+      {
+        "id": "OBR.PlacerOrderNumber",
+        "path": "OBR.PlacerOrderNumber",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "EI",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/EI"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "OBR.2"
+          }
+        ]
+      },
+      {
+        "id": "OBR.FillerOrderNumber",
+        "path": "OBR.FillerOrderNumber",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "EI",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/EI"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "OBR.3"
+          }
+        ]
+      },
+      {
+        "id": "OBR.UniversalServiceIdentifier",
+        "path": "OBR.UniversalServiceIdentifier",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "CE",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/CE"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "OBR.4"
+          }
+        ]
+      },
+      {
+        "id": "OBR.Priority_OBR",
+        "path": "OBR.Priority_OBR",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "string",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/string"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "OBR.5"
+          }
+        ]
+      },
+      {
+        "id": "OBR.RequestedDate/Time",
+        "path": "OBR.RequestedDate/Time",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "TS",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/TS"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "OBR.6"
+          }
+        ]
+      },
+      {
+        "id": "OBR.ObservationDate/Time",
+        "path": "OBR.ObservationDate/Time",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "TS",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/TS"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "OBR.7"
+          }
+        ]
+      },
+      {
+        "id": "OBR.ObservationEndDate/Time",
+        "path": "OBR.ObservationEndDate/Time",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "TS",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/TS"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "OBR.8"
+          }
+        ]
+      },
+      {
+        "id": "OBR.CollectionVolume",
+        "path": "OBR.CollectionVolume",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "CQ",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/CQ"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "OBR.9"
+          }
+        ]
+      },
+      {
+        "id": "OBR.CollectorIdentifier",
+        "path": "OBR.CollectorIdentifier",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "XCN",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/XCN"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "OBR.10"
+          }
+        ]
+      },
+      {
+        "id": "OBR.SpecimenActionCode",
+        "path": "OBR.SpecimenActionCode",
+        "code": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/v2-0065"
+          }
+        ],
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "string",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/string"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "OBR.11"
+          }
+        ]
+      },
+      {
+        "id": "OBR.DangerCode",
+        "path": "OBR.DangerCode",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "CE",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/CE"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "OBR.12"
+          }
+        ]
+      },
+      {
+        "id": "OBR.RelevantClinicalInformation",
+        "path": "OBR.RelevantClinicalInformation",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "string",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/string"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "OBR.13"
+          }
+        ]
+      },
+      {
+        "id": "OBR.SpecimenReceivedDate/Time",
+        "path": "OBR.SpecimenReceivedDate/Time",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "TS",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/TS"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "OBR.14"
+          }
+        ]
+      },
+      {
+        "id": "OBR.SpecimenSource",
+        "path": "OBR.SpecimenSource",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "SPS",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/SPS"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "OBR.15"
+          }
+        ]
+      },
+      {
+        "id": "OBR.OrderingProvider",
+        "path": "OBR.OrderingProvider",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "XCN",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/XCN"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "OBR.16"
+          }
+        ]
+      },
+      {
+        "id": "OBR.OrderCallbackPhoneNumber",
+        "path": "OBR.OrderCallbackPhoneNumber",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "XTN",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/XTN"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "OBR.17"
+          }
+        ]
+      },
+      {
+        "id": "OBR.PlacerField1",
+        "path": "OBR.PlacerField1",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "string",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/string"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "OBR.18"
+          }
+        ]
+      },
+      {
+        "id": "OBR.PlacerField2",
+        "path": "OBR.PlacerField2",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "string",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/string"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "OBR.19"
+          }
+        ]
+      },
+      {
+        "id": "OBR.FillerField1",
+        "path": "OBR.FillerField1",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "string",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/string"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "OBR.20"
+          }
+        ]
+      },
+      {
+        "id": "OBR.FillerField2",
+        "path": "OBR.FillerField2",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "string",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/string"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "OBR.21"
+          }
+        ]
+      },
+      {
+        "id": "OBR.ResultsRpt/StatusChng-Date/Time",
+        "path": "OBR.ResultsRpt/StatusChng-Date/Time",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "TS",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/TS"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "OBR.22"
+          }
+        ]
+      },
+      {
+        "id": "OBR.ChargetoPractice",
+        "path": "OBR.ChargetoPractice",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "MOC",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/MOC"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "OBR.23"
+          }
+        ]
+      },
+      {
+        "id": "OBR.DiagnosticServSectID",
+        "path": "OBR.DiagnosticServSectID",
+        "code": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/v2-0074"
+          }
+        ],
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "string",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/string"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "OBR.24"
+          }
+        ]
+      },
+      {
+        "id": "OBR.ResultStatus",
+        "path": "OBR.ResultStatus",
+        "code": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/v2-0123"
+          }
+        ],
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "string",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/string"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "OBR.25"
+          }
+        ]
+      },
+      {
+        "id": "OBR.ParentResult",
+        "path": "OBR.ParentResult",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "PRL",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/PRL"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "OBR.26"
+          }
+        ]
+      },
+      {
+        "id": "OBR.Quantity/Timing",
+        "path": "OBR.Quantity/Timing",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "TQ",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/TQ"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "OBR.27"
+          }
+        ]
+      },
+      {
+        "id": "OBR.ResultCopiesTo",
+        "path": "OBR.ResultCopiesTo",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "XCN",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/XCN"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "OBR.28"
+          }
+        ]
+      },
+      {
+        "id": "OBR.Parent",
+        "path": "OBR.Parent",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "EIP",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/EIP"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "OBR.29"
+          }
+        ]
+      },
+      {
+        "id": "OBR.TransportationMode",
+        "path": "OBR.TransportationMode",
+        "code": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/v2-0124"
+          }
+        ],
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "string",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/string"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "OBR.30"
+          }
+        ]
+      },
+      {
+        "id": "OBR.ReasonforStudy",
+        "path": "OBR.ReasonforStudy",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "CE",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/CE"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "OBR.31"
+          }
+        ]
+      },
+      {
+        "id": "OBR.PrincipalResultInterpreter",
+        "path": "OBR.PrincipalResultInterpreter",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "NDL",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/NDL"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "OBR.32"
+          }
+        ]
+      },
+      {
+        "id": "OBR.AssistantResultInterpreter",
+        "path": "OBR.AssistantResultInterpreter",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "NDL",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/NDL"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "OBR.33"
+          }
+        ]
+      },
+      {
+        "id": "OBR.Technician",
+        "path": "OBR.Technician",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "NDL",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/NDL"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "OBR.34"
+          }
+        ]
+      },
+      {
+        "id": "OBR.Transcriptionist",
+        "path": "OBR.Transcriptionist",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "NDL",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/NDL"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "OBR.35"
+          }
+        ]
+      },
+      {
+        "id": "OBR.ScheduledDate/Time",
+        "path": "OBR.ScheduledDate/Time",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "TS",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/TS"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "OBR.36"
+          }
+        ]
+      },
+      {
+        "id": "OBR.NumberofSampleContainers*",
+        "path": "OBR.NumberofSampleContainers*",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "string",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/string"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "OBR.37"
+          }
+        ]
+      },
+      {
+        "id": "OBR.TransportLogisticsofCollectedSample",
+        "path": "OBR.TransportLogisticsofCollectedSample",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "CE",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/CE"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "OBR.38"
+          }
+        ]
+      },
+      {
+        "id": "OBR.Collector'sComment*",
+        "path": "OBR.Collector'sComment*",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "CE",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/CE"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "OBR.39"
+          }
+        ]
+      },
+      {
+        "id": "OBR.TransportArrangementResponsibility",
+        "path": "OBR.TransportArrangementResponsibility",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "CE",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/CE"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "OBR.40"
+          }
+        ]
+      },
+      {
+        "id": "OBR.TransportArranged",
+        "path": "OBR.TransportArranged",
+        "code": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/v2-0224"
+          }
+        ],
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "string",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/string"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "OBR.41"
+          }
+        ]
+      },
+      {
+        "id": "OBR.EscortRequired",
+        "path": "OBR.EscortRequired",
+        "code": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/v2-0225"
+          }
+        ],
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "string",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/string"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "OBR.42"
+          }
+        ]
+      },
+      {
+        "id": "OBR.PlannedPatientTransportComment",
+        "path": "OBR.PlannedPatientTransportComment",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "CE",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/CE"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "OBR.43"
+          }
+        ]
+      },
+      {
+        "id": "OBR.ProcedureCode",
+        "path": "OBR.ProcedureCode",
+        "code": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/v2-0088"
+          }
+        ],
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "CE",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/CE"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "OBR.44"
+          }
+        ]
+      },
+      {
+        "id": "OBR.ProcedureCodeModifier",
+        "path": "OBR.ProcedureCodeModifier",
+        "code": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/v2-0340"
+          }
+        ],
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "CE",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/CE"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "OBR.45"
+          }
+        ]
+      },
+      {
+        "id": "OBR.PlacerSupplementalServiceInformation",
+        "path": "OBR.PlacerSupplementalServiceInformation",
+        "code": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/v2-0411"
+          }
+        ],
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "CE",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/CE"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "OBR.46"
+          }
+        ]
+      },
+      {
+        "id": "OBR.FillerSupplementalServiceInformation",
+        "path": "OBR.FillerSupplementalServiceInformation",
+        "code": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/v2-0411"
+          }
+        ],
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "CE",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/CE"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "OBR.47"
+          }
+        ]
+      },
+      {
+        "id": "OBR.MedicallyNecessaryDuplicateProcedureReason",
+        "path": "OBR.MedicallyNecessaryDuplicateProcedureReason",
+        "code": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/v2-0476"
+          }
+        ],
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "CWE",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/CWE"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "OBR.48"
+          }
+        ]
+      },
+      {
+        "id": "OBR.ResultHandling",
+        "path": "OBR.ResultHandling",
+        "code": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/v2-0507"
+          }
+        ],
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "string",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/string"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "OBR.49"
+          }
+        ]
+      }
+    ]
+  }
+}

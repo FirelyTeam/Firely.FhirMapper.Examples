@@ -1,0 +1,118 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "ODS",
+  "url": "http://hl7.org/fhir/StructureDefinition/ODS",
+  "name": "ODS",
+  "status": "active",
+  "fhirVersion": "4.0.1",
+  "kind": "logical",
+  "abstract": false,
+  "type": "ODS",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Element",
+  "derivation": "specialization",
+  "differential": {
+    "element": [
+      {
+        "id": "ODS",
+        "path": "ODS",
+        "type": [
+          {
+            "code": "Element"
+          }
+        ],
+        "mapping": [
+          {
+            "id": "ODS",
+            "identity": "v2",
+            "map": "ODS"
+          }
+        ]
+      },
+      {
+        "id": "ODS.Type",
+        "path": "ODS.Type",
+        "code": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/v2-0159"
+          }
+        ],
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "string",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/string"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "ODS.1"
+          }
+        ]
+      },
+      {
+        "id": "ODS.ServicePeriod",
+        "path": "ODS.ServicePeriod",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "CE",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/CE"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "ODS.2"
+          }
+        ]
+      },
+      {
+        "id": "ODS.Diet,Supplement,orPreferenceCode",
+        "path": "ODS.Diet,Supplement,orPreferenceCode",
+        "min": 1,
+        "max": "*",
+        "type": [
+          {
+            "code": "CE",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/CE"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "ODS.3"
+          }
+        ]
+      },
+      {
+        "id": "ODS.TextInstruction",
+        "path": "ODS.TextInstruction",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "string",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/string"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "ODS.4"
+          }
+        ]
+      }
+    ]
+  }
+}

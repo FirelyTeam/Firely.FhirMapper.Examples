@@ -1,0 +1,164 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "MFN_M07",
+  "url": "http://hl7.org/fhir/StructureDefinition/MFN_M07",
+  "name": "MFN_M07",
+  "status": "active",
+  "fhirVersion": "4.0.1",
+  "kind": "logical",
+  "abstract": false,
+  "type": "MFN_M07",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Element",
+  "derivation": "specialization",
+  "differential": {
+    "element": [
+      {
+        "id": "MFN_M07",
+        "path": "MFN_M07",
+        "type": [
+          {
+            "code": "Element"
+          }
+        ],
+        "mapping": [
+          {
+            "id": "MFN_M07",
+            "identity": "v2",
+            "map": "MFN_M07"
+          }
+        ]
+      },
+      {
+        "id": "MFN_M07.MSH",
+        "path": "MFN_M07.MSH",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "MSH",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/MSH"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "MSH"
+          }
+        ]
+      },
+      {
+        "id": "MFN_M07.SFT",
+        "path": "MFN_M07.SFT",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "SFT",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/SFT"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "SFT"
+          }
+        ]
+      },
+      {
+        "id": "MFN_M07.MFI",
+        "path": "MFN_M07.MFI",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "MFI",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/MFI"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "MFI"
+          }
+        ]
+      },
+      {
+        "id": "MFN_M07.MF_CLIN_STUDY_SCHED",
+        "path": "MFN_M07.MF_CLIN_STUDY_SCHED",
+        "min": 1,
+        "max": "*",
+        "type": [
+          {
+            "code": "BackboneElement"
+          }
+        ]
+      },
+      {
+        "id": "MFN_M07.MF_CLIN_STUDY_SCHED.MFE",
+        "path": "MFN_M07.MF_CLIN_STUDY_SCHED.MFE",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "MFE",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/MFE"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "MFE"
+          }
+        ]
+      },
+      {
+        "id": "MFN_M07.MF_CLIN_STUDY_SCHED.CM0",
+        "path": "MFN_M07.MF_CLIN_STUDY_SCHED.CM0",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "CM0",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/CM0"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "CM0"
+          }
+        ]
+      },
+      {
+        "id": "MFN_M07.MF_CLIN_STUDY_SCHED.CM2",
+        "path": "MFN_M07.MF_CLIN_STUDY_SCHED.CM2",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "CM2",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/CM2"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "CM2"
+          }
+        ]
+      }
+    ]
+  }
+}

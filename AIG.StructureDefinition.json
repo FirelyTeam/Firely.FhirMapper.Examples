@@ -1,0 +1,328 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "AIG",
+  "url": "http://hl7.org/fhir/StructureDefinition/AIG",
+  "name": "AIG",
+  "status": "active",
+  "fhirVersion": "4.0.1",
+  "kind": "logical",
+  "abstract": false,
+  "type": "AIG",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Element",
+  "derivation": "specialization",
+  "differential": {
+    "element": [
+      {
+        "id": "AIG",
+        "path": "AIG",
+        "type": [
+          {
+            "code": "Element"
+          }
+        ],
+        "mapping": [
+          {
+            "id": "AIG",
+            "identity": "v2",
+            "map": "AIG"
+          }
+        ]
+      },
+      {
+        "id": "AIG.SetID-AIG",
+        "path": "AIG.SetID-AIG",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "string",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/string"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "AIG.1"
+          }
+        ]
+      },
+      {
+        "id": "AIG.SegmentActionCode",
+        "path": "AIG.SegmentActionCode",
+        "code": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/v2-0206"
+          }
+        ],
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "string",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/string"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "AIG.2"
+          }
+        ]
+      },
+      {
+        "id": "AIG.ResourceID",
+        "path": "AIG.ResourceID",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "CE",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/CE"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "AIG.3"
+          }
+        ]
+      },
+      {
+        "id": "AIG.ResourceType",
+        "path": "AIG.ResourceType",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "CE",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/CE"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "AIG.4"
+          }
+        ]
+      },
+      {
+        "id": "AIG.ResourceGroup",
+        "path": "AIG.ResourceGroup",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "CE",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/CE"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "AIG.5"
+          }
+        ]
+      },
+      {
+        "id": "AIG.ResourceQuantity",
+        "path": "AIG.ResourceQuantity",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "string",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/string"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "AIG.6"
+          }
+        ]
+      },
+      {
+        "id": "AIG.ResourceQuantityUnits",
+        "path": "AIG.ResourceQuantityUnits",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "CE",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/CE"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "AIG.7"
+          }
+        ]
+      },
+      {
+        "id": "AIG.StartDate/Time",
+        "path": "AIG.StartDate/Time",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "TS",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/TS"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "AIG.8"
+          }
+        ]
+      },
+      {
+        "id": "AIG.StartDate/TimeOffset",
+        "path": "AIG.StartDate/TimeOffset",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "string",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/string"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "AIG.9"
+          }
+        ]
+      },
+      {
+        "id": "AIG.StartDate/TimeOffsetUnits",
+        "path": "AIG.StartDate/TimeOffsetUnits",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "CE",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/CE"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "AIG.10"
+          }
+        ]
+      },
+      {
+        "id": "AIG.Duration",
+        "path": "AIG.Duration",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "string",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/string"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "AIG.11"
+          }
+        ]
+      },
+      {
+        "id": "AIG.DurationUnits",
+        "path": "AIG.DurationUnits",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "CE",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/CE"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "AIG.12"
+          }
+        ]
+      },
+      {
+        "id": "AIG.AllowSubstitutionCode",
+        "path": "AIG.AllowSubstitutionCode",
+        "code": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/v2-0279"
+          }
+        ],
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "string",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/string"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "AIG.13"
+          }
+        ]
+      },
+      {
+        "id": "AIG.FillerStatusCode",
+        "path": "AIG.FillerStatusCode",
+        "code": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/v2-0278"
+          }
+        ],
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "CE",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/CE"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "AIG.14"
+          }
+        ]
+      }
+    ]
+  }
+}

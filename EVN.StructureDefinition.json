@@ -1,0 +1,188 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "EVN",
+  "url": "http://hl7.org/fhir/StructureDefinition/EVN",
+  "name": "EVN",
+  "status": "active",
+  "fhirVersion": "4.0.1",
+  "kind": "logical",
+  "abstract": false,
+  "type": "EVN",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Element",
+  "derivation": "specialization",
+  "differential": {
+    "element": [
+      {
+        "id": "EVN",
+        "path": "EVN",
+        "type": [
+          {
+            "code": "Element"
+          }
+        ],
+        "mapping": [
+          {
+            "id": "EVN",
+            "identity": "v2",
+            "map": "EVN"
+          }
+        ]
+      },
+      {
+        "id": "EVN.EventTypeCode",
+        "path": "EVN.EventTypeCode",
+        "code": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/v2-0003"
+          }
+        ],
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "string",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/string"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "EVN.1"
+          }
+        ]
+      },
+      {
+        "id": "EVN.RecordedDate/Time",
+        "path": "EVN.RecordedDate/Time",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "TS",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/TS"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "EVN.2"
+          }
+        ]
+      },
+      {
+        "id": "EVN.Date/TimePlannedEvent",
+        "path": "EVN.Date/TimePlannedEvent",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "TS",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/TS"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "EVN.3"
+          }
+        ]
+      },
+      {
+        "id": "EVN.EventReasonCode",
+        "path": "EVN.EventReasonCode",
+        "code": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/v2-0062"
+          }
+        ],
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "string",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/string"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "EVN.4"
+          }
+        ]
+      },
+      {
+        "id": "EVN.OperatorID",
+        "path": "EVN.OperatorID",
+        "code": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/v2-0188"
+          }
+        ],
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "XCN",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/XCN"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "EVN.5"
+          }
+        ]
+      },
+      {
+        "id": "EVN.EventOccurred",
+        "path": "EVN.EventOccurred",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "TS",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/TS"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "EVN.6"
+          }
+        ]
+      },
+      {
+        "id": "EVN.EventFacility",
+        "path": "EVN.EventFacility",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "HD",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/HD"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "EVN.7"
+          }
+        ]
+      }
+    ]
+  }
+}

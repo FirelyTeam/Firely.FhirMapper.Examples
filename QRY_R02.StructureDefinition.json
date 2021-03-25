@@ -1,0 +1,113 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "QRY_R02",
+  "url": "http://hl7.org/fhir/StructureDefinition/QRY_R02",
+  "name": "QRY_R02",
+  "status": "active",
+  "fhirVersion": "4.0.1",
+  "kind": "logical",
+  "abstract": false,
+  "type": "QRY_R02",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Element",
+  "derivation": "specialization",
+  "differential": {
+    "element": [
+      {
+        "id": "QRY_R02",
+        "path": "QRY_R02",
+        "type": [
+          {
+            "code": "Element"
+          }
+        ],
+        "mapping": [
+          {
+            "id": "QRY_R02",
+            "identity": "v2",
+            "map": "QRY_R02"
+          }
+        ]
+      },
+      {
+        "id": "QRY_R02.MSH",
+        "path": "QRY_R02.MSH",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "MSH",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/MSH"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "MSH"
+          }
+        ]
+      },
+      {
+        "id": "QRY_R02.SFT",
+        "path": "QRY_R02.SFT",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "SFT",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/SFT"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "SFT"
+          }
+        ]
+      },
+      {
+        "id": "QRY_R02.QRD",
+        "path": "QRY_R02.QRD",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "QRD",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/QRD"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "QRD"
+          }
+        ]
+      },
+      {
+        "id": "QRY_R02.QRF",
+        "path": "QRY_R02.QRF",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "QRF",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/QRF"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "QRF"
+          }
+        ]
+      }
+    ]
+  }
+}

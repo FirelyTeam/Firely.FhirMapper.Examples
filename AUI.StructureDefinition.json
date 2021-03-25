@@ -1,0 +1,93 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "AUI",
+  "url": "http://hl7.org/fhir/StructureDefinition/AUI",
+  "name": "AUI",
+  "status": "active",
+  "fhirVersion": "4.0.1",
+  "kind": "logical",
+  "abstract": false,
+  "type": "AUI",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Element",
+  "derivation": "specialization",
+  "differential": {
+    "element": [
+      {
+        "id": "AUI",
+        "path": "AUI",
+        "type": [
+          {
+            "code": "Element"
+          }
+        ],
+        "mapping": [
+          {
+            "id": "AUI",
+            "identity": "v2",
+            "map": "AUI"
+          }
+        ]
+      },
+      {
+        "id": "AUI.AuthorizationNumber",
+        "path": "AUI.AuthorizationNumber",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "string",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/string"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "AUI.1"
+          }
+        ]
+      },
+      {
+        "id": "AUI.Date",
+        "path": "AUI.Date",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "string",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/string"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "AUI.2"
+          }
+        ]
+      },
+      {
+        "id": "AUI.Source",
+        "path": "AUI.Source",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "string",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/string"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "AUI.3"
+          }
+        ]
+      }
+    ]
+  }
+}

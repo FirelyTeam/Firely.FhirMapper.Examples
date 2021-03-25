@@ -1,0 +1,73 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "WVS",
+  "url": "http://hl7.org/fhir/StructureDefinition/WVS",
+  "name": "WVS",
+  "status": "active",
+  "fhirVersion": "4.0.1",
+  "kind": "logical",
+  "abstract": false,
+  "type": "WVS",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Element",
+  "derivation": "specialization",
+  "differential": {
+    "element": [
+      {
+        "id": "WVS",
+        "path": "WVS",
+        "type": [
+          {
+            "code": "Element"
+          }
+        ],
+        "mapping": [
+          {
+            "id": "WVS",
+            "identity": "v2",
+            "map": "WVS"
+          }
+        ]
+      },
+      {
+        "id": "WVS.SourceOneName",
+        "path": "WVS.SourceOneName",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "string",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/string"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "WVS.1"
+          }
+        ]
+      },
+      {
+        "id": "WVS.SourceTwoName",
+        "path": "WVS.SourceTwoName",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "string",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/string"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "WVS.2"
+          }
+        ]
+      }
+    ]
+  }
+}

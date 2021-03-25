@@ -1,0 +1,233 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "LOC",
+  "url": "http://hl7.org/fhir/StructureDefinition/LOC",
+  "name": "LOC",
+  "status": "active",
+  "fhirVersion": "4.0.1",
+  "kind": "logical",
+  "abstract": false,
+  "type": "LOC",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Element",
+  "derivation": "specialization",
+  "differential": {
+    "element": [
+      {
+        "id": "LOC",
+        "path": "LOC",
+        "type": [
+          {
+            "code": "Element"
+          }
+        ],
+        "mapping": [
+          {
+            "id": "LOC",
+            "identity": "v2",
+            "map": "LOC"
+          }
+        ]
+      },
+      {
+        "id": "LOC.PrimaryKeyValue-LOC",
+        "path": "LOC.PrimaryKeyValue-LOC",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "PL",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/PL"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "LOC.1"
+          }
+        ]
+      },
+      {
+        "id": "LOC.LocationDescription",
+        "path": "LOC.LocationDescription",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "string",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/string"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "LOC.2"
+          }
+        ]
+      },
+      {
+        "id": "LOC.LocationType-LOC",
+        "path": "LOC.LocationType-LOC",
+        "code": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/v2-0260"
+          }
+        ],
+        "min": 1,
+        "max": "*",
+        "type": [
+          {
+            "code": "string",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/string"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "LOC.3"
+          }
+        ]
+      },
+      {
+        "id": "LOC.OrganizationName-LOC",
+        "path": "LOC.OrganizationName-LOC",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "XON",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/XON"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "LOC.4"
+          }
+        ]
+      },
+      {
+        "id": "LOC.LocationAddress",
+        "path": "LOC.LocationAddress",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "XAD",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/XAD"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "LOC.5"
+          }
+        ]
+      },
+      {
+        "id": "LOC.LocationPhone",
+        "path": "LOC.LocationPhone",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "XTN",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/XTN"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "LOC.6"
+          }
+        ]
+      },
+      {
+        "id": "LOC.LicenseNumber",
+        "path": "LOC.LicenseNumber",
+        "code": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/v2-0461"
+          }
+        ],
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "CE",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/CE"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "LOC.7"
+          }
+        ]
+      },
+      {
+        "id": "LOC.LocationEquipment",
+        "path": "LOC.LocationEquipment",
+        "code": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/v2-0261"
+          }
+        ],
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "string",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/string"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "LOC.8"
+          }
+        ]
+      },
+      {
+        "id": "LOC.LocationServiceCode",
+        "path": "LOC.LocationServiceCode",
+        "code": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/v2-0442"
+          }
+        ],
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "string",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/string"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "LOC.9"
+          }
+        ]
+      }
+    ]
+  }
+}

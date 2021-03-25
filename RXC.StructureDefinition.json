@@ -1,0 +1,218 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "RXC",
+  "url": "http://hl7.org/fhir/StructureDefinition/RXC",
+  "name": "RXC",
+  "status": "active",
+  "fhirVersion": "4.0.1",
+  "kind": "logical",
+  "abstract": false,
+  "type": "RXC",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Element",
+  "derivation": "specialization",
+  "differential": {
+    "element": [
+      {
+        "id": "RXC",
+        "path": "RXC",
+        "type": [
+          {
+            "code": "Element"
+          }
+        ],
+        "mapping": [
+          {
+            "id": "RXC",
+            "identity": "v2",
+            "map": "RXC"
+          }
+        ]
+      },
+      {
+        "id": "RXC.RXComponentType",
+        "path": "RXC.RXComponentType",
+        "code": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/v2-0166"
+          }
+        ],
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "string",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/string"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "RXC.1"
+          }
+        ]
+      },
+      {
+        "id": "RXC.ComponentCode",
+        "path": "RXC.ComponentCode",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "CE",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/CE"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "RXC.2"
+          }
+        ]
+      },
+      {
+        "id": "RXC.ComponentAmount",
+        "path": "RXC.ComponentAmount",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "string",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/string"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "RXC.3"
+          }
+        ]
+      },
+      {
+        "id": "RXC.ComponentUnits",
+        "path": "RXC.ComponentUnits",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "CE",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/CE"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "RXC.4"
+          }
+        ]
+      },
+      {
+        "id": "RXC.ComponentStrength",
+        "path": "RXC.ComponentStrength",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "string",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/string"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "RXC.5"
+          }
+        ]
+      },
+      {
+        "id": "RXC.ComponentStrengthUnits",
+        "path": "RXC.ComponentStrengthUnits",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "CE",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/CE"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "RXC.6"
+          }
+        ]
+      },
+      {
+        "id": "RXC.SupplementaryCode",
+        "path": "RXC.SupplementaryCode",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "CE",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/CE"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "RXC.7"
+          }
+        ]
+      },
+      {
+        "id": "RXC.ComponentDrugStrengthVolume",
+        "path": "RXC.ComponentDrugStrengthVolume",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "string",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/string"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "RXC.8"
+          }
+        ]
+      },
+      {
+        "id": "RXC.ComponentDrugStrengthVolumeUnits",
+        "path": "RXC.ComponentDrugStrengthVolumeUnits",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "CWE",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/CWE"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "RXC.9"
+          }
+        ]
+      }
+    ]
+  }
+}

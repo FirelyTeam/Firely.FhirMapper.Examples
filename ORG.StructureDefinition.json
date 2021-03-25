@@ -1,0 +1,318 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "ORG",
+  "url": "http://hl7.org/fhir/StructureDefinition/ORG",
+  "name": "ORG",
+  "status": "active",
+  "fhirVersion": "4.0.1",
+  "kind": "logical",
+  "abstract": false,
+  "type": "ORG",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Element",
+  "derivation": "specialization",
+  "differential": {
+    "element": [
+      {
+        "id": "ORG",
+        "path": "ORG",
+        "type": [
+          {
+            "code": "Element"
+          }
+        ],
+        "mapping": [
+          {
+            "id": "ORG",
+            "identity": "v2",
+            "map": "ORG"
+          }
+        ]
+      },
+      {
+        "id": "ORG.SetID_ORG",
+        "path": "ORG.SetID_ORG",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "string",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/string"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "ORG.1"
+          }
+        ]
+      },
+      {
+        "id": "ORG.OrganizationUnitCode",
+        "path": "ORG.OrganizationUnitCode",
+        "code": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/v2-0405"
+          }
+        ],
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "CE",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/CE"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "ORG.2"
+          }
+        ]
+      },
+      {
+        "id": "ORG.OrganizationUnitTypeCode",
+        "path": "ORG.OrganizationUnitTypeCode",
+        "code": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/v2-0474"
+          }
+        ],
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "CE",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/CE"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "ORG.3"
+          }
+        ]
+      },
+      {
+        "id": "ORG.PrimaryOrgUnitIndicator",
+        "path": "ORG.PrimaryOrgUnitIndicator",
+        "code": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/v2-0136"
+          }
+        ],
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "string",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/string"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "ORG.4"
+          }
+        ]
+      },
+      {
+        "id": "ORG.PractitionerOrgUnitIdentifier",
+        "path": "ORG.PractitionerOrgUnitIdentifier",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "CX",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/CX"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "ORG.5"
+          }
+        ]
+      },
+      {
+        "id": "ORG.HealthCareProviderTypeCode",
+        "path": "ORG.HealthCareProviderTypeCode",
+        "code": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/v2-0452"
+          }
+        ],
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "CE",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/CE"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "ORG.6"
+          }
+        ]
+      },
+      {
+        "id": "ORG.HealthCareProviderClassificationCode",
+        "path": "ORG.HealthCareProviderClassificationCode",
+        "code": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/v2-0453"
+          }
+        ],
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "CE",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/CE"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "ORG.7"
+          }
+        ]
+      },
+      {
+        "id": "ORG.HealthCareProviderAreaofSpecializationCode",
+        "path": "ORG.HealthCareProviderAreaofSpecializationCode",
+        "code": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/v2-0454"
+          }
+        ],
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "CE",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/CE"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "ORG.8"
+          }
+        ]
+      },
+      {
+        "id": "ORG.EffectiveDateRange",
+        "path": "ORG.EffectiveDateRange",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "DR",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/DR"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "ORG.9"
+          }
+        ]
+      },
+      {
+        "id": "ORG.EmploymentStatusCode",
+        "path": "ORG.EmploymentStatusCode",
+        "code": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/v2-0066"
+          }
+        ],
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "CE",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/CE"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "ORG.10"
+          }
+        ]
+      },
+      {
+        "id": "ORG.BoardApprovalIndicator",
+        "path": "ORG.BoardApprovalIndicator",
+        "code": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/v2-0136"
+          }
+        ],
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "string",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/string"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "ORG.11"
+          }
+        ]
+      },
+      {
+        "id": "ORG.PrimaryCarePhysicianIndicator",
+        "path": "ORG.PrimaryCarePhysicianIndicator",
+        "code": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/v2-0136"
+          }
+        ],
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "string",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/string"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "ORG.12"
+          }
+        ]
+      }
+    ]
+  }
+}

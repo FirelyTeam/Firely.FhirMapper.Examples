@@ -1,0 +1,378 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "UB2",
+  "url": "http://hl7.org/fhir/StructureDefinition/UB2",
+  "name": "UB2",
+  "status": "active",
+  "fhirVersion": "4.0.1",
+  "kind": "logical",
+  "abstract": false,
+  "type": "UB2",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Element",
+  "derivation": "specialization",
+  "differential": {
+    "element": [
+      {
+        "id": "UB2",
+        "path": "UB2",
+        "type": [
+          {
+            "code": "Element"
+          }
+        ],
+        "mapping": [
+          {
+            "id": "UB2",
+            "identity": "v2",
+            "map": "UB2"
+          }
+        ]
+      },
+      {
+        "id": "UB2.SetID-UB2",
+        "path": "UB2.SetID-UB2",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "string",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/string"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "UB2.1"
+          }
+        ]
+      },
+      {
+        "id": "UB2.Co-InsuranceDays(9)",
+        "path": "UB2.Co-InsuranceDays(9)",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "string",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/string"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "UB2.2"
+          }
+        ]
+      },
+      {
+        "id": "UB2.ConditionCode(24-30)",
+        "path": "UB2.ConditionCode(24-30)",
+        "code": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/v2-0043"
+          }
+        ],
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "string",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/string"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "UB2.3"
+          }
+        ]
+      },
+      {
+        "id": "UB2.CoveredDays(7)",
+        "path": "UB2.CoveredDays(7)",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "string",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/string"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "UB2.4"
+          }
+        ]
+      },
+      {
+        "id": "UB2.Non-CoveredDays(8)",
+        "path": "UB2.Non-CoveredDays(8)",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "string",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/string"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "UB2.5"
+          }
+        ]
+      },
+      {
+        "id": "UB2.ValueAmount&Code",
+        "path": "UB2.ValueAmount&Code",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "UVC",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/UVC"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "UB2.6"
+          }
+        ]
+      },
+      {
+        "id": "UB2.OccurrenceCode&Date(32-35)",
+        "path": "UB2.OccurrenceCode&Date(32-35)",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "OCD",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/OCD"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "UB2.7"
+          }
+        ]
+      },
+      {
+        "id": "UB2.OccurrenceSpanCode/Dates(36)",
+        "path": "UB2.OccurrenceSpanCode/Dates(36)",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "OSP",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/OSP"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "UB2.8"
+          }
+        ]
+      },
+      {
+        "id": "UB2.UB92Locator2(State)",
+        "path": "UB2.UB92Locator2(State)",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "string",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/string"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "UB2.9"
+          }
+        ]
+      },
+      {
+        "id": "UB2.UB92Locator11(State)",
+        "path": "UB2.UB92Locator11(State)",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "string",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/string"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "UB2.10"
+          }
+        ]
+      },
+      {
+        "id": "UB2.UB92Locator31(National)",
+        "path": "UB2.UB92Locator31(National)",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "string",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/string"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "UB2.11"
+          }
+        ]
+      },
+      {
+        "id": "UB2.DocumentControlNumber",
+        "path": "UB2.DocumentControlNumber",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "string",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/string"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "UB2.12"
+          }
+        ]
+      },
+      {
+        "id": "UB2.UB92Locator49(National)",
+        "path": "UB2.UB92Locator49(National)",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "string",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/string"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "UB2.13"
+          }
+        ]
+      },
+      {
+        "id": "UB2.UB92Locator56(State)",
+        "path": "UB2.UB92Locator56(State)",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "string",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/string"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "UB2.14"
+          }
+        ]
+      },
+      {
+        "id": "UB2.UB92Locator57(National)",
+        "path": "UB2.UB92Locator57(National)",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "string",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/string"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "UB2.15"
+          }
+        ]
+      },
+      {
+        "id": "UB2.UB92Locator78(State)",
+        "path": "UB2.UB92Locator78(State)",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "string",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/string"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "UB2.16"
+          }
+        ]
+      },
+      {
+        "id": "UB2.SpecialVisitCount",
+        "path": "UB2.SpecialVisitCount",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "string",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/string"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "UB2.17"
+          }
+        ]
+      }
+    ]
+  }
+}

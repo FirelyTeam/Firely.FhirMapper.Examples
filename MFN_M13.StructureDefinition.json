@@ -1,0 +1,113 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "MFN_M13",
+  "url": "http://hl7.org/fhir/StructureDefinition/MFN_M13",
+  "name": "MFN_M13",
+  "status": "active",
+  "fhirVersion": "4.0.1",
+  "kind": "logical",
+  "abstract": false,
+  "type": "MFN_M13",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Element",
+  "derivation": "specialization",
+  "differential": {
+    "element": [
+      {
+        "id": "MFN_M13",
+        "path": "MFN_M13",
+        "type": [
+          {
+            "code": "Element"
+          }
+        ],
+        "mapping": [
+          {
+            "id": "MFN_M13",
+            "identity": "v2",
+            "map": "MFN_M13"
+          }
+        ]
+      },
+      {
+        "id": "MFN_M13.MSH",
+        "path": "MFN_M13.MSH",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "MSH",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/MSH"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "MSH"
+          }
+        ]
+      },
+      {
+        "id": "MFN_M13.SFT",
+        "path": "MFN_M13.SFT",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "SFT",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/SFT"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "SFT"
+          }
+        ]
+      },
+      {
+        "id": "MFN_M13.MFI",
+        "path": "MFN_M13.MFI",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "MFI",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/MFI"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "MFI"
+          }
+        ]
+      },
+      {
+        "id": "MFN_M13.MFE",
+        "path": "MFN_M13.MFE",
+        "min": 1,
+        "max": "*",
+        "type": [
+          {
+            "code": "MFE",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/MFE"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "MFE"
+          }
+        ]
+      }
+    ]
+  }
+}

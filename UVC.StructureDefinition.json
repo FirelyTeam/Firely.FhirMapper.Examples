@@ -1,0 +1,78 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "UVC",
+  "url": "http://hl7.org/fhir/StructureDefinition/UVC",
+  "name": "UVC",
+  "status": "active",
+  "fhirVersion": "4.0.1",
+  "kind": "logical",
+  "abstract": false,
+  "type": "UVC",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Element",
+  "derivation": "specialization",
+  "differential": {
+    "element": [
+      {
+        "id": "UVC",
+        "path": "UVC",
+        "type": [
+          {
+            "code": "Element"
+          }
+        ],
+        "mapping": [
+          {
+            "id": "UVC",
+            "identity": "v2",
+            "map": "UVC"
+          }
+        ]
+      },
+      {
+        "id": "UVC.ValueCode",
+        "path": "UVC.ValueCode",
+        "code": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/v2-0153"
+          }
+        ],
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "CNE",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/CNE"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "UVC.1"
+          }
+        ]
+      },
+      {
+        "id": "UVC.ValueAmount",
+        "path": "UVC.ValueAmount",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "MO",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/MO"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "UVC.2"
+          }
+        ]
+      }
+    ]
+  }
+}

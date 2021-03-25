@@ -1,0 +1,1183 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "IN1",
+  "url": "http://hl7.org/fhir/StructureDefinition/IN1",
+  "name": "IN1",
+  "status": "active",
+  "fhirVersion": "4.0.1",
+  "kind": "logical",
+  "abstract": false,
+  "type": "IN1",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Element",
+  "derivation": "specialization",
+  "differential": {
+    "element": [
+      {
+        "id": "IN1",
+        "path": "IN1",
+        "type": [
+          {
+            "code": "Element"
+          }
+        ],
+        "mapping": [
+          {
+            "id": "IN1",
+            "identity": "v2",
+            "map": "IN1"
+          }
+        ]
+      },
+      {
+        "id": "IN1.SetID-IN1",
+        "path": "IN1.SetID-IN1",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "string",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/string"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "IN1.1"
+          }
+        ]
+      },
+      {
+        "id": "IN1.InsurancePlanID",
+        "path": "IN1.InsurancePlanID",
+        "code": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/v2-0072"
+          }
+        ],
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "CE",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/CE"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "IN1.2"
+          }
+        ]
+      },
+      {
+        "id": "IN1.InsuranceCompanyID",
+        "path": "IN1.InsuranceCompanyID",
+        "min": 1,
+        "max": "*",
+        "type": [
+          {
+            "code": "CX",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/CX"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "IN1.3"
+          }
+        ]
+      },
+      {
+        "id": "IN1.InsuranceCompanyName",
+        "path": "IN1.InsuranceCompanyName",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "XON",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/XON"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "IN1.4"
+          }
+        ]
+      },
+      {
+        "id": "IN1.InsuranceCompanyAddress",
+        "path": "IN1.InsuranceCompanyAddress",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "XAD",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/XAD"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "IN1.5"
+          }
+        ]
+      },
+      {
+        "id": "IN1.InsuranceCoContactPerson",
+        "path": "IN1.InsuranceCoContactPerson",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "XPN",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/XPN"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "IN1.6"
+          }
+        ]
+      },
+      {
+        "id": "IN1.InsuranceCoPhoneNumber",
+        "path": "IN1.InsuranceCoPhoneNumber",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "XTN",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/XTN"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "IN1.7"
+          }
+        ]
+      },
+      {
+        "id": "IN1.GroupNumber",
+        "path": "IN1.GroupNumber",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "string",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/string"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "IN1.8"
+          }
+        ]
+      },
+      {
+        "id": "IN1.GroupName",
+        "path": "IN1.GroupName",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "XON",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/XON"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "IN1.9"
+          }
+        ]
+      },
+      {
+        "id": "IN1.Insured'sGroupEmpID",
+        "path": "IN1.Insured'sGroupEmpID",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "CX",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/CX"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "IN1.10"
+          }
+        ]
+      },
+      {
+        "id": "IN1.Insured'sGroupEmpName",
+        "path": "IN1.Insured'sGroupEmpName",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "XON",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/XON"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "IN1.11"
+          }
+        ]
+      },
+      {
+        "id": "IN1.PlanEffectiveDate",
+        "path": "IN1.PlanEffectiveDate",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "string",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/string"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "IN1.12"
+          }
+        ]
+      },
+      {
+        "id": "IN1.PlanExpirationDate",
+        "path": "IN1.PlanExpirationDate",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "string",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/string"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "IN1.13"
+          }
+        ]
+      },
+      {
+        "id": "IN1.AuthorizationInformation",
+        "path": "IN1.AuthorizationInformation",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "AUI",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/AUI"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "IN1.14"
+          }
+        ]
+      },
+      {
+        "id": "IN1.PlanType",
+        "path": "IN1.PlanType",
+        "code": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/v2-0086"
+          }
+        ],
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "string",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/string"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "IN1.15"
+          }
+        ]
+      },
+      {
+        "id": "IN1.NameOfInsured",
+        "path": "IN1.NameOfInsured",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "XPN",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/XPN"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "IN1.16"
+          }
+        ]
+      },
+      {
+        "id": "IN1.Insured'sRelationshipToPatient",
+        "path": "IN1.Insured'sRelationshipToPatient",
+        "code": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/v2-0063"
+          }
+        ],
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "CE",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/CE"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "IN1.17"
+          }
+        ]
+      },
+      {
+        "id": "IN1.Insured'sDateOfBirth",
+        "path": "IN1.Insured'sDateOfBirth",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "TS",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/TS"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "IN1.18"
+          }
+        ]
+      },
+      {
+        "id": "IN1.Insured'sAddress",
+        "path": "IN1.Insured'sAddress",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "XAD",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/XAD"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "IN1.19"
+          }
+        ]
+      },
+      {
+        "id": "IN1.AssignmentOfBenefits",
+        "path": "IN1.AssignmentOfBenefits",
+        "code": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/v2-0135"
+          }
+        ],
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "string",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/string"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "IN1.20"
+          }
+        ]
+      },
+      {
+        "id": "IN1.CoordinationOfBenefits",
+        "path": "IN1.CoordinationOfBenefits",
+        "code": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/v2-0173"
+          }
+        ],
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "string",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/string"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "IN1.21"
+          }
+        ]
+      },
+      {
+        "id": "IN1.CoordOfBenPriority",
+        "path": "IN1.CoordOfBenPriority",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "string",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/string"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "IN1.22"
+          }
+        ]
+      },
+      {
+        "id": "IN1.NoticeOfAdmissionFlag",
+        "path": "IN1.NoticeOfAdmissionFlag",
+        "code": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/v2-0136"
+          }
+        ],
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "string",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/string"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "IN1.23"
+          }
+        ]
+      },
+      {
+        "id": "IN1.NoticeOfAdmissionDate",
+        "path": "IN1.NoticeOfAdmissionDate",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "string",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/string"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "IN1.24"
+          }
+        ]
+      },
+      {
+        "id": "IN1.ReportOfEligibilityFlag",
+        "path": "IN1.ReportOfEligibilityFlag",
+        "code": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/v2-0136"
+          }
+        ],
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "string",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/string"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "IN1.25"
+          }
+        ]
+      },
+      {
+        "id": "IN1.ReportOfEligibilityDate",
+        "path": "IN1.ReportOfEligibilityDate",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "string",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/string"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "IN1.26"
+          }
+        ]
+      },
+      {
+        "id": "IN1.ReleaseInformationCode",
+        "path": "IN1.ReleaseInformationCode",
+        "code": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/v2-0093"
+          }
+        ],
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "string",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/string"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "IN1.27"
+          }
+        ]
+      },
+      {
+        "id": "IN1.Pre-AdmitCert(PAC)",
+        "path": "IN1.Pre-AdmitCert(PAC)",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "string",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/string"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "IN1.28"
+          }
+        ]
+      },
+      {
+        "id": "IN1.VerificationDate/Time",
+        "path": "IN1.VerificationDate/Time",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "TS",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/TS"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "IN1.29"
+          }
+        ]
+      },
+      {
+        "id": "IN1.VerificationBy",
+        "path": "IN1.VerificationBy",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "XCN",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/XCN"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "IN1.30"
+          }
+        ]
+      },
+      {
+        "id": "IN1.TypeOfAgreementCode",
+        "path": "IN1.TypeOfAgreementCode",
+        "code": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/v2-0098"
+          }
+        ],
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "string",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/string"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "IN1.31"
+          }
+        ]
+      },
+      {
+        "id": "IN1.BillingStatus",
+        "path": "IN1.BillingStatus",
+        "code": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/v2-0022"
+          }
+        ],
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "string",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/string"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "IN1.32"
+          }
+        ]
+      },
+      {
+        "id": "IN1.LifetimeReserveDays",
+        "path": "IN1.LifetimeReserveDays",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "string",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/string"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "IN1.33"
+          }
+        ]
+      },
+      {
+        "id": "IN1.DelayBeforeLRDay",
+        "path": "IN1.DelayBeforeLRDay",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "string",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/string"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "IN1.34"
+          }
+        ]
+      },
+      {
+        "id": "IN1.CompanyPlanCode",
+        "path": "IN1.CompanyPlanCode",
+        "code": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/v2-0042"
+          }
+        ],
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "string",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/string"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "IN1.35"
+          }
+        ]
+      },
+      {
+        "id": "IN1.PolicyNumber",
+        "path": "IN1.PolicyNumber",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "string",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/string"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "IN1.36"
+          }
+        ]
+      },
+      {
+        "id": "IN1.PolicyDeductible",
+        "path": "IN1.PolicyDeductible",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "CP",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/CP"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "IN1.37"
+          }
+        ]
+      },
+      {
+        "id": "IN1.PolicyLimit-Amount",
+        "path": "IN1.PolicyLimit-Amount",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "CP",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/CP"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "IN1.38"
+          }
+        ]
+      },
+      {
+        "id": "IN1.PolicyLimit-Days",
+        "path": "IN1.PolicyLimit-Days",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "string",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/string"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "IN1.39"
+          }
+        ]
+      },
+      {
+        "id": "IN1.RoomRate-Semi-Private",
+        "path": "IN1.RoomRate-Semi-Private",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "CP",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/CP"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "IN1.40"
+          }
+        ]
+      },
+      {
+        "id": "IN1.RoomRate-Private",
+        "path": "IN1.RoomRate-Private",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "CP",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/CP"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "IN1.41"
+          }
+        ]
+      },
+      {
+        "id": "IN1.Insured'sEmploymentStatus",
+        "path": "IN1.Insured'sEmploymentStatus",
+        "code": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/v2-0066"
+          }
+        ],
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "CE",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/CE"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "IN1.42"
+          }
+        ]
+      },
+      {
+        "id": "IN1.Insured'sAdministrativeSex",
+        "path": "IN1.Insured'sAdministrativeSex",
+        "code": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/v2-0001"
+          }
+        ],
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "string",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/string"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "IN1.43"
+          }
+        ]
+      },
+      {
+        "id": "IN1.Insured'sEmployer'sAddress",
+        "path": "IN1.Insured'sEmployer'sAddress",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "XAD",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/XAD"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "IN1.44"
+          }
+        ]
+      },
+      {
+        "id": "IN1.VerificationStatus",
+        "path": "IN1.VerificationStatus",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "string",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/string"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "IN1.45"
+          }
+        ]
+      },
+      {
+        "id": "IN1.PriorInsurancePlanID",
+        "path": "IN1.PriorInsurancePlanID",
+        "code": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/v2-0072"
+          }
+        ],
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "string",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/string"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "IN1.46"
+          }
+        ]
+      },
+      {
+        "id": "IN1.CoverageType",
+        "path": "IN1.CoverageType",
+        "code": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/v2-0309"
+          }
+        ],
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "string",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/string"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "IN1.47"
+          }
+        ]
+      },
+      {
+        "id": "IN1.Handicap",
+        "path": "IN1.Handicap",
+        "code": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/v2-0295"
+          }
+        ],
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "string",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/string"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "IN1.48"
+          }
+        ]
+      },
+      {
+        "id": "IN1.Insured'sIDNumber",
+        "path": "IN1.Insured'sIDNumber",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "CX",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/CX"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "IN1.49"
+          }
+        ]
+      },
+      {
+        "id": "IN1.SignatureCode",
+        "path": "IN1.SignatureCode",
+        "code": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/v2-0535"
+          }
+        ],
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "string",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/string"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "IN1.50"
+          }
+        ]
+      },
+      {
+        "id": "IN1.SignatureCodeDate",
+        "path": "IN1.SignatureCodeDate",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "string",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/string"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "IN1.51"
+          }
+        ]
+      },
+      {
+        "id": "IN1.Insured_sBirthPlace",
+        "path": "IN1.Insured_sBirthPlace",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "string",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/string"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "IN1.52"
+          }
+        ]
+      },
+      {
+        "id": "IN1.VIPIndicator",
+        "path": "IN1.VIPIndicator",
+        "code": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/v2-0099"
+          }
+        ],
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "string",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/string"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "IN1.53"
+          }
+        ]
+      }
+    ]
+  }
+}

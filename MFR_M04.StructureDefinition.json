@@ -1,0 +1,304 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "MFR_M04",
+  "url": "http://hl7.org/fhir/StructureDefinition/MFR_M04",
+  "name": "MFR_M04",
+  "status": "active",
+  "fhirVersion": "4.0.1",
+  "kind": "logical",
+  "abstract": false,
+  "type": "MFR_M04",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Element",
+  "derivation": "specialization",
+  "differential": {
+    "element": [
+      {
+        "id": "MFR_M04",
+        "path": "MFR_M04",
+        "type": [
+          {
+            "code": "Element"
+          }
+        ],
+        "mapping": [
+          {
+            "id": "MFR_M04",
+            "identity": "v2",
+            "map": "MFR_M04"
+          }
+        ]
+      },
+      {
+        "id": "MFR_M04.MSH",
+        "path": "MFR_M04.MSH",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "MSH",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/MSH"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "MSH"
+          }
+        ]
+      },
+      {
+        "id": "MFR_M04.SFT",
+        "path": "MFR_M04.SFT",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "SFT",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/SFT"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "SFT"
+          }
+        ]
+      },
+      {
+        "id": "MFR_M04.MSA",
+        "path": "MFR_M04.MSA",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "MSA",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/MSA"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "MSA"
+          }
+        ]
+      },
+      {
+        "id": "MFR_M04.ERR",
+        "path": "MFR_M04.ERR",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "ERR",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/ERR"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "ERR"
+          }
+        ]
+      },
+      {
+        "id": "MFR_M04.QAK",
+        "path": "MFR_M04.QAK",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "QAK",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/QAK"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "QAK"
+          }
+        ]
+      },
+      {
+        "id": "MFR_M04.QRD",
+        "path": "MFR_M04.QRD",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "QRD",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/QRD"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "QRD"
+          }
+        ]
+      },
+      {
+        "id": "MFR_M04.QRF",
+        "path": "MFR_M04.QRF",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "QRF",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/QRF"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "QRF"
+          }
+        ]
+      },
+      {
+        "id": "MFR_M04.MFI",
+        "path": "MFR_M04.MFI",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "MFI",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/MFI"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "MFI"
+          }
+        ]
+      },
+      {
+        "id": "MFR_M04.MF_QUERY",
+        "path": "MFR_M04.MF_QUERY",
+        "min": 1,
+        "max": "*",
+        "type": [
+          {
+            "code": "BackboneElement"
+          }
+        ]
+      },
+      {
+        "id": "MFR_M04.MF_QUERY.MFE",
+        "path": "MFR_M04.MF_QUERY.MFE",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "MFE",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/MFE"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "MFE"
+          }
+        ]
+      },
+      {
+        "id": "MFR_M04.MF_QUERY.CDM",
+        "path": "MFR_M04.MF_QUERY.CDM",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "CDM",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/CDM"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "CDM"
+          }
+        ]
+      },
+      {
+        "id": "MFR_M04.MF_QUERY.LCH",
+        "path": "MFR_M04.MF_QUERY.LCH",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "LCH",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/LCH"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "LCH"
+          }
+        ]
+      },
+      {
+        "id": "MFR_M04.MF_QUERY.PRC",
+        "path": "MFR_M04.MF_QUERY.PRC",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "PRC",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/PRC"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "PRC"
+          }
+        ]
+      },
+      {
+        "id": "MFR_M04.DSC",
+        "path": "MFR_M04.DSC",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "DSC",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/DSC"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "DSC"
+          }
+        ]
+      }
+    ]
+  }
+}

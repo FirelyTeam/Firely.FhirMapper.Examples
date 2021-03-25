@@ -1,0 +1,278 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "ACC",
+  "url": "http://hl7.org/fhir/StructureDefinition/ACC",
+  "name": "ACC",
+  "status": "active",
+  "fhirVersion": "4.0.1",
+  "kind": "logical",
+  "abstract": false,
+  "type": "ACC",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Element",
+  "derivation": "specialization",
+  "differential": {
+    "element": [
+      {
+        "id": "ACC",
+        "path": "ACC",
+        "type": [
+          {
+            "code": "Element"
+          }
+        ],
+        "mapping": [
+          {
+            "id": "ACC",
+            "identity": "v2",
+            "map": "ACC"
+          }
+        ]
+      },
+      {
+        "id": "ACC.AccidentDate/Time",
+        "path": "ACC.AccidentDate/Time",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "TS",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/TS"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "ACC.1"
+          }
+        ]
+      },
+      {
+        "id": "ACC.AccidentCode",
+        "path": "ACC.AccidentCode",
+        "code": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/v2-0050"
+          }
+        ],
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "CE",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/CE"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "ACC.2"
+          }
+        ]
+      },
+      {
+        "id": "ACC.AccidentLocation",
+        "path": "ACC.AccidentLocation",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "string",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/string"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "ACC.3"
+          }
+        ]
+      },
+      {
+        "id": "ACC.AutoAccidentState",
+        "path": "ACC.AutoAccidentState",
+        "code": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/v2-0347"
+          }
+        ],
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "CE",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/CE"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "ACC.4"
+          }
+        ]
+      },
+      {
+        "id": "ACC.AccidentJobRelatedIndicator",
+        "path": "ACC.AccidentJobRelatedIndicator",
+        "code": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/v2-0136"
+          }
+        ],
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "string",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/string"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "ACC.5"
+          }
+        ]
+      },
+      {
+        "id": "ACC.AccidentDeathIndicator",
+        "path": "ACC.AccidentDeathIndicator",
+        "code": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/v2-0136"
+          }
+        ],
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "string",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/string"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "ACC.6"
+          }
+        ]
+      },
+      {
+        "id": "ACC.EnteredBy",
+        "path": "ACC.EnteredBy",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "XCN",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/XCN"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "ACC.7"
+          }
+        ]
+      },
+      {
+        "id": "ACC.AccidentDescription",
+        "path": "ACC.AccidentDescription",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "string",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/string"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "ACC.8"
+          }
+        ]
+      },
+      {
+        "id": "ACC.BroughtInBy",
+        "path": "ACC.BroughtInBy",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "string",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/string"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "ACC.9"
+          }
+        ]
+      },
+      {
+        "id": "ACC.PoliceNotifiedIndicator",
+        "path": "ACC.PoliceNotifiedIndicator",
+        "code": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/v2-0136"
+          }
+        ],
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "string",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/string"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "ACC.10"
+          }
+        ]
+      },
+      {
+        "id": "ACC.AccidentAddress",
+        "path": "ACC.AccidentAddress",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "XAD",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/XAD"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "ACC.11"
+          }
+        ]
+      }
+    ]
+  }
+}

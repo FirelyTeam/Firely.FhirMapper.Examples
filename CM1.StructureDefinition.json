@@ -1,0 +1,93 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "CM1",
+  "url": "http://hl7.org/fhir/StructureDefinition/CM1",
+  "name": "CM1",
+  "status": "active",
+  "fhirVersion": "4.0.1",
+  "kind": "logical",
+  "abstract": false,
+  "type": "CM1",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Element",
+  "derivation": "specialization",
+  "differential": {
+    "element": [
+      {
+        "id": "CM1",
+        "path": "CM1",
+        "type": [
+          {
+            "code": "Element"
+          }
+        ],
+        "mapping": [
+          {
+            "id": "CM1",
+            "identity": "v2",
+            "map": "CM1"
+          }
+        ]
+      },
+      {
+        "id": "CM1.SetID-CM1",
+        "path": "CM1.SetID-CM1",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "string",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/string"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "CM1.1"
+          }
+        ]
+      },
+      {
+        "id": "CM1.StudyPhaseIdentifier",
+        "path": "CM1.StudyPhaseIdentifier",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "CE",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/CE"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "CM1.2"
+          }
+        ]
+      },
+      {
+        "id": "CM1.DescriptionofStudyPhase",
+        "path": "CM1.DescriptionofStudyPhase",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "string",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/string"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "CM1.3"
+          }
+        ]
+      }
+    ]
+  }
+}

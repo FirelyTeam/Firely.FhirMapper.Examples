@@ -1,0 +1,368 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "RRD_O14",
+  "url": "http://hl7.org/fhir/StructureDefinition/RRD_O14",
+  "name": "RRD_O14",
+  "status": "active",
+  "fhirVersion": "4.0.1",
+  "kind": "logical",
+  "abstract": false,
+  "type": "RRD_O14",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Element",
+  "derivation": "specialization",
+  "differential": {
+    "element": [
+      {
+        "id": "RRD_O14",
+        "path": "RRD_O14",
+        "type": [
+          {
+            "code": "Element"
+          }
+        ],
+        "mapping": [
+          {
+            "id": "RRD_O14",
+            "identity": "v2",
+            "map": "RRD_O14"
+          }
+        ]
+      },
+      {
+        "id": "RRD_O14.MSH",
+        "path": "RRD_O14.MSH",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "MSH",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/MSH"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "MSH"
+          }
+        ]
+      },
+      {
+        "id": "RRD_O14.MSA",
+        "path": "RRD_O14.MSA",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "MSA",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/MSA"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "MSA"
+          }
+        ]
+      },
+      {
+        "id": "RRD_O14.ERR",
+        "path": "RRD_O14.ERR",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "ERR",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/ERR"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "ERR"
+          }
+        ]
+      },
+      {
+        "id": "RRD_O14.SFT",
+        "path": "RRD_O14.SFT",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "SFT",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/SFT"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "SFT"
+          }
+        ]
+      },
+      {
+        "id": "RRD_O14.NTE",
+        "path": "RRD_O14.NTE",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "NTE",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/NTE"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "NTE"
+          }
+        ]
+      },
+      {
+        "id": "RRD_O14.RESPONSE",
+        "path": "RRD_O14.RESPONSE",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "BackboneElement"
+          }
+        ]
+      },
+      {
+        "id": "RRD_O14.RESPONSE.PATIENT",
+        "path": "RRD_O14.RESPONSE.PATIENT",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "BackboneElement"
+          }
+        ]
+      },
+      {
+        "id": "RRD_O14.RESPONSE.PATIENT.PID",
+        "path": "RRD_O14.RESPONSE.PATIENT.PID",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "PID",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/PID"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "PID"
+          }
+        ]
+      },
+      {
+        "id": "RRD_O14.RESPONSE.PATIENT.NTE",
+        "path": "RRD_O14.RESPONSE.PATIENT.NTE",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "NTE",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/NTE"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "NTE"
+          }
+        ]
+      },
+      {
+        "id": "RRD_O14.RESPONSE.ORDER",
+        "path": "RRD_O14.RESPONSE.ORDER",
+        "min": 1,
+        "max": "*",
+        "type": [
+          {
+            "code": "BackboneElement"
+          }
+        ]
+      },
+      {
+        "id": "RRD_O14.RESPONSE.ORDER.ORC",
+        "path": "RRD_O14.RESPONSE.ORDER.ORC",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "ORC",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/ORC"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "ORC"
+          }
+        ]
+      },
+      {
+        "id": "RRD_O14.RESPONSE.ORDER.TIMING",
+        "path": "RRD_O14.RESPONSE.ORDER.TIMING",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "BackboneElement"
+          }
+        ]
+      },
+      {
+        "id": "RRD_O14.RESPONSE.ORDER.TIMING.TQ1",
+        "path": "RRD_O14.RESPONSE.ORDER.TIMING.TQ1",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "TQ1",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/TQ1"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "TQ1"
+          }
+        ]
+      },
+      {
+        "id": "RRD_O14.RESPONSE.ORDER.TIMING.TQ2",
+        "path": "RRD_O14.RESPONSE.ORDER.TIMING.TQ2",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "TQ2",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/TQ2"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "TQ2"
+          }
+        ]
+      },
+      {
+        "id": "RRD_O14.RESPONSE.ORDER.DISPENSE",
+        "path": "RRD_O14.RESPONSE.ORDER.DISPENSE",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "BackboneElement"
+          }
+        ]
+      },
+      {
+        "id": "RRD_O14.RESPONSE.ORDER.DISPENSE.RXD",
+        "path": "RRD_O14.RESPONSE.ORDER.DISPENSE.RXD",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "RXD",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/RXD"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "RXD"
+          }
+        ]
+      },
+      {
+        "id": "RRD_O14.RESPONSE.ORDER.DISPENSE.NTE",
+        "path": "RRD_O14.RESPONSE.ORDER.DISPENSE.NTE",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "NTE",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/NTE"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "NTE"
+          }
+        ]
+      },
+      {
+        "id": "RRD_O14.RESPONSE.ORDER.DISPENSE.RXR",
+        "path": "RRD_O14.RESPONSE.ORDER.DISPENSE.RXR",
+        "min": 1,
+        "max": "*",
+        "type": [
+          {
+            "code": "RXR",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/RXR"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "RXR"
+          }
+        ]
+      },
+      {
+        "id": "RRD_O14.RESPONSE.ORDER.DISPENSE.RXC",
+        "path": "RRD_O14.RESPONSE.ORDER.DISPENSE.RXC",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "RXC",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/RXC"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "RXC"
+          }
+        ]
+      }
+    ]
+  }
+}

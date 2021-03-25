@@ -1,0 +1,133 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "SPQ_Q08",
+  "url": "http://hl7.org/fhir/StructureDefinition/SPQ_Q08",
+  "name": "SPQ_Q08",
+  "status": "active",
+  "fhirVersion": "4.0.1",
+  "kind": "logical",
+  "abstract": false,
+  "type": "SPQ_Q08",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Element",
+  "derivation": "specialization",
+  "differential": {
+    "element": [
+      {
+        "id": "SPQ_Q08",
+        "path": "SPQ_Q08",
+        "type": [
+          {
+            "code": "Element"
+          }
+        ],
+        "mapping": [
+          {
+            "id": "SPQ_Q08",
+            "identity": "v2",
+            "map": "SPQ_Q08"
+          }
+        ]
+      },
+      {
+        "id": "SPQ_Q08.MSH",
+        "path": "SPQ_Q08.MSH",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "MSH",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/MSH"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "MSH"
+          }
+        ]
+      },
+      {
+        "id": "SPQ_Q08.SFT",
+        "path": "SPQ_Q08.SFT",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "SFT",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/SFT"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "SFT"
+          }
+        ]
+      },
+      {
+        "id": "SPQ_Q08.SPR",
+        "path": "SPQ_Q08.SPR",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "SPR",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/SPR"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "SPR"
+          }
+        ]
+      },
+      {
+        "id": "SPQ_Q08.RDF",
+        "path": "SPQ_Q08.RDF",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "RDF",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/RDF"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "RDF"
+          }
+        ]
+      },
+      {
+        "id": "SPQ_Q08.DSC",
+        "path": "SPQ_Q08.DSC",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "DSC",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/DSC"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "DSC"
+          }
+        ]
+      }
+    ]
+  }
+}

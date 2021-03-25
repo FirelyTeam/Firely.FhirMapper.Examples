@@ -1,0 +1,133 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "INR_U06",
+  "url": "http://hl7.org/fhir/StructureDefinition/INR_U06",
+  "name": "INR_U06",
+  "status": "active",
+  "fhirVersion": "4.0.1",
+  "kind": "logical",
+  "abstract": false,
+  "type": "INR_U06",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Element",
+  "derivation": "specialization",
+  "differential": {
+    "element": [
+      {
+        "id": "INR_U06",
+        "path": "INR_U06",
+        "type": [
+          {
+            "code": "Element"
+          }
+        ],
+        "mapping": [
+          {
+            "id": "INR_U06",
+            "identity": "v2",
+            "map": "INR_U06"
+          }
+        ]
+      },
+      {
+        "id": "INR_U06.MSH",
+        "path": "INR_U06.MSH",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "MSH",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/MSH"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "MSH"
+          }
+        ]
+      },
+      {
+        "id": "INR_U06.SFT",
+        "path": "INR_U06.SFT",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "SFT",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/SFT"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "SFT"
+          }
+        ]
+      },
+      {
+        "id": "INR_U06.EQU",
+        "path": "INR_U06.EQU",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "EQU",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/EQU"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "EQU"
+          }
+        ]
+      },
+      {
+        "id": "INR_U06.INV",
+        "path": "INR_U06.INV",
+        "min": 1,
+        "max": "*",
+        "type": [
+          {
+            "code": "INV",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/INV"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "INV"
+          }
+        ]
+      },
+      {
+        "id": "INR_U06.ROL",
+        "path": "INR_U06.ROL",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "ROL",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/ROL"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "ROL"
+          }
+        ]
+      }
+    ]
+  }
+}

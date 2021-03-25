@@ -1,0 +1,113 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "CSP",
+  "url": "http://hl7.org/fhir/StructureDefinition/CSP",
+  "name": "CSP",
+  "status": "active",
+  "fhirVersion": "4.0.1",
+  "kind": "logical",
+  "abstract": false,
+  "type": "CSP",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Element",
+  "derivation": "specialization",
+  "differential": {
+    "element": [
+      {
+        "id": "CSP",
+        "path": "CSP",
+        "type": [
+          {
+            "code": "Element"
+          }
+        ],
+        "mapping": [
+          {
+            "id": "CSP",
+            "identity": "v2",
+            "map": "CSP"
+          }
+        ]
+      },
+      {
+        "id": "CSP.StudyPhaseIdentifier",
+        "path": "CSP.StudyPhaseIdentifier",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "CE",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/CE"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "CSP.1"
+          }
+        ]
+      },
+      {
+        "id": "CSP.Date/timeStudyPhaseBegan",
+        "path": "CSP.Date/timeStudyPhaseBegan",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "TS",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/TS"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "CSP.2"
+          }
+        ]
+      },
+      {
+        "id": "CSP.Date/timeStudyPhaseEnded",
+        "path": "CSP.Date/timeStudyPhaseEnded",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "TS",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/TS"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "CSP.3"
+          }
+        ]
+      },
+      {
+        "id": "CSP.StudyPhaseEvaluability",
+        "path": "CSP.StudyPhaseEvaluability",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "CE",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/CE"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "CSP.4"
+          }
+        ]
+      }
+    ]
+  }
+}

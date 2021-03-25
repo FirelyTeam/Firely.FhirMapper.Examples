@@ -1,0 +1,308 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "LDP",
+  "url": "http://hl7.org/fhir/StructureDefinition/LDP",
+  "name": "LDP",
+  "status": "active",
+  "fhirVersion": "4.0.1",
+  "kind": "logical",
+  "abstract": false,
+  "type": "LDP",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Element",
+  "derivation": "specialization",
+  "differential": {
+    "element": [
+      {
+        "id": "LDP",
+        "path": "LDP",
+        "type": [
+          {
+            "code": "Element"
+          }
+        ],
+        "mapping": [
+          {
+            "id": "LDP",
+            "identity": "v2",
+            "map": "LDP"
+          }
+        ]
+      },
+      {
+        "id": "LDP.PrimaryKeyValue-LDP",
+        "path": "LDP.PrimaryKeyValue-LDP",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "PL",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/PL"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "LDP.1"
+          }
+        ]
+      },
+      {
+        "id": "LDP.LocationDepartment",
+        "path": "LDP.LocationDepartment",
+        "code": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/v2-0264"
+          }
+        ],
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "CE",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/CE"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "LDP.2"
+          }
+        ]
+      },
+      {
+        "id": "LDP.LocationService",
+        "path": "LDP.LocationService",
+        "code": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/v2-0069"
+          }
+        ],
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "string",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/string"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "LDP.3"
+          }
+        ]
+      },
+      {
+        "id": "LDP.SpecialtyType",
+        "path": "LDP.SpecialtyType",
+        "code": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/v2-0265"
+          }
+        ],
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "CE",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/CE"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "LDP.4"
+          }
+        ]
+      },
+      {
+        "id": "LDP.ValidPatientClasses",
+        "path": "LDP.ValidPatientClasses",
+        "code": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/v2-0004"
+          }
+        ],
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "string",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/string"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "LDP.5"
+          }
+        ]
+      },
+      {
+        "id": "LDP.Active/InactiveFlag",
+        "path": "LDP.Active/InactiveFlag",
+        "code": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/v2-0183"
+          }
+        ],
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "string",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/string"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "LDP.6"
+          }
+        ]
+      },
+      {
+        "id": "LDP.ActivationDateLDP",
+        "path": "LDP.ActivationDateLDP",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "TS",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/TS"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "LDP.7"
+          }
+        ]
+      },
+      {
+        "id": "LDP.InactivationDate-LDP",
+        "path": "LDP.InactivationDate-LDP",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "TS",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/TS"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "LDP.8"
+          }
+        ]
+      },
+      {
+        "id": "LDP.InactivatedReason",
+        "path": "LDP.InactivatedReason",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "string",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/string"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "LDP.9"
+          }
+        ]
+      },
+      {
+        "id": "LDP.VisitingHours",
+        "path": "LDP.VisitingHours",
+        "code": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/v2-0267"
+          }
+        ],
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "VH",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/VH"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "LDP.10"
+          }
+        ]
+      },
+      {
+        "id": "LDP.ContactPhone",
+        "path": "LDP.ContactPhone",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "XTN",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/XTN"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "LDP.11"
+          }
+        ]
+      },
+      {
+        "id": "LDP.LocationCostCenter",
+        "path": "LDP.LocationCostCenter",
+        "code": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/v2-0462"
+          }
+        ],
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "CE",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/CE"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "LDP.12"
+          }
+        ]
+      }
+    ]
+  }
+}

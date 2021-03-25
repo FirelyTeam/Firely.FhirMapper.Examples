@@ -1,0 +1,204 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "RQP_I04",
+  "url": "http://hl7.org/fhir/StructureDefinition/RQP_I04",
+  "name": "RQP_I04",
+  "status": "active",
+  "fhirVersion": "4.0.1",
+  "kind": "logical",
+  "abstract": false,
+  "type": "RQP_I04",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Element",
+  "derivation": "specialization",
+  "differential": {
+    "element": [
+      {
+        "id": "RQP_I04",
+        "path": "RQP_I04",
+        "type": [
+          {
+            "code": "Element"
+          }
+        ],
+        "mapping": [
+          {
+            "id": "RQP_I04",
+            "identity": "v2",
+            "map": "RQP_I04"
+          }
+        ]
+      },
+      {
+        "id": "RQP_I04.MSH",
+        "path": "RQP_I04.MSH",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "MSH",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/MSH"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "MSH"
+          }
+        ]
+      },
+      {
+        "id": "RQP_I04.SFT",
+        "path": "RQP_I04.SFT",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "SFT",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/SFT"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "SFT"
+          }
+        ]
+      },
+      {
+        "id": "RQP_I04.PROVIDER",
+        "path": "RQP_I04.PROVIDER",
+        "min": 1,
+        "max": "*",
+        "type": [
+          {
+            "code": "BackboneElement"
+          }
+        ]
+      },
+      {
+        "id": "RQP_I04.PROVIDER.PRD",
+        "path": "RQP_I04.PROVIDER.PRD",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "PRD",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/PRD"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "PRD"
+          }
+        ]
+      },
+      {
+        "id": "RQP_I04.PROVIDER.CTD",
+        "path": "RQP_I04.PROVIDER.CTD",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "CTD",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/CTD"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "CTD"
+          }
+        ]
+      },
+      {
+        "id": "RQP_I04.PID",
+        "path": "RQP_I04.PID",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "PID",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/PID"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "PID"
+          }
+        ]
+      },
+      {
+        "id": "RQP_I04.NK1",
+        "path": "RQP_I04.NK1",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "NK1",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/NK1"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "NK1"
+          }
+        ]
+      },
+      {
+        "id": "RQP_I04.GT1",
+        "path": "RQP_I04.GT1",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "GT1",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/GT1"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "GT1"
+          }
+        ]
+      },
+      {
+        "id": "RQP_I04.NTE",
+        "path": "RQP_I04.NTE",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "NTE",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/NTE"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "NTE"
+          }
+        ]
+      }
+    ]
+  }
+}

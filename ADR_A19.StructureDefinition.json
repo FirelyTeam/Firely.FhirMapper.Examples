@@ -1,0 +1,686 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "ADR_A19",
+  "url": "http://hl7.org/fhir/StructureDefinition/ADR_A19",
+  "name": "ADR_A19",
+  "status": "active",
+  "fhirVersion": "4.0.1",
+  "kind": "logical",
+  "abstract": false,
+  "type": "ADR_A19",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Element",
+  "derivation": "specialization",
+  "differential": {
+    "element": [
+      {
+        "id": "ADR_A19",
+        "path": "ADR_A19",
+        "type": [
+          {
+            "code": "Element"
+          }
+        ],
+        "mapping": [
+          {
+            "id": "ADR_A19",
+            "identity": "v2",
+            "map": "ADR_A19"
+          }
+        ]
+      },
+      {
+        "id": "ADR_A19.MSH",
+        "path": "ADR_A19.MSH",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "MSH",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/MSH"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "MSH"
+          }
+        ]
+      },
+      {
+        "id": "ADR_A19.SFT",
+        "path": "ADR_A19.SFT",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "SFT",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/SFT"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "SFT"
+          }
+        ]
+      },
+      {
+        "id": "ADR_A19.MSA",
+        "path": "ADR_A19.MSA",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "MSA",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/MSA"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "MSA"
+          }
+        ]
+      },
+      {
+        "id": "ADR_A19.ERR",
+        "path": "ADR_A19.ERR",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "ERR",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/ERR"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "ERR"
+          }
+        ]
+      },
+      {
+        "id": "ADR_A19.QAK",
+        "path": "ADR_A19.QAK",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "QAK",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/QAK"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "QAK"
+          }
+        ]
+      },
+      {
+        "id": "ADR_A19.QRD",
+        "path": "ADR_A19.QRD",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "QRD",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/QRD"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "QRD"
+          }
+        ]
+      },
+      {
+        "id": "ADR_A19.QRF",
+        "path": "ADR_A19.QRF",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "QRF",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/QRF"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "QRF"
+          }
+        ]
+      },
+      {
+        "id": "ADR_A19.QUERY_RESPONSE",
+        "path": "ADR_A19.QUERY_RESPONSE",
+        "min": 1,
+        "max": "*",
+        "type": [
+          {
+            "code": "BackboneElement"
+          }
+        ]
+      },
+      {
+        "id": "ADR_A19.QUERY_RESPONSE.EVN",
+        "path": "ADR_A19.QUERY_RESPONSE.EVN",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "EVN",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/EVN"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "EVN"
+          }
+        ]
+      },
+      {
+        "id": "ADR_A19.QUERY_RESPONSE.PID",
+        "path": "ADR_A19.QUERY_RESPONSE.PID",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "PID",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/PID"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "PID"
+          }
+        ]
+      },
+      {
+        "id": "ADR_A19.QUERY_RESPONSE.PD1",
+        "path": "ADR_A19.QUERY_RESPONSE.PD1",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "PD1",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/PD1"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "PD1"
+          }
+        ]
+      },
+      {
+        "id": "ADR_A19.QUERY_RESPONSE.ROL",
+        "path": "ADR_A19.QUERY_RESPONSE.ROL",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "ROL",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/ROL"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "ROL"
+          }
+        ]
+      },
+      {
+        "id": "ADR_A19.QUERY_RESPONSE.NK1",
+        "path": "ADR_A19.QUERY_RESPONSE.NK1",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "NK1",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/NK1"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "NK1"
+          }
+        ]
+      },
+      {
+        "id": "ADR_A19.QUERY_RESPONSE.PV1",
+        "path": "ADR_A19.QUERY_RESPONSE.PV1",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "PV1",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/PV1"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "PV1"
+          }
+        ]
+      },
+      {
+        "id": "ADR_A19.QUERY_RESPONSE.PV2",
+        "path": "ADR_A19.QUERY_RESPONSE.PV2",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "PV2",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/PV2"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "PV2"
+          }
+        ]
+      },
+      {
+        "id": "ADR_A19.QUERY_RESPONSE.ROL2",
+        "path": "ADR_A19.QUERY_RESPONSE.ROL2",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "ROL2",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/ROL2"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "ROL2"
+          }
+        ]
+      },
+      {
+        "id": "ADR_A19.QUERY_RESPONSE.DB1",
+        "path": "ADR_A19.QUERY_RESPONSE.DB1",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "DB1",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/DB1"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "DB1"
+          }
+        ]
+      },
+      {
+        "id": "ADR_A19.QUERY_RESPONSE.OBX",
+        "path": "ADR_A19.QUERY_RESPONSE.OBX",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "OBX",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/OBX"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "OBX"
+          }
+        ]
+      },
+      {
+        "id": "ADR_A19.QUERY_RESPONSE.AL1",
+        "path": "ADR_A19.QUERY_RESPONSE.AL1",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "AL1",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/AL1"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "AL1"
+          }
+        ]
+      },
+      {
+        "id": "ADR_A19.QUERY_RESPONSE.DG1",
+        "path": "ADR_A19.QUERY_RESPONSE.DG1",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "DG1",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/DG1"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "DG1"
+          }
+        ]
+      },
+      {
+        "id": "ADR_A19.QUERY_RESPONSE.DRG",
+        "path": "ADR_A19.QUERY_RESPONSE.DRG",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "DRG",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/DRG"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "DRG"
+          }
+        ]
+      },
+      {
+        "id": "ADR_A19.QUERY_RESPONSE.PROCEDURE",
+        "path": "ADR_A19.QUERY_RESPONSE.PROCEDURE",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "BackboneElement"
+          }
+        ]
+      },
+      {
+        "id": "ADR_A19.QUERY_RESPONSE.PROCEDURE.PR1",
+        "path": "ADR_A19.QUERY_RESPONSE.PROCEDURE.PR1",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "PR1",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/PR1"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "PR1"
+          }
+        ]
+      },
+      {
+        "id": "ADR_A19.QUERY_RESPONSE.PROCEDURE.ROL",
+        "path": "ADR_A19.QUERY_RESPONSE.PROCEDURE.ROL",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "ROL",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/ROL"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "ROL"
+          }
+        ]
+      },
+      {
+        "id": "ADR_A19.QUERY_RESPONSE.GT1",
+        "path": "ADR_A19.QUERY_RESPONSE.GT1",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "GT1",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/GT1"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "GT1"
+          }
+        ]
+      },
+      {
+        "id": "ADR_A19.QUERY_RESPONSE.INSURANCE",
+        "path": "ADR_A19.QUERY_RESPONSE.INSURANCE",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "BackboneElement"
+          }
+        ]
+      },
+      {
+        "id": "ADR_A19.QUERY_RESPONSE.INSURANCE.IN1",
+        "path": "ADR_A19.QUERY_RESPONSE.INSURANCE.IN1",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "IN1",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/IN1"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "IN1"
+          }
+        ]
+      },
+      {
+        "id": "ADR_A19.QUERY_RESPONSE.INSURANCE.IN2",
+        "path": "ADR_A19.QUERY_RESPONSE.INSURANCE.IN2",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "IN2",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/IN2"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "IN2"
+          }
+        ]
+      },
+      {
+        "id": "ADR_A19.QUERY_RESPONSE.INSURANCE.IN3",
+        "path": "ADR_A19.QUERY_RESPONSE.INSURANCE.IN3",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "IN3",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/IN3"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "IN3"
+          }
+        ]
+      },
+      {
+        "id": "ADR_A19.QUERY_RESPONSE.INSURANCE.ROL",
+        "path": "ADR_A19.QUERY_RESPONSE.INSURANCE.ROL",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "ROL",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/ROL"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "ROL"
+          }
+        ]
+      },
+      {
+        "id": "ADR_A19.QUERY_RESPONSE.ACC",
+        "path": "ADR_A19.QUERY_RESPONSE.ACC",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "ACC",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/ACC"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "ACC"
+          }
+        ]
+      },
+      {
+        "id": "ADR_A19.QUERY_RESPONSE.UB1",
+        "path": "ADR_A19.QUERY_RESPONSE.UB1",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "UB1",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/UB1"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "UB1"
+          }
+        ]
+      },
+      {
+        "id": "ADR_A19.QUERY_RESPONSE.UB2",
+        "path": "ADR_A19.QUERY_RESPONSE.UB2",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "UB2",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/UB2"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "UB2"
+          }
+        ]
+      },
+      {
+        "id": "ADR_A19.DSC",
+        "path": "ADR_A19.DSC",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "DSC",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/DSC"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "DSC"
+          }
+        ]
+      }
+    ]
+  }
+}

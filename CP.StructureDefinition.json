@@ -1,0 +1,163 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "CP",
+  "url": "http://hl7.org/fhir/StructureDefinition/CP",
+  "name": "CP",
+  "status": "active",
+  "fhirVersion": "4.0.1",
+  "kind": "logical",
+  "abstract": false,
+  "type": "CP",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Element",
+  "derivation": "specialization",
+  "differential": {
+    "element": [
+      {
+        "id": "CP",
+        "path": "CP",
+        "type": [
+          {
+            "code": "Element"
+          }
+        ],
+        "mapping": [
+          {
+            "id": "CP",
+            "identity": "v2",
+            "map": "CP"
+          }
+        ]
+      },
+      {
+        "id": "CP.Price",
+        "path": "CP.Price",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "MO",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/MO"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "CP.1"
+          }
+        ]
+      },
+      {
+        "id": "CP.PriceType",
+        "path": "CP.PriceType",
+        "code": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/v2-0205"
+          }
+        ],
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "string",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/string"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "CP.2"
+          }
+        ]
+      },
+      {
+        "id": "CP.FromValue",
+        "path": "CP.FromValue",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "string",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/string"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "CP.3"
+          }
+        ]
+      },
+      {
+        "id": "CP.ToValue",
+        "path": "CP.ToValue",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "string",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/string"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "CP.4"
+          }
+        ]
+      },
+      {
+        "id": "CP.RangeUnits",
+        "path": "CP.RangeUnits",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "CE",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/CE"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "CP.5"
+          }
+        ]
+      },
+      {
+        "id": "CP.RangeType",
+        "path": "CP.RangeType",
+        "code": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/v2-0298"
+          }
+        ],
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "string",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/string"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "CP.6"
+          }
+        ]
+      }
+    ]
+  }
+}

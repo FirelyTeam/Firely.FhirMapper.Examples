@@ -1,0 +1,398 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "LA2",
+  "url": "http://hl7.org/fhir/StructureDefinition/LA2",
+  "name": "LA2",
+  "status": "active",
+  "fhirVersion": "4.0.1",
+  "kind": "logical",
+  "abstract": false,
+  "type": "LA2",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Element",
+  "derivation": "specialization",
+  "differential": {
+    "element": [
+      {
+        "id": "LA2",
+        "path": "LA2",
+        "type": [
+          {
+            "code": "Element"
+          }
+        ],
+        "mapping": [
+          {
+            "id": "LA2",
+            "identity": "v2",
+            "map": "LA2"
+          }
+        ]
+      },
+      {
+        "id": "LA2.PointofCare",
+        "path": "LA2.PointofCare",
+        "code": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/v2-0302"
+          }
+        ],
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "string",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/string"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "LA2.1"
+          }
+        ]
+      },
+      {
+        "id": "LA2.Room",
+        "path": "LA2.Room",
+        "code": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/v2-0303"
+          }
+        ],
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "string",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/string"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "LA2.2"
+          }
+        ]
+      },
+      {
+        "id": "LA2.Bed",
+        "path": "LA2.Bed",
+        "code": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/v2-0304"
+          }
+        ],
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "string",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/string"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "LA2.3"
+          }
+        ]
+      },
+      {
+        "id": "LA2.Facility",
+        "path": "LA2.Facility",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "HD",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/HD"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "LA2.4"
+          }
+        ]
+      },
+      {
+        "id": "LA2.LocationStatus",
+        "path": "LA2.LocationStatus",
+        "code": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/v2-0306"
+          }
+        ],
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "string",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/string"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "LA2.5"
+          }
+        ]
+      },
+      {
+        "id": "LA2.PatientLocationType",
+        "path": "LA2.PatientLocationType",
+        "code": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/v2-0305"
+          }
+        ],
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "string",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/string"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "LA2.6"
+          }
+        ]
+      },
+      {
+        "id": "LA2.Building",
+        "path": "LA2.Building",
+        "code": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/v2-0307"
+          }
+        ],
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "string",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/string"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "LA2.7"
+          }
+        ]
+      },
+      {
+        "id": "LA2.Floor",
+        "path": "LA2.Floor",
+        "code": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/v2-0308"
+          }
+        ],
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "string",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/string"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "LA2.8"
+          }
+        ]
+      },
+      {
+        "id": "LA2.StreetAddress",
+        "path": "LA2.StreetAddress",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "string",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/string"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "LA2.9"
+          }
+        ]
+      },
+      {
+        "id": "LA2.OtherDesignation",
+        "path": "LA2.OtherDesignation",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "string",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/string"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "LA2.10"
+          }
+        ]
+      },
+      {
+        "id": "LA2.City",
+        "path": "LA2.City",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "string",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/string"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "LA2.11"
+          }
+        ]
+      },
+      {
+        "id": "LA2.StateorProvince",
+        "path": "LA2.StateorProvince",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "string",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/string"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "LA2.12"
+          }
+        ]
+      },
+      {
+        "id": "LA2.ZiporPostalCode",
+        "path": "LA2.ZiporPostalCode",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "string",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/string"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "LA2.13"
+          }
+        ]
+      },
+      {
+        "id": "LA2.Country",
+        "path": "LA2.Country",
+        "code": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/v2-0399"
+          }
+        ],
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "string",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/string"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "LA2.14"
+          }
+        ]
+      },
+      {
+        "id": "LA2.AddressType",
+        "path": "LA2.AddressType",
+        "code": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/v2-0190"
+          }
+        ],
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "string",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/string"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "LA2.15"
+          }
+        ]
+      },
+      {
+        "id": "LA2.OtherGeographicDesignation",
+        "path": "LA2.OtherGeographicDesignation",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "string",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/string"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "LA2.16"
+          }
+        ]
+      }
+    ]
+  }
+}

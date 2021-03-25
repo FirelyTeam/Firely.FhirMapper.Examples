@@ -1,0 +1,283 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "RF1",
+  "url": "http://hl7.org/fhir/StructureDefinition/RF1",
+  "name": "RF1",
+  "status": "active",
+  "fhirVersion": "4.0.1",
+  "kind": "logical",
+  "abstract": false,
+  "type": "RF1",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Element",
+  "derivation": "specialization",
+  "differential": {
+    "element": [
+      {
+        "id": "RF1",
+        "path": "RF1",
+        "type": [
+          {
+            "code": "Element"
+          }
+        ],
+        "mapping": [
+          {
+            "id": "RF1",
+            "identity": "v2",
+            "map": "RF1"
+          }
+        ]
+      },
+      {
+        "id": "RF1.ReferralStatus",
+        "path": "RF1.ReferralStatus",
+        "code": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/v2-0283"
+          }
+        ],
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "CE",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/CE"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "RF1.1"
+          }
+        ]
+      },
+      {
+        "id": "RF1.ReferralPriority",
+        "path": "RF1.ReferralPriority",
+        "code": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/v2-0280"
+          }
+        ],
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "CE",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/CE"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "RF1.2"
+          }
+        ]
+      },
+      {
+        "id": "RF1.ReferralType",
+        "path": "RF1.ReferralType",
+        "code": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/v2-0281"
+          }
+        ],
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "CE",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/CE"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "RF1.3"
+          }
+        ]
+      },
+      {
+        "id": "RF1.ReferralDisposition",
+        "path": "RF1.ReferralDisposition",
+        "code": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/v2-0282"
+          }
+        ],
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "CE",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/CE"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "RF1.4"
+          }
+        ]
+      },
+      {
+        "id": "RF1.ReferralCategory",
+        "path": "RF1.ReferralCategory",
+        "code": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/v2-0284"
+          }
+        ],
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "CE",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/CE"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "RF1.5"
+          }
+        ]
+      },
+      {
+        "id": "RF1.OriginatingReferralIdentifier",
+        "path": "RF1.OriginatingReferralIdentifier",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "EI",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/EI"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "RF1.6"
+          }
+        ]
+      },
+      {
+        "id": "RF1.EffectiveDate",
+        "path": "RF1.EffectiveDate",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "TS",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/TS"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "RF1.7"
+          }
+        ]
+      },
+      {
+        "id": "RF1.ExpirationDate",
+        "path": "RF1.ExpirationDate",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "TS",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/TS"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "RF1.8"
+          }
+        ]
+      },
+      {
+        "id": "RF1.ProcessDate",
+        "path": "RF1.ProcessDate",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "TS",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/TS"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "RF1.9"
+          }
+        ]
+      },
+      {
+        "id": "RF1.ReferralReason",
+        "path": "RF1.ReferralReason",
+        "code": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/v2-0336"
+          }
+        ],
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "CE",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/CE"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "RF1.10"
+          }
+        ]
+      },
+      {
+        "id": "RF1.ExternalReferralIdentifier",
+        "path": "RF1.ExternalReferralIdentifier",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "EI",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/EI"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "RF1.11"
+          }
+        ]
+      }
+    ]
+  }
+}

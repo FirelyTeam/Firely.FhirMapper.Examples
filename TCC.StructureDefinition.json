@@ -1,0 +1,333 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "TCC",
+  "url": "http://hl7.org/fhir/StructureDefinition/TCC",
+  "name": "TCC",
+  "status": "active",
+  "fhirVersion": "4.0.1",
+  "kind": "logical",
+  "abstract": false,
+  "type": "TCC",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Element",
+  "derivation": "specialization",
+  "differential": {
+    "element": [
+      {
+        "id": "TCC",
+        "path": "TCC",
+        "type": [
+          {
+            "code": "Element"
+          }
+        ],
+        "mapping": [
+          {
+            "id": "TCC",
+            "identity": "v2",
+            "map": "TCC"
+          }
+        ]
+      },
+      {
+        "id": "TCC.UniversalServiceIdentifier",
+        "path": "TCC.UniversalServiceIdentifier",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "CE",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/CE"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "TCC.1"
+          }
+        ]
+      },
+      {
+        "id": "TCC.TestApplicationIdentifier",
+        "path": "TCC.TestApplicationIdentifier",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "EI",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/EI"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "TCC.2"
+          }
+        ]
+      },
+      {
+        "id": "TCC.SpecimenSource",
+        "path": "TCC.SpecimenSource",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "SPS",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/SPS"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "TCC.3"
+          }
+        ]
+      },
+      {
+        "id": "TCC.Auto-DilutionFactorDefault",
+        "path": "TCC.Auto-DilutionFactorDefault",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "SN",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/SN"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "TCC.4"
+          }
+        ]
+      },
+      {
+        "id": "TCC.RerunDilutionFactorDefault",
+        "path": "TCC.RerunDilutionFactorDefault",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "SN",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/SN"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "TCC.5"
+          }
+        ]
+      },
+      {
+        "id": "TCC.Pre-DilutionFactorDefault",
+        "path": "TCC.Pre-DilutionFactorDefault",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "SN",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/SN"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "TCC.6"
+          }
+        ]
+      },
+      {
+        "id": "TCC.EndogenousContentofPre-DilutionDiluent",
+        "path": "TCC.EndogenousContentofPre-DilutionDiluent",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "SN",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/SN"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "TCC.7"
+          }
+        ]
+      },
+      {
+        "id": "TCC.InventoryLimitsWarningLevel",
+        "path": "TCC.InventoryLimitsWarningLevel",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "string",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/string"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "TCC.8"
+          }
+        ]
+      },
+      {
+        "id": "TCC.AutomaticRerunAllowed",
+        "path": "TCC.AutomaticRerunAllowed",
+        "code": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/v2-0136"
+          }
+        ],
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "string",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/string"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "TCC.9"
+          }
+        ]
+      },
+      {
+        "id": "TCC.AutomaticRepeatAllowed",
+        "path": "TCC.AutomaticRepeatAllowed",
+        "code": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/v2-0136"
+          }
+        ],
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "string",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/string"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "TCC.10"
+          }
+        ]
+      },
+      {
+        "id": "TCC.AutomaticReflexAllowed",
+        "path": "TCC.AutomaticReflexAllowed",
+        "code": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/v2-0136"
+          }
+        ],
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "string",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/string"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "TCC.11"
+          }
+        ]
+      },
+      {
+        "id": "TCC.EquipmentDynamicRange",
+        "path": "TCC.EquipmentDynamicRange",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "SN",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/SN"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "TCC.12"
+          }
+        ]
+      },
+      {
+        "id": "TCC.Units",
+        "path": "TCC.Units",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "CE",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/CE"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "TCC.13"
+          }
+        ]
+      },
+      {
+        "id": "TCC.ProcessingType",
+        "path": "TCC.ProcessingType",
+        "code": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/v2-0388"
+          }
+        ],
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "CE",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/CE"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "TCC.14"
+          }
+        ]
+      }
+    ]
+  }
+}

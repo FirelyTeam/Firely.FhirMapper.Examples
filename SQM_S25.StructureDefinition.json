@@ -1,0 +1,419 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "SQM_S25",
+  "url": "http://hl7.org/fhir/StructureDefinition/SQM_S25",
+  "name": "SQM_S25",
+  "status": "active",
+  "fhirVersion": "4.0.1",
+  "kind": "logical",
+  "abstract": false,
+  "type": "SQM_S25",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Element",
+  "derivation": "specialization",
+  "differential": {
+    "element": [
+      {
+        "id": "SQM_S25",
+        "path": "SQM_S25",
+        "type": [
+          {
+            "code": "Element"
+          }
+        ],
+        "mapping": [
+          {
+            "id": "SQM_S25",
+            "identity": "v2",
+            "map": "SQM_S25"
+          }
+        ]
+      },
+      {
+        "id": "SQM_S25.MSH",
+        "path": "SQM_S25.MSH",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "MSH",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/MSH"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "MSH"
+          }
+        ]
+      },
+      {
+        "id": "SQM_S25.QRD",
+        "path": "SQM_S25.QRD",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "QRD",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/QRD"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "QRD"
+          }
+        ]
+      },
+      {
+        "id": "SQM_S25.QRF",
+        "path": "SQM_S25.QRF",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "QRF",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/QRF"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "QRF"
+          }
+        ]
+      },
+      {
+        "id": "SQM_S25.REQUEST",
+        "path": "SQM_S25.REQUEST",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "BackboneElement"
+          }
+        ]
+      },
+      {
+        "id": "SQM_S25.REQUEST.ARQ",
+        "path": "SQM_S25.REQUEST.ARQ",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "ARQ",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/ARQ"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "ARQ"
+          }
+        ]
+      },
+      {
+        "id": "SQM_S25.REQUEST.APR",
+        "path": "SQM_S25.REQUEST.APR",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "APR",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/APR"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "APR"
+          }
+        ]
+      },
+      {
+        "id": "SQM_S25.REQUEST.PID",
+        "path": "SQM_S25.REQUEST.PID",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "PID",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/PID"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "PID"
+          }
+        ]
+      },
+      {
+        "id": "SQM_S25.REQUEST.RESOURCES",
+        "path": "SQM_S25.REQUEST.RESOURCES",
+        "min": 1,
+        "max": "*",
+        "type": [
+          {
+            "code": "BackboneElement"
+          }
+        ]
+      },
+      {
+        "id": "SQM_S25.REQUEST.RESOURCES.RGS",
+        "path": "SQM_S25.REQUEST.RESOURCES.RGS",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "RGS",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/RGS"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "RGS"
+          }
+        ]
+      },
+      {
+        "id": "SQM_S25.REQUEST.RESOURCES.SERVICE",
+        "path": "SQM_S25.REQUEST.RESOURCES.SERVICE",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "BackboneElement"
+          }
+        ]
+      },
+      {
+        "id": "SQM_S25.REQUEST.RESOURCES.SERVICE.AIS",
+        "path": "SQM_S25.REQUEST.RESOURCES.SERVICE.AIS",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "AIS",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/AIS"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "AIS"
+          }
+        ]
+      },
+      {
+        "id": "SQM_S25.REQUEST.RESOURCES.SERVICE.APR",
+        "path": "SQM_S25.REQUEST.RESOURCES.SERVICE.APR",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "APR",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/APR"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "APR"
+          }
+        ]
+      },
+      {
+        "id": "SQM_S25.REQUEST.RESOURCES.GENERAL_RESOURCE",
+        "path": "SQM_S25.REQUEST.RESOURCES.GENERAL_RESOURCE",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "BackboneElement"
+          }
+        ]
+      },
+      {
+        "id": "SQM_S25.REQUEST.RESOURCES.GENERAL_RESOURCE.AIG",
+        "path": "SQM_S25.REQUEST.RESOURCES.GENERAL_RESOURCE.AIG",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "AIG",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/AIG"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "AIG"
+          }
+        ]
+      },
+      {
+        "id": "SQM_S25.REQUEST.RESOURCES.GENERAL_RESOURCE.APR",
+        "path": "SQM_S25.REQUEST.RESOURCES.GENERAL_RESOURCE.APR",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "APR",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/APR"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "APR"
+          }
+        ]
+      },
+      {
+        "id": "SQM_S25.REQUEST.RESOURCES.PERSONNEL_RESOURCE",
+        "path": "SQM_S25.REQUEST.RESOURCES.PERSONNEL_RESOURCE",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "BackboneElement"
+          }
+        ]
+      },
+      {
+        "id": "SQM_S25.REQUEST.RESOURCES.PERSONNEL_RESOURCE.AIP",
+        "path": "SQM_S25.REQUEST.RESOURCES.PERSONNEL_RESOURCE.AIP",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "AIP",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/AIP"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "AIP"
+          }
+        ]
+      },
+      {
+        "id": "SQM_S25.REQUEST.RESOURCES.PERSONNEL_RESOURCE.APR",
+        "path": "SQM_S25.REQUEST.RESOURCES.PERSONNEL_RESOURCE.APR",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "APR",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/APR"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "APR"
+          }
+        ]
+      },
+      {
+        "id": "SQM_S25.REQUEST.RESOURCES.LOCATION_RESOURCE",
+        "path": "SQM_S25.REQUEST.RESOURCES.LOCATION_RESOURCE",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "BackboneElement"
+          }
+        ]
+      },
+      {
+        "id": "SQM_S25.REQUEST.RESOURCES.LOCATION_RESOURCE.AIL",
+        "path": "SQM_S25.REQUEST.RESOURCES.LOCATION_RESOURCE.AIL",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "AIL",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/AIL"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "AIL"
+          }
+        ]
+      },
+      {
+        "id": "SQM_S25.REQUEST.RESOURCES.LOCATION_RESOURCE.APR",
+        "path": "SQM_S25.REQUEST.RESOURCES.LOCATION_RESOURCE.APR",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "APR",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/APR"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "APR"
+          }
+        ]
+      },
+      {
+        "id": "SQM_S25.DSC",
+        "path": "SQM_S25.DSC",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "DSC",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/DSC"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "DSC"
+          }
+        ]
+      }
+    ]
+  }
+}

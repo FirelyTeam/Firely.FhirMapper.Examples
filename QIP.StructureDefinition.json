@@ -1,0 +1,73 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "QIP",
+  "url": "http://hl7.org/fhir/StructureDefinition/QIP",
+  "name": "QIP",
+  "status": "active",
+  "fhirVersion": "4.0.1",
+  "kind": "logical",
+  "abstract": false,
+  "type": "QIP",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Element",
+  "derivation": "specialization",
+  "differential": {
+    "element": [
+      {
+        "id": "QIP",
+        "path": "QIP",
+        "type": [
+          {
+            "code": "Element"
+          }
+        ],
+        "mapping": [
+          {
+            "id": "QIP",
+            "identity": "v2",
+            "map": "QIP"
+          }
+        ]
+      },
+      {
+        "id": "QIP.SegmentFieldName",
+        "path": "QIP.SegmentFieldName",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "string",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/string"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "QIP.1"
+          }
+        ]
+      },
+      {
+        "id": "QIP.Values",
+        "path": "QIP.Values",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "string",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/string"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "QIP.2"
+          }
+        ]
+      }
+    ]
+  }
+}

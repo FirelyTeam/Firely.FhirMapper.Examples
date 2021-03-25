@@ -1,0 +1,165 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "MFA",
+  "url": "http://hl7.org/fhir/StructureDefinition/MFA",
+  "name": "MFA",
+  "status": "active",
+  "fhirVersion": "4.0.1",
+  "kind": "logical",
+  "abstract": false,
+  "type": "MFA",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Element",
+  "derivation": "specialization",
+  "differential": {
+    "element": [
+      {
+        "id": "MFA",
+        "path": "MFA",
+        "type": [
+          {
+            "code": "Element"
+          }
+        ],
+        "mapping": [
+          {
+            "id": "MFA",
+            "identity": "v2",
+            "map": "MFA"
+          }
+        ]
+      },
+      {
+        "id": "MFA.Record-LevelEventCode",
+        "path": "MFA.Record-LevelEventCode",
+        "code": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/v2-0180"
+          }
+        ],
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "string",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/string"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "MFA.1"
+          }
+        ]
+      },
+      {
+        "id": "MFA.MFNControlID",
+        "path": "MFA.MFNControlID",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "string",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/string"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "MFA.2"
+          }
+        ]
+      },
+      {
+        "id": "MFA.EventCompletionDate/Time",
+        "path": "MFA.EventCompletionDate/Time",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "TS",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/TS"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "MFA.3"
+          }
+        ]
+      },
+      {
+        "id": "MFA.MFNRecordLevelErrorReturn",
+        "path": "MFA.MFNRecordLevelErrorReturn",
+        "code": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/v2-0181"
+          }
+        ],
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "CE",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/CE"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "MFA.4"
+          }
+        ]
+      },
+      {
+        "id": "MFA.PrimaryKeyValue-MFA",
+        "path": "MFA.PrimaryKeyValue-MFA",
+        "code": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/v2-9999"
+          }
+        ],
+        "min": 1,
+        "max": "*",
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "MFA.5"
+          }
+        ]
+      },
+      {
+        "id": "MFA.PrimaryKeyValueType-MFA",
+        "path": "MFA.PrimaryKeyValueType-MFA",
+        "code": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/v2-0355"
+          }
+        ],
+        "min": 1,
+        "max": "*",
+        "type": [
+          {
+            "code": "string",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/string"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "MFA.6"
+          }
+        ]
+      }
+    ]
+  }
+}

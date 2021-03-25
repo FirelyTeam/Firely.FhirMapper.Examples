@@ -1,0 +1,73 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "CQ",
+  "url": "http://hl7.org/fhir/StructureDefinition/CQ",
+  "name": "CQ",
+  "status": "active",
+  "fhirVersion": "4.0.1",
+  "kind": "logical",
+  "abstract": false,
+  "type": "CQ",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Element",
+  "derivation": "specialization",
+  "differential": {
+    "element": [
+      {
+        "id": "CQ",
+        "path": "CQ",
+        "type": [
+          {
+            "code": "Element"
+          }
+        ],
+        "mapping": [
+          {
+            "id": "CQ",
+            "identity": "v2",
+            "map": "CQ"
+          }
+        ]
+      },
+      {
+        "id": "CQ.Quantity",
+        "path": "CQ.Quantity",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "string",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/string"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "CQ.1"
+          }
+        ]
+      },
+      {
+        "id": "CQ.Units",
+        "path": "CQ.Units",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "CE",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/CE"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "CQ.2"
+          }
+        ]
+      }
+    ]
+  }
+}

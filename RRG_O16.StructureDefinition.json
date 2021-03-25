@@ -1,0 +1,399 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "RRG_O16",
+  "url": "http://hl7.org/fhir/StructureDefinition/RRG_O16",
+  "name": "RRG_O16",
+  "status": "active",
+  "fhirVersion": "4.0.1",
+  "kind": "logical",
+  "abstract": false,
+  "type": "RRG_O16",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Element",
+  "derivation": "specialization",
+  "differential": {
+    "element": [
+      {
+        "id": "RRG_O16",
+        "path": "RRG_O16",
+        "type": [
+          {
+            "code": "Element"
+          }
+        ],
+        "mapping": [
+          {
+            "id": "RRG_O16",
+            "identity": "v2",
+            "map": "RRG_O16"
+          }
+        ]
+      },
+      {
+        "id": "RRG_O16.MSH",
+        "path": "RRG_O16.MSH",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "MSH",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/MSH"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "MSH"
+          }
+        ]
+      },
+      {
+        "id": "RRG_O16.MSA",
+        "path": "RRG_O16.MSA",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "MSA",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/MSA"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "MSA"
+          }
+        ]
+      },
+      {
+        "id": "RRG_O16.ERR",
+        "path": "RRG_O16.ERR",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "ERR",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/ERR"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "ERR"
+          }
+        ]
+      },
+      {
+        "id": "RRG_O16.SFT",
+        "path": "RRG_O16.SFT",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "SFT",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/SFT"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "SFT"
+          }
+        ]
+      },
+      {
+        "id": "RRG_O16.NTE",
+        "path": "RRG_O16.NTE",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "NTE",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/NTE"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "NTE"
+          }
+        ]
+      },
+      {
+        "id": "RRG_O16.RESPONSE",
+        "path": "RRG_O16.RESPONSE",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "BackboneElement"
+          }
+        ]
+      },
+      {
+        "id": "RRG_O16.RESPONSE.PATIENT",
+        "path": "RRG_O16.RESPONSE.PATIENT",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "BackboneElement"
+          }
+        ]
+      },
+      {
+        "id": "RRG_O16.RESPONSE.PATIENT.PID",
+        "path": "RRG_O16.RESPONSE.PATIENT.PID",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "PID",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/PID"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "PID"
+          }
+        ]
+      },
+      {
+        "id": "RRG_O16.RESPONSE.PATIENT.NTE",
+        "path": "RRG_O16.RESPONSE.PATIENT.NTE",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "NTE",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/NTE"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "NTE"
+          }
+        ]
+      },
+      {
+        "id": "RRG_O16.RESPONSE.ORDER",
+        "path": "RRG_O16.RESPONSE.ORDER",
+        "min": 1,
+        "max": "*",
+        "type": [
+          {
+            "code": "BackboneElement"
+          }
+        ]
+      },
+      {
+        "id": "RRG_O16.RESPONSE.ORDER.ORC",
+        "path": "RRG_O16.RESPONSE.ORDER.ORC",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "ORC",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/ORC"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "ORC"
+          }
+        ]
+      },
+      {
+        "id": "RRG_O16.RESPONSE.ORDER.TIMING",
+        "path": "RRG_O16.RESPONSE.ORDER.TIMING",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "BackboneElement"
+          }
+        ]
+      },
+      {
+        "id": "RRG_O16.RESPONSE.ORDER.TIMING.TQ1",
+        "path": "RRG_O16.RESPONSE.ORDER.TIMING.TQ1",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "TQ1",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/TQ1"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "TQ1"
+          }
+        ]
+      },
+      {
+        "id": "RRG_O16.RESPONSE.ORDER.TIMING.TQ2",
+        "path": "RRG_O16.RESPONSE.ORDER.TIMING.TQ2",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "TQ2",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/TQ2"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "TQ2"
+          }
+        ]
+      },
+      {
+        "id": "RRG_O16.RESPONSE.ORDER.GIVE",
+        "path": "RRG_O16.RESPONSE.ORDER.GIVE",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "BackboneElement"
+          }
+        ]
+      },
+      {
+        "id": "RRG_O16.RESPONSE.ORDER.GIVE.RXG",
+        "path": "RRG_O16.RESPONSE.ORDER.GIVE.RXG",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "RXG",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/RXG"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "RXG"
+          }
+        ]
+      },
+      {
+        "id": "RRG_O16.RESPONSE.ORDER.GIVE.TIMING_GIVE",
+        "path": "RRG_O16.RESPONSE.ORDER.GIVE.TIMING_GIVE",
+        "min": 1,
+        "max": "*",
+        "type": [
+          {
+            "code": "BackboneElement"
+          }
+        ]
+      },
+      {
+        "id": "RRG_O16.RESPONSE.ORDER.GIVE.TIMING_GIVE.TQ1",
+        "path": "RRG_O16.RESPONSE.ORDER.GIVE.TIMING_GIVE.TQ1",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "TQ1",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/TQ1"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "TQ1"
+          }
+        ]
+      },
+      {
+        "id": "RRG_O16.RESPONSE.ORDER.GIVE.TIMING_GIVE.TQ2",
+        "path": "RRG_O16.RESPONSE.ORDER.GIVE.TIMING_GIVE.TQ2",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "TQ2",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/TQ2"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "TQ2"
+          }
+        ]
+      },
+      {
+        "id": "RRG_O16.RESPONSE.ORDER.GIVE.RXR",
+        "path": "RRG_O16.RESPONSE.ORDER.GIVE.RXR",
+        "min": 1,
+        "max": "*",
+        "type": [
+          {
+            "code": "RXR",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/RXR"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "RXR"
+          }
+        ]
+      },
+      {
+        "id": "RRG_O16.RESPONSE.ORDER.GIVE.RXC",
+        "path": "RRG_O16.RESPONSE.ORDER.GIVE.RXC",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "RXC",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/RXC"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "RXC"
+          }
+        ]
+      }
+    ]
+  }
+}

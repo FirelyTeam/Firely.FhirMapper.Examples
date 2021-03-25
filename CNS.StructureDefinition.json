@@ -1,0 +1,153 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "CNS",
+  "url": "http://hl7.org/fhir/StructureDefinition/CNS",
+  "name": "CNS",
+  "status": "active",
+  "fhirVersion": "4.0.1",
+  "kind": "logical",
+  "abstract": false,
+  "type": "CNS",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Element",
+  "derivation": "specialization",
+  "differential": {
+    "element": [
+      {
+        "id": "CNS",
+        "path": "CNS",
+        "type": [
+          {
+            "code": "Element"
+          }
+        ],
+        "mapping": [
+          {
+            "id": "CNS",
+            "identity": "v2",
+            "map": "CNS"
+          }
+        ]
+      },
+      {
+        "id": "CNS.StartingNotificationReferenceNumber",
+        "path": "CNS.StartingNotificationReferenceNumber",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "string",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/string"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "CNS.1"
+          }
+        ]
+      },
+      {
+        "id": "CNS.EndingNotificationReferenceNumber",
+        "path": "CNS.EndingNotificationReferenceNumber",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "string",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/string"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "CNS.2"
+          }
+        ]
+      },
+      {
+        "id": "CNS.StartingNotificationDate/Time",
+        "path": "CNS.StartingNotificationDate/Time",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "TS",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/TS"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "CNS.3"
+          }
+        ]
+      },
+      {
+        "id": "CNS.EndingNotificationDate/Time",
+        "path": "CNS.EndingNotificationDate/Time",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "TS",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/TS"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "CNS.4"
+          }
+        ]
+      },
+      {
+        "id": "CNS.StartingNotificationCode",
+        "path": "CNS.StartingNotificationCode",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "CE",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/CE"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "CNS.5"
+          }
+        ]
+      },
+      {
+        "id": "CNS.EndingNotificationCode",
+        "path": "CNS.EndingNotificationCode",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "CE",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/CE"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "CNS.6"
+          }
+        ]
+      }
+    ]
+  }
+}

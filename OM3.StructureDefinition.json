@@ -1,0 +1,203 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "OM3",
+  "url": "http://hl7.org/fhir/StructureDefinition/OM3",
+  "name": "OM3",
+  "status": "active",
+  "fhirVersion": "4.0.1",
+  "kind": "logical",
+  "abstract": false,
+  "type": "OM3",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Element",
+  "derivation": "specialization",
+  "differential": {
+    "element": [
+      {
+        "id": "OM3",
+        "path": "OM3",
+        "type": [
+          {
+            "code": "Element"
+          }
+        ],
+        "mapping": [
+          {
+            "id": "OM3",
+            "identity": "v2",
+            "map": "OM3"
+          }
+        ]
+      },
+      {
+        "id": "OM3.SequenceNumber-Test/ObservationMasterFile",
+        "path": "OM3.SequenceNumber-Test/ObservationMasterFile",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "string",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/string"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "OM3.1"
+          }
+        ]
+      },
+      {
+        "id": "OM3.PreferredCodingSystem",
+        "path": "OM3.PreferredCodingSystem",
+        "code": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/v2-9999"
+          }
+        ],
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "CE",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/CE"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "OM3.2"
+          }
+        ]
+      },
+      {
+        "id": "OM3.ValidCoded\"Answers\"",
+        "path": "OM3.ValidCoded\"Answers\"",
+        "code": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/v2-9999"
+          }
+        ],
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "CE",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/CE"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "OM3.3"
+          }
+        ]
+      },
+      {
+        "id": "OM3.NormalText/CodesforCategoricalObservations",
+        "path": "OM3.NormalText/CodesforCategoricalObservations",
+        "code": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/v2-9999"
+          }
+        ],
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "CE",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/CE"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "OM3.4"
+          }
+        ]
+      },
+      {
+        "id": "OM3.AbnormalText/CodesforCategoricalObservations",
+        "path": "OM3.AbnormalText/CodesforCategoricalObservations",
+        "code": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/v2-9999"
+          }
+        ],
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "CE",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/CE"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "OM3.5"
+          }
+        ]
+      },
+      {
+        "id": "OM3.CriticalText/CodesforCategoricalObservations",
+        "path": "OM3.CriticalText/CodesforCategoricalObservations",
+        "code": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/v2-9999"
+          }
+        ],
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "CE",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/CE"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "OM3.6"
+          }
+        ]
+      },
+      {
+        "id": "OM3.ValueType",
+        "path": "OM3.ValueType",
+        "code": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/v2-0125"
+          }
+        ],
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "string",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/string"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "OM3.7"
+          }
+        ]
+      }
+    ]
+  }
+}

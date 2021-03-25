@@ -1,0 +1,868 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "PTR_PCF",
+  "url": "http://hl7.org/fhir/StructureDefinition/PTR_PCF",
+  "name": "PTR_PCF",
+  "status": "active",
+  "fhirVersion": "4.0.1",
+  "kind": "logical",
+  "abstract": false,
+  "type": "PTR_PCF",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Element",
+  "derivation": "specialization",
+  "differential": {
+    "element": [
+      {
+        "id": "PTR_PCF",
+        "path": "PTR_PCF",
+        "type": [
+          {
+            "code": "Element"
+          }
+        ],
+        "mapping": [
+          {
+            "id": "PTR_PCF",
+            "identity": "v2",
+            "map": "PTR_PCF"
+          }
+        ]
+      },
+      {
+        "id": "PTR_PCF.MSH",
+        "path": "PTR_PCF.MSH",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "MSH",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/MSH"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "MSH"
+          }
+        ]
+      },
+      {
+        "id": "PTR_PCF.SFT",
+        "path": "PTR_PCF.SFT",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "SFT",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/SFT"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "SFT"
+          }
+        ]
+      },
+      {
+        "id": "PTR_PCF.MSA",
+        "path": "PTR_PCF.MSA",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "MSA",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/MSA"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "MSA"
+          }
+        ]
+      },
+      {
+        "id": "PTR_PCF.ERR",
+        "path": "PTR_PCF.ERR",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "ERR",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/ERR"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "ERR"
+          }
+        ]
+      },
+      {
+        "id": "PTR_PCF.QAK",
+        "path": "PTR_PCF.QAK",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "QAK",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/QAK"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "QAK"
+          }
+        ]
+      },
+      {
+        "id": "PTR_PCF.QRD",
+        "path": "PTR_PCF.QRD",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "QRD",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/QRD"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "QRD"
+          }
+        ]
+      },
+      {
+        "id": "PTR_PCF.PATIENT",
+        "path": "PTR_PCF.PATIENT",
+        "min": 1,
+        "max": "*",
+        "type": [
+          {
+            "code": "BackboneElement"
+          }
+        ]
+      },
+      {
+        "id": "PTR_PCF.PATIENT.PID",
+        "path": "PTR_PCF.PATIENT.PID",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "PID",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/PID"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "PID"
+          }
+        ]
+      },
+      {
+        "id": "PTR_PCF.PATIENT.PATIENT_VISIT",
+        "path": "PTR_PCF.PATIENT.PATIENT_VISIT",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "BackboneElement"
+          }
+        ]
+      },
+      {
+        "id": "PTR_PCF.PATIENT.PATIENT_VISIT.PV1",
+        "path": "PTR_PCF.PATIENT.PATIENT_VISIT.PV1",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "PV1",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/PV1"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "PV1"
+          }
+        ]
+      },
+      {
+        "id": "PTR_PCF.PATIENT.PATIENT_VISIT.PV2",
+        "path": "PTR_PCF.PATIENT.PATIENT_VISIT.PV2",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "PV2",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/PV2"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "PV2"
+          }
+        ]
+      },
+      {
+        "id": "PTR_PCF.PATIENT.PATHWAY",
+        "path": "PTR_PCF.PATIENT.PATHWAY",
+        "min": 1,
+        "max": "*",
+        "type": [
+          {
+            "code": "BackboneElement"
+          }
+        ]
+      },
+      {
+        "id": "PTR_PCF.PATIENT.PATHWAY.PTH",
+        "path": "PTR_PCF.PATIENT.PATHWAY.PTH",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "PTH",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/PTH"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "PTH"
+          }
+        ]
+      },
+      {
+        "id": "PTR_PCF.PATIENT.PATHWAY.NTE",
+        "path": "PTR_PCF.PATIENT.PATHWAY.NTE",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "NTE",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/NTE"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "NTE"
+          }
+        ]
+      },
+      {
+        "id": "PTR_PCF.PATIENT.PATHWAY.VAR",
+        "path": "PTR_PCF.PATIENT.PATHWAY.VAR",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "VAR",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/VAR"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "VAR"
+          }
+        ]
+      },
+      {
+        "id": "PTR_PCF.PATIENT.PATHWAY.PATHWAY_ROLE",
+        "path": "PTR_PCF.PATIENT.PATHWAY.PATHWAY_ROLE",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "BackboneElement"
+          }
+        ]
+      },
+      {
+        "id": "PTR_PCF.PATIENT.PATHWAY.PATHWAY_ROLE.ROL",
+        "path": "PTR_PCF.PATIENT.PATHWAY.PATHWAY_ROLE.ROL",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "ROL",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/ROL"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "ROL"
+          }
+        ]
+      },
+      {
+        "id": "PTR_PCF.PATIENT.PATHWAY.PATHWAY_ROLE.VAR",
+        "path": "PTR_PCF.PATIENT.PATHWAY.PATHWAY_ROLE.VAR",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "VAR",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/VAR"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "VAR"
+          }
+        ]
+      },
+      {
+        "id": "PTR_PCF.PATIENT.PATHWAY.PROBLEM",
+        "path": "PTR_PCF.PATIENT.PATHWAY.PROBLEM",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "BackboneElement"
+          }
+        ]
+      },
+      {
+        "id": "PTR_PCF.PATIENT.PATHWAY.PROBLEM.PRB",
+        "path": "PTR_PCF.PATIENT.PATHWAY.PROBLEM.PRB",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "PRB",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/PRB"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "PRB"
+          }
+        ]
+      },
+      {
+        "id": "PTR_PCF.PATIENT.PATHWAY.PROBLEM.NTE",
+        "path": "PTR_PCF.PATIENT.PATHWAY.PROBLEM.NTE",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "NTE",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/NTE"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "NTE"
+          }
+        ]
+      },
+      {
+        "id": "PTR_PCF.PATIENT.PATHWAY.PROBLEM.VAR",
+        "path": "PTR_PCF.PATIENT.PATHWAY.PROBLEM.VAR",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "VAR",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/VAR"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "VAR"
+          }
+        ]
+      },
+      {
+        "id": "PTR_PCF.PATIENT.PATHWAY.PROBLEM.PROBLEM_ROLE",
+        "path": "PTR_PCF.PATIENT.PATHWAY.PROBLEM.PROBLEM_ROLE",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "BackboneElement"
+          }
+        ]
+      },
+      {
+        "id": "PTR_PCF.PATIENT.PATHWAY.PROBLEM.PROBLEM_ROLE.ROL",
+        "path": "PTR_PCF.PATIENT.PATHWAY.PROBLEM.PROBLEM_ROLE.ROL",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "ROL",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/ROL"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "ROL"
+          }
+        ]
+      },
+      {
+        "id": "PTR_PCF.PATIENT.PATHWAY.PROBLEM.PROBLEM_ROLE.VAR",
+        "path": "PTR_PCF.PATIENT.PATHWAY.PROBLEM.PROBLEM_ROLE.VAR",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "VAR",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/VAR"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "VAR"
+          }
+        ]
+      },
+      {
+        "id": "PTR_PCF.PATIENT.PATHWAY.PROBLEM.PROBLEM_OBSERVATION",
+        "path": "PTR_PCF.PATIENT.PATHWAY.PROBLEM.PROBLEM_OBSERVATION",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "BackboneElement"
+          }
+        ]
+      },
+      {
+        "id": "PTR_PCF.PATIENT.PATHWAY.PROBLEM.PROBLEM_OBSERVATION.OBX",
+        "path": "PTR_PCF.PATIENT.PATHWAY.PROBLEM.PROBLEM_OBSERVATION.OBX",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "OBX",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/OBX"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "OBX"
+          }
+        ]
+      },
+      {
+        "id": "PTR_PCF.PATIENT.PATHWAY.PROBLEM.PROBLEM_OBSERVATION.NTE",
+        "path": "PTR_PCF.PATIENT.PATHWAY.PROBLEM.PROBLEM_OBSERVATION.NTE",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "NTE",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/NTE"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "NTE"
+          }
+        ]
+      },
+      {
+        "id": "PTR_PCF.PATIENT.PATHWAY.PROBLEM.GOAL",
+        "path": "PTR_PCF.PATIENT.PATHWAY.PROBLEM.GOAL",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "BackboneElement"
+          }
+        ]
+      },
+      {
+        "id": "PTR_PCF.PATIENT.PATHWAY.PROBLEM.GOAL.GOL",
+        "path": "PTR_PCF.PATIENT.PATHWAY.PROBLEM.GOAL.GOL",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "GOL",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/GOL"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "GOL"
+          }
+        ]
+      },
+      {
+        "id": "PTR_PCF.PATIENT.PATHWAY.PROBLEM.GOAL.NTE",
+        "path": "PTR_PCF.PATIENT.PATHWAY.PROBLEM.GOAL.NTE",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "NTE",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/NTE"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "NTE"
+          }
+        ]
+      },
+      {
+        "id": "PTR_PCF.PATIENT.PATHWAY.PROBLEM.GOAL.VAR",
+        "path": "PTR_PCF.PATIENT.PATHWAY.PROBLEM.GOAL.VAR",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "VAR",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/VAR"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "VAR"
+          }
+        ]
+      },
+      {
+        "id": "PTR_PCF.PATIENT.PATHWAY.PROBLEM.GOAL.GOAL_ROLE",
+        "path": "PTR_PCF.PATIENT.PATHWAY.PROBLEM.GOAL.GOAL_ROLE",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "BackboneElement"
+          }
+        ]
+      },
+      {
+        "id": "PTR_PCF.PATIENT.PATHWAY.PROBLEM.GOAL.GOAL_ROLE.ROL",
+        "path": "PTR_PCF.PATIENT.PATHWAY.PROBLEM.GOAL.GOAL_ROLE.ROL",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "ROL",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/ROL"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "ROL"
+          }
+        ]
+      },
+      {
+        "id": "PTR_PCF.PATIENT.PATHWAY.PROBLEM.GOAL.GOAL_ROLE.VAR",
+        "path": "PTR_PCF.PATIENT.PATHWAY.PROBLEM.GOAL.GOAL_ROLE.VAR",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "VAR",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/VAR"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "VAR"
+          }
+        ]
+      },
+      {
+        "id": "PTR_PCF.PATIENT.PATHWAY.PROBLEM.GOAL.GOAL_OBSERVATION",
+        "path": "PTR_PCF.PATIENT.PATHWAY.PROBLEM.GOAL.GOAL_OBSERVATION",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "BackboneElement"
+          }
+        ]
+      },
+      {
+        "id": "PTR_PCF.PATIENT.PATHWAY.PROBLEM.GOAL.GOAL_OBSERVATION.OBX",
+        "path": "PTR_PCF.PATIENT.PATHWAY.PROBLEM.GOAL.GOAL_OBSERVATION.OBX",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "OBX",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/OBX"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "OBX"
+          }
+        ]
+      },
+      {
+        "id": "PTR_PCF.PATIENT.PATHWAY.PROBLEM.GOAL.GOAL_OBSERVATION.NTE",
+        "path": "PTR_PCF.PATIENT.PATHWAY.PROBLEM.GOAL.GOAL_OBSERVATION.NTE",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "NTE",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/NTE"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "NTE"
+          }
+        ]
+      },
+      {
+        "id": "PTR_PCF.PATIENT.PATHWAY.PROBLEM.ORDER",
+        "path": "PTR_PCF.PATIENT.PATHWAY.PROBLEM.ORDER",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "BackboneElement"
+          }
+        ]
+      },
+      {
+        "id": "PTR_PCF.PATIENT.PATHWAY.PROBLEM.ORDER.ORC",
+        "path": "PTR_PCF.PATIENT.PATHWAY.PROBLEM.ORDER.ORC",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "ORC",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/ORC"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "ORC"
+          }
+        ]
+      },
+      {
+        "id": "PTR_PCF.PATIENT.PATHWAY.PROBLEM.ORDER.ORDER_DETAIL",
+        "path": "PTR_PCF.PATIENT.PATHWAY.PROBLEM.ORDER.ORDER_DETAIL",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "BackboneElement"
+          }
+        ]
+      },
+      {
+        "id": "PTR_PCF.PATIENT.PATHWAY.PROBLEM.ORDER.ORDER_DETAIL.PTR_PCF.CHOICE",
+        "path": "PTR_PCF.PATIENT.PATHWAY.PROBLEM.ORDER.ORDER_DETAIL.PTR_PCF.CHOICE",
+        "min": 1,
+        "max": "1",
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "PTR_PCF.CHOICE"
+          }
+        ]
+      },
+      {
+        "id": "PTR_PCF.PATIENT.PATHWAY.PROBLEM.ORDER.ORDER_DETAIL.NTE",
+        "path": "PTR_PCF.PATIENT.PATHWAY.PROBLEM.ORDER.ORDER_DETAIL.NTE",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "NTE",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/NTE"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "NTE"
+          }
+        ]
+      },
+      {
+        "id": "PTR_PCF.PATIENT.PATHWAY.PROBLEM.ORDER.ORDER_DETAIL.VAR",
+        "path": "PTR_PCF.PATIENT.PATHWAY.PROBLEM.ORDER.ORDER_DETAIL.VAR",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "VAR",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/VAR"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "VAR"
+          }
+        ]
+      },
+      {
+        "id": "PTR_PCF.PATIENT.PATHWAY.PROBLEM.ORDER.ORDER_DETAIL.ORDER_OBSERVATION",
+        "path": "PTR_PCF.PATIENT.PATHWAY.PROBLEM.ORDER.ORDER_DETAIL.ORDER_OBSERVATION",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "BackboneElement"
+          }
+        ]
+      },
+      {
+        "id": "PTR_PCF.PATIENT.PATHWAY.PROBLEM.ORDER.ORDER_DETAIL.ORDER_OBSERVATION.OBX",
+        "path": "PTR_PCF.PATIENT.PATHWAY.PROBLEM.ORDER.ORDER_DETAIL.ORDER_OBSERVATION.OBX",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "OBX",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/OBX"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "OBX"
+          }
+        ]
+      },
+      {
+        "id": "PTR_PCF.PATIENT.PATHWAY.PROBLEM.ORDER.ORDER_DETAIL.ORDER_OBSERVATION.NTE",
+        "path": "PTR_PCF.PATIENT.PATHWAY.PROBLEM.ORDER.ORDER_DETAIL.ORDER_OBSERVATION.NTE",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "NTE",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/NTE"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "NTE"
+          }
+        ]
+      },
+      {
+        "id": "PTR_PCF.PATIENT.PATHWAY.PROBLEM.ORDER.ORDER_DETAIL.ORDER_OBSERVATION.VAR",
+        "path": "PTR_PCF.PATIENT.PATHWAY.PROBLEM.ORDER.ORDER_DETAIL.ORDER_OBSERVATION.VAR",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "VAR",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/VAR"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "VAR"
+          }
+        ]
+      }
+    ]
+  }
+}

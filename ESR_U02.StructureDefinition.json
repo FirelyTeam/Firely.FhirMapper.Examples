@@ -1,0 +1,113 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "ESR_U02",
+  "url": "http://hl7.org/fhir/StructureDefinition/ESR_U02",
+  "name": "ESR_U02",
+  "status": "active",
+  "fhirVersion": "4.0.1",
+  "kind": "logical",
+  "abstract": false,
+  "type": "ESR_U02",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Element",
+  "derivation": "specialization",
+  "differential": {
+    "element": [
+      {
+        "id": "ESR_U02",
+        "path": "ESR_U02",
+        "type": [
+          {
+            "code": "Element"
+          }
+        ],
+        "mapping": [
+          {
+            "id": "ESR_U02",
+            "identity": "v2",
+            "map": "ESR_U02"
+          }
+        ]
+      },
+      {
+        "id": "ESR_U02.MSH",
+        "path": "ESR_U02.MSH",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "MSH",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/MSH"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "MSH"
+          }
+        ]
+      },
+      {
+        "id": "ESR_U02.SFT",
+        "path": "ESR_U02.SFT",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "SFT",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/SFT"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "SFT"
+          }
+        ]
+      },
+      {
+        "id": "ESR_U02.EQU",
+        "path": "ESR_U02.EQU",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "EQU",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/EQU"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "EQU"
+          }
+        ]
+      },
+      {
+        "id": "ESR_U02.ROL",
+        "path": "ESR_U02.ROL",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "ROL",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/ROL"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "ROL"
+          }
+        ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,184 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "ADT_A45",
+  "url": "http://hl7.org/fhir/StructureDefinition/ADT_A45",
+  "name": "ADT_A45",
+  "status": "active",
+  "fhirVersion": "4.0.1",
+  "kind": "logical",
+  "abstract": false,
+  "type": "ADT_A45",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Element",
+  "derivation": "specialization",
+  "differential": {
+    "element": [
+      {
+        "id": "ADT_A45",
+        "path": "ADT_A45",
+        "type": [
+          {
+            "code": "Element"
+          }
+        ],
+        "mapping": [
+          {
+            "id": "ADT_A45",
+            "identity": "v2",
+            "map": "ADT_A45"
+          }
+        ]
+      },
+      {
+        "id": "ADT_A45.MSH",
+        "path": "ADT_A45.MSH",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "MSH",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/MSH"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "MSH"
+          }
+        ]
+      },
+      {
+        "id": "ADT_A45.SFT",
+        "path": "ADT_A45.SFT",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "SFT",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/SFT"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "SFT"
+          }
+        ]
+      },
+      {
+        "id": "ADT_A45.EVN",
+        "path": "ADT_A45.EVN",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "EVN",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/EVN"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "EVN"
+          }
+        ]
+      },
+      {
+        "id": "ADT_A45.PID",
+        "path": "ADT_A45.PID",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "PID",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/PID"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "PID"
+          }
+        ]
+      },
+      {
+        "id": "ADT_A45.PD1",
+        "path": "ADT_A45.PD1",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "PD1",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/PD1"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "PD1"
+          }
+        ]
+      },
+      {
+        "id": "ADT_A45.MERGE_INFO",
+        "path": "ADT_A45.MERGE_INFO",
+        "min": 1,
+        "max": "*",
+        "type": [
+          {
+            "code": "BackboneElement"
+          }
+        ]
+      },
+      {
+        "id": "ADT_A45.MERGE_INFO.MRG",
+        "path": "ADT_A45.MERGE_INFO.MRG",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "MRG",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/MRG"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "MRG"
+          }
+        ]
+      },
+      {
+        "id": "ADT_A45.MERGE_INFO.PV1",
+        "path": "ADT_A45.MERGE_INFO.PV1",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "PV1",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/PV1"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "PV1"
+          }
+        ]
+      }
+    ]
+  }
+}

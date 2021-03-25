@@ -1,0 +1,183 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "CTD",
+  "url": "http://hl7.org/fhir/StructureDefinition/CTD",
+  "name": "CTD",
+  "status": "active",
+  "fhirVersion": "4.0.1",
+  "kind": "logical",
+  "abstract": false,
+  "type": "CTD",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Element",
+  "derivation": "specialization",
+  "differential": {
+    "element": [
+      {
+        "id": "CTD",
+        "path": "CTD",
+        "type": [
+          {
+            "code": "Element"
+          }
+        ],
+        "mapping": [
+          {
+            "id": "CTD",
+            "identity": "v2",
+            "map": "CTD"
+          }
+        ]
+      },
+      {
+        "id": "CTD.ContactRole",
+        "path": "CTD.ContactRole",
+        "code": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/v2-0131"
+          }
+        ],
+        "min": 1,
+        "max": "*",
+        "type": [
+          {
+            "code": "CE",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/CE"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "CTD.1"
+          }
+        ]
+      },
+      {
+        "id": "CTD.ContactName",
+        "path": "CTD.ContactName",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "XPN",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/XPN"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "CTD.2"
+          }
+        ]
+      },
+      {
+        "id": "CTD.ContactAddress",
+        "path": "CTD.ContactAddress",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "XAD",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/XAD"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "CTD.3"
+          }
+        ]
+      },
+      {
+        "id": "CTD.ContactLocation",
+        "path": "CTD.ContactLocation",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "PL",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/PL"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "CTD.4"
+          }
+        ]
+      },
+      {
+        "id": "CTD.ContactCommunicationInformation",
+        "path": "CTD.ContactCommunicationInformation",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "XTN",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/XTN"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "CTD.5"
+          }
+        ]
+      },
+      {
+        "id": "CTD.PreferredMethodofContact",
+        "path": "CTD.PreferredMethodofContact",
+        "code": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/v2-0185"
+          }
+        ],
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "CE",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/CE"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "CTD.6"
+          }
+        ]
+      },
+      {
+        "id": "CTD.ContactIdentifiers",
+        "path": "CTD.ContactIdentifiers",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "PLN",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/PLN"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "CTD.7"
+          }
+        ]
+      }
+    ]
+  }
+}

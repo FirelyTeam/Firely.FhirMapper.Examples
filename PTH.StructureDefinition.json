@@ -1,0 +1,158 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "PTH",
+  "url": "http://hl7.org/fhir/StructureDefinition/PTH",
+  "name": "PTH",
+  "status": "active",
+  "fhirVersion": "4.0.1",
+  "kind": "logical",
+  "abstract": false,
+  "type": "PTH",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Element",
+  "derivation": "specialization",
+  "differential": {
+    "element": [
+      {
+        "id": "PTH",
+        "path": "PTH",
+        "type": [
+          {
+            "code": "Element"
+          }
+        ],
+        "mapping": [
+          {
+            "id": "PTH",
+            "identity": "v2",
+            "map": "PTH"
+          }
+        ]
+      },
+      {
+        "id": "PTH.ActionCode",
+        "path": "PTH.ActionCode",
+        "code": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/v2-0287"
+          }
+        ],
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "string",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/string"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "PTH.1"
+          }
+        ]
+      },
+      {
+        "id": "PTH.PathwayID",
+        "path": "PTH.PathwayID",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "CE",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/CE"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "PTH.2"
+          }
+        ]
+      },
+      {
+        "id": "PTH.PathwayInstanceID",
+        "path": "PTH.PathwayInstanceID",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "EI",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/EI"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "PTH.3"
+          }
+        ]
+      },
+      {
+        "id": "PTH.PathwayEstablishedDate/Time",
+        "path": "PTH.PathwayEstablishedDate/Time",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "TS",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/TS"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "PTH.4"
+          }
+        ]
+      },
+      {
+        "id": "PTH.PathwayLifeCycleStatus",
+        "path": "PTH.PathwayLifeCycleStatus",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "CE",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/CE"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "PTH.5"
+          }
+        ]
+      },
+      {
+        "id": "PTH.ChangePathwayLifeCycleStatusDate/Time",
+        "path": "PTH.ChangePathwayLifeCycleStatusDate/Time",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "TS",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/TS"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "PTH.6"
+          }
+        ]
+      }
+    ]
+  }
+}

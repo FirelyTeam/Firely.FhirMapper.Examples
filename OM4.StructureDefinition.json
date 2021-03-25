@@ -1,0 +1,338 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "OM4",
+  "url": "http://hl7.org/fhir/StructureDefinition/OM4",
+  "name": "OM4",
+  "status": "active",
+  "fhirVersion": "4.0.1",
+  "kind": "logical",
+  "abstract": false,
+  "type": "OM4",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Element",
+  "derivation": "specialization",
+  "differential": {
+    "element": [
+      {
+        "id": "OM4",
+        "path": "OM4",
+        "type": [
+          {
+            "code": "Element"
+          }
+        ],
+        "mapping": [
+          {
+            "id": "OM4",
+            "identity": "v2",
+            "map": "OM4"
+          }
+        ]
+      },
+      {
+        "id": "OM4.SequenceNumber-Test/ObservationMasterFile",
+        "path": "OM4.SequenceNumber-Test/ObservationMasterFile",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "string",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/string"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "OM4.1"
+          }
+        ]
+      },
+      {
+        "id": "OM4.DerivedSpecimen",
+        "path": "OM4.DerivedSpecimen",
+        "code": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/v2-0170"
+          }
+        ],
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "string",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/string"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "OM4.2"
+          }
+        ]
+      },
+      {
+        "id": "OM4.ContainerDescription",
+        "path": "OM4.ContainerDescription",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "string",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/string"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "OM4.3"
+          }
+        ]
+      },
+      {
+        "id": "OM4.ContainerVolume",
+        "path": "OM4.ContainerVolume",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "string",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/string"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "OM4.4"
+          }
+        ]
+      },
+      {
+        "id": "OM4.ContainerUnits",
+        "path": "OM4.ContainerUnits",
+        "code": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/v2-9999"
+          }
+        ],
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "CE",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/CE"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "OM4.5"
+          }
+        ]
+      },
+      {
+        "id": "OM4.Specimen",
+        "path": "OM4.Specimen",
+        "code": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/v2-9999"
+          }
+        ],
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "CE",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/CE"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "OM4.6"
+          }
+        ]
+      },
+      {
+        "id": "OM4.Additive",
+        "path": "OM4.Additive",
+        "code": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/v2-0371"
+          }
+        ],
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "CWE",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/CWE"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "OM4.7"
+          }
+        ]
+      },
+      {
+        "id": "OM4.Preparation",
+        "path": "OM4.Preparation",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "string",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/string"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "OM4.8"
+          }
+        ]
+      },
+      {
+        "id": "OM4.SpecialHandlingRequirements",
+        "path": "OM4.SpecialHandlingRequirements",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "string",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/string"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "OM4.9"
+          }
+        ]
+      },
+      {
+        "id": "OM4.NormalCollectionVolume",
+        "path": "OM4.NormalCollectionVolume",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "CQ",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/CQ"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "OM4.10"
+          }
+        ]
+      },
+      {
+        "id": "OM4.MinimumCollectionVolume",
+        "path": "OM4.MinimumCollectionVolume",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "CQ",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/CQ"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "OM4.11"
+          }
+        ]
+      },
+      {
+        "id": "OM4.SpecimenRequirements",
+        "path": "OM4.SpecimenRequirements",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "string",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/string"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "OM4.12"
+          }
+        ]
+      },
+      {
+        "id": "OM4.SpecimenPriorities",
+        "path": "OM4.SpecimenPriorities",
+        "code": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/v2-0027"
+          }
+        ],
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "string",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/string"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "OM4.13"
+          }
+        ]
+      },
+      {
+        "id": "OM4.SpecimenRetentionTime",
+        "path": "OM4.SpecimenRetentionTime",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "CQ",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/CQ"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "OM4.14"
+          }
+        ]
+      }
+    ]
+  }
+}

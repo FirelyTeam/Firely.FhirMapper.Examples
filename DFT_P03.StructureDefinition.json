@@ -1,0 +1,874 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "DFT_P03",
+  "url": "http://hl7.org/fhir/StructureDefinition/DFT_P03",
+  "name": "DFT_P03",
+  "status": "active",
+  "fhirVersion": "4.0.1",
+  "kind": "logical",
+  "abstract": false,
+  "type": "DFT_P03",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Element",
+  "derivation": "specialization",
+  "differential": {
+    "element": [
+      {
+        "id": "DFT_P03",
+        "path": "DFT_P03",
+        "type": [
+          {
+            "code": "Element"
+          }
+        ],
+        "mapping": [
+          {
+            "id": "DFT_P03",
+            "identity": "v2",
+            "map": "DFT_P03"
+          }
+        ]
+      },
+      {
+        "id": "DFT_P03.MSH",
+        "path": "DFT_P03.MSH",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "MSH",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/MSH"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "MSH"
+          }
+        ]
+      },
+      {
+        "id": "DFT_P03.SFT",
+        "path": "DFT_P03.SFT",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "SFT",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/SFT"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "SFT"
+          }
+        ]
+      },
+      {
+        "id": "DFT_P03.EVN",
+        "path": "DFT_P03.EVN",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "EVN",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/EVN"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "EVN"
+          }
+        ]
+      },
+      {
+        "id": "DFT_P03.PID",
+        "path": "DFT_P03.PID",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "PID",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/PID"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "PID"
+          }
+        ]
+      },
+      {
+        "id": "DFT_P03.PD1",
+        "path": "DFT_P03.PD1",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "PD1",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/PD1"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "PD1"
+          }
+        ]
+      },
+      {
+        "id": "DFT_P03.ROL",
+        "path": "DFT_P03.ROL",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "ROL",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/ROL"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "ROL"
+          }
+        ]
+      },
+      {
+        "id": "DFT_P03.PV1",
+        "path": "DFT_P03.PV1",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "PV1",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/PV1"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "PV1"
+          }
+        ]
+      },
+      {
+        "id": "DFT_P03.PV2",
+        "path": "DFT_P03.PV2",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "PV2",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/PV2"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "PV2"
+          }
+        ]
+      },
+      {
+        "id": "DFT_P03.ROL2",
+        "path": "DFT_P03.ROL2",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "ROL2",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/ROL2"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "ROL2"
+          }
+        ]
+      },
+      {
+        "id": "DFT_P03.DB1",
+        "path": "DFT_P03.DB1",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "DB1",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/DB1"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "DB1"
+          }
+        ]
+      },
+      {
+        "id": "DFT_P03.COMMON_ORDER",
+        "path": "DFT_P03.COMMON_ORDER",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "BackboneElement"
+          }
+        ]
+      },
+      {
+        "id": "DFT_P03.COMMON_ORDER.ORC",
+        "path": "DFT_P03.COMMON_ORDER.ORC",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "ORC",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/ORC"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "ORC"
+          }
+        ]
+      },
+      {
+        "id": "DFT_P03.COMMON_ORDER.TIMING_QUANTITY",
+        "path": "DFT_P03.COMMON_ORDER.TIMING_QUANTITY",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "BackboneElement"
+          }
+        ]
+      },
+      {
+        "id": "DFT_P03.COMMON_ORDER.TIMING_QUANTITY.TQ1",
+        "path": "DFT_P03.COMMON_ORDER.TIMING_QUANTITY.TQ1",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "TQ1",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/TQ1"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "TQ1"
+          }
+        ]
+      },
+      {
+        "id": "DFT_P03.COMMON_ORDER.TIMING_QUANTITY.TQ2",
+        "path": "DFT_P03.COMMON_ORDER.TIMING_QUANTITY.TQ2",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "TQ2",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/TQ2"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "TQ2"
+          }
+        ]
+      },
+      {
+        "id": "DFT_P03.COMMON_ORDER.ORDER",
+        "path": "DFT_P03.COMMON_ORDER.ORDER",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "BackboneElement"
+          }
+        ]
+      },
+      {
+        "id": "DFT_P03.COMMON_ORDER.ORDER.OBR",
+        "path": "DFT_P03.COMMON_ORDER.ORDER.OBR",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "OBR",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/OBR"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "OBR"
+          }
+        ]
+      },
+      {
+        "id": "DFT_P03.COMMON_ORDER.ORDER.NTE",
+        "path": "DFT_P03.COMMON_ORDER.ORDER.NTE",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "NTE",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/NTE"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "NTE"
+          }
+        ]
+      },
+      {
+        "id": "DFT_P03.COMMON_ORDER.OBSERVATION",
+        "path": "DFT_P03.COMMON_ORDER.OBSERVATION",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "BackboneElement"
+          }
+        ]
+      },
+      {
+        "id": "DFT_P03.COMMON_ORDER.OBSERVATION.OBX",
+        "path": "DFT_P03.COMMON_ORDER.OBSERVATION.OBX",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "OBX",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/OBX"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "OBX"
+          }
+        ]
+      },
+      {
+        "id": "DFT_P03.COMMON_ORDER.OBSERVATION.NTE",
+        "path": "DFT_P03.COMMON_ORDER.OBSERVATION.NTE",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "NTE",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/NTE"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "NTE"
+          }
+        ]
+      },
+      {
+        "id": "DFT_P03.FINANCIAL",
+        "path": "DFT_P03.FINANCIAL",
+        "min": 1,
+        "max": "*",
+        "type": [
+          {
+            "code": "BackboneElement"
+          }
+        ]
+      },
+      {
+        "id": "DFT_P03.FINANCIAL.FT1",
+        "path": "DFT_P03.FINANCIAL.FT1",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "FT1",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/FT1"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "FT1"
+          }
+        ]
+      },
+      {
+        "id": "DFT_P03.FINANCIAL.NTE",
+        "path": "DFT_P03.FINANCIAL.NTE",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "NTE",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/NTE"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "NTE"
+          }
+        ]
+      },
+      {
+        "id": "DFT_P03.FINANCIAL.FINANCIAL_PROCEDURE",
+        "path": "DFT_P03.FINANCIAL.FINANCIAL_PROCEDURE",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "BackboneElement"
+          }
+        ]
+      },
+      {
+        "id": "DFT_P03.FINANCIAL.FINANCIAL_PROCEDURE.PR1",
+        "path": "DFT_P03.FINANCIAL.FINANCIAL_PROCEDURE.PR1",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "PR1",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/PR1"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "PR1"
+          }
+        ]
+      },
+      {
+        "id": "DFT_P03.FINANCIAL.FINANCIAL_PROCEDURE.ROL",
+        "path": "DFT_P03.FINANCIAL.FINANCIAL_PROCEDURE.ROL",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "ROL",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/ROL"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "ROL"
+          }
+        ]
+      },
+      {
+        "id": "DFT_P03.FINANCIAL.FINANCIAL_COMMON_ORDER",
+        "path": "DFT_P03.FINANCIAL.FINANCIAL_COMMON_ORDER",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "BackboneElement"
+          }
+        ]
+      },
+      {
+        "id": "DFT_P03.FINANCIAL.FINANCIAL_COMMON_ORDER.ORC",
+        "path": "DFT_P03.FINANCIAL.FINANCIAL_COMMON_ORDER.ORC",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "ORC",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/ORC"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "ORC"
+          }
+        ]
+      },
+      {
+        "id": "DFT_P03.FINANCIAL.FINANCIAL_COMMON_ORDER.FINANCIAL_TIMING_QUANTITY",
+        "path": "DFT_P03.FINANCIAL.FINANCIAL_COMMON_ORDER.FINANCIAL_TIMING_QUANTITY",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "BackboneElement"
+          }
+        ]
+      },
+      {
+        "id": "DFT_P03.FINANCIAL.FINANCIAL_COMMON_ORDER.FINANCIAL_TIMING_QUANTITY.TQ1",
+        "path": "DFT_P03.FINANCIAL.FINANCIAL_COMMON_ORDER.FINANCIAL_TIMING_QUANTITY.TQ1",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "TQ1",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/TQ1"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "TQ1"
+          }
+        ]
+      },
+      {
+        "id": "DFT_P03.FINANCIAL.FINANCIAL_COMMON_ORDER.FINANCIAL_TIMING_QUANTITY.TQ2",
+        "path": "DFT_P03.FINANCIAL.FINANCIAL_COMMON_ORDER.FINANCIAL_TIMING_QUANTITY.TQ2",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "TQ2",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/TQ2"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "TQ2"
+          }
+        ]
+      },
+      {
+        "id": "DFT_P03.FINANCIAL.FINANCIAL_COMMON_ORDER.FINANCIAL_ORDER",
+        "path": "DFT_P03.FINANCIAL.FINANCIAL_COMMON_ORDER.FINANCIAL_ORDER",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "BackboneElement"
+          }
+        ]
+      },
+      {
+        "id": "DFT_P03.FINANCIAL.FINANCIAL_COMMON_ORDER.FINANCIAL_ORDER.OBR",
+        "path": "DFT_P03.FINANCIAL.FINANCIAL_COMMON_ORDER.FINANCIAL_ORDER.OBR",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "OBR",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/OBR"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "OBR"
+          }
+        ]
+      },
+      {
+        "id": "DFT_P03.FINANCIAL.FINANCIAL_COMMON_ORDER.FINANCIAL_ORDER.NTE",
+        "path": "DFT_P03.FINANCIAL.FINANCIAL_COMMON_ORDER.FINANCIAL_ORDER.NTE",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "NTE",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/NTE"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "NTE"
+          }
+        ]
+      },
+      {
+        "id": "DFT_P03.FINANCIAL.FINANCIAL_COMMON_ORDER.FINANCIAL_OBSERVATION",
+        "path": "DFT_P03.FINANCIAL.FINANCIAL_COMMON_ORDER.FINANCIAL_OBSERVATION",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "BackboneElement"
+          }
+        ]
+      },
+      {
+        "id": "DFT_P03.FINANCIAL.FINANCIAL_COMMON_ORDER.FINANCIAL_OBSERVATION.OBX",
+        "path": "DFT_P03.FINANCIAL.FINANCIAL_COMMON_ORDER.FINANCIAL_OBSERVATION.OBX",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "OBX",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/OBX"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "OBX"
+          }
+        ]
+      },
+      {
+        "id": "DFT_P03.FINANCIAL.FINANCIAL_COMMON_ORDER.FINANCIAL_OBSERVATION.NTE",
+        "path": "DFT_P03.FINANCIAL.FINANCIAL_COMMON_ORDER.FINANCIAL_OBSERVATION.NTE",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "NTE",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/NTE"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "NTE"
+          }
+        ]
+      },
+      {
+        "id": "DFT_P03.DG1",
+        "path": "DFT_P03.DG1",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "DG1",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/DG1"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "DG1"
+          }
+        ]
+      },
+      {
+        "id": "DFT_P03.DRG",
+        "path": "DFT_P03.DRG",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "DRG",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/DRG"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "DRG"
+          }
+        ]
+      },
+      {
+        "id": "DFT_P03.GT1",
+        "path": "DFT_P03.GT1",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "GT1",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/GT1"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "GT1"
+          }
+        ]
+      },
+      {
+        "id": "DFT_P03.INSURANCE",
+        "path": "DFT_P03.INSURANCE",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "BackboneElement"
+          }
+        ]
+      },
+      {
+        "id": "DFT_P03.INSURANCE.IN1",
+        "path": "DFT_P03.INSURANCE.IN1",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "IN1",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/IN1"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "IN1"
+          }
+        ]
+      },
+      {
+        "id": "DFT_P03.INSURANCE.IN2",
+        "path": "DFT_P03.INSURANCE.IN2",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "IN2",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/IN2"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "IN2"
+          }
+        ]
+      },
+      {
+        "id": "DFT_P03.INSURANCE.IN3",
+        "path": "DFT_P03.INSURANCE.IN3",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "IN3",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/IN3"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "IN3"
+          }
+        ]
+      },
+      {
+        "id": "DFT_P03.INSURANCE.ROL",
+        "path": "DFT_P03.INSURANCE.ROL",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "ROL",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/ROL"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "ROL"
+          }
+        ]
+      },
+      {
+        "id": "DFT_P03.ACC",
+        "path": "DFT_P03.ACC",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "ACC",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/ACC"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "ACC"
+          }
+        ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,138 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "VTQ",
+  "url": "http://hl7.org/fhir/StructureDefinition/VTQ",
+  "name": "VTQ",
+  "status": "active",
+  "fhirVersion": "4.0.1",
+  "kind": "logical",
+  "abstract": false,
+  "type": "VTQ",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Element",
+  "derivation": "specialization",
+  "differential": {
+    "element": [
+      {
+        "id": "VTQ",
+        "path": "VTQ",
+        "type": [
+          {
+            "code": "Element"
+          }
+        ],
+        "mapping": [
+          {
+            "id": "VTQ",
+            "identity": "v2",
+            "map": "VTQ"
+          }
+        ]
+      },
+      {
+        "id": "VTQ.QueryTag",
+        "path": "VTQ.QueryTag",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "string",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/string"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "VTQ.1"
+          }
+        ]
+      },
+      {
+        "id": "VTQ.Query/ResponseFormatCode",
+        "path": "VTQ.Query/ResponseFormatCode",
+        "code": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/v2-0106"
+          }
+        ],
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "string",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/string"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "VTQ.2"
+          }
+        ]
+      },
+      {
+        "id": "VTQ.VTQueryName",
+        "path": "VTQ.VTQueryName",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "CE",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/CE"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "VTQ.3"
+          }
+        ]
+      },
+      {
+        "id": "VTQ.VirtualTableName",
+        "path": "VTQ.VirtualTableName",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "CE",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/CE"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "VTQ.4"
+          }
+        ]
+      },
+      {
+        "id": "VTQ.SelectionCriteria",
+        "path": "VTQ.SelectionCriteria",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "QSC",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/QSC"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "VTQ.5"
+          }
+        ]
+      }
+    ]
+  }
+}

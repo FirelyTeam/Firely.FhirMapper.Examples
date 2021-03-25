@@ -1,0 +1,397 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "RGR_RGR",
+  "url": "http://hl7.org/fhir/StructureDefinition/RGR_RGR",
+  "name": "RGR_RGR",
+  "status": "active",
+  "fhirVersion": "4.0.1",
+  "kind": "logical",
+  "abstract": false,
+  "type": "RGR_RGR",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Element",
+  "derivation": "specialization",
+  "differential": {
+    "element": [
+      {
+        "id": "RGR_RGR",
+        "path": "RGR_RGR",
+        "type": [
+          {
+            "code": "Element"
+          }
+        ],
+        "mapping": [
+          {
+            "id": "RGR_RGR",
+            "identity": "v2",
+            "map": "RGR_RGR"
+          }
+        ]
+      },
+      {
+        "id": "RGR_RGR.MSH",
+        "path": "RGR_RGR.MSH",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "MSH",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/MSH"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "MSH"
+          }
+        ]
+      },
+      {
+        "id": "RGR_RGR.MSA",
+        "path": "RGR_RGR.MSA",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "MSA",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/MSA"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "MSA"
+          }
+        ]
+      },
+      {
+        "id": "RGR_RGR.ERR",
+        "path": "RGR_RGR.ERR",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "ERR",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/ERR"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "ERR"
+          }
+        ]
+      },
+      {
+        "id": "RGR_RGR.SFT",
+        "path": "RGR_RGR.SFT",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "SFT",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/SFT"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "SFT"
+          }
+        ]
+      },
+      {
+        "id": "RGR_RGR.DEFINITION",
+        "path": "RGR_RGR.DEFINITION",
+        "min": 1,
+        "max": "*",
+        "type": [
+          {
+            "code": "BackboneElement"
+          }
+        ]
+      },
+      {
+        "id": "RGR_RGR.DEFINITION.QRD",
+        "path": "RGR_RGR.DEFINITION.QRD",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "QRD",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/QRD"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "QRD"
+          }
+        ]
+      },
+      {
+        "id": "RGR_RGR.DEFINITION.QRF",
+        "path": "RGR_RGR.DEFINITION.QRF",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "QRF",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/QRF"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "QRF"
+          }
+        ]
+      },
+      {
+        "id": "RGR_RGR.DEFINITION.PATIENT",
+        "path": "RGR_RGR.DEFINITION.PATIENT",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "BackboneElement"
+          }
+        ]
+      },
+      {
+        "id": "RGR_RGR.DEFINITION.PATIENT.PID",
+        "path": "RGR_RGR.DEFINITION.PATIENT.PID",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "PID",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/PID"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "PID"
+          }
+        ]
+      },
+      {
+        "id": "RGR_RGR.DEFINITION.PATIENT.NTE",
+        "path": "RGR_RGR.DEFINITION.PATIENT.NTE",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "NTE",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/NTE"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "NTE"
+          }
+        ]
+      },
+      {
+        "id": "RGR_RGR.DEFINITION.ORDER",
+        "path": "RGR_RGR.DEFINITION.ORDER",
+        "min": 1,
+        "max": "*",
+        "type": [
+          {
+            "code": "BackboneElement"
+          }
+        ]
+      },
+      {
+        "id": "RGR_RGR.DEFINITION.ORDER.ORC",
+        "path": "RGR_RGR.DEFINITION.ORDER.ORC",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "ORC",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/ORC"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "ORC"
+          }
+        ]
+      },
+      {
+        "id": "RGR_RGR.DEFINITION.ORDER.ENCODING",
+        "path": "RGR_RGR.DEFINITION.ORDER.ENCODING",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "BackboneElement"
+          }
+        ]
+      },
+      {
+        "id": "RGR_RGR.DEFINITION.ORDER.ENCODING.RXE",
+        "path": "RGR_RGR.DEFINITION.ORDER.ENCODING.RXE",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "RXE",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/RXE"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "RXE"
+          }
+        ]
+      },
+      {
+        "id": "RGR_RGR.DEFINITION.ORDER.ENCODING.RXR",
+        "path": "RGR_RGR.DEFINITION.ORDER.ENCODING.RXR",
+        "min": 1,
+        "max": "*",
+        "type": [
+          {
+            "code": "RXR",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/RXR"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "RXR"
+          }
+        ]
+      },
+      {
+        "id": "RGR_RGR.DEFINITION.ORDER.ENCODING.RXC",
+        "path": "RGR_RGR.DEFINITION.ORDER.ENCODING.RXC",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "RXC",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/RXC"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "RXC"
+          }
+        ]
+      },
+      {
+        "id": "RGR_RGR.DEFINITION.ORDER.RXG",
+        "path": "RGR_RGR.DEFINITION.ORDER.RXG",
+        "min": 1,
+        "max": "*",
+        "type": [
+          {
+            "code": "RXG",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/RXG"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "RXG"
+          }
+        ]
+      },
+      {
+        "id": "RGR_RGR.DEFINITION.ORDER.RXR",
+        "path": "RGR_RGR.DEFINITION.ORDER.RXR",
+        "min": 1,
+        "max": "*",
+        "type": [
+          {
+            "code": "RXR",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/RXR"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "RXR"
+          }
+        ]
+      },
+      {
+        "id": "RGR_RGR.DEFINITION.ORDER.RXC",
+        "path": "RGR_RGR.DEFINITION.ORDER.RXC",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "RXC",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/RXC"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "RXC"
+          }
+        ]
+      },
+      {
+        "id": "RGR_RGR.DSC",
+        "path": "RGR_RGR.DSC",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "DSC",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/DSC"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "DSC"
+          }
+        ]
+      }
+    ]
+  }
+}

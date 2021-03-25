@@ -1,0 +1,777 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "PPG_PCG",
+  "url": "http://hl7.org/fhir/StructureDefinition/PPG_PCG",
+  "name": "PPG_PCG",
+  "status": "active",
+  "fhirVersion": "4.0.1",
+  "kind": "logical",
+  "abstract": false,
+  "type": "PPG_PCG",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Element",
+  "derivation": "specialization",
+  "differential": {
+    "element": [
+      {
+        "id": "PPG_PCG",
+        "path": "PPG_PCG",
+        "type": [
+          {
+            "code": "Element"
+          }
+        ],
+        "mapping": [
+          {
+            "id": "PPG_PCG",
+            "identity": "v2",
+            "map": "PPG_PCG"
+          }
+        ]
+      },
+      {
+        "id": "PPG_PCG.MSH",
+        "path": "PPG_PCG.MSH",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "MSH",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/MSH"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "MSH"
+          }
+        ]
+      },
+      {
+        "id": "PPG_PCG.SFT",
+        "path": "PPG_PCG.SFT",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "SFT",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/SFT"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "SFT"
+          }
+        ]
+      },
+      {
+        "id": "PPG_PCG.PID",
+        "path": "PPG_PCG.PID",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "PID",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/PID"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "PID"
+          }
+        ]
+      },
+      {
+        "id": "PPG_PCG.PATIENT_VISIT",
+        "path": "PPG_PCG.PATIENT_VISIT",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "BackboneElement"
+          }
+        ]
+      },
+      {
+        "id": "PPG_PCG.PATIENT_VISIT.PV1",
+        "path": "PPG_PCG.PATIENT_VISIT.PV1",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "PV1",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/PV1"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "PV1"
+          }
+        ]
+      },
+      {
+        "id": "PPG_PCG.PATIENT_VISIT.PV2",
+        "path": "PPG_PCG.PATIENT_VISIT.PV2",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "PV2",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/PV2"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "PV2"
+          }
+        ]
+      },
+      {
+        "id": "PPG_PCG.PATHWAY",
+        "path": "PPG_PCG.PATHWAY",
+        "min": 1,
+        "max": "*",
+        "type": [
+          {
+            "code": "BackboneElement"
+          }
+        ]
+      },
+      {
+        "id": "PPG_PCG.PATHWAY.PTH",
+        "path": "PPG_PCG.PATHWAY.PTH",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "PTH",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/PTH"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "PTH"
+          }
+        ]
+      },
+      {
+        "id": "PPG_PCG.PATHWAY.NTE",
+        "path": "PPG_PCG.PATHWAY.NTE",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "NTE",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/NTE"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "NTE"
+          }
+        ]
+      },
+      {
+        "id": "PPG_PCG.PATHWAY.VAR",
+        "path": "PPG_PCG.PATHWAY.VAR",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "VAR",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/VAR"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "VAR"
+          }
+        ]
+      },
+      {
+        "id": "PPG_PCG.PATHWAY.PATHWAY_ROLE",
+        "path": "PPG_PCG.PATHWAY.PATHWAY_ROLE",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "BackboneElement"
+          }
+        ]
+      },
+      {
+        "id": "PPG_PCG.PATHWAY.PATHWAY_ROLE.ROL",
+        "path": "PPG_PCG.PATHWAY.PATHWAY_ROLE.ROL",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "ROL",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/ROL"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "ROL"
+          }
+        ]
+      },
+      {
+        "id": "PPG_PCG.PATHWAY.PATHWAY_ROLE.VAR",
+        "path": "PPG_PCG.PATHWAY.PATHWAY_ROLE.VAR",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "VAR",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/VAR"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "VAR"
+          }
+        ]
+      },
+      {
+        "id": "PPG_PCG.PATHWAY.GOAL",
+        "path": "PPG_PCG.PATHWAY.GOAL",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "BackboneElement"
+          }
+        ]
+      },
+      {
+        "id": "PPG_PCG.PATHWAY.GOAL.GOL",
+        "path": "PPG_PCG.PATHWAY.GOAL.GOL",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "GOL",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/GOL"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "GOL"
+          }
+        ]
+      },
+      {
+        "id": "PPG_PCG.PATHWAY.GOAL.NTE",
+        "path": "PPG_PCG.PATHWAY.GOAL.NTE",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "NTE",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/NTE"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "NTE"
+          }
+        ]
+      },
+      {
+        "id": "PPG_PCG.PATHWAY.GOAL.VAR",
+        "path": "PPG_PCG.PATHWAY.GOAL.VAR",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "VAR",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/VAR"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "VAR"
+          }
+        ]
+      },
+      {
+        "id": "PPG_PCG.PATHWAY.GOAL.GOAL_ROLE",
+        "path": "PPG_PCG.PATHWAY.GOAL.GOAL_ROLE",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "BackboneElement"
+          }
+        ]
+      },
+      {
+        "id": "PPG_PCG.PATHWAY.GOAL.GOAL_ROLE.ROL",
+        "path": "PPG_PCG.PATHWAY.GOAL.GOAL_ROLE.ROL",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "ROL",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/ROL"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "ROL"
+          }
+        ]
+      },
+      {
+        "id": "PPG_PCG.PATHWAY.GOAL.GOAL_ROLE.VAR",
+        "path": "PPG_PCG.PATHWAY.GOAL.GOAL_ROLE.VAR",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "VAR",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/VAR"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "VAR"
+          }
+        ]
+      },
+      {
+        "id": "PPG_PCG.PATHWAY.GOAL.GOAL_OBSERVATION",
+        "path": "PPG_PCG.PATHWAY.GOAL.GOAL_OBSERVATION",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "BackboneElement"
+          }
+        ]
+      },
+      {
+        "id": "PPG_PCG.PATHWAY.GOAL.GOAL_OBSERVATION.OBX",
+        "path": "PPG_PCG.PATHWAY.GOAL.GOAL_OBSERVATION.OBX",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "OBX",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/OBX"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "OBX"
+          }
+        ]
+      },
+      {
+        "id": "PPG_PCG.PATHWAY.GOAL.GOAL_OBSERVATION.NTE",
+        "path": "PPG_PCG.PATHWAY.GOAL.GOAL_OBSERVATION.NTE",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "NTE",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/NTE"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "NTE"
+          }
+        ]
+      },
+      {
+        "id": "PPG_PCG.PATHWAY.GOAL.PROBLEM",
+        "path": "PPG_PCG.PATHWAY.GOAL.PROBLEM",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "BackboneElement"
+          }
+        ]
+      },
+      {
+        "id": "PPG_PCG.PATHWAY.GOAL.PROBLEM.PRB",
+        "path": "PPG_PCG.PATHWAY.GOAL.PROBLEM.PRB",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "PRB",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/PRB"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "PRB"
+          }
+        ]
+      },
+      {
+        "id": "PPG_PCG.PATHWAY.GOAL.PROBLEM.NTE",
+        "path": "PPG_PCG.PATHWAY.GOAL.PROBLEM.NTE",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "NTE",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/NTE"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "NTE"
+          }
+        ]
+      },
+      {
+        "id": "PPG_PCG.PATHWAY.GOAL.PROBLEM.VAR",
+        "path": "PPG_PCG.PATHWAY.GOAL.PROBLEM.VAR",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "VAR",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/VAR"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "VAR"
+          }
+        ]
+      },
+      {
+        "id": "PPG_PCG.PATHWAY.GOAL.PROBLEM.PROBLEM_ROLE",
+        "path": "PPG_PCG.PATHWAY.GOAL.PROBLEM.PROBLEM_ROLE",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "BackboneElement"
+          }
+        ]
+      },
+      {
+        "id": "PPG_PCG.PATHWAY.GOAL.PROBLEM.PROBLEM_ROLE.ROL",
+        "path": "PPG_PCG.PATHWAY.GOAL.PROBLEM.PROBLEM_ROLE.ROL",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "ROL",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/ROL"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "ROL"
+          }
+        ]
+      },
+      {
+        "id": "PPG_PCG.PATHWAY.GOAL.PROBLEM.PROBLEM_ROLE.VAR",
+        "path": "PPG_PCG.PATHWAY.GOAL.PROBLEM.PROBLEM_ROLE.VAR",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "VAR",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/VAR"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "VAR"
+          }
+        ]
+      },
+      {
+        "id": "PPG_PCG.PATHWAY.GOAL.PROBLEM.PROBLEM_OBSERVATION",
+        "path": "PPG_PCG.PATHWAY.GOAL.PROBLEM.PROBLEM_OBSERVATION",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "BackboneElement"
+          }
+        ]
+      },
+      {
+        "id": "PPG_PCG.PATHWAY.GOAL.PROBLEM.PROBLEM_OBSERVATION.OBX",
+        "path": "PPG_PCG.PATHWAY.GOAL.PROBLEM.PROBLEM_OBSERVATION.OBX",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "OBX",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/OBX"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "OBX"
+          }
+        ]
+      },
+      {
+        "id": "PPG_PCG.PATHWAY.GOAL.PROBLEM.PROBLEM_OBSERVATION.NTE",
+        "path": "PPG_PCG.PATHWAY.GOAL.PROBLEM.PROBLEM_OBSERVATION.NTE",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "NTE",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/NTE"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "NTE"
+          }
+        ]
+      },
+      {
+        "id": "PPG_PCG.PATHWAY.GOAL.ORDER",
+        "path": "PPG_PCG.PATHWAY.GOAL.ORDER",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "BackboneElement"
+          }
+        ]
+      },
+      {
+        "id": "PPG_PCG.PATHWAY.GOAL.ORDER.ORC",
+        "path": "PPG_PCG.PATHWAY.GOAL.ORDER.ORC",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "ORC",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/ORC"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "ORC"
+          }
+        ]
+      },
+      {
+        "id": "PPG_PCG.PATHWAY.GOAL.ORDER.ORDER_DETAIL",
+        "path": "PPG_PCG.PATHWAY.GOAL.ORDER.ORDER_DETAIL",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "BackboneElement"
+          }
+        ]
+      },
+      {
+        "id": "PPG_PCG.PATHWAY.GOAL.ORDER.ORDER_DETAIL.PPG_PCG.CHOICE",
+        "path": "PPG_PCG.PATHWAY.GOAL.ORDER.ORDER_DETAIL.PPG_PCG.CHOICE",
+        "min": 1,
+        "max": "1",
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "PPG_PCG.CHOICE"
+          }
+        ]
+      },
+      {
+        "id": "PPG_PCG.PATHWAY.GOAL.ORDER.ORDER_DETAIL.NTE",
+        "path": "PPG_PCG.PATHWAY.GOAL.ORDER.ORDER_DETAIL.NTE",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "NTE",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/NTE"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "NTE"
+          }
+        ]
+      },
+      {
+        "id": "PPG_PCG.PATHWAY.GOAL.ORDER.ORDER_DETAIL.VAR",
+        "path": "PPG_PCG.PATHWAY.GOAL.ORDER.ORDER_DETAIL.VAR",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "VAR",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/VAR"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "VAR"
+          }
+        ]
+      },
+      {
+        "id": "PPG_PCG.PATHWAY.GOAL.ORDER.ORDER_DETAIL.ORDER_OBSERVATION",
+        "path": "PPG_PCG.PATHWAY.GOAL.ORDER.ORDER_DETAIL.ORDER_OBSERVATION",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "BackboneElement"
+          }
+        ]
+      },
+      {
+        "id": "PPG_PCG.PATHWAY.GOAL.ORDER.ORDER_DETAIL.ORDER_OBSERVATION.OBX",
+        "path": "PPG_PCG.PATHWAY.GOAL.ORDER.ORDER_DETAIL.ORDER_OBSERVATION.OBX",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "OBX",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/OBX"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "OBX"
+          }
+        ]
+      },
+      {
+        "id": "PPG_PCG.PATHWAY.GOAL.ORDER.ORDER_DETAIL.ORDER_OBSERVATION.NTE",
+        "path": "PPG_PCG.PATHWAY.GOAL.ORDER.ORDER_DETAIL.ORDER_OBSERVATION.NTE",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "NTE",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/NTE"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "NTE"
+          }
+        ]
+      },
+      {
+        "id": "PPG_PCG.PATHWAY.GOAL.ORDER.ORDER_DETAIL.ORDER_OBSERVATION.VAR",
+        "path": "PPG_PCG.PATHWAY.GOAL.ORDER.ORDER_DETAIL.ORDER_OBSERVATION.VAR",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "VAR",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/VAR"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "VAR"
+          }
+        ]
+      }
+    ]
+  }
+}

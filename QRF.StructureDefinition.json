@@ -1,0 +1,248 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "QRF",
+  "url": "http://hl7.org/fhir/StructureDefinition/QRF",
+  "name": "QRF",
+  "status": "active",
+  "fhirVersion": "4.0.1",
+  "kind": "logical",
+  "abstract": false,
+  "type": "QRF",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Element",
+  "derivation": "specialization",
+  "differential": {
+    "element": [
+      {
+        "id": "QRF",
+        "path": "QRF",
+        "type": [
+          {
+            "code": "Element"
+          }
+        ],
+        "mapping": [
+          {
+            "id": "QRF",
+            "identity": "v2",
+            "map": "QRF"
+          }
+        ]
+      },
+      {
+        "id": "QRF.WhereSubjectFilter",
+        "path": "QRF.WhereSubjectFilter",
+        "min": 1,
+        "max": "*",
+        "type": [
+          {
+            "code": "string",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/string"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "QRF.1"
+          }
+        ]
+      },
+      {
+        "id": "QRF.WhenDataStartDate/Time",
+        "path": "QRF.WhenDataStartDate/Time",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "TS",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/TS"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "QRF.2"
+          }
+        ]
+      },
+      {
+        "id": "QRF.WhenDataEndDate/Time",
+        "path": "QRF.WhenDataEndDate/Time",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "TS",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/TS"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "QRF.3"
+          }
+        ]
+      },
+      {
+        "id": "QRF.WhatUserQualifier",
+        "path": "QRF.WhatUserQualifier",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "string",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/string"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "QRF.4"
+          }
+        ]
+      },
+      {
+        "id": "QRF.OtherQRYSubjectFilter",
+        "path": "QRF.OtherQRYSubjectFilter",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "string",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/string"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "QRF.5"
+          }
+        ]
+      },
+      {
+        "id": "QRF.WhichDate/TimeQualifier",
+        "path": "QRF.WhichDate/TimeQualifier",
+        "code": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/v2-0156"
+          }
+        ],
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "string",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/string"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "QRF.6"
+          }
+        ]
+      },
+      {
+        "id": "QRF.WhichDate/TimeStatusQualifier",
+        "path": "QRF.WhichDate/TimeStatusQualifier",
+        "code": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/v2-0157"
+          }
+        ],
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "string",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/string"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "QRF.7"
+          }
+        ]
+      },
+      {
+        "id": "QRF.Date/TimeSelectionQualifier",
+        "path": "QRF.Date/TimeSelectionQualifier",
+        "code": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/v2-0158"
+          }
+        ],
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "string",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/string"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "QRF.8"
+          }
+        ]
+      },
+      {
+        "id": "QRF.WhenQuantity/TimingQualifier",
+        "path": "QRF.WhenQuantity/TimingQualifier",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "TQ",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/TQ"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "QRF.9"
+          }
+        ]
+      },
+      {
+        "id": "QRF.SearchConfidenceThreshold",
+        "path": "QRF.SearchConfidenceThreshold",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "string",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/string"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "QRF.10"
+          }
+        ]
+      }
+    ]
+  }
+}

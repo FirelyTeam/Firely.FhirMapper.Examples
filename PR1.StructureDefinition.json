@@ -1,0 +1,503 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "PR1",
+  "url": "http://hl7.org/fhir/StructureDefinition/PR1",
+  "name": "PR1",
+  "status": "active",
+  "fhirVersion": "4.0.1",
+  "kind": "logical",
+  "abstract": false,
+  "type": "PR1",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Element",
+  "derivation": "specialization",
+  "differential": {
+    "element": [
+      {
+        "id": "PR1",
+        "path": "PR1",
+        "type": [
+          {
+            "code": "Element"
+          }
+        ],
+        "mapping": [
+          {
+            "id": "PR1",
+            "identity": "v2",
+            "map": "PR1"
+          }
+        ]
+      },
+      {
+        "id": "PR1.SetID-PR1",
+        "path": "PR1.SetID-PR1",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "string",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/string"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "PR1.1"
+          }
+        ]
+      },
+      {
+        "id": "PR1.ProcedureCodingMethod",
+        "path": "PR1.ProcedureCodingMethod",
+        "code": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/v2-0089"
+          }
+        ],
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "string",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/string"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "PR1.2"
+          }
+        ]
+      },
+      {
+        "id": "PR1.ProcedureCode",
+        "path": "PR1.ProcedureCode",
+        "code": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/v2-0088"
+          }
+        ],
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "CE",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/CE"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "PR1.3"
+          }
+        ]
+      },
+      {
+        "id": "PR1.ProcedureDescription",
+        "path": "PR1.ProcedureDescription",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "string",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/string"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "PR1.4"
+          }
+        ]
+      },
+      {
+        "id": "PR1.ProcedureDate/Time",
+        "path": "PR1.ProcedureDate/Time",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "TS",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/TS"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "PR1.5"
+          }
+        ]
+      },
+      {
+        "id": "PR1.ProcedureFunctionalType",
+        "path": "PR1.ProcedureFunctionalType",
+        "code": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/v2-0230"
+          }
+        ],
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "string",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/string"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "PR1.6"
+          }
+        ]
+      },
+      {
+        "id": "PR1.ProcedureMinutes",
+        "path": "PR1.ProcedureMinutes",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "string",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/string"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "PR1.7"
+          }
+        ]
+      },
+      {
+        "id": "PR1.Anesthesiologist",
+        "path": "PR1.Anesthesiologist",
+        "code": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/v2-0010"
+          }
+        ],
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "XCN",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/XCN"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "PR1.8"
+          }
+        ]
+      },
+      {
+        "id": "PR1.AnesthesiaCode",
+        "path": "PR1.AnesthesiaCode",
+        "code": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/v2-0019"
+          }
+        ],
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "string",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/string"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "PR1.9"
+          }
+        ]
+      },
+      {
+        "id": "PR1.AnesthesiaMinutes",
+        "path": "PR1.AnesthesiaMinutes",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "string",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/string"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "PR1.10"
+          }
+        ]
+      },
+      {
+        "id": "PR1.Surgeon",
+        "path": "PR1.Surgeon",
+        "code": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/v2-0010"
+          }
+        ],
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "XCN",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/XCN"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "PR1.11"
+          }
+        ]
+      },
+      {
+        "id": "PR1.ProcedurePractitioner",
+        "path": "PR1.ProcedurePractitioner",
+        "code": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/v2-0010"
+          }
+        ],
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "XCN",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/XCN"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "PR1.12"
+          }
+        ]
+      },
+      {
+        "id": "PR1.ConsentCode",
+        "path": "PR1.ConsentCode",
+        "code": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/v2-0059"
+          }
+        ],
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "CE",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/CE"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "PR1.13"
+          }
+        ]
+      },
+      {
+        "id": "PR1.ProcedurePriority",
+        "path": "PR1.ProcedurePriority",
+        "code": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/v2-0418"
+          }
+        ],
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "string",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/string"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "PR1.14"
+          }
+        ]
+      },
+      {
+        "id": "PR1.AssociatedDiagnosisCode",
+        "path": "PR1.AssociatedDiagnosisCode",
+        "code": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/v2-0051"
+          }
+        ],
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "CE",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/CE"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "PR1.15"
+          }
+        ]
+      },
+      {
+        "id": "PR1.ProcedureCodeModifier",
+        "path": "PR1.ProcedureCodeModifier",
+        "code": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/v2-0340"
+          }
+        ],
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "CE",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/CE"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "PR1.16"
+          }
+        ]
+      },
+      {
+        "id": "PR1.ProcedureDRGType",
+        "path": "PR1.ProcedureDRGType",
+        "code": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/v2-0416"
+          }
+        ],
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "string",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/string"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "PR1.17"
+          }
+        ]
+      },
+      {
+        "id": "PR1.TissueTypeCode",
+        "path": "PR1.TissueTypeCode",
+        "code": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/v2-0417"
+          }
+        ],
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "CE",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/CE"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "PR1.18"
+          }
+        ]
+      },
+      {
+        "id": "PR1.ProcedureIdentifier",
+        "path": "PR1.ProcedureIdentifier",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "EI",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/EI"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "PR1.19"
+          }
+        ]
+      },
+      {
+        "id": "PR1.ProcedureActionCode",
+        "path": "PR1.ProcedureActionCode",
+        "code": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/v2-0206"
+          }
+        ],
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "string",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/string"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "PR1.20"
+          }
+        ]
+      }
+    ]
+  }
+}

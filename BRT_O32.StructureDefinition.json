@@ -1,0 +1,286 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "BRT_O32",
+  "url": "http://hl7.org/fhir/StructureDefinition/BRT_O32",
+  "name": "BRT_O32",
+  "status": "active",
+  "fhirVersion": "4.0.1",
+  "kind": "logical",
+  "abstract": false,
+  "type": "BRT_O32",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Element",
+  "derivation": "specialization",
+  "differential": {
+    "element": [
+      {
+        "id": "BRT_O32",
+        "path": "BRT_O32",
+        "type": [
+          {
+            "code": "Element"
+          }
+        ],
+        "mapping": [
+          {
+            "id": "BRT_O32",
+            "identity": "v2",
+            "map": "BRT_O32"
+          }
+        ]
+      },
+      {
+        "id": "BRT_O32.MSH",
+        "path": "BRT_O32.MSH",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "MSH",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/MSH"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "MSH"
+          }
+        ]
+      },
+      {
+        "id": "BRT_O32.MSA",
+        "path": "BRT_O32.MSA",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "MSA",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/MSA"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "MSA"
+          }
+        ]
+      },
+      {
+        "id": "BRT_O32.ERR",
+        "path": "BRT_O32.ERR",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "ERR",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/ERR"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "ERR"
+          }
+        ]
+      },
+      {
+        "id": "BRT_O32.SFT",
+        "path": "BRT_O32.SFT",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "SFT",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/SFT"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "SFT"
+          }
+        ]
+      },
+      {
+        "id": "BRT_O32.NTE",
+        "path": "BRT_O32.NTE",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "NTE",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/NTE"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "NTE"
+          }
+        ]
+      },
+      {
+        "id": "BRT_O32.RESPONSE",
+        "path": "BRT_O32.RESPONSE",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "BackboneElement"
+          }
+        ]
+      },
+      {
+        "id": "BRT_O32.RESPONSE.PID",
+        "path": "BRT_O32.RESPONSE.PID",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "PID",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/PID"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "PID"
+          }
+        ]
+      },
+      {
+        "id": "BRT_O32.RESPONSE.ORDER",
+        "path": "BRT_O32.RESPONSE.ORDER",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "BackboneElement"
+          }
+        ]
+      },
+      {
+        "id": "BRT_O32.RESPONSE.ORDER.ORC",
+        "path": "BRT_O32.RESPONSE.ORDER.ORC",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "ORC",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/ORC"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "ORC"
+          }
+        ]
+      },
+      {
+        "id": "BRT_O32.RESPONSE.ORDER.TIMING",
+        "path": "BRT_O32.RESPONSE.ORDER.TIMING",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "BackboneElement"
+          }
+        ]
+      },
+      {
+        "id": "BRT_O32.RESPONSE.ORDER.TIMING.TQ1",
+        "path": "BRT_O32.RESPONSE.ORDER.TIMING.TQ1",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "TQ1",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/TQ1"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "TQ1"
+          }
+        ]
+      },
+      {
+        "id": "BRT_O32.RESPONSE.ORDER.TIMING.TQ2",
+        "path": "BRT_O32.RESPONSE.ORDER.TIMING.TQ2",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "TQ2",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/TQ2"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "TQ2"
+          }
+        ]
+      },
+      {
+        "id": "BRT_O32.RESPONSE.ORDER.BPO",
+        "path": "BRT_O32.RESPONSE.ORDER.BPO",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "BPO",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/BPO"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "BPO"
+          }
+        ]
+      },
+      {
+        "id": "BRT_O32.RESPONSE.ORDER.BTX",
+        "path": "BRT_O32.RESPONSE.ORDER.BTX",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "BTX",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/BTX"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "BTX"
+          }
+        ]
+      }
+    ]
+  }
+}

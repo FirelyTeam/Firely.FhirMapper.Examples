@@ -1,0 +1,183 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "CSU",
+  "url": "http://hl7.org/fhir/StructureDefinition/CSU",
+  "name": "CSU",
+  "status": "active",
+  "fhirVersion": "4.0.1",
+  "kind": "logical",
+  "abstract": false,
+  "type": "CSU",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Element",
+  "derivation": "specialization",
+  "differential": {
+    "element": [
+      {
+        "id": "CSU",
+        "path": "CSU",
+        "type": [
+          {
+            "code": "Element"
+          }
+        ],
+        "mapping": [
+          {
+            "id": "CSU",
+            "identity": "v2",
+            "map": "CSU"
+          }
+        ]
+      },
+      {
+        "id": "CSU.ChannelSensitivity",
+        "path": "CSU.ChannelSensitivity",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "string",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/string"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "CSU.1"
+          }
+        ]
+      },
+      {
+        "id": "CSU.UnitofMeasureIdentifier",
+        "path": "CSU.UnitofMeasureIdentifier",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "string",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/string"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "CSU.2"
+          }
+        ]
+      },
+      {
+        "id": "CSU.UnitofMeasureDescription",
+        "path": "CSU.UnitofMeasureDescription",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "string",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/string"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "CSU.3"
+          }
+        ]
+      },
+      {
+        "id": "CSU.UnitofMeasureCodingSystem",
+        "path": "CSU.UnitofMeasureCodingSystem",
+        "code": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/v2-0396"
+          }
+        ],
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "string",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/string"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "CSU.4"
+          }
+        ]
+      },
+      {
+        "id": "CSU.AlternateUnitofMeasureIdentifier",
+        "path": "CSU.AlternateUnitofMeasureIdentifier",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "string",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/string"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "CSU.5"
+          }
+        ]
+      },
+      {
+        "id": "CSU.AlternateUnitofMeasureDescription",
+        "path": "CSU.AlternateUnitofMeasureDescription",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "string",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/string"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "CSU.6"
+          }
+        ]
+      },
+      {
+        "id": "CSU.AlternateUnitofMeasureCodingSystem",
+        "path": "CSU.AlternateUnitofMeasureCodingSystem",
+        "code": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/v2-0396"
+          }
+        ],
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "string",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/string"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "CSU.7"
+          }
+        ]
+      }
+    ]
+  }
+}

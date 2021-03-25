@@ -1,0 +1,284 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "MFN_M02",
+  "url": "http://hl7.org/fhir/StructureDefinition/MFN_M02",
+  "name": "MFN_M02",
+  "status": "active",
+  "fhirVersion": "4.0.1",
+  "kind": "logical",
+  "abstract": false,
+  "type": "MFN_M02",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Element",
+  "derivation": "specialization",
+  "differential": {
+    "element": [
+      {
+        "id": "MFN_M02",
+        "path": "MFN_M02",
+        "type": [
+          {
+            "code": "Element"
+          }
+        ],
+        "mapping": [
+          {
+            "id": "MFN_M02",
+            "identity": "v2",
+            "map": "MFN_M02"
+          }
+        ]
+      },
+      {
+        "id": "MFN_M02.MSH",
+        "path": "MFN_M02.MSH",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "MSH",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/MSH"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "MSH"
+          }
+        ]
+      },
+      {
+        "id": "MFN_M02.SFT",
+        "path": "MFN_M02.SFT",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "SFT",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/SFT"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "SFT"
+          }
+        ]
+      },
+      {
+        "id": "MFN_M02.MFI",
+        "path": "MFN_M02.MFI",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "MFI",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/MFI"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "MFI"
+          }
+        ]
+      },
+      {
+        "id": "MFN_M02.MF_STAFF",
+        "path": "MFN_M02.MF_STAFF",
+        "min": 1,
+        "max": "*",
+        "type": [
+          {
+            "code": "BackboneElement"
+          }
+        ]
+      },
+      {
+        "id": "MFN_M02.MF_STAFF.MFE",
+        "path": "MFN_M02.MF_STAFF.MFE",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "MFE",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/MFE"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "MFE"
+          }
+        ]
+      },
+      {
+        "id": "MFN_M02.MF_STAFF.STF",
+        "path": "MFN_M02.MF_STAFF.STF",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "STF",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/STF"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "STF"
+          }
+        ]
+      },
+      {
+        "id": "MFN_M02.MF_STAFF.PRA",
+        "path": "MFN_M02.MF_STAFF.PRA",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "PRA",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/PRA"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "PRA"
+          }
+        ]
+      },
+      {
+        "id": "MFN_M02.MF_STAFF.ORG",
+        "path": "MFN_M02.MF_STAFF.ORG",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "ORG",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/ORG"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "ORG"
+          }
+        ]
+      },
+      {
+        "id": "MFN_M02.MF_STAFF.AFF",
+        "path": "MFN_M02.MF_STAFF.AFF",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "AFF",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/AFF"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "AFF"
+          }
+        ]
+      },
+      {
+        "id": "MFN_M02.MF_STAFF.LAN",
+        "path": "MFN_M02.MF_STAFF.LAN",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "LAN",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/LAN"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "LAN"
+          }
+        ]
+      },
+      {
+        "id": "MFN_M02.MF_STAFF.EDU",
+        "path": "MFN_M02.MF_STAFF.EDU",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "EDU",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/EDU"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "EDU"
+          }
+        ]
+      },
+      {
+        "id": "MFN_M02.MF_STAFF.CER",
+        "path": "MFN_M02.MF_STAFF.CER",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "CER",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/CER"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "CER"
+          }
+        ]
+      },
+      {
+        "id": "MFN_M02.MF_STAFF.NTE",
+        "path": "MFN_M02.MF_STAFF.NTE",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "NTE",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/NTE"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "NTE"
+          }
+        ]
+      }
+    ]
+  }
+}

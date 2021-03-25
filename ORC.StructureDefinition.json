@@ -1,0 +1,673 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "ORC",
+  "url": "http://hl7.org/fhir/StructureDefinition/ORC",
+  "name": "ORC",
+  "status": "active",
+  "fhirVersion": "4.0.1",
+  "kind": "logical",
+  "abstract": false,
+  "type": "ORC",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Element",
+  "derivation": "specialization",
+  "differential": {
+    "element": [
+      {
+        "id": "ORC",
+        "path": "ORC",
+        "type": [
+          {
+            "code": "Element"
+          }
+        ],
+        "mapping": [
+          {
+            "id": "ORC",
+            "identity": "v2",
+            "map": "ORC"
+          }
+        ]
+      },
+      {
+        "id": "ORC.OrderControl",
+        "path": "ORC.OrderControl",
+        "code": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/v2-0119"
+          }
+        ],
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "string",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/string"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "ORC.1"
+          }
+        ]
+      },
+      {
+        "id": "ORC.PlacerOrderNumber",
+        "path": "ORC.PlacerOrderNumber",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "EI",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/EI"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "ORC.2"
+          }
+        ]
+      },
+      {
+        "id": "ORC.FillerOrderNumber",
+        "path": "ORC.FillerOrderNumber",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "EI",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/EI"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "ORC.3"
+          }
+        ]
+      },
+      {
+        "id": "ORC.PlacerGroupNumber",
+        "path": "ORC.PlacerGroupNumber",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "EI",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/EI"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "ORC.4"
+          }
+        ]
+      },
+      {
+        "id": "ORC.OrderStatus",
+        "path": "ORC.OrderStatus",
+        "code": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/v2-0038"
+          }
+        ],
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "string",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/string"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "ORC.5"
+          }
+        ]
+      },
+      {
+        "id": "ORC.ResponseFlag",
+        "path": "ORC.ResponseFlag",
+        "code": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/v2-0121"
+          }
+        ],
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "string",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/string"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "ORC.6"
+          }
+        ]
+      },
+      {
+        "id": "ORC.Quantity/Timing",
+        "path": "ORC.Quantity/Timing",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "TQ",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/TQ"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "ORC.7"
+          }
+        ]
+      },
+      {
+        "id": "ORC.Parent",
+        "path": "ORC.Parent",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "EIP",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/EIP"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "ORC.8"
+          }
+        ]
+      },
+      {
+        "id": "ORC.Date/TimeofTransaction",
+        "path": "ORC.Date/TimeofTransaction",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "TS",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/TS"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "ORC.9"
+          }
+        ]
+      },
+      {
+        "id": "ORC.EnteredBy",
+        "path": "ORC.EnteredBy",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "XCN",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/XCN"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "ORC.10"
+          }
+        ]
+      },
+      {
+        "id": "ORC.VerifiedBy",
+        "path": "ORC.VerifiedBy",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "XCN",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/XCN"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "ORC.11"
+          }
+        ]
+      },
+      {
+        "id": "ORC.OrderingProvider",
+        "path": "ORC.OrderingProvider",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "XCN",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/XCN"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "ORC.12"
+          }
+        ]
+      },
+      {
+        "id": "ORC.Enterer'sLocation",
+        "path": "ORC.Enterer'sLocation",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "PL",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/PL"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "ORC.13"
+          }
+        ]
+      },
+      {
+        "id": "ORC.CallBackPhoneNumber",
+        "path": "ORC.CallBackPhoneNumber",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "XTN",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/XTN"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "ORC.14"
+          }
+        ]
+      },
+      {
+        "id": "ORC.OrderEffectiveDate/Time",
+        "path": "ORC.OrderEffectiveDate/Time",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "TS",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/TS"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "ORC.15"
+          }
+        ]
+      },
+      {
+        "id": "ORC.OrderControlCodeReason",
+        "path": "ORC.OrderControlCodeReason",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "CE",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/CE"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "ORC.16"
+          }
+        ]
+      },
+      {
+        "id": "ORC.EnteringOrganization",
+        "path": "ORC.EnteringOrganization",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "CE",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/CE"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "ORC.17"
+          }
+        ]
+      },
+      {
+        "id": "ORC.EnteringDevice",
+        "path": "ORC.EnteringDevice",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "CE",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/CE"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "ORC.18"
+          }
+        ]
+      },
+      {
+        "id": "ORC.ActionBy",
+        "path": "ORC.ActionBy",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "XCN",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/XCN"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "ORC.19"
+          }
+        ]
+      },
+      {
+        "id": "ORC.AdvancedBeneficiaryNoticeCode",
+        "path": "ORC.AdvancedBeneficiaryNoticeCode",
+        "code": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/v2-0339"
+          }
+        ],
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "CE",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/CE"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "ORC.20"
+          }
+        ]
+      },
+      {
+        "id": "ORC.OrderingFacilityName",
+        "path": "ORC.OrderingFacilityName",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "XON",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/XON"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "ORC.21"
+          }
+        ]
+      },
+      {
+        "id": "ORC.OrderingFacilityAddress",
+        "path": "ORC.OrderingFacilityAddress",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "XAD",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/XAD"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "ORC.22"
+          }
+        ]
+      },
+      {
+        "id": "ORC.OrderingFacilityPhoneNumber",
+        "path": "ORC.OrderingFacilityPhoneNumber",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "XTN",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/XTN"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "ORC.23"
+          }
+        ]
+      },
+      {
+        "id": "ORC.OrderingProviderAddress",
+        "path": "ORC.OrderingProviderAddress",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "XAD",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/XAD"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "ORC.24"
+          }
+        ]
+      },
+      {
+        "id": "ORC.OrderStatusModifier",
+        "path": "ORC.OrderStatusModifier",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "CWE",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/CWE"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "ORC.25"
+          }
+        ]
+      },
+      {
+        "id": "ORC.AdvancedBeneficiaryNoticeOverrideReason",
+        "path": "ORC.AdvancedBeneficiaryNoticeOverrideReason",
+        "code": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/v2-0552"
+          }
+        ],
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "CWE",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/CWE"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "ORC.26"
+          }
+        ]
+      },
+      {
+        "id": "ORC.Filler'sExpectedAvailabilityDate/Time",
+        "path": "ORC.Filler'sExpectedAvailabilityDate/Time",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "TS",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/TS"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "ORC.27"
+          }
+        ]
+      },
+      {
+        "id": "ORC.ConfidentialityCode",
+        "path": "ORC.ConfidentialityCode",
+        "code": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/v2-0177"
+          }
+        ],
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "CWE",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/CWE"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "ORC.28"
+          }
+        ]
+      },
+      {
+        "id": "ORC.OrderType",
+        "path": "ORC.OrderType",
+        "code": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/v2-0482"
+          }
+        ],
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "CWE",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/CWE"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "ORC.29"
+          }
+        ]
+      },
+      {
+        "id": "ORC.EntererAuthorizationMode",
+        "path": "ORC.EntererAuthorizationMode",
+        "code": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/v2-0483"
+          }
+        ],
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "CNE",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/CNE"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "ORC.30"
+          }
+        ]
+      }
+    ]
+  }
+}

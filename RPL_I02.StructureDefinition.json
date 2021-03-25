@@ -1,0 +1,204 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "RPL_I02",
+  "url": "http://hl7.org/fhir/StructureDefinition/RPL_I02",
+  "name": "RPL_I02",
+  "status": "active",
+  "fhirVersion": "4.0.1",
+  "kind": "logical",
+  "abstract": false,
+  "type": "RPL_I02",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Element",
+  "derivation": "specialization",
+  "differential": {
+    "element": [
+      {
+        "id": "RPL_I02",
+        "path": "RPL_I02",
+        "type": [
+          {
+            "code": "Element"
+          }
+        ],
+        "mapping": [
+          {
+            "id": "RPL_I02",
+            "identity": "v2",
+            "map": "RPL_I02"
+          }
+        ]
+      },
+      {
+        "id": "RPL_I02.MSH",
+        "path": "RPL_I02.MSH",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "MSH",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/MSH"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "MSH"
+          }
+        ]
+      },
+      {
+        "id": "RPL_I02.SFT",
+        "path": "RPL_I02.SFT",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "SFT",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/SFT"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "SFT"
+          }
+        ]
+      },
+      {
+        "id": "RPL_I02.MSA",
+        "path": "RPL_I02.MSA",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "MSA",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/MSA"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "MSA"
+          }
+        ]
+      },
+      {
+        "id": "RPL_I02.PROVIDER",
+        "path": "RPL_I02.PROVIDER",
+        "min": 1,
+        "max": "*",
+        "type": [
+          {
+            "code": "BackboneElement"
+          }
+        ]
+      },
+      {
+        "id": "RPL_I02.PROVIDER.PRD",
+        "path": "RPL_I02.PROVIDER.PRD",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "PRD",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/PRD"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "PRD"
+          }
+        ]
+      },
+      {
+        "id": "RPL_I02.PROVIDER.CTD",
+        "path": "RPL_I02.PROVIDER.CTD",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "CTD",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/CTD"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "CTD"
+          }
+        ]
+      },
+      {
+        "id": "RPL_I02.NTE",
+        "path": "RPL_I02.NTE",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "NTE",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/NTE"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "NTE"
+          }
+        ]
+      },
+      {
+        "id": "RPL_I02.DSP",
+        "path": "RPL_I02.DSP",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "DSP",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/DSP"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "DSP"
+          }
+        ]
+      },
+      {
+        "id": "RPL_I02.DSC",
+        "path": "RPL_I02.DSC",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "DSC",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/DSC"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "DSC"
+          }
+        ]
+      }
+    ]
+  }
+}

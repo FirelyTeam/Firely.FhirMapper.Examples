@@ -1,0 +1,103 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "HD",
+  "url": "http://hl7.org/fhir/StructureDefinition/HD",
+  "name": "HD",
+  "status": "active",
+  "fhirVersion": "4.0.1",
+  "kind": "logical",
+  "abstract": false,
+  "type": "HD",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Element",
+  "derivation": "specialization",
+  "differential": {
+    "element": [
+      {
+        "id": "HD",
+        "path": "HD",
+        "type": [
+          {
+            "code": "Element"
+          }
+        ],
+        "mapping": [
+          {
+            "id": "HD",
+            "identity": "v2",
+            "map": "HD"
+          }
+        ]
+      },
+      {
+        "id": "HD.NamespaceID",
+        "path": "HD.NamespaceID",
+        "code": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/v2-0300"
+          }
+        ],
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "string",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/string"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "HD.1"
+          }
+        ]
+      },
+      {
+        "id": "HD.UniversalID",
+        "path": "HD.UniversalID",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "string",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/string"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "HD.2"
+          }
+        ]
+      },
+      {
+        "id": "HD.UniversalIDType",
+        "path": "HD.UniversalIDType",
+        "code": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/v2-0301"
+          }
+        ],
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "string",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/string"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "HD.3"
+          }
+        ]
+      }
+    ]
+  }
+}

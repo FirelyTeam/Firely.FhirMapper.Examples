@@ -1,0 +1,573 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "PEO",
+  "url": "http://hl7.org/fhir/StructureDefinition/PEO",
+  "name": "PEO",
+  "status": "active",
+  "fhirVersion": "4.0.1",
+  "kind": "logical",
+  "abstract": false,
+  "type": "PEO",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Element",
+  "derivation": "specialization",
+  "differential": {
+    "element": [
+      {
+        "id": "PEO",
+        "path": "PEO",
+        "type": [
+          {
+            "code": "Element"
+          }
+        ],
+        "mapping": [
+          {
+            "id": "PEO",
+            "identity": "v2",
+            "map": "PEO"
+          }
+        ]
+      },
+      {
+        "id": "PEO.EventIdentifiersUsed",
+        "path": "PEO.EventIdentifiersUsed",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "CE",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/CE"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "PEO.1"
+          }
+        ]
+      },
+      {
+        "id": "PEO.EventSymptom/DiagnosisCode",
+        "path": "PEO.EventSymptom/DiagnosisCode",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "CE",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/CE"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "PEO.2"
+          }
+        ]
+      },
+      {
+        "id": "PEO.EventOnsetDate/Time",
+        "path": "PEO.EventOnsetDate/Time",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "TS",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/TS"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "PEO.3"
+          }
+        ]
+      },
+      {
+        "id": "PEO.EventExacerbationDate/Time",
+        "path": "PEO.EventExacerbationDate/Time",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "TS",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/TS"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "PEO.4"
+          }
+        ]
+      },
+      {
+        "id": "PEO.EventImprovedDate/Time",
+        "path": "PEO.EventImprovedDate/Time",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "TS",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/TS"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "PEO.5"
+          }
+        ]
+      },
+      {
+        "id": "PEO.EventEndedData/Time",
+        "path": "PEO.EventEndedData/Time",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "TS",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/TS"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "PEO.6"
+          }
+        ]
+      },
+      {
+        "id": "PEO.EventLocationOccurredAddress",
+        "path": "PEO.EventLocationOccurredAddress",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "XAD",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/XAD"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "PEO.7"
+          }
+        ]
+      },
+      {
+        "id": "PEO.EventQualification",
+        "path": "PEO.EventQualification",
+        "code": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/v2-0237"
+          }
+        ],
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "string",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/string"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "PEO.8"
+          }
+        ]
+      },
+      {
+        "id": "PEO.EventSerious",
+        "path": "PEO.EventSerious",
+        "code": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/v2-0238"
+          }
+        ],
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "string",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/string"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "PEO.9"
+          }
+        ]
+      },
+      {
+        "id": "PEO.EventExpected",
+        "path": "PEO.EventExpected",
+        "code": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/v2-0239"
+          }
+        ],
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "string",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/string"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "PEO.10"
+          }
+        ]
+      },
+      {
+        "id": "PEO.EventOutcome",
+        "path": "PEO.EventOutcome",
+        "code": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/v2-0240"
+          }
+        ],
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "string",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/string"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "PEO.11"
+          }
+        ]
+      },
+      {
+        "id": "PEO.PatientOutcome",
+        "path": "PEO.PatientOutcome",
+        "code": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/v2-0241"
+          }
+        ],
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "string",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/string"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "PEO.12"
+          }
+        ]
+      },
+      {
+        "id": "PEO.EventDescriptionFromOthers",
+        "path": "PEO.EventDescriptionFromOthers",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "string",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/string"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "PEO.13"
+          }
+        ]
+      },
+      {
+        "id": "PEO.EventFromOriginalReporter",
+        "path": "PEO.EventFromOriginalReporter",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "string",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/string"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "PEO.14"
+          }
+        ]
+      },
+      {
+        "id": "PEO.EventDescriptionFromPatient",
+        "path": "PEO.EventDescriptionFromPatient",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "string",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/string"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "PEO.15"
+          }
+        ]
+      },
+      {
+        "id": "PEO.EventDescriptionFromPractitioner",
+        "path": "PEO.EventDescriptionFromPractitioner",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "string",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/string"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "PEO.16"
+          }
+        ]
+      },
+      {
+        "id": "PEO.EventDescriptionFromAutopsy",
+        "path": "PEO.EventDescriptionFromAutopsy",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "string",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/string"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "PEO.17"
+          }
+        ]
+      },
+      {
+        "id": "PEO.CauseOfDeath",
+        "path": "PEO.CauseOfDeath",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "CE",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/CE"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "PEO.18"
+          }
+        ]
+      },
+      {
+        "id": "PEO.PrimaryObserverName",
+        "path": "PEO.PrimaryObserverName",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "XPN",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/XPN"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "PEO.19"
+          }
+        ]
+      },
+      {
+        "id": "PEO.PrimaryObserverAddress",
+        "path": "PEO.PrimaryObserverAddress",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "XAD",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/XAD"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "PEO.20"
+          }
+        ]
+      },
+      {
+        "id": "PEO.PrimaryObserverTelephone",
+        "path": "PEO.PrimaryObserverTelephone",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "XTN",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/XTN"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "PEO.21"
+          }
+        ]
+      },
+      {
+        "id": "PEO.PrimaryObserver'sQualification",
+        "path": "PEO.PrimaryObserver'sQualification",
+        "code": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/v2-0242"
+          }
+        ],
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "string",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/string"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "PEO.22"
+          }
+        ]
+      },
+      {
+        "id": "PEO.ConfirmationProvidedBy",
+        "path": "PEO.ConfirmationProvidedBy",
+        "code": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/v2-0242"
+          }
+        ],
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "string",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/string"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "PEO.23"
+          }
+        ]
+      },
+      {
+        "id": "PEO.PrimaryObserverAwareDate/Time",
+        "path": "PEO.PrimaryObserverAwareDate/Time",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "TS",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/TS"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "PEO.24"
+          }
+        ]
+      },
+      {
+        "id": "PEO.PrimaryObserver'sidentityMayBeDivulged",
+        "path": "PEO.PrimaryObserver'sidentityMayBeDivulged",
+        "code": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/v2-0243"
+          }
+        ],
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "string",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/string"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "PEO.25"
+          }
+        ]
+      }
+    ]
+  }
+}

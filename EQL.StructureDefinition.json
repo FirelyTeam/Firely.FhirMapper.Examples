@@ -1,0 +1,118 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "EQL",
+  "url": "http://hl7.org/fhir/StructureDefinition/EQL",
+  "name": "EQL",
+  "status": "active",
+  "fhirVersion": "4.0.1",
+  "kind": "logical",
+  "abstract": false,
+  "type": "EQL",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Element",
+  "derivation": "specialization",
+  "differential": {
+    "element": [
+      {
+        "id": "EQL",
+        "path": "EQL",
+        "type": [
+          {
+            "code": "Element"
+          }
+        ],
+        "mapping": [
+          {
+            "id": "EQL",
+            "identity": "v2",
+            "map": "EQL"
+          }
+        ]
+      },
+      {
+        "id": "EQL.QueryTag",
+        "path": "EQL.QueryTag",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "string",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/string"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "EQL.1"
+          }
+        ]
+      },
+      {
+        "id": "EQL.Query/ResponseFormatCode",
+        "path": "EQL.Query/ResponseFormatCode",
+        "code": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/v2-0106"
+          }
+        ],
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "string",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/string"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "EQL.2"
+          }
+        ]
+      },
+      {
+        "id": "EQL.EQLQueryName",
+        "path": "EQL.EQLQueryName",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "CE",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/CE"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "EQL.3"
+          }
+        ]
+      },
+      {
+        "id": "EQL.EQLQueryStatement",
+        "path": "EQL.EQLQueryStatement",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "string",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/string"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "EQL.4"
+          }
+        ]
+      }
+    ]
+  }
+}

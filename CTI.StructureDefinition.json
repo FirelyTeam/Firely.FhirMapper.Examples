@@ -1,0 +1,93 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "CTI",
+  "url": "http://hl7.org/fhir/StructureDefinition/CTI",
+  "name": "CTI",
+  "status": "active",
+  "fhirVersion": "4.0.1",
+  "kind": "logical",
+  "abstract": false,
+  "type": "CTI",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Element",
+  "derivation": "specialization",
+  "differential": {
+    "element": [
+      {
+        "id": "CTI",
+        "path": "CTI",
+        "type": [
+          {
+            "code": "Element"
+          }
+        ],
+        "mapping": [
+          {
+            "id": "CTI",
+            "identity": "v2",
+            "map": "CTI"
+          }
+        ]
+      },
+      {
+        "id": "CTI.SponsorStudyID",
+        "path": "CTI.SponsorStudyID",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "EI",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/EI"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "CTI.1"
+          }
+        ]
+      },
+      {
+        "id": "CTI.StudyPhaseIdentifier",
+        "path": "CTI.StudyPhaseIdentifier",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "CE",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/CE"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "CTI.2"
+          }
+        ]
+      },
+      {
+        "id": "CTI.StudyScheduledTimePoint",
+        "path": "CTI.StudyScheduledTimePoint",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "CE",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/CE"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "CTI.3"
+          }
+        ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,223 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "CNE",
+  "url": "http://hl7.org/fhir/StructureDefinition/CNE",
+  "name": "CNE",
+  "status": "active",
+  "fhirVersion": "4.0.1",
+  "kind": "logical",
+  "abstract": false,
+  "type": "CNE",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Element",
+  "derivation": "specialization",
+  "differential": {
+    "element": [
+      {
+        "id": "CNE",
+        "path": "CNE",
+        "type": [
+          {
+            "code": "Element"
+          }
+        ],
+        "mapping": [
+          {
+            "id": "CNE",
+            "identity": "v2",
+            "map": "CNE"
+          }
+        ]
+      },
+      {
+        "id": "CNE.Identifier",
+        "path": "CNE.Identifier",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "string",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/string"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "CNE.1"
+          }
+        ]
+      },
+      {
+        "id": "CNE.Text",
+        "path": "CNE.Text",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "string",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/string"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "CNE.2"
+          }
+        ]
+      },
+      {
+        "id": "CNE.NameofCodingSystem",
+        "path": "CNE.NameofCodingSystem",
+        "code": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/v2-0396"
+          }
+        ],
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "string",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/string"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "CNE.3"
+          }
+        ]
+      },
+      {
+        "id": "CNE.AlternateIdentifier",
+        "path": "CNE.AlternateIdentifier",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "string",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/string"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "CNE.4"
+          }
+        ]
+      },
+      {
+        "id": "CNE.AlternateText",
+        "path": "CNE.AlternateText",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "string",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/string"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "CNE.5"
+          }
+        ]
+      },
+      {
+        "id": "CNE.NameofAlternateCodingSystem",
+        "path": "CNE.NameofAlternateCodingSystem",
+        "code": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/v2-0396"
+          }
+        ],
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "string",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/string"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "CNE.6"
+          }
+        ]
+      },
+      {
+        "id": "CNE.CodingSystemVersionID",
+        "path": "CNE.CodingSystemVersionID",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "string",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/string"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "CNE.7"
+          }
+        ]
+      },
+      {
+        "id": "CNE.AlternateCodingSystemVersionID",
+        "path": "CNE.AlternateCodingSystemVersionID",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "string",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/string"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "CNE.8"
+          }
+        ]
+      },
+      {
+        "id": "CNE.OriginalText",
+        "path": "CNE.OriginalText",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "string",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/string"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "CNE.9"
+          }
+        ]
+      }
+    ]
+  }
+}

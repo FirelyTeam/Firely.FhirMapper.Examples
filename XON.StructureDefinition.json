@@ -1,0 +1,258 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "XON",
+  "url": "http://hl7.org/fhir/StructureDefinition/XON",
+  "name": "XON",
+  "status": "active",
+  "fhirVersion": "4.0.1",
+  "kind": "logical",
+  "abstract": false,
+  "type": "XON",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Element",
+  "derivation": "specialization",
+  "differential": {
+    "element": [
+      {
+        "id": "XON",
+        "path": "XON",
+        "type": [
+          {
+            "code": "Element"
+          }
+        ],
+        "mapping": [
+          {
+            "id": "XON",
+            "identity": "v2",
+            "map": "XON"
+          }
+        ]
+      },
+      {
+        "id": "XON.OrganizationName",
+        "path": "XON.OrganizationName",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "string",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/string"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "XON.1"
+          }
+        ]
+      },
+      {
+        "id": "XON.OrganizationNameTypeCode",
+        "path": "XON.OrganizationNameTypeCode",
+        "code": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/v2-0204"
+          }
+        ],
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "string",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/string"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "XON.2"
+          }
+        ]
+      },
+      {
+        "id": "XON.IDNumber",
+        "path": "XON.IDNumber",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "string",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/string"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "XON.3"
+          }
+        ]
+      },
+      {
+        "id": "XON.CheckDigit",
+        "path": "XON.CheckDigit",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "string",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/string"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "XON.4"
+          }
+        ]
+      },
+      {
+        "id": "XON.CheckDigitScheme",
+        "path": "XON.CheckDigitScheme",
+        "code": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/v2-0061"
+          }
+        ],
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "string",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/string"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "XON.5"
+          }
+        ]
+      },
+      {
+        "id": "XON.AssigningAuthority",
+        "path": "XON.AssigningAuthority",
+        "code": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/v2-0363"
+          }
+        ],
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "HD",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/HD"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "XON.6"
+          }
+        ]
+      },
+      {
+        "id": "XON.IdentifierTypeCode",
+        "path": "XON.IdentifierTypeCode",
+        "code": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/v2-0203"
+          }
+        ],
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "string",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/string"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "XON.7"
+          }
+        ]
+      },
+      {
+        "id": "XON.AssigningFacility",
+        "path": "XON.AssigningFacility",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "HD",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/HD"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "XON.8"
+          }
+        ]
+      },
+      {
+        "id": "XON.NameRepresentationCode",
+        "path": "XON.NameRepresentationCode",
+        "code": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/v2-0465"
+          }
+        ],
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "string",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/string"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "XON.9"
+          }
+        ]
+      },
+      {
+        "id": "XON.OrganizationIdentifier",
+        "path": "XON.OrganizationIdentifier",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "string",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/string"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "XON.10"
+          }
+        ]
+      }
+    ]
+  }
+}

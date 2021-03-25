@@ -1,0 +1,188 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "URD",
+  "url": "http://hl7.org/fhir/StructureDefinition/URD",
+  "name": "URD",
+  "status": "active",
+  "fhirVersion": "4.0.1",
+  "kind": "logical",
+  "abstract": false,
+  "type": "URD",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Element",
+  "derivation": "specialization",
+  "differential": {
+    "element": [
+      {
+        "id": "URD",
+        "path": "URD",
+        "type": [
+          {
+            "code": "Element"
+          }
+        ],
+        "mapping": [
+          {
+            "id": "URD",
+            "identity": "v2",
+            "map": "URD"
+          }
+        ]
+      },
+      {
+        "id": "URD.R/UDate/Time",
+        "path": "URD.R/UDate/Time",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "TS",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/TS"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "URD.1"
+          }
+        ]
+      },
+      {
+        "id": "URD.ReportPriority",
+        "path": "URD.ReportPriority",
+        "code": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/v2-0109"
+          }
+        ],
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "string",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/string"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "URD.2"
+          }
+        ]
+      },
+      {
+        "id": "URD.R/UWhoSubjectDefinition",
+        "path": "URD.R/UWhoSubjectDefinition",
+        "min": 1,
+        "max": "*",
+        "type": [
+          {
+            "code": "XCN",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/XCN"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "URD.3"
+          }
+        ]
+      },
+      {
+        "id": "URD.R/UWhatSubjectDefinition",
+        "path": "URD.R/UWhatSubjectDefinition",
+        "code": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/v2-0048"
+          }
+        ],
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "CE",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/CE"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "URD.4"
+          }
+        ]
+      },
+      {
+        "id": "URD.R/UWhatDepartmentCode",
+        "path": "URD.R/UWhatDepartmentCode",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "CE",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/CE"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "URD.5"
+          }
+        ]
+      },
+      {
+        "id": "URD.R/UDisplay/PrintLocations",
+        "path": "URD.R/UDisplay/PrintLocations",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "string",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/string"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "URD.6"
+          }
+        ]
+      },
+      {
+        "id": "URD.R/UResultsLevel",
+        "path": "URD.R/UResultsLevel",
+        "code": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/v2-0108"
+          }
+        ],
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "string",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/string"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "URD.7"
+          }
+        ]
+      }
+    ]
+  }
+}

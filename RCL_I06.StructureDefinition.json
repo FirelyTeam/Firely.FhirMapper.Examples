@@ -1,0 +1,324 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "RCL_I06",
+  "url": "http://hl7.org/fhir/StructureDefinition/RCL_I06",
+  "name": "RCL_I06",
+  "status": "active",
+  "fhirVersion": "4.0.1",
+  "kind": "logical",
+  "abstract": false,
+  "type": "RCL_I06",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Element",
+  "derivation": "specialization",
+  "differential": {
+    "element": [
+      {
+        "id": "RCL_I06",
+        "path": "RCL_I06",
+        "type": [
+          {
+            "code": "Element"
+          }
+        ],
+        "mapping": [
+          {
+            "id": "RCL_I06",
+            "identity": "v2",
+            "map": "RCL_I06"
+          }
+        ]
+      },
+      {
+        "id": "RCL_I06.MSH",
+        "path": "RCL_I06.MSH",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "MSH",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/MSH"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "MSH"
+          }
+        ]
+      },
+      {
+        "id": "RCL_I06.SFT",
+        "path": "RCL_I06.SFT",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "SFT",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/SFT"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "SFT"
+          }
+        ]
+      },
+      {
+        "id": "RCL_I06.MSA",
+        "path": "RCL_I06.MSA",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "MSA",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/MSA"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "MSA"
+          }
+        ]
+      },
+      {
+        "id": "RCL_I06.QRD",
+        "path": "RCL_I06.QRD",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "QRD",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/QRD"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "QRD"
+          }
+        ]
+      },
+      {
+        "id": "RCL_I06.QRF",
+        "path": "RCL_I06.QRF",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "QRF",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/QRF"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "QRF"
+          }
+        ]
+      },
+      {
+        "id": "RCL_I06.PROVIDER",
+        "path": "RCL_I06.PROVIDER",
+        "min": 1,
+        "max": "*",
+        "type": [
+          {
+            "code": "BackboneElement"
+          }
+        ]
+      },
+      {
+        "id": "RCL_I06.PROVIDER.PRD",
+        "path": "RCL_I06.PROVIDER.PRD",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "PRD",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/PRD"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "PRD"
+          }
+        ]
+      },
+      {
+        "id": "RCL_I06.PROVIDER.CTD",
+        "path": "RCL_I06.PROVIDER.CTD",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "CTD",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/CTD"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "CTD"
+          }
+        ]
+      },
+      {
+        "id": "RCL_I06.PID",
+        "path": "RCL_I06.PID",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "PID",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/PID"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "PID"
+          }
+        ]
+      },
+      {
+        "id": "RCL_I06.DG1",
+        "path": "RCL_I06.DG1",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "DG1",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/DG1"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "DG1"
+          }
+        ]
+      },
+      {
+        "id": "RCL_I06.DRG",
+        "path": "RCL_I06.DRG",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "DRG",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/DRG"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "DRG"
+          }
+        ]
+      },
+      {
+        "id": "RCL_I06.AL1",
+        "path": "RCL_I06.AL1",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "AL1",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/AL1"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "AL1"
+          }
+        ]
+      },
+      {
+        "id": "RCL_I06.NTE",
+        "path": "RCL_I06.NTE",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "NTE",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/NTE"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "NTE"
+          }
+        ]
+      },
+      {
+        "id": "RCL_I06.DSP",
+        "path": "RCL_I06.DSP",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "DSP",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/DSP"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "DSP"
+          }
+        ]
+      },
+      {
+        "id": "RCL_I06.DSC",
+        "path": "RCL_I06.DSC",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "DSC",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/DSC"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "DSC"
+          }
+        ]
+      }
+    ]
+  }
+}

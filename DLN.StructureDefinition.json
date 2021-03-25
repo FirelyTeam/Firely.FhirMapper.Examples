@@ -1,0 +1,98 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "DLN",
+  "url": "http://hl7.org/fhir/StructureDefinition/DLN",
+  "name": "DLN",
+  "status": "active",
+  "fhirVersion": "4.0.1",
+  "kind": "logical",
+  "abstract": false,
+  "type": "DLN",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Element",
+  "derivation": "specialization",
+  "differential": {
+    "element": [
+      {
+        "id": "DLN",
+        "path": "DLN",
+        "type": [
+          {
+            "code": "Element"
+          }
+        ],
+        "mapping": [
+          {
+            "id": "DLN",
+            "identity": "v2",
+            "map": "DLN"
+          }
+        ]
+      },
+      {
+        "id": "DLN.LicenseNumber",
+        "path": "DLN.LicenseNumber",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "string",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/string"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "DLN.1"
+          }
+        ]
+      },
+      {
+        "id": "DLN.IssuingState,Province,Country",
+        "path": "DLN.IssuingState,Province,Country",
+        "code": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/v2-0333"
+          }
+        ],
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "string",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/string"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "DLN.2"
+          }
+        ]
+      },
+      {
+        "id": "DLN.ExpirationDate",
+        "path": "DLN.ExpirationDate",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "string",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/string"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "DLN.3"
+          }
+        ]
+      }
+    ]
+  }
+}

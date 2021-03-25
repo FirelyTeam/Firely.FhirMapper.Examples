@@ -1,0 +1,377 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "RAR_RAR",
+  "url": "http://hl7.org/fhir/StructureDefinition/RAR_RAR",
+  "name": "RAR_RAR",
+  "status": "active",
+  "fhirVersion": "4.0.1",
+  "kind": "logical",
+  "abstract": false,
+  "type": "RAR_RAR",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Element",
+  "derivation": "specialization",
+  "differential": {
+    "element": [
+      {
+        "id": "RAR_RAR",
+        "path": "RAR_RAR",
+        "type": [
+          {
+            "code": "Element"
+          }
+        ],
+        "mapping": [
+          {
+            "id": "RAR_RAR",
+            "identity": "v2",
+            "map": "RAR_RAR"
+          }
+        ]
+      },
+      {
+        "id": "RAR_RAR.MSH",
+        "path": "RAR_RAR.MSH",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "MSH",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/MSH"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "MSH"
+          }
+        ]
+      },
+      {
+        "id": "RAR_RAR.MSA",
+        "path": "RAR_RAR.MSA",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "MSA",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/MSA"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "MSA"
+          }
+        ]
+      },
+      {
+        "id": "RAR_RAR.ERR",
+        "path": "RAR_RAR.ERR",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "ERR",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/ERR"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "ERR"
+          }
+        ]
+      },
+      {
+        "id": "RAR_RAR.SFT",
+        "path": "RAR_RAR.SFT",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "SFT",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/SFT"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "SFT"
+          }
+        ]
+      },
+      {
+        "id": "RAR_RAR.DEFINITION",
+        "path": "RAR_RAR.DEFINITION",
+        "min": 1,
+        "max": "*",
+        "type": [
+          {
+            "code": "BackboneElement"
+          }
+        ]
+      },
+      {
+        "id": "RAR_RAR.DEFINITION.QRD",
+        "path": "RAR_RAR.DEFINITION.QRD",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "QRD",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/QRD"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "QRD"
+          }
+        ]
+      },
+      {
+        "id": "RAR_RAR.DEFINITION.QRF",
+        "path": "RAR_RAR.DEFINITION.QRF",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "QRF",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/QRF"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "QRF"
+          }
+        ]
+      },
+      {
+        "id": "RAR_RAR.DEFINITION.PATIENT",
+        "path": "RAR_RAR.DEFINITION.PATIENT",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "BackboneElement"
+          }
+        ]
+      },
+      {
+        "id": "RAR_RAR.DEFINITION.PATIENT.PID",
+        "path": "RAR_RAR.DEFINITION.PATIENT.PID",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "PID",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/PID"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "PID"
+          }
+        ]
+      },
+      {
+        "id": "RAR_RAR.DEFINITION.PATIENT.NTE",
+        "path": "RAR_RAR.DEFINITION.PATIENT.NTE",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "NTE",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/NTE"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "NTE"
+          }
+        ]
+      },
+      {
+        "id": "RAR_RAR.DEFINITION.ORDER",
+        "path": "RAR_RAR.DEFINITION.ORDER",
+        "min": 1,
+        "max": "*",
+        "type": [
+          {
+            "code": "BackboneElement"
+          }
+        ]
+      },
+      {
+        "id": "RAR_RAR.DEFINITION.ORDER.ORC",
+        "path": "RAR_RAR.DEFINITION.ORDER.ORC",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "ORC",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/ORC"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "ORC"
+          }
+        ]
+      },
+      {
+        "id": "RAR_RAR.DEFINITION.ORDER.ENCODING",
+        "path": "RAR_RAR.DEFINITION.ORDER.ENCODING",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "BackboneElement"
+          }
+        ]
+      },
+      {
+        "id": "RAR_RAR.DEFINITION.ORDER.ENCODING.RXE",
+        "path": "RAR_RAR.DEFINITION.ORDER.ENCODING.RXE",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "RXE",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/RXE"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "RXE"
+          }
+        ]
+      },
+      {
+        "id": "RAR_RAR.DEFINITION.ORDER.ENCODING.RXR",
+        "path": "RAR_RAR.DEFINITION.ORDER.ENCODING.RXR",
+        "min": 1,
+        "max": "*",
+        "type": [
+          {
+            "code": "RXR",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/RXR"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "RXR"
+          }
+        ]
+      },
+      {
+        "id": "RAR_RAR.DEFINITION.ORDER.ENCODING.RXC",
+        "path": "RAR_RAR.DEFINITION.ORDER.ENCODING.RXC",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "RXC",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/RXC"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "RXC"
+          }
+        ]
+      },
+      {
+        "id": "RAR_RAR.DEFINITION.ORDER.RXA",
+        "path": "RAR_RAR.DEFINITION.ORDER.RXA",
+        "min": 1,
+        "max": "*",
+        "type": [
+          {
+            "code": "RXA",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/RXA"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "RXA"
+          }
+        ]
+      },
+      {
+        "id": "RAR_RAR.DEFINITION.ORDER.RXR",
+        "path": "RAR_RAR.DEFINITION.ORDER.RXR",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "RXR",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/RXR"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "RXR"
+          }
+        ]
+      },
+      {
+        "id": "RAR_RAR.DSC",
+        "path": "RAR_RAR.DSC",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "DSC",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/DSC"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "DSC"
+          }
+        ]
+      }
+    ]
+  }
+}

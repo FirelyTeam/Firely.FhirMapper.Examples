@@ -1,0 +1,148 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "APR",
+  "url": "http://hl7.org/fhir/StructureDefinition/APR",
+  "name": "APR",
+  "status": "active",
+  "fhirVersion": "4.0.1",
+  "kind": "logical",
+  "abstract": false,
+  "type": "APR",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Element",
+  "derivation": "specialization",
+  "differential": {
+    "element": [
+      {
+        "id": "APR",
+        "path": "APR",
+        "type": [
+          {
+            "code": "Element"
+          }
+        ],
+        "mapping": [
+          {
+            "id": "APR",
+            "identity": "v2",
+            "map": "APR"
+          }
+        ]
+      },
+      {
+        "id": "APR.TimeSelectionCriteria",
+        "path": "APR.TimeSelectionCriteria",
+        "code": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/v2-0294"
+          }
+        ],
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "SCV",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/SCV"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "APR.1"
+          }
+        ]
+      },
+      {
+        "id": "APR.ResourceSelectionCriteria",
+        "path": "APR.ResourceSelectionCriteria",
+        "code": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/v2-0294"
+          }
+        ],
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "SCV",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/SCV"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "APR.2"
+          }
+        ]
+      },
+      {
+        "id": "APR.LocationSelectionCriteria",
+        "path": "APR.LocationSelectionCriteria",
+        "code": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/v2-0294"
+          }
+        ],
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "SCV",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/SCV"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "APR.3"
+          }
+        ]
+      },
+      {
+        "id": "APR.SlotSpacingCriteria",
+        "path": "APR.SlotSpacingCriteria",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "string",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/string"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "APR.4"
+          }
+        ]
+      },
+      {
+        "id": "APR.FillerOverrideCriteria",
+        "path": "APR.FillerOverrideCriteria",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "SCV",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/SCV"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "APR.5"
+          }
+        ]
+      }
+    ]
+  }
+}
