@@ -1,0 +1,458 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "GOL",
+  "url": "http://hl7.org/fhir/StructureDefinition/GOL",
+  "name": "GOL",
+  "status": "active",
+  "fhirVersion": "4.0.1",
+  "kind": "logical",
+  "abstract": false,
+  "type": "GOL",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Element",
+  "derivation": "specialization",
+  "differential": {
+    "element": [
+      {
+        "id": "GOL",
+        "path": "GOL",
+        "type": [
+          {
+            "code": "Element"
+          }
+        ],
+        "mapping": [
+          {
+            "id": "GOL",
+            "identity": "v2",
+            "map": "GOL"
+          }
+        ]
+      },
+      {
+        "id": "GOL.ActionCode",
+        "path": "GOL.ActionCode",
+        "code": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/v2-0287"
+          }
+        ],
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "string",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/string"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "GOL.1"
+          }
+        ]
+      },
+      {
+        "id": "GOL.ActionDate/Time",
+        "path": "GOL.ActionDate/Time",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "TS",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/TS"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "GOL.2"
+          }
+        ]
+      },
+      {
+        "id": "GOL.GoalID",
+        "path": "GOL.GoalID",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "CE",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/CE"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "GOL.3"
+          }
+        ]
+      },
+      {
+        "id": "GOL.GoalInstanceID",
+        "path": "GOL.GoalInstanceID",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "EI",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/EI"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "GOL.4"
+          }
+        ]
+      },
+      {
+        "id": "GOL.EpisodeofCareID",
+        "path": "GOL.EpisodeofCareID",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "EI",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/EI"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "GOL.5"
+          }
+        ]
+      },
+      {
+        "id": "GOL.GoalListPriority",
+        "path": "GOL.GoalListPriority",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "string",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/string"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "GOL.6"
+          }
+        ]
+      },
+      {
+        "id": "GOL.GoalEstablishedDate/Time",
+        "path": "GOL.GoalEstablishedDate/Time",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "TS",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/TS"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "GOL.7"
+          }
+        ]
+      },
+      {
+        "id": "GOL.ExpectedGoalAchieveDate/Time",
+        "path": "GOL.ExpectedGoalAchieveDate/Time",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "TS",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/TS"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "GOL.8"
+          }
+        ]
+      },
+      {
+        "id": "GOL.GoalClassification",
+        "path": "GOL.GoalClassification",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "CE",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/CE"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "GOL.9"
+          }
+        ]
+      },
+      {
+        "id": "GOL.GoalManagementDiscipline",
+        "path": "GOL.GoalManagementDiscipline",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "CE",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/CE"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "GOL.10"
+          }
+        ]
+      },
+      {
+        "id": "GOL.CurrentGoalReviewStatus",
+        "path": "GOL.CurrentGoalReviewStatus",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "CE",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/CE"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "GOL.11"
+          }
+        ]
+      },
+      {
+        "id": "GOL.CurrentGoalReviewDate/Time",
+        "path": "GOL.CurrentGoalReviewDate/Time",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "TS",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/TS"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "GOL.12"
+          }
+        ]
+      },
+      {
+        "id": "GOL.NextGoalReviewDate/Time",
+        "path": "GOL.NextGoalReviewDate/Time",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "TS",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/TS"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "GOL.13"
+          }
+        ]
+      },
+      {
+        "id": "GOL.PreviousGoalReviewDate/Time",
+        "path": "GOL.PreviousGoalReviewDate/Time",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "TS",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/TS"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "GOL.14"
+          }
+        ]
+      },
+      {
+        "id": "GOL.GoalReviewInterval",
+        "path": "GOL.GoalReviewInterval",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "TQ",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/TQ"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "GOL.15"
+          }
+        ]
+      },
+      {
+        "id": "GOL.GoalEvaluation",
+        "path": "GOL.GoalEvaluation",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "CE",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/CE"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "GOL.16"
+          }
+        ]
+      },
+      {
+        "id": "GOL.GoalEvaluationComment",
+        "path": "GOL.GoalEvaluationComment",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "string",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/string"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "GOL.17"
+          }
+        ]
+      },
+      {
+        "id": "GOL.GoalLifeCycleStatus",
+        "path": "GOL.GoalLifeCycleStatus",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "CE",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/CE"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "GOL.18"
+          }
+        ]
+      },
+      {
+        "id": "GOL.GoalLifeCycleStatusDate/Time",
+        "path": "GOL.GoalLifeCycleStatusDate/Time",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "TS",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/TS"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "GOL.19"
+          }
+        ]
+      },
+      {
+        "id": "GOL.GoalTargetType",
+        "path": "GOL.GoalTargetType",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "CE",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/CE"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "GOL.20"
+          }
+        ]
+      },
+      {
+        "id": "GOL.GoalTargetName",
+        "path": "GOL.GoalTargetName",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "XPN",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/XPN"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "GOL.21"
+          }
+        ]
+      }
+    ]
+  }
+}

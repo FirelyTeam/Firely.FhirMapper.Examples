@@ -1,0 +1,133 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "DSP",
+  "url": "http://hl7.org/fhir/StructureDefinition/DSP",
+  "name": "DSP",
+  "status": "active",
+  "fhirVersion": "4.0.1",
+  "kind": "logical",
+  "abstract": false,
+  "type": "DSP",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Element",
+  "derivation": "specialization",
+  "differential": {
+    "element": [
+      {
+        "id": "DSP",
+        "path": "DSP",
+        "type": [
+          {
+            "code": "Element"
+          }
+        ],
+        "mapping": [
+          {
+            "id": "DSP",
+            "identity": "v2",
+            "map": "DSP"
+          }
+        ]
+      },
+      {
+        "id": "DSP.SetID-DSP",
+        "path": "DSP.SetID-DSP",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "string",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/string"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "DSP.1"
+          }
+        ]
+      },
+      {
+        "id": "DSP.DisplayLevel",
+        "path": "DSP.DisplayLevel",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "string",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/string"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "DSP.2"
+          }
+        ]
+      },
+      {
+        "id": "DSP.DataLine",
+        "path": "DSP.DataLine",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "string",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/string"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "DSP.3"
+          }
+        ]
+      },
+      {
+        "id": "DSP.LogicalBreakPoint",
+        "path": "DSP.LogicalBreakPoint",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "string",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/string"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "DSP.4"
+          }
+        ]
+      },
+      {
+        "id": "DSP.ResultID",
+        "path": "DSP.ResultID",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "string",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/string"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "DSP.5"
+          }
+        ]
+      }
+    ]
+  }
+}

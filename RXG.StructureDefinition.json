@@ -1,0 +1,578 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "RXG",
+  "url": "http://hl7.org/fhir/StructureDefinition/RXG",
+  "name": "RXG",
+  "status": "active",
+  "fhirVersion": "4.0.1",
+  "kind": "logical",
+  "abstract": false,
+  "type": "RXG",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Element",
+  "derivation": "specialization",
+  "differential": {
+    "element": [
+      {
+        "id": "RXG",
+        "path": "RXG",
+        "type": [
+          {
+            "code": "Element"
+          }
+        ],
+        "mapping": [
+          {
+            "id": "RXG",
+            "identity": "v2",
+            "map": "RXG"
+          }
+        ]
+      },
+      {
+        "id": "RXG.GiveSub-IDCounter",
+        "path": "RXG.GiveSub-IDCounter",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "string",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/string"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "RXG.1"
+          }
+        ]
+      },
+      {
+        "id": "RXG.DispenseSub-IDCounter",
+        "path": "RXG.DispenseSub-IDCounter",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "string",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/string"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "RXG.2"
+          }
+        ]
+      },
+      {
+        "id": "RXG.Quantity/Timing",
+        "path": "RXG.Quantity/Timing",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "TQ",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/TQ"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "RXG.3"
+          }
+        ]
+      },
+      {
+        "id": "RXG.GiveCode",
+        "path": "RXG.GiveCode",
+        "code": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/v2-0292"
+          }
+        ],
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "CE",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/CE"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "RXG.4"
+          }
+        ]
+      },
+      {
+        "id": "RXG.GiveAmount-Minimum",
+        "path": "RXG.GiveAmount-Minimum",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "string",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/string"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "RXG.5"
+          }
+        ]
+      },
+      {
+        "id": "RXG.GiveAmount-Maximum",
+        "path": "RXG.GiveAmount-Maximum",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "string",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/string"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "RXG.6"
+          }
+        ]
+      },
+      {
+        "id": "RXG.GiveUnits",
+        "path": "RXG.GiveUnits",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "CE",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/CE"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "RXG.7"
+          }
+        ]
+      },
+      {
+        "id": "RXG.GiveDosageForm",
+        "path": "RXG.GiveDosageForm",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "CE",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/CE"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "RXG.8"
+          }
+        ]
+      },
+      {
+        "id": "RXG.AdministrationNotes",
+        "path": "RXG.AdministrationNotes",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "CE",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/CE"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "RXG.9"
+          }
+        ]
+      },
+      {
+        "id": "RXG.SubstitutionStatus",
+        "path": "RXG.SubstitutionStatus",
+        "code": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/v2-0167"
+          }
+        ],
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "string",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/string"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "RXG.10"
+          }
+        ]
+      },
+      {
+        "id": "RXG.Dispense-toLocation",
+        "path": "RXG.Dispense-toLocation",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "LA2",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/LA2"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "RXG.11"
+          }
+        ]
+      },
+      {
+        "id": "RXG.NeedsHumanReview",
+        "path": "RXG.NeedsHumanReview",
+        "code": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/v2-0136"
+          }
+        ],
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "string",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/string"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "RXG.12"
+          }
+        ]
+      },
+      {
+        "id": "RXG.Pharmacy/TreatmentSupplier'sSpecialAdministrationInstructions",
+        "path": "RXG.Pharmacy/TreatmentSupplier'sSpecialAdministrationInstructions",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "CE",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/CE"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "RXG.13"
+          }
+        ]
+      },
+      {
+        "id": "RXG.GivePer(TimeUnit)",
+        "path": "RXG.GivePer(TimeUnit)",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "string",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/string"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "RXG.14"
+          }
+        ]
+      },
+      {
+        "id": "RXG.GiveRateAmount",
+        "path": "RXG.GiveRateAmount",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "string",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/string"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "RXG.15"
+          }
+        ]
+      },
+      {
+        "id": "RXG.GiveRateUnits",
+        "path": "RXG.GiveRateUnits",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "CE",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/CE"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "RXG.16"
+          }
+        ]
+      },
+      {
+        "id": "RXG.GiveStrength",
+        "path": "RXG.GiveStrength",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "string",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/string"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "RXG.17"
+          }
+        ]
+      },
+      {
+        "id": "RXG.GiveStrengthUnits",
+        "path": "RXG.GiveStrengthUnits",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "CE",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/CE"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "RXG.18"
+          }
+        ]
+      },
+      {
+        "id": "RXG.SubstanceLotNumber",
+        "path": "RXG.SubstanceLotNumber",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "string",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/string"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "RXG.19"
+          }
+        ]
+      },
+      {
+        "id": "RXG.SubstanceExpirationDate",
+        "path": "RXG.SubstanceExpirationDate",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "TS",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/TS"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "RXG.20"
+          }
+        ]
+      },
+      {
+        "id": "RXG.SubstanceManufacturerName",
+        "path": "RXG.SubstanceManufacturerName",
+        "code": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/v2-0227"
+          }
+        ],
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "CE",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/CE"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "RXG.21"
+          }
+        ]
+      },
+      {
+        "id": "RXG.Indication",
+        "path": "RXG.Indication",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "CE",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/CE"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "RXG.22"
+          }
+        ]
+      },
+      {
+        "id": "RXG.GiveDrugStrengthVolume",
+        "path": "RXG.GiveDrugStrengthVolume",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "string",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/string"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "RXG.23"
+          }
+        ]
+      },
+      {
+        "id": "RXG.GiveDrugStrengthVolumeUnits",
+        "path": "RXG.GiveDrugStrengthVolumeUnits",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "CWE",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/CWE"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "RXG.24"
+          }
+        ]
+      },
+      {
+        "id": "RXG.GiveBarcodeIdentifier",
+        "path": "RXG.GiveBarcodeIdentifier",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "CWE",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/CWE"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "RXG.25"
+          }
+        ]
+      },
+      {
+        "id": "RXG.PharmacyOrderType",
+        "path": "RXG.PharmacyOrderType",
+        "code": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/v2-0480"
+          }
+        ],
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "string",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/string"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "RXG.26"
+          }
+        ]
+      }
+    ]
+  }
+}

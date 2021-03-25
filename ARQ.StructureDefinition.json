@@ -1,0 +1,543 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "ARQ",
+  "url": "http://hl7.org/fhir/StructureDefinition/ARQ",
+  "name": "ARQ",
+  "status": "active",
+  "fhirVersion": "4.0.1",
+  "kind": "logical",
+  "abstract": false,
+  "type": "ARQ",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Element",
+  "derivation": "specialization",
+  "differential": {
+    "element": [
+      {
+        "id": "ARQ",
+        "path": "ARQ",
+        "type": [
+          {
+            "code": "Element"
+          }
+        ],
+        "mapping": [
+          {
+            "id": "ARQ",
+            "identity": "v2",
+            "map": "ARQ"
+          }
+        ]
+      },
+      {
+        "id": "ARQ.PlacerAppointmentID",
+        "path": "ARQ.PlacerAppointmentID",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "EI",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/EI"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "ARQ.1"
+          }
+        ]
+      },
+      {
+        "id": "ARQ.FillerAppointmentID",
+        "path": "ARQ.FillerAppointmentID",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "EI",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/EI"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "ARQ.2"
+          }
+        ]
+      },
+      {
+        "id": "ARQ.OccurrenceNumber",
+        "path": "ARQ.OccurrenceNumber",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "string",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/string"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "ARQ.3"
+          }
+        ]
+      },
+      {
+        "id": "ARQ.PlacerGroupNumber",
+        "path": "ARQ.PlacerGroupNumber",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "EI",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/EI"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "ARQ.4"
+          }
+        ]
+      },
+      {
+        "id": "ARQ.ScheduleID",
+        "path": "ARQ.ScheduleID",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "CE",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/CE"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "ARQ.5"
+          }
+        ]
+      },
+      {
+        "id": "ARQ.RequestEventReason",
+        "path": "ARQ.RequestEventReason",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "CE",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/CE"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "ARQ.6"
+          }
+        ]
+      },
+      {
+        "id": "ARQ.AppointmentReason",
+        "path": "ARQ.AppointmentReason",
+        "code": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/v2-0276"
+          }
+        ],
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "CE",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/CE"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "ARQ.7"
+          }
+        ]
+      },
+      {
+        "id": "ARQ.AppointmentType",
+        "path": "ARQ.AppointmentType",
+        "code": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/v2-0277"
+          }
+        ],
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "CE",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/CE"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "ARQ.8"
+          }
+        ]
+      },
+      {
+        "id": "ARQ.AppointmentDuration",
+        "path": "ARQ.AppointmentDuration",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "string",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/string"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "ARQ.9"
+          }
+        ]
+      },
+      {
+        "id": "ARQ.AppointmentDurationUnits",
+        "path": "ARQ.AppointmentDurationUnits",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "CE",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/CE"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "ARQ.10"
+          }
+        ]
+      },
+      {
+        "id": "ARQ.RequestedStartDate/TimeRange",
+        "path": "ARQ.RequestedStartDate/TimeRange",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "DR",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/DR"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "ARQ.11"
+          }
+        ]
+      },
+      {
+        "id": "ARQ.Priority-ARQ",
+        "path": "ARQ.Priority-ARQ",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "string",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/string"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "ARQ.12"
+          }
+        ]
+      },
+      {
+        "id": "ARQ.RepeatingInterval",
+        "path": "ARQ.RepeatingInterval",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "RI",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/RI"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "ARQ.13"
+          }
+        ]
+      },
+      {
+        "id": "ARQ.RepeatingIntervalDuration",
+        "path": "ARQ.RepeatingIntervalDuration",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "string",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/string"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "ARQ.14"
+          }
+        ]
+      },
+      {
+        "id": "ARQ.PlacerContactPerson",
+        "path": "ARQ.PlacerContactPerson",
+        "min": 1,
+        "max": "*",
+        "type": [
+          {
+            "code": "XCN",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/XCN"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "ARQ.15"
+          }
+        ]
+      },
+      {
+        "id": "ARQ.PlacerContactPhoneNumber",
+        "path": "ARQ.PlacerContactPhoneNumber",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "XTN",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/XTN"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "ARQ.16"
+          }
+        ]
+      },
+      {
+        "id": "ARQ.PlacerContactAddress",
+        "path": "ARQ.PlacerContactAddress",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "XAD",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/XAD"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "ARQ.17"
+          }
+        ]
+      },
+      {
+        "id": "ARQ.PlacerContactLocation",
+        "path": "ARQ.PlacerContactLocation",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "PL",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/PL"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "ARQ.18"
+          }
+        ]
+      },
+      {
+        "id": "ARQ.EnteredByPerson",
+        "path": "ARQ.EnteredByPerson",
+        "min": 1,
+        "max": "*",
+        "type": [
+          {
+            "code": "XCN",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/XCN"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "ARQ.19"
+          }
+        ]
+      },
+      {
+        "id": "ARQ.EnteredByPhoneNumber",
+        "path": "ARQ.EnteredByPhoneNumber",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "XTN",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/XTN"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "ARQ.20"
+          }
+        ]
+      },
+      {
+        "id": "ARQ.EnteredByLocation",
+        "path": "ARQ.EnteredByLocation",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "PL",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/PL"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "ARQ.21"
+          }
+        ]
+      },
+      {
+        "id": "ARQ.ParentPlacerAppointmentID",
+        "path": "ARQ.ParentPlacerAppointmentID",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "EI",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/EI"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "ARQ.22"
+          }
+        ]
+      },
+      {
+        "id": "ARQ.ParentFillerAppointmentID",
+        "path": "ARQ.ParentFillerAppointmentID",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "EI",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/EI"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "ARQ.23"
+          }
+        ]
+      },
+      {
+        "id": "ARQ.PlacerOrderNumber",
+        "path": "ARQ.PlacerOrderNumber",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "EI",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/EI"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "ARQ.24"
+          }
+        ]
+      },
+      {
+        "id": "ARQ.FillerOrderNumber",
+        "path": "ARQ.FillerOrderNumber",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "EI",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/EI"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "ARQ.25"
+          }
+        ]
+      }
+    ]
+  }
+}

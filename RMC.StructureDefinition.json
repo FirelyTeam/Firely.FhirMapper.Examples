@@ -1,0 +1,123 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "RMC",
+  "url": "http://hl7.org/fhir/StructureDefinition/RMC",
+  "name": "RMC",
+  "status": "active",
+  "fhirVersion": "4.0.1",
+  "kind": "logical",
+  "abstract": false,
+  "type": "RMC",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Element",
+  "derivation": "specialization",
+  "differential": {
+    "element": [
+      {
+        "id": "RMC",
+        "path": "RMC",
+        "type": [
+          {
+            "code": "Element"
+          }
+        ],
+        "mapping": [
+          {
+            "id": "RMC",
+            "identity": "v2",
+            "map": "RMC"
+          }
+        ]
+      },
+      {
+        "id": "RMC.RoomType",
+        "path": "RMC.RoomType",
+        "code": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/v2-0145"
+          }
+        ],
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "string",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/string"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "RMC.1"
+          }
+        ]
+      },
+      {
+        "id": "RMC.AmountType",
+        "path": "RMC.AmountType",
+        "code": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/v2-0146"
+          }
+        ],
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "string",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/string"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "RMC.2"
+          }
+        ]
+      },
+      {
+        "id": "RMC.CoverageAmount",
+        "path": "RMC.CoverageAmount",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "string",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/string"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "RMC.3"
+          }
+        ]
+      },
+      {
+        "id": "RMC.MoneyorPercentage",
+        "path": "RMC.MoneyorPercentage",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "MOP",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/MOP"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "RMC.4"
+          }
+        ]
+      }
+    ]
+  }
+}

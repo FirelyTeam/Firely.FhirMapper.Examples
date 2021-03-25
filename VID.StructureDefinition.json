@@ -1,0 +1,103 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "VID",
+  "url": "http://hl7.org/fhir/StructureDefinition/VID",
+  "name": "VID",
+  "status": "active",
+  "fhirVersion": "4.0.1",
+  "kind": "logical",
+  "abstract": false,
+  "type": "VID",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Element",
+  "derivation": "specialization",
+  "differential": {
+    "element": [
+      {
+        "id": "VID",
+        "path": "VID",
+        "type": [
+          {
+            "code": "Element"
+          }
+        ],
+        "mapping": [
+          {
+            "id": "VID",
+            "identity": "v2",
+            "map": "VID"
+          }
+        ]
+      },
+      {
+        "id": "VID.VersionID",
+        "path": "VID.VersionID",
+        "code": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/v2-0104"
+          }
+        ],
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "string",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/string"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "VID.1"
+          }
+        ]
+      },
+      {
+        "id": "VID.InternationalizationCode",
+        "path": "VID.InternationalizationCode",
+        "code": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/v2-0399"
+          }
+        ],
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "CE",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/CE"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "VID.2"
+          }
+        ]
+      },
+      {
+        "id": "VID.InternationalVersionID",
+        "path": "VID.InternationalVersionID",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "CE",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/CE"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "VID.3"
+          }
+        ]
+      }
+    ]
+  }
+}

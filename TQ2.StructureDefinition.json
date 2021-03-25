@@ -1,0 +1,253 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "TQ2",
+  "url": "http://hl7.org/fhir/StructureDefinition/TQ2",
+  "name": "TQ2",
+  "status": "active",
+  "fhirVersion": "4.0.1",
+  "kind": "logical",
+  "abstract": false,
+  "type": "TQ2",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Element",
+  "derivation": "specialization",
+  "differential": {
+    "element": [
+      {
+        "id": "TQ2",
+        "path": "TQ2",
+        "type": [
+          {
+            "code": "Element"
+          }
+        ],
+        "mapping": [
+          {
+            "id": "TQ2",
+            "identity": "v2",
+            "map": "TQ2"
+          }
+        ]
+      },
+      {
+        "id": "TQ2.SetID-TQ2",
+        "path": "TQ2.SetID-TQ2",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "string",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/string"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "TQ2.1"
+          }
+        ]
+      },
+      {
+        "id": "TQ2.Sequence/ResultsFlag",
+        "path": "TQ2.Sequence/ResultsFlag",
+        "code": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/v2-0503"
+          }
+        ],
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "string",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/string"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "TQ2.2"
+          }
+        ]
+      },
+      {
+        "id": "TQ2.RelatedPlacerNumber",
+        "path": "TQ2.RelatedPlacerNumber",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "EI",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/EI"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "TQ2.3"
+          }
+        ]
+      },
+      {
+        "id": "TQ2.RelatedFillerNumber",
+        "path": "TQ2.RelatedFillerNumber",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "EI",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/EI"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "TQ2.4"
+          }
+        ]
+      },
+      {
+        "id": "TQ2.RelatedPlacerGroupNumber",
+        "path": "TQ2.RelatedPlacerGroupNumber",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "EI",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/EI"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "TQ2.5"
+          }
+        ]
+      },
+      {
+        "id": "TQ2.SequenceConditionCode",
+        "path": "TQ2.SequenceConditionCode",
+        "code": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/v2-0504"
+          }
+        ],
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "string",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/string"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "TQ2.6"
+          }
+        ]
+      },
+      {
+        "id": "TQ2.CyclicEntry/ExitIndicator",
+        "path": "TQ2.CyclicEntry/ExitIndicator",
+        "code": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/v2-0505"
+          }
+        ],
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "string",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/string"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "TQ2.7"
+          }
+        ]
+      },
+      {
+        "id": "TQ2.SequenceConditionTimeInterval",
+        "path": "TQ2.SequenceConditionTimeInterval",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "CQ",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/CQ"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "TQ2.8"
+          }
+        ]
+      },
+      {
+        "id": "TQ2.CyclicGroupMaximumNumberofRepeats",
+        "path": "TQ2.CyclicGroupMaximumNumberofRepeats",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "string",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/string"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "TQ2.9"
+          }
+        ]
+      },
+      {
+        "id": "TQ2.SpecialServiceRequestRelationship",
+        "path": "TQ2.SpecialServiceRequestRelationship",
+        "code": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/v2-0506"
+          }
+        ],
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "string",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/string"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "TQ2.10"
+          }
+        ]
+      }
+    ]
+  }
+}

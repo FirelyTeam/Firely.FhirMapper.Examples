@@ -1,0 +1,193 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "RCP",
+  "url": "http://hl7.org/fhir/StructureDefinition/RCP",
+  "name": "RCP",
+  "status": "active",
+  "fhirVersion": "4.0.1",
+  "kind": "logical",
+  "abstract": false,
+  "type": "RCP",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Element",
+  "derivation": "specialization",
+  "differential": {
+    "element": [
+      {
+        "id": "RCP",
+        "path": "RCP",
+        "type": [
+          {
+            "code": "Element"
+          }
+        ],
+        "mapping": [
+          {
+            "id": "RCP",
+            "identity": "v2",
+            "map": "RCP"
+          }
+        ]
+      },
+      {
+        "id": "RCP.QueryPriority",
+        "path": "RCP.QueryPriority",
+        "code": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/v2-0091"
+          }
+        ],
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "string",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/string"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "RCP.1"
+          }
+        ]
+      },
+      {
+        "id": "RCP.QuantityLimitedRequest",
+        "path": "RCP.QuantityLimitedRequest",
+        "code": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/v2-0126"
+          }
+        ],
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "CQ",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/CQ"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "RCP.2"
+          }
+        ]
+      },
+      {
+        "id": "RCP.ResponseModality",
+        "path": "RCP.ResponseModality",
+        "code": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/v2-0394"
+          }
+        ],
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "CE",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/CE"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "RCP.3"
+          }
+        ]
+      },
+      {
+        "id": "RCP.ExecutionandDeliveryTime",
+        "path": "RCP.ExecutionandDeliveryTime",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "TS",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/TS"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "RCP.4"
+          }
+        ]
+      },
+      {
+        "id": "RCP.ModifyIndicator",
+        "path": "RCP.ModifyIndicator",
+        "code": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/v2-0395"
+          }
+        ],
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "string",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/string"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "RCP.5"
+          }
+        ]
+      },
+      {
+        "id": "RCP.Sort-byField",
+        "path": "RCP.Sort-byField",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "SRT",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/SRT"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "RCP.6"
+          }
+        ]
+      },
+      {
+        "id": "RCP.Segmentgroupinclusion",
+        "path": "RCP.Segmentgroupinclusion",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "string",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/string"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "RCP.7"
+          }
+        ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,73 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "SCV",
+  "url": "http://hl7.org/fhir/StructureDefinition/SCV",
+  "name": "SCV",
+  "status": "active",
+  "fhirVersion": "4.0.1",
+  "kind": "logical",
+  "abstract": false,
+  "type": "SCV",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Element",
+  "derivation": "specialization",
+  "differential": {
+    "element": [
+      {
+        "id": "SCV",
+        "path": "SCV",
+        "type": [
+          {
+            "code": "Element"
+          }
+        ],
+        "mapping": [
+          {
+            "id": "SCV",
+            "identity": "v2",
+            "map": "SCV"
+          }
+        ]
+      },
+      {
+        "id": "SCV.ParameterClass",
+        "path": "SCV.ParameterClass",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "CWE",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/CWE"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "SCV.1"
+          }
+        ]
+      },
+      {
+        "id": "SCV.ParameterValue",
+        "path": "SCV.ParameterValue",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "string",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/string"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "SCV.2"
+          }
+        ]
+      }
+    ]
+  }
+}

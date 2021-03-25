@@ -1,0 +1,213 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "IPC",
+  "url": "http://hl7.org/fhir/StructureDefinition/IPC",
+  "name": "IPC",
+  "status": "active",
+  "fhirVersion": "4.0.1",
+  "kind": "logical",
+  "abstract": false,
+  "type": "IPC",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Element",
+  "derivation": "specialization",
+  "differential": {
+    "element": [
+      {
+        "id": "IPC",
+        "path": "IPC",
+        "type": [
+          {
+            "code": "Element"
+          }
+        ],
+        "mapping": [
+          {
+            "id": "IPC",
+            "identity": "v2",
+            "map": "IPC"
+          }
+        ]
+      },
+      {
+        "id": "IPC.AccessionIdentifier",
+        "path": "IPC.AccessionIdentifier",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "EI",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/EI"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "IPC.1"
+          }
+        ]
+      },
+      {
+        "id": "IPC.RequestedProcedureID",
+        "path": "IPC.RequestedProcedureID",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "EI",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/EI"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "IPC.2"
+          }
+        ]
+      },
+      {
+        "id": "IPC.StudyInstanceUID",
+        "path": "IPC.StudyInstanceUID",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "EI",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/EI"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "IPC.3"
+          }
+        ]
+      },
+      {
+        "id": "IPC.ScheduledProcedureStepID",
+        "path": "IPC.ScheduledProcedureStepID",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "EI",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/EI"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "IPC.4"
+          }
+        ]
+      },
+      {
+        "id": "IPC.Modality",
+        "path": "IPC.Modality",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "CE",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/CE"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "IPC.5"
+          }
+        ]
+      },
+      {
+        "id": "IPC.ProtocolCode",
+        "path": "IPC.ProtocolCode",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "CE",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/CE"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "IPC.6"
+          }
+        ]
+      },
+      {
+        "id": "IPC.ScheduledStationName",
+        "path": "IPC.ScheduledStationName",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "EI",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/EI"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "IPC.7"
+          }
+        ]
+      },
+      {
+        "id": "IPC.ScheduledProcedureStepLocation",
+        "path": "IPC.ScheduledProcedureStepLocation",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "CE",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/CE"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "IPC.8"
+          }
+        ]
+      },
+      {
+        "id": "IPC.ScheduledAETitle",
+        "path": "IPC.ScheduledAETitle",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "string",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/string"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "IPC.9"
+          }
+        ]
+      }
+    ]
+  }
+}

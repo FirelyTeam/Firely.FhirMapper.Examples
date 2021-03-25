@@ -1,0 +1,293 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "AIP",
+  "url": "http://hl7.org/fhir/StructureDefinition/AIP",
+  "name": "AIP",
+  "status": "active",
+  "fhirVersion": "4.0.1",
+  "kind": "logical",
+  "abstract": false,
+  "type": "AIP",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Element",
+  "derivation": "specialization",
+  "differential": {
+    "element": [
+      {
+        "id": "AIP",
+        "path": "AIP",
+        "type": [
+          {
+            "code": "Element"
+          }
+        ],
+        "mapping": [
+          {
+            "id": "AIP",
+            "identity": "v2",
+            "map": "AIP"
+          }
+        ]
+      },
+      {
+        "id": "AIP.SetID-AIP",
+        "path": "AIP.SetID-AIP",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "string",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/string"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "AIP.1"
+          }
+        ]
+      },
+      {
+        "id": "AIP.SegmentActionCode",
+        "path": "AIP.SegmentActionCode",
+        "code": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/v2-0206"
+          }
+        ],
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "string",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/string"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "AIP.2"
+          }
+        ]
+      },
+      {
+        "id": "AIP.PersonnelResourceID",
+        "path": "AIP.PersonnelResourceID",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "XCN",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/XCN"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "AIP.3"
+          }
+        ]
+      },
+      {
+        "id": "AIP.ResourceType",
+        "path": "AIP.ResourceType",
+        "code": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/v2-0182"
+          }
+        ],
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "CE",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/CE"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "AIP.4"
+          }
+        ]
+      },
+      {
+        "id": "AIP.ResourceGroup",
+        "path": "AIP.ResourceGroup",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "CE",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/CE"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "AIP.5"
+          }
+        ]
+      },
+      {
+        "id": "AIP.StartDate/Time",
+        "path": "AIP.StartDate/Time",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "TS",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/TS"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "AIP.6"
+          }
+        ]
+      },
+      {
+        "id": "AIP.StartDate/TimeOffset",
+        "path": "AIP.StartDate/TimeOffset",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "string",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/string"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "AIP.7"
+          }
+        ]
+      },
+      {
+        "id": "AIP.StartDate/TimeOffsetUnits",
+        "path": "AIP.StartDate/TimeOffsetUnits",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "CE",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/CE"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "AIP.8"
+          }
+        ]
+      },
+      {
+        "id": "AIP.Duration",
+        "path": "AIP.Duration",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "string",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/string"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "AIP.9"
+          }
+        ]
+      },
+      {
+        "id": "AIP.DurationUnits",
+        "path": "AIP.DurationUnits",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "CE",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/CE"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "AIP.10"
+          }
+        ]
+      },
+      {
+        "id": "AIP.AllowSubstitutionCode",
+        "path": "AIP.AllowSubstitutionCode",
+        "code": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/v2-0279"
+          }
+        ],
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "string",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/string"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "AIP.11"
+          }
+        ]
+      },
+      {
+        "id": "AIP.FillerStatusCode",
+        "path": "AIP.FillerStatusCode",
+        "code": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/v2-0278"
+          }
+        ],
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "CE",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/CE"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "AIP.12"
+          }
+        ]
+      }
+    ]
+  }
+}

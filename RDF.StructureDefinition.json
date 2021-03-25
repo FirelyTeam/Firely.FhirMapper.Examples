@@ -1,0 +1,78 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "RDF",
+  "url": "http://hl7.org/fhir/StructureDefinition/RDF",
+  "name": "RDF",
+  "status": "active",
+  "fhirVersion": "4.0.1",
+  "kind": "logical",
+  "abstract": false,
+  "type": "RDF",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Element",
+  "derivation": "specialization",
+  "differential": {
+    "element": [
+      {
+        "id": "RDF",
+        "path": "RDF",
+        "type": [
+          {
+            "code": "Element"
+          }
+        ],
+        "mapping": [
+          {
+            "id": "RDF",
+            "identity": "v2",
+            "map": "RDF"
+          }
+        ]
+      },
+      {
+        "id": "RDF.NumberofColumnsperRow",
+        "path": "RDF.NumberofColumnsperRow",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "string",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/string"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "RDF.1"
+          }
+        ]
+      },
+      {
+        "id": "RDF.ColumnDescription",
+        "path": "RDF.ColumnDescription",
+        "code": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/v2-0440"
+          }
+        ],
+        "min": 1,
+        "max": "*",
+        "type": [
+          {
+            "code": "RCD",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/RCD"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "RDF.2"
+          }
+        ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,228 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "URS",
+  "url": "http://hl7.org/fhir/StructureDefinition/URS",
+  "name": "URS",
+  "status": "active",
+  "fhirVersion": "4.0.1",
+  "kind": "logical",
+  "abstract": false,
+  "type": "URS",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Element",
+  "derivation": "specialization",
+  "differential": {
+    "element": [
+      {
+        "id": "URS",
+        "path": "URS",
+        "type": [
+          {
+            "code": "Element"
+          }
+        ],
+        "mapping": [
+          {
+            "id": "URS",
+            "identity": "v2",
+            "map": "URS"
+          }
+        ]
+      },
+      {
+        "id": "URS.R/UWhereSubjectDefinition",
+        "path": "URS.R/UWhereSubjectDefinition",
+        "min": 1,
+        "max": "*",
+        "type": [
+          {
+            "code": "string",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/string"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "URS.1"
+          }
+        ]
+      },
+      {
+        "id": "URS.R/UWhenDataStartDate/Time",
+        "path": "URS.R/UWhenDataStartDate/Time",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "TS",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/TS"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "URS.2"
+          }
+        ]
+      },
+      {
+        "id": "URS.R/UWhenDataEndDate/Time",
+        "path": "URS.R/UWhenDataEndDate/Time",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "TS",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/TS"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "URS.3"
+          }
+        ]
+      },
+      {
+        "id": "URS.R/UWhatUserQualifier",
+        "path": "URS.R/UWhatUserQualifier",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "string",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/string"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "URS.4"
+          }
+        ]
+      },
+      {
+        "id": "URS.R/UOtherResultsSubjectDefinition",
+        "path": "URS.R/UOtherResultsSubjectDefinition",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "string",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/string"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "URS.5"
+          }
+        ]
+      },
+      {
+        "id": "URS.R/UWhichDate/TimeQualifier",
+        "path": "URS.R/UWhichDate/TimeQualifier",
+        "code": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/v2-0156"
+          }
+        ],
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "string",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/string"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "URS.6"
+          }
+        ]
+      },
+      {
+        "id": "URS.R/UWhichDate/TimeStatusQualifier",
+        "path": "URS.R/UWhichDate/TimeStatusQualifier",
+        "code": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/v2-0157"
+          }
+        ],
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "string",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/string"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "URS.7"
+          }
+        ]
+      },
+      {
+        "id": "URS.R/UDate/TimeSelectionQualifier",
+        "path": "URS.R/UDate/TimeSelectionQualifier",
+        "code": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/v2-0158"
+          }
+        ],
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "string",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/string"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "URS.8"
+          }
+        ]
+      },
+      {
+        "id": "URS.R/UQuantity/TimingQualifier",
+        "path": "URS.R/UQuantity/TimingQualifier",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "TQ",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/TQ"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "URS.9"
+          }
+        ]
+      }
+    ]
+  }
+}

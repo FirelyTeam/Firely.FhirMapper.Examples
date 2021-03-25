@@ -1,0 +1,123 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "VH",
+  "url": "http://hl7.org/fhir/StructureDefinition/VH",
+  "name": "VH",
+  "status": "active",
+  "fhirVersion": "4.0.1",
+  "kind": "logical",
+  "abstract": false,
+  "type": "VH",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Element",
+  "derivation": "specialization",
+  "differential": {
+    "element": [
+      {
+        "id": "VH",
+        "path": "VH",
+        "type": [
+          {
+            "code": "Element"
+          }
+        ],
+        "mapping": [
+          {
+            "id": "VH",
+            "identity": "v2",
+            "map": "VH"
+          }
+        ]
+      },
+      {
+        "id": "VH.StartDayRange",
+        "path": "VH.StartDayRange",
+        "code": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/v2-0267"
+          }
+        ],
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "string",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/string"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "VH.1"
+          }
+        ]
+      },
+      {
+        "id": "VH.EndDayRange",
+        "path": "VH.EndDayRange",
+        "code": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/v2-0267"
+          }
+        ],
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "string",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/string"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "VH.2"
+          }
+        ]
+      },
+      {
+        "id": "VH.StartHourRange",
+        "path": "VH.StartHourRange",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "string",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/string"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "VH.3"
+          }
+        ]
+      },
+      {
+        "id": "VH.EndHourRange",
+        "path": "VH.EndHourRange",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "string",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/string"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "VH.4"
+          }
+        ]
+      }
+    ]
+  }
+}

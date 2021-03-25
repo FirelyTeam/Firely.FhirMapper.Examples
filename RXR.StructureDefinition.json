@@ -1,0 +1,178 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "RXR",
+  "url": "http://hl7.org/fhir/StructureDefinition/RXR",
+  "name": "RXR",
+  "status": "active",
+  "fhirVersion": "4.0.1",
+  "kind": "logical",
+  "abstract": false,
+  "type": "RXR",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Element",
+  "derivation": "specialization",
+  "differential": {
+    "element": [
+      {
+        "id": "RXR",
+        "path": "RXR",
+        "type": [
+          {
+            "code": "Element"
+          }
+        ],
+        "mapping": [
+          {
+            "id": "RXR",
+            "identity": "v2",
+            "map": "RXR"
+          }
+        ]
+      },
+      {
+        "id": "RXR.Route",
+        "path": "RXR.Route",
+        "code": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/v2-0162"
+          }
+        ],
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "CE",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/CE"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "RXR.1"
+          }
+        ]
+      },
+      {
+        "id": "RXR.AdministrationSite",
+        "path": "RXR.AdministrationSite",
+        "code": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/v2-0163"
+          }
+        ],
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "CWE",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/CWE"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "RXR.2"
+          }
+        ]
+      },
+      {
+        "id": "RXR.AdministrationDevice",
+        "path": "RXR.AdministrationDevice",
+        "code": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/v2-0164"
+          }
+        ],
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "CE",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/CE"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "RXR.3"
+          }
+        ]
+      },
+      {
+        "id": "RXR.AdministrationMethod",
+        "path": "RXR.AdministrationMethod",
+        "code": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/v2-0165"
+          }
+        ],
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "CWE",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/CWE"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "RXR.4"
+          }
+        ]
+      },
+      {
+        "id": "RXR.RoutingInstruction",
+        "path": "RXR.RoutingInstruction",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "CE",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/CE"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "RXR.5"
+          }
+        ]
+      },
+      {
+        "id": "RXR.AdministrationSiteModifier",
+        "path": "RXR.AdministrationSiteModifier",
+        "code": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/v2-0495"
+          }
+        ],
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "CWE",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/CWE"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "RXR.6"
+          }
+        ]
+      }
+    ]
+  }
+}

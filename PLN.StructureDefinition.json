@@ -1,0 +1,118 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "PLN",
+  "url": "http://hl7.org/fhir/StructureDefinition/PLN",
+  "name": "PLN",
+  "status": "active",
+  "fhirVersion": "4.0.1",
+  "kind": "logical",
+  "abstract": false,
+  "type": "PLN",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Element",
+  "derivation": "specialization",
+  "differential": {
+    "element": [
+      {
+        "id": "PLN",
+        "path": "PLN",
+        "type": [
+          {
+            "code": "Element"
+          }
+        ],
+        "mapping": [
+          {
+            "id": "PLN",
+            "identity": "v2",
+            "map": "PLN"
+          }
+        ]
+      },
+      {
+        "id": "PLN.IDNumber",
+        "path": "PLN.IDNumber",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "string",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/string"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "PLN.1"
+          }
+        ]
+      },
+      {
+        "id": "PLN.TypeofIDNumber",
+        "path": "PLN.TypeofIDNumber",
+        "code": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/v2-0338"
+          }
+        ],
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "string",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/string"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "PLN.2"
+          }
+        ]
+      },
+      {
+        "id": "PLN.State/otherQualifyingInformation",
+        "path": "PLN.State/otherQualifyingInformation",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "string",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/string"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "PLN.3"
+          }
+        ]
+      },
+      {
+        "id": "PLN.ExpirationDate",
+        "path": "PLN.ExpirationDate",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "string",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/string"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "PLN.4"
+          }
+        ]
+      }
+    ]
+  }
+}

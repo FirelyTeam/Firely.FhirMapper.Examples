@@ -1,0 +1,438 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "BTX",
+  "url": "http://hl7.org/fhir/StructureDefinition/BTX",
+  "name": "BTX",
+  "status": "active",
+  "fhirVersion": "4.0.1",
+  "kind": "logical",
+  "abstract": false,
+  "type": "BTX",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Element",
+  "derivation": "specialization",
+  "differential": {
+    "element": [
+      {
+        "id": "BTX",
+        "path": "BTX",
+        "type": [
+          {
+            "code": "Element"
+          }
+        ],
+        "mapping": [
+          {
+            "id": "BTX",
+            "identity": "v2",
+            "map": "BTX"
+          }
+        ]
+      },
+      {
+        "id": "BTX.SetID_BTX",
+        "path": "BTX.SetID_BTX",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "string",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/string"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "BTX.1"
+          }
+        ]
+      },
+      {
+        "id": "BTX.BCDonationID",
+        "path": "BTX.BCDonationID",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "EI",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/EI"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "BTX.2"
+          }
+        ]
+      },
+      {
+        "id": "BTX.BCComponent",
+        "path": "BTX.BCComponent",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "CNE",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/CNE"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "BTX.3"
+          }
+        ]
+      },
+      {
+        "id": "BTX.BCBloodGroup",
+        "path": "BTX.BCBloodGroup",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "CNE",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/CNE"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "BTX.4"
+          }
+        ]
+      },
+      {
+        "id": "BTX.CPCommercialProduct",
+        "path": "BTX.CPCommercialProduct",
+        "code": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/v2-0512"
+          }
+        ],
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "CWE",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/CWE"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "BTX.5"
+          }
+        ]
+      },
+      {
+        "id": "BTX.CPManufacturer",
+        "path": "BTX.CPManufacturer",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "XON",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/XON"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "BTX.6"
+          }
+        ]
+      },
+      {
+        "id": "BTX.CPLotNumber",
+        "path": "BTX.CPLotNumber",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "EI",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/EI"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "BTX.7"
+          }
+        ]
+      },
+      {
+        "id": "BTX.BPQuantity",
+        "path": "BTX.BPQuantity",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "string",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/string"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "BTX.8"
+          }
+        ]
+      },
+      {
+        "id": "BTX.BPAmount",
+        "path": "BTX.BPAmount",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "string",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/string"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "BTX.9"
+          }
+        ]
+      },
+      {
+        "id": "BTX.BPUnits",
+        "path": "BTX.BPUnits",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "CE",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/CE"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "BTX.10"
+          }
+        ]
+      },
+      {
+        "id": "BTX.BPTransfusion/DispositionStatus",
+        "path": "BTX.BPTransfusion/DispositionStatus",
+        "code": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/v2-0513"
+          }
+        ],
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "CWE",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/CWE"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "BTX.11"
+          }
+        ]
+      },
+      {
+        "id": "BTX.BPMessageStatus",
+        "path": "BTX.BPMessageStatus",
+        "code": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/v2-0511"
+          }
+        ],
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "string",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/string"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "BTX.12"
+          }
+        ]
+      },
+      {
+        "id": "BTX.BPDate/TimeofStatus",
+        "path": "BTX.BPDate/TimeofStatus",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "TS",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/TS"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "BTX.13"
+          }
+        ]
+      },
+      {
+        "id": "BTX.BPAdministrator",
+        "path": "BTX.BPAdministrator",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "XCN",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/XCN"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "BTX.14"
+          }
+        ]
+      },
+      {
+        "id": "BTX.BPVerifier",
+        "path": "BTX.BPVerifier",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "XCN",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/XCN"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "BTX.15"
+          }
+        ]
+      },
+      {
+        "id": "BTX.BPTransfusionStartDate/TimeofStatus",
+        "path": "BTX.BPTransfusionStartDate/TimeofStatus",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "TS",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/TS"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "BTX.16"
+          }
+        ]
+      },
+      {
+        "id": "BTX.BPTransfusionEndDate/TimeofStatus",
+        "path": "BTX.BPTransfusionEndDate/TimeofStatus",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "TS",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/TS"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "BTX.17"
+          }
+        ]
+      },
+      {
+        "id": "BTX.BPAdverseReactionType",
+        "path": "BTX.BPAdverseReactionType",
+        "code": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/v2-0514"
+          }
+        ],
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "CWE",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/CWE"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "BTX.18"
+          }
+        ]
+      },
+      {
+        "id": "BTX.BPTransfusionInterruptedReason",
+        "path": "BTX.BPTransfusionInterruptedReason",
+        "code": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/v2-0515"
+          }
+        ],
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "CWE",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/CWE"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "BTX.19"
+          }
+        ]
+      }
+    ]
+  }
+}

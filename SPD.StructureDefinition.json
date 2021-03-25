@@ -1,0 +1,118 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "SPD",
+  "url": "http://hl7.org/fhir/StructureDefinition/SPD",
+  "name": "SPD",
+  "status": "active",
+  "fhirVersion": "4.0.1",
+  "kind": "logical",
+  "abstract": false,
+  "type": "SPD",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Element",
+  "derivation": "specialization",
+  "differential": {
+    "element": [
+      {
+        "id": "SPD",
+        "path": "SPD",
+        "type": [
+          {
+            "code": "Element"
+          }
+        ],
+        "mapping": [
+          {
+            "id": "SPD",
+            "identity": "v2",
+            "map": "SPD"
+          }
+        ]
+      },
+      {
+        "id": "SPD.SpecialtyName",
+        "path": "SPD.SpecialtyName",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "string",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/string"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "SPD.1"
+          }
+        ]
+      },
+      {
+        "id": "SPD.GoverningBoard",
+        "path": "SPD.GoverningBoard",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "string",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/string"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "SPD.2"
+          }
+        ]
+      },
+      {
+        "id": "SPD.EligibleorCertified",
+        "path": "SPD.EligibleorCertified",
+        "code": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/v2-0337"
+          }
+        ],
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "string",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/string"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "SPD.3"
+          }
+        ]
+      },
+      {
+        "id": "SPD.DateofCertification",
+        "path": "SPD.DateofCertification",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "string",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/string"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "SPD.4"
+          }
+        ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,288 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "NDL",
+  "url": "http://hl7.org/fhir/StructureDefinition/NDL",
+  "name": "NDL",
+  "status": "active",
+  "fhirVersion": "4.0.1",
+  "kind": "logical",
+  "abstract": false,
+  "type": "NDL",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Element",
+  "derivation": "specialization",
+  "differential": {
+    "element": [
+      {
+        "id": "NDL",
+        "path": "NDL",
+        "type": [
+          {
+            "code": "Element"
+          }
+        ],
+        "mapping": [
+          {
+            "id": "NDL",
+            "identity": "v2",
+            "map": "NDL"
+          }
+        ]
+      },
+      {
+        "id": "NDL.Name",
+        "path": "NDL.Name",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "CNN",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/CNN"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "NDL.1"
+          }
+        ]
+      },
+      {
+        "id": "NDL.StartDate/time",
+        "path": "NDL.StartDate/time",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "TS",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/TS"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "NDL.2"
+          }
+        ]
+      },
+      {
+        "id": "NDL.EndDate/time",
+        "path": "NDL.EndDate/time",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "TS",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/TS"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "NDL.3"
+          }
+        ]
+      },
+      {
+        "id": "NDL.PointofCare",
+        "path": "NDL.PointofCare",
+        "code": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/v2-0302"
+          }
+        ],
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "string",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/string"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "NDL.4"
+          }
+        ]
+      },
+      {
+        "id": "NDL.Room",
+        "path": "NDL.Room",
+        "code": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/v2-0303"
+          }
+        ],
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "string",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/string"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "NDL.5"
+          }
+        ]
+      },
+      {
+        "id": "NDL.Bed",
+        "path": "NDL.Bed",
+        "code": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/v2-0304"
+          }
+        ],
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "string",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/string"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "NDL.6"
+          }
+        ]
+      },
+      {
+        "id": "NDL.Facility",
+        "path": "NDL.Facility",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "HD",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/HD"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "NDL.7"
+          }
+        ]
+      },
+      {
+        "id": "NDL.LocationStatus",
+        "path": "NDL.LocationStatus",
+        "code": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/v2-0306"
+          }
+        ],
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "string",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/string"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "NDL.8"
+          }
+        ]
+      },
+      {
+        "id": "NDL.PatientLocationType",
+        "path": "NDL.PatientLocationType",
+        "code": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/v2-0305"
+          }
+        ],
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "string",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/string"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "NDL.9"
+          }
+        ]
+      },
+      {
+        "id": "NDL.Building",
+        "path": "NDL.Building",
+        "code": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/v2-0307"
+          }
+        ],
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "string",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/string"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "NDL.10"
+          }
+        ]
+      },
+      {
+        "id": "NDL.Floor",
+        "path": "NDL.Floor",
+        "code": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/v2-0308"
+          }
+        ],
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "string",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/string"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "NDL.11"
+          }
+        ]
+      }
+    ]
+  }
+}

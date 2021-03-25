@@ -1,0 +1,530 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "ORU_R01",
+  "url": "http://hl7.org/fhir/StructureDefinition/ORU_R01",
+  "name": "ORU_R01",
+  "status": "active",
+  "fhirVersion": "4.0.1",
+  "kind": "logical",
+  "abstract": false,
+  "type": "ORU_R01",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Element",
+  "derivation": "specialization",
+  "differential": {
+    "element": [
+      {
+        "id": "ORU_R01",
+        "path": "ORU_R01",
+        "type": [
+          {
+            "code": "Element"
+          }
+        ],
+        "mapping": [
+          {
+            "id": "ORU_R01",
+            "identity": "v2",
+            "map": "ORU_R01"
+          }
+        ]
+      },
+      {
+        "id": "ORU_R01.MSH",
+        "path": "ORU_R01.MSH",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "MSH",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/MSH"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "MSH"
+          }
+        ]
+      },
+      {
+        "id": "ORU_R01.SFT",
+        "path": "ORU_R01.SFT",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "SFT",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/SFT"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "SFT"
+          }
+        ]
+      },
+      {
+        "id": "ORU_R01.PATIENT_RESULT",
+        "path": "ORU_R01.PATIENT_RESULT",
+        "min": 1,
+        "max": "*",
+        "type": [
+          {
+            "code": "BackboneElement"
+          }
+        ]
+      },
+      {
+        "id": "ORU_R01.PATIENT_RESULT.PATIENT",
+        "path": "ORU_R01.PATIENT_RESULT.PATIENT",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "BackboneElement"
+          }
+        ]
+      },
+      {
+        "id": "ORU_R01.PATIENT_RESULT.PATIENT.PID",
+        "path": "ORU_R01.PATIENT_RESULT.PATIENT.PID",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "PID",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/PID"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "PID"
+          }
+        ]
+      },
+      {
+        "id": "ORU_R01.PATIENT_RESULT.PATIENT.PD1",
+        "path": "ORU_R01.PATIENT_RESULT.PATIENT.PD1",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "PD1",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/PD1"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "PD1"
+          }
+        ]
+      },
+      {
+        "id": "ORU_R01.PATIENT_RESULT.PATIENT.NTE",
+        "path": "ORU_R01.PATIENT_RESULT.PATIENT.NTE",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "NTE",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/NTE"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "NTE"
+          }
+        ]
+      },
+      {
+        "id": "ORU_R01.PATIENT_RESULT.PATIENT.NK1",
+        "path": "ORU_R01.PATIENT_RESULT.PATIENT.NK1",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "NK1",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/NK1"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "NK1"
+          }
+        ]
+      },
+      {
+        "id": "ORU_R01.PATIENT_RESULT.PATIENT.VISIT",
+        "path": "ORU_R01.PATIENT_RESULT.PATIENT.VISIT",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "BackboneElement"
+          }
+        ]
+      },
+      {
+        "id": "ORU_R01.PATIENT_RESULT.PATIENT.VISIT.PV1",
+        "path": "ORU_R01.PATIENT_RESULT.PATIENT.VISIT.PV1",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "PV1",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/PV1"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "PV1"
+          }
+        ]
+      },
+      {
+        "id": "ORU_R01.PATIENT_RESULT.PATIENT.VISIT.PV2",
+        "path": "ORU_R01.PATIENT_RESULT.PATIENT.VISIT.PV2",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "PV2",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/PV2"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "PV2"
+          }
+        ]
+      },
+      {
+        "id": "ORU_R01.PATIENT_RESULT.ORDER_OBSERVATION",
+        "path": "ORU_R01.PATIENT_RESULT.ORDER_OBSERVATION",
+        "min": 1,
+        "max": "*",
+        "type": [
+          {
+            "code": "BackboneElement"
+          }
+        ]
+      },
+      {
+        "id": "ORU_R01.PATIENT_RESULT.ORDER_OBSERVATION.ORC",
+        "path": "ORU_R01.PATIENT_RESULT.ORDER_OBSERVATION.ORC",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "ORC",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/ORC"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "ORC"
+          }
+        ]
+      },
+      {
+        "id": "ORU_R01.PATIENT_RESULT.ORDER_OBSERVATION.OBR",
+        "path": "ORU_R01.PATIENT_RESULT.ORDER_OBSERVATION.OBR",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "OBR",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/OBR"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "OBR"
+          }
+        ]
+      },
+      {
+        "id": "ORU_R01.PATIENT_RESULT.ORDER_OBSERVATION.NTE",
+        "path": "ORU_R01.PATIENT_RESULT.ORDER_OBSERVATION.NTE",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "NTE",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/NTE"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "NTE"
+          }
+        ]
+      },
+      {
+        "id": "ORU_R01.PATIENT_RESULT.ORDER_OBSERVATION.TIMING_QTY",
+        "path": "ORU_R01.PATIENT_RESULT.ORDER_OBSERVATION.TIMING_QTY",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "BackboneElement"
+          }
+        ]
+      },
+      {
+        "id": "ORU_R01.PATIENT_RESULT.ORDER_OBSERVATION.TIMING_QTY.TQ1",
+        "path": "ORU_R01.PATIENT_RESULT.ORDER_OBSERVATION.TIMING_QTY.TQ1",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "TQ1",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/TQ1"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "TQ1"
+          }
+        ]
+      },
+      {
+        "id": "ORU_R01.PATIENT_RESULT.ORDER_OBSERVATION.TIMING_QTY.TQ2",
+        "path": "ORU_R01.PATIENT_RESULT.ORDER_OBSERVATION.TIMING_QTY.TQ2",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "TQ2",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/TQ2"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "TQ2"
+          }
+        ]
+      },
+      {
+        "id": "ORU_R01.PATIENT_RESULT.ORDER_OBSERVATION.CTD",
+        "path": "ORU_R01.PATIENT_RESULT.ORDER_OBSERVATION.CTD",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "CTD",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/CTD"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "CTD"
+          }
+        ]
+      },
+      {
+        "id": "ORU_R01.PATIENT_RESULT.ORDER_OBSERVATION.OBSERVATION",
+        "path": "ORU_R01.PATIENT_RESULT.ORDER_OBSERVATION.OBSERVATION",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "BackboneElement"
+          }
+        ]
+      },
+      {
+        "id": "ORU_R01.PATIENT_RESULT.ORDER_OBSERVATION.OBSERVATION.OBX",
+        "path": "ORU_R01.PATIENT_RESULT.ORDER_OBSERVATION.OBSERVATION.OBX",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "OBX",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/OBX"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "OBX"
+          }
+        ]
+      },
+      {
+        "id": "ORU_R01.PATIENT_RESULT.ORDER_OBSERVATION.OBSERVATION.NTE",
+        "path": "ORU_R01.PATIENT_RESULT.ORDER_OBSERVATION.OBSERVATION.NTE",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "NTE",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/NTE"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "NTE"
+          }
+        ]
+      },
+      {
+        "id": "ORU_R01.PATIENT_RESULT.ORDER_OBSERVATION.FT1",
+        "path": "ORU_R01.PATIENT_RESULT.ORDER_OBSERVATION.FT1",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "FT1",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/FT1"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "FT1"
+          }
+        ]
+      },
+      {
+        "id": "ORU_R01.PATIENT_RESULT.ORDER_OBSERVATION.CTI",
+        "path": "ORU_R01.PATIENT_RESULT.ORDER_OBSERVATION.CTI",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "CTI",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/CTI"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "CTI"
+          }
+        ]
+      },
+      {
+        "id": "ORU_R01.PATIENT_RESULT.ORDER_OBSERVATION.SPECIMEN",
+        "path": "ORU_R01.PATIENT_RESULT.ORDER_OBSERVATION.SPECIMEN",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "BackboneElement"
+          }
+        ]
+      },
+      {
+        "id": "ORU_R01.PATIENT_RESULT.ORDER_OBSERVATION.SPECIMEN.SPM",
+        "path": "ORU_R01.PATIENT_RESULT.ORDER_OBSERVATION.SPECIMEN.SPM",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "SPM",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/SPM"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "SPM"
+          }
+        ]
+      },
+      {
+        "id": "ORU_R01.PATIENT_RESULT.ORDER_OBSERVATION.SPECIMEN.OBX",
+        "path": "ORU_R01.PATIENT_RESULT.ORDER_OBSERVATION.SPECIMEN.OBX",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "OBX",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/OBX"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "OBX"
+          }
+        ]
+      },
+      {
+        "id": "ORU_R01.DSC",
+        "path": "ORU_R01.DSC",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "DSC",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/DSC"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "DSC"
+          }
+        ]
+      }
+    ]
+  }
+}

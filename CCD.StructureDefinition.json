@@ -1,0 +1,78 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "CCD",
+  "url": "http://hl7.org/fhir/StructureDefinition/CCD",
+  "name": "CCD",
+  "status": "active",
+  "fhirVersion": "4.0.1",
+  "kind": "logical",
+  "abstract": false,
+  "type": "CCD",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Element",
+  "derivation": "specialization",
+  "differential": {
+    "element": [
+      {
+        "id": "CCD",
+        "path": "CCD",
+        "type": [
+          {
+            "code": "Element"
+          }
+        ],
+        "mapping": [
+          {
+            "id": "CCD",
+            "identity": "v2",
+            "map": "CCD"
+          }
+        ]
+      },
+      {
+        "id": "CCD.InvocationEvent",
+        "path": "CCD.InvocationEvent",
+        "code": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/v2-0100"
+          }
+        ],
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "string",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/string"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "CCD.1"
+          }
+        ]
+      },
+      {
+        "id": "CCD.Date/time",
+        "path": "CCD.Date/time",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "TS",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/TS"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "CCD.2"
+          }
+        ]
+      }
+    ]
+  }
+}

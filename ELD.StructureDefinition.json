@@ -1,0 +1,118 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "ELD",
+  "url": "http://hl7.org/fhir/StructureDefinition/ELD",
+  "name": "ELD",
+  "status": "active",
+  "fhirVersion": "4.0.1",
+  "kind": "logical",
+  "abstract": false,
+  "type": "ELD",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Element",
+  "derivation": "specialization",
+  "differential": {
+    "element": [
+      {
+        "id": "ELD",
+        "path": "ELD",
+        "type": [
+          {
+            "code": "Element"
+          }
+        ],
+        "mapping": [
+          {
+            "id": "ELD",
+            "identity": "v2",
+            "map": "ELD"
+          }
+        ]
+      },
+      {
+        "id": "ELD.SegmentID",
+        "path": "ELD.SegmentID",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "string",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/string"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "ELD.1"
+          }
+        ]
+      },
+      {
+        "id": "ELD.SegmentSequence",
+        "path": "ELD.SegmentSequence",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "string",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/string"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "ELD.2"
+          }
+        ]
+      },
+      {
+        "id": "ELD.FieldPosition",
+        "path": "ELD.FieldPosition",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "string",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/string"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "ELD.3"
+          }
+        ]
+      },
+      {
+        "id": "ELD.CodeIdentifyingError",
+        "path": "ELD.CodeIdentifyingError",
+        "code": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/v2-0357"
+          }
+        ],
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "CE",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/CE"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "ELD.4"
+          }
+        ]
+      }
+    ]
+  }
+}

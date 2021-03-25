@@ -1,0 +1,164 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "CRM_C01",
+  "url": "http://hl7.org/fhir/StructureDefinition/CRM_C01",
+  "name": "CRM_C01",
+  "status": "active",
+  "fhirVersion": "4.0.1",
+  "kind": "logical",
+  "abstract": false,
+  "type": "CRM_C01",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Element",
+  "derivation": "specialization",
+  "differential": {
+    "element": [
+      {
+        "id": "CRM_C01",
+        "path": "CRM_C01",
+        "type": [
+          {
+            "code": "Element"
+          }
+        ],
+        "mapping": [
+          {
+            "id": "CRM_C01",
+            "identity": "v2",
+            "map": "CRM_C01"
+          }
+        ]
+      },
+      {
+        "id": "CRM_C01.MSH",
+        "path": "CRM_C01.MSH",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "MSH",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/MSH"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "MSH"
+          }
+        ]
+      },
+      {
+        "id": "CRM_C01.SFT",
+        "path": "CRM_C01.SFT",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "SFT",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/SFT"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "SFT"
+          }
+        ]
+      },
+      {
+        "id": "CRM_C01.PATIENT",
+        "path": "CRM_C01.PATIENT",
+        "min": 1,
+        "max": "*",
+        "type": [
+          {
+            "code": "BackboneElement"
+          }
+        ]
+      },
+      {
+        "id": "CRM_C01.PATIENT.PID",
+        "path": "CRM_C01.PATIENT.PID",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "PID",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/PID"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "PID"
+          }
+        ]
+      },
+      {
+        "id": "CRM_C01.PATIENT.PV1",
+        "path": "CRM_C01.PATIENT.PV1",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "PV1",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/PV1"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "PV1"
+          }
+        ]
+      },
+      {
+        "id": "CRM_C01.PATIENT.CSR",
+        "path": "CRM_C01.PATIENT.CSR",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "CSR",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/CSR"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "CSR"
+          }
+        ]
+      },
+      {
+        "id": "CRM_C01.PATIENT.CSP",
+        "path": "CRM_C01.PATIENT.CSP",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "CSP",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/CSP"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "CSP"
+          }
+        ]
+      }
+    ]
+  }
+}

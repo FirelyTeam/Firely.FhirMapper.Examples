@@ -1,0 +1,93 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "SAD",
+  "url": "http://hl7.org/fhir/StructureDefinition/SAD",
+  "name": "SAD",
+  "status": "active",
+  "fhirVersion": "4.0.1",
+  "kind": "logical",
+  "abstract": false,
+  "type": "SAD",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Element",
+  "derivation": "specialization",
+  "differential": {
+    "element": [
+      {
+        "id": "SAD",
+        "path": "SAD",
+        "type": [
+          {
+            "code": "Element"
+          }
+        ],
+        "mapping": [
+          {
+            "id": "SAD",
+            "identity": "v2",
+            "map": "SAD"
+          }
+        ]
+      },
+      {
+        "id": "SAD.StreetorMailingAddress",
+        "path": "SAD.StreetorMailingAddress",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "string",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/string"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "SAD.1"
+          }
+        ]
+      },
+      {
+        "id": "SAD.StreetName",
+        "path": "SAD.StreetName",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "string",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/string"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "SAD.2"
+          }
+        ]
+      },
+      {
+        "id": "SAD.DwellingNumber",
+        "path": "SAD.DwellingNumber",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "string",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/string"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "SAD.3"
+          }
+        ]
+      }
+    ]
+  }
+}

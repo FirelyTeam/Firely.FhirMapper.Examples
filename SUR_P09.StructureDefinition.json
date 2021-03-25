@@ -1,0 +1,246 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "SUR_P09",
+  "url": "http://hl7.org/fhir/StructureDefinition/SUR_P09",
+  "name": "SUR_P09",
+  "status": "active",
+  "fhirVersion": "4.0.1",
+  "kind": "logical",
+  "abstract": false,
+  "type": "SUR_P09",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Element",
+  "derivation": "specialization",
+  "differential": {
+    "element": [
+      {
+        "id": "SUR_P09",
+        "path": "SUR_P09",
+        "type": [
+          {
+            "code": "Element"
+          }
+        ],
+        "mapping": [
+          {
+            "id": "SUR_P09",
+            "identity": "v2",
+            "map": "SUR_P09"
+          }
+        ]
+      },
+      {
+        "id": "SUR_P09.MSH",
+        "path": "SUR_P09.MSH",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "MSH",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/MSH"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "MSH"
+          }
+        ]
+      },
+      {
+        "id": "SUR_P09.FACILITY",
+        "path": "SUR_P09.FACILITY",
+        "min": 1,
+        "max": "*",
+        "type": [
+          {
+            "code": "BackboneElement"
+          }
+        ]
+      },
+      {
+        "id": "SUR_P09.FACILITY.FAC",
+        "path": "SUR_P09.FACILITY.FAC",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "FAC",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/FAC"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "FAC"
+          }
+        ]
+      },
+      {
+        "id": "SUR_P09.FACILITY.PRODUCT",
+        "path": "SUR_P09.FACILITY.PRODUCT",
+        "min": 1,
+        "max": "*",
+        "type": [
+          {
+            "code": "BackboneElement"
+          }
+        ]
+      },
+      {
+        "id": "SUR_P09.FACILITY.PRODUCT.PSH",
+        "path": "SUR_P09.FACILITY.PRODUCT.PSH",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "PSH",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/PSH"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "PSH"
+          }
+        ]
+      },
+      {
+        "id": "SUR_P09.FACILITY.PRODUCT.PDC",
+        "path": "SUR_P09.FACILITY.PRODUCT.PDC",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "PDC",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/PDC"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "PDC"
+          }
+        ]
+      },
+      {
+        "id": "SUR_P09.FACILITY.PSH",
+        "path": "SUR_P09.FACILITY.PSH",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "PSH",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/PSH"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "PSH"
+          }
+        ]
+      },
+      {
+        "id": "SUR_P09.FACILITY.FACILITY_DETAIL",
+        "path": "SUR_P09.FACILITY.FACILITY_DETAIL",
+        "min": 1,
+        "max": "*",
+        "type": [
+          {
+            "code": "BackboneElement"
+          }
+        ]
+      },
+      {
+        "id": "SUR_P09.FACILITY.FACILITY_DETAIL.FAC",
+        "path": "SUR_P09.FACILITY.FACILITY_DETAIL.FAC",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "FAC",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/FAC"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "FAC"
+          }
+        ]
+      },
+      {
+        "id": "SUR_P09.FACILITY.FACILITY_DETAIL.PDC",
+        "path": "SUR_P09.FACILITY.FACILITY_DETAIL.PDC",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "PDC",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/PDC"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "PDC"
+          }
+        ]
+      },
+      {
+        "id": "SUR_P09.FACILITY.FACILITY_DETAIL.NTE",
+        "path": "SUR_P09.FACILITY.FACILITY_DETAIL.NTE",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "NTE",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/NTE"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "NTE"
+          }
+        ]
+      },
+      {
+        "id": "SUR_P09.FACILITY.ED",
+        "path": "SUR_P09.FACILITY.ED",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "ED",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/ED"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "ED"
+          }
+        ]
+      }
+    ]
+  }
+}

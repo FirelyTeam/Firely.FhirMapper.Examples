@@ -1,0 +1,903 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "STF",
+  "url": "http://hl7.org/fhir/StructureDefinition/STF",
+  "name": "STF",
+  "status": "active",
+  "fhirVersion": "4.0.1",
+  "kind": "logical",
+  "abstract": false,
+  "type": "STF",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Element",
+  "derivation": "specialization",
+  "differential": {
+    "element": [
+      {
+        "id": "STF",
+        "path": "STF",
+        "type": [
+          {
+            "code": "Element"
+          }
+        ],
+        "mapping": [
+          {
+            "id": "STF",
+            "identity": "v2",
+            "map": "STF"
+          }
+        ]
+      },
+      {
+        "id": "STF.PrimaryKeyValue-STF",
+        "path": "STF.PrimaryKeyValue-STF",
+        "code": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/v2-9999"
+          }
+        ],
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "CE",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/CE"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "STF.1"
+          }
+        ]
+      },
+      {
+        "id": "STF.StaffIdentifierList",
+        "path": "STF.StaffIdentifierList",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "CX",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/CX"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "STF.2"
+          }
+        ]
+      },
+      {
+        "id": "STF.StaffName",
+        "path": "STF.StaffName",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "XPN",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/XPN"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "STF.3"
+          }
+        ]
+      },
+      {
+        "id": "STF.StaffType",
+        "path": "STF.StaffType",
+        "code": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/v2-0182"
+          }
+        ],
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "string",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/string"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "STF.4"
+          }
+        ]
+      },
+      {
+        "id": "STF.AdministrativeSex",
+        "path": "STF.AdministrativeSex",
+        "code": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/v2-0001"
+          }
+        ],
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "string",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/string"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "STF.5"
+          }
+        ]
+      },
+      {
+        "id": "STF.Date/TimeofBirth",
+        "path": "STF.Date/TimeofBirth",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "TS",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/TS"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "STF.6"
+          }
+        ]
+      },
+      {
+        "id": "STF.Active/InactiveFlag",
+        "path": "STF.Active/InactiveFlag",
+        "code": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/v2-0183"
+          }
+        ],
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "string",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/string"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "STF.7"
+          }
+        ]
+      },
+      {
+        "id": "STF.Department",
+        "path": "STF.Department",
+        "code": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/v2-0184"
+          }
+        ],
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "CE",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/CE"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "STF.8"
+          }
+        ]
+      },
+      {
+        "id": "STF.HospitalService-STF",
+        "path": "STF.HospitalService-STF",
+        "code": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/v2-0069"
+          }
+        ],
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "CE",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/CE"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "STF.9"
+          }
+        ]
+      },
+      {
+        "id": "STF.Phone",
+        "path": "STF.Phone",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "XTN",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/XTN"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "STF.10"
+          }
+        ]
+      },
+      {
+        "id": "STF.Office/HomeAddress/Birthplace",
+        "path": "STF.Office/HomeAddress/Birthplace",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "XAD",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/XAD"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "STF.11"
+          }
+        ]
+      },
+      {
+        "id": "STF.InstitutionActivationDate",
+        "path": "STF.InstitutionActivationDate",
+        "code": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/v2-0537"
+          }
+        ],
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "DIN",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/DIN"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "STF.12"
+          }
+        ]
+      },
+      {
+        "id": "STF.InstitutionInactivationDate",
+        "path": "STF.InstitutionInactivationDate",
+        "code": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/v2-0537"
+          }
+        ],
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "DIN",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/DIN"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "STF.13"
+          }
+        ]
+      },
+      {
+        "id": "STF.BackupPersonID",
+        "path": "STF.BackupPersonID",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "CE",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/CE"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "STF.14"
+          }
+        ]
+      },
+      {
+        "id": "STF.E-MailAddress",
+        "path": "STF.E-MailAddress",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "string",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/string"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "STF.15"
+          }
+        ]
+      },
+      {
+        "id": "STF.PreferredMethodofContact",
+        "path": "STF.PreferredMethodofContact",
+        "code": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/v2-0185"
+          }
+        ],
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "CE",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/CE"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "STF.16"
+          }
+        ]
+      },
+      {
+        "id": "STF.MaritalStatus",
+        "path": "STF.MaritalStatus",
+        "code": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/v2-0002"
+          }
+        ],
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "CE",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/CE"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "STF.17"
+          }
+        ]
+      },
+      {
+        "id": "STF.JobTitle",
+        "path": "STF.JobTitle",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "string",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/string"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "STF.18"
+          }
+        ]
+      },
+      {
+        "id": "STF.JobCode/Class",
+        "path": "STF.JobCode/Class",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "JCC",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/JCC"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "STF.19"
+          }
+        ]
+      },
+      {
+        "id": "STF.EmploymentStatusCode",
+        "path": "STF.EmploymentStatusCode",
+        "code": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/v2-0066"
+          }
+        ],
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "CE",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/CE"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "STF.20"
+          }
+        ]
+      },
+      {
+        "id": "STF.AdditionalInsuredonAuto",
+        "path": "STF.AdditionalInsuredonAuto",
+        "code": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/v2-0136"
+          }
+        ],
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "string",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/string"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "STF.21"
+          }
+        ]
+      },
+      {
+        "id": "STF.Driver'sLicenseNumber-Staff",
+        "path": "STF.Driver'sLicenseNumber-Staff",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "DLN",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/DLN"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "STF.22"
+          }
+        ]
+      },
+      {
+        "id": "STF.CopyAutoIns",
+        "path": "STF.CopyAutoIns",
+        "code": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/v2-0136"
+          }
+        ],
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "string",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/string"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "STF.23"
+          }
+        ]
+      },
+      {
+        "id": "STF.AutoInsExpires",
+        "path": "STF.AutoInsExpires",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "string",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/string"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "STF.24"
+          }
+        ]
+      },
+      {
+        "id": "STF.DateLastDMVReview",
+        "path": "STF.DateLastDMVReview",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "string",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/string"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "STF.25"
+          }
+        ]
+      },
+      {
+        "id": "STF.DateNextDMVReview",
+        "path": "STF.DateNextDMVReview",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "string",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/string"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "STF.26"
+          }
+        ]
+      },
+      {
+        "id": "STF.Race",
+        "path": "STF.Race",
+        "code": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/v2-0005"
+          }
+        ],
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "CE",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/CE"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "STF.27"
+          }
+        ]
+      },
+      {
+        "id": "STF.EthnicGroup",
+        "path": "STF.EthnicGroup",
+        "code": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/v2-0189"
+          }
+        ],
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "CE",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/CE"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "STF.28"
+          }
+        ]
+      },
+      {
+        "id": "STF.Re-activationApprovalIndicator",
+        "path": "STF.Re-activationApprovalIndicator",
+        "code": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/v2-0136"
+          }
+        ],
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "string",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/string"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "STF.29"
+          }
+        ]
+      },
+      {
+        "id": "STF.Citizenship",
+        "path": "STF.Citizenship",
+        "code": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/v2-0171"
+          }
+        ],
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "CE",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/CE"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "STF.30"
+          }
+        ]
+      },
+      {
+        "id": "STF.DeathDateandTime",
+        "path": "STF.DeathDateandTime",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "TS",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/TS"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "STF.31"
+          }
+        ]
+      },
+      {
+        "id": "STF.DeathIndicator",
+        "path": "STF.DeathIndicator",
+        "code": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/v2-0136"
+          }
+        ],
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "string",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/string"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "STF.32"
+          }
+        ]
+      },
+      {
+        "id": "STF.InstitutionRelationshipTypeCode",
+        "path": "STF.InstitutionRelationshipTypeCode",
+        "code": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/v2-0538"
+          }
+        ],
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "CWE",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/CWE"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "STF.33"
+          }
+        ]
+      },
+      {
+        "id": "STF.InstitutionRelationshipPeriod",
+        "path": "STF.InstitutionRelationshipPeriod",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "DR",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/DR"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "STF.34"
+          }
+        ]
+      },
+      {
+        "id": "STF.ExpectedReturnDate",
+        "path": "STF.ExpectedReturnDate",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "string",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/string"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "STF.35"
+          }
+        ]
+      },
+      {
+        "id": "STF.CostCenterCode",
+        "path": "STF.CostCenterCode",
+        "code": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/v2-0539"
+          }
+        ],
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "CWE",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/CWE"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "STF.36"
+          }
+        ]
+      },
+      {
+        "id": "STF.GenericClassificationIndicator",
+        "path": "STF.GenericClassificationIndicator",
+        "code": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/v2-0136"
+          }
+        ],
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "string",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/string"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "STF.37"
+          }
+        ]
+      },
+      {
+        "id": "STF.InactiveReasonCode",
+        "path": "STF.InactiveReasonCode",
+        "code": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/v2-0540"
+          }
+        ],
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "CWE",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/CWE"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "STF.38"
+          }
+        ]
+      }
+    ]
+  }
+}

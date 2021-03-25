@@ -1,0 +1,323 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "CDM",
+  "url": "http://hl7.org/fhir/StructureDefinition/CDM",
+  "name": "CDM",
+  "status": "active",
+  "fhirVersion": "4.0.1",
+  "kind": "logical",
+  "abstract": false,
+  "type": "CDM",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Element",
+  "derivation": "specialization",
+  "differential": {
+    "element": [
+      {
+        "id": "CDM",
+        "path": "CDM",
+        "type": [
+          {
+            "code": "Element"
+          }
+        ],
+        "mapping": [
+          {
+            "id": "CDM",
+            "identity": "v2",
+            "map": "CDM"
+          }
+        ]
+      },
+      {
+        "id": "CDM.PrimaryKeyValue-CDM",
+        "path": "CDM.PrimaryKeyValue-CDM",
+        "code": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/v2-0132"
+          }
+        ],
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "CE",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/CE"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "CDM.1"
+          }
+        ]
+      },
+      {
+        "id": "CDM.ChargeCodeAlias",
+        "path": "CDM.ChargeCodeAlias",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "CE",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/CE"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "CDM.2"
+          }
+        ]
+      },
+      {
+        "id": "CDM.ChargeDescriptionShort",
+        "path": "CDM.ChargeDescriptionShort",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "string",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/string"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "CDM.3"
+          }
+        ]
+      },
+      {
+        "id": "CDM.ChargeDescriptionLong",
+        "path": "CDM.ChargeDescriptionLong",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "string",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/string"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "CDM.4"
+          }
+        ]
+      },
+      {
+        "id": "CDM.DescriptionOverrideIndicator",
+        "path": "CDM.DescriptionOverrideIndicator",
+        "code": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/v2-0268"
+          }
+        ],
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "string",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/string"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "CDM.5"
+          }
+        ]
+      },
+      {
+        "id": "CDM.ExplodingCharges",
+        "path": "CDM.ExplodingCharges",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "CE",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/CE"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "CDM.6"
+          }
+        ]
+      },
+      {
+        "id": "CDM.ProcedureCode",
+        "path": "CDM.ProcedureCode",
+        "code": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/v2-0088"
+          }
+        ],
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "CE",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/CE"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "CDM.7"
+          }
+        ]
+      },
+      {
+        "id": "CDM.Active/InactiveFlag",
+        "path": "CDM.Active/InactiveFlag",
+        "code": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/v2-0183"
+          }
+        ],
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "string",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/string"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "CDM.8"
+          }
+        ]
+      },
+      {
+        "id": "CDM.InventoryNumber",
+        "path": "CDM.InventoryNumber",
+        "code": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/v2-0463"
+          }
+        ],
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "CE",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/CE"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "CDM.9"
+          }
+        ]
+      },
+      {
+        "id": "CDM.ResourceLoad",
+        "path": "CDM.ResourceLoad",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "string",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/string"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "CDM.10"
+          }
+        ]
+      },
+      {
+        "id": "CDM.ContractNumber",
+        "path": "CDM.ContractNumber",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "CX",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/CX"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "CDM.11"
+          }
+        ]
+      },
+      {
+        "id": "CDM.ContractOrganization",
+        "path": "CDM.ContractOrganization",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "XON",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/XON"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "CDM.12"
+          }
+        ]
+      },
+      {
+        "id": "CDM.RoomFeeIndicator",
+        "path": "CDM.RoomFeeIndicator",
+        "code": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/v2-0136"
+          }
+        ],
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "string",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/string"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "CDM.13"
+          }
+        ]
+      }
+    ]
+  }
+}

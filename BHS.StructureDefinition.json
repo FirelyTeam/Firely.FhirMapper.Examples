@@ -1,0 +1,273 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "BHS",
+  "url": "http://hl7.org/fhir/StructureDefinition/BHS",
+  "name": "BHS",
+  "status": "active",
+  "fhirVersion": "4.0.1",
+  "kind": "logical",
+  "abstract": false,
+  "type": "BHS",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Element",
+  "derivation": "specialization",
+  "differential": {
+    "element": [
+      {
+        "id": "BHS",
+        "path": "BHS",
+        "type": [
+          {
+            "code": "Element"
+          }
+        ],
+        "mapping": [
+          {
+            "id": "BHS",
+            "identity": "v2",
+            "map": "BHS"
+          }
+        ]
+      },
+      {
+        "id": "BHS.BatchFieldSeparator",
+        "path": "BHS.BatchFieldSeparator",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "string",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/string"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "BHS.1"
+          }
+        ]
+      },
+      {
+        "id": "BHS.BatchEncodingCharacters",
+        "path": "BHS.BatchEncodingCharacters",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "string",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/string"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "BHS.2"
+          }
+        ]
+      },
+      {
+        "id": "BHS.BatchSendingApplication",
+        "path": "BHS.BatchSendingApplication",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "HD",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/HD"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "BHS.3"
+          }
+        ]
+      },
+      {
+        "id": "BHS.BatchSendingFacility",
+        "path": "BHS.BatchSendingFacility",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "HD",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/HD"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "BHS.4"
+          }
+        ]
+      },
+      {
+        "id": "BHS.BatchReceivingApplication",
+        "path": "BHS.BatchReceivingApplication",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "HD",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/HD"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "BHS.5"
+          }
+        ]
+      },
+      {
+        "id": "BHS.BatchReceivingFacility",
+        "path": "BHS.BatchReceivingFacility",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "HD",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/HD"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "BHS.6"
+          }
+        ]
+      },
+      {
+        "id": "BHS.BatchCreationDate/Time",
+        "path": "BHS.BatchCreationDate/Time",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "TS",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/TS"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "BHS.7"
+          }
+        ]
+      },
+      {
+        "id": "BHS.BatchSecurity",
+        "path": "BHS.BatchSecurity",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "string",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/string"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "BHS.8"
+          }
+        ]
+      },
+      {
+        "id": "BHS.BatchName/ID/Type",
+        "path": "BHS.BatchName/ID/Type",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "string",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/string"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "BHS.9"
+          }
+        ]
+      },
+      {
+        "id": "BHS.BatchComment",
+        "path": "BHS.BatchComment",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "string",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/string"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "BHS.10"
+          }
+        ]
+      },
+      {
+        "id": "BHS.BatchControlID",
+        "path": "BHS.BatchControlID",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "string",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/string"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "BHS.11"
+          }
+        ]
+      },
+      {
+        "id": "BHS.ReferenceBatchControlID",
+        "path": "BHS.ReferenceBatchControlID",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "string",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/string"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "BHS.12"
+          }
+        ]
+      }
+    ]
+  }
+}

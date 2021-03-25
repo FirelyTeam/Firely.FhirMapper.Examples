@@ -1,0 +1,558 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "PPN",
+  "url": "http://hl7.org/fhir/StructureDefinition/PPN",
+  "name": "PPN",
+  "status": "active",
+  "fhirVersion": "4.0.1",
+  "kind": "logical",
+  "abstract": false,
+  "type": "PPN",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Element",
+  "derivation": "specialization",
+  "differential": {
+    "element": [
+      {
+        "id": "PPN",
+        "path": "PPN",
+        "type": [
+          {
+            "code": "Element"
+          }
+        ],
+        "mapping": [
+          {
+            "id": "PPN",
+            "identity": "v2",
+            "map": "PPN"
+          }
+        ]
+      },
+      {
+        "id": "PPN.IDNumber",
+        "path": "PPN.IDNumber",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "string",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/string"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "PPN.1"
+          }
+        ]
+      },
+      {
+        "id": "PPN.FamilyName",
+        "path": "PPN.FamilyName",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "FN",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/FN"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "PPN.2"
+          }
+        ]
+      },
+      {
+        "id": "PPN.GivenName",
+        "path": "PPN.GivenName",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "string",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/string"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "PPN.3"
+          }
+        ]
+      },
+      {
+        "id": "PPN.SecondandFurtherGivenNamesorInitialsThereof",
+        "path": "PPN.SecondandFurtherGivenNamesorInitialsThereof",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "string",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/string"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "PPN.4"
+          }
+        ]
+      },
+      {
+        "id": "PPN.Suffix",
+        "path": "PPN.Suffix",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "string",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/string"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "PPN.5"
+          }
+        ]
+      },
+      {
+        "id": "PPN.Prefix",
+        "path": "PPN.Prefix",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "string",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/string"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "PPN.6"
+          }
+        ]
+      },
+      {
+        "id": "PPN.Degree",
+        "path": "PPN.Degree",
+        "code": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/v2-0360"
+          }
+        ],
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "string",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/string"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "PPN.7"
+          }
+        ]
+      },
+      {
+        "id": "PPN.SourceTable",
+        "path": "PPN.SourceTable",
+        "code": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/v2-0297"
+          }
+        ],
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "string",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/string"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "PPN.8"
+          }
+        ]
+      },
+      {
+        "id": "PPN.AssigningAuthority",
+        "path": "PPN.AssigningAuthority",
+        "code": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/v2-0363"
+          }
+        ],
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "HD",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/HD"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "PPN.9"
+          }
+        ]
+      },
+      {
+        "id": "PPN.NameTypeCode",
+        "path": "PPN.NameTypeCode",
+        "code": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/v2-0200"
+          }
+        ],
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "string",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/string"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "PPN.10"
+          }
+        ]
+      },
+      {
+        "id": "PPN.IdentifierCheckDigit",
+        "path": "PPN.IdentifierCheckDigit",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "string",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/string"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "PPN.11"
+          }
+        ]
+      },
+      {
+        "id": "PPN.CheckDigitScheme",
+        "path": "PPN.CheckDigitScheme",
+        "code": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/v2-0061"
+          }
+        ],
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "string",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/string"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "PPN.12"
+          }
+        ]
+      },
+      {
+        "id": "PPN.IdentifierTypeCode",
+        "path": "PPN.IdentifierTypeCode",
+        "code": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/v2-0203"
+          }
+        ],
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "string",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/string"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "PPN.13"
+          }
+        ]
+      },
+      {
+        "id": "PPN.AssigningFacility",
+        "path": "PPN.AssigningFacility",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "HD",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/HD"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "PPN.14"
+          }
+        ]
+      },
+      {
+        "id": "PPN.Date/TimeActionPerformed",
+        "path": "PPN.Date/TimeActionPerformed",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "TS",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/TS"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "PPN.15"
+          }
+        ]
+      },
+      {
+        "id": "PPN.NameRepresentationCode",
+        "path": "PPN.NameRepresentationCode",
+        "code": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/v2-0465"
+          }
+        ],
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "string",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/string"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "PPN.16"
+          }
+        ]
+      },
+      {
+        "id": "PPN.NameContext",
+        "path": "PPN.NameContext",
+        "code": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/v2-0448"
+          }
+        ],
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "CE",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/CE"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "PPN.17"
+          }
+        ]
+      },
+      {
+        "id": "PPN.NameValidityRange",
+        "path": "PPN.NameValidityRange",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "DR",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/DR"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "PPN.18"
+          }
+        ]
+      },
+      {
+        "id": "PPN.NameAssemblyOrder",
+        "path": "PPN.NameAssemblyOrder",
+        "code": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/v2-0444"
+          }
+        ],
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "string",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/string"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "PPN.19"
+          }
+        ]
+      },
+      {
+        "id": "PPN.EffectiveDate",
+        "path": "PPN.EffectiveDate",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "TS",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/TS"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "PPN.20"
+          }
+        ]
+      },
+      {
+        "id": "PPN.ExpirationDate",
+        "path": "PPN.ExpirationDate",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "TS",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/TS"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "PPN.21"
+          }
+        ]
+      },
+      {
+        "id": "PPN.ProfessionalSuffix",
+        "path": "PPN.ProfessionalSuffix",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "string",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/string"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "PPN.22"
+          }
+        ]
+      },
+      {
+        "id": "PPN.AssigningJurisdiction",
+        "path": "PPN.AssigningJurisdiction",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "CWE",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/CWE"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "PPN.23"
+          }
+        ]
+      },
+      {
+        "id": "PPN.AssigningAgencyorDepartment",
+        "path": "PPN.AssigningAgencyorDepartment",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "CWE",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/CWE"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "PPN.24"
+          }
+        ]
+      }
+    ]
+  }
+}

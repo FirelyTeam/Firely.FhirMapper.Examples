@@ -1,0 +1,328 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "BPO",
+  "url": "http://hl7.org/fhir/StructureDefinition/BPO",
+  "name": "BPO",
+  "status": "active",
+  "fhirVersion": "4.0.1",
+  "kind": "logical",
+  "abstract": false,
+  "type": "BPO",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Element",
+  "derivation": "specialization",
+  "differential": {
+    "element": [
+      {
+        "id": "BPO",
+        "path": "BPO",
+        "type": [
+          {
+            "code": "Element"
+          }
+        ],
+        "mapping": [
+          {
+            "id": "BPO",
+            "identity": "v2",
+            "map": "BPO"
+          }
+        ]
+      },
+      {
+        "id": "BPO.SetID_BPO",
+        "path": "BPO.SetID_BPO",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "string",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/string"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "BPO.1"
+          }
+        ]
+      },
+      {
+        "id": "BPO.BPUniversalServiceID",
+        "path": "BPO.BPUniversalServiceID",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "CWE",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/CWE"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "BPO.2"
+          }
+        ]
+      },
+      {
+        "id": "BPO.BPProcessingRequirements",
+        "path": "BPO.BPProcessingRequirements",
+        "code": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/v2-0508"
+          }
+        ],
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "CWE",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/CWE"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "BPO.3"
+          }
+        ]
+      },
+      {
+        "id": "BPO.BPQuantity",
+        "path": "BPO.BPQuantity",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "string",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/string"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "BPO.4"
+          }
+        ]
+      },
+      {
+        "id": "BPO.BPAmount",
+        "path": "BPO.BPAmount",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "string",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/string"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "BPO.5"
+          }
+        ]
+      },
+      {
+        "id": "BPO.BPUnits",
+        "path": "BPO.BPUnits",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "CE",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/CE"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "BPO.6"
+          }
+        ]
+      },
+      {
+        "id": "BPO.BPIntendedUseDate/Time",
+        "path": "BPO.BPIntendedUseDate/Time",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "TS",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/TS"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "BPO.7"
+          }
+        ]
+      },
+      {
+        "id": "BPO.BPIntendedDispenseFromLocation",
+        "path": "BPO.BPIntendedDispenseFromLocation",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "PL",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/PL"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "BPO.8"
+          }
+        ]
+      },
+      {
+        "id": "BPO.BPIntendedDispenseFromAddress",
+        "path": "BPO.BPIntendedDispenseFromAddress",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "XAD",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/XAD"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "BPO.9"
+          }
+        ]
+      },
+      {
+        "id": "BPO.BPRequestedDispenseDate/Time",
+        "path": "BPO.BPRequestedDispenseDate/Time",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "TS",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/TS"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "BPO.10"
+          }
+        ]
+      },
+      {
+        "id": "BPO.BPRequestedDispenseToLocation",
+        "path": "BPO.BPRequestedDispenseToLocation",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "PL",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/PL"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "BPO.11"
+          }
+        ]
+      },
+      {
+        "id": "BPO.BPRequestedDispenseToAddress",
+        "path": "BPO.BPRequestedDispenseToAddress",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "XAD",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/XAD"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "BPO.12"
+          }
+        ]
+      },
+      {
+        "id": "BPO.BPIndicationforUse",
+        "path": "BPO.BPIndicationforUse",
+        "code": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/v2-0509"
+          }
+        ],
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "CWE",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/CWE"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "BPO.13"
+          }
+        ]
+      },
+      {
+        "id": "BPO.BPInformedConsentIndicator",
+        "path": "BPO.BPInformedConsentIndicator",
+        "code": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/v2-0136"
+          }
+        ],
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "string",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/string"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "BPO.14"
+          }
+        ]
+      }
+    ]
+  }
+}

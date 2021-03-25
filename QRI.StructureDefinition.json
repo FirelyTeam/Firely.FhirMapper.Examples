@@ -1,0 +1,103 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "QRI",
+  "url": "http://hl7.org/fhir/StructureDefinition/QRI",
+  "name": "QRI",
+  "status": "active",
+  "fhirVersion": "4.0.1",
+  "kind": "logical",
+  "abstract": false,
+  "type": "QRI",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Element",
+  "derivation": "specialization",
+  "differential": {
+    "element": [
+      {
+        "id": "QRI",
+        "path": "QRI",
+        "type": [
+          {
+            "code": "Element"
+          }
+        ],
+        "mapping": [
+          {
+            "id": "QRI",
+            "identity": "v2",
+            "map": "QRI"
+          }
+        ]
+      },
+      {
+        "id": "QRI.CandidateConfidence",
+        "path": "QRI.CandidateConfidence",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "string",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/string"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "QRI.1"
+          }
+        ]
+      },
+      {
+        "id": "QRI.MatchReasonCode",
+        "path": "QRI.MatchReasonCode",
+        "code": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/v2-0392"
+          }
+        ],
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "string",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/string"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "QRI.2"
+          }
+        ]
+      },
+      {
+        "id": "QRI.AlgorithmDescriptor",
+        "path": "QRI.AlgorithmDescriptor",
+        "code": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/v2-0393"
+          }
+        ],
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "CE",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/CE"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "QRI.3"
+          }
+        ]
+      }
+    ]
+  }
+}

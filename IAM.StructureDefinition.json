@@ -1,0 +1,468 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "IAM",
+  "url": "http://hl7.org/fhir/StructureDefinition/IAM",
+  "name": "IAM",
+  "status": "active",
+  "fhirVersion": "4.0.1",
+  "kind": "logical",
+  "abstract": false,
+  "type": "IAM",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Element",
+  "derivation": "specialization",
+  "differential": {
+    "element": [
+      {
+        "id": "IAM",
+        "path": "IAM",
+        "type": [
+          {
+            "code": "Element"
+          }
+        ],
+        "mapping": [
+          {
+            "id": "IAM",
+            "identity": "v2",
+            "map": "IAM"
+          }
+        ]
+      },
+      {
+        "id": "IAM.SetID-IAM",
+        "path": "IAM.SetID-IAM",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "string",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/string"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "IAM.1"
+          }
+        ]
+      },
+      {
+        "id": "IAM.AllergenTypeCode",
+        "path": "IAM.AllergenTypeCode",
+        "code": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/v2-0127"
+          }
+        ],
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "CE",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/CE"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "IAM.2"
+          }
+        ]
+      },
+      {
+        "id": "IAM.AllergenCode/Mnemonic/Description",
+        "path": "IAM.AllergenCode/Mnemonic/Description",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "CE",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/CE"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "IAM.3"
+          }
+        ]
+      },
+      {
+        "id": "IAM.AllergySeverityCode",
+        "path": "IAM.AllergySeverityCode",
+        "code": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/v2-0128"
+          }
+        ],
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "CE",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/CE"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "IAM.4"
+          }
+        ]
+      },
+      {
+        "id": "IAM.AllergyReactionCode",
+        "path": "IAM.AllergyReactionCode",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "string",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/string"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "IAM.5"
+          }
+        ]
+      },
+      {
+        "id": "IAM.AllergyActionCode",
+        "path": "IAM.AllergyActionCode",
+        "code": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/v2-0323"
+          }
+        ],
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "CNE",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/CNE"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "IAM.6"
+          }
+        ]
+      },
+      {
+        "id": "IAM.AllergyUniqueIdentifier",
+        "path": "IAM.AllergyUniqueIdentifier",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "EI",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/EI"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "IAM.7"
+          }
+        ]
+      },
+      {
+        "id": "IAM.ActionReason",
+        "path": "IAM.ActionReason",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "string",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/string"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "IAM.8"
+          }
+        ]
+      },
+      {
+        "id": "IAM.SensitivitytoCausativeAgentCode",
+        "path": "IAM.SensitivitytoCausativeAgentCode",
+        "code": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/v2-0436"
+          }
+        ],
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "CE",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/CE"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "IAM.9"
+          }
+        ]
+      },
+      {
+        "id": "IAM.AllergenGroupCode/Mnemonic/Description",
+        "path": "IAM.AllergenGroupCode/Mnemonic/Description",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "CE",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/CE"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "IAM.10"
+          }
+        ]
+      },
+      {
+        "id": "IAM.OnsetDate",
+        "path": "IAM.OnsetDate",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "string",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/string"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "IAM.11"
+          }
+        ]
+      },
+      {
+        "id": "IAM.OnsetDateText",
+        "path": "IAM.OnsetDateText",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "string",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/string"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "IAM.12"
+          }
+        ]
+      },
+      {
+        "id": "IAM.ReportedDate/Time",
+        "path": "IAM.ReportedDate/Time",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "TS",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/TS"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "IAM.13"
+          }
+        ]
+      },
+      {
+        "id": "IAM.ReportedBy",
+        "path": "IAM.ReportedBy",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "XPN",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/XPN"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "IAM.14"
+          }
+        ]
+      },
+      {
+        "id": "IAM.RelationshiptoPatientCode",
+        "path": "IAM.RelationshiptoPatientCode",
+        "code": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/v2-0063"
+          }
+        ],
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "CE",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/CE"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "IAM.15"
+          }
+        ]
+      },
+      {
+        "id": "IAM.AlertDeviceCode",
+        "path": "IAM.AlertDeviceCode",
+        "code": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/v2-0437"
+          }
+        ],
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "CE",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/CE"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "IAM.16"
+          }
+        ]
+      },
+      {
+        "id": "IAM.AllergyClinicalStatusCode",
+        "path": "IAM.AllergyClinicalStatusCode",
+        "code": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/v2-0438"
+          }
+        ],
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "CE",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/CE"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "IAM.17"
+          }
+        ]
+      },
+      {
+        "id": "IAM.StatusedbyPerson",
+        "path": "IAM.StatusedbyPerson",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "XCN",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/XCN"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "IAM.18"
+          }
+        ]
+      },
+      {
+        "id": "IAM.StatusedbyOrganization",
+        "path": "IAM.StatusedbyOrganization",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "XON",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/XON"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "IAM.19"
+          }
+        ]
+      },
+      {
+        "id": "IAM.StatusedatDate/Time",
+        "path": "IAM.StatusedatDate/Time",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "TS",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/TS"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "IAM.20"
+          }
+        ]
+      }
+    ]
+  }
+}

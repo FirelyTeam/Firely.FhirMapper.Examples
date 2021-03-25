@@ -1,0 +1,163 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "CF",
+  "url": "http://hl7.org/fhir/StructureDefinition/CF",
+  "name": "CF",
+  "status": "active",
+  "fhirVersion": "4.0.1",
+  "kind": "logical",
+  "abstract": false,
+  "type": "CF",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Element",
+  "derivation": "specialization",
+  "differential": {
+    "element": [
+      {
+        "id": "CF",
+        "path": "CF",
+        "type": [
+          {
+            "code": "Element"
+          }
+        ],
+        "mapping": [
+          {
+            "id": "CF",
+            "identity": "v2",
+            "map": "CF"
+          }
+        ]
+      },
+      {
+        "id": "CF.Identifier",
+        "path": "CF.Identifier",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "string",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/string"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "CF.1"
+          }
+        ]
+      },
+      {
+        "id": "CF.FormattedText",
+        "path": "CF.FormattedText",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "string",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/string"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "CF.2"
+          }
+        ]
+      },
+      {
+        "id": "CF.NameofCodingSystem",
+        "path": "CF.NameofCodingSystem",
+        "code": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/v2-0396"
+          }
+        ],
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "string",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/string"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "CF.3"
+          }
+        ]
+      },
+      {
+        "id": "CF.AlternateIdentifier",
+        "path": "CF.AlternateIdentifier",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "string",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/string"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "CF.4"
+          }
+        ]
+      },
+      {
+        "id": "CF.AlternateFormattedText",
+        "path": "CF.AlternateFormattedText",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "string",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/string"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "CF.5"
+          }
+        ]
+      },
+      {
+        "id": "CF.NameofAlternateCodingSystem",
+        "path": "CF.NameofAlternateCodingSystem",
+        "code": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/v2-0396"
+          }
+        ],
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "string",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/string"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "CF.6"
+          }
+        ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,98 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "MOP",
+  "url": "http://hl7.org/fhir/StructureDefinition/MOP",
+  "name": "MOP",
+  "status": "active",
+  "fhirVersion": "4.0.1",
+  "kind": "logical",
+  "abstract": false,
+  "type": "MOP",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Element",
+  "derivation": "specialization",
+  "differential": {
+    "element": [
+      {
+        "id": "MOP",
+        "path": "MOP",
+        "type": [
+          {
+            "code": "Element"
+          }
+        ],
+        "mapping": [
+          {
+            "id": "MOP",
+            "identity": "v2",
+            "map": "MOP"
+          }
+        ]
+      },
+      {
+        "id": "MOP.MoneyorPercentageIndicator",
+        "path": "MOP.MoneyorPercentageIndicator",
+        "code": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/v2-0148"
+          }
+        ],
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "string",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/string"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "MOP.1"
+          }
+        ]
+      },
+      {
+        "id": "MOP.MoneyorPercentageQuantity",
+        "path": "MOP.MoneyorPercentageQuantity",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "string",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/string"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "MOP.2"
+          }
+        ]
+      },
+      {
+        "id": "MOP.CurrencyDenomination",
+        "path": "MOP.CurrencyDenomination",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "string",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/string"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "MOP.3"
+          }
+        ]
+      }
+    ]
+  }
+}

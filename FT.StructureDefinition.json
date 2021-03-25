@@ -1,0 +1,53 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "FT",
+  "url": "http://hl7.org/fhir/StructureDefinition/FT",
+  "name": "FT",
+  "status": "active",
+  "fhirVersion": "4.0.1",
+  "kind": "logical",
+  "abstract": false,
+  "type": "FT",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Element",
+  "derivation": "specialization",
+  "differential": {
+    "element": [
+      {
+        "id": "FT",
+        "path": "FT",
+        "type": [
+          {
+            "code": "Element"
+          }
+        ],
+        "mapping": [
+          {
+            "id": "FT",
+            "identity": "v2",
+            "map": "FT"
+          }
+        ]
+      },
+      {
+        "id": "FT.",
+        "path": "FT.",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": ""
+          }
+        ]
+      }
+    ]
+  }
+}

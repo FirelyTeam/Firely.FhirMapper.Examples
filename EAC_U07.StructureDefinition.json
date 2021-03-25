@@ -1,0 +1,235 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "EAC_U07",
+  "url": "http://hl7.org/fhir/StructureDefinition/EAC_U07",
+  "name": "EAC_U07",
+  "status": "active",
+  "fhirVersion": "4.0.1",
+  "kind": "logical",
+  "abstract": false,
+  "type": "EAC_U07",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Element",
+  "derivation": "specialization",
+  "differential": {
+    "element": [
+      {
+        "id": "EAC_U07",
+        "path": "EAC_U07",
+        "type": [
+          {
+            "code": "Element"
+          }
+        ],
+        "mapping": [
+          {
+            "id": "EAC_U07",
+            "identity": "v2",
+            "map": "EAC_U07"
+          }
+        ]
+      },
+      {
+        "id": "EAC_U07.MSH",
+        "path": "EAC_U07.MSH",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "MSH",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/MSH"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "MSH"
+          }
+        ]
+      },
+      {
+        "id": "EAC_U07.SFT",
+        "path": "EAC_U07.SFT",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "SFT",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/SFT"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "SFT"
+          }
+        ]
+      },
+      {
+        "id": "EAC_U07.EQU",
+        "path": "EAC_U07.EQU",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "EQU",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/EQU"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "EQU"
+          }
+        ]
+      },
+      {
+        "id": "EAC_U07.COMMAND",
+        "path": "EAC_U07.COMMAND",
+        "min": 1,
+        "max": "*",
+        "type": [
+          {
+            "code": "BackboneElement"
+          }
+        ]
+      },
+      {
+        "id": "EAC_U07.COMMAND.ECD",
+        "path": "EAC_U07.COMMAND.ECD",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "ECD",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/ECD"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "ECD"
+          }
+        ]
+      },
+      {
+        "id": "EAC_U07.COMMAND.TQ1",
+        "path": "EAC_U07.COMMAND.TQ1",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "TQ1",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/TQ1"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "TQ1"
+          }
+        ]
+      },
+      {
+        "id": "EAC_U07.COMMAND.SPECIMEN_CONTAINER",
+        "path": "EAC_U07.COMMAND.SPECIMEN_CONTAINER",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "BackboneElement"
+          }
+        ]
+      },
+      {
+        "id": "EAC_U07.COMMAND.SPECIMEN_CONTAINER.SAC",
+        "path": "EAC_U07.COMMAND.SPECIMEN_CONTAINER.SAC",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "SAC",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/SAC"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "SAC"
+          }
+        ]
+      },
+      {
+        "id": "EAC_U07.COMMAND.SPECIMEN_CONTAINER.SPM",
+        "path": "EAC_U07.COMMAND.SPECIMEN_CONTAINER.SPM",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "SPM",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/SPM"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "SPM"
+          }
+        ]
+      },
+      {
+        "id": "EAC_U07.COMMAND.CNS",
+        "path": "EAC_U07.COMMAND.CNS",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "CNS",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/CNS"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "CNS"
+          }
+        ]
+      },
+      {
+        "id": "EAC_U07.ROL",
+        "path": "EAC_U07.ROL",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "ROL",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/ROL"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "ROL"
+          }
+        ]
+      }
+    ]
+  }
+}

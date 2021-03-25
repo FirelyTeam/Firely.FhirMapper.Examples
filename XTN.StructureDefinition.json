@@ -1,0 +1,283 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "XTN",
+  "url": "http://hl7.org/fhir/StructureDefinition/XTN",
+  "name": "XTN",
+  "status": "active",
+  "fhirVersion": "4.0.1",
+  "kind": "logical",
+  "abstract": false,
+  "type": "XTN",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Element",
+  "derivation": "specialization",
+  "differential": {
+    "element": [
+      {
+        "id": "XTN",
+        "path": "XTN",
+        "type": [
+          {
+            "code": "Element"
+          }
+        ],
+        "mapping": [
+          {
+            "id": "XTN",
+            "identity": "v2",
+            "map": "XTN"
+          }
+        ]
+      },
+      {
+        "id": "XTN.TelephoneNumber",
+        "path": "XTN.TelephoneNumber",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "string",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/string"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "XTN.1"
+          }
+        ]
+      },
+      {
+        "id": "XTN.TelecommunicationUseCode",
+        "path": "XTN.TelecommunicationUseCode",
+        "code": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/v2-0201"
+          }
+        ],
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "string",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/string"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "XTN.2"
+          }
+        ]
+      },
+      {
+        "id": "XTN.TelecommunicationEquipmentType",
+        "path": "XTN.TelecommunicationEquipmentType",
+        "code": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/v2-0202"
+          }
+        ],
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "string",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/string"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "XTN.3"
+          }
+        ]
+      },
+      {
+        "id": "XTN.EmailAddress",
+        "path": "XTN.EmailAddress",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "string",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/string"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "XTN.4"
+          }
+        ]
+      },
+      {
+        "id": "XTN.CountryCode",
+        "path": "XTN.CountryCode",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "string",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/string"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "XTN.5"
+          }
+        ]
+      },
+      {
+        "id": "XTN.Area/CityCode",
+        "path": "XTN.Area/CityCode",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "string",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/string"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "XTN.6"
+          }
+        ]
+      },
+      {
+        "id": "XTN.LocalNumber",
+        "path": "XTN.LocalNumber",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "string",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/string"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "XTN.7"
+          }
+        ]
+      },
+      {
+        "id": "XTN.Extension",
+        "path": "XTN.Extension",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "string",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/string"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "XTN.8"
+          }
+        ]
+      },
+      {
+        "id": "XTN.AnyText",
+        "path": "XTN.AnyText",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "string",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/string"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "XTN.9"
+          }
+        ]
+      },
+      {
+        "id": "XTN.ExtensionPrefix",
+        "path": "XTN.ExtensionPrefix",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "string",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/string"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "XTN.10"
+          }
+        ]
+      },
+      {
+        "id": "XTN.SpeedDialCode",
+        "path": "XTN.SpeedDialCode",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "string",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/string"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "XTN.11"
+          }
+        ]
+      },
+      {
+        "id": "XTN.UnformattedTelephonenumber",
+        "path": "XTN.UnformattedTelephonenumber",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "string",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/string"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "XTN.12"
+          }
+        ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,103 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "RMI",
+  "url": "http://hl7.org/fhir/StructureDefinition/RMI",
+  "name": "RMI",
+  "status": "active",
+  "fhirVersion": "4.0.1",
+  "kind": "logical",
+  "abstract": false,
+  "type": "RMI",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Element",
+  "derivation": "specialization",
+  "differential": {
+    "element": [
+      {
+        "id": "RMI",
+        "path": "RMI",
+        "type": [
+          {
+            "code": "Element"
+          }
+        ],
+        "mapping": [
+          {
+            "id": "RMI",
+            "identity": "v2",
+            "map": "RMI"
+          }
+        ]
+      },
+      {
+        "id": "RMI.RiskManagementIncidentCode",
+        "path": "RMI.RiskManagementIncidentCode",
+        "code": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/v2-0427"
+          }
+        ],
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "CE",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/CE"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "RMI.1"
+          }
+        ]
+      },
+      {
+        "id": "RMI.Date/TimeIncident",
+        "path": "RMI.Date/TimeIncident",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "TS",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/TS"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "RMI.2"
+          }
+        ]
+      },
+      {
+        "id": "RMI.IncidentTypeCode",
+        "path": "RMI.IncidentTypeCode",
+        "code": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/v2-0428"
+          }
+        ],
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "CE",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/CE"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "RMI.3"
+          }
+        ]
+      }
+    ]
+  }
+}

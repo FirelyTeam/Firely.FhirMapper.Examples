@@ -1,0 +1,973 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "SAC",
+  "url": "http://hl7.org/fhir/StructureDefinition/SAC",
+  "name": "SAC",
+  "status": "active",
+  "fhirVersion": "4.0.1",
+  "kind": "logical",
+  "abstract": false,
+  "type": "SAC",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Element",
+  "derivation": "specialization",
+  "differential": {
+    "element": [
+      {
+        "id": "SAC",
+        "path": "SAC",
+        "type": [
+          {
+            "code": "Element"
+          }
+        ],
+        "mapping": [
+          {
+            "id": "SAC",
+            "identity": "v2",
+            "map": "SAC"
+          }
+        ]
+      },
+      {
+        "id": "SAC.ExternalAccessionIdentifier",
+        "path": "SAC.ExternalAccessionIdentifier",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "EI",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/EI"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "SAC.1"
+          }
+        ]
+      },
+      {
+        "id": "SAC.AccessionIdentifier",
+        "path": "SAC.AccessionIdentifier",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "EI",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/EI"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "SAC.2"
+          }
+        ]
+      },
+      {
+        "id": "SAC.ContainerIdentifier",
+        "path": "SAC.ContainerIdentifier",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "EI",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/EI"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "SAC.3"
+          }
+        ]
+      },
+      {
+        "id": "SAC.Primary(parent)ContainerIdentifier",
+        "path": "SAC.Primary(parent)ContainerIdentifier",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "EI",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/EI"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "SAC.4"
+          }
+        ]
+      },
+      {
+        "id": "SAC.EquipmentContainerIdentifier",
+        "path": "SAC.EquipmentContainerIdentifier",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "EI",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/EI"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "SAC.5"
+          }
+        ]
+      },
+      {
+        "id": "SAC.SpecimenSource",
+        "path": "SAC.SpecimenSource",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "SPS",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/SPS"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "SAC.6"
+          }
+        ]
+      },
+      {
+        "id": "SAC.RegistrationDate/Time",
+        "path": "SAC.RegistrationDate/Time",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "TS",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/TS"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "SAC.7"
+          }
+        ]
+      },
+      {
+        "id": "SAC.ContainerStatus",
+        "path": "SAC.ContainerStatus",
+        "code": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/v2-0370"
+          }
+        ],
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "CE",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/CE"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "SAC.8"
+          }
+        ]
+      },
+      {
+        "id": "SAC.CarrierType",
+        "path": "SAC.CarrierType",
+        "code": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/v2-0378"
+          }
+        ],
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "CE",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/CE"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "SAC.9"
+          }
+        ]
+      },
+      {
+        "id": "SAC.CarrierIdentifier",
+        "path": "SAC.CarrierIdentifier",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "EI",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/EI"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "SAC.10"
+          }
+        ]
+      },
+      {
+        "id": "SAC.PositioninCarrier",
+        "path": "SAC.PositioninCarrier",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "NA",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/NA"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "SAC.11"
+          }
+        ]
+      },
+      {
+        "id": "SAC.TrayType-SAC",
+        "path": "SAC.TrayType-SAC",
+        "code": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/v2-0379"
+          }
+        ],
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "CE",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/CE"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "SAC.12"
+          }
+        ]
+      },
+      {
+        "id": "SAC.TrayIdentifier",
+        "path": "SAC.TrayIdentifier",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "EI",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/EI"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "SAC.13"
+          }
+        ]
+      },
+      {
+        "id": "SAC.PositioninTray",
+        "path": "SAC.PositioninTray",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "NA",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/NA"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "SAC.14"
+          }
+        ]
+      },
+      {
+        "id": "SAC.Location",
+        "path": "SAC.Location",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "CE",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/CE"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "SAC.15"
+          }
+        ]
+      },
+      {
+        "id": "SAC.ContainerHeight",
+        "path": "SAC.ContainerHeight",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "string",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/string"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "SAC.16"
+          }
+        ]
+      },
+      {
+        "id": "SAC.ContainerDiameter",
+        "path": "SAC.ContainerDiameter",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "string",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/string"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "SAC.17"
+          }
+        ]
+      },
+      {
+        "id": "SAC.BarrierDelta",
+        "path": "SAC.BarrierDelta",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "string",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/string"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "SAC.18"
+          }
+        ]
+      },
+      {
+        "id": "SAC.BottomDelta",
+        "path": "SAC.BottomDelta",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "string",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/string"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "SAC.19"
+          }
+        ]
+      },
+      {
+        "id": "SAC.ContainerHeight/Diameter/DeltaUnits",
+        "path": "SAC.ContainerHeight/Diameter/DeltaUnits",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "CE",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/CE"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "SAC.20"
+          }
+        ]
+      },
+      {
+        "id": "SAC.ContainerVolume",
+        "path": "SAC.ContainerVolume",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "string",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/string"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "SAC.21"
+          }
+        ]
+      },
+      {
+        "id": "SAC.AvailableSpecimenVolume",
+        "path": "SAC.AvailableSpecimenVolume",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "string",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/string"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "SAC.22"
+          }
+        ]
+      },
+      {
+        "id": "SAC.InitialSpecimenVolume",
+        "path": "SAC.InitialSpecimenVolume",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "string",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/string"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "SAC.23"
+          }
+        ]
+      },
+      {
+        "id": "SAC.VolumeUnits",
+        "path": "SAC.VolumeUnits",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "CE",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/CE"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "SAC.24"
+          }
+        ]
+      },
+      {
+        "id": "SAC.SeparatorType",
+        "path": "SAC.SeparatorType",
+        "code": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/v2-0380"
+          }
+        ],
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "CE",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/CE"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "SAC.25"
+          }
+        ]
+      },
+      {
+        "id": "SAC.CapType",
+        "path": "SAC.CapType",
+        "code": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/v2-0381"
+          }
+        ],
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "CE",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/CE"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "SAC.26"
+          }
+        ]
+      },
+      {
+        "id": "SAC.Additive",
+        "path": "SAC.Additive",
+        "code": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/v2-0371"
+          }
+        ],
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "CWE",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/CWE"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "SAC.27"
+          }
+        ]
+      },
+      {
+        "id": "SAC.SpecimenComponent",
+        "path": "SAC.SpecimenComponent",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "CE",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/CE"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "SAC.28"
+          }
+        ]
+      },
+      {
+        "id": "SAC.DilutionFactor",
+        "path": "SAC.DilutionFactor",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "SN",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/SN"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "SAC.29"
+          }
+        ]
+      },
+      {
+        "id": "SAC.Treatment",
+        "path": "SAC.Treatment",
+        "code": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/v2-0373"
+          }
+        ],
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "CE",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/CE"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "SAC.30"
+          }
+        ]
+      },
+      {
+        "id": "SAC.Temperature",
+        "path": "SAC.Temperature",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "SN",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/SN"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "SAC.31"
+          }
+        ]
+      },
+      {
+        "id": "SAC.HemolysisIndex",
+        "path": "SAC.HemolysisIndex",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "string",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/string"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "SAC.32"
+          }
+        ]
+      },
+      {
+        "id": "SAC.HemolysisIndexUnits",
+        "path": "SAC.HemolysisIndexUnits",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "CE",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/CE"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "SAC.33"
+          }
+        ]
+      },
+      {
+        "id": "SAC.LipemiaIndex",
+        "path": "SAC.LipemiaIndex",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "string",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/string"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "SAC.34"
+          }
+        ]
+      },
+      {
+        "id": "SAC.LipemiaIndexUnits",
+        "path": "SAC.LipemiaIndexUnits",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "CE",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/CE"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "SAC.35"
+          }
+        ]
+      },
+      {
+        "id": "SAC.IcterusIndex",
+        "path": "SAC.IcterusIndex",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "string",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/string"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "SAC.36"
+          }
+        ]
+      },
+      {
+        "id": "SAC.IcterusIndexUnits",
+        "path": "SAC.IcterusIndexUnits",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "CE",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/CE"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "SAC.37"
+          }
+        ]
+      },
+      {
+        "id": "SAC.FibrinIndex",
+        "path": "SAC.FibrinIndex",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "string",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/string"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "SAC.38"
+          }
+        ]
+      },
+      {
+        "id": "SAC.FibrinIndexUnits",
+        "path": "SAC.FibrinIndexUnits",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "CE",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/CE"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "SAC.39"
+          }
+        ]
+      },
+      {
+        "id": "SAC.SystemInducedContaminants",
+        "path": "SAC.SystemInducedContaminants",
+        "code": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/v2-0374"
+          }
+        ],
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "CE",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/CE"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "SAC.40"
+          }
+        ]
+      },
+      {
+        "id": "SAC.DrugInterference",
+        "path": "SAC.DrugInterference",
+        "code": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/v2-0382"
+          }
+        ],
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "CE",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/CE"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "SAC.41"
+          }
+        ]
+      },
+      {
+        "id": "SAC.ArtificialBlood",
+        "path": "SAC.ArtificialBlood",
+        "code": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/v2-0375"
+          }
+        ],
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "CE",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/CE"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "SAC.42"
+          }
+        ]
+      },
+      {
+        "id": "SAC.SpecialHandlingCode",
+        "path": "SAC.SpecialHandlingCode",
+        "code": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/v2-0376"
+          }
+        ],
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "CWE",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/CWE"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "SAC.43"
+          }
+        ]
+      },
+      {
+        "id": "SAC.OtherEnvironmentalFactors",
+        "path": "SAC.OtherEnvironmentalFactors",
+        "code": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/v2-0377"
+          }
+        ],
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "CE",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/CE"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "SAC.44"
+          }
+        ]
+      }
+    ]
+  }
+}

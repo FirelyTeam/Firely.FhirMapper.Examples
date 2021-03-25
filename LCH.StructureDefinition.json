@@ -1,0 +1,143 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "LCH",
+  "url": "http://hl7.org/fhir/StructureDefinition/LCH",
+  "name": "LCH",
+  "status": "active",
+  "fhirVersion": "4.0.1",
+  "kind": "logical",
+  "abstract": false,
+  "type": "LCH",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Element",
+  "derivation": "specialization",
+  "differential": {
+    "element": [
+      {
+        "id": "LCH",
+        "path": "LCH",
+        "type": [
+          {
+            "code": "Element"
+          }
+        ],
+        "mapping": [
+          {
+            "id": "LCH",
+            "identity": "v2",
+            "map": "LCH"
+          }
+        ]
+      },
+      {
+        "id": "LCH.PrimaryKeyValue-LCH",
+        "path": "LCH.PrimaryKeyValue-LCH",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "PL",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/PL"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "LCH.1"
+          }
+        ]
+      },
+      {
+        "id": "LCH.SegmentActionCode",
+        "path": "LCH.SegmentActionCode",
+        "code": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/v2-0206"
+          }
+        ],
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "string",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/string"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "LCH.2"
+          }
+        ]
+      },
+      {
+        "id": "LCH.SegmentUniqueKey",
+        "path": "LCH.SegmentUniqueKey",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "EI",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/EI"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "LCH.3"
+          }
+        ]
+      },
+      {
+        "id": "LCH.LocationCharacteristicID",
+        "path": "LCH.LocationCharacteristicID",
+        "code": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/v2-0324"
+          }
+        ],
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "CE",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/CE"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "LCH.4"
+          }
+        ]
+      },
+      {
+        "id": "LCH.LocationCharacteristicValue-LCH",
+        "path": "LCH.LocationCharacteristicValue-LCH",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "CE",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/CE"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "LCH.5"
+          }
+        ]
+      }
+    ]
+  }
+}

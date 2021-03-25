@@ -1,0 +1,223 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "PRD",
+  "url": "http://hl7.org/fhir/StructureDefinition/PRD",
+  "name": "PRD",
+  "status": "active",
+  "fhirVersion": "4.0.1",
+  "kind": "logical",
+  "abstract": false,
+  "type": "PRD",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Element",
+  "derivation": "specialization",
+  "differential": {
+    "element": [
+      {
+        "id": "PRD",
+        "path": "PRD",
+        "type": [
+          {
+            "code": "Element"
+          }
+        ],
+        "mapping": [
+          {
+            "id": "PRD",
+            "identity": "v2",
+            "map": "PRD"
+          }
+        ]
+      },
+      {
+        "id": "PRD.ProviderRole",
+        "path": "PRD.ProviderRole",
+        "code": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/v2-0286"
+          }
+        ],
+        "min": 1,
+        "max": "*",
+        "type": [
+          {
+            "code": "CE",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/CE"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "PRD.1"
+          }
+        ]
+      },
+      {
+        "id": "PRD.ProviderName",
+        "path": "PRD.ProviderName",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "XPN",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/XPN"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "PRD.2"
+          }
+        ]
+      },
+      {
+        "id": "PRD.ProviderAddress",
+        "path": "PRD.ProviderAddress",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "XAD",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/XAD"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "PRD.3"
+          }
+        ]
+      },
+      {
+        "id": "PRD.ProviderLocation",
+        "path": "PRD.ProviderLocation",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "PL",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/PL"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "PRD.4"
+          }
+        ]
+      },
+      {
+        "id": "PRD.ProviderCommunicationInformation",
+        "path": "PRD.ProviderCommunicationInformation",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "XTN",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/XTN"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "PRD.5"
+          }
+        ]
+      },
+      {
+        "id": "PRD.PreferredMethodofContact",
+        "path": "PRD.PreferredMethodofContact",
+        "code": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/v2-0185"
+          }
+        ],
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "CE",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/CE"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "PRD.6"
+          }
+        ]
+      },
+      {
+        "id": "PRD.ProviderIdentifiers",
+        "path": "PRD.ProviderIdentifiers",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "PLN",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/PLN"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "PRD.7"
+          }
+        ]
+      },
+      {
+        "id": "PRD.EffectiveStartDateofProviderRole",
+        "path": "PRD.EffectiveStartDateofProviderRole",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "TS",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/TS"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "PRD.8"
+          }
+        ]
+      },
+      {
+        "id": "PRD.EffectiveEndDateofProviderRole",
+        "path": "PRD.EffectiveEndDateofProviderRole",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "TS",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/TS"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "PRD.9"
+          }
+        ]
+      }
+    ]
+  }
+}

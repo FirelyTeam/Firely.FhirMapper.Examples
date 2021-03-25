@@ -1,0 +1,794 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "RSP_Z88",
+  "url": "http://hl7.org/fhir/StructureDefinition/RSP_Z88",
+  "name": "RSP_Z88",
+  "status": "active",
+  "fhirVersion": "4.0.1",
+  "kind": "logical",
+  "abstract": false,
+  "type": "RSP_Z88",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Element",
+  "derivation": "specialization",
+  "differential": {
+    "element": [
+      {
+        "id": "RSP_Z88",
+        "path": "RSP_Z88",
+        "type": [
+          {
+            "code": "Element"
+          }
+        ],
+        "mapping": [
+          {
+            "id": "RSP_Z88",
+            "identity": "v2",
+            "map": "RSP_Z88"
+          }
+        ]
+      },
+      {
+        "id": "RSP_Z88.MSH",
+        "path": "RSP_Z88.MSH",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "MSH",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/MSH"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "MSH"
+          }
+        ]
+      },
+      {
+        "id": "RSP_Z88.SFT",
+        "path": "RSP_Z88.SFT",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "SFT",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/SFT"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "SFT"
+          }
+        ]
+      },
+      {
+        "id": "RSP_Z88.MSA",
+        "path": "RSP_Z88.MSA",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "MSA",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/MSA"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "MSA"
+          }
+        ]
+      },
+      {
+        "id": "RSP_Z88.ERR",
+        "path": "RSP_Z88.ERR",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "ERR",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/ERR"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "ERR"
+          }
+        ]
+      },
+      {
+        "id": "RSP_Z88.QAK",
+        "path": "RSP_Z88.QAK",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "QAK",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/QAK"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "QAK"
+          }
+        ]
+      },
+      {
+        "id": "RSP_Z88.QPD",
+        "path": "RSP_Z88.QPD",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "QPD",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/QPD"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "QPD"
+          }
+        ]
+      },
+      {
+        "id": "RSP_Z88.RCP",
+        "path": "RSP_Z88.RCP",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "RCP",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/RCP"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "RCP"
+          }
+        ]
+      },
+      {
+        "id": "RSP_Z88.QUERY_RESPONSE",
+        "path": "RSP_Z88.QUERY_RESPONSE",
+        "min": 1,
+        "max": "*",
+        "type": [
+          {
+            "code": "BackboneElement"
+          }
+        ]
+      },
+      {
+        "id": "RSP_Z88.QUERY_RESPONSE.PATIENT",
+        "path": "RSP_Z88.QUERY_RESPONSE.PATIENT",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "BackboneElement"
+          }
+        ]
+      },
+      {
+        "id": "RSP_Z88.QUERY_RESPONSE.PATIENT.PID",
+        "path": "RSP_Z88.QUERY_RESPONSE.PATIENT.PID",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "PID",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/PID"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "PID"
+          }
+        ]
+      },
+      {
+        "id": "RSP_Z88.QUERY_RESPONSE.PATIENT.PD1",
+        "path": "RSP_Z88.QUERY_RESPONSE.PATIENT.PD1",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "PD1",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/PD1"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "PD1"
+          }
+        ]
+      },
+      {
+        "id": "RSP_Z88.QUERY_RESPONSE.PATIENT.NTE",
+        "path": "RSP_Z88.QUERY_RESPONSE.PATIENT.NTE",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "NTE",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/NTE"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "NTE"
+          }
+        ]
+      },
+      {
+        "id": "RSP_Z88.QUERY_RESPONSE.PATIENT.ALLERGY",
+        "path": "RSP_Z88.QUERY_RESPONSE.PATIENT.ALLERGY",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "BackboneElement"
+          }
+        ]
+      },
+      {
+        "id": "RSP_Z88.QUERY_RESPONSE.PATIENT.ALLERGY.AL1",
+        "path": "RSP_Z88.QUERY_RESPONSE.PATIENT.ALLERGY.AL1",
+        "min": 1,
+        "max": "*",
+        "type": [
+          {
+            "code": "AL1",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/AL1"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "AL1"
+          }
+        ]
+      },
+      {
+        "id": "RSP_Z88.QUERY_RESPONSE.PATIENT.ALLERGY.VISIT",
+        "path": "RSP_Z88.QUERY_RESPONSE.PATIENT.ALLERGY.VISIT",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "BackboneElement"
+          }
+        ]
+      },
+      {
+        "id": "RSP_Z88.QUERY_RESPONSE.PATIENT.ALLERGY.VISIT.PV1",
+        "path": "RSP_Z88.QUERY_RESPONSE.PATIENT.ALLERGY.VISIT.PV1",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "PV1",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/PV1"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "PV1"
+          }
+        ]
+      },
+      {
+        "id": "RSP_Z88.QUERY_RESPONSE.PATIENT.ALLERGY.VISIT.PV2",
+        "path": "RSP_Z88.QUERY_RESPONSE.PATIENT.ALLERGY.VISIT.PV2",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "PV2",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/PV2"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "PV2"
+          }
+        ]
+      },
+      {
+        "id": "RSP_Z88.QUERY_RESPONSE.COMMON_ORDER",
+        "path": "RSP_Z88.QUERY_RESPONSE.COMMON_ORDER",
+        "min": 1,
+        "max": "*",
+        "type": [
+          {
+            "code": "BackboneElement"
+          }
+        ]
+      },
+      {
+        "id": "RSP_Z88.QUERY_RESPONSE.COMMON_ORDER.ORC",
+        "path": "RSP_Z88.QUERY_RESPONSE.COMMON_ORDER.ORC",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "ORC",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/ORC"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "ORC"
+          }
+        ]
+      },
+      {
+        "id": "RSP_Z88.QUERY_RESPONSE.COMMON_ORDER.TIMING",
+        "path": "RSP_Z88.QUERY_RESPONSE.COMMON_ORDER.TIMING",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "BackboneElement"
+          }
+        ]
+      },
+      {
+        "id": "RSP_Z88.QUERY_RESPONSE.COMMON_ORDER.TIMING.TQ1",
+        "path": "RSP_Z88.QUERY_RESPONSE.COMMON_ORDER.TIMING.TQ1",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "TQ1",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/TQ1"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "TQ1"
+          }
+        ]
+      },
+      {
+        "id": "RSP_Z88.QUERY_RESPONSE.COMMON_ORDER.TIMING.TQ2",
+        "path": "RSP_Z88.QUERY_RESPONSE.COMMON_ORDER.TIMING.TQ2",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "TQ2",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/TQ2"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "TQ2"
+          }
+        ]
+      },
+      {
+        "id": "RSP_Z88.QUERY_RESPONSE.COMMON_ORDER.ORDER_DETAIL",
+        "path": "RSP_Z88.QUERY_RESPONSE.COMMON_ORDER.ORDER_DETAIL",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "BackboneElement"
+          }
+        ]
+      },
+      {
+        "id": "RSP_Z88.QUERY_RESPONSE.COMMON_ORDER.ORDER_DETAIL.RXO",
+        "path": "RSP_Z88.QUERY_RESPONSE.COMMON_ORDER.ORDER_DETAIL.RXO",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "RXO",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/RXO"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "RXO"
+          }
+        ]
+      },
+      {
+        "id": "RSP_Z88.QUERY_RESPONSE.COMMON_ORDER.ORDER_DETAIL.NTE",
+        "path": "RSP_Z88.QUERY_RESPONSE.COMMON_ORDER.ORDER_DETAIL.NTE",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "NTE",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/NTE"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "NTE"
+          }
+        ]
+      },
+      {
+        "id": "RSP_Z88.QUERY_RESPONSE.COMMON_ORDER.ORDER_DETAIL.RXR",
+        "path": "RSP_Z88.QUERY_RESPONSE.COMMON_ORDER.ORDER_DETAIL.RXR",
+        "min": 1,
+        "max": "*",
+        "type": [
+          {
+            "code": "RXR",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/RXR"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "RXR"
+          }
+        ]
+      },
+      {
+        "id": "RSP_Z88.QUERY_RESPONSE.COMMON_ORDER.ORDER_DETAIL.COMPONENT",
+        "path": "RSP_Z88.QUERY_RESPONSE.COMMON_ORDER.ORDER_DETAIL.COMPONENT",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "BackboneElement"
+          }
+        ]
+      },
+      {
+        "id": "RSP_Z88.QUERY_RESPONSE.COMMON_ORDER.ORDER_DETAIL.COMPONENT.RXC",
+        "path": "RSP_Z88.QUERY_RESPONSE.COMMON_ORDER.ORDER_DETAIL.COMPONENT.RXC",
+        "min": 1,
+        "max": "*",
+        "type": [
+          {
+            "code": "RXC",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/RXC"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "RXC"
+          }
+        ]
+      },
+      {
+        "id": "RSP_Z88.QUERY_RESPONSE.COMMON_ORDER.ORDER_DETAIL.COMPONENT.NTE",
+        "path": "RSP_Z88.QUERY_RESPONSE.COMMON_ORDER.ORDER_DETAIL.COMPONENT.NTE",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "NTE",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/NTE"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "NTE"
+          }
+        ]
+      },
+      {
+        "id": "RSP_Z88.QUERY_RESPONSE.COMMON_ORDER.ORDER_ENCODED",
+        "path": "RSP_Z88.QUERY_RESPONSE.COMMON_ORDER.ORDER_ENCODED",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "BackboneElement"
+          }
+        ]
+      },
+      {
+        "id": "RSP_Z88.QUERY_RESPONSE.COMMON_ORDER.ORDER_ENCODED.RXE",
+        "path": "RSP_Z88.QUERY_RESPONSE.COMMON_ORDER.ORDER_ENCODED.RXE",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "RXE",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/RXE"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "RXE"
+          }
+        ]
+      },
+      {
+        "id": "RSP_Z88.QUERY_RESPONSE.COMMON_ORDER.ORDER_ENCODED.TIMING_ENCODED",
+        "path": "RSP_Z88.QUERY_RESPONSE.COMMON_ORDER.ORDER_ENCODED.TIMING_ENCODED",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "BackboneElement"
+          }
+        ]
+      },
+      {
+        "id": "RSP_Z88.QUERY_RESPONSE.COMMON_ORDER.ORDER_ENCODED.TIMING_ENCODED.TQ1",
+        "path": "RSP_Z88.QUERY_RESPONSE.COMMON_ORDER.ORDER_ENCODED.TIMING_ENCODED.TQ1",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "TQ1",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/TQ1"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "TQ1"
+          }
+        ]
+      },
+      {
+        "id": "RSP_Z88.QUERY_RESPONSE.COMMON_ORDER.ORDER_ENCODED.TIMING_ENCODED.TQ2",
+        "path": "RSP_Z88.QUERY_RESPONSE.COMMON_ORDER.ORDER_ENCODED.TIMING_ENCODED.TQ2",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "TQ2",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/TQ2"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "TQ2"
+          }
+        ]
+      },
+      {
+        "id": "RSP_Z88.QUERY_RESPONSE.COMMON_ORDER.ORDER_ENCODED.RXR",
+        "path": "RSP_Z88.QUERY_RESPONSE.COMMON_ORDER.ORDER_ENCODED.RXR",
+        "min": 1,
+        "max": "*",
+        "type": [
+          {
+            "code": "RXR",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/RXR"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "RXR"
+          }
+        ]
+      },
+      {
+        "id": "RSP_Z88.QUERY_RESPONSE.COMMON_ORDER.ORDER_ENCODED.RXC",
+        "path": "RSP_Z88.QUERY_RESPONSE.COMMON_ORDER.ORDER_ENCODED.RXC",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "RXC",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/RXC"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "RXC"
+          }
+        ]
+      },
+      {
+        "id": "RSP_Z88.QUERY_RESPONSE.COMMON_ORDER.RXD",
+        "path": "RSP_Z88.QUERY_RESPONSE.COMMON_ORDER.RXD",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "RXD",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/RXD"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "RXD"
+          }
+        ]
+      },
+      {
+        "id": "RSP_Z88.QUERY_RESPONSE.COMMON_ORDER.RXR",
+        "path": "RSP_Z88.QUERY_RESPONSE.COMMON_ORDER.RXR",
+        "min": 1,
+        "max": "*",
+        "type": [
+          {
+            "code": "RXR",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/RXR"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "RXR"
+          }
+        ]
+      },
+      {
+        "id": "RSP_Z88.QUERY_RESPONSE.COMMON_ORDER.RXC",
+        "path": "RSP_Z88.QUERY_RESPONSE.COMMON_ORDER.RXC",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "RXC",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/RXC"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "RXC"
+          }
+        ]
+      },
+      {
+        "id": "RSP_Z88.QUERY_RESPONSE.COMMON_ORDER.OBSERVATION",
+        "path": "RSP_Z88.QUERY_RESPONSE.COMMON_ORDER.OBSERVATION",
+        "min": 1,
+        "max": "*",
+        "type": [
+          {
+            "code": "BackboneElement"
+          }
+        ]
+      },
+      {
+        "id": "RSP_Z88.QUERY_RESPONSE.COMMON_ORDER.OBSERVATION.OBX",
+        "path": "RSP_Z88.QUERY_RESPONSE.COMMON_ORDER.OBSERVATION.OBX",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "OBX",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/OBX"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "OBX"
+          }
+        ]
+      },
+      {
+        "id": "RSP_Z88.QUERY_RESPONSE.COMMON_ORDER.OBSERVATION.NTE",
+        "path": "RSP_Z88.QUERY_RESPONSE.COMMON_ORDER.OBSERVATION.NTE",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "NTE",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/NTE"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "NTE"
+          }
+        ]
+      },
+      {
+        "id": "RSP_Z88.DSC",
+        "path": "RSP_Z88.DSC",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "DSC",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/DSC"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "DSC"
+          }
+        ]
+      }
+    ]
+  }
+}

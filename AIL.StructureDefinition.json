@@ -1,0 +1,293 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "AIL",
+  "url": "http://hl7.org/fhir/StructureDefinition/AIL",
+  "name": "AIL",
+  "status": "active",
+  "fhirVersion": "4.0.1",
+  "kind": "logical",
+  "abstract": false,
+  "type": "AIL",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Element",
+  "derivation": "specialization",
+  "differential": {
+    "element": [
+      {
+        "id": "AIL",
+        "path": "AIL",
+        "type": [
+          {
+            "code": "Element"
+          }
+        ],
+        "mapping": [
+          {
+            "id": "AIL",
+            "identity": "v2",
+            "map": "AIL"
+          }
+        ]
+      },
+      {
+        "id": "AIL.SetID-AIL",
+        "path": "AIL.SetID-AIL",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "string",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/string"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "AIL.1"
+          }
+        ]
+      },
+      {
+        "id": "AIL.SegmentActionCode",
+        "path": "AIL.SegmentActionCode",
+        "code": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/v2-0206"
+          }
+        ],
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "string",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/string"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "AIL.2"
+          }
+        ]
+      },
+      {
+        "id": "AIL.LocationResourceID",
+        "path": "AIL.LocationResourceID",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "PL",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/PL"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "AIL.3"
+          }
+        ]
+      },
+      {
+        "id": "AIL.LocationType-AIL",
+        "path": "AIL.LocationType-AIL",
+        "code": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/v2-0305"
+          }
+        ],
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "CE",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/CE"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "AIL.4"
+          }
+        ]
+      },
+      {
+        "id": "AIL.LocationGroup",
+        "path": "AIL.LocationGroup",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "CE",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/CE"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "AIL.5"
+          }
+        ]
+      },
+      {
+        "id": "AIL.StartDate/Time",
+        "path": "AIL.StartDate/Time",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "TS",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/TS"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "AIL.6"
+          }
+        ]
+      },
+      {
+        "id": "AIL.StartDate/TimeOffset",
+        "path": "AIL.StartDate/TimeOffset",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "string",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/string"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "AIL.7"
+          }
+        ]
+      },
+      {
+        "id": "AIL.StartDate/TimeOffsetUnits",
+        "path": "AIL.StartDate/TimeOffsetUnits",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "CE",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/CE"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "AIL.8"
+          }
+        ]
+      },
+      {
+        "id": "AIL.Duration",
+        "path": "AIL.Duration",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "string",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/string"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "AIL.9"
+          }
+        ]
+      },
+      {
+        "id": "AIL.DurationUnits",
+        "path": "AIL.DurationUnits",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "CE",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/CE"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "AIL.10"
+          }
+        ]
+      },
+      {
+        "id": "AIL.AllowSubstitutionCode",
+        "path": "AIL.AllowSubstitutionCode",
+        "code": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/v2-0279"
+          }
+        ],
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "string",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/string"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "AIL.11"
+          }
+        ]
+      },
+      {
+        "id": "AIL.FillerStatusCode",
+        "path": "AIL.FillerStatusCode",
+        "code": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/v2-0278"
+          }
+        ],
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "CE",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/CE"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "AIL.12"
+          }
+        ]
+      }
+    ]
+  }
+}

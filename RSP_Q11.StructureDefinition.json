@@ -1,0 +1,335 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "RSP_Q11",
+  "url": "http://hl7.org/fhir/StructureDefinition/RSP_Q11",
+  "name": "RSP_Q11",
+  "status": "active",
+  "fhirVersion": "4.0.1",
+  "kind": "logical",
+  "abstract": false,
+  "type": "RSP_Q11",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Element",
+  "derivation": "specialization",
+  "differential": {
+    "element": [
+      {
+        "id": "RSP_Q11",
+        "path": "RSP_Q11",
+        "type": [
+          {
+            "code": "Element"
+          }
+        ],
+        "mapping": [
+          {
+            "id": "RSP_Q11",
+            "identity": "v2",
+            "map": "RSP_Q11"
+          }
+        ]
+      },
+      {
+        "id": "RSP_Q11.MSH",
+        "path": "RSP_Q11.MSH",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "MSH",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/MSH"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "MSH"
+          }
+        ]
+      },
+      {
+        "id": "RSP_Q11.SFT",
+        "path": "RSP_Q11.SFT",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "SFT",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/SFT"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "SFT"
+          }
+        ]
+      },
+      {
+        "id": "RSP_Q11.MSA",
+        "path": "RSP_Q11.MSA",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "MSA",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/MSA"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "MSA"
+          }
+        ]
+      },
+      {
+        "id": "RSP_Q11.ERR",
+        "path": "RSP_Q11.ERR",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "ERR",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/ERR"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "ERR"
+          }
+        ]
+      },
+      {
+        "id": "RSP_Q11.QAK",
+        "path": "RSP_Q11.QAK",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "QAK",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/QAK"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "QAK"
+          }
+        ]
+      },
+      {
+        "id": "RSP_Q11.QPD",
+        "path": "RSP_Q11.QPD",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "QPD",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/QPD"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "QPD"
+          }
+        ]
+      },
+      {
+        "id": "RSP_Q11.QUERY_RESULT_CLUSTER",
+        "path": "RSP_Q11.QUERY_RESULT_CLUSTER",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "BackboneElement"
+          }
+        ]
+      },
+      {
+        "id": "RSP_Q11.QUERY_RESULT_CLUSTER.MFE",
+        "path": "RSP_Q11.QUERY_RESULT_CLUSTER.MFE",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "MFE",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/MFE"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "MFE"
+          }
+        ]
+      },
+      {
+        "id": "RSP_Q11.QUERY_RESULT_CLUSTER.LOC",
+        "path": "RSP_Q11.QUERY_RESULT_CLUSTER.LOC",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "LOC",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/LOC"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "LOC"
+          }
+        ]
+      },
+      {
+        "id": "RSP_Q11.QUERY_RESULT_CLUSTER.LCH",
+        "path": "RSP_Q11.QUERY_RESULT_CLUSTER.LCH",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "LCH",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/LCH"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "LCH"
+          }
+        ]
+      },
+      {
+        "id": "RSP_Q11.QUERY_RESULT_CLUSTER.LRL",
+        "path": "RSP_Q11.QUERY_RESULT_CLUSTER.LRL",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "LRL",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/LRL"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "LRL"
+          }
+        ]
+      },
+      {
+        "id": "RSP_Q11.QUERY_RESULT_CLUSTER.MF_LOC_DEPT",
+        "path": "RSP_Q11.QUERY_RESULT_CLUSTER.MF_LOC_DEPT",
+        "min": 1,
+        "max": "*",
+        "type": [
+          {
+            "code": "BackboneElement"
+          }
+        ]
+      },
+      {
+        "id": "RSP_Q11.QUERY_RESULT_CLUSTER.MF_LOC_DEPT.LDP",
+        "path": "RSP_Q11.QUERY_RESULT_CLUSTER.MF_LOC_DEPT.LDP",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "LDP",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/LDP"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "LDP"
+          }
+        ]
+      },
+      {
+        "id": "RSP_Q11.QUERY_RESULT_CLUSTER.MF_LOC_DEPT.LCH",
+        "path": "RSP_Q11.QUERY_RESULT_CLUSTER.MF_LOC_DEPT.LCH",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "LCH",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/LCH"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "LCH"
+          }
+        ]
+      },
+      {
+        "id": "RSP_Q11.QUERY_RESULT_CLUSTER.MF_LOC_DEPT.LCC",
+        "path": "RSP_Q11.QUERY_RESULT_CLUSTER.MF_LOC_DEPT.LCC",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "LCC",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/LCC"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "LCC"
+          }
+        ]
+      },
+      {
+        "id": "RSP_Q11.DSC",
+        "path": "RSP_Q11.DSC",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "DSC",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/DSC"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "DSC"
+          }
+        ]
+      }
+    ]
+  }
+}

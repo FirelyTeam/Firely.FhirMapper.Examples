@@ -1,0 +1,298 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "AIS",
+  "url": "http://hl7.org/fhir/StructureDefinition/AIS",
+  "name": "AIS",
+  "status": "active",
+  "fhirVersion": "4.0.1",
+  "kind": "logical",
+  "abstract": false,
+  "type": "AIS",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Element",
+  "derivation": "specialization",
+  "differential": {
+    "element": [
+      {
+        "id": "AIS",
+        "path": "AIS",
+        "type": [
+          {
+            "code": "Element"
+          }
+        ],
+        "mapping": [
+          {
+            "id": "AIS",
+            "identity": "v2",
+            "map": "AIS"
+          }
+        ]
+      },
+      {
+        "id": "AIS.SetID-AIS",
+        "path": "AIS.SetID-AIS",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "string",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/string"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "AIS.1"
+          }
+        ]
+      },
+      {
+        "id": "AIS.SegmentActionCode",
+        "path": "AIS.SegmentActionCode",
+        "code": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/v2-0206"
+          }
+        ],
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "string",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/string"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "AIS.2"
+          }
+        ]
+      },
+      {
+        "id": "AIS.UniversalServiceIdentifier",
+        "path": "AIS.UniversalServiceIdentifier",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "CE",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/CE"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "AIS.3"
+          }
+        ]
+      },
+      {
+        "id": "AIS.StartDate/Time",
+        "path": "AIS.StartDate/Time",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "TS",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/TS"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "AIS.4"
+          }
+        ]
+      },
+      {
+        "id": "AIS.StartDate/TimeOffset",
+        "path": "AIS.StartDate/TimeOffset",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "string",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/string"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "AIS.5"
+          }
+        ]
+      },
+      {
+        "id": "AIS.StartDate/TimeOffsetUnits",
+        "path": "AIS.StartDate/TimeOffsetUnits",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "CE",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/CE"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "AIS.6"
+          }
+        ]
+      },
+      {
+        "id": "AIS.Duration",
+        "path": "AIS.Duration",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "string",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/string"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "AIS.7"
+          }
+        ]
+      },
+      {
+        "id": "AIS.DurationUnits",
+        "path": "AIS.DurationUnits",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "CE",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/CE"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "AIS.8"
+          }
+        ]
+      },
+      {
+        "id": "AIS.AllowSubstitutionCode",
+        "path": "AIS.AllowSubstitutionCode",
+        "code": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/v2-0279"
+          }
+        ],
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "string",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/string"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "AIS.9"
+          }
+        ]
+      },
+      {
+        "id": "AIS.FillerStatusCode",
+        "path": "AIS.FillerStatusCode",
+        "code": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/v2-0278"
+          }
+        ],
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "CE",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/CE"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "AIS.10"
+          }
+        ]
+      },
+      {
+        "id": "AIS.PlacerSupplementalServiceInformation",
+        "path": "AIS.PlacerSupplementalServiceInformation",
+        "code": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/v2-0411"
+          }
+        ],
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "CE",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/CE"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "AIS.11"
+          }
+        ]
+      },
+      {
+        "id": "AIS.FillerSupplementalServiceInformation",
+        "path": "AIS.FillerSupplementalServiceInformation",
+        "code": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/v2-0411"
+          }
+        ],
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "CE",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/CE"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "AIS.12"
+          }
+        ]
+      }
+    ]
+  }
+}

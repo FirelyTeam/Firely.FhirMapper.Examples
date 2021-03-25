@@ -1,0 +1,73 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "EIP",
+  "url": "http://hl7.org/fhir/StructureDefinition/EIP",
+  "name": "EIP",
+  "status": "active",
+  "fhirVersion": "4.0.1",
+  "kind": "logical",
+  "abstract": false,
+  "type": "EIP",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Element",
+  "derivation": "specialization",
+  "differential": {
+    "element": [
+      {
+        "id": "EIP",
+        "path": "EIP",
+        "type": [
+          {
+            "code": "Element"
+          }
+        ],
+        "mapping": [
+          {
+            "id": "EIP",
+            "identity": "v2",
+            "map": "EIP"
+          }
+        ]
+      },
+      {
+        "id": "EIP.PlacerAssignedIdentifier",
+        "path": "EIP.PlacerAssignedIdentifier",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "EI",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/EI"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "EIP.1"
+          }
+        ]
+      },
+      {
+        "id": "EIP.FillerAssignedIdentifier",
+        "path": "EIP.FillerAssignedIdentifier",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "EI",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/EI"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "EIP.2"
+          }
+        ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,588 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "SCH",
+  "url": "http://hl7.org/fhir/StructureDefinition/SCH",
+  "name": "SCH",
+  "status": "active",
+  "fhirVersion": "4.0.1",
+  "kind": "logical",
+  "abstract": false,
+  "type": "SCH",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Element",
+  "derivation": "specialization",
+  "differential": {
+    "element": [
+      {
+        "id": "SCH",
+        "path": "SCH",
+        "type": [
+          {
+            "code": "Element"
+          }
+        ],
+        "mapping": [
+          {
+            "id": "SCH",
+            "identity": "v2",
+            "map": "SCH"
+          }
+        ]
+      },
+      {
+        "id": "SCH.PlacerAppointmentID",
+        "path": "SCH.PlacerAppointmentID",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "EI",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/EI"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "SCH.1"
+          }
+        ]
+      },
+      {
+        "id": "SCH.FillerAppointmentID",
+        "path": "SCH.FillerAppointmentID",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "EI",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/EI"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "SCH.2"
+          }
+        ]
+      },
+      {
+        "id": "SCH.OccurrenceNumber",
+        "path": "SCH.OccurrenceNumber",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "string",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/string"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "SCH.3"
+          }
+        ]
+      },
+      {
+        "id": "SCH.PlacerGroupNumber",
+        "path": "SCH.PlacerGroupNumber",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "EI",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/EI"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "SCH.4"
+          }
+        ]
+      },
+      {
+        "id": "SCH.ScheduleID",
+        "path": "SCH.ScheduleID",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "CE",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/CE"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "SCH.5"
+          }
+        ]
+      },
+      {
+        "id": "SCH.EventReason",
+        "path": "SCH.EventReason",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "CE",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/CE"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "SCH.6"
+          }
+        ]
+      },
+      {
+        "id": "SCH.AppointmentReason",
+        "path": "SCH.AppointmentReason",
+        "code": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/v2-0276"
+          }
+        ],
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "CE",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/CE"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "SCH.7"
+          }
+        ]
+      },
+      {
+        "id": "SCH.AppointmentType",
+        "path": "SCH.AppointmentType",
+        "code": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/v2-0277"
+          }
+        ],
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "CE",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/CE"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "SCH.8"
+          }
+        ]
+      },
+      {
+        "id": "SCH.AppointmentDuration",
+        "path": "SCH.AppointmentDuration",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "string",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/string"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "SCH.9"
+          }
+        ]
+      },
+      {
+        "id": "SCH.AppointmentDurationUnits",
+        "path": "SCH.AppointmentDurationUnits",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "CE",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/CE"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "SCH.10"
+          }
+        ]
+      },
+      {
+        "id": "SCH.AppointmentTimingQuantity",
+        "path": "SCH.AppointmentTimingQuantity",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "TQ",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/TQ"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "SCH.11"
+          }
+        ]
+      },
+      {
+        "id": "SCH.PlacerContactPerson",
+        "path": "SCH.PlacerContactPerson",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "XCN",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/XCN"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "SCH.12"
+          }
+        ]
+      },
+      {
+        "id": "SCH.PlacerContactPhoneNumber",
+        "path": "SCH.PlacerContactPhoneNumber",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "XTN",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/XTN"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "SCH.13"
+          }
+        ]
+      },
+      {
+        "id": "SCH.PlacerContactAddress",
+        "path": "SCH.PlacerContactAddress",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "XAD",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/XAD"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "SCH.14"
+          }
+        ]
+      },
+      {
+        "id": "SCH.PlacerContactLocation",
+        "path": "SCH.PlacerContactLocation",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "PL",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/PL"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "SCH.15"
+          }
+        ]
+      },
+      {
+        "id": "SCH.FillerContactPerson",
+        "path": "SCH.FillerContactPerson",
+        "min": 1,
+        "max": "*",
+        "type": [
+          {
+            "code": "XCN",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/XCN"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "SCH.16"
+          }
+        ]
+      },
+      {
+        "id": "SCH.FillerContactPhoneNumber",
+        "path": "SCH.FillerContactPhoneNumber",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "XTN",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/XTN"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "SCH.17"
+          }
+        ]
+      },
+      {
+        "id": "SCH.FillerContactAddress",
+        "path": "SCH.FillerContactAddress",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "XAD",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/XAD"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "SCH.18"
+          }
+        ]
+      },
+      {
+        "id": "SCH.FillerContactLocation",
+        "path": "SCH.FillerContactLocation",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "PL",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/PL"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "SCH.19"
+          }
+        ]
+      },
+      {
+        "id": "SCH.EnteredByPerson",
+        "path": "SCH.EnteredByPerson",
+        "min": 1,
+        "max": "*",
+        "type": [
+          {
+            "code": "XCN",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/XCN"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "SCH.20"
+          }
+        ]
+      },
+      {
+        "id": "SCH.EnteredByPhoneNumber",
+        "path": "SCH.EnteredByPhoneNumber",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "XTN",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/XTN"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "SCH.21"
+          }
+        ]
+      },
+      {
+        "id": "SCH.EnteredByLocation",
+        "path": "SCH.EnteredByLocation",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "PL",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/PL"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "SCH.22"
+          }
+        ]
+      },
+      {
+        "id": "SCH.ParentPlacerAppointmentID",
+        "path": "SCH.ParentPlacerAppointmentID",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "EI",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/EI"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "SCH.23"
+          }
+        ]
+      },
+      {
+        "id": "SCH.ParentFillerAppointmentID",
+        "path": "SCH.ParentFillerAppointmentID",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "EI",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/EI"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "SCH.24"
+          }
+        ]
+      },
+      {
+        "id": "SCH.FillerStatusCode",
+        "path": "SCH.FillerStatusCode",
+        "code": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/v2-0278"
+          }
+        ],
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "CE",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/CE"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "SCH.25"
+          }
+        ]
+      },
+      {
+        "id": "SCH.PlacerOrderNumber",
+        "path": "SCH.PlacerOrderNumber",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "EI",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/EI"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "SCH.26"
+          }
+        ]
+      },
+      {
+        "id": "SCH.FillerOrderNumber",
+        "path": "SCH.FillerOrderNumber",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "EI",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/EI"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "SCH.27"
+          }
+        ]
+      }
+    ]
+  }
+}

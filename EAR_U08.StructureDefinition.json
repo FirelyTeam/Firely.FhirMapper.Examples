@@ -1,0 +1,215 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "EAR_U08",
+  "url": "http://hl7.org/fhir/StructureDefinition/EAR_U08",
+  "name": "EAR_U08",
+  "status": "active",
+  "fhirVersion": "4.0.1",
+  "kind": "logical",
+  "abstract": false,
+  "type": "EAR_U08",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Element",
+  "derivation": "specialization",
+  "differential": {
+    "element": [
+      {
+        "id": "EAR_U08",
+        "path": "EAR_U08",
+        "type": [
+          {
+            "code": "Element"
+          }
+        ],
+        "mapping": [
+          {
+            "id": "EAR_U08",
+            "identity": "v2",
+            "map": "EAR_U08"
+          }
+        ]
+      },
+      {
+        "id": "EAR_U08.MSH",
+        "path": "EAR_U08.MSH",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "MSH",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/MSH"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "MSH"
+          }
+        ]
+      },
+      {
+        "id": "EAR_U08.SFT",
+        "path": "EAR_U08.SFT",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "SFT",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/SFT"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "SFT"
+          }
+        ]
+      },
+      {
+        "id": "EAR_U08.EQU",
+        "path": "EAR_U08.EQU",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "EQU",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/EQU"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "EQU"
+          }
+        ]
+      },
+      {
+        "id": "EAR_U08.COMMAND_RESPONSE",
+        "path": "EAR_U08.COMMAND_RESPONSE",
+        "min": 1,
+        "max": "*",
+        "type": [
+          {
+            "code": "BackboneElement"
+          }
+        ]
+      },
+      {
+        "id": "EAR_U08.COMMAND_RESPONSE.ECD",
+        "path": "EAR_U08.COMMAND_RESPONSE.ECD",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "ECD",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/ECD"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "ECD"
+          }
+        ]
+      },
+      {
+        "id": "EAR_U08.COMMAND_RESPONSE.SPECIMEN_CONTAINER",
+        "path": "EAR_U08.COMMAND_RESPONSE.SPECIMEN_CONTAINER",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "BackboneElement"
+          }
+        ]
+      },
+      {
+        "id": "EAR_U08.COMMAND_RESPONSE.SPECIMEN_CONTAINER.SAC",
+        "path": "EAR_U08.COMMAND_RESPONSE.SPECIMEN_CONTAINER.SAC",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "SAC",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/SAC"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "SAC"
+          }
+        ]
+      },
+      {
+        "id": "EAR_U08.COMMAND_RESPONSE.SPECIMEN_CONTAINER.SPM",
+        "path": "EAR_U08.COMMAND_RESPONSE.SPECIMEN_CONTAINER.SPM",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "SPM",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/SPM"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "SPM"
+          }
+        ]
+      },
+      {
+        "id": "EAR_U08.COMMAND_RESPONSE.ECR",
+        "path": "EAR_U08.COMMAND_RESPONSE.ECR",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "ECR",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/ECR"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "ECR"
+          }
+        ]
+      },
+      {
+        "id": "EAR_U08.ROL",
+        "path": "EAR_U08.ROL",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "ROL",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/ROL"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "ROL"
+          }
+        ]
+      }
+    ]
+  }
+}

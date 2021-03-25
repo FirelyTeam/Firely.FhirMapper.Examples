@@ -1,0 +1,164 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "EAN_U09",
+  "url": "http://hl7.org/fhir/StructureDefinition/EAN_U09",
+  "name": "EAN_U09",
+  "status": "active",
+  "fhirVersion": "4.0.1",
+  "kind": "logical",
+  "abstract": false,
+  "type": "EAN_U09",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Element",
+  "derivation": "specialization",
+  "differential": {
+    "element": [
+      {
+        "id": "EAN_U09",
+        "path": "EAN_U09",
+        "type": [
+          {
+            "code": "Element"
+          }
+        ],
+        "mapping": [
+          {
+            "id": "EAN_U09",
+            "identity": "v2",
+            "map": "EAN_U09"
+          }
+        ]
+      },
+      {
+        "id": "EAN_U09.MSH",
+        "path": "EAN_U09.MSH",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "MSH",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/MSH"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "MSH"
+          }
+        ]
+      },
+      {
+        "id": "EAN_U09.SFT",
+        "path": "EAN_U09.SFT",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "SFT",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/SFT"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "SFT"
+          }
+        ]
+      },
+      {
+        "id": "EAN_U09.EQU",
+        "path": "EAN_U09.EQU",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "EQU",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/EQU"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "EQU"
+          }
+        ]
+      },
+      {
+        "id": "EAN_U09.NOTIFICATION",
+        "path": "EAN_U09.NOTIFICATION",
+        "min": 1,
+        "max": "*",
+        "type": [
+          {
+            "code": "BackboneElement"
+          }
+        ]
+      },
+      {
+        "id": "EAN_U09.NOTIFICATION.NDS",
+        "path": "EAN_U09.NOTIFICATION.NDS",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "NDS",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/NDS"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "NDS"
+          }
+        ]
+      },
+      {
+        "id": "EAN_U09.NOTIFICATION.NTE",
+        "path": "EAN_U09.NOTIFICATION.NTE",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "NTE",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/NTE"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "NTE"
+          }
+        ]
+      },
+      {
+        "id": "EAN_U09.ROL",
+        "path": "EAN_U09.ROL",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "ROL",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/ROL"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "ROL"
+          }
+        ]
+      }
+    ]
+  }
+}

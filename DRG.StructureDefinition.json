@@ -1,0 +1,288 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "DRG",
+  "url": "http://hl7.org/fhir/StructureDefinition/DRG",
+  "name": "DRG",
+  "status": "active",
+  "fhirVersion": "4.0.1",
+  "kind": "logical",
+  "abstract": false,
+  "type": "DRG",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Element",
+  "derivation": "specialization",
+  "differential": {
+    "element": [
+      {
+        "id": "DRG",
+        "path": "DRG",
+        "type": [
+          {
+            "code": "Element"
+          }
+        ],
+        "mapping": [
+          {
+            "id": "DRG",
+            "identity": "v2",
+            "map": "DRG"
+          }
+        ]
+      },
+      {
+        "id": "DRG.DiagnosticRelatedGroup",
+        "path": "DRG.DiagnosticRelatedGroup",
+        "code": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/v2-0055"
+          }
+        ],
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "CE",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/CE"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "DRG.1"
+          }
+        ]
+      },
+      {
+        "id": "DRG.DRGAssignedDate/Time",
+        "path": "DRG.DRGAssignedDate/Time",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "TS",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/TS"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "DRG.2"
+          }
+        ]
+      },
+      {
+        "id": "DRG.DRGApprovalIndicator",
+        "path": "DRG.DRGApprovalIndicator",
+        "code": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/v2-0136"
+          }
+        ],
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "string",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/string"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "DRG.3"
+          }
+        ]
+      },
+      {
+        "id": "DRG.DRGGrouperReviewCode",
+        "path": "DRG.DRGGrouperReviewCode",
+        "code": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/v2-0056"
+          }
+        ],
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "string",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/string"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "DRG.4"
+          }
+        ]
+      },
+      {
+        "id": "DRG.OutlierType",
+        "path": "DRG.OutlierType",
+        "code": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/v2-0083"
+          }
+        ],
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "CE",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/CE"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "DRG.5"
+          }
+        ]
+      },
+      {
+        "id": "DRG.OutlierDays",
+        "path": "DRG.OutlierDays",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "string",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/string"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "DRG.6"
+          }
+        ]
+      },
+      {
+        "id": "DRG.OutlierCost",
+        "path": "DRG.OutlierCost",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "CP",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/CP"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "DRG.7"
+          }
+        ]
+      },
+      {
+        "id": "DRG.DRGPayor",
+        "path": "DRG.DRGPayor",
+        "code": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/v2-0229"
+          }
+        ],
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "string",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/string"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "DRG.8"
+          }
+        ]
+      },
+      {
+        "id": "DRG.OutlierReimbursement",
+        "path": "DRG.OutlierReimbursement",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "CP",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/CP"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "DRG.9"
+          }
+        ]
+      },
+      {
+        "id": "DRG.ConfidentialIndicator",
+        "path": "DRG.ConfidentialIndicator",
+        "code": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/v2-0136"
+          }
+        ],
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "string",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/string"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "DRG.10"
+          }
+        ]
+      },
+      {
+        "id": "DRG.DRGTransferType",
+        "path": "DRG.DRGTransferType",
+        "code": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/v2-0415"
+          }
+        ],
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "string",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/string"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "DRG.11"
+          }
+        ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,173 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "MFI",
+  "url": "http://hl7.org/fhir/StructureDefinition/MFI",
+  "name": "MFI",
+  "status": "active",
+  "fhirVersion": "4.0.1",
+  "kind": "logical",
+  "abstract": false,
+  "type": "MFI",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Element",
+  "derivation": "specialization",
+  "differential": {
+    "element": [
+      {
+        "id": "MFI",
+        "path": "MFI",
+        "type": [
+          {
+            "code": "Element"
+          }
+        ],
+        "mapping": [
+          {
+            "id": "MFI",
+            "identity": "v2",
+            "map": "MFI"
+          }
+        ]
+      },
+      {
+        "id": "MFI.MasterFileIdentifier",
+        "path": "MFI.MasterFileIdentifier",
+        "code": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/v2-0175"
+          }
+        ],
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "CE",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/CE"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "MFI.1"
+          }
+        ]
+      },
+      {
+        "id": "MFI.MasterFileApplicationIdentifier",
+        "path": "MFI.MasterFileApplicationIdentifier",
+        "code": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/v2-0361"
+          }
+        ],
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "HD",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/HD"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "MFI.2"
+          }
+        ]
+      },
+      {
+        "id": "MFI.File-LevelEventCode",
+        "path": "MFI.File-LevelEventCode",
+        "code": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/v2-0178"
+          }
+        ],
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "string",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/string"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "MFI.3"
+          }
+        ]
+      },
+      {
+        "id": "MFI.EnteredDate/Time",
+        "path": "MFI.EnteredDate/Time",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "TS",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/TS"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "MFI.4"
+          }
+        ]
+      },
+      {
+        "id": "MFI.EffectiveDate/Time",
+        "path": "MFI.EffectiveDate/Time",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "TS",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/TS"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "MFI.5"
+          }
+        ]
+      },
+      {
+        "id": "MFI.ResponseLevelCode",
+        "path": "MFI.ResponseLevelCode",
+        "code": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/v2-0179"
+          }
+        ],
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "string",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/string"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "MFI.6"
+          }
+        ]
+      }
+    ]
+  }
+}

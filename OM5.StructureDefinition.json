@@ -1,0 +1,98 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "OM5",
+  "url": "http://hl7.org/fhir/StructureDefinition/OM5",
+  "name": "OM5",
+  "status": "active",
+  "fhirVersion": "4.0.1",
+  "kind": "logical",
+  "abstract": false,
+  "type": "OM5",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Element",
+  "derivation": "specialization",
+  "differential": {
+    "element": [
+      {
+        "id": "OM5",
+        "path": "OM5",
+        "type": [
+          {
+            "code": "Element"
+          }
+        ],
+        "mapping": [
+          {
+            "id": "OM5",
+            "identity": "v2",
+            "map": "OM5"
+          }
+        ]
+      },
+      {
+        "id": "OM5.SequenceNumber-Test/ObservationMasterFile",
+        "path": "OM5.SequenceNumber-Test/ObservationMasterFile",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "string",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/string"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "OM5.1"
+          }
+        ]
+      },
+      {
+        "id": "OM5.Test/ObservationsIncludedwithinanOrderedTestBattery",
+        "path": "OM5.Test/ObservationsIncludedwithinanOrderedTestBattery",
+        "code": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/v2-9999"
+          }
+        ],
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "CE",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/CE"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "OM5.2"
+          }
+        ]
+      },
+      {
+        "id": "OM5.ObservationIDSuffixes",
+        "path": "OM5.ObservationIDSuffixes",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "string",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/string"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "OM5.3"
+          }
+        ]
+      }
+    ]
+  }
+}

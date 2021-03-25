@@ -1,0 +1,123 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "RP",
+  "url": "http://hl7.org/fhir/StructureDefinition/RP",
+  "name": "RP",
+  "status": "active",
+  "fhirVersion": "4.0.1",
+  "kind": "logical",
+  "abstract": false,
+  "type": "RP",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Element",
+  "derivation": "specialization",
+  "differential": {
+    "element": [
+      {
+        "id": "RP",
+        "path": "RP",
+        "type": [
+          {
+            "code": "Element"
+          }
+        ],
+        "mapping": [
+          {
+            "id": "RP",
+            "identity": "v2",
+            "map": "RP"
+          }
+        ]
+      },
+      {
+        "id": "RP.Pointer",
+        "path": "RP.Pointer",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "string",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/string"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "RP.1"
+          }
+        ]
+      },
+      {
+        "id": "RP.ApplicationID",
+        "path": "RP.ApplicationID",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "HD",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/HD"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "RP.2"
+          }
+        ]
+      },
+      {
+        "id": "RP.TypeofData",
+        "path": "RP.TypeofData",
+        "code": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/v2-0191"
+          }
+        ],
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "string",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/string"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "RP.3"
+          }
+        ]
+      },
+      {
+        "id": "RP.Subtype",
+        "path": "RP.Subtype",
+        "code": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/v2-0291"
+          }
+        ],
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "string",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/string"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "RP.4"
+          }
+        ]
+      }
+    ]
+  }
+}

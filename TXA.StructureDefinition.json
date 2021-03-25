@@ -1,0 +1,523 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "TXA",
+  "url": "http://hl7.org/fhir/StructureDefinition/TXA",
+  "name": "TXA",
+  "status": "active",
+  "fhirVersion": "4.0.1",
+  "kind": "logical",
+  "abstract": false,
+  "type": "TXA",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Element",
+  "derivation": "specialization",
+  "differential": {
+    "element": [
+      {
+        "id": "TXA",
+        "path": "TXA",
+        "type": [
+          {
+            "code": "Element"
+          }
+        ],
+        "mapping": [
+          {
+            "id": "TXA",
+            "identity": "v2",
+            "map": "TXA"
+          }
+        ]
+      },
+      {
+        "id": "TXA.SetID-TXA",
+        "path": "TXA.SetID-TXA",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "string",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/string"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "TXA.1"
+          }
+        ]
+      },
+      {
+        "id": "TXA.DocumentType",
+        "path": "TXA.DocumentType",
+        "code": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/v2-0270"
+          }
+        ],
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "string",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/string"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "TXA.2"
+          }
+        ]
+      },
+      {
+        "id": "TXA.DocumentContentPresentation",
+        "path": "TXA.DocumentContentPresentation",
+        "code": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/v2-0191"
+          }
+        ],
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "string",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/string"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "TXA.3"
+          }
+        ]
+      },
+      {
+        "id": "TXA.ActivityDate/Time",
+        "path": "TXA.ActivityDate/Time",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "TS",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/TS"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "TXA.4"
+          }
+        ]
+      },
+      {
+        "id": "TXA.PrimaryActivityProviderCode/Name",
+        "path": "TXA.PrimaryActivityProviderCode/Name",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "XCN",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/XCN"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "TXA.5"
+          }
+        ]
+      },
+      {
+        "id": "TXA.OriginationDate/Time",
+        "path": "TXA.OriginationDate/Time",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "TS",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/TS"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "TXA.6"
+          }
+        ]
+      },
+      {
+        "id": "TXA.TranscriptionDate/Time",
+        "path": "TXA.TranscriptionDate/Time",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "TS",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/TS"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "TXA.7"
+          }
+        ]
+      },
+      {
+        "id": "TXA.EditDate/Time",
+        "path": "TXA.EditDate/Time",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "TS",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/TS"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "TXA.8"
+          }
+        ]
+      },
+      {
+        "id": "TXA.OriginatorCode/Name",
+        "path": "TXA.OriginatorCode/Name",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "XCN",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/XCN"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "TXA.9"
+          }
+        ]
+      },
+      {
+        "id": "TXA.AssignedDocumentAuthenticator",
+        "path": "TXA.AssignedDocumentAuthenticator",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "XCN",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/XCN"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "TXA.10"
+          }
+        ]
+      },
+      {
+        "id": "TXA.TranscriptionistCode/Name",
+        "path": "TXA.TranscriptionistCode/Name",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "XCN",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/XCN"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "TXA.11"
+          }
+        ]
+      },
+      {
+        "id": "TXA.UniqueDocumentNumber",
+        "path": "TXA.UniqueDocumentNumber",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "EI",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/EI"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "TXA.12"
+          }
+        ]
+      },
+      {
+        "id": "TXA.ParentDocumentNumber",
+        "path": "TXA.ParentDocumentNumber",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "EI",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/EI"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "TXA.13"
+          }
+        ]
+      },
+      {
+        "id": "TXA.PlacerOrderNumber",
+        "path": "TXA.PlacerOrderNumber",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "EI",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/EI"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "TXA.14"
+          }
+        ]
+      },
+      {
+        "id": "TXA.FillerOrderNumber",
+        "path": "TXA.FillerOrderNumber",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "EI",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/EI"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "TXA.15"
+          }
+        ]
+      },
+      {
+        "id": "TXA.UniqueDocumentFileName",
+        "path": "TXA.UniqueDocumentFileName",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "string",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/string"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "TXA.16"
+          }
+        ]
+      },
+      {
+        "id": "TXA.DocumentCompletionStatus",
+        "path": "TXA.DocumentCompletionStatus",
+        "code": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/v2-0271"
+          }
+        ],
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "string",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/string"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "TXA.17"
+          }
+        ]
+      },
+      {
+        "id": "TXA.DocumentConfidentialityStatus",
+        "path": "TXA.DocumentConfidentialityStatus",
+        "code": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/v2-0272"
+          }
+        ],
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "string",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/string"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "TXA.18"
+          }
+        ]
+      },
+      {
+        "id": "TXA.DocumentAvailabilityStatus",
+        "path": "TXA.DocumentAvailabilityStatus",
+        "code": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/v2-0273"
+          }
+        ],
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "string",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/string"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "TXA.19"
+          }
+        ]
+      },
+      {
+        "id": "TXA.DocumentStorageStatus",
+        "path": "TXA.DocumentStorageStatus",
+        "code": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/v2-0275"
+          }
+        ],
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "string",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/string"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "TXA.20"
+          }
+        ]
+      },
+      {
+        "id": "TXA.DocumentChangeReason",
+        "path": "TXA.DocumentChangeReason",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "string",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/string"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "TXA.21"
+          }
+        ]
+      },
+      {
+        "id": "TXA.AuthenticationPerson,TimeStamp",
+        "path": "TXA.AuthenticationPerson,TimeStamp",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "PPN",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/PPN"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "TXA.22"
+          }
+        ]
+      },
+      {
+        "id": "TXA.DistributedCopies(CodeandNameofRecipients)",
+        "path": "TXA.DistributedCopies(CodeandNameofRecipients)",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "XCN",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/XCN"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "TXA.23"
+          }
+        ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,163 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "AL1",
+  "url": "http://hl7.org/fhir/StructureDefinition/AL1",
+  "name": "AL1",
+  "status": "active",
+  "fhirVersion": "4.0.1",
+  "kind": "logical",
+  "abstract": false,
+  "type": "AL1",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Element",
+  "derivation": "specialization",
+  "differential": {
+    "element": [
+      {
+        "id": "AL1",
+        "path": "AL1",
+        "type": [
+          {
+            "code": "Element"
+          }
+        ],
+        "mapping": [
+          {
+            "id": "AL1",
+            "identity": "v2",
+            "map": "AL1"
+          }
+        ]
+      },
+      {
+        "id": "AL1.SetID-AL1",
+        "path": "AL1.SetID-AL1",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "string",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/string"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "AL1.1"
+          }
+        ]
+      },
+      {
+        "id": "AL1.AllergenTypeCode",
+        "path": "AL1.AllergenTypeCode",
+        "code": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/v2-0127"
+          }
+        ],
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "CE",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/CE"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "AL1.2"
+          }
+        ]
+      },
+      {
+        "id": "AL1.AllergenCode/Mnemonic/Description",
+        "path": "AL1.AllergenCode/Mnemonic/Description",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "CE",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/CE"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "AL1.3"
+          }
+        ]
+      },
+      {
+        "id": "AL1.AllergySeverityCode",
+        "path": "AL1.AllergySeverityCode",
+        "code": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/v2-0128"
+          }
+        ],
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "CE",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/CE"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "AL1.4"
+          }
+        ]
+      },
+      {
+        "id": "AL1.AllergyReactionCode",
+        "path": "AL1.AllergyReactionCode",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "string",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/string"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "AL1.5"
+          }
+        ]
+      },
+      {
+        "id": "AL1.IdentificationDate",
+        "path": "AL1.IdentificationDate",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "string",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/string"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "AL1.6"
+          }
+        ]
+      }
+    ]
+  }
+}

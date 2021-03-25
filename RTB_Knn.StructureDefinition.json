@@ -1,0 +1,213 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "RTB_Knn",
+  "url": "http://hl7.org/fhir/StructureDefinition/RTB_Knn",
+  "name": "RTB_Knn",
+  "status": "active",
+  "fhirVersion": "4.0.1",
+  "kind": "logical",
+  "abstract": false,
+  "type": "RTB_Knn",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Element",
+  "derivation": "specialization",
+  "differential": {
+    "element": [
+      {
+        "id": "RTB_Knn",
+        "path": "RTB_Knn",
+        "type": [
+          {
+            "code": "Element"
+          }
+        ],
+        "mapping": [
+          {
+            "id": "RTB_Knn",
+            "identity": "v2",
+            "map": "RTB_Knn"
+          }
+        ]
+      },
+      {
+        "id": "RTB_Knn.MSH",
+        "path": "RTB_Knn.MSH",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "MSH",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/MSH"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "MSH"
+          }
+        ]
+      },
+      {
+        "id": "RTB_Knn.SFT",
+        "path": "RTB_Knn.SFT",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "SFT",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/SFT"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "SFT"
+          }
+        ]
+      },
+      {
+        "id": "RTB_Knn.MSA",
+        "path": "RTB_Knn.MSA",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "MSA",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/MSA"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "MSA"
+          }
+        ]
+      },
+      {
+        "id": "RTB_Knn.ERR",
+        "path": "RTB_Knn.ERR",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "ERR",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/ERR"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "ERR"
+          }
+        ]
+      },
+      {
+        "id": "RTB_Knn.QAK",
+        "path": "RTB_Knn.QAK",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "QAK",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/QAK"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "QAK"
+          }
+        ]
+      },
+      {
+        "id": "RTB_Knn.QPD",
+        "path": "RTB_Knn.QPD",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "QPD",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/QPD"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "QPD"
+          }
+        ]
+      },
+      {
+        "id": "RTB_Knn.anyHL7Segment",
+        "path": "RTB_Knn.anyHL7Segment",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "anyHL7Segment",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/anyHL7Segment"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "anyHL7Segment"
+          }
+        ]
+      },
+      {
+        "id": "RTB_Knn.anyHL7Segment2",
+        "path": "RTB_Knn.anyHL7Segment2",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "anyHL7Segment2",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/anyHL7Segment2"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "anyHL7Segment2"
+          }
+        ]
+      },
+      {
+        "id": "RTB_Knn.DSC",
+        "path": "RTB_Knn.DSC",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "DSC",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/DSC"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "DSC"
+          }
+        ]
+      }
+    ]
+  }
+}

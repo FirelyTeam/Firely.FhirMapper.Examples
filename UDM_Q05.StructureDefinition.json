@@ -1,0 +1,153 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "UDM_Q05",
+  "url": "http://hl7.org/fhir/StructureDefinition/UDM_Q05",
+  "name": "UDM_Q05",
+  "status": "active",
+  "fhirVersion": "4.0.1",
+  "kind": "logical",
+  "abstract": false,
+  "type": "UDM_Q05",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Element",
+  "derivation": "specialization",
+  "differential": {
+    "element": [
+      {
+        "id": "UDM_Q05",
+        "path": "UDM_Q05",
+        "type": [
+          {
+            "code": "Element"
+          }
+        ],
+        "mapping": [
+          {
+            "id": "UDM_Q05",
+            "identity": "v2",
+            "map": "UDM_Q05"
+          }
+        ]
+      },
+      {
+        "id": "UDM_Q05.MSH",
+        "path": "UDM_Q05.MSH",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "MSH",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/MSH"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "MSH"
+          }
+        ]
+      },
+      {
+        "id": "UDM_Q05.SFT",
+        "path": "UDM_Q05.SFT",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "SFT",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/SFT"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "SFT"
+          }
+        ]
+      },
+      {
+        "id": "UDM_Q05.URD",
+        "path": "UDM_Q05.URD",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "URD",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/URD"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "URD"
+          }
+        ]
+      },
+      {
+        "id": "UDM_Q05.URS",
+        "path": "UDM_Q05.URS",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "URS",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/URS"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "URS"
+          }
+        ]
+      },
+      {
+        "id": "UDM_Q05.DSP",
+        "path": "UDM_Q05.DSP",
+        "min": 1,
+        "max": "*",
+        "type": [
+          {
+            "code": "DSP",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/DSP"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "DSP"
+          }
+        ]
+      },
+      {
+        "id": "UDM_Q05.DSC",
+        "path": "UDM_Q05.DSC",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "DSC",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/DSC"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "DSC"
+          }
+        ]
+      }
+    ]
+  }
+}

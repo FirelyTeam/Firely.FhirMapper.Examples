@@ -1,0 +1,343 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "NST",
+  "url": "http://hl7.org/fhir/StructureDefinition/NST",
+  "name": "NST",
+  "status": "active",
+  "fhirVersion": "4.0.1",
+  "kind": "logical",
+  "abstract": false,
+  "type": "NST",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Element",
+  "derivation": "specialization",
+  "differential": {
+    "element": [
+      {
+        "id": "NST",
+        "path": "NST",
+        "type": [
+          {
+            "code": "Element"
+          }
+        ],
+        "mapping": [
+          {
+            "id": "NST",
+            "identity": "v2",
+            "map": "NST"
+          }
+        ]
+      },
+      {
+        "id": "NST.StatisticsAvailable",
+        "path": "NST.StatisticsAvailable",
+        "code": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/v2-0136"
+          }
+        ],
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "string",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/string"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "NST.1"
+          }
+        ]
+      },
+      {
+        "id": "NST.SourceIdentifier",
+        "path": "NST.SourceIdentifier",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "string",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/string"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "NST.2"
+          }
+        ]
+      },
+      {
+        "id": "NST.SourceType",
+        "path": "NST.SourceType",
+        "code": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/v2-0332"
+          }
+        ],
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "string",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/string"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "NST.3"
+          }
+        ]
+      },
+      {
+        "id": "NST.StatisticsStart",
+        "path": "NST.StatisticsStart",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "TS",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/TS"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "NST.4"
+          }
+        ]
+      },
+      {
+        "id": "NST.StatisticsEnd",
+        "path": "NST.StatisticsEnd",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "TS",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/TS"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "NST.5"
+          }
+        ]
+      },
+      {
+        "id": "NST.ReceiveCharacterCount",
+        "path": "NST.ReceiveCharacterCount",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "string",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/string"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "NST.6"
+          }
+        ]
+      },
+      {
+        "id": "NST.SendCharacterCount",
+        "path": "NST.SendCharacterCount",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "string",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/string"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "NST.7"
+          }
+        ]
+      },
+      {
+        "id": "NST.MessagesReceived",
+        "path": "NST.MessagesReceived",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "string",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/string"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "NST.8"
+          }
+        ]
+      },
+      {
+        "id": "NST.MessagesSent",
+        "path": "NST.MessagesSent",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "string",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/string"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "NST.9"
+          }
+        ]
+      },
+      {
+        "id": "NST.ChecksumErrorsReceived",
+        "path": "NST.ChecksumErrorsReceived",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "string",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/string"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "NST.10"
+          }
+        ]
+      },
+      {
+        "id": "NST.LengthErrorsReceived",
+        "path": "NST.LengthErrorsReceived",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "string",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/string"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "NST.11"
+          }
+        ]
+      },
+      {
+        "id": "NST.OtherErrorsReceived",
+        "path": "NST.OtherErrorsReceived",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "string",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/string"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "NST.12"
+          }
+        ]
+      },
+      {
+        "id": "NST.ConnectTimeouts",
+        "path": "NST.ConnectTimeouts",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "string",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/string"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "NST.13"
+          }
+        ]
+      },
+      {
+        "id": "NST.ReceiveTimeouts",
+        "path": "NST.ReceiveTimeouts",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "string",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/string"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "NST.14"
+          }
+        ]
+      },
+      {
+        "id": "NST.Applicationcontrol-levelErrors",
+        "path": "NST.Applicationcontrol-levelErrors",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "string",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/string"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "NST.15"
+          }
+        ]
+      }
+    ]
+  }
+}

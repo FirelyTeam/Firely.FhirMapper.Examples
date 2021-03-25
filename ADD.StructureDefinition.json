@@ -1,0 +1,53 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "ADD",
+  "url": "http://hl7.org/fhir/StructureDefinition/ADD",
+  "name": "ADD",
+  "status": "active",
+  "fhirVersion": "4.0.1",
+  "kind": "logical",
+  "abstract": false,
+  "type": "ADD",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Element",
+  "derivation": "specialization",
+  "differential": {
+    "element": [
+      {
+        "id": "ADD",
+        "path": "ADD",
+        "type": [
+          {
+            "code": "Element"
+          }
+        ],
+        "mapping": [
+          {
+            "id": "ADD",
+            "identity": "v2",
+            "map": "ADD"
+          }
+        ]
+      },
+      {
+        "id": "ADD.AddendumContinuationPointer",
+        "path": "ADD.AddendumContinuationPointer",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "string",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/string"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "ADD.1"
+          }
+        ]
+      }
+    ]
+  }
+}

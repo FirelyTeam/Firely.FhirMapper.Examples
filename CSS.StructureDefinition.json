@@ -1,0 +1,93 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "CSS",
+  "url": "http://hl7.org/fhir/StructureDefinition/CSS",
+  "name": "CSS",
+  "status": "active",
+  "fhirVersion": "4.0.1",
+  "kind": "logical",
+  "abstract": false,
+  "type": "CSS",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Element",
+  "derivation": "specialization",
+  "differential": {
+    "element": [
+      {
+        "id": "CSS",
+        "path": "CSS",
+        "type": [
+          {
+            "code": "Element"
+          }
+        ],
+        "mapping": [
+          {
+            "id": "CSS",
+            "identity": "v2",
+            "map": "CSS"
+          }
+        ]
+      },
+      {
+        "id": "CSS.StudyScheduledTimePoint",
+        "path": "CSS.StudyScheduledTimePoint",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "CE",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/CE"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "CSS.1"
+          }
+        ]
+      },
+      {
+        "id": "CSS.StudyScheduledPatientTimePoint",
+        "path": "CSS.StudyScheduledPatientTimePoint",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "TS",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/TS"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "CSS.2"
+          }
+        ]
+      },
+      {
+        "id": "CSS.StudyQualityControlCodes",
+        "path": "CSS.StudyQualityControlCodes",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "CE",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/CE"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "CSS.3"
+          }
+        ]
+      }
+    ]
+  }
+}

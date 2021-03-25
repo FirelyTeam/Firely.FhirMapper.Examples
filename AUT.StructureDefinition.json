@@ -1,0 +1,243 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "AUT",
+  "url": "http://hl7.org/fhir/StructureDefinition/AUT",
+  "name": "AUT",
+  "status": "active",
+  "fhirVersion": "4.0.1",
+  "kind": "logical",
+  "abstract": false,
+  "type": "AUT",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Element",
+  "derivation": "specialization",
+  "differential": {
+    "element": [
+      {
+        "id": "AUT",
+        "path": "AUT",
+        "type": [
+          {
+            "code": "Element"
+          }
+        ],
+        "mapping": [
+          {
+            "id": "AUT",
+            "identity": "v2",
+            "map": "AUT"
+          }
+        ]
+      },
+      {
+        "id": "AUT.AuthorizingPayor,PlanID",
+        "path": "AUT.AuthorizingPayor,PlanID",
+        "code": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/v2-0072"
+          }
+        ],
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "CE",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/CE"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "AUT.1"
+          }
+        ]
+      },
+      {
+        "id": "AUT.AuthorizingPayor,CompanyID",
+        "path": "AUT.AuthorizingPayor,CompanyID",
+        "code": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/v2-0285"
+          }
+        ],
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "CE",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/CE"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "AUT.2"
+          }
+        ]
+      },
+      {
+        "id": "AUT.AuthorizingPayor,CompanyName",
+        "path": "AUT.AuthorizingPayor,CompanyName",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "string",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/string"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "AUT.3"
+          }
+        ]
+      },
+      {
+        "id": "AUT.AuthorizationEffectiveDate",
+        "path": "AUT.AuthorizationEffectiveDate",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "TS",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/TS"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "AUT.4"
+          }
+        ]
+      },
+      {
+        "id": "AUT.AuthorizationExpirationDate",
+        "path": "AUT.AuthorizationExpirationDate",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "TS",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/TS"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "AUT.5"
+          }
+        ]
+      },
+      {
+        "id": "AUT.AuthorizationIdentifier",
+        "path": "AUT.AuthorizationIdentifier",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "EI",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/EI"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "AUT.6"
+          }
+        ]
+      },
+      {
+        "id": "AUT.ReimbursementLimit",
+        "path": "AUT.ReimbursementLimit",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "CP",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/CP"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "AUT.7"
+          }
+        ]
+      },
+      {
+        "id": "AUT.RequestedNumberofTreatments",
+        "path": "AUT.RequestedNumberofTreatments",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "string",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/string"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "AUT.8"
+          }
+        ]
+      },
+      {
+        "id": "AUT.AuthorizedNumberofTreatments",
+        "path": "AUT.AuthorizedNumberofTreatments",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "string",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/string"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "AUT.9"
+          }
+        ]
+      },
+      {
+        "id": "AUT.ProcessDate",
+        "path": "AUT.ProcessDate",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "TS",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/TS"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "AUT.10"
+          }
+        ]
+      }
+    ]
+  }
+}

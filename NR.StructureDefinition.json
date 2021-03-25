@@ -1,0 +1,73 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "NR",
+  "url": "http://hl7.org/fhir/StructureDefinition/NR",
+  "name": "NR",
+  "status": "active",
+  "fhirVersion": "4.0.1",
+  "kind": "logical",
+  "abstract": false,
+  "type": "NR",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Element",
+  "derivation": "specialization",
+  "differential": {
+    "element": [
+      {
+        "id": "NR",
+        "path": "NR",
+        "type": [
+          {
+            "code": "Element"
+          }
+        ],
+        "mapping": [
+          {
+            "id": "NR",
+            "identity": "v2",
+            "map": "NR"
+          }
+        ]
+      },
+      {
+        "id": "NR.LowValue",
+        "path": "NR.LowValue",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "string",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/string"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "NR.1"
+          }
+        ]
+      },
+      {
+        "id": "NR.HighValue",
+        "path": "NR.HighValue",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "string",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/string"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "NR.2"
+          }
+        ]
+      }
+    ]
+  }
+}

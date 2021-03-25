@@ -1,0 +1,243 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "OM2",
+  "url": "http://hl7.org/fhir/StructureDefinition/OM2",
+  "name": "OM2",
+  "status": "active",
+  "fhirVersion": "4.0.1",
+  "kind": "logical",
+  "abstract": false,
+  "type": "OM2",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Element",
+  "derivation": "specialization",
+  "differential": {
+    "element": [
+      {
+        "id": "OM2",
+        "path": "OM2",
+        "type": [
+          {
+            "code": "Element"
+          }
+        ],
+        "mapping": [
+          {
+            "id": "OM2",
+            "identity": "v2",
+            "map": "OM2"
+          }
+        ]
+      },
+      {
+        "id": "OM2.SequenceNumber-Test/ObservationMasterFile",
+        "path": "OM2.SequenceNumber-Test/ObservationMasterFile",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "string",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/string"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "OM2.1"
+          }
+        ]
+      },
+      {
+        "id": "OM2.UnitsofMeasure",
+        "path": "OM2.UnitsofMeasure",
+        "code": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/v2-9999"
+          }
+        ],
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "CE",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/CE"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "OM2.2"
+          }
+        ]
+      },
+      {
+        "id": "OM2.RangeofDecimalPrecision",
+        "path": "OM2.RangeofDecimalPrecision",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "string",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/string"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "OM2.3"
+          }
+        ]
+      },
+      {
+        "id": "OM2.CorrespondingSIUnitsofMeasure",
+        "path": "OM2.CorrespondingSIUnitsofMeasure",
+        "code": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/v2-9999"
+          }
+        ],
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "CE",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/CE"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "OM2.4"
+          }
+        ]
+      },
+      {
+        "id": "OM2.SIConversionFactor",
+        "path": "OM2.SIConversionFactor",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "string",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/string"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "OM2.5"
+          }
+        ]
+      },
+      {
+        "id": "OM2.Reference(Normal)Range-OrdinalandContinuousObservations",
+        "path": "OM2.Reference(Normal)Range-OrdinalandContinuousObservations",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "RFR",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/RFR"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "OM2.6"
+          }
+        ]
+      },
+      {
+        "id": "OM2.CriticalRangeforOrdinalandContinuousObservations",
+        "path": "OM2.CriticalRangeforOrdinalandContinuousObservations",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "RFR",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/RFR"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "OM2.7"
+          }
+        ]
+      },
+      {
+        "id": "OM2.AbsoluteRangeforOrdinalandContinuousObservations",
+        "path": "OM2.AbsoluteRangeforOrdinalandContinuousObservations",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "RFR",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/RFR"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "OM2.8"
+          }
+        ]
+      },
+      {
+        "id": "OM2.DeltaCheckCriteria",
+        "path": "OM2.DeltaCheckCriteria",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "DLT",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/DLT"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "OM2.9"
+          }
+        ]
+      },
+      {
+        "id": "OM2.MinimumMeaningfulIncrements",
+        "path": "OM2.MinimumMeaningfulIncrements",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "string",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/string"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "OM2.10"
+          }
+        ]
+      }
+    ]
+  }
+}

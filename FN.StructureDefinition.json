@@ -1,0 +1,133 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "FN",
+  "url": "http://hl7.org/fhir/StructureDefinition/FN",
+  "name": "FN",
+  "status": "active",
+  "fhirVersion": "4.0.1",
+  "kind": "logical",
+  "abstract": false,
+  "type": "FN",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Element",
+  "derivation": "specialization",
+  "differential": {
+    "element": [
+      {
+        "id": "FN",
+        "path": "FN",
+        "type": [
+          {
+            "code": "Element"
+          }
+        ],
+        "mapping": [
+          {
+            "id": "FN",
+            "identity": "v2",
+            "map": "FN"
+          }
+        ]
+      },
+      {
+        "id": "FN.Surname",
+        "path": "FN.Surname",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "string",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/string"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "FN.1"
+          }
+        ]
+      },
+      {
+        "id": "FN.OwnSurnamePrefix",
+        "path": "FN.OwnSurnamePrefix",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "string",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/string"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "FN.2"
+          }
+        ]
+      },
+      {
+        "id": "FN.OwnSurname",
+        "path": "FN.OwnSurname",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "string",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/string"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "FN.3"
+          }
+        ]
+      },
+      {
+        "id": "FN.SurnamePrefixFromPartner/Spouse",
+        "path": "FN.SurnamePrefixFromPartner/Spouse",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "string",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/string"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "FN.4"
+          }
+        ]
+      },
+      {
+        "id": "FN.SurnameFromPartner/Spouse",
+        "path": "FN.SurnameFromPartner/Spouse",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "string",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/string"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "FN.5"
+          }
+        ]
+      }
+    ]
+  }
+}

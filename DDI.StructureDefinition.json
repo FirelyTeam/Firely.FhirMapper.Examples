@@ -1,0 +1,93 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "DDI",
+  "url": "http://hl7.org/fhir/StructureDefinition/DDI",
+  "name": "DDI",
+  "status": "active",
+  "fhirVersion": "4.0.1",
+  "kind": "logical",
+  "abstract": false,
+  "type": "DDI",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Element",
+  "derivation": "specialization",
+  "differential": {
+    "element": [
+      {
+        "id": "DDI",
+        "path": "DDI",
+        "type": [
+          {
+            "code": "Element"
+          }
+        ],
+        "mapping": [
+          {
+            "id": "DDI",
+            "identity": "v2",
+            "map": "DDI"
+          }
+        ]
+      },
+      {
+        "id": "DDI.DelayDays",
+        "path": "DDI.DelayDays",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "string",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/string"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "DDI.1"
+          }
+        ]
+      },
+      {
+        "id": "DDI.MonetaryAmount",
+        "path": "DDI.MonetaryAmount",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "MO",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/MO"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "DDI.2"
+          }
+        ]
+      },
+      {
+        "id": "DDI.NumberofDays",
+        "path": "DDI.NumberofDays",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "string",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/string"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "DDI.3"
+          }
+        ]
+      }
+    ]
+  }
+}

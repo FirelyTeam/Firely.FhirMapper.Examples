@@ -1,0 +1,308 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "PES",
+  "url": "http://hl7.org/fhir/StructureDefinition/PES",
+  "name": "PES",
+  "status": "active",
+  "fhirVersion": "4.0.1",
+  "kind": "logical",
+  "abstract": false,
+  "type": "PES",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Element",
+  "derivation": "specialization",
+  "differential": {
+    "element": [
+      {
+        "id": "PES",
+        "path": "PES",
+        "type": [
+          {
+            "code": "Element"
+          }
+        ],
+        "mapping": [
+          {
+            "id": "PES",
+            "identity": "v2",
+            "map": "PES"
+          }
+        ]
+      },
+      {
+        "id": "PES.SenderOrganizationName",
+        "path": "PES.SenderOrganizationName",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "XON",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/XON"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "PES.1"
+          }
+        ]
+      },
+      {
+        "id": "PES.SenderIndividualName",
+        "path": "PES.SenderIndividualName",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "XCN",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/XCN"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "PES.2"
+          }
+        ]
+      },
+      {
+        "id": "PES.SenderAddress",
+        "path": "PES.SenderAddress",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "XAD",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/XAD"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "PES.3"
+          }
+        ]
+      },
+      {
+        "id": "PES.SenderTelephone",
+        "path": "PES.SenderTelephone",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "XTN",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/XTN"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "PES.4"
+          }
+        ]
+      },
+      {
+        "id": "PES.SenderEventIdentifier",
+        "path": "PES.SenderEventIdentifier",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "EI",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/EI"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "PES.5"
+          }
+        ]
+      },
+      {
+        "id": "PES.SenderSequenceNumber",
+        "path": "PES.SenderSequenceNumber",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "string",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/string"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "PES.6"
+          }
+        ]
+      },
+      {
+        "id": "PES.SenderEventDescription",
+        "path": "PES.SenderEventDescription",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "string",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/string"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "PES.7"
+          }
+        ]
+      },
+      {
+        "id": "PES.SenderComment",
+        "path": "PES.SenderComment",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "string",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/string"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "PES.8"
+          }
+        ]
+      },
+      {
+        "id": "PES.SenderAwareDate/Time",
+        "path": "PES.SenderAwareDate/Time",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "TS",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/TS"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "PES.9"
+          }
+        ]
+      },
+      {
+        "id": "PES.EventReportDate",
+        "path": "PES.EventReportDate",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "TS",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/TS"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "PES.10"
+          }
+        ]
+      },
+      {
+        "id": "PES.EventReportTiming/Type",
+        "path": "PES.EventReportTiming/Type",
+        "code": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/v2-0234"
+          }
+        ],
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "string",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/string"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "PES.11"
+          }
+        ]
+      },
+      {
+        "id": "PES.EventReportSource",
+        "path": "PES.EventReportSource",
+        "code": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/v2-0235"
+          }
+        ],
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "string",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/string"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "PES.12"
+          }
+        ]
+      },
+      {
+        "id": "PES.EventReportedTo",
+        "path": "PES.EventReportedTo",
+        "code": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/v2-0236"
+          }
+        ],
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "string",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/string"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "PES.13"
+          }
+        ]
+      }
+    ]
+  }
+}

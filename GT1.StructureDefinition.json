@@ -1,0 +1,1303 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "GT1",
+  "url": "http://hl7.org/fhir/StructureDefinition/GT1",
+  "name": "GT1",
+  "status": "active",
+  "fhirVersion": "4.0.1",
+  "kind": "logical",
+  "abstract": false,
+  "type": "GT1",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Element",
+  "derivation": "specialization",
+  "differential": {
+    "element": [
+      {
+        "id": "GT1",
+        "path": "GT1",
+        "type": [
+          {
+            "code": "Element"
+          }
+        ],
+        "mapping": [
+          {
+            "id": "GT1",
+            "identity": "v2",
+            "map": "GT1"
+          }
+        ]
+      },
+      {
+        "id": "GT1.SetID-GT1",
+        "path": "GT1.SetID-GT1",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "string",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/string"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "GT1.1"
+          }
+        ]
+      },
+      {
+        "id": "GT1.GuarantorNumber",
+        "path": "GT1.GuarantorNumber",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "CX",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/CX"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "GT1.2"
+          }
+        ]
+      },
+      {
+        "id": "GT1.GuarantorName",
+        "path": "GT1.GuarantorName",
+        "min": 1,
+        "max": "*",
+        "type": [
+          {
+            "code": "XPN",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/XPN"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "GT1.3"
+          }
+        ]
+      },
+      {
+        "id": "GT1.GuarantorSpouseName",
+        "path": "GT1.GuarantorSpouseName",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "XPN",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/XPN"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "GT1.4"
+          }
+        ]
+      },
+      {
+        "id": "GT1.GuarantorAddress",
+        "path": "GT1.GuarantorAddress",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "XAD",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/XAD"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "GT1.5"
+          }
+        ]
+      },
+      {
+        "id": "GT1.GuarantorPhNum-Home",
+        "path": "GT1.GuarantorPhNum-Home",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "XTN",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/XTN"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "GT1.6"
+          }
+        ]
+      },
+      {
+        "id": "GT1.GuarantorPhNum-Business",
+        "path": "GT1.GuarantorPhNum-Business",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "XTN",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/XTN"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "GT1.7"
+          }
+        ]
+      },
+      {
+        "id": "GT1.GuarantorDate/TimeOfBirth",
+        "path": "GT1.GuarantorDate/TimeOfBirth",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "TS",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/TS"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "GT1.8"
+          }
+        ]
+      },
+      {
+        "id": "GT1.GuarantorAdministrativeSex",
+        "path": "GT1.GuarantorAdministrativeSex",
+        "code": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/v2-0001"
+          }
+        ],
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "string",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/string"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "GT1.9"
+          }
+        ]
+      },
+      {
+        "id": "GT1.GuarantorType",
+        "path": "GT1.GuarantorType",
+        "code": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/v2-0068"
+          }
+        ],
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "string",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/string"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "GT1.10"
+          }
+        ]
+      },
+      {
+        "id": "GT1.GuarantorRelationship",
+        "path": "GT1.GuarantorRelationship",
+        "code": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/v2-0063"
+          }
+        ],
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "CE",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/CE"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "GT1.11"
+          }
+        ]
+      },
+      {
+        "id": "GT1.GuarantorSSN",
+        "path": "GT1.GuarantorSSN",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "string",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/string"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "GT1.12"
+          }
+        ]
+      },
+      {
+        "id": "GT1.GuarantorDate-Begin",
+        "path": "GT1.GuarantorDate-Begin",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "string",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/string"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "GT1.13"
+          }
+        ]
+      },
+      {
+        "id": "GT1.GuarantorDate-End",
+        "path": "GT1.GuarantorDate-End",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "string",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/string"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "GT1.14"
+          }
+        ]
+      },
+      {
+        "id": "GT1.GuarantorPriority",
+        "path": "GT1.GuarantorPriority",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "string",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/string"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "GT1.15"
+          }
+        ]
+      },
+      {
+        "id": "GT1.GuarantorEmployerName",
+        "path": "GT1.GuarantorEmployerName",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "XPN",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/XPN"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "GT1.16"
+          }
+        ]
+      },
+      {
+        "id": "GT1.GuarantorEmployerAddress",
+        "path": "GT1.GuarantorEmployerAddress",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "XAD",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/XAD"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "GT1.17"
+          }
+        ]
+      },
+      {
+        "id": "GT1.GuarantorEmployerPhoneNumber",
+        "path": "GT1.GuarantorEmployerPhoneNumber",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "XTN",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/XTN"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "GT1.18"
+          }
+        ]
+      },
+      {
+        "id": "GT1.GuarantorEmployeeIDNumber",
+        "path": "GT1.GuarantorEmployeeIDNumber",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "CX",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/CX"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "GT1.19"
+          }
+        ]
+      },
+      {
+        "id": "GT1.GuarantorEmploymentStatus",
+        "path": "GT1.GuarantorEmploymentStatus",
+        "code": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/v2-0066"
+          }
+        ],
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "string",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/string"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "GT1.20"
+          }
+        ]
+      },
+      {
+        "id": "GT1.GuarantorOrganizationName",
+        "path": "GT1.GuarantorOrganizationName",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "XON",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/XON"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "GT1.21"
+          }
+        ]
+      },
+      {
+        "id": "GT1.GuarantorBillingHoldFlag",
+        "path": "GT1.GuarantorBillingHoldFlag",
+        "code": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/v2-0136"
+          }
+        ],
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "string",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/string"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "GT1.22"
+          }
+        ]
+      },
+      {
+        "id": "GT1.GuarantorCreditRatingCode",
+        "path": "GT1.GuarantorCreditRatingCode",
+        "code": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/v2-0341"
+          }
+        ],
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "CE",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/CE"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "GT1.23"
+          }
+        ]
+      },
+      {
+        "id": "GT1.GuarantorDeathDateAndTime",
+        "path": "GT1.GuarantorDeathDateAndTime",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "TS",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/TS"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "GT1.24"
+          }
+        ]
+      },
+      {
+        "id": "GT1.GuarantorDeathFlag",
+        "path": "GT1.GuarantorDeathFlag",
+        "code": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/v2-0136"
+          }
+        ],
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "string",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/string"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "GT1.25"
+          }
+        ]
+      },
+      {
+        "id": "GT1.GuarantorChargeAdjustmentCode",
+        "path": "GT1.GuarantorChargeAdjustmentCode",
+        "code": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/v2-0218"
+          }
+        ],
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "CE",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/CE"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "GT1.26"
+          }
+        ]
+      },
+      {
+        "id": "GT1.GuarantorHouseholdAnnualIncome",
+        "path": "GT1.GuarantorHouseholdAnnualIncome",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "CP",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/CP"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "GT1.27"
+          }
+        ]
+      },
+      {
+        "id": "GT1.GuarantorHouseholdSize",
+        "path": "GT1.GuarantorHouseholdSize",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "string",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/string"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "GT1.28"
+          }
+        ]
+      },
+      {
+        "id": "GT1.GuarantorEmployerIDNumber",
+        "path": "GT1.GuarantorEmployerIDNumber",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "CX",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/CX"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "GT1.29"
+          }
+        ]
+      },
+      {
+        "id": "GT1.GuarantorMaritalStatusCode",
+        "path": "GT1.GuarantorMaritalStatusCode",
+        "code": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/v2-0002"
+          }
+        ],
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "CE",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/CE"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "GT1.30"
+          }
+        ]
+      },
+      {
+        "id": "GT1.GuarantorHireEffectiveDate",
+        "path": "GT1.GuarantorHireEffectiveDate",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "string",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/string"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "GT1.31"
+          }
+        ]
+      },
+      {
+        "id": "GT1.EmploymentStopDate",
+        "path": "GT1.EmploymentStopDate",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "string",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/string"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "GT1.32"
+          }
+        ]
+      },
+      {
+        "id": "GT1.LivingDependency",
+        "path": "GT1.LivingDependency",
+        "code": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/v2-0223"
+          }
+        ],
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "string",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/string"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "GT1.33"
+          }
+        ]
+      },
+      {
+        "id": "GT1.AmbulatoryStatus",
+        "path": "GT1.AmbulatoryStatus",
+        "code": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/v2-0009"
+          }
+        ],
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "string",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/string"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "GT1.34"
+          }
+        ]
+      },
+      {
+        "id": "GT1.Citizenship",
+        "path": "GT1.Citizenship",
+        "code": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/v2-0171"
+          }
+        ],
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "CE",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/CE"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "GT1.35"
+          }
+        ]
+      },
+      {
+        "id": "GT1.PrimaryLanguage",
+        "path": "GT1.PrimaryLanguage",
+        "code": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/v2-0296"
+          }
+        ],
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "CE",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/CE"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "GT1.36"
+          }
+        ]
+      },
+      {
+        "id": "GT1.LivingArrangement",
+        "path": "GT1.LivingArrangement",
+        "code": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/v2-0220"
+          }
+        ],
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "string",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/string"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "GT1.37"
+          }
+        ]
+      },
+      {
+        "id": "GT1.PublicityCode",
+        "path": "GT1.PublicityCode",
+        "code": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/v2-0215"
+          }
+        ],
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "CE",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/CE"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "GT1.38"
+          }
+        ]
+      },
+      {
+        "id": "GT1.ProtectionIndicator",
+        "path": "GT1.ProtectionIndicator",
+        "code": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/v2-0136"
+          }
+        ],
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "string",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/string"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "GT1.39"
+          }
+        ]
+      },
+      {
+        "id": "GT1.StudentIndicator",
+        "path": "GT1.StudentIndicator",
+        "code": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/v2-0231"
+          }
+        ],
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "string",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/string"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "GT1.40"
+          }
+        ]
+      },
+      {
+        "id": "GT1.Religion",
+        "path": "GT1.Religion",
+        "code": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/v2-0006"
+          }
+        ],
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "CE",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/CE"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "GT1.41"
+          }
+        ]
+      },
+      {
+        "id": "GT1.Mother'sMaidenName",
+        "path": "GT1.Mother'sMaidenName",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "XPN",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/XPN"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "GT1.42"
+          }
+        ]
+      },
+      {
+        "id": "GT1.Nationality",
+        "path": "GT1.Nationality",
+        "code": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/v2-0212"
+          }
+        ],
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "CE",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/CE"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "GT1.43"
+          }
+        ]
+      },
+      {
+        "id": "GT1.EthnicGroup",
+        "path": "GT1.EthnicGroup",
+        "code": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/v2-0189"
+          }
+        ],
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "CE",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/CE"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "GT1.44"
+          }
+        ]
+      },
+      {
+        "id": "GT1.ContactPerson'sName",
+        "path": "GT1.ContactPerson'sName",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "XPN",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/XPN"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "GT1.45"
+          }
+        ]
+      },
+      {
+        "id": "GT1.ContactPerson'sTelephoneNumber",
+        "path": "GT1.ContactPerson'sTelephoneNumber",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "XTN",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/XTN"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "GT1.46"
+          }
+        ]
+      },
+      {
+        "id": "GT1.ContactReason",
+        "path": "GT1.ContactReason",
+        "code": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/v2-0222"
+          }
+        ],
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "CE",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/CE"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "GT1.47"
+          }
+        ]
+      },
+      {
+        "id": "GT1.ContactRelationship",
+        "path": "GT1.ContactRelationship",
+        "code": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/v2-0063"
+          }
+        ],
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "string",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/string"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "GT1.48"
+          }
+        ]
+      },
+      {
+        "id": "GT1.JobTitle",
+        "path": "GT1.JobTitle",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "string",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/string"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "GT1.49"
+          }
+        ]
+      },
+      {
+        "id": "GT1.JobCode/Class",
+        "path": "GT1.JobCode/Class",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "JCC",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/JCC"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "GT1.50"
+          }
+        ]
+      },
+      {
+        "id": "GT1.GuarantorEmployer'sOrganizationName",
+        "path": "GT1.GuarantorEmployer'sOrganizationName",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "XON",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/XON"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "GT1.51"
+          }
+        ]
+      },
+      {
+        "id": "GT1.Handicap",
+        "path": "GT1.Handicap",
+        "code": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/v2-0295"
+          }
+        ],
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "string",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/string"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "GT1.52"
+          }
+        ]
+      },
+      {
+        "id": "GT1.JobStatus",
+        "path": "GT1.JobStatus",
+        "code": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/v2-0311"
+          }
+        ],
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "string",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/string"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "GT1.53"
+          }
+        ]
+      },
+      {
+        "id": "GT1.GuarantorFinancialClass",
+        "path": "GT1.GuarantorFinancialClass",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "FC",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/FC"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "GT1.54"
+          }
+        ]
+      },
+      {
+        "id": "GT1.GuarantorRace",
+        "path": "GT1.GuarantorRace",
+        "code": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/v2-0005"
+          }
+        ],
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "CE",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/CE"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "GT1.55"
+          }
+        ]
+      },
+      {
+        "id": "GT1.GuarantorBirthPlace",
+        "path": "GT1.GuarantorBirthPlace",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "string",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/string"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "GT1.56"
+          }
+        ]
+      },
+      {
+        "id": "GT1.VIPIndicator",
+        "path": "GT1.VIPIndicator",
+        "code": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/v2-0099"
+          }
+        ],
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "string",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/string"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "GT1.57"
+          }
+        ]
+      }
+    ]
+  }
+}

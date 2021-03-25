@@ -1,0 +1,118 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "SID",
+  "url": "http://hl7.org/fhir/StructureDefinition/SID",
+  "name": "SID",
+  "status": "active",
+  "fhirVersion": "4.0.1",
+  "kind": "logical",
+  "abstract": false,
+  "type": "SID",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Element",
+  "derivation": "specialization",
+  "differential": {
+    "element": [
+      {
+        "id": "SID",
+        "path": "SID",
+        "type": [
+          {
+            "code": "Element"
+          }
+        ],
+        "mapping": [
+          {
+            "id": "SID",
+            "identity": "v2",
+            "map": "SID"
+          }
+        ]
+      },
+      {
+        "id": "SID.Application/MethodIdentifier",
+        "path": "SID.Application/MethodIdentifier",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "CE",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/CE"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "SID.1"
+          }
+        ]
+      },
+      {
+        "id": "SID.SubstanceLotNumber",
+        "path": "SID.SubstanceLotNumber",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "string",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/string"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "SID.2"
+          }
+        ]
+      },
+      {
+        "id": "SID.SubstanceContainerIdentifier",
+        "path": "SID.SubstanceContainerIdentifier",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "string",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/string"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "SID.3"
+          }
+        ]
+      },
+      {
+        "id": "SID.SubstanceManufacturerIdentifier",
+        "path": "SID.SubstanceManufacturerIdentifier",
+        "code": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/v2-0385"
+          }
+        ],
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "CE",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/CE"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "SID.4"
+          }
+        ]
+      }
+    ]
+  }
+}

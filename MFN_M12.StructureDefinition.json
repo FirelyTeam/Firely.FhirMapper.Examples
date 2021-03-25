@@ -1,0 +1,164 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "MFN_M12",
+  "url": "http://hl7.org/fhir/StructureDefinition/MFN_M12",
+  "name": "MFN_M12",
+  "status": "active",
+  "fhirVersion": "4.0.1",
+  "kind": "logical",
+  "abstract": false,
+  "type": "MFN_M12",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Element",
+  "derivation": "specialization",
+  "differential": {
+    "element": [
+      {
+        "id": "MFN_M12",
+        "path": "MFN_M12",
+        "type": [
+          {
+            "code": "Element"
+          }
+        ],
+        "mapping": [
+          {
+            "id": "MFN_M12",
+            "identity": "v2",
+            "map": "MFN_M12"
+          }
+        ]
+      },
+      {
+        "id": "MFN_M12.MSH",
+        "path": "MFN_M12.MSH",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "MSH",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/MSH"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "MSH"
+          }
+        ]
+      },
+      {
+        "id": "MFN_M12.SFT",
+        "path": "MFN_M12.SFT",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "SFT",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/SFT"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "SFT"
+          }
+        ]
+      },
+      {
+        "id": "MFN_M12.MFI",
+        "path": "MFN_M12.MFI",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "MFI",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/MFI"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "MFI"
+          }
+        ]
+      },
+      {
+        "id": "MFN_M12.MF_OBS_ATTRIBUTES",
+        "path": "MFN_M12.MF_OBS_ATTRIBUTES",
+        "min": 1,
+        "max": "*",
+        "type": [
+          {
+            "code": "BackboneElement"
+          }
+        ]
+      },
+      {
+        "id": "MFN_M12.MF_OBS_ATTRIBUTES.MFE",
+        "path": "MFN_M12.MF_OBS_ATTRIBUTES.MFE",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "MFE",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/MFE"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "MFE"
+          }
+        ]
+      },
+      {
+        "id": "MFN_M12.MF_OBS_ATTRIBUTES.OM1",
+        "path": "MFN_M12.MF_OBS_ATTRIBUTES.OM1",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "OM1",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/OM1"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "OM1"
+          }
+        ]
+      },
+      {
+        "id": "MFN_M12.MF_OBS_ATTRIBUTES.OM7",
+        "path": "MFN_M12.MF_OBS_ATTRIBUTES.OM7",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "OM7",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/OM7"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "OM7"
+          }
+        ]
+      }
+    ]
+  }
+}

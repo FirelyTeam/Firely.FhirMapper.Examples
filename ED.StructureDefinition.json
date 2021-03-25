@@ -1,0 +1,148 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "ED",
+  "url": "http://hl7.org/fhir/StructureDefinition/ED",
+  "name": "ED",
+  "status": "active",
+  "fhirVersion": "4.0.1",
+  "kind": "logical",
+  "abstract": false,
+  "type": "ED",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Element",
+  "derivation": "specialization",
+  "differential": {
+    "element": [
+      {
+        "id": "ED",
+        "path": "ED",
+        "type": [
+          {
+            "code": "Element"
+          }
+        ],
+        "mapping": [
+          {
+            "id": "ED",
+            "identity": "v2",
+            "map": "ED"
+          }
+        ]
+      },
+      {
+        "id": "ED.SourceApplication",
+        "path": "ED.SourceApplication",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "HD",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/HD"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "ED.1"
+          }
+        ]
+      },
+      {
+        "id": "ED.TypeofData",
+        "path": "ED.TypeofData",
+        "code": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/v2-0191"
+          }
+        ],
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "string",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/string"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "ED.2"
+          }
+        ]
+      },
+      {
+        "id": "ED.DataSubtype",
+        "path": "ED.DataSubtype",
+        "code": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/v2-0291"
+          }
+        ],
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "string",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/string"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "ED.3"
+          }
+        ]
+      },
+      {
+        "id": "ED.Encoding",
+        "path": "ED.Encoding",
+        "code": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/v2-0299"
+          }
+        ],
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "string",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/string"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "ED.4"
+          }
+        ]
+      },
+      {
+        "id": "ED.Data",
+        "path": "ED.Data",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "string",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/string"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "ED.5"
+          }
+        ]
+      }
+    ]
+  }
+}

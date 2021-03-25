@@ -1,0 +1,344 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "RSP_K25",
+  "url": "http://hl7.org/fhir/StructureDefinition/RSP_K25",
+  "name": "RSP_K25",
+  "status": "active",
+  "fhirVersion": "4.0.1",
+  "kind": "logical",
+  "abstract": false,
+  "type": "RSP_K25",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Element",
+  "derivation": "specialization",
+  "differential": {
+    "element": [
+      {
+        "id": "RSP_K25",
+        "path": "RSP_K25",
+        "type": [
+          {
+            "code": "Element"
+          }
+        ],
+        "mapping": [
+          {
+            "id": "RSP_K25",
+            "identity": "v2",
+            "map": "RSP_K25"
+          }
+        ]
+      },
+      {
+        "id": "RSP_K25.MSH",
+        "path": "RSP_K25.MSH",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "MSH",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/MSH"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "MSH"
+          }
+        ]
+      },
+      {
+        "id": "RSP_K25.SFT",
+        "path": "RSP_K25.SFT",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "SFT",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/SFT"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "SFT"
+          }
+        ]
+      },
+      {
+        "id": "RSP_K25.MSA",
+        "path": "RSP_K25.MSA",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "MSA",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/MSA"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "MSA"
+          }
+        ]
+      },
+      {
+        "id": "RSP_K25.ERR",
+        "path": "RSP_K25.ERR",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "ERR",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/ERR"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "ERR"
+          }
+        ]
+      },
+      {
+        "id": "RSP_K25.QAK",
+        "path": "RSP_K25.QAK",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "QAK",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/QAK"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "QAK"
+          }
+        ]
+      },
+      {
+        "id": "RSP_K25.QPD",
+        "path": "RSP_K25.QPD",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "QPD",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/QPD"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "QPD"
+          }
+        ]
+      },
+      {
+        "id": "RSP_K25.RCP",
+        "path": "RSP_K25.RCP",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "RCP",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/RCP"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "RCP"
+          }
+        ]
+      },
+      {
+        "id": "RSP_K25.STAFF",
+        "path": "RSP_K25.STAFF",
+        "min": 1,
+        "max": "*",
+        "type": [
+          {
+            "code": "BackboneElement"
+          }
+        ]
+      },
+      {
+        "id": "RSP_K25.STAFF.STF",
+        "path": "RSP_K25.STAFF.STF",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "STF",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/STF"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "STF"
+          }
+        ]
+      },
+      {
+        "id": "RSP_K25.STAFF.PRA",
+        "path": "RSP_K25.STAFF.PRA",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "PRA",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/PRA"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "PRA"
+          }
+        ]
+      },
+      {
+        "id": "RSP_K25.STAFF.ORG",
+        "path": "RSP_K25.STAFF.ORG",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "ORG",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/ORG"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "ORG"
+          }
+        ]
+      },
+      {
+        "id": "RSP_K25.STAFF.AFF",
+        "path": "RSP_K25.STAFF.AFF",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "AFF",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/AFF"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "AFF"
+          }
+        ]
+      },
+      {
+        "id": "RSP_K25.STAFF.LAN",
+        "path": "RSP_K25.STAFF.LAN",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "LAN",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/LAN"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "LAN"
+          }
+        ]
+      },
+      {
+        "id": "RSP_K25.STAFF.EDU",
+        "path": "RSP_K25.STAFF.EDU",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "EDU",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/EDU"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "EDU"
+          }
+        ]
+      },
+      {
+        "id": "RSP_K25.STAFF.CER",
+        "path": "RSP_K25.STAFF.CER",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "CER",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/CER"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "CER"
+          }
+        ]
+      },
+      {
+        "id": "RSP_K25.DSC",
+        "path": "RSP_K25.DSC",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "DSC",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/DSC"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "DSC"
+          }
+        ]
+      }
+    ]
+  }
+}

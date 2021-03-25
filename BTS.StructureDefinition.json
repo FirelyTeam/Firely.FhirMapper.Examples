@@ -1,0 +1,93 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "BTS",
+  "url": "http://hl7.org/fhir/StructureDefinition/BTS",
+  "name": "BTS",
+  "status": "active",
+  "fhirVersion": "4.0.1",
+  "kind": "logical",
+  "abstract": false,
+  "type": "BTS",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Element",
+  "derivation": "specialization",
+  "differential": {
+    "element": [
+      {
+        "id": "BTS",
+        "path": "BTS",
+        "type": [
+          {
+            "code": "Element"
+          }
+        ],
+        "mapping": [
+          {
+            "id": "BTS",
+            "identity": "v2",
+            "map": "BTS"
+          }
+        ]
+      },
+      {
+        "id": "BTS.BatchMessageCount",
+        "path": "BTS.BatchMessageCount",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "string",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/string"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "BTS.1"
+          }
+        ]
+      },
+      {
+        "id": "BTS.BatchComment",
+        "path": "BTS.BatchComment",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "string",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/string"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "BTS.2"
+          }
+        ]
+      },
+      {
+        "id": "BTS.BatchTotals",
+        "path": "BTS.BatchTotals",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "string",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/string"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "BTS.3"
+          }
+        ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,513 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "UB1",
+  "url": "http://hl7.org/fhir/StructureDefinition/UB1",
+  "name": "UB1",
+  "status": "active",
+  "fhirVersion": "4.0.1",
+  "kind": "logical",
+  "abstract": false,
+  "type": "UB1",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Element",
+  "derivation": "specialization",
+  "differential": {
+    "element": [
+      {
+        "id": "UB1",
+        "path": "UB1",
+        "type": [
+          {
+            "code": "Element"
+          }
+        ],
+        "mapping": [
+          {
+            "id": "UB1",
+            "identity": "v2",
+            "map": "UB1"
+          }
+        ]
+      },
+      {
+        "id": "UB1.SetID-UB1",
+        "path": "UB1.SetID-UB1",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "string",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/string"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "UB1.1"
+          }
+        ]
+      },
+      {
+        "id": "UB1.BloodDeductible(43)",
+        "path": "UB1.BloodDeductible(43)",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "string",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/string"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "UB1.2"
+          }
+        ]
+      },
+      {
+        "id": "UB1.BloodFurnished-PintsOf(40)",
+        "path": "UB1.BloodFurnished-PintsOf(40)",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "string",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/string"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "UB1.3"
+          }
+        ]
+      },
+      {
+        "id": "UB1.BloodReplaced-Pints(41)",
+        "path": "UB1.BloodReplaced-Pints(41)",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "string",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/string"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "UB1.4"
+          }
+        ]
+      },
+      {
+        "id": "UB1.BloodNotReplaced-Pints(42)",
+        "path": "UB1.BloodNotReplaced-Pints(42)",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "string",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/string"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "UB1.5"
+          }
+        ]
+      },
+      {
+        "id": "UB1.Co-InsuranceDays(25)",
+        "path": "UB1.Co-InsuranceDays(25)",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "string",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/string"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "UB1.6"
+          }
+        ]
+      },
+      {
+        "id": "UB1.ConditionCode(35-39)",
+        "path": "UB1.ConditionCode(35-39)",
+        "code": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/v2-0043"
+          }
+        ],
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "string",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/string"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "UB1.7"
+          }
+        ]
+      },
+      {
+        "id": "UB1.CoveredDays-(23)",
+        "path": "UB1.CoveredDays-(23)",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "string",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/string"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "UB1.8"
+          }
+        ]
+      },
+      {
+        "id": "UB1.NonCoveredDays-(24)",
+        "path": "UB1.NonCoveredDays-(24)",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "string",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/string"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "UB1.9"
+          }
+        ]
+      },
+      {
+        "id": "UB1.ValueAmount&Code(46-49)",
+        "path": "UB1.ValueAmount&Code(46-49)",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "UVC",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/UVC"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "UB1.10"
+          }
+        ]
+      },
+      {
+        "id": "UB1.NumberOfGraceDays(90)",
+        "path": "UB1.NumberOfGraceDays(90)",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "string",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/string"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "UB1.11"
+          }
+        ]
+      },
+      {
+        "id": "UB1.SpecialProgramIndicator(44)",
+        "path": "UB1.SpecialProgramIndicator(44)",
+        "code": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/v2-0348"
+          }
+        ],
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "CE",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/CE"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "UB1.12"
+          }
+        ]
+      },
+      {
+        "id": "UB1.PSRO/URApprovalIndicator(87)",
+        "path": "UB1.PSRO/URApprovalIndicator(87)",
+        "code": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/v2-0349"
+          }
+        ],
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "CE",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/CE"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "UB1.13"
+          }
+        ]
+      },
+      {
+        "id": "UB1.PSRO/URApprovedStay-Fm(88)",
+        "path": "UB1.PSRO/URApprovedStay-Fm(88)",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "string",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/string"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "UB1.14"
+          }
+        ]
+      },
+      {
+        "id": "UB1.PSRO/URApprovedStay-To(89)",
+        "path": "UB1.PSRO/URApprovedStay-To(89)",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "string",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/string"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "UB1.15"
+          }
+        ]
+      },
+      {
+        "id": "UB1.Occurrence(28-32)",
+        "path": "UB1.Occurrence(28-32)",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "OCD",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/OCD"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "UB1.16"
+          }
+        ]
+      },
+      {
+        "id": "UB1.OccurrenceSpan(33)",
+        "path": "UB1.OccurrenceSpan(33)",
+        "code": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/v2-0351"
+          }
+        ],
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "CE",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/CE"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "UB1.17"
+          }
+        ]
+      },
+      {
+        "id": "UB1.OccurSpanStartDate(33)",
+        "path": "UB1.OccurSpanStartDate(33)",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "string",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/string"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "UB1.18"
+          }
+        ]
+      },
+      {
+        "id": "UB1.OccurSpanEndDate(33)",
+        "path": "UB1.OccurSpanEndDate(33)",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "string",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/string"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "UB1.19"
+          }
+        ]
+      },
+      {
+        "id": "UB1.UB-82Locator2",
+        "path": "UB1.UB-82Locator2",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "string",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/string"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "UB1.20"
+          }
+        ]
+      },
+      {
+        "id": "UB1.UB-82Locator9",
+        "path": "UB1.UB-82Locator9",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "string",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/string"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "UB1.21"
+          }
+        ]
+      },
+      {
+        "id": "UB1.UB-82Locator27",
+        "path": "UB1.UB-82Locator27",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "string",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/string"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "UB1.22"
+          }
+        ]
+      },
+      {
+        "id": "UB1.UB-82Locator45",
+        "path": "UB1.UB-82Locator45",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "string",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/string"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "UB1.23"
+          }
+        ]
+      }
+    ]
+  }
+}

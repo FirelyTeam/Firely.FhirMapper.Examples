@@ -1,0 +1,93 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "PRL",
+  "url": "http://hl7.org/fhir/StructureDefinition/PRL",
+  "name": "PRL",
+  "status": "active",
+  "fhirVersion": "4.0.1",
+  "kind": "logical",
+  "abstract": false,
+  "type": "PRL",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Element",
+  "derivation": "specialization",
+  "differential": {
+    "element": [
+      {
+        "id": "PRL",
+        "path": "PRL",
+        "type": [
+          {
+            "code": "Element"
+          }
+        ],
+        "mapping": [
+          {
+            "id": "PRL",
+            "identity": "v2",
+            "map": "PRL"
+          }
+        ]
+      },
+      {
+        "id": "PRL.ParentObservationIdentifier",
+        "path": "PRL.ParentObservationIdentifier",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "CE",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/CE"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "PRL.1"
+          }
+        ]
+      },
+      {
+        "id": "PRL.ParentObservationSub-identifier",
+        "path": "PRL.ParentObservationSub-identifier",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "string",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/string"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "PRL.2"
+          }
+        ]
+      },
+      {
+        "id": "PRL.ParentObservationValueDescriptor",
+        "path": "PRL.ParentObservationValueDescriptor",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "string",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/string"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "PRL.3"
+          }
+        ]
+      }
+    ]
+  }
+}

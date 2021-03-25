@@ -1,0 +1,297 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "BRP_O30",
+  "url": "http://hl7.org/fhir/StructureDefinition/BRP_O30",
+  "name": "BRP_O30",
+  "status": "active",
+  "fhirVersion": "4.0.1",
+  "kind": "logical",
+  "abstract": false,
+  "type": "BRP_O30",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Element",
+  "derivation": "specialization",
+  "differential": {
+    "element": [
+      {
+        "id": "BRP_O30",
+        "path": "BRP_O30",
+        "type": [
+          {
+            "code": "Element"
+          }
+        ],
+        "mapping": [
+          {
+            "id": "BRP_O30",
+            "identity": "v2",
+            "map": "BRP_O30"
+          }
+        ]
+      },
+      {
+        "id": "BRP_O30.MSH",
+        "path": "BRP_O30.MSH",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "MSH",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/MSH"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "MSH"
+          }
+        ]
+      },
+      {
+        "id": "BRP_O30.MSA",
+        "path": "BRP_O30.MSA",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "MSA",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/MSA"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "MSA"
+          }
+        ]
+      },
+      {
+        "id": "BRP_O30.ERR",
+        "path": "BRP_O30.ERR",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "ERR",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/ERR"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "ERR"
+          }
+        ]
+      },
+      {
+        "id": "BRP_O30.SFT",
+        "path": "BRP_O30.SFT",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "SFT",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/SFT"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "SFT"
+          }
+        ]
+      },
+      {
+        "id": "BRP_O30.NTE",
+        "path": "BRP_O30.NTE",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "NTE",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/NTE"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "NTE"
+          }
+        ]
+      },
+      {
+        "id": "BRP_O30.RESPONSE",
+        "path": "BRP_O30.RESPONSE",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "BackboneElement"
+          }
+        ]
+      },
+      {
+        "id": "BRP_O30.RESPONSE.PATIENT",
+        "path": "BRP_O30.RESPONSE.PATIENT",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "BackboneElement"
+          }
+        ]
+      },
+      {
+        "id": "BRP_O30.RESPONSE.PATIENT.PID",
+        "path": "BRP_O30.RESPONSE.PATIENT.PID",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "PID",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/PID"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "PID"
+          }
+        ]
+      },
+      {
+        "id": "BRP_O30.RESPONSE.PATIENT.ORDER",
+        "path": "BRP_O30.RESPONSE.PATIENT.ORDER",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "BackboneElement"
+          }
+        ]
+      },
+      {
+        "id": "BRP_O30.RESPONSE.PATIENT.ORDER.ORC",
+        "path": "BRP_O30.RESPONSE.PATIENT.ORDER.ORC",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "ORC",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/ORC"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "ORC"
+          }
+        ]
+      },
+      {
+        "id": "BRP_O30.RESPONSE.PATIENT.ORDER.TIMING",
+        "path": "BRP_O30.RESPONSE.PATIENT.ORDER.TIMING",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "BackboneElement"
+          }
+        ]
+      },
+      {
+        "id": "BRP_O30.RESPONSE.PATIENT.ORDER.TIMING.TQ1",
+        "path": "BRP_O30.RESPONSE.PATIENT.ORDER.TIMING.TQ1",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "TQ1",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/TQ1"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "TQ1"
+          }
+        ]
+      },
+      {
+        "id": "BRP_O30.RESPONSE.PATIENT.ORDER.TIMING.TQ2",
+        "path": "BRP_O30.RESPONSE.PATIENT.ORDER.TIMING.TQ2",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "TQ2",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/TQ2"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "TQ2"
+          }
+        ]
+      },
+      {
+        "id": "BRP_O30.RESPONSE.PATIENT.ORDER.BPO",
+        "path": "BRP_O30.RESPONSE.PATIENT.ORDER.BPO",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "BPO",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/BPO"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "BPO"
+          }
+        ]
+      },
+      {
+        "id": "BRP_O30.RESPONSE.PATIENT.ORDER.BPX",
+        "path": "BRP_O30.RESPONSE.PATIENT.ORDER.BPX",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "BPX",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/BPX"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "BPX"
+          }
+        ]
+      }
+    ]
+  }
+}

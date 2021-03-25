@@ -1,0 +1,73 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "MOC",
+  "url": "http://hl7.org/fhir/StructureDefinition/MOC",
+  "name": "MOC",
+  "status": "active",
+  "fhirVersion": "4.0.1",
+  "kind": "logical",
+  "abstract": false,
+  "type": "MOC",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Element",
+  "derivation": "specialization",
+  "differential": {
+    "element": [
+      {
+        "id": "MOC",
+        "path": "MOC",
+        "type": [
+          {
+            "code": "Element"
+          }
+        ],
+        "mapping": [
+          {
+            "id": "MOC",
+            "identity": "v2",
+            "map": "MOC"
+          }
+        ]
+      },
+      {
+        "id": "MOC.MonetaryAmount",
+        "path": "MOC.MonetaryAmount",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "MO",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/MO"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "MOC.1"
+          }
+        ]
+      },
+      {
+        "id": "MOC.ChargeCode",
+        "path": "MOC.ChargeCode",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "CE",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/CE"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "MOC.2"
+          }
+        ]
+      }
+    ]
+  }
+}

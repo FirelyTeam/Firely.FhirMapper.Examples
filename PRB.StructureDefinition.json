@@ -1,0 +1,538 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "PRB",
+  "url": "http://hl7.org/fhir/StructureDefinition/PRB",
+  "name": "PRB",
+  "status": "active",
+  "fhirVersion": "4.0.1",
+  "kind": "logical",
+  "abstract": false,
+  "type": "PRB",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Element",
+  "derivation": "specialization",
+  "differential": {
+    "element": [
+      {
+        "id": "PRB",
+        "path": "PRB",
+        "type": [
+          {
+            "code": "Element"
+          }
+        ],
+        "mapping": [
+          {
+            "id": "PRB",
+            "identity": "v2",
+            "map": "PRB"
+          }
+        ]
+      },
+      {
+        "id": "PRB.ActionCode",
+        "path": "PRB.ActionCode",
+        "code": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/v2-0287"
+          }
+        ],
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "string",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/string"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "PRB.1"
+          }
+        ]
+      },
+      {
+        "id": "PRB.ActionDate/Time",
+        "path": "PRB.ActionDate/Time",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "TS",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/TS"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "PRB.2"
+          }
+        ]
+      },
+      {
+        "id": "PRB.ProblemID",
+        "path": "PRB.ProblemID",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "CE",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/CE"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "PRB.3"
+          }
+        ]
+      },
+      {
+        "id": "PRB.ProblemInstanceID",
+        "path": "PRB.ProblemInstanceID",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "EI",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/EI"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "PRB.4"
+          }
+        ]
+      },
+      {
+        "id": "PRB.EpisodeofCareID",
+        "path": "PRB.EpisodeofCareID",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "EI",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/EI"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "PRB.5"
+          }
+        ]
+      },
+      {
+        "id": "PRB.ProblemListPriority",
+        "path": "PRB.ProblemListPriority",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "string",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/string"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "PRB.6"
+          }
+        ]
+      },
+      {
+        "id": "PRB.ProblemEstablishedDate/Time",
+        "path": "PRB.ProblemEstablishedDate/Time",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "TS",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/TS"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "PRB.7"
+          }
+        ]
+      },
+      {
+        "id": "PRB.AnticipatedProblemResolutionDate/Time",
+        "path": "PRB.AnticipatedProblemResolutionDate/Time",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "TS",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/TS"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "PRB.8"
+          }
+        ]
+      },
+      {
+        "id": "PRB.ActualProblemResolutionDate/Time",
+        "path": "PRB.ActualProblemResolutionDate/Time",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "TS",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/TS"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "PRB.9"
+          }
+        ]
+      },
+      {
+        "id": "PRB.ProblemClassification",
+        "path": "PRB.ProblemClassification",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "CE",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/CE"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "PRB.10"
+          }
+        ]
+      },
+      {
+        "id": "PRB.ProblemManagementDiscipline",
+        "path": "PRB.ProblemManagementDiscipline",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "CE",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/CE"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "PRB.11"
+          }
+        ]
+      },
+      {
+        "id": "PRB.ProblemPersistence",
+        "path": "PRB.ProblemPersistence",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "CE",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/CE"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "PRB.12"
+          }
+        ]
+      },
+      {
+        "id": "PRB.ProblemConfirmationStatus",
+        "path": "PRB.ProblemConfirmationStatus",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "CE",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/CE"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "PRB.13"
+          }
+        ]
+      },
+      {
+        "id": "PRB.ProblemLifeCycleStatus",
+        "path": "PRB.ProblemLifeCycleStatus",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "CE",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/CE"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "PRB.14"
+          }
+        ]
+      },
+      {
+        "id": "PRB.ProblemLifeCycleStatusDate/Time",
+        "path": "PRB.ProblemLifeCycleStatusDate/Time",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "TS",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/TS"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "PRB.15"
+          }
+        ]
+      },
+      {
+        "id": "PRB.ProblemDateofOnset",
+        "path": "PRB.ProblemDateofOnset",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "TS",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/TS"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "PRB.16"
+          }
+        ]
+      },
+      {
+        "id": "PRB.ProblemOnsetText",
+        "path": "PRB.ProblemOnsetText",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "string",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/string"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "PRB.17"
+          }
+        ]
+      },
+      {
+        "id": "PRB.ProblemRanking",
+        "path": "PRB.ProblemRanking",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "CE",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/CE"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "PRB.18"
+          }
+        ]
+      },
+      {
+        "id": "PRB.CertaintyofProblem",
+        "path": "PRB.CertaintyofProblem",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "CE",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/CE"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "PRB.19"
+          }
+        ]
+      },
+      {
+        "id": "PRB.ProbabilityofProblem(0-1)",
+        "path": "PRB.ProbabilityofProblem(0-1)",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "string",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/string"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "PRB.20"
+          }
+        ]
+      },
+      {
+        "id": "PRB.IndividualAwarenessofProblem",
+        "path": "PRB.IndividualAwarenessofProblem",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "CE",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/CE"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "PRB.21"
+          }
+        ]
+      },
+      {
+        "id": "PRB.ProblemPrognosis",
+        "path": "PRB.ProblemPrognosis",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "CE",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/CE"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "PRB.22"
+          }
+        ]
+      },
+      {
+        "id": "PRB.IndividualAwarenessofPrognosis",
+        "path": "PRB.IndividualAwarenessofPrognosis",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "CE",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/CE"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "PRB.23"
+          }
+        ]
+      },
+      {
+        "id": "PRB.Family/SignificantOtherAwarenessofProblem/Prognosis",
+        "path": "PRB.Family/SignificantOtherAwarenessofProblem/Prognosis",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "string",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/string"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "PRB.24"
+          }
+        ]
+      },
+      {
+        "id": "PRB.Security/Sensitivity",
+        "path": "PRB.Security/Sensitivity",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "CE",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/CE"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "PRB.25"
+          }
+        ]
+      }
+    ]
+  }
+}

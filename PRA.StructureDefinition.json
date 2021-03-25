@@ -1,0 +1,313 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "PRA",
+  "url": "http://hl7.org/fhir/StructureDefinition/PRA",
+  "name": "PRA",
+  "status": "active",
+  "fhirVersion": "4.0.1",
+  "kind": "logical",
+  "abstract": false,
+  "type": "PRA",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Element",
+  "derivation": "specialization",
+  "differential": {
+    "element": [
+      {
+        "id": "PRA",
+        "path": "PRA",
+        "type": [
+          {
+            "code": "Element"
+          }
+        ],
+        "mapping": [
+          {
+            "id": "PRA",
+            "identity": "v2",
+            "map": "PRA"
+          }
+        ]
+      },
+      {
+        "id": "PRA.PrimaryKeyValue-PRA",
+        "path": "PRA.PrimaryKeyValue-PRA",
+        "code": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/v2-9999"
+          }
+        ],
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "CE",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/CE"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "PRA.1"
+          }
+        ]
+      },
+      {
+        "id": "PRA.PractitionerGroup",
+        "path": "PRA.PractitionerGroup",
+        "code": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/v2-0358"
+          }
+        ],
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "CE",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/CE"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "PRA.2"
+          }
+        ]
+      },
+      {
+        "id": "PRA.PractitionerCategory",
+        "path": "PRA.PractitionerCategory",
+        "code": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/v2-0186"
+          }
+        ],
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "string",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/string"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "PRA.3"
+          }
+        ]
+      },
+      {
+        "id": "PRA.ProviderBilling",
+        "path": "PRA.ProviderBilling",
+        "code": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/v2-0187"
+          }
+        ],
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "string",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/string"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "PRA.4"
+          }
+        ]
+      },
+      {
+        "id": "PRA.Specialty",
+        "path": "PRA.Specialty",
+        "code": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/v2-0337"
+          }
+        ],
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "SPD",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/SPD"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "PRA.5"
+          }
+        ]
+      },
+      {
+        "id": "PRA.PractitionerIDNumbers",
+        "path": "PRA.PractitionerIDNumbers",
+        "code": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/v2-0338"
+          }
+        ],
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "PLN",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/PLN"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "PRA.6"
+          }
+        ]
+      },
+      {
+        "id": "PRA.Privileges",
+        "path": "PRA.Privileges",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "PIP",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/PIP"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "PRA.7"
+          }
+        ]
+      },
+      {
+        "id": "PRA.DateEnteredPractice",
+        "path": "PRA.DateEnteredPractice",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "string",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/string"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "PRA.8"
+          }
+        ]
+      },
+      {
+        "id": "PRA.Institution",
+        "path": "PRA.Institution",
+        "code": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/v2-0537"
+          }
+        ],
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "CE",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/CE"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "PRA.9"
+          }
+        ]
+      },
+      {
+        "id": "PRA.DateLeftPractice",
+        "path": "PRA.DateLeftPractice",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "string",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/string"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "PRA.10"
+          }
+        ]
+      },
+      {
+        "id": "PRA.GovernmentReimbursementBillingEligibility",
+        "path": "PRA.GovernmentReimbursementBillingEligibility",
+        "code": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/v2-0401"
+          }
+        ],
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "CE",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/CE"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "PRA.11"
+          }
+        ]
+      },
+      {
+        "id": "PRA.SetID-PRA",
+        "path": "PRA.SetID-PRA",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "string",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/string"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "PRA.12"
+          }
+        ]
+      }
+    ]
+  }
+}

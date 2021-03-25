@@ -1,0 +1,1228 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "PV1",
+  "url": "http://hl7.org/fhir/StructureDefinition/PV1",
+  "name": "PV1",
+  "status": "active",
+  "fhirVersion": "4.0.1",
+  "kind": "logical",
+  "abstract": false,
+  "type": "PV1",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Element",
+  "derivation": "specialization",
+  "differential": {
+    "element": [
+      {
+        "id": "PV1",
+        "path": "PV1",
+        "type": [
+          {
+            "code": "Element"
+          }
+        ],
+        "mapping": [
+          {
+            "id": "PV1",
+            "identity": "v2",
+            "map": "PV1"
+          }
+        ]
+      },
+      {
+        "id": "PV1.SetID-PV1",
+        "path": "PV1.SetID-PV1",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "string",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/string"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "PV1.1"
+          }
+        ]
+      },
+      {
+        "id": "PV1.PatientClass",
+        "path": "PV1.PatientClass",
+        "code": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/v2-0004"
+          }
+        ],
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "string",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/string"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "PV1.2"
+          }
+        ]
+      },
+      {
+        "id": "PV1.AssignedPatientLocation",
+        "path": "PV1.AssignedPatientLocation",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "PL",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/PL"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "PV1.3"
+          }
+        ]
+      },
+      {
+        "id": "PV1.AdmissionType",
+        "path": "PV1.AdmissionType",
+        "code": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/v2-0007"
+          }
+        ],
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "string",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/string"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "PV1.4"
+          }
+        ]
+      },
+      {
+        "id": "PV1.PreadmitNumber",
+        "path": "PV1.PreadmitNumber",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "CX",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/CX"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "PV1.5"
+          }
+        ]
+      },
+      {
+        "id": "PV1.PriorPatientLocation",
+        "path": "PV1.PriorPatientLocation",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "PL",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/PL"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "PV1.6"
+          }
+        ]
+      },
+      {
+        "id": "PV1.AttendingDoctor",
+        "path": "PV1.AttendingDoctor",
+        "code": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/v2-0010"
+          }
+        ],
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "XCN",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/XCN"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "PV1.7"
+          }
+        ]
+      },
+      {
+        "id": "PV1.ReferringDoctor",
+        "path": "PV1.ReferringDoctor",
+        "code": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/v2-0010"
+          }
+        ],
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "XCN",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/XCN"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "PV1.8"
+          }
+        ]
+      },
+      {
+        "id": "PV1.ConsultingDoctor",
+        "path": "PV1.ConsultingDoctor",
+        "code": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/v2-0010"
+          }
+        ],
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "XCN",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/XCN"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "PV1.9"
+          }
+        ]
+      },
+      {
+        "id": "PV1.HospitalService",
+        "path": "PV1.HospitalService",
+        "code": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/v2-0069"
+          }
+        ],
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "string",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/string"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "PV1.10"
+          }
+        ]
+      },
+      {
+        "id": "PV1.TemporaryLocation",
+        "path": "PV1.TemporaryLocation",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "PL",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/PL"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "PV1.11"
+          }
+        ]
+      },
+      {
+        "id": "PV1.PreadmitTestIndicator",
+        "path": "PV1.PreadmitTestIndicator",
+        "code": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/v2-0087"
+          }
+        ],
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "string",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/string"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "PV1.12"
+          }
+        ]
+      },
+      {
+        "id": "PV1.Re-admissionIndicator",
+        "path": "PV1.Re-admissionIndicator",
+        "code": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/v2-0092"
+          }
+        ],
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "string",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/string"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "PV1.13"
+          }
+        ]
+      },
+      {
+        "id": "PV1.AdmitSource",
+        "path": "PV1.AdmitSource",
+        "code": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/v2-0023"
+          }
+        ],
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "string",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/string"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "PV1.14"
+          }
+        ]
+      },
+      {
+        "id": "PV1.AmbulatoryStatus",
+        "path": "PV1.AmbulatoryStatus",
+        "code": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/v2-0009"
+          }
+        ],
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "string",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/string"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "PV1.15"
+          }
+        ]
+      },
+      {
+        "id": "PV1.VIPIndicator",
+        "path": "PV1.VIPIndicator",
+        "code": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/v2-0099"
+          }
+        ],
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "string",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/string"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "PV1.16"
+          }
+        ]
+      },
+      {
+        "id": "PV1.AdmittingDoctor",
+        "path": "PV1.AdmittingDoctor",
+        "code": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/v2-0010"
+          }
+        ],
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "XCN",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/XCN"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "PV1.17"
+          }
+        ]
+      },
+      {
+        "id": "PV1.PatientType",
+        "path": "PV1.PatientType",
+        "code": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/v2-0018"
+          }
+        ],
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "string",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/string"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "PV1.18"
+          }
+        ]
+      },
+      {
+        "id": "PV1.VisitNumber",
+        "path": "PV1.VisitNumber",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "CX",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/CX"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "PV1.19"
+          }
+        ]
+      },
+      {
+        "id": "PV1.FinancialClass",
+        "path": "PV1.FinancialClass",
+        "code": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/v2-0064"
+          }
+        ],
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "FC",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/FC"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "PV1.20"
+          }
+        ]
+      },
+      {
+        "id": "PV1.ChargePriceIndicator",
+        "path": "PV1.ChargePriceIndicator",
+        "code": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/v2-0032"
+          }
+        ],
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "string",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/string"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "PV1.21"
+          }
+        ]
+      },
+      {
+        "id": "PV1.CourtesyCode",
+        "path": "PV1.CourtesyCode",
+        "code": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/v2-0045"
+          }
+        ],
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "string",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/string"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "PV1.22"
+          }
+        ]
+      },
+      {
+        "id": "PV1.CreditRating",
+        "path": "PV1.CreditRating",
+        "code": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/v2-0046"
+          }
+        ],
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "string",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/string"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "PV1.23"
+          }
+        ]
+      },
+      {
+        "id": "PV1.ContractCode",
+        "path": "PV1.ContractCode",
+        "code": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/v2-0044"
+          }
+        ],
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "string",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/string"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "PV1.24"
+          }
+        ]
+      },
+      {
+        "id": "PV1.ContractEffectiveDate",
+        "path": "PV1.ContractEffectiveDate",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "string",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/string"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "PV1.25"
+          }
+        ]
+      },
+      {
+        "id": "PV1.ContractAmount",
+        "path": "PV1.ContractAmount",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "string",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/string"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "PV1.26"
+          }
+        ]
+      },
+      {
+        "id": "PV1.ContractPeriod",
+        "path": "PV1.ContractPeriod",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "string",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/string"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "PV1.27"
+          }
+        ]
+      },
+      {
+        "id": "PV1.InterestCode",
+        "path": "PV1.InterestCode",
+        "code": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/v2-0073"
+          }
+        ],
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "string",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/string"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "PV1.28"
+          }
+        ]
+      },
+      {
+        "id": "PV1.TransfertoBadDebtCode",
+        "path": "PV1.TransfertoBadDebtCode",
+        "code": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/v2-0110"
+          }
+        ],
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "string",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/string"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "PV1.29"
+          }
+        ]
+      },
+      {
+        "id": "PV1.TransfertoBadDebtDate",
+        "path": "PV1.TransfertoBadDebtDate",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "string",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/string"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "PV1.30"
+          }
+        ]
+      },
+      {
+        "id": "PV1.BadDebtAgencyCode",
+        "path": "PV1.BadDebtAgencyCode",
+        "code": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/v2-0021"
+          }
+        ],
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "string",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/string"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "PV1.31"
+          }
+        ]
+      },
+      {
+        "id": "PV1.BadDebtTransferAmount",
+        "path": "PV1.BadDebtTransferAmount",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "string",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/string"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "PV1.32"
+          }
+        ]
+      },
+      {
+        "id": "PV1.BadDebtRecoveryAmount",
+        "path": "PV1.BadDebtRecoveryAmount",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "string",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/string"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "PV1.33"
+          }
+        ]
+      },
+      {
+        "id": "PV1.DeleteAccountIndicator",
+        "path": "PV1.DeleteAccountIndicator",
+        "code": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/v2-0111"
+          }
+        ],
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "string",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/string"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "PV1.34"
+          }
+        ]
+      },
+      {
+        "id": "PV1.DeleteAccountDate",
+        "path": "PV1.DeleteAccountDate",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "string",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/string"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "PV1.35"
+          }
+        ]
+      },
+      {
+        "id": "PV1.DischargeDisposition",
+        "path": "PV1.DischargeDisposition",
+        "code": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/v2-0112"
+          }
+        ],
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "string",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/string"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "PV1.36"
+          }
+        ]
+      },
+      {
+        "id": "PV1.DischargedtoLocation",
+        "path": "PV1.DischargedtoLocation",
+        "code": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/v2-0113"
+          }
+        ],
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "DLD",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/DLD"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "PV1.37"
+          }
+        ]
+      },
+      {
+        "id": "PV1.DietType",
+        "path": "PV1.DietType",
+        "code": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/v2-0114"
+          }
+        ],
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "CE",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/CE"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "PV1.38"
+          }
+        ]
+      },
+      {
+        "id": "PV1.ServicingFacility",
+        "path": "PV1.ServicingFacility",
+        "code": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/v2-0115"
+          }
+        ],
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "string",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/string"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "PV1.39"
+          }
+        ]
+      },
+      {
+        "id": "PV1.BedStatus",
+        "path": "PV1.BedStatus",
+        "code": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/v2-0116"
+          }
+        ],
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "string",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/string"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "PV1.40"
+          }
+        ]
+      },
+      {
+        "id": "PV1.AccountStatus",
+        "path": "PV1.AccountStatus",
+        "code": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/v2-0117"
+          }
+        ],
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "string",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/string"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "PV1.41"
+          }
+        ]
+      },
+      {
+        "id": "PV1.PendingLocation",
+        "path": "PV1.PendingLocation",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "PL",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/PL"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "PV1.42"
+          }
+        ]
+      },
+      {
+        "id": "PV1.PriorTemporaryLocation",
+        "path": "PV1.PriorTemporaryLocation",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "PL",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/PL"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "PV1.43"
+          }
+        ]
+      },
+      {
+        "id": "PV1.AdmitDate/Time",
+        "path": "PV1.AdmitDate/Time",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "TS",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/TS"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "PV1.44"
+          }
+        ]
+      },
+      {
+        "id": "PV1.DischargeDate/Time",
+        "path": "PV1.DischargeDate/Time",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "TS",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/TS"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "PV1.45"
+          }
+        ]
+      },
+      {
+        "id": "PV1.CurrentPatientBalance",
+        "path": "PV1.CurrentPatientBalance",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "string",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/string"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "PV1.46"
+          }
+        ]
+      },
+      {
+        "id": "PV1.TotalCharges",
+        "path": "PV1.TotalCharges",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "string",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/string"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "PV1.47"
+          }
+        ]
+      },
+      {
+        "id": "PV1.TotalAdjustments",
+        "path": "PV1.TotalAdjustments",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "string",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/string"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "PV1.48"
+          }
+        ]
+      },
+      {
+        "id": "PV1.TotalPayments",
+        "path": "PV1.TotalPayments",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "string",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/string"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "PV1.49"
+          }
+        ]
+      },
+      {
+        "id": "PV1.AlternateVisitID",
+        "path": "PV1.AlternateVisitID",
+        "code": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/v2-0203"
+          }
+        ],
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "CX",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/CX"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "PV1.50"
+          }
+        ]
+      },
+      {
+        "id": "PV1.VisitIndicator",
+        "path": "PV1.VisitIndicator",
+        "code": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/v2-0326"
+          }
+        ],
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "string",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/string"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "PV1.51"
+          }
+        ]
+      },
+      {
+        "id": "PV1.OtherHealthcareProvider",
+        "path": "PV1.OtherHealthcareProvider",
+        "code": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/v2-0010"
+          }
+        ],
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "XCN",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/XCN"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "PV1.52"
+          }
+        ]
+      }
+    ]
+  }
+}

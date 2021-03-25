@@ -1,0 +1,248 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "CX",
+  "url": "http://hl7.org/fhir/StructureDefinition/CX",
+  "name": "CX",
+  "status": "active",
+  "fhirVersion": "4.0.1",
+  "kind": "logical",
+  "abstract": false,
+  "type": "CX",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Element",
+  "derivation": "specialization",
+  "differential": {
+    "element": [
+      {
+        "id": "CX",
+        "path": "CX",
+        "type": [
+          {
+            "code": "Element"
+          }
+        ],
+        "mapping": [
+          {
+            "id": "CX",
+            "identity": "v2",
+            "map": "CX"
+          }
+        ]
+      },
+      {
+        "id": "CX.IDNumber",
+        "path": "CX.IDNumber",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "string",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/string"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "CX.1"
+          }
+        ]
+      },
+      {
+        "id": "CX.CheckDigit",
+        "path": "CX.CheckDigit",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "string",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/string"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "CX.2"
+          }
+        ]
+      },
+      {
+        "id": "CX.CheckDigitScheme",
+        "path": "CX.CheckDigitScheme",
+        "code": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/v2-0061"
+          }
+        ],
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "string",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/string"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "CX.3"
+          }
+        ]
+      },
+      {
+        "id": "CX.AssigningAuthority",
+        "path": "CX.AssigningAuthority",
+        "code": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/v2-0363"
+          }
+        ],
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "HD",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/HD"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "CX.4"
+          }
+        ]
+      },
+      {
+        "id": "CX.IdentifierTypeCode",
+        "path": "CX.IdentifierTypeCode",
+        "code": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/v2-0203"
+          }
+        ],
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "string",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/string"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "CX.5"
+          }
+        ]
+      },
+      {
+        "id": "CX.AssigningFacility",
+        "path": "CX.AssigningFacility",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "HD",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/HD"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "CX.6"
+          }
+        ]
+      },
+      {
+        "id": "CX.EffectiveDate",
+        "path": "CX.EffectiveDate",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "string",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/string"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "CX.7"
+          }
+        ]
+      },
+      {
+        "id": "CX.ExpirationDate",
+        "path": "CX.ExpirationDate",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "string",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/string"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "CX.8"
+          }
+        ]
+      },
+      {
+        "id": "CX.AssigningJurisdiction",
+        "path": "CX.AssigningJurisdiction",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "CWE",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/CWE"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "CX.9"
+          }
+        ]
+      },
+      {
+        "id": "CX.AssigningAgencyorDepartment",
+        "path": "CX.AssigningAgencyorDepartment",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "CWE",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/CWE"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "CX.10"
+          }
+        ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,78 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "BLC",
+  "url": "http://hl7.org/fhir/StructureDefinition/BLC",
+  "name": "BLC",
+  "status": "active",
+  "fhirVersion": "4.0.1",
+  "kind": "logical",
+  "abstract": false,
+  "type": "BLC",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Element",
+  "derivation": "specialization",
+  "differential": {
+    "element": [
+      {
+        "id": "BLC",
+        "path": "BLC",
+        "type": [
+          {
+            "code": "Element"
+          }
+        ],
+        "mapping": [
+          {
+            "id": "BLC",
+            "identity": "v2",
+            "map": "BLC"
+          }
+        ]
+      },
+      {
+        "id": "BLC.BloodProductCode",
+        "path": "BLC.BloodProductCode",
+        "code": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/v2-0426"
+          }
+        ],
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "CE",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/CE"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "BLC.1"
+          }
+        ]
+      },
+      {
+        "id": "BLC.BloodAmount",
+        "path": "BLC.BloodAmount",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "CQ",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/CQ"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "BLC.2"
+          }
+        ]
+      }
+    ]
+  }
+}

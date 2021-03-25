@@ -1,0 +1,153 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "SFT",
+  "url": "http://hl7.org/fhir/StructureDefinition/SFT",
+  "name": "SFT",
+  "status": "active",
+  "fhirVersion": "4.0.1",
+  "kind": "logical",
+  "abstract": false,
+  "type": "SFT",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Element",
+  "derivation": "specialization",
+  "differential": {
+    "element": [
+      {
+        "id": "SFT",
+        "path": "SFT",
+        "type": [
+          {
+            "code": "Element"
+          }
+        ],
+        "mapping": [
+          {
+            "id": "SFT",
+            "identity": "v2",
+            "map": "SFT"
+          }
+        ]
+      },
+      {
+        "id": "SFT.SoftwareVendorOrganization",
+        "path": "SFT.SoftwareVendorOrganization",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "XON",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/XON"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "SFT.1"
+          }
+        ]
+      },
+      {
+        "id": "SFT.SoftwareCertifiedVersionorReleaseNumber",
+        "path": "SFT.SoftwareCertifiedVersionorReleaseNumber",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "string",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/string"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "SFT.2"
+          }
+        ]
+      },
+      {
+        "id": "SFT.SoftwareProductName",
+        "path": "SFT.SoftwareProductName",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "string",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/string"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "SFT.3"
+          }
+        ]
+      },
+      {
+        "id": "SFT.SoftwareBinaryID",
+        "path": "SFT.SoftwareBinaryID",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "string",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/string"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "SFT.4"
+          }
+        ]
+      },
+      {
+        "id": "SFT.SoftwareProductInformation",
+        "path": "SFT.SoftwareProductInformation",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "string",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/string"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "SFT.5"
+          }
+        ]
+      },
+      {
+        "id": "SFT.SoftwareInstallDate",
+        "path": "SFT.SoftwareInstallDate",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "TS",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/TS"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "SFT.6"
+          }
+        ]
+      }
+    ]
+  }
+}

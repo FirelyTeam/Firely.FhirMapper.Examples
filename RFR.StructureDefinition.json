@@ -1,0 +1,178 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "RFR",
+  "url": "http://hl7.org/fhir/StructureDefinition/RFR",
+  "name": "RFR",
+  "status": "active",
+  "fhirVersion": "4.0.1",
+  "kind": "logical",
+  "abstract": false,
+  "type": "RFR",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Element",
+  "derivation": "specialization",
+  "differential": {
+    "element": [
+      {
+        "id": "RFR",
+        "path": "RFR",
+        "type": [
+          {
+            "code": "Element"
+          }
+        ],
+        "mapping": [
+          {
+            "id": "RFR",
+            "identity": "v2",
+            "map": "RFR"
+          }
+        ]
+      },
+      {
+        "id": "RFR.NumericRange",
+        "path": "RFR.NumericRange",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "NR",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/NR"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "RFR.1"
+          }
+        ]
+      },
+      {
+        "id": "RFR.AdministrativeSex",
+        "path": "RFR.AdministrativeSex",
+        "code": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/v2-0001"
+          }
+        ],
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "string",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/string"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "RFR.2"
+          }
+        ]
+      },
+      {
+        "id": "RFR.AgeRange",
+        "path": "RFR.AgeRange",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "NR",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/NR"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "RFR.3"
+          }
+        ]
+      },
+      {
+        "id": "RFR.GestationalAgeRange",
+        "path": "RFR.GestationalAgeRange",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "NR",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/NR"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "RFR.4"
+          }
+        ]
+      },
+      {
+        "id": "RFR.Species",
+        "path": "RFR.Species",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "string",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/string"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "RFR.5"
+          }
+        ]
+      },
+      {
+        "id": "RFR.Race/subspecies",
+        "path": "RFR.Race/subspecies",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "string",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/string"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "RFR.6"
+          }
+        ]
+      },
+      {
+        "id": "RFR.Conditions",
+        "path": "RFR.Conditions",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "string",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/string"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "RFR.7"
+          }
+        ]
+      }
+    ]
+  }
+}
