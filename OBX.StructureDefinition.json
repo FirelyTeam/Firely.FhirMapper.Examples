@@ -118,6 +118,14 @@
         "path": "OBX.ObservationValue",
         "min": 0,
         "max": "*",
+        "type": [
+          {
+            "code": "string",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/string"
+            ]
+          }
+        ],
         "mapping": [
           {
             "identity": "v2",
