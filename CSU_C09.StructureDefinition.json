@@ -1,0 +1,481 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "CSU_C09",
+  "url": "http://hl7.org/fhir/StructureDefinition/CSU_C09",
+  "name": "CSU_C09",
+  "status": "active",
+  "fhirVersion": "4.0.1",
+  "kind": "logical",
+  "abstract": false,
+  "type": "CSU_C09",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Element",
+  "derivation": "specialization",
+  "differential": {
+    "element": [
+      {
+        "id": "CSU_C09",
+        "path": "CSU_C09",
+        "type": [
+          {
+            "code": "Element"
+          }
+        ],
+        "mapping": [
+          {
+            "id": "CSU_C09",
+            "identity": "v2",
+            "map": "CSU_C09"
+          }
+        ]
+      },
+      {
+        "id": "CSU_C09.MSH",
+        "path": "CSU_C09.MSH",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "MSH",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/MSH"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "MSH"
+          }
+        ]
+      },
+      {
+        "id": "CSU_C09.SFT",
+        "path": "CSU_C09.SFT",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "SFT",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/SFT"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "SFT"
+          }
+        ]
+      },
+      {
+        "id": "CSU_C09.PATIENT",
+        "path": "CSU_C09.PATIENT",
+        "min": 1,
+        "max": "*",
+        "type": [
+          {
+            "code": "BackboneElement"
+          }
+        ]
+      },
+      {
+        "id": "CSU_C09.PATIENT.PID",
+        "path": "CSU_C09.PATIENT.PID",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "PID",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/PID"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "PID"
+          }
+        ]
+      },
+      {
+        "id": "CSU_C09.PATIENT.PD1",
+        "path": "CSU_C09.PATIENT.PD1",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "PD1",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/PD1"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "PD1"
+          }
+        ]
+      },
+      {
+        "id": "CSU_C09.PATIENT.NTE",
+        "path": "CSU_C09.PATIENT.NTE",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "NTE",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/NTE"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "NTE"
+          }
+        ]
+      },
+      {
+        "id": "CSU_C09.PATIENT.VISIT",
+        "path": "CSU_C09.PATIENT.VISIT",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "BackboneElement"
+          }
+        ]
+      },
+      {
+        "id": "CSU_C09.PATIENT.VISIT.PV1",
+        "path": "CSU_C09.PATIENT.VISIT.PV1",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "PV1",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/PV1"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "PV1"
+          }
+        ]
+      },
+      {
+        "id": "CSU_C09.PATIENT.VISIT.PV2",
+        "path": "CSU_C09.PATIENT.VISIT.PV2",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "PV2",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/PV2"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "PV2"
+          }
+        ]
+      },
+      {
+        "id": "CSU_C09.PATIENT.CSR",
+        "path": "CSU_C09.PATIENT.CSR",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "CSR",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/CSR"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "CSR"
+          }
+        ]
+      },
+      {
+        "id": "CSU_C09.PATIENT.STUDY_PHASE",
+        "path": "CSU_C09.PATIENT.STUDY_PHASE",
+        "min": 1,
+        "max": "*",
+        "type": [
+          {
+            "code": "BackboneElement"
+          }
+        ]
+      },
+      {
+        "id": "CSU_C09.PATIENT.STUDY_PHASE.CSP",
+        "path": "CSU_C09.PATIENT.STUDY_PHASE.CSP",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "CSP",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/CSP"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "CSP"
+          }
+        ]
+      },
+      {
+        "id": "CSU_C09.PATIENT.STUDY_PHASE.STUDY_SCHEDULE",
+        "path": "CSU_C09.PATIENT.STUDY_PHASE.STUDY_SCHEDULE",
+        "min": 1,
+        "max": "*",
+        "type": [
+          {
+            "code": "BackboneElement"
+          }
+        ]
+      },
+      {
+        "id": "CSU_C09.PATIENT.STUDY_PHASE.STUDY_SCHEDULE.CSS",
+        "path": "CSU_C09.PATIENT.STUDY_PHASE.STUDY_SCHEDULE.CSS",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "CSS",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/CSS"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "CSS"
+          }
+        ]
+      },
+      {
+        "id": "CSU_C09.PATIENT.STUDY_PHASE.STUDY_SCHEDULE.STUDY_OBSERVATION",
+        "path": "CSU_C09.PATIENT.STUDY_PHASE.STUDY_SCHEDULE.STUDY_OBSERVATION",
+        "min": 1,
+        "max": "*",
+        "type": [
+          {
+            "code": "BackboneElement"
+          }
+        ]
+      },
+      {
+        "id": "CSU_C09.PATIENT.STUDY_PHASE.STUDY_SCHEDULE.STUDY_OBSERVATION.ORC",
+        "path": "CSU_C09.PATIENT.STUDY_PHASE.STUDY_SCHEDULE.STUDY_OBSERVATION.ORC",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "ORC",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/ORC"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "ORC"
+          }
+        ]
+      },
+      {
+        "id": "CSU_C09.PATIENT.STUDY_PHASE.STUDY_SCHEDULE.STUDY_OBSERVATION.OBR",
+        "path": "CSU_C09.PATIENT.STUDY_PHASE.STUDY_SCHEDULE.STUDY_OBSERVATION.OBR",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "OBR",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/OBR"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "OBR"
+          }
+        ]
+      },
+      {
+        "id": "CSU_C09.PATIENT.STUDY_PHASE.STUDY_SCHEDULE.STUDY_OBSERVATION.TIMING_QTY",
+        "path": "CSU_C09.PATIENT.STUDY_PHASE.STUDY_SCHEDULE.STUDY_OBSERVATION.TIMING_QTY",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "BackboneElement"
+          }
+        ]
+      },
+      {
+        "id": "CSU_C09.PATIENT.STUDY_PHASE.STUDY_SCHEDULE.STUDY_OBSERVATION.TIMING_QTY.TQ1",
+        "path": "CSU_C09.PATIENT.STUDY_PHASE.STUDY_SCHEDULE.STUDY_OBSERVATION.TIMING_QTY.TQ1",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "TQ1",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/TQ1"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "TQ1"
+          }
+        ]
+      },
+      {
+        "id": "CSU_C09.PATIENT.STUDY_PHASE.STUDY_SCHEDULE.STUDY_OBSERVATION.TIMING_QTY.TQ2",
+        "path": "CSU_C09.PATIENT.STUDY_PHASE.STUDY_SCHEDULE.STUDY_OBSERVATION.TIMING_QTY.TQ2",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "TQ2",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/TQ2"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "TQ2"
+          }
+        ]
+      },
+      {
+        "id": "CSU_C09.PATIENT.STUDY_PHASE.STUDY_SCHEDULE.STUDY_OBSERVATION.OBX",
+        "path": "CSU_C09.PATIENT.STUDY_PHASE.STUDY_SCHEDULE.STUDY_OBSERVATION.OBX",
+        "min": 1,
+        "max": "*",
+        "type": [
+          {
+            "code": "OBX",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/OBX"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "OBX"
+          }
+        ]
+      },
+      {
+        "id": "CSU_C09.PATIENT.STUDY_PHASE.STUDY_SCHEDULE.STUDY_PHARM",
+        "path": "CSU_C09.PATIENT.STUDY_PHASE.STUDY_SCHEDULE.STUDY_PHARM",
+        "min": 1,
+        "max": "*",
+        "type": [
+          {
+            "code": "BackboneElement"
+          }
+        ]
+      },
+      {
+        "id": "CSU_C09.PATIENT.STUDY_PHASE.STUDY_SCHEDULE.STUDY_PHARM.ORC",
+        "path": "CSU_C09.PATIENT.STUDY_PHASE.STUDY_SCHEDULE.STUDY_PHARM.ORC",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "ORC",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/ORC"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "ORC"
+          }
+        ]
+      },
+      {
+        "id": "CSU_C09.PATIENT.STUDY_PHASE.STUDY_SCHEDULE.STUDY_PHARM.RX_ADMIN",
+        "path": "CSU_C09.PATIENT.STUDY_PHASE.STUDY_SCHEDULE.STUDY_PHARM.RX_ADMIN",
+        "min": 1,
+        "max": "*",
+        "type": [
+          {
+            "code": "BackboneElement"
+          }
+        ]
+      },
+      {
+        "id": "CSU_C09.PATIENT.STUDY_PHASE.STUDY_SCHEDULE.STUDY_PHARM.RX_ADMIN.RXA",
+        "path": "CSU_C09.PATIENT.STUDY_PHASE.STUDY_SCHEDULE.STUDY_PHARM.RX_ADMIN.RXA",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "RXA",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/RXA"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "RXA"
+          }
+        ]
+      },
+      {
+        "id": "CSU_C09.PATIENT.STUDY_PHASE.STUDY_SCHEDULE.STUDY_PHARM.RX_ADMIN.RXR",
+        "path": "CSU_C09.PATIENT.STUDY_PHASE.STUDY_SCHEDULE.STUDY_PHARM.RX_ADMIN.RXR",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "RXR",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/RXR"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "RXR"
+          }
+        ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,143 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "OVR",
+  "url": "http://hl7.org/fhir/StructureDefinition/OVR",
+  "name": "OVR",
+  "status": "active",
+  "fhirVersion": "4.0.1",
+  "kind": "logical",
+  "abstract": false,
+  "type": "OVR",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Element",
+  "derivation": "specialization",
+  "differential": {
+    "element": [
+      {
+        "id": "OVR",
+        "path": "OVR",
+        "type": [
+          {
+            "code": "Element"
+          }
+        ],
+        "mapping": [
+          {
+            "id": "OVR",
+            "identity": "v2",
+            "map": "OVR"
+          }
+        ]
+      },
+      {
+        "id": "OVR.BusinessRuleOverrideType",
+        "path": "OVR.BusinessRuleOverrideType",
+        "code": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/v2-0518"
+          }
+        ],
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "CWE",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/CWE"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "OVR.1"
+          }
+        ]
+      },
+      {
+        "id": "OVR.BusinessRuleOverrideCode",
+        "path": "OVR.BusinessRuleOverrideCode",
+        "code": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/v2-0521"
+          }
+        ],
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "CWE",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/CWE"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "OVR.2"
+          }
+        ]
+      },
+      {
+        "id": "OVR.OverrideComments",
+        "path": "OVR.OverrideComments",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "string",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/string"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "OVR.3"
+          }
+        ]
+      },
+      {
+        "id": "OVR.OverrideEnteredBy",
+        "path": "OVR.OverrideEnteredBy",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "XCN",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/XCN"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "OVR.4"
+          }
+        ]
+      },
+      {
+        "id": "OVR.OverrideAuthorizedBy",
+        "path": "OVR.OverrideAuthorizedBy",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "XCN",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/XCN"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "OVR.5"
+          }
+        ]
+      }
+    ]
+  }
+}

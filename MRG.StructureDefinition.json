@@ -1,0 +1,173 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "MRG",
+  "url": "http://hl7.org/fhir/StructureDefinition/MRG",
+  "name": "MRG",
+  "status": "active",
+  "fhirVersion": "4.0.1",
+  "kind": "logical",
+  "abstract": false,
+  "type": "MRG",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Element",
+  "derivation": "specialization",
+  "differential": {
+    "element": [
+      {
+        "id": "MRG",
+        "path": "MRG",
+        "type": [
+          {
+            "code": "Element"
+          }
+        ],
+        "mapping": [
+          {
+            "id": "MRG",
+            "identity": "v2",
+            "map": "MRG"
+          }
+        ]
+      },
+      {
+        "id": "MRG.PriorPatientIdentifierList",
+        "path": "MRG.PriorPatientIdentifierList",
+        "min": 1,
+        "max": "*",
+        "type": [
+          {
+            "code": "CX",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/CX"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "MRG.1"
+          }
+        ]
+      },
+      {
+        "id": "MRG.PriorAlternatePatientID",
+        "path": "MRG.PriorAlternatePatientID",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "CX",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/CX"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "MRG.2"
+          }
+        ]
+      },
+      {
+        "id": "MRG.PriorPatientAccountNumber",
+        "path": "MRG.PriorPatientAccountNumber",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "CX",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/CX"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "MRG.3"
+          }
+        ]
+      },
+      {
+        "id": "MRG.PriorPatientID",
+        "path": "MRG.PriorPatientID",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "CX",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/CX"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "MRG.4"
+          }
+        ]
+      },
+      {
+        "id": "MRG.PriorVisitNumber",
+        "path": "MRG.PriorVisitNumber",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "CX",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/CX"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "MRG.5"
+          }
+        ]
+      },
+      {
+        "id": "MRG.PriorAlternateVisitID",
+        "path": "MRG.PriorAlternateVisitID",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "CX",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/CX"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "MRG.6"
+          }
+        ]
+      },
+      {
+        "id": "MRG.PriorPatientName",
+        "path": "MRG.PriorPatientName",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "XPN",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/XPN"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "MRG.7"
+          }
+        ]
+      }
+    ]
+  }
+}

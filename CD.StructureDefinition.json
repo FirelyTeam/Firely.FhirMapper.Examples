@@ -1,0 +1,153 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "CD",
+  "url": "http://hl7.org/fhir/StructureDefinition/CD",
+  "name": "CD",
+  "status": "active",
+  "fhirVersion": "4.0.1",
+  "kind": "logical",
+  "abstract": false,
+  "type": "CD",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Element",
+  "derivation": "specialization",
+  "differential": {
+    "element": [
+      {
+        "id": "CD",
+        "path": "CD",
+        "type": [
+          {
+            "code": "Element"
+          }
+        ],
+        "mapping": [
+          {
+            "id": "CD",
+            "identity": "v2",
+            "map": "CD"
+          }
+        ]
+      },
+      {
+        "id": "CD.ChannelIdentifier",
+        "path": "CD.ChannelIdentifier",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "WVI",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/WVI"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "CD.1"
+          }
+        ]
+      },
+      {
+        "id": "CD.WaveformSource",
+        "path": "CD.WaveformSource",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "WVS",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/WVS"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "CD.2"
+          }
+        ]
+      },
+      {
+        "id": "CD.ChannelSensitivity/Units",
+        "path": "CD.ChannelSensitivity/Units",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "CSU",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/CSU"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "CD.3"
+          }
+        ]
+      },
+      {
+        "id": "CD.ChannelCalibrationParameters",
+        "path": "CD.ChannelCalibrationParameters",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "CCP",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/CCP"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "CD.4"
+          }
+        ]
+      },
+      {
+        "id": "CD.ChannelSamplingFrequency",
+        "path": "CD.ChannelSamplingFrequency",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "string",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/string"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "CD.5"
+          }
+        ]
+      },
+      {
+        "id": "CD.Minimum/MaximumDataValues",
+        "path": "CD.Minimum/MaximumDataValues",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "NR",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/NR"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "CD.6"
+          }
+        ]
+      }
+    ]
+  }
+}

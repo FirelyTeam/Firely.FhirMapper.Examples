@@ -1,0 +1,93 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "QCN_J01",
+  "url": "http://hl7.org/fhir/StructureDefinition/QCN_J01",
+  "name": "QCN_J01",
+  "status": "active",
+  "fhirVersion": "4.0.1",
+  "kind": "logical",
+  "abstract": false,
+  "type": "QCN_J01",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Element",
+  "derivation": "specialization",
+  "differential": {
+    "element": [
+      {
+        "id": "QCN_J01",
+        "path": "QCN_J01",
+        "type": [
+          {
+            "code": "Element"
+          }
+        ],
+        "mapping": [
+          {
+            "id": "QCN_J01",
+            "identity": "v2",
+            "map": "QCN_J01"
+          }
+        ]
+      },
+      {
+        "id": "QCN_J01.MSH",
+        "path": "QCN_J01.MSH",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "MSH",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/MSH"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "MSH"
+          }
+        ]
+      },
+      {
+        "id": "QCN_J01.SFT",
+        "path": "QCN_J01.SFT",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "SFT",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/SFT"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "SFT"
+          }
+        ]
+      },
+      {
+        "id": "QCN_J01.QID",
+        "path": "QCN_J01.QID",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "QID",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/QID"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "QID"
+          }
+        ]
+      }
+    ]
+  }
+}

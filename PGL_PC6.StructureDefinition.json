@@ -1,0 +1,706 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "PGL_PC6",
+  "url": "http://hl7.org/fhir/StructureDefinition/PGL_PC6",
+  "name": "PGL_PC6",
+  "status": "active",
+  "fhirVersion": "4.0.1",
+  "kind": "logical",
+  "abstract": false,
+  "type": "PGL_PC6",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Element",
+  "derivation": "specialization",
+  "differential": {
+    "element": [
+      {
+        "id": "PGL_PC6",
+        "path": "PGL_PC6",
+        "type": [
+          {
+            "code": "Element"
+          }
+        ],
+        "mapping": [
+          {
+            "id": "PGL_PC6",
+            "identity": "v2",
+            "map": "PGL_PC6"
+          }
+        ]
+      },
+      {
+        "id": "PGL_PC6.MSH",
+        "path": "PGL_PC6.MSH",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "MSH",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/MSH"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "MSH"
+          }
+        ]
+      },
+      {
+        "id": "PGL_PC6.SFT",
+        "path": "PGL_PC6.SFT",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "SFT",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/SFT"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "SFT"
+          }
+        ]
+      },
+      {
+        "id": "PGL_PC6.PID",
+        "path": "PGL_PC6.PID",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "PID",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/PID"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "PID"
+          }
+        ]
+      },
+      {
+        "id": "PGL_PC6.PATIENT_VISIT",
+        "path": "PGL_PC6.PATIENT_VISIT",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "BackboneElement"
+          }
+        ]
+      },
+      {
+        "id": "PGL_PC6.PATIENT_VISIT.PV1",
+        "path": "PGL_PC6.PATIENT_VISIT.PV1",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "PV1",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/PV1"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "PV1"
+          }
+        ]
+      },
+      {
+        "id": "PGL_PC6.PATIENT_VISIT.PV2",
+        "path": "PGL_PC6.PATIENT_VISIT.PV2",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "PV2",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/PV2"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "PV2"
+          }
+        ]
+      },
+      {
+        "id": "PGL_PC6.GOAL",
+        "path": "PGL_PC6.GOAL",
+        "min": 1,
+        "max": "*",
+        "type": [
+          {
+            "code": "BackboneElement"
+          }
+        ]
+      },
+      {
+        "id": "PGL_PC6.GOAL.GOL",
+        "path": "PGL_PC6.GOAL.GOL",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "GOL",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/GOL"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "GOL"
+          }
+        ]
+      },
+      {
+        "id": "PGL_PC6.GOAL.NTE",
+        "path": "PGL_PC6.GOAL.NTE",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "NTE",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/NTE"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "NTE"
+          }
+        ]
+      },
+      {
+        "id": "PGL_PC6.GOAL.VAR",
+        "path": "PGL_PC6.GOAL.VAR",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "VAR",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/VAR"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "VAR"
+          }
+        ]
+      },
+      {
+        "id": "PGL_PC6.GOAL.GOAL_ROLE",
+        "path": "PGL_PC6.GOAL.GOAL_ROLE",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "BackboneElement"
+          }
+        ]
+      },
+      {
+        "id": "PGL_PC6.GOAL.GOAL_ROLE.ROL",
+        "path": "PGL_PC6.GOAL.GOAL_ROLE.ROL",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "ROL",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/ROL"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "ROL"
+          }
+        ]
+      },
+      {
+        "id": "PGL_PC6.GOAL.GOAL_ROLE.VAR",
+        "path": "PGL_PC6.GOAL.GOAL_ROLE.VAR",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "VAR",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/VAR"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "VAR"
+          }
+        ]
+      },
+      {
+        "id": "PGL_PC6.GOAL.PATHWAY",
+        "path": "PGL_PC6.GOAL.PATHWAY",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "BackboneElement"
+          }
+        ]
+      },
+      {
+        "id": "PGL_PC6.GOAL.PATHWAY.PTH",
+        "path": "PGL_PC6.GOAL.PATHWAY.PTH",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "PTH",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/PTH"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "PTH"
+          }
+        ]
+      },
+      {
+        "id": "PGL_PC6.GOAL.PATHWAY.VAR",
+        "path": "PGL_PC6.GOAL.PATHWAY.VAR",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "VAR",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/VAR"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "VAR"
+          }
+        ]
+      },
+      {
+        "id": "PGL_PC6.GOAL.OBSERVATION",
+        "path": "PGL_PC6.GOAL.OBSERVATION",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "BackboneElement"
+          }
+        ]
+      },
+      {
+        "id": "PGL_PC6.GOAL.OBSERVATION.OBX",
+        "path": "PGL_PC6.GOAL.OBSERVATION.OBX",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "OBX",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/OBX"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "OBX"
+          }
+        ]
+      },
+      {
+        "id": "PGL_PC6.GOAL.OBSERVATION.NTE",
+        "path": "PGL_PC6.GOAL.OBSERVATION.NTE",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "NTE",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/NTE"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "NTE"
+          }
+        ]
+      },
+      {
+        "id": "PGL_PC6.GOAL.PROBLEM",
+        "path": "PGL_PC6.GOAL.PROBLEM",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "BackboneElement"
+          }
+        ]
+      },
+      {
+        "id": "PGL_PC6.GOAL.PROBLEM.PRB",
+        "path": "PGL_PC6.GOAL.PROBLEM.PRB",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "PRB",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/PRB"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "PRB"
+          }
+        ]
+      },
+      {
+        "id": "PGL_PC6.GOAL.PROBLEM.NTE",
+        "path": "PGL_PC6.GOAL.PROBLEM.NTE",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "NTE",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/NTE"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "NTE"
+          }
+        ]
+      },
+      {
+        "id": "PGL_PC6.GOAL.PROBLEM.VAR",
+        "path": "PGL_PC6.GOAL.PROBLEM.VAR",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "VAR",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/VAR"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "VAR"
+          }
+        ]
+      },
+      {
+        "id": "PGL_PC6.GOAL.PROBLEM.PROBLEM_ROLE",
+        "path": "PGL_PC6.GOAL.PROBLEM.PROBLEM_ROLE",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "BackboneElement"
+          }
+        ]
+      },
+      {
+        "id": "PGL_PC6.GOAL.PROBLEM.PROBLEM_ROLE.ROL",
+        "path": "PGL_PC6.GOAL.PROBLEM.PROBLEM_ROLE.ROL",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "ROL",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/ROL"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "ROL"
+          }
+        ]
+      },
+      {
+        "id": "PGL_PC6.GOAL.PROBLEM.PROBLEM_ROLE.VAR",
+        "path": "PGL_PC6.GOAL.PROBLEM.PROBLEM_ROLE.VAR",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "VAR",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/VAR"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "VAR"
+          }
+        ]
+      },
+      {
+        "id": "PGL_PC6.GOAL.PROBLEM.PROBLEM_OBSERVATION",
+        "path": "PGL_PC6.GOAL.PROBLEM.PROBLEM_OBSERVATION",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "BackboneElement"
+          }
+        ]
+      },
+      {
+        "id": "PGL_PC6.GOAL.PROBLEM.PROBLEM_OBSERVATION.OBX",
+        "path": "PGL_PC6.GOAL.PROBLEM.PROBLEM_OBSERVATION.OBX",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "OBX",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/OBX"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "OBX"
+          }
+        ]
+      },
+      {
+        "id": "PGL_PC6.GOAL.PROBLEM.PROBLEM_OBSERVATION.NTE",
+        "path": "PGL_PC6.GOAL.PROBLEM.PROBLEM_OBSERVATION.NTE",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "NTE",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/NTE"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "NTE"
+          }
+        ]
+      },
+      {
+        "id": "PGL_PC6.GOAL.ORDER",
+        "path": "PGL_PC6.GOAL.ORDER",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "BackboneElement"
+          }
+        ]
+      },
+      {
+        "id": "PGL_PC6.GOAL.ORDER.ORC",
+        "path": "PGL_PC6.GOAL.ORDER.ORC",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "ORC",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/ORC"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "ORC"
+          }
+        ]
+      },
+      {
+        "id": "PGL_PC6.GOAL.ORDER.ORDER_DETAIL",
+        "path": "PGL_PC6.GOAL.ORDER.ORDER_DETAIL",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "BackboneElement"
+          }
+        ]
+      },
+      {
+        "id": "PGL_PC6.GOAL.ORDER.ORDER_DETAIL.PGL_PC6.CHOICE",
+        "path": "PGL_PC6.GOAL.ORDER.ORDER_DETAIL.PGL_PC6.CHOICE",
+        "min": 1,
+        "max": "1",
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "PGL_PC6.CHOICE"
+          }
+        ]
+      },
+      {
+        "id": "PGL_PC6.GOAL.ORDER.ORDER_DETAIL.NTE",
+        "path": "PGL_PC6.GOAL.ORDER.ORDER_DETAIL.NTE",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "NTE",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/NTE"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "NTE"
+          }
+        ]
+      },
+      {
+        "id": "PGL_PC6.GOAL.ORDER.ORDER_DETAIL.VAR",
+        "path": "PGL_PC6.GOAL.ORDER.ORDER_DETAIL.VAR",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "VAR",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/VAR"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "VAR"
+          }
+        ]
+      },
+      {
+        "id": "PGL_PC6.GOAL.ORDER.ORDER_DETAIL.ORDER_OBSERVATION",
+        "path": "PGL_PC6.GOAL.ORDER.ORDER_DETAIL.ORDER_OBSERVATION",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "BackboneElement"
+          }
+        ]
+      },
+      {
+        "id": "PGL_PC6.GOAL.ORDER.ORDER_DETAIL.ORDER_OBSERVATION.OBX",
+        "path": "PGL_PC6.GOAL.ORDER.ORDER_DETAIL.ORDER_OBSERVATION.OBX",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "OBX",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/OBX"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "OBX"
+          }
+        ]
+      },
+      {
+        "id": "PGL_PC6.GOAL.ORDER.ORDER_DETAIL.ORDER_OBSERVATION.NTE",
+        "path": "PGL_PC6.GOAL.ORDER.ORDER_DETAIL.ORDER_OBSERVATION.NTE",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "NTE",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/NTE"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "NTE"
+          }
+        ]
+      },
+      {
+        "id": "PGL_PC6.GOAL.ORDER.ORDER_DETAIL.ORDER_OBSERVATION.VAR",
+        "path": "PGL_PC6.GOAL.ORDER.ORDER_DETAIL.ORDER_OBSERVATION.VAR",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "VAR",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/VAR"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "VAR"
+          }
+        ]
+      }
+    ]
+  }
+}

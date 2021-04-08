@@ -1,0 +1,203 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "AD",
+  "url": "http://hl7.org/fhir/StructureDefinition/AD",
+  "name": "AD",
+  "status": "active",
+  "fhirVersion": "4.0.1",
+  "kind": "logical",
+  "abstract": false,
+  "type": "AD",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Element",
+  "derivation": "specialization",
+  "differential": {
+    "element": [
+      {
+        "id": "AD",
+        "path": "AD",
+        "type": [
+          {
+            "code": "Element"
+          }
+        ],
+        "mapping": [
+          {
+            "id": "AD",
+            "identity": "v2",
+            "map": "AD"
+          }
+        ]
+      },
+      {
+        "id": "AD.StreetAddress",
+        "path": "AD.StreetAddress",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "string",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/string"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "AD.1"
+          }
+        ]
+      },
+      {
+        "id": "AD.OtherDesignation",
+        "path": "AD.OtherDesignation",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "string",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/string"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "AD.2"
+          }
+        ]
+      },
+      {
+        "id": "AD.City",
+        "path": "AD.City",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "string",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/string"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "AD.3"
+          }
+        ]
+      },
+      {
+        "id": "AD.StateorProvince",
+        "path": "AD.StateorProvince",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "string",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/string"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "AD.4"
+          }
+        ]
+      },
+      {
+        "id": "AD.ZiporPostalCode",
+        "path": "AD.ZiporPostalCode",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "string",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/string"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "AD.5"
+          }
+        ]
+      },
+      {
+        "id": "AD.Country",
+        "path": "AD.Country",
+        "code": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/v2-0399"
+          }
+        ],
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "string",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/string"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "AD.6"
+          }
+        ]
+      },
+      {
+        "id": "AD.AddressType",
+        "path": "AD.AddressType",
+        "code": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/v2-0190"
+          }
+        ],
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "string",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/string"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "AD.7"
+          }
+        ]
+      },
+      {
+        "id": "AD.OtherGeographicDesignation",
+        "path": "AD.OtherGeographicDesignation",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "string",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/string"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "AD.8"
+          }
+        ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,1047 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "OMG_O19",
+  "url": "http://hl7.org/fhir/StructureDefinition/OMG_O19",
+  "name": "OMG_O19",
+  "status": "active",
+  "fhirVersion": "4.0.1",
+  "kind": "logical",
+  "abstract": false,
+  "type": "OMG_O19",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Element",
+  "derivation": "specialization",
+  "differential": {
+    "element": [
+      {
+        "id": "OMG_O19",
+        "path": "OMG_O19",
+        "type": [
+          {
+            "code": "Element"
+          }
+        ],
+        "mapping": [
+          {
+            "id": "OMG_O19",
+            "identity": "v2",
+            "map": "OMG_O19"
+          }
+        ]
+      },
+      {
+        "id": "OMG_O19.MSH",
+        "path": "OMG_O19.MSH",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "MSH",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/MSH"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "MSH"
+          }
+        ]
+      },
+      {
+        "id": "OMG_O19.SFT",
+        "path": "OMG_O19.SFT",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "SFT",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/SFT"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "SFT"
+          }
+        ]
+      },
+      {
+        "id": "OMG_O19.NTE",
+        "path": "OMG_O19.NTE",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "NTE",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/NTE"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "NTE"
+          }
+        ]
+      },
+      {
+        "id": "OMG_O19.PATIENT",
+        "path": "OMG_O19.PATIENT",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "BackboneElement"
+          }
+        ]
+      },
+      {
+        "id": "OMG_O19.PATIENT.PID",
+        "path": "OMG_O19.PATIENT.PID",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "PID",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/PID"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "PID"
+          }
+        ]
+      },
+      {
+        "id": "OMG_O19.PATIENT.PD1",
+        "path": "OMG_O19.PATIENT.PD1",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "PD1",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/PD1"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "PD1"
+          }
+        ]
+      },
+      {
+        "id": "OMG_O19.PATIENT.NTE",
+        "path": "OMG_O19.PATIENT.NTE",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "NTE",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/NTE"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "NTE"
+          }
+        ]
+      },
+      {
+        "id": "OMG_O19.PATIENT.NK1",
+        "path": "OMG_O19.PATIENT.NK1",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "NK1",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/NK1"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "NK1"
+          }
+        ]
+      },
+      {
+        "id": "OMG_O19.PATIENT.PATIENT_VISIT",
+        "path": "OMG_O19.PATIENT.PATIENT_VISIT",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "BackboneElement"
+          }
+        ]
+      },
+      {
+        "id": "OMG_O19.PATIENT.PATIENT_VISIT.PV1",
+        "path": "OMG_O19.PATIENT.PATIENT_VISIT.PV1",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "PV1",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/PV1"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "PV1"
+          }
+        ]
+      },
+      {
+        "id": "OMG_O19.PATIENT.PATIENT_VISIT.PV2",
+        "path": "OMG_O19.PATIENT.PATIENT_VISIT.PV2",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "PV2",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/PV2"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "PV2"
+          }
+        ]
+      },
+      {
+        "id": "OMG_O19.PATIENT.INSURANCE",
+        "path": "OMG_O19.PATIENT.INSURANCE",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "BackboneElement"
+          }
+        ]
+      },
+      {
+        "id": "OMG_O19.PATIENT.INSURANCE.IN1",
+        "path": "OMG_O19.PATIENT.INSURANCE.IN1",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "IN1",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/IN1"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "IN1"
+          }
+        ]
+      },
+      {
+        "id": "OMG_O19.PATIENT.INSURANCE.IN2",
+        "path": "OMG_O19.PATIENT.INSURANCE.IN2",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "IN2",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/IN2"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "IN2"
+          }
+        ]
+      },
+      {
+        "id": "OMG_O19.PATIENT.INSURANCE.IN3",
+        "path": "OMG_O19.PATIENT.INSURANCE.IN3",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "IN3",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/IN3"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "IN3"
+          }
+        ]
+      },
+      {
+        "id": "OMG_O19.PATIENT.GT1",
+        "path": "OMG_O19.PATIENT.GT1",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "GT1",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/GT1"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "GT1"
+          }
+        ]
+      },
+      {
+        "id": "OMG_O19.PATIENT.AL1",
+        "path": "OMG_O19.PATIENT.AL1",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "AL1",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/AL1"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "AL1"
+          }
+        ]
+      },
+      {
+        "id": "OMG_O19.ORDER",
+        "path": "OMG_O19.ORDER",
+        "min": 1,
+        "max": "*",
+        "type": [
+          {
+            "code": "BackboneElement"
+          }
+        ]
+      },
+      {
+        "id": "OMG_O19.ORDER.ORC",
+        "path": "OMG_O19.ORDER.ORC",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "ORC",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/ORC"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "ORC"
+          }
+        ]
+      },
+      {
+        "id": "OMG_O19.ORDER.TIMING",
+        "path": "OMG_O19.ORDER.TIMING",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "BackboneElement"
+          }
+        ]
+      },
+      {
+        "id": "OMG_O19.ORDER.TIMING.TQ1",
+        "path": "OMG_O19.ORDER.TIMING.TQ1",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "TQ1",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/TQ1"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "TQ1"
+          }
+        ]
+      },
+      {
+        "id": "OMG_O19.ORDER.TIMING.TQ2",
+        "path": "OMG_O19.ORDER.TIMING.TQ2",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "TQ2",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/TQ2"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "TQ2"
+          }
+        ]
+      },
+      {
+        "id": "OMG_O19.ORDER.OBR",
+        "path": "OMG_O19.ORDER.OBR",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "OBR",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/OBR"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "OBR"
+          }
+        ]
+      },
+      {
+        "id": "OMG_O19.ORDER.NTE",
+        "path": "OMG_O19.ORDER.NTE",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "NTE",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/NTE"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "NTE"
+          }
+        ]
+      },
+      {
+        "id": "OMG_O19.ORDER.CTD",
+        "path": "OMG_O19.ORDER.CTD",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "CTD",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/CTD"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "CTD"
+          }
+        ]
+      },
+      {
+        "id": "OMG_O19.ORDER.DG1",
+        "path": "OMG_O19.ORDER.DG1",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "DG1",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/DG1"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "DG1"
+          }
+        ]
+      },
+      {
+        "id": "OMG_O19.ORDER.OBSERVATION",
+        "path": "OMG_O19.ORDER.OBSERVATION",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "BackboneElement"
+          }
+        ]
+      },
+      {
+        "id": "OMG_O19.ORDER.OBSERVATION.OBX",
+        "path": "OMG_O19.ORDER.OBSERVATION.OBX",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "OBX",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/OBX"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "OBX"
+          }
+        ]
+      },
+      {
+        "id": "OMG_O19.ORDER.OBSERVATION.NTE",
+        "path": "OMG_O19.ORDER.OBSERVATION.NTE",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "NTE",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/NTE"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "NTE"
+          }
+        ]
+      },
+      {
+        "id": "OMG_O19.ORDER.SPECIMEN",
+        "path": "OMG_O19.ORDER.SPECIMEN",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "BackboneElement"
+          }
+        ]
+      },
+      {
+        "id": "OMG_O19.ORDER.SPECIMEN.SPM",
+        "path": "OMG_O19.ORDER.SPECIMEN.SPM",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "SPM",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/SPM"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "SPM"
+          }
+        ]
+      },
+      {
+        "id": "OMG_O19.ORDER.SPECIMEN.OBX",
+        "path": "OMG_O19.ORDER.SPECIMEN.OBX",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "OBX",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/OBX"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "OBX"
+          }
+        ]
+      },
+      {
+        "id": "OMG_O19.ORDER.SPECIMEN.CONTAINER",
+        "path": "OMG_O19.ORDER.SPECIMEN.CONTAINER",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "BackboneElement"
+          }
+        ]
+      },
+      {
+        "id": "OMG_O19.ORDER.SPECIMEN.CONTAINER.SAC",
+        "path": "OMG_O19.ORDER.SPECIMEN.CONTAINER.SAC",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "SAC",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/SAC"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "SAC"
+          }
+        ]
+      },
+      {
+        "id": "OMG_O19.ORDER.SPECIMEN.CONTAINER.OBX",
+        "path": "OMG_O19.ORDER.SPECIMEN.CONTAINER.OBX",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "OBX",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/OBX"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "OBX"
+          }
+        ]
+      },
+      {
+        "id": "OMG_O19.ORDER.PRIOR_RESULT",
+        "path": "OMG_O19.ORDER.PRIOR_RESULT",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "BackboneElement"
+          }
+        ]
+      },
+      {
+        "id": "OMG_O19.ORDER.PRIOR_RESULT.PATIENT_PRIOR",
+        "path": "OMG_O19.ORDER.PRIOR_RESULT.PATIENT_PRIOR",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "BackboneElement"
+          }
+        ]
+      },
+      {
+        "id": "OMG_O19.ORDER.PRIOR_RESULT.PATIENT_PRIOR.PID",
+        "path": "OMG_O19.ORDER.PRIOR_RESULT.PATIENT_PRIOR.PID",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "PID",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/PID"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "PID"
+          }
+        ]
+      },
+      {
+        "id": "OMG_O19.ORDER.PRIOR_RESULT.PATIENT_PRIOR.PD1",
+        "path": "OMG_O19.ORDER.PRIOR_RESULT.PATIENT_PRIOR.PD1",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "PD1",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/PD1"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "PD1"
+          }
+        ]
+      },
+      {
+        "id": "OMG_O19.ORDER.PRIOR_RESULT.PATIENT_VISIT_PRIOR",
+        "path": "OMG_O19.ORDER.PRIOR_RESULT.PATIENT_VISIT_PRIOR",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "BackboneElement"
+          }
+        ]
+      },
+      {
+        "id": "OMG_O19.ORDER.PRIOR_RESULT.PATIENT_VISIT_PRIOR.PV1",
+        "path": "OMG_O19.ORDER.PRIOR_RESULT.PATIENT_VISIT_PRIOR.PV1",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "PV1",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/PV1"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "PV1"
+          }
+        ]
+      },
+      {
+        "id": "OMG_O19.ORDER.PRIOR_RESULT.PATIENT_VISIT_PRIOR.PV2",
+        "path": "OMG_O19.ORDER.PRIOR_RESULT.PATIENT_VISIT_PRIOR.PV2",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "PV2",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/PV2"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "PV2"
+          }
+        ]
+      },
+      {
+        "id": "OMG_O19.ORDER.PRIOR_RESULT.AL1",
+        "path": "OMG_O19.ORDER.PRIOR_RESULT.AL1",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "AL1",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/AL1"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "AL1"
+          }
+        ]
+      },
+      {
+        "id": "OMG_O19.ORDER.PRIOR_RESULT.ORDER_PRIOR",
+        "path": "OMG_O19.ORDER.PRIOR_RESULT.ORDER_PRIOR",
+        "min": 1,
+        "max": "*",
+        "type": [
+          {
+            "code": "BackboneElement"
+          }
+        ]
+      },
+      {
+        "id": "OMG_O19.ORDER.PRIOR_RESULT.ORDER_PRIOR.ORC",
+        "path": "OMG_O19.ORDER.PRIOR_RESULT.ORDER_PRIOR.ORC",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "ORC",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/ORC"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "ORC"
+          }
+        ]
+      },
+      {
+        "id": "OMG_O19.ORDER.PRIOR_RESULT.ORDER_PRIOR.OBR",
+        "path": "OMG_O19.ORDER.PRIOR_RESULT.ORDER_PRIOR.OBR",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "OBR",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/OBR"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "OBR"
+          }
+        ]
+      },
+      {
+        "id": "OMG_O19.ORDER.PRIOR_RESULT.ORDER_PRIOR.TIMING_PRIOR",
+        "path": "OMG_O19.ORDER.PRIOR_RESULT.ORDER_PRIOR.TIMING_PRIOR",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "BackboneElement"
+          }
+        ]
+      },
+      {
+        "id": "OMG_O19.ORDER.PRIOR_RESULT.ORDER_PRIOR.TIMING_PRIOR.TQ1",
+        "path": "OMG_O19.ORDER.PRIOR_RESULT.ORDER_PRIOR.TIMING_PRIOR.TQ1",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "TQ1",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/TQ1"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "TQ1"
+          }
+        ]
+      },
+      {
+        "id": "OMG_O19.ORDER.PRIOR_RESULT.ORDER_PRIOR.TIMING_PRIOR.TQ2",
+        "path": "OMG_O19.ORDER.PRIOR_RESULT.ORDER_PRIOR.TIMING_PRIOR.TQ2",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "TQ2",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/TQ2"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "TQ2"
+          }
+        ]
+      },
+      {
+        "id": "OMG_O19.ORDER.PRIOR_RESULT.ORDER_PRIOR.NTE",
+        "path": "OMG_O19.ORDER.PRIOR_RESULT.ORDER_PRIOR.NTE",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "NTE",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/NTE"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "NTE"
+          }
+        ]
+      },
+      {
+        "id": "OMG_O19.ORDER.PRIOR_RESULT.ORDER_PRIOR.CTD",
+        "path": "OMG_O19.ORDER.PRIOR_RESULT.ORDER_PRIOR.CTD",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "CTD",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/CTD"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "CTD"
+          }
+        ]
+      },
+      {
+        "id": "OMG_O19.ORDER.PRIOR_RESULT.ORDER_PRIOR.OBSERVATION_PRIOR",
+        "path": "OMG_O19.ORDER.PRIOR_RESULT.ORDER_PRIOR.OBSERVATION_PRIOR",
+        "min": 1,
+        "max": "*",
+        "type": [
+          {
+            "code": "BackboneElement"
+          }
+        ]
+      },
+      {
+        "id": "OMG_O19.ORDER.PRIOR_RESULT.ORDER_PRIOR.OBSERVATION_PRIOR.OBX",
+        "path": "OMG_O19.ORDER.PRIOR_RESULT.ORDER_PRIOR.OBSERVATION_PRIOR.OBX",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "OBX",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/OBX"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "OBX"
+          }
+        ]
+      },
+      {
+        "id": "OMG_O19.ORDER.PRIOR_RESULT.ORDER_PRIOR.OBSERVATION_PRIOR.NTE",
+        "path": "OMG_O19.ORDER.PRIOR_RESULT.ORDER_PRIOR.OBSERVATION_PRIOR.NTE",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "NTE",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/NTE"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "NTE"
+          }
+        ]
+      },
+      {
+        "id": "OMG_O19.ORDER.FT1",
+        "path": "OMG_O19.ORDER.FT1",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "FT1",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/FT1"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "FT1"
+          }
+        ]
+      },
+      {
+        "id": "OMG_O19.ORDER.CTI",
+        "path": "OMG_O19.ORDER.CTI",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "CTI",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/CTI"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "CTI"
+          }
+        ]
+      },
+      {
+        "id": "OMG_O19.ORDER.BLG",
+        "path": "OMG_O19.ORDER.BLG",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "BLG",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/BLG"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "BLG"
+          }
+        ]
+      }
+    ]
+  }
+}

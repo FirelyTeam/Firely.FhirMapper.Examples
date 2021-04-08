@@ -1,0 +1,73 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "OM6",
+  "url": "http://hl7.org/fhir/StructureDefinition/OM6",
+  "name": "OM6",
+  "status": "active",
+  "fhirVersion": "4.0.1",
+  "kind": "logical",
+  "abstract": false,
+  "type": "OM6",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Element",
+  "derivation": "specialization",
+  "differential": {
+    "element": [
+      {
+        "id": "OM6",
+        "path": "OM6",
+        "type": [
+          {
+            "code": "Element"
+          }
+        ],
+        "mapping": [
+          {
+            "id": "OM6",
+            "identity": "v2",
+            "map": "OM6"
+          }
+        ]
+      },
+      {
+        "id": "OM6.SequenceNumber-Test/ObservationMasterFile",
+        "path": "OM6.SequenceNumber-Test/ObservationMasterFile",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "string",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/string"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "OM6.1"
+          }
+        ]
+      },
+      {
+        "id": "OM6.DerivationRule",
+        "path": "OM6.DerivationRule",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "string",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/string"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "OM6.2"
+          }
+        ]
+      }
+    ]
+  }
+}

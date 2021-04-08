@@ -1,0 +1,253 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "CM0",
+  "url": "http://hl7.org/fhir/StructureDefinition/CM0",
+  "name": "CM0",
+  "status": "active",
+  "fhirVersion": "4.0.1",
+  "kind": "logical",
+  "abstract": false,
+  "type": "CM0",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Element",
+  "derivation": "specialization",
+  "differential": {
+    "element": [
+      {
+        "id": "CM0",
+        "path": "CM0",
+        "type": [
+          {
+            "code": "Element"
+          }
+        ],
+        "mapping": [
+          {
+            "id": "CM0",
+            "identity": "v2",
+            "map": "CM0"
+          }
+        ]
+      },
+      {
+        "id": "CM0.SetID-CM0",
+        "path": "CM0.SetID-CM0",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "string",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/string"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "CM0.1"
+          }
+        ]
+      },
+      {
+        "id": "CM0.SponsorStudyID",
+        "path": "CM0.SponsorStudyID",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "EI",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/EI"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "CM0.2"
+          }
+        ]
+      },
+      {
+        "id": "CM0.AlternateStudyID",
+        "path": "CM0.AlternateStudyID",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "EI",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/EI"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "CM0.3"
+          }
+        ]
+      },
+      {
+        "id": "CM0.TitleofStudy",
+        "path": "CM0.TitleofStudy",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "string",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/string"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "CM0.4"
+          }
+        ]
+      },
+      {
+        "id": "CM0.ChairmanofStudy",
+        "path": "CM0.ChairmanofStudy",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "XCN",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/XCN"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "CM0.5"
+          }
+        ]
+      },
+      {
+        "id": "CM0.LastIRBApprovalDate",
+        "path": "CM0.LastIRBApprovalDate",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "string",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/string"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "CM0.6"
+          }
+        ]
+      },
+      {
+        "id": "CM0.TotalAccrualtoDate",
+        "path": "CM0.TotalAccrualtoDate",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "string",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/string"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "CM0.7"
+          }
+        ]
+      },
+      {
+        "id": "CM0.LastAccrualDate",
+        "path": "CM0.LastAccrualDate",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "string",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/string"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "CM0.8"
+          }
+        ]
+      },
+      {
+        "id": "CM0.ContactforStudy",
+        "path": "CM0.ContactforStudy",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "XCN",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/XCN"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "CM0.9"
+          }
+        ]
+      },
+      {
+        "id": "CM0.Contact'sTelephoneNumber",
+        "path": "CM0.Contact'sTelephoneNumber",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "XTN",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/XTN"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "CM0.10"
+          }
+        ]
+      },
+      {
+        "id": "CM0.Contact'sAddress",
+        "path": "CM0.Contact'sAddress",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "XAD",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/XAD"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "CM0.11"
+          }
+        ]
+      }
+    ]
+  }
+}

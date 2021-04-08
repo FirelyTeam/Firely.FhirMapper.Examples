@@ -1,0 +1,204 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "QBP_K13",
+  "url": "http://hl7.org/fhir/StructureDefinition/QBP_K13",
+  "name": "QBP_K13",
+  "status": "active",
+  "fhirVersion": "4.0.1",
+  "kind": "logical",
+  "abstract": false,
+  "type": "QBP_K13",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Element",
+  "derivation": "specialization",
+  "differential": {
+    "element": [
+      {
+        "id": "QBP_K13",
+        "path": "QBP_K13",
+        "type": [
+          {
+            "code": "Element"
+          }
+        ],
+        "mapping": [
+          {
+            "id": "QBP_K13",
+            "identity": "v2",
+            "map": "QBP_K13"
+          }
+        ]
+      },
+      {
+        "id": "QBP_K13.MSH",
+        "path": "QBP_K13.MSH",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "MSH",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/MSH"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "MSH"
+          }
+        ]
+      },
+      {
+        "id": "QBP_K13.MSA",
+        "path": "QBP_K13.MSA",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "MSA",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/MSA"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "MSA"
+          }
+        ]
+      },
+      {
+        "id": "QBP_K13.ERR",
+        "path": "QBP_K13.ERR",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "ERR",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/ERR"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "ERR"
+          }
+        ]
+      },
+      {
+        "id": "QBP_K13.QAK",
+        "path": "QBP_K13.QAK",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "QAK",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/QAK"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "QAK"
+          }
+        ]
+      },
+      {
+        "id": "QBP_K13.QPD",
+        "path": "QBP_K13.QPD",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "QPD",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/QPD"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "QPD"
+          }
+        ]
+      },
+      {
+        "id": "QBP_K13.ROW_DEFINITION",
+        "path": "QBP_K13.ROW_DEFINITION",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "BackboneElement"
+          }
+        ]
+      },
+      {
+        "id": "QBP_K13.ROW_DEFINITION.RDF",
+        "path": "QBP_K13.ROW_DEFINITION.RDF",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "RDF",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/RDF"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "RDF"
+          }
+        ]
+      },
+      {
+        "id": "QBP_K13.ROW_DEFINITION.RDT",
+        "path": "QBP_K13.ROW_DEFINITION.RDT",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "RDT",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/RDT"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "RDT"
+          }
+        ]
+      },
+      {
+        "id": "QBP_K13.DSC",
+        "path": "QBP_K13.DSC",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "DSC",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/DSC"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "DSC"
+          }
+        ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,163 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "QAK",
+  "url": "http://hl7.org/fhir/StructureDefinition/QAK",
+  "name": "QAK",
+  "status": "active",
+  "fhirVersion": "4.0.1",
+  "kind": "logical",
+  "abstract": false,
+  "type": "QAK",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Element",
+  "derivation": "specialization",
+  "differential": {
+    "element": [
+      {
+        "id": "QAK",
+        "path": "QAK",
+        "type": [
+          {
+            "code": "Element"
+          }
+        ],
+        "mapping": [
+          {
+            "id": "QAK",
+            "identity": "v2",
+            "map": "QAK"
+          }
+        ]
+      },
+      {
+        "id": "QAK.QueryTag",
+        "path": "QAK.QueryTag",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "string",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/string"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "QAK.1"
+          }
+        ]
+      },
+      {
+        "id": "QAK.QueryResponseStatus",
+        "path": "QAK.QueryResponseStatus",
+        "code": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/v2-0208"
+          }
+        ],
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "string",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/string"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "QAK.2"
+          }
+        ]
+      },
+      {
+        "id": "QAK.MessageQueryName",
+        "path": "QAK.MessageQueryName",
+        "code": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/v2-0471"
+          }
+        ],
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "CE",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/CE"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "QAK.3"
+          }
+        ]
+      },
+      {
+        "id": "QAK.HitCount",
+        "path": "QAK.HitCount",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "string",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/string"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "QAK.4"
+          }
+        ]
+      },
+      {
+        "id": "QAK.Thispayload",
+        "path": "QAK.Thispayload",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "string",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/string"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "QAK.5"
+          }
+        ]
+      },
+      {
+        "id": "QAK.Hitsremaining",
+        "path": "QAK.Hitsremaining",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "string",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/string"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "QAK.6"
+          }
+        ]
+      }
+    ]
+  }
+}

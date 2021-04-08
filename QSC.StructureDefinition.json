@@ -1,0 +1,123 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "QSC",
+  "url": "http://hl7.org/fhir/StructureDefinition/QSC",
+  "name": "QSC",
+  "status": "active",
+  "fhirVersion": "4.0.1",
+  "kind": "logical",
+  "abstract": false,
+  "type": "QSC",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Element",
+  "derivation": "specialization",
+  "differential": {
+    "element": [
+      {
+        "id": "QSC",
+        "path": "QSC",
+        "type": [
+          {
+            "code": "Element"
+          }
+        ],
+        "mapping": [
+          {
+            "id": "QSC",
+            "identity": "v2",
+            "map": "QSC"
+          }
+        ]
+      },
+      {
+        "id": "QSC.SegmentFieldName",
+        "path": "QSC.SegmentFieldName",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "string",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/string"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "QSC.1"
+          }
+        ]
+      },
+      {
+        "id": "QSC.RelationalOperator",
+        "path": "QSC.RelationalOperator",
+        "code": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/v2-0209"
+          }
+        ],
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "string",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/string"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "QSC.2"
+          }
+        ]
+      },
+      {
+        "id": "QSC.Value",
+        "path": "QSC.Value",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "string",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/string"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "QSC.3"
+          }
+        ]
+      },
+      {
+        "id": "QSC.RelationalConjunction",
+        "path": "QSC.RelationalConjunction",
+        "code": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/v2-0210"
+          }
+        ],
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "string",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/string"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "QSC.4"
+          }
+        ]
+      }
+    ]
+  }
+}

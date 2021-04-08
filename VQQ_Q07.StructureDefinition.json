@@ -1,0 +1,133 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "VQQ_Q07",
+  "url": "http://hl7.org/fhir/StructureDefinition/VQQ_Q07",
+  "name": "VQQ_Q07",
+  "status": "active",
+  "fhirVersion": "4.0.1",
+  "kind": "logical",
+  "abstract": false,
+  "type": "VQQ_Q07",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Element",
+  "derivation": "specialization",
+  "differential": {
+    "element": [
+      {
+        "id": "VQQ_Q07",
+        "path": "VQQ_Q07",
+        "type": [
+          {
+            "code": "Element"
+          }
+        ],
+        "mapping": [
+          {
+            "id": "VQQ_Q07",
+            "identity": "v2",
+            "map": "VQQ_Q07"
+          }
+        ]
+      },
+      {
+        "id": "VQQ_Q07.MSH",
+        "path": "VQQ_Q07.MSH",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "MSH",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/MSH"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "MSH"
+          }
+        ]
+      },
+      {
+        "id": "VQQ_Q07.SFT",
+        "path": "VQQ_Q07.SFT",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "SFT",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/SFT"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "SFT"
+          }
+        ]
+      },
+      {
+        "id": "VQQ_Q07.VTQ",
+        "path": "VQQ_Q07.VTQ",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "VTQ",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/VTQ"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "VTQ"
+          }
+        ]
+      },
+      {
+        "id": "VQQ_Q07.RDF",
+        "path": "VQQ_Q07.RDF",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "RDF",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/RDF"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "RDF"
+          }
+        ]
+      },
+      {
+        "id": "VQQ_Q07.DSC",
+        "path": "VQQ_Q07.DSC",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "DSC",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/DSC"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "DSC"
+          }
+        ]
+      }
+    ]
+  }
+}

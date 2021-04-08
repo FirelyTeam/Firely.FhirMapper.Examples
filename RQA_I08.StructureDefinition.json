@@ -1,0 +1,672 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "RQA_I08",
+  "url": "http://hl7.org/fhir/StructureDefinition/RQA_I08",
+  "name": "RQA_I08",
+  "status": "active",
+  "fhirVersion": "4.0.1",
+  "kind": "logical",
+  "abstract": false,
+  "type": "RQA_I08",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Element",
+  "derivation": "specialization",
+  "differential": {
+    "element": [
+      {
+        "id": "RQA_I08",
+        "path": "RQA_I08",
+        "type": [
+          {
+            "code": "Element"
+          }
+        ],
+        "mapping": [
+          {
+            "id": "RQA_I08",
+            "identity": "v2",
+            "map": "RQA_I08"
+          }
+        ]
+      },
+      {
+        "id": "RQA_I08.MSH",
+        "path": "RQA_I08.MSH",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "MSH",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/MSH"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "MSH"
+          }
+        ]
+      },
+      {
+        "id": "RQA_I08.SFT",
+        "path": "RQA_I08.SFT",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "SFT",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/SFT"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "SFT"
+          }
+        ]
+      },
+      {
+        "id": "RQA_I08.RF1",
+        "path": "RQA_I08.RF1",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "RF1",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/RF1"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "RF1"
+          }
+        ]
+      },
+      {
+        "id": "RQA_I08.AUTHORIZATION",
+        "path": "RQA_I08.AUTHORIZATION",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "BackboneElement"
+          }
+        ]
+      },
+      {
+        "id": "RQA_I08.AUTHORIZATION.AUT",
+        "path": "RQA_I08.AUTHORIZATION.AUT",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "AUT",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/AUT"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "AUT"
+          }
+        ]
+      },
+      {
+        "id": "RQA_I08.AUTHORIZATION.CTD",
+        "path": "RQA_I08.AUTHORIZATION.CTD",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "CTD",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/CTD"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "CTD"
+          }
+        ]
+      },
+      {
+        "id": "RQA_I08.PROVIDER",
+        "path": "RQA_I08.PROVIDER",
+        "min": 1,
+        "max": "*",
+        "type": [
+          {
+            "code": "BackboneElement"
+          }
+        ]
+      },
+      {
+        "id": "RQA_I08.PROVIDER.PRD",
+        "path": "RQA_I08.PROVIDER.PRD",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "PRD",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/PRD"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "PRD"
+          }
+        ]
+      },
+      {
+        "id": "RQA_I08.PROVIDER.CTD",
+        "path": "RQA_I08.PROVIDER.CTD",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "CTD",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/CTD"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "CTD"
+          }
+        ]
+      },
+      {
+        "id": "RQA_I08.PID",
+        "path": "RQA_I08.PID",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "PID",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/PID"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "PID"
+          }
+        ]
+      },
+      {
+        "id": "RQA_I08.NK1",
+        "path": "RQA_I08.NK1",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "NK1",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/NK1"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "NK1"
+          }
+        ]
+      },
+      {
+        "id": "RQA_I08.GUARANTOR_INSURANCE",
+        "path": "RQA_I08.GUARANTOR_INSURANCE",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "BackboneElement"
+          }
+        ]
+      },
+      {
+        "id": "RQA_I08.GUARANTOR_INSURANCE.GT1",
+        "path": "RQA_I08.GUARANTOR_INSURANCE.GT1",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "GT1",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/GT1"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "GT1"
+          }
+        ]
+      },
+      {
+        "id": "RQA_I08.GUARANTOR_INSURANCE.INSURANCE",
+        "path": "RQA_I08.GUARANTOR_INSURANCE.INSURANCE",
+        "min": 1,
+        "max": "*",
+        "type": [
+          {
+            "code": "BackboneElement"
+          }
+        ]
+      },
+      {
+        "id": "RQA_I08.GUARANTOR_INSURANCE.INSURANCE.IN1",
+        "path": "RQA_I08.GUARANTOR_INSURANCE.INSURANCE.IN1",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "IN1",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/IN1"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "IN1"
+          }
+        ]
+      },
+      {
+        "id": "RQA_I08.GUARANTOR_INSURANCE.INSURANCE.IN2",
+        "path": "RQA_I08.GUARANTOR_INSURANCE.INSURANCE.IN2",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "IN2",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/IN2"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "IN2"
+          }
+        ]
+      },
+      {
+        "id": "RQA_I08.GUARANTOR_INSURANCE.INSURANCE.IN3",
+        "path": "RQA_I08.GUARANTOR_INSURANCE.INSURANCE.IN3",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "IN3",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/IN3"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "IN3"
+          }
+        ]
+      },
+      {
+        "id": "RQA_I08.ACC",
+        "path": "RQA_I08.ACC",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "ACC",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/ACC"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "ACC"
+          }
+        ]
+      },
+      {
+        "id": "RQA_I08.DG1",
+        "path": "RQA_I08.DG1",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "DG1",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/DG1"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "DG1"
+          }
+        ]
+      },
+      {
+        "id": "RQA_I08.DRG",
+        "path": "RQA_I08.DRG",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "DRG",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/DRG"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "DRG"
+          }
+        ]
+      },
+      {
+        "id": "RQA_I08.AL1",
+        "path": "RQA_I08.AL1",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "AL1",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/AL1"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "AL1"
+          }
+        ]
+      },
+      {
+        "id": "RQA_I08.PROCEDURE",
+        "path": "RQA_I08.PROCEDURE",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "BackboneElement"
+          }
+        ]
+      },
+      {
+        "id": "RQA_I08.PROCEDURE.PR1",
+        "path": "RQA_I08.PROCEDURE.PR1",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "PR1",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/PR1"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "PR1"
+          }
+        ]
+      },
+      {
+        "id": "RQA_I08.PROCEDURE.AUTCTD_SUPPGRP2",
+        "path": "RQA_I08.PROCEDURE.AUTCTD_SUPPGRP2",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "BackboneElement"
+          }
+        ]
+      },
+      {
+        "id": "RQA_I08.PROCEDURE.AUTCTD_SUPPGRP2.AUT",
+        "path": "RQA_I08.PROCEDURE.AUTCTD_SUPPGRP2.AUT",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "AUT",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/AUT"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "AUT"
+          }
+        ]
+      },
+      {
+        "id": "RQA_I08.PROCEDURE.AUTCTD_SUPPGRP2.CTD",
+        "path": "RQA_I08.PROCEDURE.AUTCTD_SUPPGRP2.CTD",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "CTD",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/CTD"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "CTD"
+          }
+        ]
+      },
+      {
+        "id": "RQA_I08.OBSERVATION",
+        "path": "RQA_I08.OBSERVATION",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "BackboneElement"
+          }
+        ]
+      },
+      {
+        "id": "RQA_I08.OBSERVATION.OBR",
+        "path": "RQA_I08.OBSERVATION.OBR",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "OBR",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/OBR"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "OBR"
+          }
+        ]
+      },
+      {
+        "id": "RQA_I08.OBSERVATION.NTE",
+        "path": "RQA_I08.OBSERVATION.NTE",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "NTE",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/NTE"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "NTE"
+          }
+        ]
+      },
+      {
+        "id": "RQA_I08.OBSERVATION.RESULTS",
+        "path": "RQA_I08.OBSERVATION.RESULTS",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "BackboneElement"
+          }
+        ]
+      },
+      {
+        "id": "RQA_I08.OBSERVATION.RESULTS.OBX",
+        "path": "RQA_I08.OBSERVATION.RESULTS.OBX",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "OBX",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/OBX"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "OBX"
+          }
+        ]
+      },
+      {
+        "id": "RQA_I08.OBSERVATION.RESULTS.NTE",
+        "path": "RQA_I08.OBSERVATION.RESULTS.NTE",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "NTE",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/NTE"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "NTE"
+          }
+        ]
+      },
+      {
+        "id": "RQA_I08.VISIT",
+        "path": "RQA_I08.VISIT",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "BackboneElement"
+          }
+        ]
+      },
+      {
+        "id": "RQA_I08.VISIT.PV1",
+        "path": "RQA_I08.VISIT.PV1",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "PV1",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/PV1"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "PV1"
+          }
+        ]
+      },
+      {
+        "id": "RQA_I08.VISIT.PV2",
+        "path": "RQA_I08.VISIT.PV2",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "PV2",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/PV2"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "PV2"
+          }
+        ]
+      },
+      {
+        "id": "RQA_I08.NTE",
+        "path": "RQA_I08.NTE",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "NTE",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/NTE"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "NTE"
+          }
+        ]
+      }
+    ]
+  }
+}

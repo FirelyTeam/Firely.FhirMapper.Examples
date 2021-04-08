@@ -1,0 +1,273 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "RPT",
+  "url": "http://hl7.org/fhir/StructureDefinition/RPT",
+  "name": "RPT",
+  "status": "active",
+  "fhirVersion": "4.0.1",
+  "kind": "logical",
+  "abstract": false,
+  "type": "RPT",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Element",
+  "derivation": "specialization",
+  "differential": {
+    "element": [
+      {
+        "id": "RPT",
+        "path": "RPT",
+        "type": [
+          {
+            "code": "Element"
+          }
+        ],
+        "mapping": [
+          {
+            "id": "RPT",
+            "identity": "v2",
+            "map": "RPT"
+          }
+        ]
+      },
+      {
+        "id": "RPT.RepeatPatternCode",
+        "path": "RPT.RepeatPatternCode",
+        "code": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/v2-0335"
+          }
+        ],
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "CWE",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/CWE"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "RPT.1"
+          }
+        ]
+      },
+      {
+        "id": "RPT.CalendarAlignment",
+        "path": "RPT.CalendarAlignment",
+        "code": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/v2-0527"
+          }
+        ],
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "string",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/string"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "RPT.2"
+          }
+        ]
+      },
+      {
+        "id": "RPT.PhaseRangeBeginValue",
+        "path": "RPT.PhaseRangeBeginValue",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "string",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/string"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "RPT.3"
+          }
+        ]
+      },
+      {
+        "id": "RPT.PhaseRangeEndValue",
+        "path": "RPT.PhaseRangeEndValue",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "string",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/string"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "RPT.4"
+          }
+        ]
+      },
+      {
+        "id": "RPT.PeriodQuantity",
+        "path": "RPT.PeriodQuantity",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "string",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/string"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "RPT.5"
+          }
+        ]
+      },
+      {
+        "id": "RPT.PeriodUnits",
+        "path": "RPT.PeriodUnits",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "string",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/string"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "RPT.6"
+          }
+        ]
+      },
+      {
+        "id": "RPT.InstitutionSpecifiedTime",
+        "path": "RPT.InstitutionSpecifiedTime",
+        "code": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/v2-0136"
+          }
+        ],
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "string",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/string"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "RPT.7"
+          }
+        ]
+      },
+      {
+        "id": "RPT.Event",
+        "path": "RPT.Event",
+        "code": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/v2-0528"
+          }
+        ],
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "string",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/string"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "RPT.8"
+          }
+        ]
+      },
+      {
+        "id": "RPT.EventOffsetQuantity",
+        "path": "RPT.EventOffsetQuantity",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "string",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/string"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "RPT.9"
+          }
+        ]
+      },
+      {
+        "id": "RPT.EventOffsetUnits",
+        "path": "RPT.EventOffsetUnits",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "string",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/string"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "RPT.10"
+          }
+        ]
+      },
+      {
+        "id": "RPT.GeneralTimingSpecification",
+        "path": "RPT.GeneralTimingSpecification",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "string",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/string"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "RPT.11"
+          }
+        ]
+      }
+    ]
+  }
+}

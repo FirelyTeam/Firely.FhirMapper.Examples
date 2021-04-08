@@ -1,0 +1,78 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "QID",
+  "url": "http://hl7.org/fhir/StructureDefinition/QID",
+  "name": "QID",
+  "status": "active",
+  "fhirVersion": "4.0.1",
+  "kind": "logical",
+  "abstract": false,
+  "type": "QID",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Element",
+  "derivation": "specialization",
+  "differential": {
+    "element": [
+      {
+        "id": "QID",
+        "path": "QID",
+        "type": [
+          {
+            "code": "Element"
+          }
+        ],
+        "mapping": [
+          {
+            "id": "QID",
+            "identity": "v2",
+            "map": "QID"
+          }
+        ]
+      },
+      {
+        "id": "QID.QueryTag",
+        "path": "QID.QueryTag",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "string",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/string"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "QID.1"
+          }
+        ]
+      },
+      {
+        "id": "QID.MessageQueryName",
+        "path": "QID.MessageQueryName",
+        "code": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/v2-0471"
+          }
+        ],
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "CE",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/CE"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "QID.2"
+          }
+        ]
+      }
+    ]
+  }
+}

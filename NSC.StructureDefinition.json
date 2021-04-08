@@ -1,0 +1,218 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "NSC",
+  "url": "http://hl7.org/fhir/StructureDefinition/NSC",
+  "name": "NSC",
+  "status": "active",
+  "fhirVersion": "4.0.1",
+  "kind": "logical",
+  "abstract": false,
+  "type": "NSC",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Element",
+  "derivation": "specialization",
+  "differential": {
+    "element": [
+      {
+        "id": "NSC",
+        "path": "NSC",
+        "type": [
+          {
+            "code": "Element"
+          }
+        ],
+        "mapping": [
+          {
+            "id": "NSC",
+            "identity": "v2",
+            "map": "NSC"
+          }
+        ]
+      },
+      {
+        "id": "NSC.ApplicationChangeType",
+        "path": "NSC.ApplicationChangeType",
+        "code": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/v2-0409"
+          }
+        ],
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "string",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/string"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "NSC.1"
+          }
+        ]
+      },
+      {
+        "id": "NSC.CurrentCPU",
+        "path": "NSC.CurrentCPU",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "string",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/string"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "NSC.2"
+          }
+        ]
+      },
+      {
+        "id": "NSC.CurrentFileserver",
+        "path": "NSC.CurrentFileserver",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "string",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/string"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "NSC.3"
+          }
+        ]
+      },
+      {
+        "id": "NSC.CurrentApplication",
+        "path": "NSC.CurrentApplication",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "HD",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/HD"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "NSC.4"
+          }
+        ]
+      },
+      {
+        "id": "NSC.CurrentFacility",
+        "path": "NSC.CurrentFacility",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "HD",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/HD"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "NSC.5"
+          }
+        ]
+      },
+      {
+        "id": "NSC.NewCPU",
+        "path": "NSC.NewCPU",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "string",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/string"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "NSC.6"
+          }
+        ]
+      },
+      {
+        "id": "NSC.NewFileserver",
+        "path": "NSC.NewFileserver",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "string",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/string"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "NSC.7"
+          }
+        ]
+      },
+      {
+        "id": "NSC.NewApplication",
+        "path": "NSC.NewApplication",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "HD",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/HD"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "NSC.8"
+          }
+        ]
+      },
+      {
+        "id": "NSC.NewFacility",
+        "path": "NSC.NewFacility",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "HD",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/HD"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "NSC.9"
+          }
+        ]
+      }
+    ]
+  }
+}

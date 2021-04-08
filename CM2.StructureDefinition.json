@@ -1,0 +1,113 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "CM2",
+  "url": "http://hl7.org/fhir/StructureDefinition/CM2",
+  "name": "CM2",
+  "status": "active",
+  "fhirVersion": "4.0.1",
+  "kind": "logical",
+  "abstract": false,
+  "type": "CM2",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Element",
+  "derivation": "specialization",
+  "differential": {
+    "element": [
+      {
+        "id": "CM2",
+        "path": "CM2",
+        "type": [
+          {
+            "code": "Element"
+          }
+        ],
+        "mapping": [
+          {
+            "id": "CM2",
+            "identity": "v2",
+            "map": "CM2"
+          }
+        ]
+      },
+      {
+        "id": "CM2.SetID-CM2",
+        "path": "CM2.SetID-CM2",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "string",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/string"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "CM2.1"
+          }
+        ]
+      },
+      {
+        "id": "CM2.ScheduledTimePoint",
+        "path": "CM2.ScheduledTimePoint",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "CE",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/CE"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "CM2.2"
+          }
+        ]
+      },
+      {
+        "id": "CM2.DescriptionofTimePoint",
+        "path": "CM2.DescriptionofTimePoint",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "string",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/string"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "CM2.3"
+          }
+        ]
+      },
+      {
+        "id": "CM2.EventsScheduledThisTimePoint",
+        "path": "CM2.EventsScheduledThisTimePoint",
+        "min": 1,
+        "max": "*",
+        "type": [
+          {
+            "code": "CE",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/CE"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "CM2.4"
+          }
+        ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,123 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "EI",
+  "url": "http://hl7.org/fhir/StructureDefinition/EI",
+  "name": "EI",
+  "status": "active",
+  "fhirVersion": "4.0.1",
+  "kind": "logical",
+  "abstract": false,
+  "type": "EI",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Element",
+  "derivation": "specialization",
+  "differential": {
+    "element": [
+      {
+        "id": "EI",
+        "path": "EI",
+        "type": [
+          {
+            "code": "Element"
+          }
+        ],
+        "mapping": [
+          {
+            "id": "EI",
+            "identity": "v2",
+            "map": "EI"
+          }
+        ]
+      },
+      {
+        "id": "EI.EntityIdentifier",
+        "path": "EI.EntityIdentifier",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "string",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/string"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "EI.1"
+          }
+        ]
+      },
+      {
+        "id": "EI.NamespaceID",
+        "path": "EI.NamespaceID",
+        "code": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/v2-0363"
+          }
+        ],
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "string",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/string"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "EI.2"
+          }
+        ]
+      },
+      {
+        "id": "EI.UniversalID",
+        "path": "EI.UniversalID",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "string",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/string"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "EI.3"
+          }
+        ]
+      },
+      {
+        "id": "EI.UniversalIDType",
+        "path": "EI.UniversalIDType",
+        "code": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/v2-0301"
+          }
+        ],
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "string",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/string"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "EI.4"
+          }
+        ]
+      }
+    ]
+  }
+}

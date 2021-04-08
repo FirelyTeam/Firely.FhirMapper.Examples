@@ -1,0 +1,113 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "SN",
+  "url": "http://hl7.org/fhir/StructureDefinition/SN",
+  "name": "SN",
+  "status": "active",
+  "fhirVersion": "4.0.1",
+  "kind": "logical",
+  "abstract": false,
+  "type": "SN",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Element",
+  "derivation": "specialization",
+  "differential": {
+    "element": [
+      {
+        "id": "SN",
+        "path": "SN",
+        "type": [
+          {
+            "code": "Element"
+          }
+        ],
+        "mapping": [
+          {
+            "id": "SN",
+            "identity": "v2",
+            "map": "SN"
+          }
+        ]
+      },
+      {
+        "id": "SN.Comparator",
+        "path": "SN.Comparator",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "string",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/string"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "SN.1"
+          }
+        ]
+      },
+      {
+        "id": "SN.Num1",
+        "path": "SN.Num1",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "string",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/string"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "SN.2"
+          }
+        ]
+      },
+      {
+        "id": "SN.Separator/Suffix",
+        "path": "SN.Separator/Suffix",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "string",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/string"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "SN.3"
+          }
+        ]
+      },
+      {
+        "id": "SN.Num2",
+        "path": "SN.Num2",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "string",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/string"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "SN.4"
+          }
+        ]
+      }
+    ]
+  }
+}

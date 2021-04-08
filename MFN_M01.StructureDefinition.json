@@ -1,0 +1,144 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "MFN_M01",
+  "url": "http://hl7.org/fhir/StructureDefinition/MFN_M01",
+  "name": "MFN_M01",
+  "status": "active",
+  "fhirVersion": "4.0.1",
+  "kind": "logical",
+  "abstract": false,
+  "type": "MFN_M01",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Element",
+  "derivation": "specialization",
+  "differential": {
+    "element": [
+      {
+        "id": "MFN_M01",
+        "path": "MFN_M01",
+        "type": [
+          {
+            "code": "Element"
+          }
+        ],
+        "mapping": [
+          {
+            "id": "MFN_M01",
+            "identity": "v2",
+            "map": "MFN_M01"
+          }
+        ]
+      },
+      {
+        "id": "MFN_M01.MSH",
+        "path": "MFN_M01.MSH",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "MSH",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/MSH"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "MSH"
+          }
+        ]
+      },
+      {
+        "id": "MFN_M01.SFT",
+        "path": "MFN_M01.SFT",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "SFT",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/SFT"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "SFT"
+          }
+        ]
+      },
+      {
+        "id": "MFN_M01.MFI",
+        "path": "MFN_M01.MFI",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "MFI",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/MFI"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "MFI"
+          }
+        ]
+      },
+      {
+        "id": "MFN_M01.MF",
+        "path": "MFN_M01.MF",
+        "min": 1,
+        "max": "*",
+        "type": [
+          {
+            "code": "BackboneElement"
+          }
+        ]
+      },
+      {
+        "id": "MFN_M01.MF.MFE",
+        "path": "MFN_M01.MF.MFE",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "MFE",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/MFE"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "MFE"
+          }
+        ]
+      },
+      {
+        "id": "MFN_M01.MF.anyHL7Segment",
+        "path": "MFN_M01.MF.anyHL7Segment",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "anyHL7Segment",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/anyHL7Segment"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "anyHL7Segment"
+          }
+        ]
+      }
+    ]
+  }
+}

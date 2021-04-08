@@ -1,0 +1,698 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "CER",
+  "url": "http://hl7.org/fhir/StructureDefinition/CER",
+  "name": "CER",
+  "status": "active",
+  "fhirVersion": "4.0.1",
+  "kind": "logical",
+  "abstract": false,
+  "type": "CER",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Element",
+  "derivation": "specialization",
+  "differential": {
+    "element": [
+      {
+        "id": "CER",
+        "path": "CER",
+        "type": [
+          {
+            "code": "Element"
+          }
+        ],
+        "mapping": [
+          {
+            "id": "CER",
+            "identity": "v2",
+            "map": "CER"
+          }
+        ]
+      },
+      {
+        "id": "CER.SetID_CER",
+        "path": "CER.SetID_CER",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "string",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/string"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "CER.1"
+          }
+        ]
+      },
+      {
+        "id": "CER.SerialNumber",
+        "path": "CER.SerialNumber",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "string",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/string"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "CER.2"
+          }
+        ]
+      },
+      {
+        "id": "CER.Version",
+        "path": "CER.Version",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "string",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/string"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "CER.3"
+          }
+        ]
+      },
+      {
+        "id": "CER.GrantingAuthority",
+        "path": "CER.GrantingAuthority",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "XON",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/XON"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "CER.4"
+          }
+        ]
+      },
+      {
+        "id": "CER.IssuingAuthority",
+        "path": "CER.IssuingAuthority",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "XCN",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/XCN"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "CER.5"
+          }
+        ]
+      },
+      {
+        "id": "CER.SignatureofIssuingAuthority",
+        "path": "CER.SignatureofIssuingAuthority",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "ED",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/ED"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "CER.6"
+          }
+        ]
+      },
+      {
+        "id": "CER.GrantingCountry",
+        "path": "CER.GrantingCountry",
+        "code": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/v2-0399"
+          }
+        ],
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "string",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/string"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "CER.7"
+          }
+        ]
+      },
+      {
+        "id": "CER.GrantingState/Province",
+        "path": "CER.GrantingState/Province",
+        "code": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/v2-0347"
+          }
+        ],
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "CWE",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/CWE"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "CER.8"
+          }
+        ]
+      },
+      {
+        "id": "CER.GrantingCounty/Parish",
+        "path": "CER.GrantingCounty/Parish",
+        "code": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/v2-0289"
+          }
+        ],
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "CWE",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/CWE"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "CER.9"
+          }
+        ]
+      },
+      {
+        "id": "CER.CertificateType",
+        "path": "CER.CertificateType",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "CWE",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/CWE"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "CER.10"
+          }
+        ]
+      },
+      {
+        "id": "CER.CertificateDomain",
+        "path": "CER.CertificateDomain",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "CWE",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/CWE"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "CER.11"
+          }
+        ]
+      },
+      {
+        "id": "CER.SubjectID",
+        "path": "CER.SubjectID",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "string",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/string"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "CER.12"
+          }
+        ]
+      },
+      {
+        "id": "CER.SubjectName",
+        "path": "CER.SubjectName",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "string",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/string"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "CER.13"
+          }
+        ]
+      },
+      {
+        "id": "CER.SubjectDirectoryAttributeExtension(HealthProfessionalData)",
+        "path": "CER.SubjectDirectoryAttributeExtension(HealthProfessionalData)",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "CWE",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/CWE"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "CER.14"
+          }
+        ]
+      },
+      {
+        "id": "CER.SubjectPublicKeyInfo",
+        "path": "CER.SubjectPublicKeyInfo",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "CWE",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/CWE"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "CER.15"
+          }
+        ]
+      },
+      {
+        "id": "CER.AuthorityKeyIdentifier",
+        "path": "CER.AuthorityKeyIdentifier",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "CWE",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/CWE"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "CER.16"
+          }
+        ]
+      },
+      {
+        "id": "CER.BasicConstraint",
+        "path": "CER.BasicConstraint",
+        "code": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/v2-0136"
+          }
+        ],
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "string",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/string"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "CER.17"
+          }
+        ]
+      },
+      {
+        "id": "CER.CRLDistributionPoint",
+        "path": "CER.CRLDistributionPoint",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "CWE",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/CWE"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "CER.18"
+          }
+        ]
+      },
+      {
+        "id": "CER.JurisdictionCountry",
+        "path": "CER.JurisdictionCountry",
+        "code": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/v2-0399"
+          }
+        ],
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "string",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/string"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "CER.19"
+          }
+        ]
+      },
+      {
+        "id": "CER.JurisdictionState/Province",
+        "path": "CER.JurisdictionState/Province",
+        "code": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/v2-0347"
+          }
+        ],
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "CWE",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/CWE"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "CER.20"
+          }
+        ]
+      },
+      {
+        "id": "CER.JurisdictionCounty/Parish",
+        "path": "CER.JurisdictionCounty/Parish",
+        "code": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/v2-0289"
+          }
+        ],
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "CWE",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/CWE"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "CER.21"
+          }
+        ]
+      },
+      {
+        "id": "CER.JurisdictionBreadth",
+        "path": "CER.JurisdictionBreadth",
+        "code": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/v2-0547"
+          }
+        ],
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "CWE",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/CWE"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "CER.22"
+          }
+        ]
+      },
+      {
+        "id": "CER.GrantingDate",
+        "path": "CER.GrantingDate",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "TS",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/TS"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "CER.23"
+          }
+        ]
+      },
+      {
+        "id": "CER.IssuingDate",
+        "path": "CER.IssuingDate",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "TS",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/TS"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "CER.24"
+          }
+        ]
+      },
+      {
+        "id": "CER.ActivationDate",
+        "path": "CER.ActivationDate",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "TS",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/TS"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "CER.25"
+          }
+        ]
+      },
+      {
+        "id": "CER.InactivationDate",
+        "path": "CER.InactivationDate",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "TS",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/TS"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "CER.26"
+          }
+        ]
+      },
+      {
+        "id": "CER.ExpirationDate",
+        "path": "CER.ExpirationDate",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "TS",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/TS"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "CER.27"
+          }
+        ]
+      },
+      {
+        "id": "CER.RenewalDate",
+        "path": "CER.RenewalDate",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "TS",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/TS"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "CER.28"
+          }
+        ]
+      },
+      {
+        "id": "CER.RevocationDate",
+        "path": "CER.RevocationDate",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "TS",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/TS"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "CER.29"
+          }
+        ]
+      },
+      {
+        "id": "CER.RevocationReasonCode",
+        "path": "CER.RevocationReasonCode",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "CE",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/CE"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "CER.30"
+          }
+        ]
+      },
+      {
+        "id": "CER.CertificateStatus",
+        "path": "CER.CertificateStatus",
+        "code": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/v2-0536"
+          }
+        ],
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "CWE",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/CWE"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "CER.31"
+          }
+        ]
+      }
+    ]
+  }
+}

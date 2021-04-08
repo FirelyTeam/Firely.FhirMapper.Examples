@@ -1,0 +1,103 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "ISD",
+  "url": "http://hl7.org/fhir/StructureDefinition/ISD",
+  "name": "ISD",
+  "status": "active",
+  "fhirVersion": "4.0.1",
+  "kind": "logical",
+  "abstract": false,
+  "type": "ISD",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Element",
+  "derivation": "specialization",
+  "differential": {
+    "element": [
+      {
+        "id": "ISD",
+        "path": "ISD",
+        "type": [
+          {
+            "code": "Element"
+          }
+        ],
+        "mapping": [
+          {
+            "id": "ISD",
+            "identity": "v2",
+            "map": "ISD"
+          }
+        ]
+      },
+      {
+        "id": "ISD.ReferenceInteractionNumber(uniqueidentifier)",
+        "path": "ISD.ReferenceInteractionNumber(uniqueidentifier)",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "string",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/string"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "ISD.1"
+          }
+        ]
+      },
+      {
+        "id": "ISD.InteractionTypeIdentifier",
+        "path": "ISD.InteractionTypeIdentifier",
+        "code": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/v2-0368"
+          }
+        ],
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "CE",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/CE"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "ISD.2"
+          }
+        ]
+      },
+      {
+        "id": "ISD.InteractionActiveState",
+        "path": "ISD.InteractionActiveState",
+        "code": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/v2-0387"
+          }
+        ],
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "CE",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/CE"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "ISD.3"
+          }
+        ]
+      }
+    ]
+  }
+}

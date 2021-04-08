@@ -1,0 +1,681 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "RPA_I08",
+  "url": "http://hl7.org/fhir/StructureDefinition/RPA_I08",
+  "name": "RPA_I08",
+  "status": "active",
+  "fhirVersion": "4.0.1",
+  "kind": "logical",
+  "abstract": false,
+  "type": "RPA_I08",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Element",
+  "derivation": "specialization",
+  "differential": {
+    "element": [
+      {
+        "id": "RPA_I08",
+        "path": "RPA_I08",
+        "type": [
+          {
+            "code": "Element"
+          }
+        ],
+        "mapping": [
+          {
+            "id": "RPA_I08",
+            "identity": "v2",
+            "map": "RPA_I08"
+          }
+        ]
+      },
+      {
+        "id": "RPA_I08.MSH",
+        "path": "RPA_I08.MSH",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "MSH",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/MSH"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "MSH"
+          }
+        ]
+      },
+      {
+        "id": "RPA_I08.SFT",
+        "path": "RPA_I08.SFT",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "SFT",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/SFT"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "SFT"
+          }
+        ]
+      },
+      {
+        "id": "RPA_I08.MSA",
+        "path": "RPA_I08.MSA",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "MSA",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/MSA"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "MSA"
+          }
+        ]
+      },
+      {
+        "id": "RPA_I08.RF1",
+        "path": "RPA_I08.RF1",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "RF1",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/RF1"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "RF1"
+          }
+        ]
+      },
+      {
+        "id": "RPA_I08.AUTHORIZATION_1",
+        "path": "RPA_I08.AUTHORIZATION_1",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "BackboneElement"
+          }
+        ]
+      },
+      {
+        "id": "RPA_I08.AUTHORIZATION_1.AUT",
+        "path": "RPA_I08.AUTHORIZATION_1.AUT",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "AUT",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/AUT"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "AUT"
+          }
+        ]
+      },
+      {
+        "id": "RPA_I08.AUTHORIZATION_1.CTD",
+        "path": "RPA_I08.AUTHORIZATION_1.CTD",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "CTD",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/CTD"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "CTD"
+          }
+        ]
+      },
+      {
+        "id": "RPA_I08.PROVIDER",
+        "path": "RPA_I08.PROVIDER",
+        "min": 1,
+        "max": "*",
+        "type": [
+          {
+            "code": "BackboneElement"
+          }
+        ]
+      },
+      {
+        "id": "RPA_I08.PROVIDER.PRD",
+        "path": "RPA_I08.PROVIDER.PRD",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "PRD",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/PRD"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "PRD"
+          }
+        ]
+      },
+      {
+        "id": "RPA_I08.PROVIDER.CTD",
+        "path": "RPA_I08.PROVIDER.CTD",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "CTD",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/CTD"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "CTD"
+          }
+        ]
+      },
+      {
+        "id": "RPA_I08.PID",
+        "path": "RPA_I08.PID",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "PID",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/PID"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "PID"
+          }
+        ]
+      },
+      {
+        "id": "RPA_I08.NK1",
+        "path": "RPA_I08.NK1",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "NK1",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/NK1"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "NK1"
+          }
+        ]
+      },
+      {
+        "id": "RPA_I08.GT1",
+        "path": "RPA_I08.GT1",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "GT1",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/GT1"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "GT1"
+          }
+        ]
+      },
+      {
+        "id": "RPA_I08.INSURANCE",
+        "path": "RPA_I08.INSURANCE",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "BackboneElement"
+          }
+        ]
+      },
+      {
+        "id": "RPA_I08.INSURANCE.IN1",
+        "path": "RPA_I08.INSURANCE.IN1",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "IN1",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/IN1"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "IN1"
+          }
+        ]
+      },
+      {
+        "id": "RPA_I08.INSURANCE.IN2",
+        "path": "RPA_I08.INSURANCE.IN2",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "IN2",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/IN2"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "IN2"
+          }
+        ]
+      },
+      {
+        "id": "RPA_I08.INSURANCE.IN3",
+        "path": "RPA_I08.INSURANCE.IN3",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "IN3",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/IN3"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "IN3"
+          }
+        ]
+      },
+      {
+        "id": "RPA_I08.ACC",
+        "path": "RPA_I08.ACC",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "ACC",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/ACC"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "ACC"
+          }
+        ]
+      },
+      {
+        "id": "RPA_I08.DG1",
+        "path": "RPA_I08.DG1",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "DG1",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/DG1"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "DG1"
+          }
+        ]
+      },
+      {
+        "id": "RPA_I08.DRG",
+        "path": "RPA_I08.DRG",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "DRG",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/DRG"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "DRG"
+          }
+        ]
+      },
+      {
+        "id": "RPA_I08.AL1",
+        "path": "RPA_I08.AL1",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "AL1",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/AL1"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "AL1"
+          }
+        ]
+      },
+      {
+        "id": "RPA_I08.PROCEDURE",
+        "path": "RPA_I08.PROCEDURE",
+        "min": 1,
+        "max": "*",
+        "type": [
+          {
+            "code": "BackboneElement"
+          }
+        ]
+      },
+      {
+        "id": "RPA_I08.PROCEDURE.PR1",
+        "path": "RPA_I08.PROCEDURE.PR1",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "PR1",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/PR1"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "PR1"
+          }
+        ]
+      },
+      {
+        "id": "RPA_I08.PROCEDURE.AUTHORIZATION_2",
+        "path": "RPA_I08.PROCEDURE.AUTHORIZATION_2",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "BackboneElement"
+          }
+        ]
+      },
+      {
+        "id": "RPA_I08.PROCEDURE.AUTHORIZATION_2.AUT",
+        "path": "RPA_I08.PROCEDURE.AUTHORIZATION_2.AUT",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "AUT",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/AUT"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "AUT"
+          }
+        ]
+      },
+      {
+        "id": "RPA_I08.PROCEDURE.AUTHORIZATION_2.CTD",
+        "path": "RPA_I08.PROCEDURE.AUTHORIZATION_2.CTD",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "CTD",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/CTD"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "CTD"
+          }
+        ]
+      },
+      {
+        "id": "RPA_I08.OBSERVATION",
+        "path": "RPA_I08.OBSERVATION",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "BackboneElement"
+          }
+        ]
+      },
+      {
+        "id": "RPA_I08.OBSERVATION.OBR",
+        "path": "RPA_I08.OBSERVATION.OBR",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "OBR",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/OBR"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "OBR"
+          }
+        ]
+      },
+      {
+        "id": "RPA_I08.OBSERVATION.NTE",
+        "path": "RPA_I08.OBSERVATION.NTE",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "NTE",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/NTE"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "NTE"
+          }
+        ]
+      },
+      {
+        "id": "RPA_I08.OBSERVATION.RESULTS",
+        "path": "RPA_I08.OBSERVATION.RESULTS",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "BackboneElement"
+          }
+        ]
+      },
+      {
+        "id": "RPA_I08.OBSERVATION.RESULTS.OBX",
+        "path": "RPA_I08.OBSERVATION.RESULTS.OBX",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "OBX",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/OBX"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "OBX"
+          }
+        ]
+      },
+      {
+        "id": "RPA_I08.OBSERVATION.RESULTS.NTE",
+        "path": "RPA_I08.OBSERVATION.RESULTS.NTE",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "NTE",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/NTE"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "NTE"
+          }
+        ]
+      },
+      {
+        "id": "RPA_I08.VISIT",
+        "path": "RPA_I08.VISIT",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "BackboneElement"
+          }
+        ]
+      },
+      {
+        "id": "RPA_I08.VISIT.PV1",
+        "path": "RPA_I08.VISIT.PV1",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "PV1",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/PV1"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "PV1"
+          }
+        ]
+      },
+      {
+        "id": "RPA_I08.VISIT.PV2",
+        "path": "RPA_I08.VISIT.PV2",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "PV2",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/PV2"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "PV2"
+          }
+        ]
+      },
+      {
+        "id": "RPA_I08.NTE",
+        "path": "RPA_I08.NTE",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "NTE",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/NTE"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "NTE"
+          }
+        ]
+      }
+    ]
+  }
+}

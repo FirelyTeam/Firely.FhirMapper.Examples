@@ -1,0 +1,566 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "BAR_P01",
+  "url": "http://hl7.org/fhir/StructureDefinition/BAR_P01",
+  "name": "BAR_P01",
+  "status": "active",
+  "fhirVersion": "4.0.1",
+  "kind": "logical",
+  "abstract": false,
+  "type": "BAR_P01",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Element",
+  "derivation": "specialization",
+  "differential": {
+    "element": [
+      {
+        "id": "BAR_P01",
+        "path": "BAR_P01",
+        "type": [
+          {
+            "code": "Element"
+          }
+        ],
+        "mapping": [
+          {
+            "id": "BAR_P01",
+            "identity": "v2",
+            "map": "BAR_P01"
+          }
+        ]
+      },
+      {
+        "id": "BAR_P01.MSH",
+        "path": "BAR_P01.MSH",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "MSH",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/MSH"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "MSH"
+          }
+        ]
+      },
+      {
+        "id": "BAR_P01.SFT",
+        "path": "BAR_P01.SFT",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "SFT",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/SFT"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "SFT"
+          }
+        ]
+      },
+      {
+        "id": "BAR_P01.EVN",
+        "path": "BAR_P01.EVN",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "EVN",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/EVN"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "EVN"
+          }
+        ]
+      },
+      {
+        "id": "BAR_P01.PID",
+        "path": "BAR_P01.PID",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "PID",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/PID"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "PID"
+          }
+        ]
+      },
+      {
+        "id": "BAR_P01.PD1",
+        "path": "BAR_P01.PD1",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "PD1",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/PD1"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "PD1"
+          }
+        ]
+      },
+      {
+        "id": "BAR_P01.ROL",
+        "path": "BAR_P01.ROL",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "ROL",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/ROL"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "ROL"
+          }
+        ]
+      },
+      {
+        "id": "BAR_P01.VISIT",
+        "path": "BAR_P01.VISIT",
+        "min": 1,
+        "max": "*",
+        "type": [
+          {
+            "code": "BackboneElement"
+          }
+        ]
+      },
+      {
+        "id": "BAR_P01.VISIT.PV1",
+        "path": "BAR_P01.VISIT.PV1",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "PV1",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/PV1"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "PV1"
+          }
+        ]
+      },
+      {
+        "id": "BAR_P01.VISIT.PV2",
+        "path": "BAR_P01.VISIT.PV2",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "PV2",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/PV2"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "PV2"
+          }
+        ]
+      },
+      {
+        "id": "BAR_P01.VISIT.ROL",
+        "path": "BAR_P01.VISIT.ROL",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "ROL",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/ROL"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "ROL"
+          }
+        ]
+      },
+      {
+        "id": "BAR_P01.VISIT.DB1",
+        "path": "BAR_P01.VISIT.DB1",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "DB1",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/DB1"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "DB1"
+          }
+        ]
+      },
+      {
+        "id": "BAR_P01.VISIT.OBX",
+        "path": "BAR_P01.VISIT.OBX",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "OBX",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/OBX"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "OBX"
+          }
+        ]
+      },
+      {
+        "id": "BAR_P01.VISIT.AL1",
+        "path": "BAR_P01.VISIT.AL1",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "AL1",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/AL1"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "AL1"
+          }
+        ]
+      },
+      {
+        "id": "BAR_P01.VISIT.DG1",
+        "path": "BAR_P01.VISIT.DG1",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "DG1",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/DG1"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "DG1"
+          }
+        ]
+      },
+      {
+        "id": "BAR_P01.VISIT.DRG",
+        "path": "BAR_P01.VISIT.DRG",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "DRG",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/DRG"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "DRG"
+          }
+        ]
+      },
+      {
+        "id": "BAR_P01.VISIT.PROCEDURE",
+        "path": "BAR_P01.VISIT.PROCEDURE",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "BackboneElement"
+          }
+        ]
+      },
+      {
+        "id": "BAR_P01.VISIT.PROCEDURE.PR1",
+        "path": "BAR_P01.VISIT.PROCEDURE.PR1",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "PR1",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/PR1"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "PR1"
+          }
+        ]
+      },
+      {
+        "id": "BAR_P01.VISIT.PROCEDURE.ROL",
+        "path": "BAR_P01.VISIT.PROCEDURE.ROL",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "ROL",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/ROL"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "ROL"
+          }
+        ]
+      },
+      {
+        "id": "BAR_P01.VISIT.GT1",
+        "path": "BAR_P01.VISIT.GT1",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "GT1",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/GT1"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "GT1"
+          }
+        ]
+      },
+      {
+        "id": "BAR_P01.VISIT.NK1",
+        "path": "BAR_P01.VISIT.NK1",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "NK1",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/NK1"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "NK1"
+          }
+        ]
+      },
+      {
+        "id": "BAR_P01.VISIT.INSURANCE",
+        "path": "BAR_P01.VISIT.INSURANCE",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "BackboneElement"
+          }
+        ]
+      },
+      {
+        "id": "BAR_P01.VISIT.INSURANCE.IN1",
+        "path": "BAR_P01.VISIT.INSURANCE.IN1",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "IN1",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/IN1"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "IN1"
+          }
+        ]
+      },
+      {
+        "id": "BAR_P01.VISIT.INSURANCE.IN2",
+        "path": "BAR_P01.VISIT.INSURANCE.IN2",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "IN2",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/IN2"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "IN2"
+          }
+        ]
+      },
+      {
+        "id": "BAR_P01.VISIT.INSURANCE.IN3",
+        "path": "BAR_P01.VISIT.INSURANCE.IN3",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "IN3",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/IN3"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "IN3"
+          }
+        ]
+      },
+      {
+        "id": "BAR_P01.VISIT.INSURANCE.ROL",
+        "path": "BAR_P01.VISIT.INSURANCE.ROL",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "ROL",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/ROL"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "ROL"
+          }
+        ]
+      },
+      {
+        "id": "BAR_P01.VISIT.ACC",
+        "path": "BAR_P01.VISIT.ACC",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "ACC",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/ACC"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "ACC"
+          }
+        ]
+      },
+      {
+        "id": "BAR_P01.VISIT.UB1",
+        "path": "BAR_P01.VISIT.UB1",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "UB1",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/UB1"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "UB1"
+          }
+        ]
+      },
+      {
+        "id": "BAR_P01.VISIT.UB2",
+        "path": "BAR_P01.VISIT.UB2",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "UB2",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/UB2"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "UB2"
+          }
+        ]
+      }
+    ]
+  }
+}

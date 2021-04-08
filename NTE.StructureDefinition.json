@@ -1,0 +1,123 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "NTE",
+  "url": "http://hl7.org/fhir/StructureDefinition/NTE",
+  "name": "NTE",
+  "status": "active",
+  "fhirVersion": "4.0.1",
+  "kind": "logical",
+  "abstract": false,
+  "type": "NTE",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Element",
+  "derivation": "specialization",
+  "differential": {
+    "element": [
+      {
+        "id": "NTE",
+        "path": "NTE",
+        "type": [
+          {
+            "code": "Element"
+          }
+        ],
+        "mapping": [
+          {
+            "id": "NTE",
+            "identity": "v2",
+            "map": "NTE"
+          }
+        ]
+      },
+      {
+        "id": "NTE.SetID-NTE",
+        "path": "NTE.SetID-NTE",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "string",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/string"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "NTE.1"
+          }
+        ]
+      },
+      {
+        "id": "NTE.SourceofComment",
+        "path": "NTE.SourceofComment",
+        "code": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/v2-0105"
+          }
+        ],
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "string",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/string"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "NTE.2"
+          }
+        ]
+      },
+      {
+        "id": "NTE.Comment",
+        "path": "NTE.Comment",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "string",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/string"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "NTE.3"
+          }
+        ]
+      },
+      {
+        "id": "NTE.CommentType",
+        "path": "NTE.CommentType",
+        "code": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/v2-0364"
+          }
+        ],
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "CE",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/CE"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "NTE.4"
+          }
+        ]
+      }
+    ]
+  }
+}

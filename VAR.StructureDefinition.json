@@ -1,0 +1,153 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "VAR",
+  "url": "http://hl7.org/fhir/StructureDefinition/VAR",
+  "name": "VAR",
+  "status": "active",
+  "fhirVersion": "4.0.1",
+  "kind": "logical",
+  "abstract": false,
+  "type": "VAR",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Element",
+  "derivation": "specialization",
+  "differential": {
+    "element": [
+      {
+        "id": "VAR",
+        "path": "VAR",
+        "type": [
+          {
+            "code": "Element"
+          }
+        ],
+        "mapping": [
+          {
+            "id": "VAR",
+            "identity": "v2",
+            "map": "VAR"
+          }
+        ]
+      },
+      {
+        "id": "VAR.VarianceInstanceID",
+        "path": "VAR.VarianceInstanceID",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "EI",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/EI"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "VAR.1"
+          }
+        ]
+      },
+      {
+        "id": "VAR.DocumentedDate/Time",
+        "path": "VAR.DocumentedDate/Time",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "TS",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/TS"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "VAR.2"
+          }
+        ]
+      },
+      {
+        "id": "VAR.StatedVarianceDate/Time",
+        "path": "VAR.StatedVarianceDate/Time",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "TS",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/TS"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "VAR.3"
+          }
+        ]
+      },
+      {
+        "id": "VAR.VarianceOriginator",
+        "path": "VAR.VarianceOriginator",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "XCN",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/XCN"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "VAR.4"
+          }
+        ]
+      },
+      {
+        "id": "VAR.VarianceClassification",
+        "path": "VAR.VarianceClassification",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "CE",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/CE"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "VAR.5"
+          }
+        ]
+      },
+      {
+        "id": "VAR.VarianceDescription",
+        "path": "VAR.VarianceDescription",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "string",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/string"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "VAR.6"
+          }
+        ]
+      }
+    ]
+  }
+}

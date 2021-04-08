@@ -1,0 +1,98 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "RGS",
+  "url": "http://hl7.org/fhir/StructureDefinition/RGS",
+  "name": "RGS",
+  "status": "active",
+  "fhirVersion": "4.0.1",
+  "kind": "logical",
+  "abstract": false,
+  "type": "RGS",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Element",
+  "derivation": "specialization",
+  "differential": {
+    "element": [
+      {
+        "id": "RGS",
+        "path": "RGS",
+        "type": [
+          {
+            "code": "Element"
+          }
+        ],
+        "mapping": [
+          {
+            "id": "RGS",
+            "identity": "v2",
+            "map": "RGS"
+          }
+        ]
+      },
+      {
+        "id": "RGS.SetID-RGS",
+        "path": "RGS.SetID-RGS",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "string",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/string"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "RGS.1"
+          }
+        ]
+      },
+      {
+        "id": "RGS.SegmentActionCode",
+        "path": "RGS.SegmentActionCode",
+        "code": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/v2-0206"
+          }
+        ],
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "string",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/string"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "RGS.2"
+          }
+        ]
+      },
+      {
+        "id": "RGS.ResourceGroupID",
+        "path": "RGS.ResourceGroupID",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "CE",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/CE"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "RGS.3"
+          }
+        ]
+      }
+    ]
+  }
+}

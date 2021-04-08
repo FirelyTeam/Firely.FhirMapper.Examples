@@ -1,0 +1,693 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "SPM",
+  "url": "http://hl7.org/fhir/StructureDefinition/SPM",
+  "name": "SPM",
+  "status": "active",
+  "fhirVersion": "4.0.1",
+  "kind": "logical",
+  "abstract": false,
+  "type": "SPM",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Element",
+  "derivation": "specialization",
+  "differential": {
+    "element": [
+      {
+        "id": "SPM",
+        "path": "SPM",
+        "type": [
+          {
+            "code": "Element"
+          }
+        ],
+        "mapping": [
+          {
+            "id": "SPM",
+            "identity": "v2",
+            "map": "SPM"
+          }
+        ]
+      },
+      {
+        "id": "SPM.SetID_SPM",
+        "path": "SPM.SetID_SPM",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "string",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/string"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "SPM.1"
+          }
+        ]
+      },
+      {
+        "id": "SPM.SpecimenID",
+        "path": "SPM.SpecimenID",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "EIP",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/EIP"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "SPM.2"
+          }
+        ]
+      },
+      {
+        "id": "SPM.SpecimenParentIDs",
+        "path": "SPM.SpecimenParentIDs",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "EIP",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/EIP"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "SPM.3"
+          }
+        ]
+      },
+      {
+        "id": "SPM.SpecimenType",
+        "path": "SPM.SpecimenType",
+        "code": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/v2-0487"
+          }
+        ],
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "CWE",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/CWE"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "SPM.4"
+          }
+        ]
+      },
+      {
+        "id": "SPM.SpecimenTypeModifier",
+        "path": "SPM.SpecimenTypeModifier",
+        "code": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/v2-0541"
+          }
+        ],
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "CWE",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/CWE"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "SPM.5"
+          }
+        ]
+      },
+      {
+        "id": "SPM.SpecimenAdditives",
+        "path": "SPM.SpecimenAdditives",
+        "code": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/v2-0371"
+          }
+        ],
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "CWE",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/CWE"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "SPM.6"
+          }
+        ]
+      },
+      {
+        "id": "SPM.SpecimenCollectionMethod",
+        "path": "SPM.SpecimenCollectionMethod",
+        "code": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/v2-0488"
+          }
+        ],
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "CWE",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/CWE"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "SPM.7"
+          }
+        ]
+      },
+      {
+        "id": "SPM.SpecimenSourceSite",
+        "path": "SPM.SpecimenSourceSite",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "CWE",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/CWE"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "SPM.8"
+          }
+        ]
+      },
+      {
+        "id": "SPM.SpecimenSourceSiteModifier",
+        "path": "SPM.SpecimenSourceSiteModifier",
+        "code": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/v2-0542"
+          }
+        ],
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "CWE",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/CWE"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "SPM.9"
+          }
+        ]
+      },
+      {
+        "id": "SPM.SpecimenCollectionSite",
+        "path": "SPM.SpecimenCollectionSite",
+        "code": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/v2-0543"
+          }
+        ],
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "CWE",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/CWE"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "SPM.10"
+          }
+        ]
+      },
+      {
+        "id": "SPM.SpecimenRole",
+        "path": "SPM.SpecimenRole",
+        "code": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/v2-0369"
+          }
+        ],
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "CWE",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/CWE"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "SPM.11"
+          }
+        ]
+      },
+      {
+        "id": "SPM.SpecimenCollectionAmount",
+        "path": "SPM.SpecimenCollectionAmount",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "CQ",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/CQ"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "SPM.12"
+          }
+        ]
+      },
+      {
+        "id": "SPM.GroupedSpecimenCount",
+        "path": "SPM.GroupedSpecimenCount",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "string",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/string"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "SPM.13"
+          }
+        ]
+      },
+      {
+        "id": "SPM.SpecimenDescription",
+        "path": "SPM.SpecimenDescription",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "string",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/string"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "SPM.14"
+          }
+        ]
+      },
+      {
+        "id": "SPM.SpecimenHandlingCode",
+        "path": "SPM.SpecimenHandlingCode",
+        "code": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/v2-0376"
+          }
+        ],
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "CWE",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/CWE"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "SPM.15"
+          }
+        ]
+      },
+      {
+        "id": "SPM.SpecimenRiskCode",
+        "path": "SPM.SpecimenRiskCode",
+        "code": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/v2-0489"
+          }
+        ],
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "CWE",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/CWE"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "SPM.16"
+          }
+        ]
+      },
+      {
+        "id": "SPM.SpecimenCollectionDate/Time",
+        "path": "SPM.SpecimenCollectionDate/Time",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "DR",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/DR"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "SPM.17"
+          }
+        ]
+      },
+      {
+        "id": "SPM.SpecimenReceivedDate/Time",
+        "path": "SPM.SpecimenReceivedDate/Time",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "TS",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/TS"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "SPM.18"
+          }
+        ]
+      },
+      {
+        "id": "SPM.SpecimenExpirationDate/Time",
+        "path": "SPM.SpecimenExpirationDate/Time",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "TS",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/TS"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "SPM.19"
+          }
+        ]
+      },
+      {
+        "id": "SPM.SpecimenAvailability",
+        "path": "SPM.SpecimenAvailability",
+        "code": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/v2-0136"
+          }
+        ],
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "string",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/string"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "SPM.20"
+          }
+        ]
+      },
+      {
+        "id": "SPM.SpecimenRejectReason",
+        "path": "SPM.SpecimenRejectReason",
+        "code": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/v2-0490"
+          }
+        ],
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "CWE",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/CWE"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "SPM.21"
+          }
+        ]
+      },
+      {
+        "id": "SPM.SpecimenQuality",
+        "path": "SPM.SpecimenQuality",
+        "code": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/v2-0491"
+          }
+        ],
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "CWE",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/CWE"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "SPM.22"
+          }
+        ]
+      },
+      {
+        "id": "SPM.SpecimenAppropriateness",
+        "path": "SPM.SpecimenAppropriateness",
+        "code": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/v2-0492"
+          }
+        ],
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "CWE",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/CWE"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "SPM.23"
+          }
+        ]
+      },
+      {
+        "id": "SPM.SpecimenCondition",
+        "path": "SPM.SpecimenCondition",
+        "code": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/v2-0493"
+          }
+        ],
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "CWE",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/CWE"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "SPM.24"
+          }
+        ]
+      },
+      {
+        "id": "SPM.SpecimenCurrentQuantity",
+        "path": "SPM.SpecimenCurrentQuantity",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "CQ",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/CQ"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "SPM.25"
+          }
+        ]
+      },
+      {
+        "id": "SPM.NumberofSpecimenContainers",
+        "path": "SPM.NumberofSpecimenContainers",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "string",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/string"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "SPM.26"
+          }
+        ]
+      },
+      {
+        "id": "SPM.ContainerType",
+        "path": "SPM.ContainerType",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "CWE",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/CWE"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "SPM.27"
+          }
+        ]
+      },
+      {
+        "id": "SPM.ContainerCondition",
+        "path": "SPM.ContainerCondition",
+        "code": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/v2-0544"
+          }
+        ],
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "CWE",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/CWE"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "SPM.28"
+          }
+        ]
+      },
+      {
+        "id": "SPM.SpecimenChildRole",
+        "path": "SPM.SpecimenChildRole",
+        "code": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/v2-0494"
+          }
+        ],
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "CWE",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/CWE"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "SPM.29"
+          }
+        ]
+      }
+    ]
+  }
+}

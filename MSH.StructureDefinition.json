@@ -1,0 +1,498 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "MSH",
+  "url": "http://hl7.org/fhir/StructureDefinition/MSH",
+  "name": "MSH",
+  "status": "active",
+  "fhirVersion": "4.0.1",
+  "kind": "logical",
+  "abstract": false,
+  "type": "MSH",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Element",
+  "derivation": "specialization",
+  "differential": {
+    "element": [
+      {
+        "id": "MSH",
+        "path": "MSH",
+        "type": [
+          {
+            "code": "Element"
+          }
+        ],
+        "mapping": [
+          {
+            "id": "MSH",
+            "identity": "v2",
+            "map": "MSH"
+          }
+        ]
+      },
+      {
+        "id": "MSH.FieldSeparator",
+        "path": "MSH.FieldSeparator",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "string",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/string"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "MSH.1"
+          }
+        ]
+      },
+      {
+        "id": "MSH.EncodingCharacters",
+        "path": "MSH.EncodingCharacters",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "string",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/string"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "MSH.2"
+          }
+        ]
+      },
+      {
+        "id": "MSH.SendingApplication",
+        "path": "MSH.SendingApplication",
+        "code": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/v2-0361"
+          }
+        ],
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "HD",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/HD"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "MSH.3"
+          }
+        ]
+      },
+      {
+        "id": "MSH.SendingFacility",
+        "path": "MSH.SendingFacility",
+        "code": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/v2-0362"
+          }
+        ],
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "HD",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/HD"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "MSH.4"
+          }
+        ]
+      },
+      {
+        "id": "MSH.ReceivingApplication",
+        "path": "MSH.ReceivingApplication",
+        "code": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/v2-0361"
+          }
+        ],
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "HD",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/HD"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "MSH.5"
+          }
+        ]
+      },
+      {
+        "id": "MSH.ReceivingFacility",
+        "path": "MSH.ReceivingFacility",
+        "code": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/v2-0362"
+          }
+        ],
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "HD",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/HD"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "MSH.6"
+          }
+        ]
+      },
+      {
+        "id": "MSH.Date/TimeOfMessage",
+        "path": "MSH.Date/TimeOfMessage",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "TS",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/TS"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "MSH.7"
+          }
+        ]
+      },
+      {
+        "id": "MSH.Security",
+        "path": "MSH.Security",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "string",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/string"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "MSH.8"
+          }
+        ]
+      },
+      {
+        "id": "MSH.MessageType",
+        "path": "MSH.MessageType",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "MSG",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/MSG"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "MSH.9"
+          }
+        ]
+      },
+      {
+        "id": "MSH.MessageControlID",
+        "path": "MSH.MessageControlID",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "string",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/string"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "MSH.10"
+          }
+        ]
+      },
+      {
+        "id": "MSH.ProcessingID",
+        "path": "MSH.ProcessingID",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "PT",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/PT"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "MSH.11"
+          }
+        ]
+      },
+      {
+        "id": "MSH.VersionID",
+        "path": "MSH.VersionID",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "VID",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/VID"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "MSH.12"
+          }
+        ]
+      },
+      {
+        "id": "MSH.SequenceNumber",
+        "path": "MSH.SequenceNumber",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "string",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/string"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "MSH.13"
+          }
+        ]
+      },
+      {
+        "id": "MSH.ContinuationPointer",
+        "path": "MSH.ContinuationPointer",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "string",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/string"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "MSH.14"
+          }
+        ]
+      },
+      {
+        "id": "MSH.AcceptAcknowledgmentType",
+        "path": "MSH.AcceptAcknowledgmentType",
+        "code": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/v2-0155"
+          }
+        ],
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "string",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/string"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "MSH.15"
+          }
+        ]
+      },
+      {
+        "id": "MSH.ApplicationAcknowledgmentType",
+        "path": "MSH.ApplicationAcknowledgmentType",
+        "code": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/v2-0155"
+          }
+        ],
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "string",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/string"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "MSH.16"
+          }
+        ]
+      },
+      {
+        "id": "MSH.CountryCode",
+        "path": "MSH.CountryCode",
+        "code": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/v2-0399"
+          }
+        ],
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "string",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/string"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "MSH.17"
+          }
+        ]
+      },
+      {
+        "id": "MSH.CharacterSet",
+        "path": "MSH.CharacterSet",
+        "code": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/v2-0211"
+          }
+        ],
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "string",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/string"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "MSH.18"
+          }
+        ]
+      },
+      {
+        "id": "MSH.PrincipalLanguageOfMessage",
+        "path": "MSH.PrincipalLanguageOfMessage",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "CE",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/CE"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "MSH.19"
+          }
+        ]
+      },
+      {
+        "id": "MSH.AlternateCharacterSetHandlingScheme",
+        "path": "MSH.AlternateCharacterSetHandlingScheme",
+        "code": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/v2-0356"
+          }
+        ],
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "string",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/string"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "MSH.20"
+          }
+        ]
+      },
+      {
+        "id": "MSH.MessageProfileIdentifier",
+        "path": "MSH.MessageProfileIdentifier",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "EI",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/EI"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "MSH.21"
+          }
+        ]
+      }
+    ]
+  }
+}

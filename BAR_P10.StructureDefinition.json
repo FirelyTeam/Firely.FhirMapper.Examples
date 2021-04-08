@@ -1,0 +1,224 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "BAR_P10",
+  "url": "http://hl7.org/fhir/StructureDefinition/BAR_P10",
+  "name": "BAR_P10",
+  "status": "active",
+  "fhirVersion": "4.0.1",
+  "kind": "logical",
+  "abstract": false,
+  "type": "BAR_P10",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Element",
+  "derivation": "specialization",
+  "differential": {
+    "element": [
+      {
+        "id": "BAR_P10",
+        "path": "BAR_P10",
+        "type": [
+          {
+            "code": "Element"
+          }
+        ],
+        "mapping": [
+          {
+            "id": "BAR_P10",
+            "identity": "v2",
+            "map": "BAR_P10"
+          }
+        ]
+      },
+      {
+        "id": "BAR_P10.MSH",
+        "path": "BAR_P10.MSH",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "MSH",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/MSH"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "MSH"
+          }
+        ]
+      },
+      {
+        "id": "BAR_P10.SFT",
+        "path": "BAR_P10.SFT",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "SFT",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/SFT"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "SFT"
+          }
+        ]
+      },
+      {
+        "id": "BAR_P10.EVN",
+        "path": "BAR_P10.EVN",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "EVN",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/EVN"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "EVN"
+          }
+        ]
+      },
+      {
+        "id": "BAR_P10.PID",
+        "path": "BAR_P10.PID",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "PID",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/PID"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "PID"
+          }
+        ]
+      },
+      {
+        "id": "BAR_P10.PV1",
+        "path": "BAR_P10.PV1",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "PV1",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/PV1"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "PV1"
+          }
+        ]
+      },
+      {
+        "id": "BAR_P10.DG1",
+        "path": "BAR_P10.DG1",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "DG1",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/DG1"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "DG1"
+          }
+        ]
+      },
+      {
+        "id": "BAR_P10.GP1",
+        "path": "BAR_P10.GP1",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "GP1",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/GP1"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "GP1"
+          }
+        ]
+      },
+      {
+        "id": "BAR_P10.PROCEDURE",
+        "path": "BAR_P10.PROCEDURE",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "BackboneElement"
+          }
+        ]
+      },
+      {
+        "id": "BAR_P10.PROCEDURE.PR1",
+        "path": "BAR_P10.PROCEDURE.PR1",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "PR1",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/PR1"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "PR1"
+          }
+        ]
+      },
+      {
+        "id": "BAR_P10.PROCEDURE.GP2",
+        "path": "BAR_P10.PROCEDURE.GP2",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "GP2",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/GP2"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "GP2"
+          }
+        ]
+      }
+    ]
+  }
+}

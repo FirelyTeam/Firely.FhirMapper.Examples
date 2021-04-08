@@ -1,0 +1,458 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "INV",
+  "url": "http://hl7.org/fhir/StructureDefinition/INV",
+  "name": "INV",
+  "status": "active",
+  "fhirVersion": "4.0.1",
+  "kind": "logical",
+  "abstract": false,
+  "type": "INV",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Element",
+  "derivation": "specialization",
+  "differential": {
+    "element": [
+      {
+        "id": "INV",
+        "path": "INV",
+        "type": [
+          {
+            "code": "Element"
+          }
+        ],
+        "mapping": [
+          {
+            "id": "INV",
+            "identity": "v2",
+            "map": "INV"
+          }
+        ]
+      },
+      {
+        "id": "INV.SubstanceIdentifier",
+        "path": "INV.SubstanceIdentifier",
+        "code": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/v2-0451"
+          }
+        ],
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "CE",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/CE"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "INV.1"
+          }
+        ]
+      },
+      {
+        "id": "INV.SubstanceStatus",
+        "path": "INV.SubstanceStatus",
+        "code": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/v2-0383"
+          }
+        ],
+        "min": 1,
+        "max": "*",
+        "type": [
+          {
+            "code": "CE",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/CE"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "INV.2"
+          }
+        ]
+      },
+      {
+        "id": "INV.SubstanceType",
+        "path": "INV.SubstanceType",
+        "code": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/v2-0384"
+          }
+        ],
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "CE",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/CE"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "INV.3"
+          }
+        ]
+      },
+      {
+        "id": "INV.InventoryContainerIdentifier",
+        "path": "INV.InventoryContainerIdentifier",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "CE",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/CE"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "INV.4"
+          }
+        ]
+      },
+      {
+        "id": "INV.ContainerCarrierIdentifier",
+        "path": "INV.ContainerCarrierIdentifier",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "CE",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/CE"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "INV.5"
+          }
+        ]
+      },
+      {
+        "id": "INV.PositiononCarrier",
+        "path": "INV.PositiononCarrier",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "CE",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/CE"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "INV.6"
+          }
+        ]
+      },
+      {
+        "id": "INV.InitialQuantity",
+        "path": "INV.InitialQuantity",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "string",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/string"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "INV.7"
+          }
+        ]
+      },
+      {
+        "id": "INV.CurrentQuantity",
+        "path": "INV.CurrentQuantity",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "string",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/string"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "INV.8"
+          }
+        ]
+      },
+      {
+        "id": "INV.AvailableQuantity",
+        "path": "INV.AvailableQuantity",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "string",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/string"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "INV.9"
+          }
+        ]
+      },
+      {
+        "id": "INV.ConsumptionQuantity",
+        "path": "INV.ConsumptionQuantity",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "string",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/string"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "INV.10"
+          }
+        ]
+      },
+      {
+        "id": "INV.QuantityUnits",
+        "path": "INV.QuantityUnits",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "CE",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/CE"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "INV.11"
+          }
+        ]
+      },
+      {
+        "id": "INV.ExpirationDate/Time",
+        "path": "INV.ExpirationDate/Time",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "TS",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/TS"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "INV.12"
+          }
+        ]
+      },
+      {
+        "id": "INV.FirstUsedDate/Time",
+        "path": "INV.FirstUsedDate/Time",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "TS",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/TS"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "INV.13"
+          }
+        ]
+      },
+      {
+        "id": "INV.OnBoardStabilityDuration",
+        "path": "INV.OnBoardStabilityDuration",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "TQ",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/TQ"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "INV.14"
+          }
+        ]
+      },
+      {
+        "id": "INV.Test/FluidIdentifier(s)",
+        "path": "INV.Test/FluidIdentifier(s)",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "CE",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/CE"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "INV.15"
+          }
+        ]
+      },
+      {
+        "id": "INV.ManufacturerLotNumber",
+        "path": "INV.ManufacturerLotNumber",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "string",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/string"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "INV.16"
+          }
+        ]
+      },
+      {
+        "id": "INV.ManufacturerIdentifier",
+        "path": "INV.ManufacturerIdentifier",
+        "code": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/v2-0385"
+          }
+        ],
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "CE",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/CE"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "INV.17"
+          }
+        ]
+      },
+      {
+        "id": "INV.SupplierIdentifier",
+        "path": "INV.SupplierIdentifier",
+        "code": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/v2-0386"
+          }
+        ],
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "CE",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/CE"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "INV.18"
+          }
+        ]
+      },
+      {
+        "id": "INV.OnBoardStabilityTime",
+        "path": "INV.OnBoardStabilityTime",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "CQ",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/CQ"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "INV.19"
+          }
+        ]
+      },
+      {
+        "id": "INV.TargetValue",
+        "path": "INV.TargetValue",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "CQ",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/CQ"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "INV.20"
+          }
+        ]
+      }
+    ]
+  }
+}

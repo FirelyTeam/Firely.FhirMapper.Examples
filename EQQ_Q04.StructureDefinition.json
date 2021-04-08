@@ -1,0 +1,113 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "EQQ_Q04",
+  "url": "http://hl7.org/fhir/StructureDefinition/EQQ_Q04",
+  "name": "EQQ_Q04",
+  "status": "active",
+  "fhirVersion": "4.0.1",
+  "kind": "logical",
+  "abstract": false,
+  "type": "EQQ_Q04",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Element",
+  "derivation": "specialization",
+  "differential": {
+    "element": [
+      {
+        "id": "EQQ_Q04",
+        "path": "EQQ_Q04",
+        "type": [
+          {
+            "code": "Element"
+          }
+        ],
+        "mapping": [
+          {
+            "id": "EQQ_Q04",
+            "identity": "v2",
+            "map": "EQQ_Q04"
+          }
+        ]
+      },
+      {
+        "id": "EQQ_Q04.MSH",
+        "path": "EQQ_Q04.MSH",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "MSH",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/MSH"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "MSH"
+          }
+        ]
+      },
+      {
+        "id": "EQQ_Q04.SFT",
+        "path": "EQQ_Q04.SFT",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "SFT",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/SFT"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "SFT"
+          }
+        ]
+      },
+      {
+        "id": "EQQ_Q04.EQL",
+        "path": "EQQ_Q04.EQL",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "EQL",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/EQL"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "EQL"
+          }
+        ]
+      },
+      {
+        "id": "EQQ_Q04.DSC",
+        "path": "EQQ_Q04.DSC",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "DSC",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/DSC"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "DSC"
+          }
+        ]
+      }
+    ]
+  }
+}

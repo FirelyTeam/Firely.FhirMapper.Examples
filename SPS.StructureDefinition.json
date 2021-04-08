@@ -1,0 +1,193 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "SPS",
+  "url": "http://hl7.org/fhir/StructureDefinition/SPS",
+  "name": "SPS",
+  "status": "active",
+  "fhirVersion": "4.0.1",
+  "kind": "logical",
+  "abstract": false,
+  "type": "SPS",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Element",
+  "derivation": "specialization",
+  "differential": {
+    "element": [
+      {
+        "id": "SPS",
+        "path": "SPS",
+        "type": [
+          {
+            "code": "Element"
+          }
+        ],
+        "mapping": [
+          {
+            "id": "SPS",
+            "identity": "v2",
+            "map": "SPS"
+          }
+        ]
+      },
+      {
+        "id": "SPS.SpecimenSourceNameorCode",
+        "path": "SPS.SpecimenSourceNameorCode",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "CWE",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/CWE"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "SPS.1"
+          }
+        ]
+      },
+      {
+        "id": "SPS.Additives",
+        "path": "SPS.Additives",
+        "code": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/v2-0371"
+          }
+        ],
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "CWE",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/CWE"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "SPS.2"
+          }
+        ]
+      },
+      {
+        "id": "SPS.SpecimenCollectionMethod",
+        "path": "SPS.SpecimenCollectionMethod",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "string",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/string"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "SPS.3"
+          }
+        ]
+      },
+      {
+        "id": "SPS.BodySite",
+        "path": "SPS.BodySite",
+        "code": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/v2-0163"
+          }
+        ],
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "CWE",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/CWE"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "SPS.4"
+          }
+        ]
+      },
+      {
+        "id": "SPS.SiteModifier",
+        "path": "SPS.SiteModifier",
+        "code": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/v2-0495"
+          }
+        ],
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "CWE",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/CWE"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "SPS.5"
+          }
+        ]
+      },
+      {
+        "id": "SPS.CollectionMethodModifierCode",
+        "path": "SPS.CollectionMethodModifierCode",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "CWE",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/CWE"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "SPS.6"
+          }
+        ]
+      },
+      {
+        "id": "SPS.SpecimenRole",
+        "path": "SPS.SpecimenRole",
+        "code": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/v2-0369"
+          }
+        ],
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "CWE",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/CWE"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "SPS.7"
+          }
+        ]
+      }
+    ]
+  }
+}

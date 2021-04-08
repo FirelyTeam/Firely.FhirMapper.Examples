@@ -1,0 +1,228 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "PDA",
+  "url": "http://hl7.org/fhir/StructureDefinition/PDA",
+  "name": "PDA",
+  "status": "active",
+  "fhirVersion": "4.0.1",
+  "kind": "logical",
+  "abstract": false,
+  "type": "PDA",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Element",
+  "derivation": "specialization",
+  "differential": {
+    "element": [
+      {
+        "id": "PDA",
+        "path": "PDA",
+        "type": [
+          {
+            "code": "Element"
+          }
+        ],
+        "mapping": [
+          {
+            "id": "PDA",
+            "identity": "v2",
+            "map": "PDA"
+          }
+        ]
+      },
+      {
+        "id": "PDA.DeathCauseCode",
+        "path": "PDA.DeathCauseCode",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "CE",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/CE"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "PDA.1"
+          }
+        ]
+      },
+      {
+        "id": "PDA.DeathLocation",
+        "path": "PDA.DeathLocation",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "PL",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/PL"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "PDA.2"
+          }
+        ]
+      },
+      {
+        "id": "PDA.DeathCertifiedIndicator",
+        "path": "PDA.DeathCertifiedIndicator",
+        "code": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/v2-0136"
+          }
+        ],
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "string",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/string"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "PDA.3"
+          }
+        ]
+      },
+      {
+        "id": "PDA.DeathCertificateSignedDate/Time",
+        "path": "PDA.DeathCertificateSignedDate/Time",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "TS",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/TS"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "PDA.4"
+          }
+        ]
+      },
+      {
+        "id": "PDA.DeathCertifiedBy",
+        "path": "PDA.DeathCertifiedBy",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "XCN",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/XCN"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "PDA.5"
+          }
+        ]
+      },
+      {
+        "id": "PDA.AutopsyIndicator",
+        "path": "PDA.AutopsyIndicator",
+        "code": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/v2-0136"
+          }
+        ],
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "string",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/string"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "PDA.6"
+          }
+        ]
+      },
+      {
+        "id": "PDA.AutopsyStartandEndDate/Time",
+        "path": "PDA.AutopsyStartandEndDate/Time",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "DR",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/DR"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "PDA.7"
+          }
+        ]
+      },
+      {
+        "id": "PDA.AutopsyPerformedBy",
+        "path": "PDA.AutopsyPerformedBy",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "XCN",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/XCN"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "PDA.8"
+          }
+        ]
+      },
+      {
+        "id": "PDA.CoronerIndicator",
+        "path": "PDA.CoronerIndicator",
+        "code": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/v2-0136"
+          }
+        ],
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "string",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/string"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "PDA.9"
+          }
+        ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,163 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "LRL",
+  "url": "http://hl7.org/fhir/StructureDefinition/LRL",
+  "name": "LRL",
+  "status": "active",
+  "fhirVersion": "4.0.1",
+  "kind": "logical",
+  "abstract": false,
+  "type": "LRL",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Element",
+  "derivation": "specialization",
+  "differential": {
+    "element": [
+      {
+        "id": "LRL",
+        "path": "LRL",
+        "type": [
+          {
+            "code": "Element"
+          }
+        ],
+        "mapping": [
+          {
+            "id": "LRL",
+            "identity": "v2",
+            "map": "LRL"
+          }
+        ]
+      },
+      {
+        "id": "LRL.PrimaryKeyValue-LRL",
+        "path": "LRL.PrimaryKeyValue-LRL",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "PL",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/PL"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "LRL.1"
+          }
+        ]
+      },
+      {
+        "id": "LRL.SegmentActionCode",
+        "path": "LRL.SegmentActionCode",
+        "code": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/v2-0206"
+          }
+        ],
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "string",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/string"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "LRL.2"
+          }
+        ]
+      },
+      {
+        "id": "LRL.SegmentUniqueKey",
+        "path": "LRL.SegmentUniqueKey",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "EI",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/EI"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "LRL.3"
+          }
+        ]
+      },
+      {
+        "id": "LRL.LocationRelationshipID",
+        "path": "LRL.LocationRelationshipID",
+        "code": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/v2-0325"
+          }
+        ],
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "CE",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/CE"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "LRL.4"
+          }
+        ]
+      },
+      {
+        "id": "LRL.OrganizationalLocationRelationshipValue",
+        "path": "LRL.OrganizationalLocationRelationshipValue",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "XON",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/XON"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "LRL.5"
+          }
+        ]
+      },
+      {
+        "id": "LRL.PatientLocationRelationshipValue",
+        "path": "LRL.PatientLocationRelationshipValue",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "PL",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/PL"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "LRL.6"
+          }
+        ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,338 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "PDC",
+  "url": "http://hl7.org/fhir/StructureDefinition/PDC",
+  "name": "PDC",
+  "status": "active",
+  "fhirVersion": "4.0.1",
+  "kind": "logical",
+  "abstract": false,
+  "type": "PDC",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Element",
+  "derivation": "specialization",
+  "differential": {
+    "element": [
+      {
+        "id": "PDC",
+        "path": "PDC",
+        "type": [
+          {
+            "code": "Element"
+          }
+        ],
+        "mapping": [
+          {
+            "id": "PDC",
+            "identity": "v2",
+            "map": "PDC"
+          }
+        ]
+      },
+      {
+        "id": "PDC.Manufacturer/Distributor",
+        "path": "PDC.Manufacturer/Distributor",
+        "min": 1,
+        "max": "*",
+        "type": [
+          {
+            "code": "XON",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/XON"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "PDC.1"
+          }
+        ]
+      },
+      {
+        "id": "PDC.Country",
+        "path": "PDC.Country",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "CE",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/CE"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "PDC.2"
+          }
+        ]
+      },
+      {
+        "id": "PDC.BrandName",
+        "path": "PDC.BrandName",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "string",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/string"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "PDC.3"
+          }
+        ]
+      },
+      {
+        "id": "PDC.DeviceFamilyName",
+        "path": "PDC.DeviceFamilyName",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "string",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/string"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "PDC.4"
+          }
+        ]
+      },
+      {
+        "id": "PDC.GenericName",
+        "path": "PDC.GenericName",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "CE",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/CE"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "PDC.5"
+          }
+        ]
+      },
+      {
+        "id": "PDC.ModelIdentifier",
+        "path": "PDC.ModelIdentifier",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "string",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/string"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "PDC.6"
+          }
+        ]
+      },
+      {
+        "id": "PDC.CatalogueIdentifier",
+        "path": "PDC.CatalogueIdentifier",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "string",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/string"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "PDC.7"
+          }
+        ]
+      },
+      {
+        "id": "PDC.OtherIdentifier",
+        "path": "PDC.OtherIdentifier",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "string",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/string"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "PDC.8"
+          }
+        ]
+      },
+      {
+        "id": "PDC.ProductCode",
+        "path": "PDC.ProductCode",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "CE",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/CE"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "PDC.9"
+          }
+        ]
+      },
+      {
+        "id": "PDC.MarketingBasis",
+        "path": "PDC.MarketingBasis",
+        "code": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/v2-0330"
+          }
+        ],
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "string",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/string"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "PDC.10"
+          }
+        ]
+      },
+      {
+        "id": "PDC.MarketingApprovalID",
+        "path": "PDC.MarketingApprovalID",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "string",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/string"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "PDC.11"
+          }
+        ]
+      },
+      {
+        "id": "PDC.LabeledShelfLife",
+        "path": "PDC.LabeledShelfLife",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "CQ",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/CQ"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "PDC.12"
+          }
+        ]
+      },
+      {
+        "id": "PDC.ExpectedShelfLife",
+        "path": "PDC.ExpectedShelfLife",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "CQ",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/CQ"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "PDC.13"
+          }
+        ]
+      },
+      {
+        "id": "PDC.DateFirstMarketed",
+        "path": "PDC.DateFirstMarketed",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "TS",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/TS"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "PDC.14"
+          }
+        ]
+      },
+      {
+        "id": "PDC.DateLastMarketed",
+        "path": "PDC.DateLastMarketed",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "TS",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/TS"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "PDC.15"
+          }
+        ]
+      }
+    ]
+  }
+}

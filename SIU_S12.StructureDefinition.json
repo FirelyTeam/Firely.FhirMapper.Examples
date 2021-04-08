@@ -1,0 +1,479 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "SIU_S12",
+  "url": "http://hl7.org/fhir/StructureDefinition/SIU_S12",
+  "name": "SIU_S12",
+  "status": "active",
+  "fhirVersion": "4.0.1",
+  "kind": "logical",
+  "abstract": false,
+  "type": "SIU_S12",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Element",
+  "derivation": "specialization",
+  "differential": {
+    "element": [
+      {
+        "id": "SIU_S12",
+        "path": "SIU_S12",
+        "type": [
+          {
+            "code": "Element"
+          }
+        ],
+        "mapping": [
+          {
+            "id": "SIU_S12",
+            "identity": "v2",
+            "map": "SIU_S12"
+          }
+        ]
+      },
+      {
+        "id": "SIU_S12.MSH",
+        "path": "SIU_S12.MSH",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "MSH",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/MSH"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "MSH"
+          }
+        ]
+      },
+      {
+        "id": "SIU_S12.SCH",
+        "path": "SIU_S12.SCH",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "SCH",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/SCH"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "SCH"
+          }
+        ]
+      },
+      {
+        "id": "SIU_S12.TQ1",
+        "path": "SIU_S12.TQ1",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "TQ1",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/TQ1"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "TQ1"
+          }
+        ]
+      },
+      {
+        "id": "SIU_S12.NTE",
+        "path": "SIU_S12.NTE",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "NTE",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/NTE"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "NTE"
+          }
+        ]
+      },
+      {
+        "id": "SIU_S12.PATIENT",
+        "path": "SIU_S12.PATIENT",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "BackboneElement"
+          }
+        ]
+      },
+      {
+        "id": "SIU_S12.PATIENT.PID",
+        "path": "SIU_S12.PATIENT.PID",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "PID",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/PID"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "PID"
+          }
+        ]
+      },
+      {
+        "id": "SIU_S12.PATIENT.PD1",
+        "path": "SIU_S12.PATIENT.PD1",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "PD1",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/PD1"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "PD1"
+          }
+        ]
+      },
+      {
+        "id": "SIU_S12.PATIENT.PV1",
+        "path": "SIU_S12.PATIENT.PV1",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "PV1",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/PV1"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "PV1"
+          }
+        ]
+      },
+      {
+        "id": "SIU_S12.PATIENT.PV2",
+        "path": "SIU_S12.PATIENT.PV2",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "PV2",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/PV2"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "PV2"
+          }
+        ]
+      },
+      {
+        "id": "SIU_S12.PATIENT.OBX",
+        "path": "SIU_S12.PATIENT.OBX",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "OBX",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/OBX"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "OBX"
+          }
+        ]
+      },
+      {
+        "id": "SIU_S12.PATIENT.DG1",
+        "path": "SIU_S12.PATIENT.DG1",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "DG1",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/DG1"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "DG1"
+          }
+        ]
+      },
+      {
+        "id": "SIU_S12.RESOURCES",
+        "path": "SIU_S12.RESOURCES",
+        "min": 1,
+        "max": "*",
+        "type": [
+          {
+            "code": "BackboneElement"
+          }
+        ]
+      },
+      {
+        "id": "SIU_S12.RESOURCES.RGS",
+        "path": "SIU_S12.RESOURCES.RGS",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "RGS",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/RGS"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "RGS"
+          }
+        ]
+      },
+      {
+        "id": "SIU_S12.RESOURCES.SERVICE",
+        "path": "SIU_S12.RESOURCES.SERVICE",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "BackboneElement"
+          }
+        ]
+      },
+      {
+        "id": "SIU_S12.RESOURCES.SERVICE.AIS",
+        "path": "SIU_S12.RESOURCES.SERVICE.AIS",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "AIS",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/AIS"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "AIS"
+          }
+        ]
+      },
+      {
+        "id": "SIU_S12.RESOURCES.SERVICE.NTE",
+        "path": "SIU_S12.RESOURCES.SERVICE.NTE",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "NTE",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/NTE"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "NTE"
+          }
+        ]
+      },
+      {
+        "id": "SIU_S12.RESOURCES.GENERAL_RESOURCE",
+        "path": "SIU_S12.RESOURCES.GENERAL_RESOURCE",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "BackboneElement"
+          }
+        ]
+      },
+      {
+        "id": "SIU_S12.RESOURCES.GENERAL_RESOURCE.AIG",
+        "path": "SIU_S12.RESOURCES.GENERAL_RESOURCE.AIG",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "AIG",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/AIG"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "AIG"
+          }
+        ]
+      },
+      {
+        "id": "SIU_S12.RESOURCES.GENERAL_RESOURCE.NTE",
+        "path": "SIU_S12.RESOURCES.GENERAL_RESOURCE.NTE",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "NTE",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/NTE"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "NTE"
+          }
+        ]
+      },
+      {
+        "id": "SIU_S12.RESOURCES.LOCATION_RESOURCE",
+        "path": "SIU_S12.RESOURCES.LOCATION_RESOURCE",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "BackboneElement"
+          }
+        ]
+      },
+      {
+        "id": "SIU_S12.RESOURCES.LOCATION_RESOURCE.AIL",
+        "path": "SIU_S12.RESOURCES.LOCATION_RESOURCE.AIL",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "AIL",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/AIL"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "AIL"
+          }
+        ]
+      },
+      {
+        "id": "SIU_S12.RESOURCES.LOCATION_RESOURCE.NTE",
+        "path": "SIU_S12.RESOURCES.LOCATION_RESOURCE.NTE",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "NTE",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/NTE"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "NTE"
+          }
+        ]
+      },
+      {
+        "id": "SIU_S12.RESOURCES.PERSONNEL_RESOURCE",
+        "path": "SIU_S12.RESOURCES.PERSONNEL_RESOURCE",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "BackboneElement"
+          }
+        ]
+      },
+      {
+        "id": "SIU_S12.RESOURCES.PERSONNEL_RESOURCE.AIP",
+        "path": "SIU_S12.RESOURCES.PERSONNEL_RESOURCE.AIP",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "AIP",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/AIP"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "AIP"
+          }
+        ]
+      },
+      {
+        "id": "SIU_S12.RESOURCES.PERSONNEL_RESOURCE.NTE",
+        "path": "SIU_S12.RESOURCES.PERSONNEL_RESOURCE.NTE",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "NTE",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/NTE"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "NTE"
+          }
+        ]
+      }
+    ]
+  }
+}

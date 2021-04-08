@@ -1,0 +1,153 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "QBP_Qnn",
+  "url": "http://hl7.org/fhir/StructureDefinition/QBP_Qnn",
+  "name": "QBP_Qnn",
+  "status": "active",
+  "fhirVersion": "4.0.1",
+  "kind": "logical",
+  "abstract": false,
+  "type": "QBP_Qnn",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Element",
+  "derivation": "specialization",
+  "differential": {
+    "element": [
+      {
+        "id": "QBP_Qnn",
+        "path": "QBP_Qnn",
+        "type": [
+          {
+            "code": "Element"
+          }
+        ],
+        "mapping": [
+          {
+            "id": "QBP_Qnn",
+            "identity": "v2",
+            "map": "QBP_Qnn"
+          }
+        ]
+      },
+      {
+        "id": "QBP_Qnn.MSH",
+        "path": "QBP_Qnn.MSH",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "MSH",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/MSH"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "MSH"
+          }
+        ]
+      },
+      {
+        "id": "QBP_Qnn.SFT",
+        "path": "QBP_Qnn.SFT",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "SFT",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/SFT"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "SFT"
+          }
+        ]
+      },
+      {
+        "id": "QBP_Qnn.QPD",
+        "path": "QBP_Qnn.QPD",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "QPD",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/QPD"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "QPD"
+          }
+        ]
+      },
+      {
+        "id": "QBP_Qnn.RDF",
+        "path": "QBP_Qnn.RDF",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "RDF",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/RDF"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "RDF"
+          }
+        ]
+      },
+      {
+        "id": "QBP_Qnn.RCP",
+        "path": "QBP_Qnn.RCP",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "RCP",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/RCP"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "RCP"
+          }
+        ]
+      },
+      {
+        "id": "QBP_Qnn.DSC",
+        "path": "QBP_Qnn.DSC",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "DSC",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/DSC"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "DSC"
+          }
+        ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,78 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "DSC",
+  "url": "http://hl7.org/fhir/StructureDefinition/DSC",
+  "name": "DSC",
+  "status": "active",
+  "fhirVersion": "4.0.1",
+  "kind": "logical",
+  "abstract": false,
+  "type": "DSC",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Element",
+  "derivation": "specialization",
+  "differential": {
+    "element": [
+      {
+        "id": "DSC",
+        "path": "DSC",
+        "type": [
+          {
+            "code": "Element"
+          }
+        ],
+        "mapping": [
+          {
+            "id": "DSC",
+            "identity": "v2",
+            "map": "DSC"
+          }
+        ]
+      },
+      {
+        "id": "DSC.ContinuationPointer",
+        "path": "DSC.ContinuationPointer",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "string",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/string"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "DSC.1"
+          }
+        ]
+      },
+      {
+        "id": "DSC.ContinuationStyle",
+        "path": "DSC.ContinuationStyle",
+        "code": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/v2-0398"
+          }
+        ],
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "string",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/string"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "DSC.2"
+          }
+        ]
+      }
+    ]
+  }
+}

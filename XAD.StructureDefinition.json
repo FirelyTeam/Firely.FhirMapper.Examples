@@ -1,0 +1,338 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "XAD",
+  "url": "http://hl7.org/fhir/StructureDefinition/XAD",
+  "name": "XAD",
+  "status": "active",
+  "fhirVersion": "4.0.1",
+  "kind": "logical",
+  "abstract": false,
+  "type": "XAD",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Element",
+  "derivation": "specialization",
+  "differential": {
+    "element": [
+      {
+        "id": "XAD",
+        "path": "XAD",
+        "type": [
+          {
+            "code": "Element"
+          }
+        ],
+        "mapping": [
+          {
+            "id": "XAD",
+            "identity": "v2",
+            "map": "XAD"
+          }
+        ]
+      },
+      {
+        "id": "XAD.StreetAddress",
+        "path": "XAD.StreetAddress",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "SAD",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/SAD"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "XAD.1"
+          }
+        ]
+      },
+      {
+        "id": "XAD.OtherDesignation",
+        "path": "XAD.OtherDesignation",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "string",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/string"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "XAD.2"
+          }
+        ]
+      },
+      {
+        "id": "XAD.City",
+        "path": "XAD.City",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "string",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/string"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "XAD.3"
+          }
+        ]
+      },
+      {
+        "id": "XAD.StateorProvince",
+        "path": "XAD.StateorProvince",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "string",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/string"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "XAD.4"
+          }
+        ]
+      },
+      {
+        "id": "XAD.ZiporPostalCode",
+        "path": "XAD.ZiporPostalCode",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "string",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/string"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "XAD.5"
+          }
+        ]
+      },
+      {
+        "id": "XAD.Country",
+        "path": "XAD.Country",
+        "code": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/v2-0399"
+          }
+        ],
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "string",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/string"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "XAD.6"
+          }
+        ]
+      },
+      {
+        "id": "XAD.AddressType",
+        "path": "XAD.AddressType",
+        "code": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/v2-0190"
+          }
+        ],
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "string",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/string"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "XAD.7"
+          }
+        ]
+      },
+      {
+        "id": "XAD.OtherGeographicDesignation",
+        "path": "XAD.OtherGeographicDesignation",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "string",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/string"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "XAD.8"
+          }
+        ]
+      },
+      {
+        "id": "XAD.County/ParishCode",
+        "path": "XAD.County/ParishCode",
+        "code": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/v2-0289"
+          }
+        ],
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "string",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/string"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "XAD.9"
+          }
+        ]
+      },
+      {
+        "id": "XAD.CensusTract",
+        "path": "XAD.CensusTract",
+        "code": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/v2-0288"
+          }
+        ],
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "string",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/string"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "XAD.10"
+          }
+        ]
+      },
+      {
+        "id": "XAD.AddressRepresentationCode",
+        "path": "XAD.AddressRepresentationCode",
+        "code": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/v2-0465"
+          }
+        ],
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "string",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/string"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "XAD.11"
+          }
+        ]
+      },
+      {
+        "id": "XAD.AddressValidityRange",
+        "path": "XAD.AddressValidityRange",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "DR",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/DR"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "XAD.12"
+          }
+        ]
+      },
+      {
+        "id": "XAD.EffectiveDate",
+        "path": "XAD.EffectiveDate",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "TS",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/TS"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "XAD.13"
+          }
+        ]
+      },
+      {
+        "id": "XAD.ExpirationDate",
+        "path": "XAD.ExpirationDate",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "TS",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/TS"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "XAD.14"
+          }
+        ]
+      }
+    ]
+  }
+}

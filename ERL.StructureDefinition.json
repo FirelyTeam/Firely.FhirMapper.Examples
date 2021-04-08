@@ -1,0 +1,153 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "ERL",
+  "url": "http://hl7.org/fhir/StructureDefinition/ERL",
+  "name": "ERL",
+  "status": "active",
+  "fhirVersion": "4.0.1",
+  "kind": "logical",
+  "abstract": false,
+  "type": "ERL",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Element",
+  "derivation": "specialization",
+  "differential": {
+    "element": [
+      {
+        "id": "ERL",
+        "path": "ERL",
+        "type": [
+          {
+            "code": "Element"
+          }
+        ],
+        "mapping": [
+          {
+            "id": "ERL",
+            "identity": "v2",
+            "map": "ERL"
+          }
+        ]
+      },
+      {
+        "id": "ERL.SegmentID",
+        "path": "ERL.SegmentID",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "string",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/string"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "ERL.1"
+          }
+        ]
+      },
+      {
+        "id": "ERL.SegmentSequence",
+        "path": "ERL.SegmentSequence",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "string",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/string"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "ERL.2"
+          }
+        ]
+      },
+      {
+        "id": "ERL.FieldPosition",
+        "path": "ERL.FieldPosition",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "string",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/string"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "ERL.3"
+          }
+        ]
+      },
+      {
+        "id": "ERL.FieldRepetition",
+        "path": "ERL.FieldRepetition",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "string",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/string"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "ERL.4"
+          }
+        ]
+      },
+      {
+        "id": "ERL.ComponentNumber",
+        "path": "ERL.ComponentNumber",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "string",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/string"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "ERL.5"
+          }
+        ]
+      },
+      {
+        "id": "ERL.Sub-ComponentNumber",
+        "path": "ERL.Sub-ComponentNumber",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "string",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/string"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "ERL.6"
+          }
+        ]
+      }
+    ]
+  }
+}

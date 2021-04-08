@@ -1,0 +1,93 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "CCP",
+  "url": "http://hl7.org/fhir/StructureDefinition/CCP",
+  "name": "CCP",
+  "status": "active",
+  "fhirVersion": "4.0.1",
+  "kind": "logical",
+  "abstract": false,
+  "type": "CCP",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Element",
+  "derivation": "specialization",
+  "differential": {
+    "element": [
+      {
+        "id": "CCP",
+        "path": "CCP",
+        "type": [
+          {
+            "code": "Element"
+          }
+        ],
+        "mapping": [
+          {
+            "id": "CCP",
+            "identity": "v2",
+            "map": "CCP"
+          }
+        ]
+      },
+      {
+        "id": "CCP.ChannelCalibrationSensitivityCorrectionFactor",
+        "path": "CCP.ChannelCalibrationSensitivityCorrectionFactor",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "string",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/string"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "CCP.1"
+          }
+        ]
+      },
+      {
+        "id": "CCP.ChannelCalibrationBaseline",
+        "path": "CCP.ChannelCalibrationBaseline",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "string",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/string"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "CCP.2"
+          }
+        ]
+      },
+      {
+        "id": "CCP.ChannelCalibrationTimeSkew",
+        "path": "CCP.ChannelCalibrationTimeSkew",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "string",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/string"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "CCP.3"
+          }
+        ]
+      }
+    ]
+  }
+}

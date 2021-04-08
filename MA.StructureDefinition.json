@@ -1,0 +1,153 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "MA",
+  "url": "http://hl7.org/fhir/StructureDefinition/MA",
+  "name": "MA",
+  "status": "active",
+  "fhirVersion": "4.0.1",
+  "kind": "logical",
+  "abstract": false,
+  "type": "MA",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Element",
+  "derivation": "specialization",
+  "differential": {
+    "element": [
+      {
+        "id": "MA",
+        "path": "MA",
+        "type": [
+          {
+            "code": "Element"
+          }
+        ],
+        "mapping": [
+          {
+            "id": "MA",
+            "identity": "v2",
+            "map": "MA"
+          }
+        ]
+      },
+      {
+        "id": "MA.Sample1FromChannel1",
+        "path": "MA.Sample1FromChannel1",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "string",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/string"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "MA.1"
+          }
+        ]
+      },
+      {
+        "id": "MA.Sample1FromChannel2",
+        "path": "MA.Sample1FromChannel2",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "string",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/string"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "MA.2"
+          }
+        ]
+      },
+      {
+        "id": "MA.Sample1FromChannelN",
+        "path": "MA.Sample1FromChannelN",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "string",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/string"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "MA.3"
+          }
+        ]
+      },
+      {
+        "id": "MA.Sample2FromChannel1",
+        "path": "MA.Sample2FromChannel1",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "string",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/string"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "MA.4"
+          }
+        ]
+      },
+      {
+        "id": "MA.Sample2FromChannelN",
+        "path": "MA.Sample2FromChannelN",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "string",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/string"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "MA.5"
+          }
+        ]
+      },
+      {
+        "id": "MA.SampleNFromChannelN",
+        "path": "MA.SampleNFromChannelN",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "string",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/string"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "MA.6"
+          }
+        ]
+      }
+    ]
+  }
+}

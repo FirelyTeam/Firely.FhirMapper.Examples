@@ -1,0 +1,108 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "MSG",
+  "url": "http://hl7.org/fhir/StructureDefinition/MSG",
+  "name": "MSG",
+  "status": "active",
+  "fhirVersion": "4.0.1",
+  "kind": "logical",
+  "abstract": false,
+  "type": "MSG",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Element",
+  "derivation": "specialization",
+  "differential": {
+    "element": [
+      {
+        "id": "MSG",
+        "path": "MSG",
+        "type": [
+          {
+            "code": "Element"
+          }
+        ],
+        "mapping": [
+          {
+            "id": "MSG",
+            "identity": "v2",
+            "map": "MSG"
+          }
+        ]
+      },
+      {
+        "id": "MSG.MessageCode",
+        "path": "MSG.MessageCode",
+        "code": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/v2-0076"
+          }
+        ],
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "string",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/string"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "MSG.1"
+          }
+        ]
+      },
+      {
+        "id": "MSG.TriggerEvent",
+        "path": "MSG.TriggerEvent",
+        "code": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/v2-0003"
+          }
+        ],
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "string",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/string"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "MSG.2"
+          }
+        ]
+      },
+      {
+        "id": "MSG.MessageStructure",
+        "path": "MSG.MessageStructure",
+        "code": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/v2-0354"
+          }
+        ],
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "string",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/string"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "MSG.3"
+          }
+        ]
+      }
+    ]
+  }
+}

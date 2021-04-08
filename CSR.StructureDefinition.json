@@ -1,0 +1,353 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "CSR",
+  "url": "http://hl7.org/fhir/StructureDefinition/CSR",
+  "name": "CSR",
+  "status": "active",
+  "fhirVersion": "4.0.1",
+  "kind": "logical",
+  "abstract": false,
+  "type": "CSR",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Element",
+  "derivation": "specialization",
+  "differential": {
+    "element": [
+      {
+        "id": "CSR",
+        "path": "CSR",
+        "type": [
+          {
+            "code": "Element"
+          }
+        ],
+        "mapping": [
+          {
+            "id": "CSR",
+            "identity": "v2",
+            "map": "CSR"
+          }
+        ]
+      },
+      {
+        "id": "CSR.SponsorStudyID",
+        "path": "CSR.SponsorStudyID",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "EI",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/EI"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "CSR.1"
+          }
+        ]
+      },
+      {
+        "id": "CSR.AlternateStudyID",
+        "path": "CSR.AlternateStudyID",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "EI",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/EI"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "CSR.2"
+          }
+        ]
+      },
+      {
+        "id": "CSR.InstitutionRegisteringthePatient",
+        "path": "CSR.InstitutionRegisteringthePatient",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "CE",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/CE"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "CSR.3"
+          }
+        ]
+      },
+      {
+        "id": "CSR.SponsorPatientID",
+        "path": "CSR.SponsorPatientID",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "CX",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/CX"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "CSR.4"
+          }
+        ]
+      },
+      {
+        "id": "CSR.AlternatePatientID-CSR",
+        "path": "CSR.AlternatePatientID-CSR",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "CX",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/CX"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "CSR.5"
+          }
+        ]
+      },
+      {
+        "id": "CSR.Date/TimeOfPatientStudyRegistration",
+        "path": "CSR.Date/TimeOfPatientStudyRegistration",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "TS",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/TS"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "CSR.6"
+          }
+        ]
+      },
+      {
+        "id": "CSR.PersonPerformingStudyRegistration",
+        "path": "CSR.PersonPerformingStudyRegistration",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "XCN",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/XCN"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "CSR.7"
+          }
+        ]
+      },
+      {
+        "id": "CSR.StudyAuthorizingProvider",
+        "path": "CSR.StudyAuthorizingProvider",
+        "min": 1,
+        "max": "*",
+        "type": [
+          {
+            "code": "XCN",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/XCN"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "CSR.8"
+          }
+        ]
+      },
+      {
+        "id": "CSR.Date/timePatientStudyConsentSigned",
+        "path": "CSR.Date/timePatientStudyConsentSigned",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "TS",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/TS"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "CSR.9"
+          }
+        ]
+      },
+      {
+        "id": "CSR.PatientStudyEligibilityStatus",
+        "path": "CSR.PatientStudyEligibilityStatus",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "CE",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/CE"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "CSR.10"
+          }
+        ]
+      },
+      {
+        "id": "CSR.StudyRandomizationDate/time",
+        "path": "CSR.StudyRandomizationDate/time",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "TS",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/TS"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "CSR.11"
+          }
+        ]
+      },
+      {
+        "id": "CSR.RandomizedStudyArm",
+        "path": "CSR.RandomizedStudyArm",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "CE",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/CE"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "CSR.12"
+          }
+        ]
+      },
+      {
+        "id": "CSR.StratumforStudyRandomization",
+        "path": "CSR.StratumforStudyRandomization",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "CE",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/CE"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "CSR.13"
+          }
+        ]
+      },
+      {
+        "id": "CSR.PatientEvaluabilityStatus",
+        "path": "CSR.PatientEvaluabilityStatus",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "CE",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/CE"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "CSR.14"
+          }
+        ]
+      },
+      {
+        "id": "CSR.Date/timeEndedStudy",
+        "path": "CSR.Date/timeEndedStudy",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "TS",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/TS"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "CSR.15"
+          }
+        ]
+      },
+      {
+        "id": "CSR.ReasonEndedStudy",
+        "path": "CSR.ReasonEndedStudy",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "CE",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/CE"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "CSR.16"
+          }
+        ]
+      }
+    ]
+  }
+}

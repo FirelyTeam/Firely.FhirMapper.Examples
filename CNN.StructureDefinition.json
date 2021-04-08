@@ -1,0 +1,273 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "CNN",
+  "url": "http://hl7.org/fhir/StructureDefinition/CNN",
+  "name": "CNN",
+  "status": "active",
+  "fhirVersion": "4.0.1",
+  "kind": "logical",
+  "abstract": false,
+  "type": "CNN",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Element",
+  "derivation": "specialization",
+  "differential": {
+    "element": [
+      {
+        "id": "CNN",
+        "path": "CNN",
+        "type": [
+          {
+            "code": "Element"
+          }
+        ],
+        "mapping": [
+          {
+            "id": "CNN",
+            "identity": "v2",
+            "map": "CNN"
+          }
+        ]
+      },
+      {
+        "id": "CNN.IDNumber",
+        "path": "CNN.IDNumber",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "string",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/string"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "CNN.1"
+          }
+        ]
+      },
+      {
+        "id": "CNN.FamilyName",
+        "path": "CNN.FamilyName",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "string",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/string"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "CNN.2"
+          }
+        ]
+      },
+      {
+        "id": "CNN.GivenName",
+        "path": "CNN.GivenName",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "string",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/string"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "CNN.3"
+          }
+        ]
+      },
+      {
+        "id": "CNN.SecondandFurtherGivenNamesorInitialsThereof",
+        "path": "CNN.SecondandFurtherGivenNamesorInitialsThereof",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "string",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/string"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "CNN.4"
+          }
+        ]
+      },
+      {
+        "id": "CNN.Suffix",
+        "path": "CNN.Suffix",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "string",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/string"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "CNN.5"
+          }
+        ]
+      },
+      {
+        "id": "CNN.Prefix",
+        "path": "CNN.Prefix",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "string",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/string"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "CNN.6"
+          }
+        ]
+      },
+      {
+        "id": "CNN.Degree",
+        "path": "CNN.Degree",
+        "code": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/v2-0360"
+          }
+        ],
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "string",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/string"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "CNN.7"
+          }
+        ]
+      },
+      {
+        "id": "CNN.SourceTable",
+        "path": "CNN.SourceTable",
+        "code": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/v2-0297"
+          }
+        ],
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "string",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/string"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "CNN.8"
+          }
+        ]
+      },
+      {
+        "id": "CNN.AssigningAuthority-NamespaceID",
+        "path": "CNN.AssigningAuthority-NamespaceID",
+        "code": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/v2-0363"
+          }
+        ],
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "string",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/string"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "CNN.9"
+          }
+        ]
+      },
+      {
+        "id": "CNN.AssigningAuthority-UniversalID",
+        "path": "CNN.AssigningAuthority-UniversalID",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "string",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/string"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "CNN.10"
+          }
+        ]
+      },
+      {
+        "id": "CNN.AssigningAuthority-UniversalIDType",
+        "path": "CNN.AssigningAuthority-UniversalIDType",
+        "code": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/v2-0301"
+          }
+        ],
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "string",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/string"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "CNN.11"
+          }
+        ]
+      }
+    ]
+  }
+}

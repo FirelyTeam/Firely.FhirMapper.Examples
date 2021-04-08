@@ -1,0 +1,73 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "DR",
+  "url": "http://hl7.org/fhir/StructureDefinition/DR",
+  "name": "DR",
+  "status": "active",
+  "fhirVersion": "4.0.1",
+  "kind": "logical",
+  "abstract": false,
+  "type": "DR",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Element",
+  "derivation": "specialization",
+  "differential": {
+    "element": [
+      {
+        "id": "DR",
+        "path": "DR",
+        "type": [
+          {
+            "code": "Element"
+          }
+        ],
+        "mapping": [
+          {
+            "id": "DR",
+            "identity": "v2",
+            "map": "DR"
+          }
+        ]
+      },
+      {
+        "id": "DR.RangeStartDate/Time",
+        "path": "DR.RangeStartDate/Time",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "TS",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/TS"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "DR.1"
+          }
+        ]
+      },
+      {
+        "id": "DR.RangeEndDate/Time",
+        "path": "DR.RangeEndDate/Time",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "TS",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/TS"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "DR.2"
+          }
+        ]
+      }
+    ]
+  }
+}

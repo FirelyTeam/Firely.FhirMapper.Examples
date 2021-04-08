@@ -1,0 +1,903 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "PID",
+  "url": "http://hl7.org/fhir/StructureDefinition/PID",
+  "name": "PID",
+  "status": "active",
+  "fhirVersion": "4.0.1",
+  "kind": "logical",
+  "abstract": false,
+  "type": "PID",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Element",
+  "derivation": "specialization",
+  "differential": {
+    "element": [
+      {
+        "id": "PID",
+        "path": "PID",
+        "type": [
+          {
+            "code": "Element"
+          }
+        ],
+        "mapping": [
+          {
+            "id": "PID",
+            "identity": "v2",
+            "map": "PID"
+          }
+        ]
+      },
+      {
+        "id": "PID.SetID-PID",
+        "path": "PID.SetID-PID",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "string",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/string"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "PID.1"
+          }
+        ]
+      },
+      {
+        "id": "PID.PatientID",
+        "path": "PID.PatientID",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "CX",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/CX"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "PID.2"
+          }
+        ]
+      },
+      {
+        "id": "PID.PatientIdentifierList",
+        "path": "PID.PatientIdentifierList",
+        "min": 1,
+        "max": "*",
+        "type": [
+          {
+            "code": "CX",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/CX"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "PID.3"
+          }
+        ]
+      },
+      {
+        "id": "PID.AlternatePatientID-PID",
+        "path": "PID.AlternatePatientID-PID",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "CX",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/CX"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "PID.4"
+          }
+        ]
+      },
+      {
+        "id": "PID.PatientName",
+        "path": "PID.PatientName",
+        "min": 1,
+        "max": "*",
+        "type": [
+          {
+            "code": "XPN",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/XPN"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "PID.5"
+          }
+        ]
+      },
+      {
+        "id": "PID.Mother'sMaidenName",
+        "path": "PID.Mother'sMaidenName",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "XPN",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/XPN"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "PID.6"
+          }
+        ]
+      },
+      {
+        "id": "PID.Date/TimeofBirth",
+        "path": "PID.Date/TimeofBirth",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "TS",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/TS"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "PID.7"
+          }
+        ]
+      },
+      {
+        "id": "PID.AdministrativeSex",
+        "path": "PID.AdministrativeSex",
+        "code": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/v2-0001"
+          }
+        ],
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "string",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/string"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "PID.8"
+          }
+        ]
+      },
+      {
+        "id": "PID.PatientAlias",
+        "path": "PID.PatientAlias",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "XPN",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/XPN"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "PID.9"
+          }
+        ]
+      },
+      {
+        "id": "PID.Race",
+        "path": "PID.Race",
+        "code": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/v2-0005"
+          }
+        ],
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "CE",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/CE"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "PID.10"
+          }
+        ]
+      },
+      {
+        "id": "PID.PatientAddress",
+        "path": "PID.PatientAddress",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "XAD",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/XAD"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "PID.11"
+          }
+        ]
+      },
+      {
+        "id": "PID.CountyCode",
+        "path": "PID.CountyCode",
+        "code": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/v2-0289"
+          }
+        ],
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "string",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/string"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "PID.12"
+          }
+        ]
+      },
+      {
+        "id": "PID.PhoneNumber-Home",
+        "path": "PID.PhoneNumber-Home",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "XTN",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/XTN"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "PID.13"
+          }
+        ]
+      },
+      {
+        "id": "PID.PhoneNumber-Business",
+        "path": "PID.PhoneNumber-Business",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "XTN",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/XTN"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "PID.14"
+          }
+        ]
+      },
+      {
+        "id": "PID.PrimaryLanguage",
+        "path": "PID.PrimaryLanguage",
+        "code": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/v2-0296"
+          }
+        ],
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "CE",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/CE"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "PID.15"
+          }
+        ]
+      },
+      {
+        "id": "PID.MaritalStatus",
+        "path": "PID.MaritalStatus",
+        "code": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/v2-0002"
+          }
+        ],
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "CE",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/CE"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "PID.16"
+          }
+        ]
+      },
+      {
+        "id": "PID.Religion",
+        "path": "PID.Religion",
+        "code": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/v2-0006"
+          }
+        ],
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "CE",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/CE"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "PID.17"
+          }
+        ]
+      },
+      {
+        "id": "PID.PatientAccountNumber",
+        "path": "PID.PatientAccountNumber",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "CX",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/CX"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "PID.18"
+          }
+        ]
+      },
+      {
+        "id": "PID.SSNNumber-Patient",
+        "path": "PID.SSNNumber-Patient",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "string",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/string"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "PID.19"
+          }
+        ]
+      },
+      {
+        "id": "PID.Driver'sLicenseNumber-Patient",
+        "path": "PID.Driver'sLicenseNumber-Patient",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "DLN",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/DLN"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "PID.20"
+          }
+        ]
+      },
+      {
+        "id": "PID.Mother'sIdentifier",
+        "path": "PID.Mother'sIdentifier",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "CX",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/CX"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "PID.21"
+          }
+        ]
+      },
+      {
+        "id": "PID.EthnicGroup",
+        "path": "PID.EthnicGroup",
+        "code": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/v2-0189"
+          }
+        ],
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "CE",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/CE"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "PID.22"
+          }
+        ]
+      },
+      {
+        "id": "PID.BirthPlace",
+        "path": "PID.BirthPlace",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "string",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/string"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "PID.23"
+          }
+        ]
+      },
+      {
+        "id": "PID.MultipleBirthIndicator",
+        "path": "PID.MultipleBirthIndicator",
+        "code": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/v2-0136"
+          }
+        ],
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "string",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/string"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "PID.24"
+          }
+        ]
+      },
+      {
+        "id": "PID.BirthOrder",
+        "path": "PID.BirthOrder",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "string",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/string"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "PID.25"
+          }
+        ]
+      },
+      {
+        "id": "PID.Citizenship",
+        "path": "PID.Citizenship",
+        "code": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/v2-0171"
+          }
+        ],
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "CE",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/CE"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "PID.26"
+          }
+        ]
+      },
+      {
+        "id": "PID.VeteransMilitaryStatus",
+        "path": "PID.VeteransMilitaryStatus",
+        "code": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/v2-0172"
+          }
+        ],
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "CE",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/CE"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "PID.27"
+          }
+        ]
+      },
+      {
+        "id": "PID.Nationality",
+        "path": "PID.Nationality",
+        "code": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/v2-0212"
+          }
+        ],
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "CE",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/CE"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "PID.28"
+          }
+        ]
+      },
+      {
+        "id": "PID.PatientDeathDateandTime",
+        "path": "PID.PatientDeathDateandTime",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "TS",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/TS"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "PID.29"
+          }
+        ]
+      },
+      {
+        "id": "PID.PatientDeathIndicator",
+        "path": "PID.PatientDeathIndicator",
+        "code": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/v2-0136"
+          }
+        ],
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "string",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/string"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "PID.30"
+          }
+        ]
+      },
+      {
+        "id": "PID.IdentityUnknownIndicator",
+        "path": "PID.IdentityUnknownIndicator",
+        "code": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/v2-0136"
+          }
+        ],
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "string",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/string"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "PID.31"
+          }
+        ]
+      },
+      {
+        "id": "PID.IdentityReliabilityCode",
+        "path": "PID.IdentityReliabilityCode",
+        "code": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/v2-0445"
+          }
+        ],
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "string",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/string"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "PID.32"
+          }
+        ]
+      },
+      {
+        "id": "PID.LastUpdateDate/Time",
+        "path": "PID.LastUpdateDate/Time",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "TS",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/TS"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "PID.33"
+          }
+        ]
+      },
+      {
+        "id": "PID.LastUpdateFacility",
+        "path": "PID.LastUpdateFacility",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "HD",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/HD"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "PID.34"
+          }
+        ]
+      },
+      {
+        "id": "PID.SpeciesCode",
+        "path": "PID.SpeciesCode",
+        "code": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/v2-0446"
+          }
+        ],
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "CE",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/CE"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "PID.35"
+          }
+        ]
+      },
+      {
+        "id": "PID.BreedCode",
+        "path": "PID.BreedCode",
+        "code": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/v2-0447"
+          }
+        ],
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "CE",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/CE"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "PID.36"
+          }
+        ]
+      },
+      {
+        "id": "PID.Strain",
+        "path": "PID.Strain",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "string",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/string"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "PID.37"
+          }
+        ]
+      },
+      {
+        "id": "PID.ProductionClassCode",
+        "path": "PID.ProductionClassCode",
+        "code": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/v2-0429"
+          }
+        ],
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "CE",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/CE"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "PID.38"
+          }
+        ]
+      },
+      {
+        "id": "PID.TribalCitizenship",
+        "path": "PID.TribalCitizenship",
+        "code": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/v2-0171"
+          }
+        ],
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "CWE",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/CWE"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "PID.39"
+          }
+        ]
+      }
+    ]
+  }
+}

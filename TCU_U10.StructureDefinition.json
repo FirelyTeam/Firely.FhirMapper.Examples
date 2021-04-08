@@ -1,0 +1,164 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "TCU_U10",
+  "url": "http://hl7.org/fhir/StructureDefinition/TCU_U10",
+  "name": "TCU_U10",
+  "status": "active",
+  "fhirVersion": "4.0.1",
+  "kind": "logical",
+  "abstract": false,
+  "type": "TCU_U10",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Element",
+  "derivation": "specialization",
+  "differential": {
+    "element": [
+      {
+        "id": "TCU_U10",
+        "path": "TCU_U10",
+        "type": [
+          {
+            "code": "Element"
+          }
+        ],
+        "mapping": [
+          {
+            "id": "TCU_U10",
+            "identity": "v2",
+            "map": "TCU_U10"
+          }
+        ]
+      },
+      {
+        "id": "TCU_U10.MSH",
+        "path": "TCU_U10.MSH",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "MSH",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/MSH"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "MSH"
+          }
+        ]
+      },
+      {
+        "id": "TCU_U10.SFT",
+        "path": "TCU_U10.SFT",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "SFT",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/SFT"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "SFT"
+          }
+        ]
+      },
+      {
+        "id": "TCU_U10.EQU",
+        "path": "TCU_U10.EQU",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "EQU",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/EQU"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "EQU"
+          }
+        ]
+      },
+      {
+        "id": "TCU_U10.TEST_CONFIGURATION",
+        "path": "TCU_U10.TEST_CONFIGURATION",
+        "min": 1,
+        "max": "*",
+        "type": [
+          {
+            "code": "BackboneElement"
+          }
+        ]
+      },
+      {
+        "id": "TCU_U10.TEST_CONFIGURATION.SPM",
+        "path": "TCU_U10.TEST_CONFIGURATION.SPM",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "SPM",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/SPM"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "SPM"
+          }
+        ]
+      },
+      {
+        "id": "TCU_U10.TEST_CONFIGURATION.TCC",
+        "path": "TCU_U10.TEST_CONFIGURATION.TCC",
+        "min": 1,
+        "max": "*",
+        "type": [
+          {
+            "code": "TCC",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/TCC"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "TCC"
+          }
+        ]
+      },
+      {
+        "id": "TCU_U10.ROL",
+        "path": "TCU_U10.ROL",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "ROL",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/ROL"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "ROL"
+          }
+        ]
+      }
+    ]
+  }
+}

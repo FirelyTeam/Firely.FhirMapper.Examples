@@ -1,0 +1,113 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "NA",
+  "url": "http://hl7.org/fhir/StructureDefinition/NA",
+  "name": "NA",
+  "status": "active",
+  "fhirVersion": "4.0.1",
+  "kind": "logical",
+  "abstract": false,
+  "type": "NA",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Element",
+  "derivation": "specialization",
+  "differential": {
+    "element": [
+      {
+        "id": "NA",
+        "path": "NA",
+        "type": [
+          {
+            "code": "Element"
+          }
+        ],
+        "mapping": [
+          {
+            "id": "NA",
+            "identity": "v2",
+            "map": "NA"
+          }
+        ]
+      },
+      {
+        "id": "NA.Value1",
+        "path": "NA.Value1",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "string",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/string"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "NA.1"
+          }
+        ]
+      },
+      {
+        "id": "NA.Value2",
+        "path": "NA.Value2",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "string",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/string"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "NA.2"
+          }
+        ]
+      },
+      {
+        "id": "NA.Value3",
+        "path": "NA.Value3",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "string",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/string"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "NA.3"
+          }
+        ]
+      },
+      {
+        "id": "NA.Value4",
+        "path": "NA.Value4",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "string",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/string"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "NA.4"
+          }
+        ]
+      }
+    ]
+  }
+}

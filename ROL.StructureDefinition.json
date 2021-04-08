@@ -1,0 +1,288 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "ROL",
+  "url": "http://hl7.org/fhir/StructureDefinition/ROL",
+  "name": "ROL",
+  "status": "active",
+  "fhirVersion": "4.0.1",
+  "kind": "logical",
+  "abstract": false,
+  "type": "ROL",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Element",
+  "derivation": "specialization",
+  "differential": {
+    "element": [
+      {
+        "id": "ROL",
+        "path": "ROL",
+        "type": [
+          {
+            "code": "Element"
+          }
+        ],
+        "mapping": [
+          {
+            "id": "ROL",
+            "identity": "v2",
+            "map": "ROL"
+          }
+        ]
+      },
+      {
+        "id": "ROL.RoleInstanceID",
+        "path": "ROL.RoleInstanceID",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "EI",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/EI"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "ROL.1"
+          }
+        ]
+      },
+      {
+        "id": "ROL.ActionCode",
+        "path": "ROL.ActionCode",
+        "code": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/v2-0287"
+          }
+        ],
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "string",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/string"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "ROL.2"
+          }
+        ]
+      },
+      {
+        "id": "ROL.Role-ROL",
+        "path": "ROL.Role-ROL",
+        "code": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/v2-0443"
+          }
+        ],
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "CE",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/CE"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "ROL.3"
+          }
+        ]
+      },
+      {
+        "id": "ROL.RolePerson",
+        "path": "ROL.RolePerson",
+        "min": 1,
+        "max": "*",
+        "type": [
+          {
+            "code": "XCN",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/XCN"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "ROL.4"
+          }
+        ]
+      },
+      {
+        "id": "ROL.RoleBeginDate/Time",
+        "path": "ROL.RoleBeginDate/Time",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "TS",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/TS"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "ROL.5"
+          }
+        ]
+      },
+      {
+        "id": "ROL.RoleEndDate/Time",
+        "path": "ROL.RoleEndDate/Time",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "TS",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/TS"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "ROL.6"
+          }
+        ]
+      },
+      {
+        "id": "ROL.RoleDuration",
+        "path": "ROL.RoleDuration",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "CE",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/CE"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "ROL.7"
+          }
+        ]
+      },
+      {
+        "id": "ROL.RoleActionReason",
+        "path": "ROL.RoleActionReason",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "CE",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/CE"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "ROL.8"
+          }
+        ]
+      },
+      {
+        "id": "ROL.ProviderType",
+        "path": "ROL.ProviderType",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "CE",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/CE"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "ROL.9"
+          }
+        ]
+      },
+      {
+        "id": "ROL.OrganizationUnitType",
+        "path": "ROL.OrganizationUnitType",
+        "code": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/v2-0406"
+          }
+        ],
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "CE",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/CE"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "ROL.10"
+          }
+        ]
+      },
+      {
+        "id": "ROL.Office/HomeAddress/Birthplace",
+        "path": "ROL.Office/HomeAddress/Birthplace",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "XAD",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/XAD"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "ROL.11"
+          }
+        ]
+      },
+      {
+        "id": "ROL.Phone",
+        "path": "ROL.Phone",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "XTN",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/XTN"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "ROL.12"
+          }
+        ]
+      }
+    ]
+  }
+}

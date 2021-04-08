@@ -1,0 +1,78 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "OCD",
+  "url": "http://hl7.org/fhir/StructureDefinition/OCD",
+  "name": "OCD",
+  "status": "active",
+  "fhirVersion": "4.0.1",
+  "kind": "logical",
+  "abstract": false,
+  "type": "OCD",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Element",
+  "derivation": "specialization",
+  "differential": {
+    "element": [
+      {
+        "id": "OCD",
+        "path": "OCD",
+        "type": [
+          {
+            "code": "Element"
+          }
+        ],
+        "mapping": [
+          {
+            "id": "OCD",
+            "identity": "v2",
+            "map": "OCD"
+          }
+        ]
+      },
+      {
+        "id": "OCD.OccurrenceCode",
+        "path": "OCD.OccurrenceCode",
+        "code": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/v2-0350"
+          }
+        ],
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "CNE",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/CNE"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "OCD.1"
+          }
+        ]
+      },
+      {
+        "id": "OCD.OccurrenceDate",
+        "path": "OCD.OccurrenceDate",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "string",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/string"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "OCD.2"
+          }
+        ]
+      }
+    ]
+  }
+}

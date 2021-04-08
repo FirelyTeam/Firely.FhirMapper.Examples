@@ -1,0 +1,358 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "GP2",
+  "url": "http://hl7.org/fhir/StructureDefinition/GP2",
+  "name": "GP2",
+  "status": "active",
+  "fhirVersion": "4.0.1",
+  "kind": "logical",
+  "abstract": false,
+  "type": "GP2",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Element",
+  "derivation": "specialization",
+  "differential": {
+    "element": [
+      {
+        "id": "GP2",
+        "path": "GP2",
+        "type": [
+          {
+            "code": "Element"
+          }
+        ],
+        "mapping": [
+          {
+            "id": "GP2",
+            "identity": "v2",
+            "map": "GP2"
+          }
+        ]
+      },
+      {
+        "id": "GP2.RevenueCode",
+        "path": "GP2.RevenueCode",
+        "code": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/v2-0456"
+          }
+        ],
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "string",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/string"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "GP2.1"
+          }
+        ]
+      },
+      {
+        "id": "GP2.NumberofServiceUnits",
+        "path": "GP2.NumberofServiceUnits",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "string",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/string"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "GP2.2"
+          }
+        ]
+      },
+      {
+        "id": "GP2.Charge",
+        "path": "GP2.Charge",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "CP",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/CP"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "GP2.3"
+          }
+        ]
+      },
+      {
+        "id": "GP2.ReimbursementActionCode",
+        "path": "GP2.ReimbursementActionCode",
+        "code": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/v2-0459"
+          }
+        ],
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "string",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/string"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "GP2.4"
+          }
+        ]
+      },
+      {
+        "id": "GP2.DenialorRejectionCode",
+        "path": "GP2.DenialorRejectionCode",
+        "code": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/v2-0460"
+          }
+        ],
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "string",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/string"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "GP2.5"
+          }
+        ]
+      },
+      {
+        "id": "GP2.OCEEditCode",
+        "path": "GP2.OCEEditCode",
+        "code": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/v2-0458"
+          }
+        ],
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "string",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/string"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "GP2.6"
+          }
+        ]
+      },
+      {
+        "id": "GP2.AmbulatoryPaymentClassificationCode",
+        "path": "GP2.AmbulatoryPaymentClassificationCode",
+        "code": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/v2-0466"
+          }
+        ],
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "CE",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/CE"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "GP2.7"
+          }
+        ]
+      },
+      {
+        "id": "GP2.ModifierEditCode",
+        "path": "GP2.ModifierEditCode",
+        "code": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/v2-0467"
+          }
+        ],
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "string",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/string"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "GP2.8"
+          }
+        ]
+      },
+      {
+        "id": "GP2.PaymentAdjustmentCode",
+        "path": "GP2.PaymentAdjustmentCode",
+        "code": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/v2-0468"
+          }
+        ],
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "string",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/string"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "GP2.9"
+          }
+        ]
+      },
+      {
+        "id": "GP2.PackagingStatusCode",
+        "path": "GP2.PackagingStatusCode",
+        "code": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/v2-0469"
+          }
+        ],
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "string",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/string"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "GP2.10"
+          }
+        ]
+      },
+      {
+        "id": "GP2.ExpectedCMSPaymentAmount",
+        "path": "GP2.ExpectedCMSPaymentAmount",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "CP",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/CP"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "GP2.11"
+          }
+        ]
+      },
+      {
+        "id": "GP2.ReimbursementTypeCode",
+        "path": "GP2.ReimbursementTypeCode",
+        "code": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/v2-0470"
+          }
+        ],
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "string",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/string"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "GP2.12"
+          }
+        ]
+      },
+      {
+        "id": "GP2.Co-PayAmount",
+        "path": "GP2.Co-PayAmount",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "CP",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/CP"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "GP2.13"
+          }
+        ]
+      },
+      {
+        "id": "GP2.PayRateperServiceUnit",
+        "path": "GP2.PayRateperServiceUnit",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "string",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/string"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "GP2.14"
+          }
+        ]
+      }
+    ]
+  }
+}

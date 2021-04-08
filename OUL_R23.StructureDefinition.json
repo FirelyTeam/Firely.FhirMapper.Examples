@@ -1,0 +1,570 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "OUL_R23",
+  "url": "http://hl7.org/fhir/StructureDefinition/OUL_R23",
+  "name": "OUL_R23",
+  "status": "active",
+  "fhirVersion": "4.0.1",
+  "kind": "logical",
+  "abstract": false,
+  "type": "OUL_R23",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Element",
+  "derivation": "specialization",
+  "differential": {
+    "element": [
+      {
+        "id": "OUL_R23",
+        "path": "OUL_R23",
+        "type": [
+          {
+            "code": "Element"
+          }
+        ],
+        "mapping": [
+          {
+            "id": "OUL_R23",
+            "identity": "v2",
+            "map": "OUL_R23"
+          }
+        ]
+      },
+      {
+        "id": "OUL_R23.MSH",
+        "path": "OUL_R23.MSH",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "MSH",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/MSH"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "MSH"
+          }
+        ]
+      },
+      {
+        "id": "OUL_R23.SFT",
+        "path": "OUL_R23.SFT",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "SFT",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/SFT"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "SFT"
+          }
+        ]
+      },
+      {
+        "id": "OUL_R23.NTE",
+        "path": "OUL_R23.NTE",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "NTE",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/NTE"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "NTE"
+          }
+        ]
+      },
+      {
+        "id": "OUL_R23.PATIENT",
+        "path": "OUL_R23.PATIENT",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "BackboneElement"
+          }
+        ]
+      },
+      {
+        "id": "OUL_R23.PATIENT.PID",
+        "path": "OUL_R23.PATIENT.PID",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "PID",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/PID"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "PID"
+          }
+        ]
+      },
+      {
+        "id": "OUL_R23.PATIENT.PD1",
+        "path": "OUL_R23.PATIENT.PD1",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "PD1",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/PD1"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "PD1"
+          }
+        ]
+      },
+      {
+        "id": "OUL_R23.PATIENT.NTE",
+        "path": "OUL_R23.PATIENT.NTE",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "NTE",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/NTE"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "NTE"
+          }
+        ]
+      },
+      {
+        "id": "OUL_R23.VISIT",
+        "path": "OUL_R23.VISIT",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "BackboneElement"
+          }
+        ]
+      },
+      {
+        "id": "OUL_R23.VISIT.PV1",
+        "path": "OUL_R23.VISIT.PV1",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "PV1",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/PV1"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "PV1"
+          }
+        ]
+      },
+      {
+        "id": "OUL_R23.VISIT.PV2",
+        "path": "OUL_R23.VISIT.PV2",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "PV2",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/PV2"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "PV2"
+          }
+        ]
+      },
+      {
+        "id": "OUL_R23.SPECIMEN",
+        "path": "OUL_R23.SPECIMEN",
+        "min": 1,
+        "max": "*",
+        "type": [
+          {
+            "code": "BackboneElement"
+          }
+        ]
+      },
+      {
+        "id": "OUL_R23.SPECIMEN.SPM",
+        "path": "OUL_R23.SPECIMEN.SPM",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "SPM",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/SPM"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "SPM"
+          }
+        ]
+      },
+      {
+        "id": "OUL_R23.SPECIMEN.OBX",
+        "path": "OUL_R23.SPECIMEN.OBX",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "OBX",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/OBX"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "OBX"
+          }
+        ]
+      },
+      {
+        "id": "OUL_R23.SPECIMEN.CONTAINER",
+        "path": "OUL_R23.SPECIMEN.CONTAINER",
+        "min": 1,
+        "max": "*",
+        "type": [
+          {
+            "code": "BackboneElement"
+          }
+        ]
+      },
+      {
+        "id": "OUL_R23.SPECIMEN.CONTAINER.SAC",
+        "path": "OUL_R23.SPECIMEN.CONTAINER.SAC",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "SAC",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/SAC"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "SAC"
+          }
+        ]
+      },
+      {
+        "id": "OUL_R23.SPECIMEN.CONTAINER.INV",
+        "path": "OUL_R23.SPECIMEN.CONTAINER.INV",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "INV",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/INV"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "INV"
+          }
+        ]
+      },
+      {
+        "id": "OUL_R23.SPECIMEN.CONTAINER.ORDER",
+        "path": "OUL_R23.SPECIMEN.CONTAINER.ORDER",
+        "min": 1,
+        "max": "*",
+        "type": [
+          {
+            "code": "BackboneElement"
+          }
+        ]
+      },
+      {
+        "id": "OUL_R23.SPECIMEN.CONTAINER.ORDER.OBR",
+        "path": "OUL_R23.SPECIMEN.CONTAINER.ORDER.OBR",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "OBR",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/OBR"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "OBR"
+          }
+        ]
+      },
+      {
+        "id": "OUL_R23.SPECIMEN.CONTAINER.ORDER.ORC",
+        "path": "OUL_R23.SPECIMEN.CONTAINER.ORDER.ORC",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "ORC",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/ORC"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "ORC"
+          }
+        ]
+      },
+      {
+        "id": "OUL_R23.SPECIMEN.CONTAINER.ORDER.NTE",
+        "path": "OUL_R23.SPECIMEN.CONTAINER.ORDER.NTE",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "NTE",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/NTE"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "NTE"
+          }
+        ]
+      },
+      {
+        "id": "OUL_R23.SPECIMEN.CONTAINER.ORDER.TIMING_QTY",
+        "path": "OUL_R23.SPECIMEN.CONTAINER.ORDER.TIMING_QTY",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "BackboneElement"
+          }
+        ]
+      },
+      {
+        "id": "OUL_R23.SPECIMEN.CONTAINER.ORDER.TIMING_QTY.TQ1",
+        "path": "OUL_R23.SPECIMEN.CONTAINER.ORDER.TIMING_QTY.TQ1",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "TQ1",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/TQ1"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "TQ1"
+          }
+        ]
+      },
+      {
+        "id": "OUL_R23.SPECIMEN.CONTAINER.ORDER.TIMING_QTY.TQ2",
+        "path": "OUL_R23.SPECIMEN.CONTAINER.ORDER.TIMING_QTY.TQ2",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "TQ2",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/TQ2"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "TQ2"
+          }
+        ]
+      },
+      {
+        "id": "OUL_R23.SPECIMEN.CONTAINER.ORDER.RESULT",
+        "path": "OUL_R23.SPECIMEN.CONTAINER.ORDER.RESULT",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "BackboneElement"
+          }
+        ]
+      },
+      {
+        "id": "OUL_R23.SPECIMEN.CONTAINER.ORDER.RESULT.OBX",
+        "path": "OUL_R23.SPECIMEN.CONTAINER.ORDER.RESULT.OBX",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "OBX",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/OBX"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "OBX"
+          }
+        ]
+      },
+      {
+        "id": "OUL_R23.SPECIMEN.CONTAINER.ORDER.RESULT.TCD",
+        "path": "OUL_R23.SPECIMEN.CONTAINER.ORDER.RESULT.TCD",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "TCD",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/TCD"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "TCD"
+          }
+        ]
+      },
+      {
+        "id": "OUL_R23.SPECIMEN.CONTAINER.ORDER.RESULT.SID",
+        "path": "OUL_R23.SPECIMEN.CONTAINER.ORDER.RESULT.SID",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "SID",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/SID"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "SID"
+          }
+        ]
+      },
+      {
+        "id": "OUL_R23.SPECIMEN.CONTAINER.ORDER.RESULT.NTE",
+        "path": "OUL_R23.SPECIMEN.CONTAINER.ORDER.RESULT.NTE",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "NTE",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/NTE"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "NTE"
+          }
+        ]
+      },
+      {
+        "id": "OUL_R23.SPECIMEN.CONTAINER.ORDER.CTI",
+        "path": "OUL_R23.SPECIMEN.CONTAINER.ORDER.CTI",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "CTI",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/CTI"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "CTI"
+          }
+        ]
+      },
+      {
+        "id": "OUL_R23.DSC",
+        "path": "OUL_R23.DSC",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "DSC",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/DSC"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "DSC"
+          }
+        ]
+      }
+    ]
+  }
+}

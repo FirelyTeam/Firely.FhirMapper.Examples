@@ -1,0 +1,608 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "RXO",
+  "url": "http://hl7.org/fhir/StructureDefinition/RXO",
+  "name": "RXO",
+  "status": "active",
+  "fhirVersion": "4.0.1",
+  "kind": "logical",
+  "abstract": false,
+  "type": "RXO",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Element",
+  "derivation": "specialization",
+  "differential": {
+    "element": [
+      {
+        "id": "RXO",
+        "path": "RXO",
+        "type": [
+          {
+            "code": "Element"
+          }
+        ],
+        "mapping": [
+          {
+            "id": "RXO",
+            "identity": "v2",
+            "map": "RXO"
+          }
+        ]
+      },
+      {
+        "id": "RXO.RequestedGiveCode",
+        "path": "RXO.RequestedGiveCode",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "CE",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/CE"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "RXO.1"
+          }
+        ]
+      },
+      {
+        "id": "RXO.RequestedGiveAmount-Minimum",
+        "path": "RXO.RequestedGiveAmount-Minimum",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "string",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/string"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "RXO.2"
+          }
+        ]
+      },
+      {
+        "id": "RXO.RequestedGiveAmount-Maximum",
+        "path": "RXO.RequestedGiveAmount-Maximum",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "string",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/string"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "RXO.3"
+          }
+        ]
+      },
+      {
+        "id": "RXO.RequestedGiveUnits",
+        "path": "RXO.RequestedGiveUnits",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "CE",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/CE"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "RXO.4"
+          }
+        ]
+      },
+      {
+        "id": "RXO.RequestedDosageForm",
+        "path": "RXO.RequestedDosageForm",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "CE",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/CE"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "RXO.5"
+          }
+        ]
+      },
+      {
+        "id": "RXO.Provider'sPharmacy/TreatmentInstructions",
+        "path": "RXO.Provider'sPharmacy/TreatmentInstructions",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "CE",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/CE"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "RXO.6"
+          }
+        ]
+      },
+      {
+        "id": "RXO.Provider'sAdministrationInstructions",
+        "path": "RXO.Provider'sAdministrationInstructions",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "CE",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/CE"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "RXO.7"
+          }
+        ]
+      },
+      {
+        "id": "RXO.Deliver-ToLocation",
+        "path": "RXO.Deliver-ToLocation",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "LA1",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/LA1"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "RXO.8"
+          }
+        ]
+      },
+      {
+        "id": "RXO.AllowSubstitutions",
+        "path": "RXO.AllowSubstitutions",
+        "code": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/v2-0161"
+          }
+        ],
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "string",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/string"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "RXO.9"
+          }
+        ]
+      },
+      {
+        "id": "RXO.RequestedDispenseCode",
+        "path": "RXO.RequestedDispenseCode",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "CE",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/CE"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "RXO.10"
+          }
+        ]
+      },
+      {
+        "id": "RXO.RequestedDispenseAmount",
+        "path": "RXO.RequestedDispenseAmount",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "string",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/string"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "RXO.11"
+          }
+        ]
+      },
+      {
+        "id": "RXO.RequestedDispenseUnits",
+        "path": "RXO.RequestedDispenseUnits",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "CE",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/CE"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "RXO.12"
+          }
+        ]
+      },
+      {
+        "id": "RXO.NumberOfRefills",
+        "path": "RXO.NumberOfRefills",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "string",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/string"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "RXO.13"
+          }
+        ]
+      },
+      {
+        "id": "RXO.OrderingProvider'sDEANumber",
+        "path": "RXO.OrderingProvider'sDEANumber",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "XCN",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/XCN"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "RXO.14"
+          }
+        ]
+      },
+      {
+        "id": "RXO.Pharmacist/TreatmentSupplier'sVerifierID",
+        "path": "RXO.Pharmacist/TreatmentSupplier'sVerifierID",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "XCN",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/XCN"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "RXO.15"
+          }
+        ]
+      },
+      {
+        "id": "RXO.NeedsHumanReview",
+        "path": "RXO.NeedsHumanReview",
+        "code": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/v2-0136"
+          }
+        ],
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "string",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/string"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "RXO.16"
+          }
+        ]
+      },
+      {
+        "id": "RXO.RequestedGivePer(TimeUnit)",
+        "path": "RXO.RequestedGivePer(TimeUnit)",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "string",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/string"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "RXO.17"
+          }
+        ]
+      },
+      {
+        "id": "RXO.RequestedGiveStrength",
+        "path": "RXO.RequestedGiveStrength",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "string",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/string"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "RXO.18"
+          }
+        ]
+      },
+      {
+        "id": "RXO.RequestedGiveStrengthUnits",
+        "path": "RXO.RequestedGiveStrengthUnits",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "CE",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/CE"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "RXO.19"
+          }
+        ]
+      },
+      {
+        "id": "RXO.Indication",
+        "path": "RXO.Indication",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "CE",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/CE"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "RXO.20"
+          }
+        ]
+      },
+      {
+        "id": "RXO.RequestedGiveRateAmount",
+        "path": "RXO.RequestedGiveRateAmount",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "string",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/string"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "RXO.21"
+          }
+        ]
+      },
+      {
+        "id": "RXO.RequestedGiveRateUnits",
+        "path": "RXO.RequestedGiveRateUnits",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "CE",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/CE"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "RXO.22"
+          }
+        ]
+      },
+      {
+        "id": "RXO.TotalDailyDose",
+        "path": "RXO.TotalDailyDose",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "CQ",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/CQ"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "RXO.23"
+          }
+        ]
+      },
+      {
+        "id": "RXO.SupplementaryCode",
+        "path": "RXO.SupplementaryCode",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "CE",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/CE"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "RXO.24"
+          }
+        ]
+      },
+      {
+        "id": "RXO.RequestedDrugStrengthVolume",
+        "path": "RXO.RequestedDrugStrengthVolume",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "string",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/string"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "RXO.25"
+          }
+        ]
+      },
+      {
+        "id": "RXO.RequestedDrugStrengthVolumeUnits",
+        "path": "RXO.RequestedDrugStrengthVolumeUnits",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "CWE",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/CWE"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "RXO.26"
+          }
+        ]
+      },
+      {
+        "id": "RXO.PharmacyOrderType",
+        "path": "RXO.PharmacyOrderType",
+        "code": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/v2-0480"
+          }
+        ],
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "string",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/string"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "RXO.27"
+          }
+        ]
+      },
+      {
+        "id": "RXO.DispensingInterval",
+        "path": "RXO.DispensingInterval",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "string",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/string"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "RXO.28"
+          }
+        ]
+      }
+    ]
+  }
+}

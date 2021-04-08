@@ -1,0 +1,103 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "JCC",
+  "url": "http://hl7.org/fhir/StructureDefinition/JCC",
+  "name": "JCC",
+  "status": "active",
+  "fhirVersion": "4.0.1",
+  "kind": "logical",
+  "abstract": false,
+  "type": "JCC",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Element",
+  "derivation": "specialization",
+  "differential": {
+    "element": [
+      {
+        "id": "JCC",
+        "path": "JCC",
+        "type": [
+          {
+            "code": "Element"
+          }
+        ],
+        "mapping": [
+          {
+            "id": "JCC",
+            "identity": "v2",
+            "map": "JCC"
+          }
+        ]
+      },
+      {
+        "id": "JCC.JobCode",
+        "path": "JCC.JobCode",
+        "code": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/v2-0327"
+          }
+        ],
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "string",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/string"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "JCC.1"
+          }
+        ]
+      },
+      {
+        "id": "JCC.JobClass",
+        "path": "JCC.JobClass",
+        "code": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/v2-0328"
+          }
+        ],
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "string",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/string"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "JCC.2"
+          }
+        ]
+      },
+      {
+        "id": "JCC.JobDescriptionText",
+        "path": "JCC.JobDescriptionText",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "string",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/string"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "JCC.3"
+          }
+        ]
+      }
+    ]
+  }
+}

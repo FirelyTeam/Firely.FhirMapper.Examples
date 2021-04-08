@@ -1,0 +1,593 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "CON",
+  "url": "http://hl7.org/fhir/StructureDefinition/CON",
+  "name": "CON",
+  "status": "active",
+  "fhirVersion": "4.0.1",
+  "kind": "logical",
+  "abstract": false,
+  "type": "CON",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Element",
+  "derivation": "specialization",
+  "differential": {
+    "element": [
+      {
+        "id": "CON",
+        "path": "CON",
+        "type": [
+          {
+            "code": "Element"
+          }
+        ],
+        "mapping": [
+          {
+            "id": "CON",
+            "identity": "v2",
+            "map": "CON"
+          }
+        ]
+      },
+      {
+        "id": "CON.SetID-CON",
+        "path": "CON.SetID-CON",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "string",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/string"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "CON.1"
+          }
+        ]
+      },
+      {
+        "id": "CON.ConsentType",
+        "path": "CON.ConsentType",
+        "code": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/v2-0496"
+          }
+        ],
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "CWE",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/CWE"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "CON.2"
+          }
+        ]
+      },
+      {
+        "id": "CON.ConsentFormID",
+        "path": "CON.ConsentFormID",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "string",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/string"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "CON.3"
+          }
+        ]
+      },
+      {
+        "id": "CON.ConsentFormNumber",
+        "path": "CON.ConsentFormNumber",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "EI",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/EI"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "CON.4"
+          }
+        ]
+      },
+      {
+        "id": "CON.ConsentText",
+        "path": "CON.ConsentText",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "string",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/string"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "CON.5"
+          }
+        ]
+      },
+      {
+        "id": "CON.Subject-specificConsentText",
+        "path": "CON.Subject-specificConsentText",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "string",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/string"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "CON.6"
+          }
+        ]
+      },
+      {
+        "id": "CON.ConsentBackground",
+        "path": "CON.ConsentBackground",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "string",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/string"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "CON.7"
+          }
+        ]
+      },
+      {
+        "id": "CON.Subject-specificConsentBackground",
+        "path": "CON.Subject-specificConsentBackground",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "string",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/string"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "CON.8"
+          }
+        ]
+      },
+      {
+        "id": "CON.Consenter-imposedlimitations",
+        "path": "CON.Consenter-imposedlimitations",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "string",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/string"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "CON.9"
+          }
+        ]
+      },
+      {
+        "id": "CON.ConsentMode",
+        "path": "CON.ConsentMode",
+        "code": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/v2-0497"
+          }
+        ],
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "CNE",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/CNE"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "CON.10"
+          }
+        ]
+      },
+      {
+        "id": "CON.ConsentStatus",
+        "path": "CON.ConsentStatus",
+        "code": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/v2-0498"
+          }
+        ],
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "CNE",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/CNE"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "CON.11"
+          }
+        ]
+      },
+      {
+        "id": "CON.ConsentDiscussionDate/Time",
+        "path": "CON.ConsentDiscussionDate/Time",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "TS",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/TS"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "CON.12"
+          }
+        ]
+      },
+      {
+        "id": "CON.ConsentDecisionDate/Time",
+        "path": "CON.ConsentDecisionDate/Time",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "TS",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/TS"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "CON.13"
+          }
+        ]
+      },
+      {
+        "id": "CON.ConsentEffectiveDate/Time",
+        "path": "CON.ConsentEffectiveDate/Time",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "TS",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/TS"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "CON.14"
+          }
+        ]
+      },
+      {
+        "id": "CON.ConsentEndDate/Time",
+        "path": "CON.ConsentEndDate/Time",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "TS",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/TS"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "CON.15"
+          }
+        ]
+      },
+      {
+        "id": "CON.SubjectCompetenceIndicator",
+        "path": "CON.SubjectCompetenceIndicator",
+        "code": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/v2-0136"
+          }
+        ],
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "string",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/string"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "CON.16"
+          }
+        ]
+      },
+      {
+        "id": "CON.TranslatorAssistanceIndicator",
+        "path": "CON.TranslatorAssistanceIndicator",
+        "code": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/v2-0136"
+          }
+        ],
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "string",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/string"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "CON.17"
+          }
+        ]
+      },
+      {
+        "id": "CON.LanguageTranslatedTo",
+        "path": "CON.LanguageTranslatedTo",
+        "code": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/v2-0296"
+          }
+        ],
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "string",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/string"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "CON.18"
+          }
+        ]
+      },
+      {
+        "id": "CON.InformationalMaterialSuppliedIndicator",
+        "path": "CON.InformationalMaterialSuppliedIndicator",
+        "code": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/v2-0136"
+          }
+        ],
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "string",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/string"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "CON.19"
+          }
+        ]
+      },
+      {
+        "id": "CON.ConsentBypassReason",
+        "path": "CON.ConsentBypassReason",
+        "code": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/v2-0499"
+          }
+        ],
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "CWE",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/CWE"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "CON.20"
+          }
+        ]
+      },
+      {
+        "id": "CON.ConsentDisclosureLevel",
+        "path": "CON.ConsentDisclosureLevel",
+        "code": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/v2-0500"
+          }
+        ],
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "string",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/string"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "CON.21"
+          }
+        ]
+      },
+      {
+        "id": "CON.ConsentNon-disclosureReason",
+        "path": "CON.ConsentNon-disclosureReason",
+        "code": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/v2-0501"
+          }
+        ],
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "CWE",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/CWE"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "CON.22"
+          }
+        ]
+      },
+      {
+        "id": "CON.Non-subjectConsenterReason",
+        "path": "CON.Non-subjectConsenterReason",
+        "code": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/v2-0502"
+          }
+        ],
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "CWE",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/CWE"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "CON.23"
+          }
+        ]
+      },
+      {
+        "id": "CON.ConsenterID",
+        "path": "CON.ConsenterID",
+        "min": 1,
+        "max": "*",
+        "type": [
+          {
+            "code": "XPN",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/XPN"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "CON.24"
+          }
+        ]
+      },
+      {
+        "id": "CON.RelationshiptoSubjectTable",
+        "path": "CON.RelationshiptoSubjectTable",
+        "code": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/v2-0548"
+          }
+        ],
+        "min": 1,
+        "max": "*",
+        "type": [
+          {
+            "code": "string",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/string"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "CON.25"
+          }
+        ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,570 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "RRI_I12",
+  "url": "http://hl7.org/fhir/StructureDefinition/RRI_I12",
+  "name": "RRI_I12",
+  "status": "active",
+  "fhirVersion": "4.0.1",
+  "kind": "logical",
+  "abstract": false,
+  "type": "RRI_I12",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Element",
+  "derivation": "specialization",
+  "differential": {
+    "element": [
+      {
+        "id": "RRI_I12",
+        "path": "RRI_I12",
+        "type": [
+          {
+            "code": "Element"
+          }
+        ],
+        "mapping": [
+          {
+            "id": "RRI_I12",
+            "identity": "v2",
+            "map": "RRI_I12"
+          }
+        ]
+      },
+      {
+        "id": "RRI_I12.MSH",
+        "path": "RRI_I12.MSH",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "MSH",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/MSH"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "MSH"
+          }
+        ]
+      },
+      {
+        "id": "RRI_I12.SFT",
+        "path": "RRI_I12.SFT",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "SFT",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/SFT"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "SFT"
+          }
+        ]
+      },
+      {
+        "id": "RRI_I12.MSA",
+        "path": "RRI_I12.MSA",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "MSA",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/MSA"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "MSA"
+          }
+        ]
+      },
+      {
+        "id": "RRI_I12.RF1",
+        "path": "RRI_I12.RF1",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "RF1",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/RF1"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "RF1"
+          }
+        ]
+      },
+      {
+        "id": "RRI_I12.AUTHORIZATION_CONTACT",
+        "path": "RRI_I12.AUTHORIZATION_CONTACT",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "BackboneElement"
+          }
+        ]
+      },
+      {
+        "id": "RRI_I12.AUTHORIZATION_CONTACT.AUT",
+        "path": "RRI_I12.AUTHORIZATION_CONTACT.AUT",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "AUT",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/AUT"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "AUT"
+          }
+        ]
+      },
+      {
+        "id": "RRI_I12.AUTHORIZATION_CONTACT.CTD",
+        "path": "RRI_I12.AUTHORIZATION_CONTACT.CTD",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "CTD",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/CTD"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "CTD"
+          }
+        ]
+      },
+      {
+        "id": "RRI_I12.PROVIDER_CONTACT",
+        "path": "RRI_I12.PROVIDER_CONTACT",
+        "min": 1,
+        "max": "*",
+        "type": [
+          {
+            "code": "BackboneElement"
+          }
+        ]
+      },
+      {
+        "id": "RRI_I12.PROVIDER_CONTACT.PRD",
+        "path": "RRI_I12.PROVIDER_CONTACT.PRD",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "PRD",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/PRD"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "PRD"
+          }
+        ]
+      },
+      {
+        "id": "RRI_I12.PROVIDER_CONTACT.CTD",
+        "path": "RRI_I12.PROVIDER_CONTACT.CTD",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "CTD",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/CTD"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "CTD"
+          }
+        ]
+      },
+      {
+        "id": "RRI_I12.PID",
+        "path": "RRI_I12.PID",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "PID",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/PID"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "PID"
+          }
+        ]
+      },
+      {
+        "id": "RRI_I12.ACC",
+        "path": "RRI_I12.ACC",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "ACC",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/ACC"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "ACC"
+          }
+        ]
+      },
+      {
+        "id": "RRI_I12.DG1",
+        "path": "RRI_I12.DG1",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "DG1",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/DG1"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "DG1"
+          }
+        ]
+      },
+      {
+        "id": "RRI_I12.DRG",
+        "path": "RRI_I12.DRG",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "DRG",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/DRG"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "DRG"
+          }
+        ]
+      },
+      {
+        "id": "RRI_I12.AL1",
+        "path": "RRI_I12.AL1",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "AL1",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/AL1"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "AL1"
+          }
+        ]
+      },
+      {
+        "id": "RRI_I12.PROCEDURE",
+        "path": "RRI_I12.PROCEDURE",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "BackboneElement"
+          }
+        ]
+      },
+      {
+        "id": "RRI_I12.PROCEDURE.PR1",
+        "path": "RRI_I12.PROCEDURE.PR1",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "PR1",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/PR1"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "PR1"
+          }
+        ]
+      },
+      {
+        "id": "RRI_I12.PROCEDURE.AUTCTD_SUPPGRP2",
+        "path": "RRI_I12.PROCEDURE.AUTCTD_SUPPGRP2",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "BackboneElement"
+          }
+        ]
+      },
+      {
+        "id": "RRI_I12.PROCEDURE.AUTCTD_SUPPGRP2.AUT",
+        "path": "RRI_I12.PROCEDURE.AUTCTD_SUPPGRP2.AUT",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "AUT",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/AUT"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "AUT"
+          }
+        ]
+      },
+      {
+        "id": "RRI_I12.PROCEDURE.AUTCTD_SUPPGRP2.CTD",
+        "path": "RRI_I12.PROCEDURE.AUTCTD_SUPPGRP2.CTD",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "CTD",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/CTD"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "CTD"
+          }
+        ]
+      },
+      {
+        "id": "RRI_I12.OBSERVATION",
+        "path": "RRI_I12.OBSERVATION",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "BackboneElement"
+          }
+        ]
+      },
+      {
+        "id": "RRI_I12.OBSERVATION.OBR",
+        "path": "RRI_I12.OBSERVATION.OBR",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "OBR",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/OBR"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "OBR"
+          }
+        ]
+      },
+      {
+        "id": "RRI_I12.OBSERVATION.NTE",
+        "path": "RRI_I12.OBSERVATION.NTE",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "NTE",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/NTE"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "NTE"
+          }
+        ]
+      },
+      {
+        "id": "RRI_I12.OBSERVATION.RESULTS_NOTES",
+        "path": "RRI_I12.OBSERVATION.RESULTS_NOTES",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "BackboneElement"
+          }
+        ]
+      },
+      {
+        "id": "RRI_I12.OBSERVATION.RESULTS_NOTES.OBX",
+        "path": "RRI_I12.OBSERVATION.RESULTS_NOTES.OBX",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "OBX",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/OBX"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "OBX"
+          }
+        ]
+      },
+      {
+        "id": "RRI_I12.OBSERVATION.RESULTS_NOTES.NTE",
+        "path": "RRI_I12.OBSERVATION.RESULTS_NOTES.NTE",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "NTE",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/NTE"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "NTE"
+          }
+        ]
+      },
+      {
+        "id": "RRI_I12.PATIENT_VISIT",
+        "path": "RRI_I12.PATIENT_VISIT",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "BackboneElement"
+          }
+        ]
+      },
+      {
+        "id": "RRI_I12.PATIENT_VISIT.PV1",
+        "path": "RRI_I12.PATIENT_VISIT.PV1",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "PV1",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/PV1"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "PV1"
+          }
+        ]
+      },
+      {
+        "id": "RRI_I12.PATIENT_VISIT.PV2",
+        "path": "RRI_I12.PATIENT_VISIT.PV2",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "PV2",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/PV2"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "PV2"
+          }
+        ]
+      },
+      {
+        "id": "RRI_I12.NTE",
+        "path": "RRI_I12.NTE",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "NTE",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/NTE"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "NTE"
+          }
+        ]
+      }
+    ]
+  }
+}

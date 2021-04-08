@@ -1,0 +1,948 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "RXE",
+  "url": "http://hl7.org/fhir/StructureDefinition/RXE",
+  "name": "RXE",
+  "status": "active",
+  "fhirVersion": "4.0.1",
+  "kind": "logical",
+  "abstract": false,
+  "type": "RXE",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Element",
+  "derivation": "specialization",
+  "differential": {
+    "element": [
+      {
+        "id": "RXE",
+        "path": "RXE",
+        "type": [
+          {
+            "code": "Element"
+          }
+        ],
+        "mapping": [
+          {
+            "id": "RXE",
+            "identity": "v2",
+            "map": "RXE"
+          }
+        ]
+      },
+      {
+        "id": "RXE.Quantity/Timing",
+        "path": "RXE.Quantity/Timing",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "TQ",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/TQ"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "RXE.1"
+          }
+        ]
+      },
+      {
+        "id": "RXE.GiveCode",
+        "path": "RXE.GiveCode",
+        "code": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/v2-0292"
+          }
+        ],
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "CE",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/CE"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "RXE.2"
+          }
+        ]
+      },
+      {
+        "id": "RXE.GiveAmount-Minimum",
+        "path": "RXE.GiveAmount-Minimum",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "string",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/string"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "RXE.3"
+          }
+        ]
+      },
+      {
+        "id": "RXE.GiveAmount-Maximum",
+        "path": "RXE.GiveAmount-Maximum",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "string",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/string"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "RXE.4"
+          }
+        ]
+      },
+      {
+        "id": "RXE.GiveUnits",
+        "path": "RXE.GiveUnits",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "CE",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/CE"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "RXE.5"
+          }
+        ]
+      },
+      {
+        "id": "RXE.GiveDosageForm",
+        "path": "RXE.GiveDosageForm",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "CE",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/CE"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "RXE.6"
+          }
+        ]
+      },
+      {
+        "id": "RXE.Provider'sAdministrationInstructions",
+        "path": "RXE.Provider'sAdministrationInstructions",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "CE",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/CE"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "RXE.7"
+          }
+        ]
+      },
+      {
+        "id": "RXE.Deliver-ToLocation",
+        "path": "RXE.Deliver-ToLocation",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "LA1",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/LA1"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "RXE.8"
+          }
+        ]
+      },
+      {
+        "id": "RXE.SubstitutionStatus",
+        "path": "RXE.SubstitutionStatus",
+        "code": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/v2-0167"
+          }
+        ],
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "string",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/string"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "RXE.9"
+          }
+        ]
+      },
+      {
+        "id": "RXE.DispenseAmount",
+        "path": "RXE.DispenseAmount",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "string",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/string"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "RXE.10"
+          }
+        ]
+      },
+      {
+        "id": "RXE.DispenseUnits",
+        "path": "RXE.DispenseUnits",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "CE",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/CE"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "RXE.11"
+          }
+        ]
+      },
+      {
+        "id": "RXE.NumberOfRefills",
+        "path": "RXE.NumberOfRefills",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "string",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/string"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "RXE.12"
+          }
+        ]
+      },
+      {
+        "id": "RXE.OrderingProvider'sDEANumber",
+        "path": "RXE.OrderingProvider'sDEANumber",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "XCN",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/XCN"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "RXE.13"
+          }
+        ]
+      },
+      {
+        "id": "RXE.Pharmacist/TreatmentSupplier'sVerifierID",
+        "path": "RXE.Pharmacist/TreatmentSupplier'sVerifierID",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "XCN",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/XCN"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "RXE.14"
+          }
+        ]
+      },
+      {
+        "id": "RXE.PrescriptionNumber",
+        "path": "RXE.PrescriptionNumber",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "string",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/string"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "RXE.15"
+          }
+        ]
+      },
+      {
+        "id": "RXE.NumberofRefillsRemaining",
+        "path": "RXE.NumberofRefillsRemaining",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "string",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/string"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "RXE.16"
+          }
+        ]
+      },
+      {
+        "id": "RXE.NumberofRefills/DosesDispensed",
+        "path": "RXE.NumberofRefills/DosesDispensed",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "string",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/string"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "RXE.17"
+          }
+        ]
+      },
+      {
+        "id": "RXE.D/TofMostRecentRefillorDoseDispensed",
+        "path": "RXE.D/TofMostRecentRefillorDoseDispensed",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "TS",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/TS"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "RXE.18"
+          }
+        ]
+      },
+      {
+        "id": "RXE.TotalDailyDose",
+        "path": "RXE.TotalDailyDose",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "CQ",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/CQ"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "RXE.19"
+          }
+        ]
+      },
+      {
+        "id": "RXE.NeedsHumanReview",
+        "path": "RXE.NeedsHumanReview",
+        "code": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/v2-0136"
+          }
+        ],
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "string",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/string"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "RXE.20"
+          }
+        ]
+      },
+      {
+        "id": "RXE.Pharmacy/TreatmentSupplier'sSpecialDispensingInstructions",
+        "path": "RXE.Pharmacy/TreatmentSupplier'sSpecialDispensingInstructions",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "CE",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/CE"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "RXE.21"
+          }
+        ]
+      },
+      {
+        "id": "RXE.GivePer(TimeUnit)",
+        "path": "RXE.GivePer(TimeUnit)",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "string",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/string"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "RXE.22"
+          }
+        ]
+      },
+      {
+        "id": "RXE.GiveRateAmount",
+        "path": "RXE.GiveRateAmount",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "string",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/string"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "RXE.23"
+          }
+        ]
+      },
+      {
+        "id": "RXE.GiveRateUnits",
+        "path": "RXE.GiveRateUnits",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "CE",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/CE"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "RXE.24"
+          }
+        ]
+      },
+      {
+        "id": "RXE.GiveStrength",
+        "path": "RXE.GiveStrength",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "string",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/string"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "RXE.25"
+          }
+        ]
+      },
+      {
+        "id": "RXE.GiveStrengthUnits",
+        "path": "RXE.GiveStrengthUnits",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "CE",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/CE"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "RXE.26"
+          }
+        ]
+      },
+      {
+        "id": "RXE.GiveIndication",
+        "path": "RXE.GiveIndication",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "CE",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/CE"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "RXE.27"
+          }
+        ]
+      },
+      {
+        "id": "RXE.DispensePackageSize",
+        "path": "RXE.DispensePackageSize",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "string",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/string"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "RXE.28"
+          }
+        ]
+      },
+      {
+        "id": "RXE.DispensePackageSizeUnit",
+        "path": "RXE.DispensePackageSizeUnit",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "CE",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/CE"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "RXE.29"
+          }
+        ]
+      },
+      {
+        "id": "RXE.DispensePackageMethod",
+        "path": "RXE.DispensePackageMethod",
+        "code": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/v2-0321"
+          }
+        ],
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "string",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/string"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "RXE.30"
+          }
+        ]
+      },
+      {
+        "id": "RXE.SupplementaryCode",
+        "path": "RXE.SupplementaryCode",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "CE",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/CE"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "RXE.31"
+          }
+        ]
+      },
+      {
+        "id": "RXE.OriginalOrderDate/Time",
+        "path": "RXE.OriginalOrderDate/Time",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "TS",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/TS"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "RXE.32"
+          }
+        ]
+      },
+      {
+        "id": "RXE.GiveDrugStrengthVolume",
+        "path": "RXE.GiveDrugStrengthVolume",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "string",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/string"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "RXE.33"
+          }
+        ]
+      },
+      {
+        "id": "RXE.GiveDrugStrengthVolumeUnits",
+        "path": "RXE.GiveDrugStrengthVolumeUnits",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "CWE",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/CWE"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "RXE.34"
+          }
+        ]
+      },
+      {
+        "id": "RXE.ControlledSubstanceSchedule",
+        "path": "RXE.ControlledSubstanceSchedule",
+        "code": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/v2-0477"
+          }
+        ],
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "CWE",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/CWE"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "RXE.35"
+          }
+        ]
+      },
+      {
+        "id": "RXE.FormularyStatus",
+        "path": "RXE.FormularyStatus",
+        "code": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/v2-0478"
+          }
+        ],
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "string",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/string"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "RXE.36"
+          }
+        ]
+      },
+      {
+        "id": "RXE.PharmaceuticalSubstanceAlternative",
+        "path": "RXE.PharmaceuticalSubstanceAlternative",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "CWE",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/CWE"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "RXE.37"
+          }
+        ]
+      },
+      {
+        "id": "RXE.PharmacyofMostRecentFill",
+        "path": "RXE.PharmacyofMostRecentFill",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "CWE",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/CWE"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "RXE.38"
+          }
+        ]
+      },
+      {
+        "id": "RXE.InitialDispenseAmount",
+        "path": "RXE.InitialDispenseAmount",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "string",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/string"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "RXE.39"
+          }
+        ]
+      },
+      {
+        "id": "RXE.DispensingPharmacy",
+        "path": "RXE.DispensingPharmacy",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "CWE",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/CWE"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "RXE.40"
+          }
+        ]
+      },
+      {
+        "id": "RXE.DispensingPharmacyAddress",
+        "path": "RXE.DispensingPharmacyAddress",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "XAD",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/XAD"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "RXE.41"
+          }
+        ]
+      },
+      {
+        "id": "RXE.Deliver-toPatientLocation",
+        "path": "RXE.Deliver-toPatientLocation",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "PL",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/PL"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "RXE.42"
+          }
+        ]
+      },
+      {
+        "id": "RXE.Deliver-toAddress",
+        "path": "RXE.Deliver-toAddress",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "XAD",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/XAD"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "RXE.43"
+          }
+        ]
+      },
+      {
+        "id": "RXE.PharmacyOrderType",
+        "path": "RXE.PharmacyOrderType",
+        "code": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/v2-0480"
+          }
+        ],
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "string",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/string"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "RXE.44"
+          }
+        ]
+      }
+    ]
+  }
+}

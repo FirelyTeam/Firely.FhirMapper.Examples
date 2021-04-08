@@ -1,0 +1,573 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "IN3",
+  "url": "http://hl7.org/fhir/StructureDefinition/IN3",
+  "name": "IN3",
+  "status": "active",
+  "fhirVersion": "4.0.1",
+  "kind": "logical",
+  "abstract": false,
+  "type": "IN3",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Element",
+  "derivation": "specialization",
+  "differential": {
+    "element": [
+      {
+        "id": "IN3",
+        "path": "IN3",
+        "type": [
+          {
+            "code": "Element"
+          }
+        ],
+        "mapping": [
+          {
+            "id": "IN3",
+            "identity": "v2",
+            "map": "IN3"
+          }
+        ]
+      },
+      {
+        "id": "IN3.SetID-IN3",
+        "path": "IN3.SetID-IN3",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "string",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/string"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "IN3.1"
+          }
+        ]
+      },
+      {
+        "id": "IN3.CertificationNumber",
+        "path": "IN3.CertificationNumber",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "CX",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/CX"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "IN3.2"
+          }
+        ]
+      },
+      {
+        "id": "IN3.CertifiedBy",
+        "path": "IN3.CertifiedBy",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "XCN",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/XCN"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "IN3.3"
+          }
+        ]
+      },
+      {
+        "id": "IN3.CertificationRequired",
+        "path": "IN3.CertificationRequired",
+        "code": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/v2-0136"
+          }
+        ],
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "string",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/string"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "IN3.4"
+          }
+        ]
+      },
+      {
+        "id": "IN3.Penalty",
+        "path": "IN3.Penalty",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "MOP",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/MOP"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "IN3.5"
+          }
+        ]
+      },
+      {
+        "id": "IN3.CertificationDate/Time",
+        "path": "IN3.CertificationDate/Time",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "TS",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/TS"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "IN3.6"
+          }
+        ]
+      },
+      {
+        "id": "IN3.CertificationModifyDate/Time",
+        "path": "IN3.CertificationModifyDate/Time",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "TS",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/TS"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "IN3.7"
+          }
+        ]
+      },
+      {
+        "id": "IN3.Operator",
+        "path": "IN3.Operator",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "XCN",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/XCN"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "IN3.8"
+          }
+        ]
+      },
+      {
+        "id": "IN3.CertificationBeginDate",
+        "path": "IN3.CertificationBeginDate",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "string",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/string"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "IN3.9"
+          }
+        ]
+      },
+      {
+        "id": "IN3.CertificationEndDate",
+        "path": "IN3.CertificationEndDate",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "string",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/string"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "IN3.10"
+          }
+        ]
+      },
+      {
+        "id": "IN3.Days",
+        "path": "IN3.Days",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "DTN",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/DTN"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "IN3.11"
+          }
+        ]
+      },
+      {
+        "id": "IN3.Non-ConcurCode/Description",
+        "path": "IN3.Non-ConcurCode/Description",
+        "code": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/v2-0233"
+          }
+        ],
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "CE",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/CE"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "IN3.12"
+          }
+        ]
+      },
+      {
+        "id": "IN3.Non-ConcurEffectiveDate/Time",
+        "path": "IN3.Non-ConcurEffectiveDate/Time",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "TS",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/TS"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "IN3.13"
+          }
+        ]
+      },
+      {
+        "id": "IN3.PhysicianReviewer",
+        "path": "IN3.PhysicianReviewer",
+        "code": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/v2-0010"
+          }
+        ],
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "XCN",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/XCN"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "IN3.14"
+          }
+        ]
+      },
+      {
+        "id": "IN3.CertificationContact",
+        "path": "IN3.CertificationContact",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "string",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/string"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "IN3.15"
+          }
+        ]
+      },
+      {
+        "id": "IN3.CertificationContactPhoneNumber",
+        "path": "IN3.CertificationContactPhoneNumber",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "XTN",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/XTN"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "IN3.16"
+          }
+        ]
+      },
+      {
+        "id": "IN3.AppealReason",
+        "path": "IN3.AppealReason",
+        "code": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/v2-0345"
+          }
+        ],
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "CE",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/CE"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "IN3.17"
+          }
+        ]
+      },
+      {
+        "id": "IN3.CertificationAgency",
+        "path": "IN3.CertificationAgency",
+        "code": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/v2-0346"
+          }
+        ],
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "CE",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/CE"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "IN3.18"
+          }
+        ]
+      },
+      {
+        "id": "IN3.CertificationAgencyPhoneNumber",
+        "path": "IN3.CertificationAgencyPhoneNumber",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "XTN",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/XTN"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "IN3.19"
+          }
+        ]
+      },
+      {
+        "id": "IN3.Pre-CertificationRequirement",
+        "path": "IN3.Pre-CertificationRequirement",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "ICD",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/ICD"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "IN3.20"
+          }
+        ]
+      },
+      {
+        "id": "IN3.CaseManager",
+        "path": "IN3.CaseManager",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "string",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/string"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "IN3.21"
+          }
+        ]
+      },
+      {
+        "id": "IN3.SecondOpinionDate",
+        "path": "IN3.SecondOpinionDate",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "string",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/string"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "IN3.22"
+          }
+        ]
+      },
+      {
+        "id": "IN3.SecondOpinionStatus",
+        "path": "IN3.SecondOpinionStatus",
+        "code": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/v2-0151"
+          }
+        ],
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "string",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/string"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "IN3.23"
+          }
+        ]
+      },
+      {
+        "id": "IN3.SecondOpinionDocumentationReceived",
+        "path": "IN3.SecondOpinionDocumentationReceived",
+        "code": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/v2-0152"
+          }
+        ],
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "string",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/string"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "IN3.24"
+          }
+        ]
+      },
+      {
+        "id": "IN3.SecondOpinionPhysician",
+        "path": "IN3.SecondOpinionPhysician",
+        "code": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/v2-0010"
+          }
+        ],
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "XCN",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/XCN"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "IN3.25"
+          }
+        ]
+      }
+    ]
+  }
+}

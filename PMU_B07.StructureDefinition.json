@@ -1,0 +1,184 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "PMU_B07",
+  "url": "http://hl7.org/fhir/StructureDefinition/PMU_B07",
+  "name": "PMU_B07",
+  "status": "active",
+  "fhirVersion": "4.0.1",
+  "kind": "logical",
+  "abstract": false,
+  "type": "PMU_B07",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Element",
+  "derivation": "specialization",
+  "differential": {
+    "element": [
+      {
+        "id": "PMU_B07",
+        "path": "PMU_B07",
+        "type": [
+          {
+            "code": "Element"
+          }
+        ],
+        "mapping": [
+          {
+            "id": "PMU_B07",
+            "identity": "v2",
+            "map": "PMU_B07"
+          }
+        ]
+      },
+      {
+        "id": "PMU_B07.MSH",
+        "path": "PMU_B07.MSH",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "MSH",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/MSH"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "MSH"
+          }
+        ]
+      },
+      {
+        "id": "PMU_B07.SFT",
+        "path": "PMU_B07.SFT",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "SFT",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/SFT"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "SFT"
+          }
+        ]
+      },
+      {
+        "id": "PMU_B07.EVN",
+        "path": "PMU_B07.EVN",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "EVN",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/EVN"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "EVN"
+          }
+        ]
+      },
+      {
+        "id": "PMU_B07.STF",
+        "path": "PMU_B07.STF",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "STF",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/STF"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "STF"
+          }
+        ]
+      },
+      {
+        "id": "PMU_B07.PRA",
+        "path": "PMU_B07.PRA",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "PRA",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/PRA"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "PRA"
+          }
+        ]
+      },
+      {
+        "id": "PMU_B07.CERTIFICATE",
+        "path": "PMU_B07.CERTIFICATE",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "BackboneElement"
+          }
+        ]
+      },
+      {
+        "id": "PMU_B07.CERTIFICATE.CER",
+        "path": "PMU_B07.CERTIFICATE.CER",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "CER",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/CER"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "CER"
+          }
+        ]
+      },
+      {
+        "id": "PMU_B07.CERTIFICATE.ROL",
+        "path": "PMU_B07.CERTIFICATE.ROL",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "ROL",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/ROL"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "ROL"
+          }
+        ]
+      }
+    ]
+  }
+}

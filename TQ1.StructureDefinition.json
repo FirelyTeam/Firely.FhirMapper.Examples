@@ -1,0 +1,328 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "TQ1",
+  "url": "http://hl7.org/fhir/StructureDefinition/TQ1",
+  "name": "TQ1",
+  "status": "active",
+  "fhirVersion": "4.0.1",
+  "kind": "logical",
+  "abstract": false,
+  "type": "TQ1",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Element",
+  "derivation": "specialization",
+  "differential": {
+    "element": [
+      {
+        "id": "TQ1",
+        "path": "TQ1",
+        "type": [
+          {
+            "code": "Element"
+          }
+        ],
+        "mapping": [
+          {
+            "id": "TQ1",
+            "identity": "v2",
+            "map": "TQ1"
+          }
+        ]
+      },
+      {
+        "id": "TQ1.SetID-TQ1",
+        "path": "TQ1.SetID-TQ1",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "string",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/string"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "TQ1.1"
+          }
+        ]
+      },
+      {
+        "id": "TQ1.Quantity",
+        "path": "TQ1.Quantity",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "CQ",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/CQ"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "TQ1.2"
+          }
+        ]
+      },
+      {
+        "id": "TQ1.RepeatPattern",
+        "path": "TQ1.RepeatPattern",
+        "code": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/v2-0335"
+          }
+        ],
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "RPT",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/RPT"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "TQ1.3"
+          }
+        ]
+      },
+      {
+        "id": "TQ1.ExplicitTime",
+        "path": "TQ1.ExplicitTime",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "string",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/string"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "TQ1.4"
+          }
+        ]
+      },
+      {
+        "id": "TQ1.RelativeTimeandUnits",
+        "path": "TQ1.RelativeTimeandUnits",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "CQ",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/CQ"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "TQ1.5"
+          }
+        ]
+      },
+      {
+        "id": "TQ1.ServiceDuration",
+        "path": "TQ1.ServiceDuration",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "CQ",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/CQ"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "TQ1.6"
+          }
+        ]
+      },
+      {
+        "id": "TQ1.Startdate/time",
+        "path": "TQ1.Startdate/time",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "TS",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/TS"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "TQ1.7"
+          }
+        ]
+      },
+      {
+        "id": "TQ1.Enddate/time",
+        "path": "TQ1.Enddate/time",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "TS",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/TS"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "TQ1.8"
+          }
+        ]
+      },
+      {
+        "id": "TQ1.Priority",
+        "path": "TQ1.Priority",
+        "code": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/v2-0485"
+          }
+        ],
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "CWE",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/CWE"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "TQ1.9"
+          }
+        ]
+      },
+      {
+        "id": "TQ1.Conditiontext",
+        "path": "TQ1.Conditiontext",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "string",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/string"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "TQ1.10"
+          }
+        ]
+      },
+      {
+        "id": "TQ1.Textinstruction",
+        "path": "TQ1.Textinstruction",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "string",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/string"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "TQ1.11"
+          }
+        ]
+      },
+      {
+        "id": "TQ1.Conjunction",
+        "path": "TQ1.Conjunction",
+        "code": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/v2-0427"
+          }
+        ],
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "string",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/string"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "TQ1.12"
+          }
+        ]
+      },
+      {
+        "id": "TQ1.Occurrenceduration",
+        "path": "TQ1.Occurrenceduration",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "CQ",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/CQ"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "TQ1.13"
+          }
+        ]
+      },
+      {
+        "id": "TQ1.Totaloccurrence's",
+        "path": "TQ1.Totaloccurrence's",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "string",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/string"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "TQ1.14"
+          }
+        ]
+      }
+    ]
+  }
+}

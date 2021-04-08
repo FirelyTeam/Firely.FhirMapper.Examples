@@ -1,0 +1,123 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "PTA",
+  "url": "http://hl7.org/fhir/StructureDefinition/PTA",
+  "name": "PTA",
+  "status": "active",
+  "fhirVersion": "4.0.1",
+  "kind": "logical",
+  "abstract": false,
+  "type": "PTA",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Element",
+  "derivation": "specialization",
+  "differential": {
+    "element": [
+      {
+        "id": "PTA",
+        "path": "PTA",
+        "type": [
+          {
+            "code": "Element"
+          }
+        ],
+        "mapping": [
+          {
+            "id": "PTA",
+            "identity": "v2",
+            "map": "PTA"
+          }
+        ]
+      },
+      {
+        "id": "PTA.PolicyType",
+        "path": "PTA.PolicyType",
+        "code": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/v2-0147"
+          }
+        ],
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "string",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/string"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "PTA.1"
+          }
+        ]
+      },
+      {
+        "id": "PTA.AmountClass",
+        "path": "PTA.AmountClass",
+        "code": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/v2-0193"
+          }
+        ],
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "string",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/string"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "PTA.2"
+          }
+        ]
+      },
+      {
+        "id": "PTA.MoneyorPercentageQuantity",
+        "path": "PTA.MoneyorPercentageQuantity",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "string",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/string"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "PTA.3"
+          }
+        ]
+      },
+      {
+        "id": "PTA.MoneyorPercentage",
+        "path": "PTA.MoneyorPercentage",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "MOP",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/MOP"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "PTA.4"
+          }
+        ]
+      }
+    ]
+  }
+}

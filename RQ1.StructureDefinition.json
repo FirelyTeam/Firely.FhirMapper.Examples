@@ -1,0 +1,188 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "RQ1",
+  "url": "http://hl7.org/fhir/StructureDefinition/RQ1",
+  "name": "RQ1",
+  "status": "active",
+  "fhirVersion": "4.0.1",
+  "kind": "logical",
+  "abstract": false,
+  "type": "RQ1",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Element",
+  "derivation": "specialization",
+  "differential": {
+    "element": [
+      {
+        "id": "RQ1",
+        "path": "RQ1",
+        "type": [
+          {
+            "code": "Element"
+          }
+        ],
+        "mapping": [
+          {
+            "id": "RQ1",
+            "identity": "v2",
+            "map": "RQ1"
+          }
+        ]
+      },
+      {
+        "id": "RQ1.AnticipatedPrice",
+        "path": "RQ1.AnticipatedPrice",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "string",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/string"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "RQ1.1"
+          }
+        ]
+      },
+      {
+        "id": "RQ1.ManufacturerIdentifier",
+        "path": "RQ1.ManufacturerIdentifier",
+        "code": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/v2-0385"
+          }
+        ],
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "CE",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/CE"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "RQ1.2"
+          }
+        ]
+      },
+      {
+        "id": "RQ1.Manufacturer'sCatalog",
+        "path": "RQ1.Manufacturer'sCatalog",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "string",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/string"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "RQ1.3"
+          }
+        ]
+      },
+      {
+        "id": "RQ1.VendorID",
+        "path": "RQ1.VendorID",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "CE",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/CE"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "RQ1.4"
+          }
+        ]
+      },
+      {
+        "id": "RQ1.VendorCatalog",
+        "path": "RQ1.VendorCatalog",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "string",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/string"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "RQ1.5"
+          }
+        ]
+      },
+      {
+        "id": "RQ1.Taxable",
+        "path": "RQ1.Taxable",
+        "code": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/v2-0136"
+          }
+        ],
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "string",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/string"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "RQ1.6"
+          }
+        ]
+      },
+      {
+        "id": "RQ1.SubstituteAllowed",
+        "path": "RQ1.SubstituteAllowed",
+        "code": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/v2-0136"
+          }
+        ],
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "string",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/string"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "RQ1.7"
+          }
+        ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,78 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "SRT",
+  "url": "http://hl7.org/fhir/StructureDefinition/SRT",
+  "name": "SRT",
+  "status": "active",
+  "fhirVersion": "4.0.1",
+  "kind": "logical",
+  "abstract": false,
+  "type": "SRT",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Element",
+  "derivation": "specialization",
+  "differential": {
+    "element": [
+      {
+        "id": "SRT",
+        "path": "SRT",
+        "type": [
+          {
+            "code": "Element"
+          }
+        ],
+        "mapping": [
+          {
+            "id": "SRT",
+            "identity": "v2",
+            "map": "SRT"
+          }
+        ]
+      },
+      {
+        "id": "SRT.Sort-byField",
+        "path": "SRT.Sort-byField",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "string",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/string"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "SRT.1"
+          }
+        ]
+      },
+      {
+        "id": "SRT.Sequencing",
+        "path": "SRT.Sequencing",
+        "code": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/v2-0397"
+          }
+        ],
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "string",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/string"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "SRT.2"
+          }
+        ]
+      }
+    ]
+  }
+}

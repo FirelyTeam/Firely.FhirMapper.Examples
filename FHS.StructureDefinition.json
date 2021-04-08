@@ -1,0 +1,273 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "FHS",
+  "url": "http://hl7.org/fhir/StructureDefinition/FHS",
+  "name": "FHS",
+  "status": "active",
+  "fhirVersion": "4.0.1",
+  "kind": "logical",
+  "abstract": false,
+  "type": "FHS",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Element",
+  "derivation": "specialization",
+  "differential": {
+    "element": [
+      {
+        "id": "FHS",
+        "path": "FHS",
+        "type": [
+          {
+            "code": "Element"
+          }
+        ],
+        "mapping": [
+          {
+            "id": "FHS",
+            "identity": "v2",
+            "map": "FHS"
+          }
+        ]
+      },
+      {
+        "id": "FHS.FileFieldSeparator",
+        "path": "FHS.FileFieldSeparator",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "string",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/string"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "FHS.1"
+          }
+        ]
+      },
+      {
+        "id": "FHS.FileEncodingCharacters",
+        "path": "FHS.FileEncodingCharacters",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "string",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/string"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "FHS.2"
+          }
+        ]
+      },
+      {
+        "id": "FHS.FileSendingApplication",
+        "path": "FHS.FileSendingApplication",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "HD",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/HD"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "FHS.3"
+          }
+        ]
+      },
+      {
+        "id": "FHS.FileSendingFacility",
+        "path": "FHS.FileSendingFacility",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "HD",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/HD"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "FHS.4"
+          }
+        ]
+      },
+      {
+        "id": "FHS.FileReceivingApplication",
+        "path": "FHS.FileReceivingApplication",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "HD",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/HD"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "FHS.5"
+          }
+        ]
+      },
+      {
+        "id": "FHS.FileReceivingFacility",
+        "path": "FHS.FileReceivingFacility",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "HD",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/HD"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "FHS.6"
+          }
+        ]
+      },
+      {
+        "id": "FHS.FileCreationDate/Time",
+        "path": "FHS.FileCreationDate/Time",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "TS",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/TS"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "FHS.7"
+          }
+        ]
+      },
+      {
+        "id": "FHS.FileSecurity",
+        "path": "FHS.FileSecurity",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "string",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/string"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "FHS.8"
+          }
+        ]
+      },
+      {
+        "id": "FHS.FileName/ID",
+        "path": "FHS.FileName/ID",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "string",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/string"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "FHS.9"
+          }
+        ]
+      },
+      {
+        "id": "FHS.FileHeaderComment",
+        "path": "FHS.FileHeaderComment",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "string",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/string"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "FHS.10"
+          }
+        ]
+      },
+      {
+        "id": "FHS.FileControlID",
+        "path": "FHS.FileControlID",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "string",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/string"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "FHS.11"
+          }
+        ]
+      },
+      {
+        "id": "FHS.ReferenceFileControlID",
+        "path": "FHS.ReferenceFileControlID",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "string",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/string"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "FHS.12"
+          }
+        ]
+      }
+    ]
+  }
+}

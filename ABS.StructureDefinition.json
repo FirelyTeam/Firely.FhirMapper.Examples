@@ -1,0 +1,358 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "ABS",
+  "url": "http://hl7.org/fhir/StructureDefinition/ABS",
+  "name": "ABS",
+  "status": "active",
+  "fhirVersion": "4.0.1",
+  "kind": "logical",
+  "abstract": false,
+  "type": "ABS",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Element",
+  "derivation": "specialization",
+  "differential": {
+    "element": [
+      {
+        "id": "ABS",
+        "path": "ABS",
+        "type": [
+          {
+            "code": "Element"
+          }
+        ],
+        "mapping": [
+          {
+            "id": "ABS",
+            "identity": "v2",
+            "map": "ABS"
+          }
+        ]
+      },
+      {
+        "id": "ABS.DischargeCareProvider",
+        "path": "ABS.DischargeCareProvider",
+        "code": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/v2-0010"
+          }
+        ],
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "XCN",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/XCN"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "ABS.1"
+          }
+        ]
+      },
+      {
+        "id": "ABS.TransferMedicalServiceCode",
+        "path": "ABS.TransferMedicalServiceCode",
+        "code": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/v2-0069"
+          }
+        ],
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "CE",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/CE"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "ABS.2"
+          }
+        ]
+      },
+      {
+        "id": "ABS.SeverityofIllnessCode",
+        "path": "ABS.SeverityofIllnessCode",
+        "code": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/v2-0421"
+          }
+        ],
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "CE",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/CE"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "ABS.3"
+          }
+        ]
+      },
+      {
+        "id": "ABS.Date/TimeofAttestation",
+        "path": "ABS.Date/TimeofAttestation",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "TS",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/TS"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "ABS.4"
+          }
+        ]
+      },
+      {
+        "id": "ABS.AttestedBy",
+        "path": "ABS.AttestedBy",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "XCN",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/XCN"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "ABS.5"
+          }
+        ]
+      },
+      {
+        "id": "ABS.TriageCode",
+        "path": "ABS.TriageCode",
+        "code": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/v2-0422"
+          }
+        ],
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "CE",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/CE"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "ABS.6"
+          }
+        ]
+      },
+      {
+        "id": "ABS.AbstractCompletionDate/Time",
+        "path": "ABS.AbstractCompletionDate/Time",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "TS",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/TS"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "ABS.7"
+          }
+        ]
+      },
+      {
+        "id": "ABS.AbstractedBy",
+        "path": "ABS.AbstractedBy",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "XCN",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/XCN"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "ABS.8"
+          }
+        ]
+      },
+      {
+        "id": "ABS.CaseCategoryCode",
+        "path": "ABS.CaseCategoryCode",
+        "code": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/v2-0423"
+          }
+        ],
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "CE",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/CE"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "ABS.9"
+          }
+        ]
+      },
+      {
+        "id": "ABS.CaesarianSectionIndicator",
+        "path": "ABS.CaesarianSectionIndicator",
+        "code": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/v2-0136"
+          }
+        ],
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "string",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/string"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "ABS.10"
+          }
+        ]
+      },
+      {
+        "id": "ABS.GestationCategoryCode",
+        "path": "ABS.GestationCategoryCode",
+        "code": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/v2-0424"
+          }
+        ],
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "CE",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/CE"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "ABS.11"
+          }
+        ]
+      },
+      {
+        "id": "ABS.GestationPeriod-Weeks",
+        "path": "ABS.GestationPeriod-Weeks",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "string",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/string"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "ABS.12"
+          }
+        ]
+      },
+      {
+        "id": "ABS.NewbornCode",
+        "path": "ABS.NewbornCode",
+        "code": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/v2-0425"
+          }
+        ],
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "CE",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/CE"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "ABS.13"
+          }
+        ]
+      },
+      {
+        "id": "ABS.StillbornIndicator",
+        "path": "ABS.StillbornIndicator",
+        "code": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/v2-0136"
+          }
+        ],
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "string",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/string"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "ABS.14"
+          }
+        ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,343 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "IIM",
+  "url": "http://hl7.org/fhir/StructureDefinition/IIM",
+  "name": "IIM",
+  "status": "active",
+  "fhirVersion": "4.0.1",
+  "kind": "logical",
+  "abstract": false,
+  "type": "IIM",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Element",
+  "derivation": "specialization",
+  "differential": {
+    "element": [
+      {
+        "id": "IIM",
+        "path": "IIM",
+        "type": [
+          {
+            "code": "Element"
+          }
+        ],
+        "mapping": [
+          {
+            "id": "IIM",
+            "identity": "v2",
+            "map": "IIM"
+          }
+        ]
+      },
+      {
+        "id": "IIM.PrimaryKeyValue-IIM",
+        "path": "IIM.PrimaryKeyValue-IIM",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "CWE",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/CWE"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "IIM.1"
+          }
+        ]
+      },
+      {
+        "id": "IIM.ServiceItemCode",
+        "path": "IIM.ServiceItemCode",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "CWE",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/CWE"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "IIM.2"
+          }
+        ]
+      },
+      {
+        "id": "IIM.InventoryLotNumber",
+        "path": "IIM.InventoryLotNumber",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "string",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/string"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "IIM.3"
+          }
+        ]
+      },
+      {
+        "id": "IIM.InventoryExpirationDate",
+        "path": "IIM.InventoryExpirationDate",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "TS",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/TS"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "IIM.4"
+          }
+        ]
+      },
+      {
+        "id": "IIM.InventoryManufacturerName",
+        "path": "IIM.InventoryManufacturerName",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "CWE",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/CWE"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "IIM.5"
+          }
+        ]
+      },
+      {
+        "id": "IIM.InventoryLocation",
+        "path": "IIM.InventoryLocation",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "CWE",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/CWE"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "IIM.6"
+          }
+        ]
+      },
+      {
+        "id": "IIM.InventoryReceivedDate",
+        "path": "IIM.InventoryReceivedDate",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "TS",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/TS"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "IIM.7"
+          }
+        ]
+      },
+      {
+        "id": "IIM.InventoryReceivedQuantity",
+        "path": "IIM.InventoryReceivedQuantity",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "string",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/string"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "IIM.8"
+          }
+        ]
+      },
+      {
+        "id": "IIM.InventoryReceivedQuantityUnit",
+        "path": "IIM.InventoryReceivedQuantityUnit",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "CWE",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/CWE"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "IIM.9"
+          }
+        ]
+      },
+      {
+        "id": "IIM.InventoryReceivedItemCost",
+        "path": "IIM.InventoryReceivedItemCost",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "MO",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/MO"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "IIM.10"
+          }
+        ]
+      },
+      {
+        "id": "IIM.InventoryOnHandDate",
+        "path": "IIM.InventoryOnHandDate",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "TS",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/TS"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "IIM.11"
+          }
+        ]
+      },
+      {
+        "id": "IIM.InventoryOnHandQuantity",
+        "path": "IIM.InventoryOnHandQuantity",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "string",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/string"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "IIM.12"
+          }
+        ]
+      },
+      {
+        "id": "IIM.InventoryOnHandQuantityUnit",
+        "path": "IIM.InventoryOnHandQuantityUnit",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "CWE",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/CWE"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "IIM.13"
+          }
+        ]
+      },
+      {
+        "id": "IIM.ProcedureCode",
+        "path": "IIM.ProcedureCode",
+        "code": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/v2-0088"
+          }
+        ],
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "CE",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/CE"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "IIM.14"
+          }
+        ]
+      },
+      {
+        "id": "IIM.ProcedureCodeModifier",
+        "path": "IIM.ProcedureCodeModifier",
+        "code": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/v2-0340"
+          }
+        ],
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "CE",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/CE"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "IIM.15"
+          }
+        ]
+      }
+    ]
+  }
+}

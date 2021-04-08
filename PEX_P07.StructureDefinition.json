@@ -1,0 +1,785 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "PEX_P07",
+  "url": "http://hl7.org/fhir/StructureDefinition/PEX_P07",
+  "name": "PEX_P07",
+  "status": "active",
+  "fhirVersion": "4.0.1",
+  "kind": "logical",
+  "abstract": false,
+  "type": "PEX_P07",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Element",
+  "derivation": "specialization",
+  "differential": {
+    "element": [
+      {
+        "id": "PEX_P07",
+        "path": "PEX_P07",
+        "type": [
+          {
+            "code": "Element"
+          }
+        ],
+        "mapping": [
+          {
+            "id": "PEX_P07",
+            "identity": "v2",
+            "map": "PEX_P07"
+          }
+        ]
+      },
+      {
+        "id": "PEX_P07.MSH",
+        "path": "PEX_P07.MSH",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "MSH",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/MSH"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "MSH"
+          }
+        ]
+      },
+      {
+        "id": "PEX_P07.SFT",
+        "path": "PEX_P07.SFT",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "SFT",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/SFT"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "SFT"
+          }
+        ]
+      },
+      {
+        "id": "PEX_P07.EVN",
+        "path": "PEX_P07.EVN",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "EVN",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/EVN"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "EVN"
+          }
+        ]
+      },
+      {
+        "id": "PEX_P07.PID",
+        "path": "PEX_P07.PID",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "PID",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/PID"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "PID"
+          }
+        ]
+      },
+      {
+        "id": "PEX_P07.PD1",
+        "path": "PEX_P07.PD1",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "PD1",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/PD1"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "PD1"
+          }
+        ]
+      },
+      {
+        "id": "PEX_P07.NTE",
+        "path": "PEX_P07.NTE",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "NTE",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/NTE"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "NTE"
+          }
+        ]
+      },
+      {
+        "id": "PEX_P07.VISIT",
+        "path": "PEX_P07.VISIT",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "BackboneElement"
+          }
+        ]
+      },
+      {
+        "id": "PEX_P07.VISIT.PV1",
+        "path": "PEX_P07.VISIT.PV1",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "PV1",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/PV1"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "PV1"
+          }
+        ]
+      },
+      {
+        "id": "PEX_P07.VISIT.PV2",
+        "path": "PEX_P07.VISIT.PV2",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "PV2",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/PV2"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "PV2"
+          }
+        ]
+      },
+      {
+        "id": "PEX_P07.EXPERIENCE",
+        "path": "PEX_P07.EXPERIENCE",
+        "min": 1,
+        "max": "*",
+        "type": [
+          {
+            "code": "BackboneElement"
+          }
+        ]
+      },
+      {
+        "id": "PEX_P07.EXPERIENCE.PES",
+        "path": "PEX_P07.EXPERIENCE.PES",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "PES",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/PES"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "PES"
+          }
+        ]
+      },
+      {
+        "id": "PEX_P07.EXPERIENCE.PEX_OBSERVATION",
+        "path": "PEX_P07.EXPERIENCE.PEX_OBSERVATION",
+        "min": 1,
+        "max": "*",
+        "type": [
+          {
+            "code": "BackboneElement"
+          }
+        ]
+      },
+      {
+        "id": "PEX_P07.EXPERIENCE.PEX_OBSERVATION.PEO",
+        "path": "PEX_P07.EXPERIENCE.PEX_OBSERVATION.PEO",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "PEO",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/PEO"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "PEO"
+          }
+        ]
+      },
+      {
+        "id": "PEX_P07.EXPERIENCE.PEX_OBSERVATION.PEX_CAUSE",
+        "path": "PEX_P07.EXPERIENCE.PEX_OBSERVATION.PEX_CAUSE",
+        "min": 1,
+        "max": "*",
+        "type": [
+          {
+            "code": "BackboneElement"
+          }
+        ]
+      },
+      {
+        "id": "PEX_P07.EXPERIENCE.PEX_OBSERVATION.PEX_CAUSE.PCR",
+        "path": "PEX_P07.EXPERIENCE.PEX_OBSERVATION.PEX_CAUSE.PCR",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "PCR",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/PCR"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "PCR"
+          }
+        ]
+      },
+      {
+        "id": "PEX_P07.EXPERIENCE.PEX_OBSERVATION.PEX_CAUSE.RX_ORDER",
+        "path": "PEX_P07.EXPERIENCE.PEX_OBSERVATION.PEX_CAUSE.RX_ORDER",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "BackboneElement"
+          }
+        ]
+      },
+      {
+        "id": "PEX_P07.EXPERIENCE.PEX_OBSERVATION.PEX_CAUSE.RX_ORDER.RXE",
+        "path": "PEX_P07.EXPERIENCE.PEX_OBSERVATION.PEX_CAUSE.RX_ORDER.RXE",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "RXE",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/RXE"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "RXE"
+          }
+        ]
+      },
+      {
+        "id": "PEX_P07.EXPERIENCE.PEX_OBSERVATION.PEX_CAUSE.RX_ORDER.TIMING_QTY",
+        "path": "PEX_P07.EXPERIENCE.PEX_OBSERVATION.PEX_CAUSE.RX_ORDER.TIMING_QTY",
+        "min": 1,
+        "max": "*",
+        "type": [
+          {
+            "code": "BackboneElement"
+          }
+        ]
+      },
+      {
+        "id": "PEX_P07.EXPERIENCE.PEX_OBSERVATION.PEX_CAUSE.RX_ORDER.TIMING_QTY.TQ1",
+        "path": "PEX_P07.EXPERIENCE.PEX_OBSERVATION.PEX_CAUSE.RX_ORDER.TIMING_QTY.TQ1",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "TQ1",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/TQ1"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "TQ1"
+          }
+        ]
+      },
+      {
+        "id": "PEX_P07.EXPERIENCE.PEX_OBSERVATION.PEX_CAUSE.RX_ORDER.TIMING_QTY.TQ2",
+        "path": "PEX_P07.EXPERIENCE.PEX_OBSERVATION.PEX_CAUSE.RX_ORDER.TIMING_QTY.TQ2",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "TQ2",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/TQ2"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "TQ2"
+          }
+        ]
+      },
+      {
+        "id": "PEX_P07.EXPERIENCE.PEX_OBSERVATION.PEX_CAUSE.RX_ORDER.RXR",
+        "path": "PEX_P07.EXPERIENCE.PEX_OBSERVATION.PEX_CAUSE.RX_ORDER.RXR",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "RXR",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/RXR"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "RXR"
+          }
+        ]
+      },
+      {
+        "id": "PEX_P07.EXPERIENCE.PEX_OBSERVATION.PEX_CAUSE.RX_ADMINISTRATION",
+        "path": "PEX_P07.EXPERIENCE.PEX_OBSERVATION.PEX_CAUSE.RX_ADMINISTRATION",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "BackboneElement"
+          }
+        ]
+      },
+      {
+        "id": "PEX_P07.EXPERIENCE.PEX_OBSERVATION.PEX_CAUSE.RX_ADMINISTRATION.RXA",
+        "path": "PEX_P07.EXPERIENCE.PEX_OBSERVATION.PEX_CAUSE.RX_ADMINISTRATION.RXA",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "RXA",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/RXA"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "RXA"
+          }
+        ]
+      },
+      {
+        "id": "PEX_P07.EXPERIENCE.PEX_OBSERVATION.PEX_CAUSE.RX_ADMINISTRATION.RXR",
+        "path": "PEX_P07.EXPERIENCE.PEX_OBSERVATION.PEX_CAUSE.RX_ADMINISTRATION.RXR",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "RXR",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/RXR"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "RXR"
+          }
+        ]
+      },
+      {
+        "id": "PEX_P07.EXPERIENCE.PEX_OBSERVATION.PEX_CAUSE.PRB",
+        "path": "PEX_P07.EXPERIENCE.PEX_OBSERVATION.PEX_CAUSE.PRB",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "PRB",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/PRB"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "PRB"
+          }
+        ]
+      },
+      {
+        "id": "PEX_P07.EXPERIENCE.PEX_OBSERVATION.PEX_CAUSE.OBX",
+        "path": "PEX_P07.EXPERIENCE.PEX_OBSERVATION.PEX_CAUSE.OBX",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "OBX",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/OBX"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "OBX"
+          }
+        ]
+      },
+      {
+        "id": "PEX_P07.EXPERIENCE.PEX_OBSERVATION.PEX_CAUSE.NTE",
+        "path": "PEX_P07.EXPERIENCE.PEX_OBSERVATION.PEX_CAUSE.NTE",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "NTE",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/NTE"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "NTE"
+          }
+        ]
+      },
+      {
+        "id": "PEX_P07.EXPERIENCE.PEX_OBSERVATION.PEX_CAUSE.ASSOCIATED_PERSON",
+        "path": "PEX_P07.EXPERIENCE.PEX_OBSERVATION.PEX_CAUSE.ASSOCIATED_PERSON",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "BackboneElement"
+          }
+        ]
+      },
+      {
+        "id": "PEX_P07.EXPERIENCE.PEX_OBSERVATION.PEX_CAUSE.ASSOCIATED_PERSON.NK1",
+        "path": "PEX_P07.EXPERIENCE.PEX_OBSERVATION.PEX_CAUSE.ASSOCIATED_PERSON.NK1",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "NK1",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/NK1"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "NK1"
+          }
+        ]
+      },
+      {
+        "id": "PEX_P07.EXPERIENCE.PEX_OBSERVATION.PEX_CAUSE.ASSOCIATED_PERSON.ASSOCIATED_RX_ORDER",
+        "path": "PEX_P07.EXPERIENCE.PEX_OBSERVATION.PEX_CAUSE.ASSOCIATED_PERSON.ASSOCIATED_RX_ORDER",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "BackboneElement"
+          }
+        ]
+      },
+      {
+        "id": "PEX_P07.EXPERIENCE.PEX_OBSERVATION.PEX_CAUSE.ASSOCIATED_PERSON.ASSOCIATED_RX_ORDER.RXE",
+        "path": "PEX_P07.EXPERIENCE.PEX_OBSERVATION.PEX_CAUSE.ASSOCIATED_PERSON.ASSOCIATED_RX_ORDER.RXE",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "RXE",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/RXE"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "RXE"
+          }
+        ]
+      },
+      {
+        "id": "PEX_P07.EXPERIENCE.PEX_OBSERVATION.PEX_CAUSE.ASSOCIATED_PERSON.ASSOCIATED_RX_ORDER.NK1_TIMING_QTY",
+        "path": "PEX_P07.EXPERIENCE.PEX_OBSERVATION.PEX_CAUSE.ASSOCIATED_PERSON.ASSOCIATED_RX_ORDER.NK1_TIMING_QTY",
+        "min": 1,
+        "max": "*",
+        "type": [
+          {
+            "code": "BackboneElement"
+          }
+        ]
+      },
+      {
+        "id": "PEX_P07.EXPERIENCE.PEX_OBSERVATION.PEX_CAUSE.ASSOCIATED_PERSON.ASSOCIATED_RX_ORDER.NK1_TIMING_QTY.TQ1",
+        "path": "PEX_P07.EXPERIENCE.PEX_OBSERVATION.PEX_CAUSE.ASSOCIATED_PERSON.ASSOCIATED_RX_ORDER.NK1_TIMING_QTY.TQ1",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "TQ1",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/TQ1"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "TQ1"
+          }
+        ]
+      },
+      {
+        "id": "PEX_P07.EXPERIENCE.PEX_OBSERVATION.PEX_CAUSE.ASSOCIATED_PERSON.ASSOCIATED_RX_ORDER.NK1_TIMING_QTY.TQ2",
+        "path": "PEX_P07.EXPERIENCE.PEX_OBSERVATION.PEX_CAUSE.ASSOCIATED_PERSON.ASSOCIATED_RX_ORDER.NK1_TIMING_QTY.TQ2",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "TQ2",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/TQ2"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "TQ2"
+          }
+        ]
+      },
+      {
+        "id": "PEX_P07.EXPERIENCE.PEX_OBSERVATION.PEX_CAUSE.ASSOCIATED_PERSON.ASSOCIATED_RX_ORDER.RXR",
+        "path": "PEX_P07.EXPERIENCE.PEX_OBSERVATION.PEX_CAUSE.ASSOCIATED_PERSON.ASSOCIATED_RX_ORDER.RXR",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "RXR",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/RXR"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "RXR"
+          }
+        ]
+      },
+      {
+        "id": "PEX_P07.EXPERIENCE.PEX_OBSERVATION.PEX_CAUSE.ASSOCIATED_PERSON.ASSOCIATED_RX_ADMIN",
+        "path": "PEX_P07.EXPERIENCE.PEX_OBSERVATION.PEX_CAUSE.ASSOCIATED_PERSON.ASSOCIATED_RX_ADMIN",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "BackboneElement"
+          }
+        ]
+      },
+      {
+        "id": "PEX_P07.EXPERIENCE.PEX_OBSERVATION.PEX_CAUSE.ASSOCIATED_PERSON.ASSOCIATED_RX_ADMIN.RXA",
+        "path": "PEX_P07.EXPERIENCE.PEX_OBSERVATION.PEX_CAUSE.ASSOCIATED_PERSON.ASSOCIATED_RX_ADMIN.RXA",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "RXA",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/RXA"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "RXA"
+          }
+        ]
+      },
+      {
+        "id": "PEX_P07.EXPERIENCE.PEX_OBSERVATION.PEX_CAUSE.ASSOCIATED_PERSON.ASSOCIATED_RX_ADMIN.RXR",
+        "path": "PEX_P07.EXPERIENCE.PEX_OBSERVATION.PEX_CAUSE.ASSOCIATED_PERSON.ASSOCIATED_RX_ADMIN.RXR",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "RXR",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/RXR"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "RXR"
+          }
+        ]
+      },
+      {
+        "id": "PEX_P07.EXPERIENCE.PEX_OBSERVATION.PEX_CAUSE.ASSOCIATED_PERSON.PRB",
+        "path": "PEX_P07.EXPERIENCE.PEX_OBSERVATION.PEX_CAUSE.ASSOCIATED_PERSON.PRB",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "PRB",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/PRB"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "PRB"
+          }
+        ]
+      },
+      {
+        "id": "PEX_P07.EXPERIENCE.PEX_OBSERVATION.PEX_CAUSE.ASSOCIATED_PERSON.OBX",
+        "path": "PEX_P07.EXPERIENCE.PEX_OBSERVATION.PEX_CAUSE.ASSOCIATED_PERSON.OBX",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "OBX",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/OBX"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "OBX"
+          }
+        ]
+      },
+      {
+        "id": "PEX_P07.EXPERIENCE.PEX_OBSERVATION.PEX_CAUSE.STUDY",
+        "path": "PEX_P07.EXPERIENCE.PEX_OBSERVATION.PEX_CAUSE.STUDY",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "BackboneElement"
+          }
+        ]
+      },
+      {
+        "id": "PEX_P07.EXPERIENCE.PEX_OBSERVATION.PEX_CAUSE.STUDY.CSR",
+        "path": "PEX_P07.EXPERIENCE.PEX_OBSERVATION.PEX_CAUSE.STUDY.CSR",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "CSR",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/CSR"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "CSR"
+          }
+        ]
+      },
+      {
+        "id": "PEX_P07.EXPERIENCE.PEX_OBSERVATION.PEX_CAUSE.STUDY.CSP",
+        "path": "PEX_P07.EXPERIENCE.PEX_OBSERVATION.PEX_CAUSE.STUDY.CSP",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "CSP",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/CSP"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "CSP"
+          }
+        ]
+      }
+    ]
+  }
+}

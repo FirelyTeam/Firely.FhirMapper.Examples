@@ -1,0 +1,338 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "XPN",
+  "url": "http://hl7.org/fhir/StructureDefinition/XPN",
+  "name": "XPN",
+  "status": "active",
+  "fhirVersion": "4.0.1",
+  "kind": "logical",
+  "abstract": false,
+  "type": "XPN",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Element",
+  "derivation": "specialization",
+  "differential": {
+    "element": [
+      {
+        "id": "XPN",
+        "path": "XPN",
+        "type": [
+          {
+            "code": "Element"
+          }
+        ],
+        "mapping": [
+          {
+            "id": "XPN",
+            "identity": "v2",
+            "map": "XPN"
+          }
+        ]
+      },
+      {
+        "id": "XPN.FamilyName",
+        "path": "XPN.FamilyName",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "FN",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/FN"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "XPN.1"
+          }
+        ]
+      },
+      {
+        "id": "XPN.GivenName",
+        "path": "XPN.GivenName",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "string",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/string"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "XPN.2"
+          }
+        ]
+      },
+      {
+        "id": "XPN.SecondandFurtherGivenNamesorInitialsThereof",
+        "path": "XPN.SecondandFurtherGivenNamesorInitialsThereof",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "string",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/string"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "XPN.3"
+          }
+        ]
+      },
+      {
+        "id": "XPN.Suffix",
+        "path": "XPN.Suffix",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "string",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/string"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "XPN.4"
+          }
+        ]
+      },
+      {
+        "id": "XPN.Prefix",
+        "path": "XPN.Prefix",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "string",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/string"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "XPN.5"
+          }
+        ]
+      },
+      {
+        "id": "XPN.Degree",
+        "path": "XPN.Degree",
+        "code": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/v2-0360"
+          }
+        ],
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "string",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/string"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "XPN.6"
+          }
+        ]
+      },
+      {
+        "id": "XPN.NameTypeCode",
+        "path": "XPN.NameTypeCode",
+        "code": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/v2-0200"
+          }
+        ],
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "string",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/string"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "XPN.7"
+          }
+        ]
+      },
+      {
+        "id": "XPN.NameRepresentationCode",
+        "path": "XPN.NameRepresentationCode",
+        "code": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/v2-0465"
+          }
+        ],
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "string",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/string"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "XPN.8"
+          }
+        ]
+      },
+      {
+        "id": "XPN.NameContext",
+        "path": "XPN.NameContext",
+        "code": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/v2-0448"
+          }
+        ],
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "CE",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/CE"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "XPN.9"
+          }
+        ]
+      },
+      {
+        "id": "XPN.NameValidityRange",
+        "path": "XPN.NameValidityRange",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "DR",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/DR"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "XPN.10"
+          }
+        ]
+      },
+      {
+        "id": "XPN.NameAssemblyOrder",
+        "path": "XPN.NameAssemblyOrder",
+        "code": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/v2-0444"
+          }
+        ],
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "string",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/string"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "XPN.11"
+          }
+        ]
+      },
+      {
+        "id": "XPN.EffectiveDate",
+        "path": "XPN.EffectiveDate",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "TS",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/TS"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "XPN.12"
+          }
+        ]
+      },
+      {
+        "id": "XPN.ExpirationDate",
+        "path": "XPN.ExpirationDate",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "TS",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/TS"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "XPN.13"
+          }
+        ]
+      },
+      {
+        "id": "XPN.ProfessionalSuffix",
+        "path": "XPN.ProfessionalSuffix",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "string",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/string"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "XPN.14"
+          }
+        ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,1103 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "OM1",
+  "url": "http://hl7.org/fhir/StructureDefinition/OM1",
+  "name": "OM1",
+  "status": "active",
+  "fhirVersion": "4.0.1",
+  "kind": "logical",
+  "abstract": false,
+  "type": "OM1",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Element",
+  "derivation": "specialization",
+  "differential": {
+    "element": [
+      {
+        "id": "OM1",
+        "path": "OM1",
+        "type": [
+          {
+            "code": "Element"
+          }
+        ],
+        "mapping": [
+          {
+            "id": "OM1",
+            "identity": "v2",
+            "map": "OM1"
+          }
+        ]
+      },
+      {
+        "id": "OM1.SequenceNumber-Test/ObservationMasterFile",
+        "path": "OM1.SequenceNumber-Test/ObservationMasterFile",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "string",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/string"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "OM1.1"
+          }
+        ]
+      },
+      {
+        "id": "OM1.Producer'sService/Test/ObservationID",
+        "path": "OM1.Producer'sService/Test/ObservationID",
+        "code": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/v2-9999"
+          }
+        ],
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "CE",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/CE"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "OM1.2"
+          }
+        ]
+      },
+      {
+        "id": "OM1.PermittedDataTypes",
+        "path": "OM1.PermittedDataTypes",
+        "code": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/v2-0125"
+          }
+        ],
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "string",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/string"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "OM1.3"
+          }
+        ]
+      },
+      {
+        "id": "OM1.SpecimenRequired",
+        "path": "OM1.SpecimenRequired",
+        "code": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/v2-0136"
+          }
+        ],
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "string",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/string"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "OM1.4"
+          }
+        ]
+      },
+      {
+        "id": "OM1.ProducerID",
+        "path": "OM1.ProducerID",
+        "code": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/v2-9999"
+          }
+        ],
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "CE",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/CE"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "OM1.5"
+          }
+        ]
+      },
+      {
+        "id": "OM1.ObservationDescription",
+        "path": "OM1.ObservationDescription",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "string",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/string"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "OM1.6"
+          }
+        ]
+      },
+      {
+        "id": "OM1.OtherService/Test/ObservationIDsfortheObservation",
+        "path": "OM1.OtherService/Test/ObservationIDsfortheObservation",
+        "code": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/v2-9999"
+          }
+        ],
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "CE",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/CE"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "OM1.7"
+          }
+        ]
+      },
+      {
+        "id": "OM1.OtherNames",
+        "path": "OM1.OtherNames",
+        "min": 1,
+        "max": "*",
+        "type": [
+          {
+            "code": "string",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/string"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "OM1.8"
+          }
+        ]
+      },
+      {
+        "id": "OM1.PreferredReportNamefortheObservation",
+        "path": "OM1.PreferredReportNamefortheObservation",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "string",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/string"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "OM1.9"
+          }
+        ]
+      },
+      {
+        "id": "OM1.PreferredShortNameorMnemonicforObservation",
+        "path": "OM1.PreferredShortNameorMnemonicforObservation",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "string",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/string"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "OM1.10"
+          }
+        ]
+      },
+      {
+        "id": "OM1.PreferredLongNamefortheObservation",
+        "path": "OM1.PreferredLongNamefortheObservation",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "string",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/string"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "OM1.11"
+          }
+        ]
+      },
+      {
+        "id": "OM1.Orderability",
+        "path": "OM1.Orderability",
+        "code": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/v2-0136"
+          }
+        ],
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "string",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/string"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "OM1.12"
+          }
+        ]
+      },
+      {
+        "id": "OM1.IdentityofInstrumentUsedtoPerformthisStudy",
+        "path": "OM1.IdentityofInstrumentUsedtoPerformthisStudy",
+        "code": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/v2-9999"
+          }
+        ],
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "CE",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/CE"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "OM1.13"
+          }
+        ]
+      },
+      {
+        "id": "OM1.CodedRepresentationofMethod",
+        "path": "OM1.CodedRepresentationofMethod",
+        "code": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/v2-9999"
+          }
+        ],
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "CE",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/CE"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "OM1.14"
+          }
+        ]
+      },
+      {
+        "id": "OM1.PortableDeviceIndicator",
+        "path": "OM1.PortableDeviceIndicator",
+        "code": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/v2-0136"
+          }
+        ],
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "string",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/string"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "OM1.15"
+          }
+        ]
+      },
+      {
+        "id": "OM1.ObservationProducingDepartment/Section",
+        "path": "OM1.ObservationProducingDepartment/Section",
+        "code": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/v2-9999"
+          }
+        ],
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "CE",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/CE"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "OM1.16"
+          }
+        ]
+      },
+      {
+        "id": "OM1.TelephoneNumberofSection",
+        "path": "OM1.TelephoneNumberofSection",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "XTN",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/XTN"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "OM1.17"
+          }
+        ]
+      },
+      {
+        "id": "OM1.NatureofService/Test/Observation",
+        "path": "OM1.NatureofService/Test/Observation",
+        "code": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/v2-0174"
+          }
+        ],
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "string",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/string"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "OM1.18"
+          }
+        ]
+      },
+      {
+        "id": "OM1.ReportSubheader",
+        "path": "OM1.ReportSubheader",
+        "code": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/v2-9999"
+          }
+        ],
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "CE",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/CE"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "OM1.19"
+          }
+        ]
+      },
+      {
+        "id": "OM1.ReportDisplayOrder",
+        "path": "OM1.ReportDisplayOrder",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "string",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/string"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "OM1.20"
+          }
+        ]
+      },
+      {
+        "id": "OM1.Date/TimeStampforanychangeinDefinitionfortheObservation",
+        "path": "OM1.Date/TimeStampforanychangeinDefinitionfortheObservation",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "TS",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/TS"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "OM1.21"
+          }
+        ]
+      },
+      {
+        "id": "OM1.EffectiveDate/TimeofChange",
+        "path": "OM1.EffectiveDate/TimeofChange",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "TS",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/TS"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "OM1.22"
+          }
+        ]
+      },
+      {
+        "id": "OM1.TypicalTurn-AroundTime",
+        "path": "OM1.TypicalTurn-AroundTime",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "string",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/string"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "OM1.23"
+          }
+        ]
+      },
+      {
+        "id": "OM1.ProcessingTime",
+        "path": "OM1.ProcessingTime",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "string",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/string"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "OM1.24"
+          }
+        ]
+      },
+      {
+        "id": "OM1.ProcessingPriority",
+        "path": "OM1.ProcessingPriority",
+        "code": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/v2-0168"
+          }
+        ],
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "string",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/string"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "OM1.25"
+          }
+        ]
+      },
+      {
+        "id": "OM1.ReportingPriority",
+        "path": "OM1.ReportingPriority",
+        "code": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/v2-0169"
+          }
+        ],
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "string",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/string"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "OM1.26"
+          }
+        ]
+      },
+      {
+        "id": "OM1.OutsideSite(s)WhereObservationmaybePerformed",
+        "path": "OM1.OutsideSite(s)WhereObservationmaybePerformed",
+        "code": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/v2-9999"
+          }
+        ],
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "CE",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/CE"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "OM1.27"
+          }
+        ]
+      },
+      {
+        "id": "OM1.AddressofOutsideSite(s)",
+        "path": "OM1.AddressofOutsideSite(s)",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "XAD",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/XAD"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "OM1.28"
+          }
+        ]
+      },
+      {
+        "id": "OM1.PhoneNumberofOutsideSite",
+        "path": "OM1.PhoneNumberofOutsideSite",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "XTN",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/XTN"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "OM1.29"
+          }
+        ]
+      },
+      {
+        "id": "OM1.ConfidentialityCode",
+        "path": "OM1.ConfidentialityCode",
+        "code": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/v2-0177"
+          }
+        ],
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "CWE",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/CWE"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "OM1.30"
+          }
+        ]
+      },
+      {
+        "id": "OM1.ObservationsRequiredtoInterprettheObservation",
+        "path": "OM1.ObservationsRequiredtoInterprettheObservation",
+        "code": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/v2-9999"
+          }
+        ],
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "CE",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/CE"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "OM1.31"
+          }
+        ]
+      },
+      {
+        "id": "OM1.InterpretationofObservations",
+        "path": "OM1.InterpretationofObservations",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "string",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/string"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "OM1.32"
+          }
+        ]
+      },
+      {
+        "id": "OM1.ContraindicationstoObservations",
+        "path": "OM1.ContraindicationstoObservations",
+        "code": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/v2-9999"
+          }
+        ],
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "CE",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/CE"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "OM1.33"
+          }
+        ]
+      },
+      {
+        "id": "OM1.ReflexTests/Observations",
+        "path": "OM1.ReflexTests/Observations",
+        "code": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/v2-9999"
+          }
+        ],
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "CE",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/CE"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "OM1.34"
+          }
+        ]
+      },
+      {
+        "id": "OM1.RulesthatTriggerReflexTesting",
+        "path": "OM1.RulesthatTriggerReflexTesting",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "string",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/string"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "OM1.35"
+          }
+        ]
+      },
+      {
+        "id": "OM1.FixedCannedMessage",
+        "path": "OM1.FixedCannedMessage",
+        "code": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/v2-9999"
+          }
+        ],
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "CE",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/CE"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "OM1.36"
+          }
+        ]
+      },
+      {
+        "id": "OM1.PatientPreparation",
+        "path": "OM1.PatientPreparation",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "string",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/string"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "OM1.37"
+          }
+        ]
+      },
+      {
+        "id": "OM1.ProcedureMedication",
+        "path": "OM1.ProcedureMedication",
+        "code": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/v2-9999"
+          }
+        ],
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "CE",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/CE"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "OM1.38"
+          }
+        ]
+      },
+      {
+        "id": "OM1.FactorsthatmayAffecttheObservation",
+        "path": "OM1.FactorsthatmayAffecttheObservation",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "string",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/string"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "OM1.39"
+          }
+        ]
+      },
+      {
+        "id": "OM1.Service/Test/ObservationPerformanceSchedule",
+        "path": "OM1.Service/Test/ObservationPerformanceSchedule",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "string",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/string"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "OM1.40"
+          }
+        ]
+      },
+      {
+        "id": "OM1.DescriptionofTestMethods",
+        "path": "OM1.DescriptionofTestMethods",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "string",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/string"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "OM1.41"
+          }
+        ]
+      },
+      {
+        "id": "OM1.KindofQuantityObserved",
+        "path": "OM1.KindofQuantityObserved",
+        "code": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/v2-0254"
+          }
+        ],
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "CE",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/CE"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "OM1.42"
+          }
+        ]
+      },
+      {
+        "id": "OM1.PointVersusInterval",
+        "path": "OM1.PointVersusInterval",
+        "code": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/v2-0255"
+          }
+        ],
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "CE",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/CE"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "OM1.43"
+          }
+        ]
+      },
+      {
+        "id": "OM1.ChallengeInformation",
+        "path": "OM1.ChallengeInformation",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "string",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/string"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "OM1.44"
+          }
+        ]
+      },
+      {
+        "id": "OM1.RelationshipModifier",
+        "path": "OM1.RelationshipModifier",
+        "code": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/v2-0258"
+          }
+        ],
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "CE",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/CE"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "OM1.45"
+          }
+        ]
+      },
+      {
+        "id": "OM1.TargetAnatomicSiteOfTest",
+        "path": "OM1.TargetAnatomicSiteOfTest",
+        "code": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/v2-9999"
+          }
+        ],
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "CE",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/CE"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "OM1.46"
+          }
+        ]
+      },
+      {
+        "id": "OM1.ModalityOfImagingMeasurement",
+        "path": "OM1.ModalityOfImagingMeasurement",
+        "code": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/v2-0259"
+          }
+        ],
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "CE",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/CE"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "OM1.47"
+          }
+        ]
+      }
+    ]
+  }
+}

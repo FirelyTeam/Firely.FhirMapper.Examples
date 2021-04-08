@@ -1,0 +1,468 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "BPX",
+  "url": "http://hl7.org/fhir/StructureDefinition/BPX",
+  "name": "BPX",
+  "status": "active",
+  "fhirVersion": "4.0.1",
+  "kind": "logical",
+  "abstract": false,
+  "type": "BPX",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Element",
+  "derivation": "specialization",
+  "differential": {
+    "element": [
+      {
+        "id": "BPX",
+        "path": "BPX",
+        "type": [
+          {
+            "code": "Element"
+          }
+        ],
+        "mapping": [
+          {
+            "id": "BPX",
+            "identity": "v2",
+            "map": "BPX"
+          }
+        ]
+      },
+      {
+        "id": "BPX.SetID_BPX",
+        "path": "BPX.SetID_BPX",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "string",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/string"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "BPX.1"
+          }
+        ]
+      },
+      {
+        "id": "BPX.BPDispenseStatus",
+        "path": "BPX.BPDispenseStatus",
+        "code": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/v2-0510"
+          }
+        ],
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "CWE",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/CWE"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "BPX.2"
+          }
+        ]
+      },
+      {
+        "id": "BPX.BPStatus",
+        "path": "BPX.BPStatus",
+        "code": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/v2-0511"
+          }
+        ],
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "string",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/string"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "BPX.3"
+          }
+        ]
+      },
+      {
+        "id": "BPX.BPDate/TimeofStatus",
+        "path": "BPX.BPDate/TimeofStatus",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "TS",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/TS"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "BPX.4"
+          }
+        ]
+      },
+      {
+        "id": "BPX.BCDonationID",
+        "path": "BPX.BCDonationID",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "EI",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/EI"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "BPX.5"
+          }
+        ]
+      },
+      {
+        "id": "BPX.BCComponent",
+        "path": "BPX.BCComponent",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "CNE",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/CNE"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "BPX.6"
+          }
+        ]
+      },
+      {
+        "id": "BPX.BCDonationType/IntendedUse",
+        "path": "BPX.BCDonationType/IntendedUse",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "CNE",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/CNE"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "BPX.7"
+          }
+        ]
+      },
+      {
+        "id": "BPX.CPCommercialProduct",
+        "path": "BPX.CPCommercialProduct",
+        "code": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/v2-0512"
+          }
+        ],
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "CWE",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/CWE"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "BPX.8"
+          }
+        ]
+      },
+      {
+        "id": "BPX.CPManufacturer",
+        "path": "BPX.CPManufacturer",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "XON",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/XON"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "BPX.9"
+          }
+        ]
+      },
+      {
+        "id": "BPX.CPLotNumber",
+        "path": "BPX.CPLotNumber",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "EI",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/EI"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "BPX.10"
+          }
+        ]
+      },
+      {
+        "id": "BPX.BPBloodGroup",
+        "path": "BPX.BPBloodGroup",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "CNE",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/CNE"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "BPX.11"
+          }
+        ]
+      },
+      {
+        "id": "BPX.BCSpecialTesting",
+        "path": "BPX.BCSpecialTesting",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "CNE",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/CNE"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "BPX.12"
+          }
+        ]
+      },
+      {
+        "id": "BPX.BPExpirationDate/Time",
+        "path": "BPX.BPExpirationDate/Time",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "TS",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/TS"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "BPX.13"
+          }
+        ]
+      },
+      {
+        "id": "BPX.BPQuantity",
+        "path": "BPX.BPQuantity",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "string",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/string"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "BPX.14"
+          }
+        ]
+      },
+      {
+        "id": "BPX.BPAmount",
+        "path": "BPX.BPAmount",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "string",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/string"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "BPX.15"
+          }
+        ]
+      },
+      {
+        "id": "BPX.BPUnits",
+        "path": "BPX.BPUnits",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "CE",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/CE"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "BPX.16"
+          }
+        ]
+      },
+      {
+        "id": "BPX.BPUniqueID",
+        "path": "BPX.BPUniqueID",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "EI",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/EI"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "BPX.17"
+          }
+        ]
+      },
+      {
+        "id": "BPX.BPActualDispensedToLocation",
+        "path": "BPX.BPActualDispensedToLocation",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "PL",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/PL"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "BPX.18"
+          }
+        ]
+      },
+      {
+        "id": "BPX.BPActualDispensedToAddress",
+        "path": "BPX.BPActualDispensedToAddress",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "XAD",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/XAD"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "BPX.19"
+          }
+        ]
+      },
+      {
+        "id": "BPX.BPDispensedtoReceiver",
+        "path": "BPX.BPDispensedtoReceiver",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "XCN",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/XCN"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "BPX.20"
+          }
+        ]
+      },
+      {
+        "id": "BPX.BPDispensingIndividual",
+        "path": "BPX.BPDispensingIndividual",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "XCN",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/XCN"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "BPX.21"
+          }
+        ]
+      }
+    ]
+  }
+}

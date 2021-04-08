@@ -1,0 +1,133 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "INU_U05",
+  "url": "http://hl7.org/fhir/StructureDefinition/INU_U05",
+  "name": "INU_U05",
+  "status": "active",
+  "fhirVersion": "4.0.1",
+  "kind": "logical",
+  "abstract": false,
+  "type": "INU_U05",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Element",
+  "derivation": "specialization",
+  "differential": {
+    "element": [
+      {
+        "id": "INU_U05",
+        "path": "INU_U05",
+        "type": [
+          {
+            "code": "Element"
+          }
+        ],
+        "mapping": [
+          {
+            "id": "INU_U05",
+            "identity": "v2",
+            "map": "INU_U05"
+          }
+        ]
+      },
+      {
+        "id": "INU_U05.MSH",
+        "path": "INU_U05.MSH",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "MSH",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/MSH"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "MSH"
+          }
+        ]
+      },
+      {
+        "id": "INU_U05.SFT",
+        "path": "INU_U05.SFT",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "SFT",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/SFT"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "SFT"
+          }
+        ]
+      },
+      {
+        "id": "INU_U05.EQU",
+        "path": "INU_U05.EQU",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "EQU",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/EQU"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "EQU"
+          }
+        ]
+      },
+      {
+        "id": "INU_U05.INV",
+        "path": "INU_U05.INV",
+        "min": 1,
+        "max": "*",
+        "type": [
+          {
+            "code": "INV",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/INV"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "INV"
+          }
+        ]
+      },
+      {
+        "id": "INU_U05.ROL",
+        "path": "INU_U05.ROL",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "ROL",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/ROL"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "ROL"
+          }
+        ]
+      }
+    ]
+  }
+}

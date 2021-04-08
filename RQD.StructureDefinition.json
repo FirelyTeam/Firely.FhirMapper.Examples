@@ -1,0 +1,243 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "RQD",
+  "url": "http://hl7.org/fhir/StructureDefinition/RQD",
+  "name": "RQD",
+  "status": "active",
+  "fhirVersion": "4.0.1",
+  "kind": "logical",
+  "abstract": false,
+  "type": "RQD",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Element",
+  "derivation": "specialization",
+  "differential": {
+    "element": [
+      {
+        "id": "RQD",
+        "path": "RQD",
+        "type": [
+          {
+            "code": "Element"
+          }
+        ],
+        "mapping": [
+          {
+            "id": "RQD",
+            "identity": "v2",
+            "map": "RQD"
+          }
+        ]
+      },
+      {
+        "id": "RQD.RequisitionLineNumber",
+        "path": "RQD.RequisitionLineNumber",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "string",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/string"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "RQD.1"
+          }
+        ]
+      },
+      {
+        "id": "RQD.ItemCode-Internal",
+        "path": "RQD.ItemCode-Internal",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "CE",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/CE"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "RQD.2"
+          }
+        ]
+      },
+      {
+        "id": "RQD.ItemCode-External",
+        "path": "RQD.ItemCode-External",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "CE",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/CE"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "RQD.3"
+          }
+        ]
+      },
+      {
+        "id": "RQD.HospitalItemCode",
+        "path": "RQD.HospitalItemCode",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "CE",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/CE"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "RQD.4"
+          }
+        ]
+      },
+      {
+        "id": "RQD.RequisitionQuantity",
+        "path": "RQD.RequisitionQuantity",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "string",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/string"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "RQD.5"
+          }
+        ]
+      },
+      {
+        "id": "RQD.RequisitionUnitofMeasure",
+        "path": "RQD.RequisitionUnitofMeasure",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "CE",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/CE"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "RQD.6"
+          }
+        ]
+      },
+      {
+        "id": "RQD.DeptCostCenter",
+        "path": "RQD.DeptCostCenter",
+        "code": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/v2-0319"
+          }
+        ],
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "string",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/string"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "RQD.7"
+          }
+        ]
+      },
+      {
+        "id": "RQD.ItemNaturalAccountCode",
+        "path": "RQD.ItemNaturalAccountCode",
+        "code": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/v2-0320"
+          }
+        ],
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "string",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/string"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "RQD.8"
+          }
+        ]
+      },
+      {
+        "id": "RQD.DeliverToID",
+        "path": "RQD.DeliverToID",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "CE",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/CE"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "RQD.9"
+          }
+        ]
+      },
+      {
+        "id": "RQD.DateNeeded",
+        "path": "RQD.DateNeeded",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "string",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/string"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "RQD.10"
+          }
+        ]
+      }
+    ]
+  }
+}

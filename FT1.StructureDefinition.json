@@ -1,0 +1,718 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "FT1",
+  "url": "http://hl7.org/fhir/StructureDefinition/FT1",
+  "name": "FT1",
+  "status": "active",
+  "fhirVersion": "4.0.1",
+  "kind": "logical",
+  "abstract": false,
+  "type": "FT1",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Element",
+  "derivation": "specialization",
+  "differential": {
+    "element": [
+      {
+        "id": "FT1",
+        "path": "FT1",
+        "type": [
+          {
+            "code": "Element"
+          }
+        ],
+        "mapping": [
+          {
+            "id": "FT1",
+            "identity": "v2",
+            "map": "FT1"
+          }
+        ]
+      },
+      {
+        "id": "FT1.SetID-FT1",
+        "path": "FT1.SetID-FT1",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "string",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/string"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "FT1.1"
+          }
+        ]
+      },
+      {
+        "id": "FT1.TransactionID",
+        "path": "FT1.TransactionID",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "string",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/string"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "FT1.2"
+          }
+        ]
+      },
+      {
+        "id": "FT1.TransactionBatchID",
+        "path": "FT1.TransactionBatchID",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "string",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/string"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "FT1.3"
+          }
+        ]
+      },
+      {
+        "id": "FT1.TransactionDate",
+        "path": "FT1.TransactionDate",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "DR",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/DR"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "FT1.4"
+          }
+        ]
+      },
+      {
+        "id": "FT1.TransactionPostingDate",
+        "path": "FT1.TransactionPostingDate",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "TS",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/TS"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "FT1.5"
+          }
+        ]
+      },
+      {
+        "id": "FT1.TransactionType",
+        "path": "FT1.TransactionType",
+        "code": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/v2-0017"
+          }
+        ],
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "string",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/string"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "FT1.6"
+          }
+        ]
+      },
+      {
+        "id": "FT1.TransactionCode",
+        "path": "FT1.TransactionCode",
+        "code": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/v2-0132"
+          }
+        ],
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "CE",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/CE"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "FT1.7"
+          }
+        ]
+      },
+      {
+        "id": "FT1.TransactionDescription",
+        "path": "FT1.TransactionDescription",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "string",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/string"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "FT1.8"
+          }
+        ]
+      },
+      {
+        "id": "FT1.TransactionDescription-Alt",
+        "path": "FT1.TransactionDescription-Alt",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "string",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/string"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "FT1.9"
+          }
+        ]
+      },
+      {
+        "id": "FT1.TransactionQuantity",
+        "path": "FT1.TransactionQuantity",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "string",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/string"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "FT1.10"
+          }
+        ]
+      },
+      {
+        "id": "FT1.TransactionAmount-Extended",
+        "path": "FT1.TransactionAmount-Extended",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "CP",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/CP"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "FT1.11"
+          }
+        ]
+      },
+      {
+        "id": "FT1.TransactionAmount-Unit",
+        "path": "FT1.TransactionAmount-Unit",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "CP",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/CP"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "FT1.12"
+          }
+        ]
+      },
+      {
+        "id": "FT1.DepartmentCode",
+        "path": "FT1.DepartmentCode",
+        "code": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/v2-0049"
+          }
+        ],
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "CE",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/CE"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "FT1.13"
+          }
+        ]
+      },
+      {
+        "id": "FT1.InsurancePlanID",
+        "path": "FT1.InsurancePlanID",
+        "code": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/v2-0072"
+          }
+        ],
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "CE",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/CE"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "FT1.14"
+          }
+        ]
+      },
+      {
+        "id": "FT1.InsuranceAmount",
+        "path": "FT1.InsuranceAmount",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "CP",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/CP"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "FT1.15"
+          }
+        ]
+      },
+      {
+        "id": "FT1.AssignedPatientLocation",
+        "path": "FT1.AssignedPatientLocation",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "PL",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/PL"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "FT1.16"
+          }
+        ]
+      },
+      {
+        "id": "FT1.FeeSchedule",
+        "path": "FT1.FeeSchedule",
+        "code": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/v2-0024"
+          }
+        ],
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "string",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/string"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "FT1.17"
+          }
+        ]
+      },
+      {
+        "id": "FT1.PatientType",
+        "path": "FT1.PatientType",
+        "code": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/v2-0018"
+          }
+        ],
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "string",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/string"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "FT1.18"
+          }
+        ]
+      },
+      {
+        "id": "FT1.DiagnosisCode-FT1",
+        "path": "FT1.DiagnosisCode-FT1",
+        "code": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/v2-0051"
+          }
+        ],
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "CE",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/CE"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "FT1.19"
+          }
+        ]
+      },
+      {
+        "id": "FT1.PerformedByCode",
+        "path": "FT1.PerformedByCode",
+        "code": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/v2-0084"
+          }
+        ],
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "XCN",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/XCN"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "FT1.20"
+          }
+        ]
+      },
+      {
+        "id": "FT1.OrderedByCode",
+        "path": "FT1.OrderedByCode",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "XCN",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/XCN"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "FT1.21"
+          }
+        ]
+      },
+      {
+        "id": "FT1.UnitCost",
+        "path": "FT1.UnitCost",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "CP",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/CP"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "FT1.22"
+          }
+        ]
+      },
+      {
+        "id": "FT1.FillerOrderNumber",
+        "path": "FT1.FillerOrderNumber",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "EI",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/EI"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "FT1.23"
+          }
+        ]
+      },
+      {
+        "id": "FT1.EnteredByCode",
+        "path": "FT1.EnteredByCode",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "XCN",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/XCN"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "FT1.24"
+          }
+        ]
+      },
+      {
+        "id": "FT1.ProcedureCode",
+        "path": "FT1.ProcedureCode",
+        "code": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/v2-0088"
+          }
+        ],
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "CE",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/CE"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "FT1.25"
+          }
+        ]
+      },
+      {
+        "id": "FT1.ProcedureCodeModifier",
+        "path": "FT1.ProcedureCodeModifier",
+        "code": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/v2-0340"
+          }
+        ],
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "CE",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/CE"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "FT1.26"
+          }
+        ]
+      },
+      {
+        "id": "FT1.AdvancedBeneficiaryNoticeCode",
+        "path": "FT1.AdvancedBeneficiaryNoticeCode",
+        "code": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/v2-0339"
+          }
+        ],
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "CE",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/CE"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "FT1.27"
+          }
+        ]
+      },
+      {
+        "id": "FT1.MedicallyNecessaryDuplicateProcedureReason",
+        "path": "FT1.MedicallyNecessaryDuplicateProcedureReason",
+        "code": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/v2-0476"
+          }
+        ],
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "CWE",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/CWE"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "FT1.28"
+          }
+        ]
+      },
+      {
+        "id": "FT1.NDCCode",
+        "path": "FT1.NDCCode",
+        "code": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/v2-0549"
+          }
+        ],
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "CNE",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/CNE"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "FT1.29"
+          }
+        ]
+      },
+      {
+        "id": "FT1.PaymentReferenceID",
+        "path": "FT1.PaymentReferenceID",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "CX",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/CX"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "FT1.30"
+          }
+        ]
+      },
+      {
+        "id": "FT1.TransactionReferenceKey",
+        "path": "FT1.TransactionReferenceKey",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "string",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/string"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "FT1.31"
+          }
+        ]
+      }
+    ]
+  }
+}

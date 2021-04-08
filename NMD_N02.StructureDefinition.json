@@ -1,0 +1,237 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "NMD_N02",
+  "url": "http://hl7.org/fhir/StructureDefinition/NMD_N02",
+  "name": "NMD_N02",
+  "status": "active",
+  "fhirVersion": "4.0.1",
+  "kind": "logical",
+  "abstract": false,
+  "type": "NMD_N02",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Element",
+  "derivation": "specialization",
+  "differential": {
+    "element": [
+      {
+        "id": "NMD_N02",
+        "path": "NMD_N02",
+        "type": [
+          {
+            "code": "Element"
+          }
+        ],
+        "mapping": [
+          {
+            "id": "NMD_N02",
+            "identity": "v2",
+            "map": "NMD_N02"
+          }
+        ]
+      },
+      {
+        "id": "NMD_N02.MSH",
+        "path": "NMD_N02.MSH",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "MSH",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/MSH"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "MSH"
+          }
+        ]
+      },
+      {
+        "id": "NMD_N02.SFT",
+        "path": "NMD_N02.SFT",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "SFT",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/SFT"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "SFT"
+          }
+        ]
+      },
+      {
+        "id": "NMD_N02.CLOCK_AND_STATS_WITH_NOTES",
+        "path": "NMD_N02.CLOCK_AND_STATS_WITH_NOTES",
+        "min": 1,
+        "max": "*",
+        "type": [
+          {
+            "code": "BackboneElement"
+          }
+        ]
+      },
+      {
+        "id": "NMD_N02.CLOCK_AND_STATS_WITH_NOTES.CLOCK",
+        "path": "NMD_N02.CLOCK_AND_STATS_WITH_NOTES.CLOCK",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "BackboneElement"
+          }
+        ]
+      },
+      {
+        "id": "NMD_N02.CLOCK_AND_STATS_WITH_NOTES.CLOCK.NCK",
+        "path": "NMD_N02.CLOCK_AND_STATS_WITH_NOTES.CLOCK.NCK",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "NCK",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/NCK"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "NCK"
+          }
+        ]
+      },
+      {
+        "id": "NMD_N02.CLOCK_AND_STATS_WITH_NOTES.CLOCK.NTE",
+        "path": "NMD_N02.CLOCK_AND_STATS_WITH_NOTES.CLOCK.NTE",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "NTE",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/NTE"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "NTE"
+          }
+        ]
+      },
+      {
+        "id": "NMD_N02.CLOCK_AND_STATS_WITH_NOTES.APP_STATS",
+        "path": "NMD_N02.CLOCK_AND_STATS_WITH_NOTES.APP_STATS",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "BackboneElement"
+          }
+        ]
+      },
+      {
+        "id": "NMD_N02.CLOCK_AND_STATS_WITH_NOTES.APP_STATS.NST",
+        "path": "NMD_N02.CLOCK_AND_STATS_WITH_NOTES.APP_STATS.NST",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "NST",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/NST"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "NST"
+          }
+        ]
+      },
+      {
+        "id": "NMD_N02.CLOCK_AND_STATS_WITH_NOTES.APP_STATS.NTE",
+        "path": "NMD_N02.CLOCK_AND_STATS_WITH_NOTES.APP_STATS.NTE",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "NTE",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/NTE"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "NTE"
+          }
+        ]
+      },
+      {
+        "id": "NMD_N02.CLOCK_AND_STATS_WITH_NOTES.APP_STATUS",
+        "path": "NMD_N02.CLOCK_AND_STATS_WITH_NOTES.APP_STATUS",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "BackboneElement"
+          }
+        ]
+      },
+      {
+        "id": "NMD_N02.CLOCK_AND_STATS_WITH_NOTES.APP_STATUS.NSC",
+        "path": "NMD_N02.CLOCK_AND_STATS_WITH_NOTES.APP_STATUS.NSC",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "NSC",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/NSC"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "NSC"
+          }
+        ]
+      },
+      {
+        "id": "NMD_N02.CLOCK_AND_STATS_WITH_NOTES.APP_STATUS.NTE",
+        "path": "NMD_N02.CLOCK_AND_STATS_WITH_NOTES.APP_STATUS.NTE",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "NTE",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/NTE"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "NTE"
+          }
+        ]
+      }
+    ]
+  }
+}

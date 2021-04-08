@@ -1,0 +1,53 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "TX",
+  "url": "http://hl7.org/fhir/StructureDefinition/TX",
+  "name": "TX",
+  "status": "active",
+  "fhirVersion": "4.0.1",
+  "kind": "logical",
+  "abstract": false,
+  "type": "TX",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Element",
+  "derivation": "specialization",
+  "differential": {
+    "element": [
+      {
+        "id": "TX",
+        "path": "TX",
+        "type": [
+          {
+            "code": "Element"
+          }
+        ],
+        "mapping": [
+          {
+            "id": "TX",
+            "identity": "v2",
+            "map": "TX"
+          }
+        ]
+      },
+      {
+        "id": "TX.",
+        "path": "TX.",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": ""
+          }
+        ]
+      }
+    ]
+  }
+}
